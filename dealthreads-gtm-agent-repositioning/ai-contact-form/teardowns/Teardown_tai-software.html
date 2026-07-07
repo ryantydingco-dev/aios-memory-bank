@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tai Software — Contact Form Teardown</title>
+<style>
+:root{--ink:#0f172a;--slate:#475569;--mut:#94a3b8;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;
+--accent:#0d9488;--accent2:#0f766e;--warn:#b45309;--warnbg:#fffbeb;--cold:#64748b;--coldbg:#f1f5f9;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:40px 22px 80px}
+h1{font-size:25px;font-weight:800;letter-spacing:-.5px}
+.sub{color:var(--slate);font-size:15px;margin:9px 0 22px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;margin:24px 0}
+@media(max-width:640px){.cols{grid-template-columns:1fr}}
+.panel{border-radius:14px;padding:20px 22px;border:1px solid var(--line)}
+.before{background:var(--coldbg)}
+.after{background:var(--card);border-color:#99f6e4;box-shadow:0 6px 20px rgba(13,148,136,.08)}
+.plabel{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;margin-bottom:12px}
+.before .plabel{color:var(--cold)} .after .plabel{color:var(--accent2)}
+.field{font-size:13.5px;margin:8px 0;color:var(--slate)}
+.field b{color:var(--ink);font-weight:650}
+.thin{color:var(--mut);font-style:italic;font-size:13.5px}
+.chip{display:inline-block;background:#0f172a;color:#e2e8f0;border-radius:5px;padding:2px 8px;
+font-size:11.5px;margin:3px 4px 0 0;font-family:ui-monospace,monospace}
+.dms{margin:6px 0 0 18px;font-size:13px;color:var(--slate)}
+.brief{background:#f0fdfa;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+padding:14px 16px;margin:20px 0;font-size:14px;color:#134e4a}
+.brief .plabel{color:var(--accent2)}
+.gaps{background:var(--warnbg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:18px 0}
+.gaps .plabel{color:var(--warn)}
+.gaps ul{margin:6px 0 0 18px;font-size:13px;color:#78350f}
+.gaps li{margin:3px 0}
+.honest{font-size:12.5px;color:var(--slate);font-style:italic;margin-top:8px}
+.footer{margin-top:34px;background:#0f172a;color:#cbd5e1;border-radius:14px;padding:24px}
+.footer h3{color:#fff;font-size:17px;margin-bottom:8px}.footer p{font-size:13.5px;margin-bottom:8px}
+.cta{display:inline-block;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;
+padding:11px 20px;border-radius:9px;text-decoration:none;font-size:14px}
+.byline{font-size:12px;color:var(--mut);margin-top:14px;text-align:center}
+</style></head><body><div class="wrap">
+
+<h1>Tai Software — what your contact form throws away</h1>
+<div class="sub">I filled out your form as a test. Here's what your rep gets back vs. what they <i>could</i> have known before the callback — built automatically from that one submission.</div>
+
+<div class="cols">
+  <div class="panel before">
+    <div class="plabel">What your form captures</div>
+    <div class="field"><b>Name:</b> <span class="thin">whatever they typed</span></div>
+    <div class="field"><b>Email:</b> <span class="thin">work email</span></div>
+    <div class="field"><b>Message:</b> <span class="thin">one free-text line</span></div>
+    <div class="field thin" style="margin-top:14px">→ then ~20 minutes of your rep Googling before they can call back with any context.</div>
+  </div>
+  <div class="panel after">
+    <div class="plabel">What my system builds (automatically)</div>
+    
+    <div class="field"><b>Tai Software</b> — Tai Software builds and sells a TMS (Transportation Management System) purpose-built for freight brokers, covering FTL and LTL shipments. The platform offers automation across the full shipment lifecycle (quoting, carrier matching, load board posting, invoicing, AR/AP), 500+ carrier and load board integrations, and AI-powered capacity matching.</div>
+    <div class="field"><b>Size:</b> 60–87 employees (Latka reports 60; Growjo reports 87 with 21% YoY headcount growth; Crunchbase shows 11–50 range — likely 60–90 is most current)</div>
+    <div class="field"><b>Industry:</b> Freight / Logistics SaaS — TMS software for freight brokers</div>
+    <div class="field"><b>Funding:</b> Conflicting signals: Tracxn reports $21.8M raised over 5 rounds (first round June 2010); Latka reports bootstrapped with no outside funding, $15.9M ARR and $47.8M valuation as of 2023. Funding status is uncertain — treat as unresolved.</div>
+    <div class="field"><b>Tech stack:</b><br><span class="chip">WordPress</span><span class="chip">YouTube embed</span><span class="chip">500+ carrier and load board integrations</span><span class="chip">AI/ML layer for capacity matching</span></div>
+    <div class="field"><b>Likely decision-makers:</b><ul class="dms"><li>Walter Mitchell — CEO (confirmed via Crunchbase)</li></ul></div>
+    <div class="field"><b>ICP fit:</b> weak — Tai Software IS a freight/logistics TMS vendor — meaning they are a direct competitor or peer product, not a buyer. They build and sell the same category of software our ICP defines (freight broker TMS). Unless this lead is inquiring about a complementary tool, integration partnership, or reseller arrangement, they do not fit the buyer ICP of &#x27;small founder-led freight/logistics brokerage looking for a TMS.&#x27; Treat this as a potential partner, competitor intel probe, or misdirected lead until the contact&#x27;s intent is clarified.</div>
+  </div>
+</div>
+
+<div class="brief"><div class="plabel">The call-prep brief your rep opens</div>This inbound came from tai-software.com — Tai Software is itself a TMS platform for freight brokers and a likely direct competitor or adjacent player in your market. Before assuming a standard sales motion, the rep must first establish why someone at a TMS vendor is requesting a demo: competitive research, integration partnership, and recruiting/poaching are all plausible. Lead identity is completely unknown (no name, no email surfaced), so the rep should prioritize confirming who submitted the form and their role before pitching anything.</div>
+
+<div class="gaps">
+  <div class="plabel">⚠ What it still can't tell you (and I won't pretend it can)</div>
+  <ul><li>Lead name — not captured on form</li><li>Lead email — not captured or not passed through</li><li>Lead&#x27;s role/seniority — unknown</li><li>Reason for inquiry / intent — no form answers provided</li><li>HQ location — not found in any source</li><li>Funding status — directly contradicted across sources (Tracxn vs. Latka); unresolved</li><li>Exact employee count — ranges from 11–87 across sources</li><li>Technology stack vendors behind their integrations and AI layer</li></ul>
+  <div class="honest">I'd rather show you the gaps than fake confidence. The company-level picture above is the part that's rock-solid and runs on every single lead.</div>
+</div>
+
+<div class="footer">
+  <h3>This took 30 seconds, automatically.</h3>
+  <p>Every lead that fills out your form could land in your CRM with this profile already attached — before your rep makes the callback. No more 20 minutes of research per lead, no more calling a $50k deal and a tire-kicker the same way.</p>
+  <p>I built this one by hand as a sample. The real thing runs on every submission. Want me to walk you through how it'd work on your site?</p>
+  <a class="cta" href="#">Grab 15 minutes → [your calendar link]</a>
+</div>
+<div class="byline">Built as a free sample for Tai Software · company data pulled live from public sources · person-level details to be verified · no strings</div>
+</div></body></html>

@@ -1,0 +1,12 @@
+{
+  "name": "deal-threads-eval",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Golden dataset + calibrated graders for the DealThreads AI lead-intake extractor. Anchored to leadExtractionSchema.",
+  "scripts": {
+    "eval": "node run-eval.mjs --predictions fixtures/predictions.example.jsonl",
+    "eval:json": "node run-eval.mjs --predictions fixtures/predictions.example.jsonl --json report.json",
+    "eval:judge": "node run-eval.mjs --predictions fixtures/predictions.example.jsonl --llm-judge"
+  }
+}

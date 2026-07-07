@@ -1,0 +1,1219 @@
+first_name,last_name,email,company_name,Title,City,State,linkedin_url,website,fit_score,campaign_segment,personalization_anchor,routine_1,routine_2,routine_3,smartlead_subject_a,smartlead_subject_b,smartlead_email_1,smartlead_email_2,smartlead_email_3
+Alyssa,Soles,alyssa@castle-funding.com,Castle Funding Corp.,President & Mortgage Broker,Ventura,California,https://www.linkedin.com/in/alyssa-soles-b539a3235,castle-funding.com,121,complex_products_doc_followup,"Castle Funding Corp. mentions complex mortgage products/workflows like: tura mortgage broker, first-time homebuyer loans, conventional & jumbo financing, fha & va loans, reverse mortgage & hecm loans, calhfa down payment assistance, helo",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Robert,C.,rc@carlylefinancial.com,Carlyle Financial,Founder - Super Jumbo Mortgage Broker,,,https://www.linkedin.com/in/robertcohan,carlylefinancial.com,118,complex_products_doc_followup,"Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jesse,Collins,jesse.collins@carlylefinancial.com,Carlyle Financial,Vice President - Senior Mortgage Broker,Beverly Hills,California,https://www.linkedin.com/in/jessecollins2,carlylefinancial.com,118,complex_products_doc_followup,"Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Craig,T.,craig@azmortgagebroker.com,"AZ Mortgage Broker, LLC",Broker-Owner/Certified Mortgage Consultant®,Scottsdale,Arizona,https://www.linkedin.com/in/craig-t-8881ab13,azmortgagebroker.com,117,complex_products_doc_followup,"AZ Mortgage Broker, LLC mentions complex mortgage products/workflows like: nterest rates, debt consolidation, purchase, refinance, fha, va, jumbo, usda, nonqm, 2nd mortgages, customer service, arizona, california, colorado, helocs, low rate",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Shannon,Gray,shannon.gray@lifesourcemortgage.com,LifeSource Mortgage,Mortgage Broker/Owner,San Clemente,California,https://www.linkedin.com/in/shantgray,lifesourcemortgage.com,116,complex_products_doc_followup,"LifeSource Mortgage mentions complex mortgage products/workflows like: ks.Secure Your DreamsThe speedy purchase home loan, refinance, & reverse mortgage specialistsDont get overwhelmedHome Financing Can be Fast and EasyNew PurchaseWe of",borrower doc follow-up drafts by loan type,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Michael (P.),DeSantis,mdesantis@visitamr.com,"American Mortgage Resource, Inc.","President / Broker MA Mortgage Broker Company #MB22431,   NH Lic # 22358-MBR,  FL Lic # LO -58342",Greater Boston,,https://www.linkedin.com/in/michaeldesantisbroker,visitamr.com,115,complex_products_doc_followup,"American Mortgage Resource, Inc. mentions complex mortgage products/workflows like: ncing, first and second mortgages, purchases, reverse mortgages, jumbo, conventional, fha, usda, va, 80-10-10 American Mortgage Resource, Inc. is a small mortgage br",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jodi,White,jodi@belaymortgage.com,Belay Mortgage Group NMLS 1737549,Owner / Sr Loan Officer nmls 89759,Vancouver,Washington,https://www.linkedin.com/in/jodi-white-3b548713,belaymortgage.com,115,complex_products_doc_followup,"Belay Mortgage Group NMLS 1737549 mentions complex mortgage products/workflows like: , construction financing, va, fha, usda, bank statement lending, non qm loans Belay Mortgage Group is a boutique local mortgage broker licensed in Washington, Oregon",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Drew,LaBarbera,drew@planwealth.net,Planwealth Financial Services,"President, Mortgage Broker, Loan officer",Mckinney,Texas,https://www.linkedin.com/in/drewlabarbera,planwealth.net,115,complex_products_doc_followup,"Planwealth Financial Services mentions complex mortgage products/workflows like: rvices is a (5) STAR rated Zillow lender that offers conforming, jumbo, FHA, VA, hard money, bank statement, and USDA loans. In addition, we guarantee to every clie",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Dane,K.,dane@outshinehomeloans.com,Outshine Home Loans,Owner / Independent Mortgage Broker,Overland Park,Kansas,https://www.linkedin.com/in/danekaplan,outshinehomeloans.com,114,complex_products_doc_followup,"Outshine Home Loans mentions complex mortgage products/workflows like: home loans, mortgage, lending, conventional, va, fha, non-qm, fastest turn times and communication, technology focused, customer service, home purchase, r",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Chris,Kobz,chris@happydog.com,HappyDog,Founder & Mortgage Broker,,,https://www.linkedin.com/in/chris-kobz-72b3303,http://www.happydog.com,114,complex_products_doc_followup,"HappyDog mentions complex mortgage products/workflows like: home loans, refinance, purchase, reverse, mortgages HappyDog is a different kind of mortgage company, built on the belief that home f",borrower doc follow-up drafts by loan type,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Dana,Scott,dana.scott@trustmortgagepa.com,Trust Mortgage NLMS 2614489,Company Owner/ Loan officer,Lake Ariel,Pennsylvania,https://www.linkedin.com/in/dana-scott-381b741,trustmortgagepa.com,114,complex_products_doc_followup,"Trust Mortgage NLMS 2614489 mentions complex mortgage products/workflows like: e Ariel, PA. NMLS 2614489. Specialize in conventional, FHA, VA, Non QM, hard money. We are Mortgage and Home Loan Experts and we offer Purchase, Refinance and Cash-",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Betty,Gibson,betty.gibson@simplerhomeloans.com,Simpler Home Loans,Branch Manager NMLS #98403,Greensboro,North Carolina,https://www.linkedin.com/in/betty-gibson-7a264119,simplerhomeloans.com,111,complex_products_doc_followup,"Simpler Home Loans mentions complex mortgage products/workflows like: ch, home lending, mortgage banker, fha, va, conventional, jumbo, non-qm Simpler Home Loans is a modern, multi-state mortgage company built to give Mortgage Advisors",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Richard,Sarey,rsarey@alliancemtggroup.net,Sarey Enterprises LLC Dba Alliance Mortgage Group NMLS #292257,President/Owner/Mortgage Broker,Frisco,Texas,https://www.linkedin.com/in/richard-sarey-2abb918,alliancemtggroup.net,111,complex_products_doc_followup,"Sarey Enterprises LLC Dba Alliance Mortgage Group NMLS #292257 mentions complex mortgage products/workflows like: r less than stellar credit, VA loans for military personnel, and Jumbo or Super Jumbo loans. Our current loan programs offer historically low interest rates and mak",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Kameron,Senemar,,"The Mortgage Group, LLC",Owner | Mortgage Broker,Miami,Florida,https://www.linkedin.com/in/kameronsenemar,themortgagegroup.net,111,complex_products_doc_followup,"The Mortgage Group, LLC mentions complex mortgage products/workflows like: er, mortgages, conventional mortgage, fha mortgage, va mortgage, non qm mortgage At The Mortgage Group LLC, we believe that homeownership is a cornerstone of persona",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Eric,Lefkowitz,eric@forward.loans,Forward Loans,Producing Branch Manager / Loan Officer,San Diego,California,https://www.linkedin.com/in/ericlefkowitz,forward.loans,110,complex_products_doc_followup,"Forward Loans mentions complex mortgage products/workflows like: ates, refinance, va loans, fha loans, home purchase, dream home, jumbo loans, conventional loans, construction loans, mortgage loan officer, prequalification, preapp",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jaime,Polanco,jpolanco@swbcorp.com,Statewide Funding Inc.,Branch Manager,Glendora,California,https://www.linkedin.com/in/jaime-polanco-66870217,statewidefundinginc.com,110,complex_products_doc_followup,"Statewide Funding Inc. mentions complex mortgage products/workflows like: mortgage, fha loans, va loans, conventional loans, jumbo loans, non-qm loans, non-prime loans, hard money loans, down payment assistance, reverse mortgage, home buy",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Christopher JD,Pierce,cpierce@unlimitedmortgagelending.com,"Unlimited Mortgage Lending, LLC",Owner / Senior Loan Officer,Boca Raton,Florida,https://www.linkedin.com/in/iamchrispierce,unlimitedmortgagelending.com,110,complex_products_doc_followup,"Unlimited Mortgage Lending, LLC mentions complex mortgage products/workflows like: irst time homebuyers loan, conventional loan, fha loan, va loan, jumbo loan, super jumbo loan, luxury loan, hard money loan, purchase, refinance Unlimited Mortgage L",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Liz,Korn,liz@elitemortgagegroup.com,Elite Mortgage Group LLC,Branch Manager,Harrisonville,Missouri,https://www.linkedin.com/in/liz-korn-13ab508a,elitemortgagegroup.com,110,complex_products_doc_followup,Elite Mortgage Group LLC mentions complex mortgage products/workflows like: inances Mortgage Reverse Mortgage Jumbo Loans Construction Loans NON QM Loans Company NMLS: 2012339 Individual NMLS: 90058 AZ MB: 1012690 https://www.nmlsconsumerac,complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Michael,Zuren,michael.zuren@schmidtmortgage.com,Mid America Mortgage (fka Schmidt Mortgage Company) Ohio,Branch Manager,Willoughby,Ohio,https://www.linkedin.com/in/michael-zuren-53632378,schmidtmortgage.com,109,complex_products_doc_followup,"Mid America Mortgage (fka Schmidt Mortgage Company) Ohio mentions complex mortgage products/workflows like: mortgage lender, mortgage broker, 203k construction loans, fha, va, usda rural housing, approved fannie, freddie and ginnie In the Rocky Ri",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Kara,Medlock,kara@coastalpacificlending.com,Coastal Pacific Lending Inc. NMLS: 965211,Branch Manager,Phoenix,Arizona,https://www.linkedin.com/in/kara-medlock-855193297,coastalpacificlending.com,108,complex_products_doc_followup,"Coastal Pacific Lending Inc. NMLS: 965211 mentions complex mortgage products/workflows like: fha loan, adjustable rate mortgage, jumbo loans, homepath, fha streamline, reverse mortgage, refinance, real estate loans, home loans, m",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jason,Zimmer,jzimmer@parlaymortgage.com,"Parlay Mortgage & Property, Inc.","Owner and Mortgage Banker in Chicagoland (Lockport, IL)",Mokena,Illinois,https://www.linkedin.com/in/jasonzimmerparlaymortgage,parlaymortgage.com,108,complex_products_doc_followup,"Parlay Mortgage & Property, Inc. mentions complex mortgage products/workflows like: ases, refinances, home improvement loans, VA, FHA, Conventional, JUMBO and more.",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Rory,O'Donnell,rodonnell@greenwaymortgage.com,"Greenway Mortgage Funding Corp, NMLS#374480",Branch Manager,Bedford Hills,New York,https://www.linkedin.com/in/rory-o-donnell-0a79ab12,greenwaymortgage.com,108,complex_products_doc_followup,"Greenway Mortgage Funding Corp, NMLS#374480 mentions complex mortgage products/workflows like: nce, usda loan, conventional loan , refinance, reverse mortgage, jumbo loans, veterans, doctor loan, renovation loan, energy efficient mortgage, construction loan Gr",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Chris,Hendrickson,chris@beelinemortgage.com,Beeline Mortgage,"Owner, Designated Broker at Beeline Mortgage LLC",Liberty Lake,Washington,https://www.linkedin.com/in/chris-hendrickson-beelinemortgage,beelinemortgage.com,107,complex_products_doc_followup,"Beeline Mortgage mentions complex mortgage products/workflows like: ke, Washington. We specialize in VA, FHA, Conventional, USDA and Jumbo home loans in Washington, Idaho, and Alaska. NMLS Company # 1713379 https://www.nmlsconsumera",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+William,Morales,william@universalmortgage.com,"Universal Mortgage, LLC",Mortgage Loan Officer/Owner,Miami-fort Lauderdale Area,,https://www.linkedin.com/in/william-morales-5a6003a2,universalmortgage.com,107,complex_products_doc_followup,"Universal Mortgage, LLC mentions complex mortgage products/workflows like: reverse mortgage, foreign national loans, fha & conventional, mcc assistance program Universal Mortg",borrower doc follow-up drafts by loan type,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Eric,Simantel,eric@rydermortgagegroup.com,Ryder Mortgage Group,Branch Manager / Mortgage Loan Officer / NMLS 1889183.,Portland,Oregon,https://www.linkedin.com/in/ericsimantel,rydermortgagegroup.com,106,complex_products_doc_followup,"Ryder Mortgage Group mentions complex mortgage products/workflows like: hfa mortgage, conventional mortgage, usda mortgage, va mortgage, non qm mortgage Reach out and learn how its genuine and genuinely different at the Ryder Mortgage Gr",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Ruben,Gurgov,rgurgov@rcgmortgage.com,RCG Mortgage,Branch Manager,New York,New York,https://www.linkedin.com/in/ruben-gurgov-5758a931,rcgmortgage.com,106,complex_products_doc_followup,"RCG Mortgage mentions complex mortgage products/workflows like: erage servicing clients with their home purchase, refinance, and renovation financing needs. In 2017, broker Andrew Russell started RCG to make the mortgage process",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Eric,Collins,eric.collins@rivercity.bank,River City Bank,Vice President & Branch Manager,Blairsville,Georgia,https://www.linkedin.com/in/eric-collins-322b0a237,rivercity.bank,105,complex_products_doc_followup,"River City Bank mentions complex mortgage products/workflows like: , refinance, small business loans, business banking, auto loans, construction loans, lending, saving, cash management River City Bank, founded in 2006, is a full-ser",construction/renovation loan condition tracker,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Taylor,Schone,taylor@patriothomemortgage.com,Patriot Home Mortgage,Owner / Loan Officer,St George,Utah,https://www.linkedin.com/in/taylor-schone-a8758046,patriothomemortgage.com,105,complex_products_doc_followup,"Patriot Home Mortgage mentions complex mortgage products/workflows like: hop”: construction, conventional, government (FHA/VA & HECM) and jumbo lending products. ★ NMLS# 715386 Equal Housing Opportunity Lender Belem Servicing LLC www.n",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Rob,"Miller, CMHS MLOP",,"ProVisor, Inc.",Branch Manager/ Senior Loan Officer NMLS #239865,Greater Madison Area,,https://www.linkedin.com/in/madcityhomeloans,provisor.com,103,complex_products_doc_followup,"ProVisor, Inc. mentions complex mortgage products/workflows like: ker, low rates, low fees, local decisions, wheda, va, fha, usda, jumbo, conventional, refi ProVisor is your Transparent Mortgage Lender with over 25 years of experie",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Michael,Dresevic,mdresevic@lenderexpressmortgage.com,Lender Express Mortgage,Branch Manager,Fort Worth,Texas,https://www.linkedin.com/in/michael-dresevic-0a996b104,lenderexpressmortgage.com,103,complex_products_doc_followup,"Lender Express Mortgage mentions complex mortgage products/workflows like: nventional, FHA, VA, USDA, jumbo loans, down payment assistance, non-QM, alternative income documentation and more.",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Tim,Tonczyczyn,,Nation One Mortgage,Branch Manager to Owner of Mortgage Bank,West Berlin,New Jersey,https://www.linkedin.com/in/timtonczyczyn,nationone.com,103,complex_products_doc_followup,"Nation One Mortgage mentions complex mortgage products/workflows like: wide variety of loan options, including FHA, FHA 203K, VA, USDA, Jumbo, and Conventional loans. Additionally, we offer specialized programs like NJ, PA, DE, and VA G",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Claudia,Yemail,claudia@preferredhomescorp.com,Preferred Homes Corp,Mortgage Broker/Owner,Boca Raton,Florida,https://www.linkedin.com/in/claudia-yemail-homeloans,preferredhomescorp.com,103,complex_products_doc_followup,"Preferred Homes Corp mentions complex mortgage products/workflows like: pecialize in FHA, Conventional, VA, USDA, Reverse, Jumbo Loans & non-QM products (outside of the conventional requirements) We serve our clients anywhere in Florida.",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Michael,Adibe,madibe@lenderexpressmortgage.com,Lender Express Mortgage,Branch Manager,Plano,Texas,https://www.linkedin.com/in/michael-adibe-87621644,lenderexpressmortgage.com,103,complex_products_doc_followup,"Lender Express Mortgage mentions complex mortgage products/workflows like: nventional, FHA, VA, USDA, jumbo loans, down payment assistance, non-QM, alternative income documentation and more.",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+John,Doerr,jdoerr@ctcmortgage.net,"CTC Mortgage Company, LLC (NMLS # 371182)",Branch Manager/Senior Mortgage Loan Officer,Summerville,South Carolina,https://www.linkedin.com/in/john-doerr-b010836,ctcmortgage.com,103,complex_products_doc_followup,"CTC Mortgage Company, LLC (NMLS # 371182) mentions complex mortgage products/workflows like: ventional mortgage, fha mortgage, va mortgage, reverse mortgage, jumbo mortgage, va loans, self-employed mortgage programs CTC Mortgage Company (NMLS # 371182) was d",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Shane,Hollenback,shane@lenderexpressmortgage.com,Lender Express Mortgage,Branch Manager,Phoenix,Arizona,https://www.linkedin.com/in/shanehollenback,lenderexpressmortgage.com,103,complex_products_doc_followup,"Lender Express Mortgage mentions complex mortgage products/workflows like: nventional, FHA, VA, USDA, jumbo loans, down payment assistance, non-QM, alternative income documentation and more.",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Kevin,Hawes,khawes@abilitymortgage.com,Ability Ambeck Mortgage,Branch Manager,Ripon,California,https://www.linkedin.com/in/kevin-hawes-16b0a439,abilityambeckmortgage.com,102,complex_products_doc_followup,"Ability Ambeck Mortgage mentions complex mortgage products/workflows like: home purchase loans, home refinance loans, cash out home loans, jumbo home loans, fha loans/va loans, usda loans, reverse mortgage loans, calhfa program, va cash ou",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Charles,B.,charles@mlmortgage.net,ML Mortgage Corp,Producing Branch Manager / Loan Originator,Magnolia,Texas,https://www.linkedin.com/in/charlesabeasley,mlmortgage.net,102,complex_products_doc_followup,"ML Mortgage Corp mentions complex mortgage products/workflows like: r, home loans, fha loans, calhfa loans, down payment assistance, jumbo loans, itin loans, bk ok, high balance loans, real estate, tax repair, loan officers, va loans",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Andrea,Fernandez,andrea@mlmortgage.net,ML Mortgage Corp,Branch Manager,Las Vegas,Nevada,https://www.linkedin.com/in/andrea-fernandez1,mlmortgage.net,102,complex_products_doc_followup,"ML Mortgage Corp mentions complex mortgage products/workflows like: r, home loans, fha loans, calhfa loans, down payment assistance, jumbo loans, itin loans, bk ok, high balance loans, real estate, tax repair, loan officers, va loans",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Migdalia,Montes,mm@methodmortgage.com,"Method Mortgage, NMLS# 85408",Branch Manager,Holland,Michigan,https://www.linkedin.com/in/migdalia-montes-a2729286,methodmortgage.com,102,complex_products_doc_followup,"Method Mortgage, NMLS# 85408 mentions complex mortgage products/workflows like: l loans - conventional, fha, va, usda, self employed borrowers, jumbo loans, purchase and refinance, first time homebuyers Method Mortgage, formerly Principal Mortg",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jared,Goldapper,jgoldapper@mcglonemtg.com,McGlone Mortgage Group NMLS #3232,Producing Branch Manager,Miami-fort Lauderdale Area,,https://www.linkedin.com/in/jared-goldapper-887b6547,mcglonemtg.com,101,complex_products_doc_followup,"McGlone Mortgage Group NMLS #3232 mentions complex mortgage products/workflows like: l mortgage financing, purchase home financing, home refinancing, renovation mortgages, va mortgages, first-time home buyer mortgages, streamline refinancing Founded",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Shawn,Presnell,spresnell@totalhomelending.com,Total Home Lending,Branch Manager/EVP,Detroit Metropolitan Area,,https://www.linkedin.com/in/shawnpresnell,totalhomelending.com,101,complex_products_doc_followup,"Total Home Lending mentions complex mortgage products/workflows like: purchase, refinance, fha, va, low fico, usda, jumbo, 80/10/10 At Total Home Lending, Our goal is simple, We want to match you with the best progra",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Joseph,Grier,joseph.grier@legacyaca.com,Legacy Ag Credit ACA,Vice President of Lending/ Branch Manager,Tyler,Texas,https://www.linkedin.com/in/joseph-grier-3b4bbb268,legacyaca.com,101,complex_products_doc_followup,"Legacy Ag Credit ACA mentions complex mortgage products/workflows like: farm financing, rural financing, home construction, barndominium, agriculture, poultry, land, home, barns, agribusiness, property improvem",construction/renovation loan condition tracker,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jon,Holt,,"Movement Mortgage, Atlanta GA",Branch Manager/Regional Renovation Manager,Atlanta,Georgia,https://www.linkedin.com/in/jon-holt-49046845,movementmortgage.com,100,complex_products_doc_followup,"Movement Mortgage, Atlanta GA mentions complex mortgage products/workflows like: rtgages, usda mortgages, vhda mortgages, conventional mortgages, jumbo mortgages, reverse mortgages Movement Mortgage, formerly New American Mortgage, was founded in",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Todd,Jacquay,tjacquay@aec-env.com,"Advantage Environmental Consultants, LLC",Branch Manager - Western Regional Office,San Marcos,California,https://www.linkedin.com/in/todd-jacquay,aec-env.com,100,complex_products_doc_followup,"Advantage Environmental Consultants, LLC mentions complex mortgage products/workflows like: onsulting, phase i esas, wireless nepa consulting, environmental construction management, operations and maintenance programs, phase ii subsurface investigations, te",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jamie,Murray,jamie@newfinitygroup.com,The Newfinity Group Inc,Branch Manager,Red Bank,New Jersey,https://www.linkedin.com/in/jamie-murray-a24739141,newfinitygroup.com,100,complex_products_doc_followup,"The Newfinity Group Inc mentions complex mortgage products/workflows like: mortgage lending, purchase business, refinance, fha , va, usda, non-qm, jumbo, reverse mortgages The Newfinity Group Inc is based out of Florida with a second branc",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Thaddeus,Hager,thager@robusmortgage.com,RōBUS Mortgage,Branch Manager. Senior Loan Officer,Las Vegas,Nevada,https://www.linkedin.com/in/thaddeus-hager-a475a5110,robusmortgage.com,100,complex_products_doc_followup,RōBUS Mortgage mentions complex mortgage products/workflows like: owest rates and fees for our clients. RoBUS also specializes in non-QM(Qualified Mortgage) lending for self-employed borrowers who write off income on taxes along w,complex-file doc checklist,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Ryan,Liebelt,ryan@mpahomeloans.com,Mortgage Professional Associates,Branch Manager,Wheat Ridge,Colorado,https://www.linkedin.com/in/ryan-liebelt-9b9050105,mpahomeloans.com,100,complex_products_doc_followup,"Mortgage Professional Associates mentions complex mortgage products/workflows like: age loans, conventional loans, fha loans, va loans, jumbo loans, non-qm loans There are many qualities and skills that go into being an excellent mortgage profession",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Ryan,Andrews,ryan@horizonlendingservices.com,"1031 Exchange Network, LLC",Branch Manager,Prosper,Texas,https://www.linkedin.com/in/ryan-andrews4747,horizonlendingservices.com,99,complex_products_doc_followup,"1031 Exchange Network, LLC mentions complex mortgage products/workflows like: r you. We specialize in Texas and California VA home loans and Reverse Mortgages. We take pride in being recognized as a premier mortgage broker offering a wide ar",borrower doc follow-up drafts by loan type,daily pipeline brief,missing-doc follow-up drafts,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Chris,Fewell,chris.fewell@empowerhomelending.com,Empower Home Lending,Branch Manager,Greater Houston,,https://www.linkedin.com/in/chris-fewell-a2048237,empowerhomelending.com,99,complex_products_doc_followup,"Empower Home Lending mentions complex mortgage products/workflows like: roduct list of conventional, FHA, VA, USDA along with all of the NON QM products and federal and state down payment assistance options. If you are looking for a comp",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Lugo,Viramontes,lugov@equitysmartloans.com,David Diaz-EquitySmart Home Loans,Branch Manager,Los Angeles Metropolitan Area,,https://www.linkedin.com/in/lugo-viramontes-83724730,equitysmartloans.com,99,complex_products_doc_followup,"David Diaz-EquitySmart Home Loans mentions complex mortgage products/workflows like: fha, conventional, non-qm, government loans, veteran loans, reversemortgages, fanniemae, freddiemac We are the #1 broke",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Stan,Thomas,stan@wmbrokers.com,"Western Mortgage Brokers, Inc.",Branch Manager / Loan Originator,Eugene,Oregon,https://www.linkedin.com/in/stanathomas,wmbrokers.com,99,complex_products_doc_followup,"Western Mortgage Brokers, Inc. mentions complex mortgage products/workflows like: mortgage brokers, conventional loans, construction loans, fha loans, reverse mortgage, va loans, nonprime loans, manufactured home mortgag",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Mike,Bernhart,mike.bernhart@armormortgage.com,Armor Mortgage,"VP, Branch Manager",Stow,Ohio,https://www.linkedin.com/in/mike-bernhart-4ba0b7bb,armormortgage.com,99,complex_products_doc_followup,"Armor Mortgage mentions complex mortgage products/workflows like: conventional, fha, va, usda, jumbo, non-qm, new construction, renovation, reverse mortgage, down payment assistance, 1st time homebuyers",complex-file doc checklist,construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Philip,Schofield,pschofield@ctiengr.com,"CTI Engineers, Inc.",Vice President / Branch Manager / Sr. Project Manager,Hixson,Tennessee,https://www.linkedin.com/in/prschofield,ctiengr.com,99,complex_products_doc_followup,"CTI Engineers, Inc. mentions complex mortgage products/workflows like: conceptual stages of a project, through design and financing, to construction management and start-up assistance.",construction/renovation loan condition tracker,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Jim,Calzaretta,jim@greatmortgage.com,Great Mortgage Company,Branch Manager,Elgin,Illinois,https://www.linkedin.com/in/jim-calzaretta-9ab36792,greatmortgage.com,98,complex_products_doc_followup,"Great Mortgage Company mentions complex mortgage products/workflows like: purchase , refinance, conventional, va, jumbo, non-qm, home ready, home possible, usda, first time homebuyer Great Mortgage is a trusted mortgage b",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Teri,Parsons,teri.parsons@tlclender.com,Total Lending Concepts,Branch Manager / Mortgage Loan Officer,Kalamazoo,Michigan,https://www.linkedin.com/in/teri-parsons-9073ba18,tlclender.com,98,complex_products_doc_followup,"Total Lending Concepts mentions complex mortgage products/workflows like: ase loans / home refinance loans, va loans / va irrrl, harp 2.0, jumbo, usda, reverse mortgages Total Lending Concepts is your local, full-service mortgage lender, a",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+April,Phifer,april@veritymortgage.com,Verity Mortgage,Branch Manager,Amarillo,Texas,https://www.linkedin.com/in/april-phifer-96ba426,veritymortgage.com,98,complex_products_doc_followup,"Verity Mortgage mentions complex mortgage products/workflows like: first time home buyers, jumbo loans, government loans (fha, va, usda), refinance loans If time is the measure of a company,",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Mario L.,Rodriguez,mrodriguez@certifiedhomeloans.com,Certified Home Loans,Branch Manager / Sr. Mortgage Loan Originator / Broker-Associate,Fort Lauderdale,Florida,https://www.linkedin.com/in/mario-l-rodriguez-a0173723,certifiedhomeloans.com,98,complex_products_doc_followup,"Certified Home Loans mentions complex mortgage products/workflows like: evelopment loans, va loans, adjustable rate mortgages (arm), and jumbo loans Certified Home Loans is committed to providing the highest level of personal financial s",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."
+Mandy,McCoy,mandy.mccoy@tlclender.com,Total Lending Concepts,Senior Loan Officer/Branch Manager,Baxter Springs,Kansas,https://www.linkedin.com/in/mandy-mccoy-8962a4a,tlclender.com,98,complex_products_doc_followup,"Total Lending Concepts mentions complex mortgage products/workflows like: ase loans / home refinance loans, va loans / va irrrl, harp 2.0, jumbo, usda, reverse mortgages Total Lending Concepts is your local, full-service mortgage lender, a",complex-file doc checklist,borrower doc follow-up drafts by loan type,daily pipeline brief,3 routines for {{company_name}},borrower follow-up admin,"{Hey|Hi|Morning} {{first_name}} — {quick idea|quick specific idea|quick thought}.
+
+I was looking at {{company_name}} and noticed your team probably has a lot of borrower/doc follow-up hiding behind the scenes. {{personalization_anchor}}
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like {{routine_1}}, {{routine_2}}, and {{routine_3}}.
+
+No auto-sending and no sensitive borrower files needed for version one. Just drafts, briefs, and follow-up queues your team approves.
+
+{Want me to send the 3 routines I’d set up for {{company_name}}?|Worth sending over the 3 routines I’d install for {{company_name}}?}","{{first_name}}, to make this less abstract — for {{company_name}}, I’d probably start with:
+
+1. {{routine_1}}
+2. {{routine_2}}
+3. {{routine_3}}
+
+The goal is not a giant AI system. It’s taking the recurring admin your team already repeats every week and turning it into approval-only drafts/briefs.
+
+Worth a quick look?","Should I close the loop here?
+
+Usually this only makes sense if borrower doc follow-up, pipeline visibility, or stale borrower/realtor follow-ups are actually eating time each week.
+
+If that is not a headache for {{company_name}}, no worries."

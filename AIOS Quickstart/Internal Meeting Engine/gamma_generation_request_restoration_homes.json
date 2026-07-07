@@ -1,0 +1,14 @@
+{
+  "inputText": "Create a polished 15-card presentation titled 'Restoration Homes Seller Reply Engine' using the content in the local file 'Restoration Homes Seller Reply Engine Deck.md'. Tone: practical, friendly, clear, not hypey. Audience: local real estate investor / cash home buyer. Style: clean modern business deck. Preserve the strategic structure and compliance guardrails. Do not add legal claims. Make it feel like a simple 60-day pilot proposal from Ryan to a trusted business friend.",
+  "textMode": "generate",
+  "format": "presentation",
+  "numCards": 15,
+  "exportAs": "pdf",
+  "textOptions": {
+    "tone": "practical, friendly, clear, founder-to-founder",
+    "audience": "local real estate investor / cash home buyer"
+  },
+  "imageOptions": {
+    "source": "webFreeToUseCommercially"
+  }
+}

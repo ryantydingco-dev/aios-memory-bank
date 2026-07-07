@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mCubed Staffing — Client Radar (Deep Signal)</title>
+<style>
+  :root{--ink:#0f172a;--slate:#475569;--mut:#94a3b8;--line:#e2e8f0;--bg:#f8fafc;
+    --card:#fff;--accent:#0d9488;--accent2:#0f766e;--hot:#be123c;--hotbg:#fff1f2;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:40px 22px 80px}
+  .topbar{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .logo{width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px}
+  h1{font-size:25px;font-weight:800;letter-spacing:-.5px}
+  .sub{color:var(--slate);font-size:15px;margin:10px 0 2px}
+  .meta{color:var(--mut);font-size:12.5px;margin-top:14px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  .intro{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:24px 0 8px}
+  .intro b{color:var(--ink)} .intro p{color:var(--slate);font-size:14.5px;margin-top:8px}
+  .sec{font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--mut);font-weight:700;margin:34px 0 14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+  .ch{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+  .co{font-size:18px;font-weight:750;letter-spacing:-.3px}
+  .tag{font-size:12px;font-weight:700;color:var(--accent2);background:#ccfbf1;border-radius:20px;padding:4px 11px;white-space:nowrap}
+  .does{color:var(--slate);font-size:13.5px;margin:7px 0 14px}
+  .painbox{background:var(--hotbg);border:1px solid #fecdd3;border-radius:11px;padding:13px 15px;margin:12px 0}
+  .painlab{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--hot);font-weight:800;margin-bottom:6px}
+  .painrow{font-size:14.5px;color:#881337;margin:3px 0}.painrow b{color:var(--hot)}
+  .roles{margin-top:9px}.roles span{display:inline-block;background:#fff;border:1px solid #fecdd3;border-radius:6px;
+    padding:3px 9px;font-size:12px;margin:3px 5px 0 0;color:#9f1239;font-weight:600}
+  .stack{display:inline-block;background:#0f172a;color:#e2e8f0;border-radius:5px;padding:2px 8px;font-size:11.5px;margin:3px 4px 0 0;font-family:ui-monospace,monospace}
+  .opener{margin-top:13px;background:#f0fdfa;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+    padding:11px 14px;font-size:13.5px;color:#134e4a;font-style:italic}
+  .src{margin-top:10px;font-size:12px;color:var(--mut)}
+  .footer{margin-top:40px;background:#0f172a;color:#cbd5e1;border-radius:14px;padding:26px}
+  .footer h3{color:#fff;font-size:17px;margin-bottom:8px}.footer p{font-size:13.5px;margin-bottom:8px}
+  .footer .cta{display:inline-block;margin-top:10px;background:var(--accent);color:#fff;font-weight:700;
+    padding:11px 20px;border-radius:9px;text-decoration:none;font-size:14px}
+  .byline{font-size:12px;color:var(--mut);margin-top:16px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><div class="logo">m³</div><div><h1>mCubed Staffing — Client Radar</h1></div></div>
+  <div class="sub">Companies <b>visibly struggling to fill</b> the engineering roles you place — with the proof, pulled from their own job boards.</div>
+  <div class="meta">Built by hand for Melisa Migliaccio · 31 May 2026 · "stuck open" = days since the role was first published, read live from each company's public job board · numbers verified across repeated pulls</div>
+
+  <div class="intro">
+    <b>Why this isn't a funding list.</b>
+    <p>Anyone can tell you a company raised money and "might hire" — that's one search, and every firm in your inbox already has it. This is different: these are companies whose <b>own job boards prove they're stuck</b> — engineering roles sitting open four, six, nine months, in hard-to-source stacks (Go, distributed systems, ML, embedded), against lean teams. A role open nine months isn't "they might need help." It's "they've tried and can't fill it themselves." That's the week a firm like yours gets the call — and it's computed across every open role by age, which can't be found in a search.</p>
+  </div>
+
+  <div class="sec">▸ Companies with engineering roles aging on the vine</div>
+
+  <div class="card">
+    <div class="ch"><div class="co">Hightouch</div><div class="tag">~320 ppl · data infra</div></div>
+    <div class="does">Data-activation / reverse-ETL platform. Remote-US engineering team — exactly the IT/eng profile you place.</div>
+    <div class="painbox">
+      <div class="painlab">⚠ Live hiring-pain signal (their job board)</div>
+      <div class="painrow"><b>30</b> technical roles open · <b>12 stuck open 45+ days</b> · oldest <b>283 days</b></div>
+      <div class="roles"><span>Software Engineer, AI Agents</span><span>+ infra & platform roles</span></div>
+      <div style="margin-top:8px"><span class="stack">Go</span><span class="stack">distributed systems</span><span class="stack">machine learning</span><span class="stack">Rust</span></div>
+    </div>
+    <div class="opener">Opener: "Noticed a stack of your engineering roles have been open the better part of a year — Go + distributed-systems people are some of the hardest to land right now, and that's the exact corner we place in. Worth a quick conversation?"</div>
+    <div class="src">Decision-maker: verify on LinkedIn (Head of Talent / co-founder). Roles: Remote / SF / NY.</div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><div class="co">Mercury</div><div class="tag">fintech · finance + IT lanes</div></div>
+    <div class="does">Banking & finance platform for startups — hits <b>both</b> your finance and IT/engineering lanes. SF / NY + remote-US.</div>
+    <div class="painbox">
+      <div class="painlab">⚠ Live hiring-pain signal (their job board)</div>
+      <div class="painrow"><b>15</b> technical roles open · <b>9 stuck open 45+ days</b> · oldest <b>136 days</b></div>
+      <div class="roles"><span>Senior Software Engineer – Risk (AI &amp; Automation)</span><span>Senior SWE – Banking Integration Platform</span></div>
+      <div style="margin-top:8px"><span class="stack">Go</span><span class="stack">embedded</span><span class="stack">machine learning</span></div>
+    </div>
+    <div class="opener">Opener: "Saw your Risk and Banking-Integration engineering roles have been open ~4+ months — fintech risk eng is a narrow, regulated talent pool, and it sits right where your finance and IT placements overlap. That's a sweet spot for us. Worth 15 minutes?"</div>
+    <div class="src">Decision-maker: verify on LinkedIn. Note: larger org, may have in-house TA — but the finance-lane fit is unusually strong for mCubed.</div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><div class="co">Airtable</div><div class="tag">~1,000 ppl · app platform</div></div>
+    <div class="does">No-code app-building platform. Bigger org, but the open-role data is striking and the roles are squarely in your wheelhouse.</div>
+    <div class="painbox">
+      <div class="painlab">⚠ Live hiring-pain signal (their job board)</div>
+      <div class="painrow"><b>15</b> technical roles open · <b>11 stuck open 45+ days</b> · oldest <b>286 days</b></div>
+      <div class="roles"><span>Software Engineer, Data</span><span>Software Engineer, Infrastructure (4–8 YOE)</span><span>Software Engineer, Infrastructure (8+ YOE)</span></div>
+      <div style="margin-top:8px"><span class="stack">Go</span><span class="stack">Kubernetes</span><span class="stack">embedded</span></div>
+    </div>
+    <div class="opener">Opener: "Your Infrastructure and Data engineering roles have been open ~9 months — when senior infra roles sit that long, internal recruiting has usually maxed out. That's exactly when we come in. Open to comparing notes?"</div>
+    <div class="src">Decision-maker: verify on LinkedIn. ⚠️ Larger company — likely has in-house TA; treat as a stretch/awareness target vs. the two above.</div>
+  </div>
+
+  <div class="footer">
+    <h3>This is one week, by hand — and it's the part you can't Google.</h3>
+    <p>The funding headline is one search away. <b>This</b> — which companies have engineering roles aging past 90, 180, 280 days, in which hard-to-source stacks — is computed across every open role on every board, tracked by age. It's the difference between "they might hire" and "they've been stuck for 9 months."</p>
+    <p>I built this one by hand for mCubed. I run a system that does it every week — automatically, for whatever verticals and locations you place into (IT, engineering, finance — and I can weight it toward Michigan / Midwest). I'd rather just show you the live version than try to explain it over text.</p>
+    <a class="cta" href="#">Grab 15 minutes and I'll walk you through it → [your calendar link]</a>
+  </div>
+
+  <div class="byline">Built for mCubed Staffing · "stuck open 45+ days" computed live from each company's public job board (Greenhouse), 31 May 2026 · sample, no strings · contacts to be LinkedIn-verified before outreach</div>
+</div>
+</body>
+</html>

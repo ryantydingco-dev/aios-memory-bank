@@ -1,0 +1,16 @@
+{
+  "name": "deal-threads-dev",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "test": "node --test --test-concurrency=1",
+    "qa:browser": "node scripts/browser-qa.mjs",
+    "qa:launch": "node scripts/launch-readiness.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

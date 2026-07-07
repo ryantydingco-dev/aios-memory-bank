@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dealthread-landing",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8099", "--directory", "/Users/ryantydingco/Documents/AIOS/aios-starter-kit/apps/deal-threads-landing"],
+      "port": 8099
+    },
+    {
+      "name": "greenlight",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4180", "--directory", "/Users/ryantydingco/Documents/AIOS/aios-starter-kit/apps/greenlight-demo"],
+      "port": 4180
+    },
+    {
+      "name": "ascend",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4280", "--directory", "/Users/ryantydingco/Documents/personal-ai-os"],
+      "port": 4280
+    },
+    {
+      "name": "ascend-test",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4286", "--directory", "/Users/ryantydingco/Documents/personal-ai-os"],
+      "port": 4286
+    },
+    {
+      "name": "ascend-server",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "DATA_DIR=/tmp/ascend_preview_db ASCEND_PORT=4287 SEED_EMAIL=ryantydingco@gmail.com python3 /Users/ryantydingco/Documents/personal-ai-os/server.py"],
+      "port": 4287
+    },
+    {
+      "name": "ascend-native",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4380", "--directory", "/Users/ryantydingco/Documents/personal-ai-os/ascend-app/dist"],
+      "port": 4380
+    }
+  ]
+}

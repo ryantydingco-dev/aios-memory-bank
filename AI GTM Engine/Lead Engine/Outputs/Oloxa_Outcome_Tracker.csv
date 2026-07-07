@@ -1,0 +1,7 @@
+date_sent,lead_id,name,company,market,segment,signal,channel,opener_variant,sent,replied,reply_sentiment,objection_tag,meeting_booked,next_action,notes
+,rmeunier@bellevuecapitalgroup.com,Robert Meunier,Bellevue Capital Group,US,US,CLOSING,LinkedIn,,,,,,,QUEUED,seeded by build_send_board
+,mbucaro@convoy-cap.com,Michael Bucaro,Convoy Capital,US,US,CLOSING,LinkedIn,,,,,,,QUEUED,seeded by build_send_board
+,matthew@bellevuecapitalgroup.com,Matthew Beal,Bellevue Capital Group,US,US,CLOSING,LinkedIn,,,,,,,QUEUED,seeded by build_send_board
+,grant@cfpgroup.co.uk,Grant McIntyre,CFP Group,UK,UK,CLOSING,LinkedIn,,,,,,,QUEUED,seeded by build_send_board
+,linzi@hcfl.co.uk,Linzi Crellin,Halo Corporate Finance Limited,UK,UK,VOLUME,LinkedIn,,,,,,,QUEUED,seeded by build_send_board
+,csolinski@litfinancial.com,Chris Solinski,LitFinancial,US,US,HIRING,LinkedIn,,,,,,,QUEUED,seeded by build_send_board

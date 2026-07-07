@@ -1,0 +1,55 @@
+{
+  "$comment": "Envelope schema for one golden eval case (one line of cases/cases.jsonl).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "category", "conversation", "expected", "grading"],
+  "properties": {
+    "id": { "type": "string", "description": "Stable unique id, e.g. DT-EVAL-001" },
+    "category": { "type": "string", "description": "See taxonomy in README" },
+    "title": { "type": "string" },
+    "notes": { "type": "string" },
+    "model_under_test": {
+      "type": "string",
+      "enum": ["any", "heuristic", "gpt-4o-mini", "claude-sonnet"],
+      "default": "any"
+    },
+    "conversation": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sender", "body"],
+        "properties": {
+          "sender": { "type": "string", "enum": ["visitor", "assistant"] },
+          "body": { "type": "string" }
+        }
+      }
+    },
+    "latest_message": { "type": "string", "description": "Optional: final visitor turn, mirrors extractor input" },
+    "expected": { "$ref": "./extraction.schema.json" },
+    "grading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "critical_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Dot-paths that must be exactly correct, e.g. qualification.budget_range. One miss fails the case."
+        },
+        "must_not_hallucinate": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Dot-paths that must stay null/grounded. Asserting a value where expected is null = hard fail."
+        },
+        "required_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Override the default required set for missing_required_fields grading."
+        },
+        "expect_needs_human_review": { "type": "boolean" },
+        "expect_priority": { "type": "string", "enum": ["high", "medium", "low", "manual_review"] }
+      }
+    }
+  }
+}

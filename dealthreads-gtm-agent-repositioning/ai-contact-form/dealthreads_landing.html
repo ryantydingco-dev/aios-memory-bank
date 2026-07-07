@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dealthreads — your contact form, but it pre-builds the buyer</title>
+<style>
+:root{
+  --ink:#0f172a;--slate:#475569;--mut:#94a3b8;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;
+  --accent:#0d9488;--accent2:#0f766e;--accentbg:#f0fdfa;--ring:#99f6e4;
+  --warn:#b45309;--warnbg:#fffbeb;--dark:#0f172a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+a{color:var(--accent2);text-decoration:none}
+/* header */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.85);backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.3px;color:var(--ink)}
+.brand .mk{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:800}
+.brand small{font-weight:600;color:var(--mut);font-size:12px}
+.hdr .cta{background:var(--accent);color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:9px}
+.hdr .cta:hover{background:var(--accent2)}
+/* hero */
+.hero{text-align:center;padding:64px 0 30px}
+.eyebrow{display:inline-block;background:var(--accentbg);color:var(--accent2);border:1px solid var(--ring);
+  border-radius:30px;padding:5px 14px;font-size:12.5px;font-weight:700;margin-bottom:20px}
+h1{font-size:44px;line-height:1.1;font-weight:850;letter-spacing:-1.4px;max-width:780px;margin:0 auto}
+h1 .hl{color:var(--accent2);background:linear-gradient(180deg,transparent 62%,var(--ring) 62%)}
+.lede{font-size:18.5px;color:var(--slate);max-width:660px;margin:20px auto 0}
+.herocta{margin:30px 0 10px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:750;font-size:15.5px;padding:14px 24px;
+  border-radius:11px;cursor:pointer;border:none;transition:.15s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn-ghost:hover{border-color:var(--accent)}
+.microcta{font-size:13px;color:var(--mut);margin-top:6px}
+/* vsl */
+.vsl{margin:36px auto 0;max-width:760px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;
+  background:linear-gradient(135deg,#0f172a,#1e293b);border:1px solid var(--line);
+  box-shadow:0 24px 60px rgba(15,23,42,.22);display:flex;align-items:center;justify-content:center;
+  flex-direction:column;color:#cbd5e1;position:relative}
+.play{width:70px;height:70px;border-radius:50%;background:var(--accent);display:flex;align-items:center;
+  justify-content:center;margin-bottom:14px;box-shadow:0 8px 30px rgba(13,148,136,.5)}
+.play:after{content:"";border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:5px}
+.vsl .vt{font-size:14px;font-weight:600}.vsl .vs{font-size:12px;color:var(--mut);margin-top:4px}
+.vsl .badge{position:absolute;top:14px;left:14px;font-size:11px;background:rgba(255,255,255,.1);
+  padding:4px 10px;border-radius:20px;color:#e2e8f0}
+/* sections */
+section{padding:54px 0}
+.sec-tag{text-align:center;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent2);font-weight:800;margin-bottom:10px}
+h2{font-size:30px;font-weight:820;letter-spacing:-.7px;text-align:center;max-width:680px;margin:0 auto}
+.sub2{text-align:center;color:var(--slate);font-size:16px;max-width:600px;margin:14px auto 0}
+/* interactive wedge */
+.wedge{background:var(--dark);border-radius:20px;padding:42px 34px;margin-top:8px;color:#e2e8f0;text-align:center}
+.wedge h2{color:#fff}.wedge .sub2{color:#94a3b8}
+.tryrow{display:flex;gap:10px;max-width:520px;margin:26px auto 8px;flex-wrap:wrap;justify-content:center}
+.tryrow input{flex:1;min-width:240px;border:1px solid #334155;background:#1e293b;color:#fff;border-radius:10px;
+  padding:14px 16px;font-size:15px}
+.tryrow input::placeholder{color:#64748b}
+.tryrow input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(13,148,136,.25)}
+.wedge .note{font-size:12.5px;color:#64748b;margin-top:12px}
+.teaser{display:grid;grid-template-columns:1fr 1.5fr;gap:14px;max-width:640px;margin:30px auto 0;text-align:left}
+@media(max-width:560px){.teaser{grid-template-columns:1fr}}
+.tcard{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:16px 18px}
+.tcard.after{border-color:var(--accent2);background:#0c2c2a}
+.tcard .l{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;margin-bottom:8px}
+.tcard.before .l{color:#64748b}.tcard.after .l{color:#5eead4}
+.tcard .f{font-size:13px;color:#cbd5e1;margin:4px 0}.tcard .f b{color:#fff}
+.thin{color:#64748b;font-style:italic}
+/* problem cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+@media(max-width:760px){.grid3{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.pcard .ic{font-size:22px;margin-bottom:10px}
+.pcard h3{font-size:16px;font-weight:750;margin-bottom:6px}
+.pcard p{font-size:14px;color:var(--slate)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;counter-reset:s}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 22px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:22px;width:30px;height:30px;
+  background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+.step h3{font-size:16px;font-weight:750;margin:8px 0 6px}.step p{font-size:14px;color:var(--slate)}
+/* proof */
+.proof{background:var(--accentbg);border:1px solid var(--ring);border-radius:18px;padding:34px;margin-top:8px}
+.claims{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+@media(max-width:680px){.claims{grid-template-columns:1fr}}
+.claim{background:#fff;border:1px solid var(--ring);border-radius:12px;padding:20px;text-align:center}
+.claim .big{font-size:30px;font-weight:850;color:var(--accent2);letter-spacing:-1px}
+.claim .lbl{font-size:13px;color:var(--slate);margin-top:4px}
+.honest{background:var(--warnbg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin-top:20px;
+  font-size:13.5px;color:#78350f}
+.honest b{color:#92400e}
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+@media(max-width:680px){.fit{grid-template-columns:1fr}}
+.fitcard{border-radius:14px;padding:22px 24px;border:1px solid var(--line);background:#fff}
+.fitcard.yes{border-color:var(--ring);background:var(--accentbg)}
+.fitcard h3{font-size:15px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.fitcard ul{list-style:none}.fitcard li{font-size:14px;color:var(--slate);margin:9px 0;padding-left:24px;position:relative}
+.fitcard.yes li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+.fitcard.no li:before{content:"✕";position:absolute;left:0;color:var(--mut);font-weight:800}
+/* about */
+.about{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px;margin-top:8px;
+  display:grid;grid-template-columns:90px 1fr;gap:24px;align-items:start}
+@media(max-width:560px){.about{grid-template-columns:1fr;text-align:center}}
+.avatar{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:32px;font-weight:800}
+.about p{font-size:15px;color:var(--slate);margin-bottom:12px}.about b{color:var(--ink)}
+/* guarantee */
+.guarantee{text-align:center;background:linear-gradient(135deg,#0f766e,#0d9488);color:#fff;border-radius:18px;padding:40px 34px;margin-top:8px}
+.guarantee .seal{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#a7f3d0;margin-bottom:12px}
+.guarantee h2{color:#fff;font-size:27px}
+.guarantee p{color:#d1fae5;font-size:16px;max-width:560px;margin:14px auto 0}
+/* faq */
+.faq{max-width:720px;margin:30px auto 0}
+.qa{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+.qa h3{font-size:15.5px;font-weight:750;margin-bottom:6px}.qa p{font-size:14px;color:var(--slate)}
+/* final */
+.final{text-align:center;background:var(--dark);color:#fff;border-radius:20px;padding:56px 34px;margin:8px 0 60px}
+.final h2{color:#fff;font-size:32px}.final p{color:#94a3b8;font-size:16px;margin:14px auto 26px;max-width:520px}
+.footer{text-align:center;color:var(--mut);font-size:12.5px;padding:0 0 50px}
+</style>
+</head>
+<body>
+
+<header class="hdr"><div class="wrap">
+  <div class="brand"><div class="mk">D</div><div>Dealthreads</div></div>
+  <a class="cta" href="#book">See it on my leads →</a>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">● For founder-led B2B teams with a "Request a Demo" form</span>
+  <h1>Your contact form is throwing away <span class="hl">your best leads.</span></h1>
+  <p class="lede">A name, an email, one line of text — then your rep spends 20 minutes Googling before the callback. Dealthreads turns every submission into a <b>full buyer profile</b> — the company, the person, and a call-prep brief — waiting in your CRM <b>before</b> your rep picks up the phone.</p>
+  <div class="herocta">
+    <a class="btn btn-primary" href="#book">See it run on your live leads →</a>
+    <a class="btn btn-ghost" href="#try">Try it on your own site</a>
+  </div>
+  <div class="microcta">15 minutes. I'll run it on your real site. No slides, no pitch.</div>
+
+  <div class="vsl">
+    <div class="badge">▶ 2-min watch</div>
+    <div class="play"></div>
+    <div class="vt">Watch: what your form throws away (and how I fix it)</div>
+    <div class="vs">[VSL goes here — script in production]</div>
+  </div>
+</div></section>
+
+<!-- INTERACTIVE WEDGE -->
+<section id="try"><div class="wrap">
+  <div class="wedge">
+    <div class="sec-tag" style="color:#5eead4">Don't take my word for it</div>
+    <h2>See the profile your form <em>should</em> be building.</h2>
+    <p class="sub2">Enter your company website. In about 30 seconds you'll watch the full buyer profile my system builds from a single form fill — live, on your own company. Free, no email required.</p>
+    <form class="tryrow" action="https://ai-contact-form-demo-production.up.railway.app/" method="get" target="_blank">
+      <input type="text" name="website" placeholder="yourcompany.com" aria-label="Your company website">
+      <button class="btn btn-primary" type="submit">Build my free teardown →</button>
+    </form>
+    <div class="note">Opens the live tool. This is the exact engine that would run on every one of your leads.</div>
+
+    <div class="teaser">
+      <div class="tcard before"><div class="l">Your form captures</div>
+        <div class="f"><b>Name:</b> <span class="thin">whatever they type</span></div>
+        <div class="f"><b>Email:</b> <span class="thin">work email</span></div>
+        <div class="f"><b>Message:</b> <span class="thin">one line</span></div>
+      </div>
+      <div class="tcard after"><div class="l">Dealthreads builds (automatically)</div>
+        <div class="f"><b>Who:</b> name, title, seniority, LinkedIn, buying role</div>
+        <div class="f"><b>Company:</b> what they do, size, funding, tech stack, ICP-fit</div>
+        <div class="f"><b>Rep brief:</b> what to lead with on the callback</div>
+        <div class="f"><b>→</b> all in your CRM before you call</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- PROBLEM -->
+<section><div class="wrap">
+  <div class="sec-tag">The leak</div>
+  <h2>The deal-closing data shows up <em>after</em> the deal stalls.</h2>
+  <p class="sub2">A "Contact Sales" form returns name + email. Everything that tells your rep how to win — who this person is, how big the company is, whether they're a fit — sits behind 20 minutes of research that happens too late, if at all.</p>
+  <div class="grid3">
+    <div class="pcard"><div class="ic">🕳️</div><h3>The research tax</h3><p>Reps burn ~17 hours a week researching leads by hand. Most leads never get it — they get a generic callback.</p></div>
+    <div class="pcard"><div class="ic">⏱️</div><h3>The slow callback</h3><p>By the time someone's pieced together who the lead is, the buyer has moved on or gone cold. Speed-to-context is speed-to-close.</p></div>
+    <div class="pcard"><div class="ic">🎯</div><h3>Every lead treated the same</h3><p>A $50k-fit buyer and a tire-kicker get the same template. Your best inbound gets no extra attention because nobody knew it was your best.</p></div>
+  </div>
+  <p class="sub2" style="margin-top:30px"><b>Why now:</b> Drift shut down and Qualified went enterprise-only — the tools that read your inbound buyers are gone or out of reach. Dealthreads is the affordable, done-for-you version.</p>
+</div></section>
+
+<!-- HOW IT WORKS -->
+<section><div class="wrap">
+  <div class="sec-tag">How it works</div>
+  <h2>It runs on the form you already have.</h2>
+  <div class="steps">
+    <div class="step"><h3>A lead fills out your form</h3><p>Same form, same place on your site. Nothing changes for your visitor — no extra fields, no friction.</p></div>
+    <div class="step"><h3>Dealthreads builds the profile</h3><p>In seconds it assembles the company picture and identifies the person — title, seniority, LinkedIn, buying role — plus a rep call-prep brief.</p></div>
+    <div class="step"><h3>It lands in your CRM</h3><p>The full dossier is attached to the contact in HubSpot before your rep calls back. They open it and already know how to win.</p></div>
+  </div>
+</div></section>
+
+<!-- PROOF -->
+<section><div class="wrap">
+  <div class="sec-tag">Is it actually good?</div>
+  <h2>Real data. And honest about what it can't see.</h2>
+  <div class="proof">
+    <div class="claims">
+      <div class="claim"><div class="big">Every</div><div class="lbl">lead gets a full <b>company</b> profile — size, funding, tech stack, ICP-fit</div></div>
+      <div class="claim"><div class="big">~95%</div><div class="lbl">correct <b>person + seniority</b> for buyers with a professional footprint</div></div>
+      <div class="claim"><div class="big">~80%</div><div class="lbl">of those come with the right <b>LinkedIn</b> profile attached</div></div>
+    </div>
+    <div class="honest">
+      <b>I'd rather show you the gaps than fake confidence.</b> Company intelligence runs on every single lead. Person-level identification is excellent for anyone with a public professional footprint — essentially every director-and-up B2B buyer — and the tool says "unknown" instead of guessing when it can't be sure. That honesty is the point: your reps can trust what they see.
+    </div>
+  </div>
+</div></section>
+
+<!-- WHO IT'S FOR -->
+<section><div class="wrap">
+  <div class="sec-tag">Fit check</div>
+  <h2>Built for founder-led teams who live on inbound.</h2>
+  <div class="fit">
+    <div class="fitcard yes"><h3>✅ This is for you if</h3><ul>
+      <li>You're a founder-led B2B team (roughly 5–40 people)</li>
+      <li>You have a real "Request a Demo / Contact Sales" form that gets traffic</li>
+      <li>Your deals are worth $8k+ — one won deal dwarfs the cost</li>
+      <li>You don't have a RevOps team enriching leads for you</li>
+    </ul></div>
+    <div class="fitcard no"><h3>Probably not yet if</h3><ul>
+      <li>You have little or no inbound form traffic</li>
+      <li>Your deals are low-ticket / high-volume self-serve</li>
+      <li>You already run a full enrichment + routing stack</li>
+      <li>You want a chatbot, not better data (that's a different tool)</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<!-- ABOUT -->
+<section><div class="wrap">
+  <div class="sec-tag">Who's behind it</div>
+  <div class="about">
+    <div class="avatar">RT</div>
+    <div>
+      <p><b>I'm Ryan.</b> I build the unglamorous automation that makes small B2B teams punch above their weight. This is the one I'd want running on my own inbound.</p>
+      <p>I'm not a faceless agency, and I'm not going to ask you to take a leap of faith. <b>I'll build you a free teardown of your own contact form first</b> — you'll see exactly what Dealthreads surfaces on your real company before we ever talk money.</p>
+      <p>If it's useful, we talk. If it's not, you keep the teardown. That's the whole deal.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- GUARANTEE -->
+<section><div class="wrap">
+  <div class="guarantee">
+    <div class="seal">★ Pay-when-it-works guarantee</div>
+    <h2>You don't pay until it's working on your leads.</h2>
+    <p>I install it for free. You don't pay a cent — not setup, not monthly — until enriched buyer profiles are actually landing in your CRM on your real inbound. The risk is mine, not yours.</p>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section><div class="wrap">
+  <div class="sec-tag">Straight answers</div>
+  <h2>The questions you're already asking.</h2>
+  <div class="faq">
+    <div class="qa"><h3>How accurate is the data, really?</h3><p>Company-level runs on every lead and is consistent across reruns. Person-level is ~95% accurate for buyers with a professional footprint (nearly all director-and-up B2B buyers) and openly returns "unknown" rather than guessing. On your first leads we measure the real rate for your specific audience.</p></div>
+    <div class="qa"><h3>Do I have to replace my contact form?</h3><p>No. It works with the form you already have. Your visitors see no change.</p></div>
+    <div class="qa"><h3>Which CRM does it work with?</h3><p>HubSpot today; others on request. The profile lands attached to the contact, before your rep calls.</p></div>
+    <div class="qa"><h3>What does it cost?</h3><p>Let's talk on a 15-minute call — but the math is simple: it costs a fraction of one deal you'd otherwise fumble, and it runs on every lead from then on. And you don't pay until it's working.</p></div>
+    <div class="qa"><h3>How long does it take to set up?</h3><p>Days, not months. It's a done-for-you install — I wire it to your form and CRM; you don't lift a finger.</p></div>
+  </div>
+</div></section>
+
+<!-- FINAL CTA -->
+<div class="wrap"><div class="final" id="book">
+  <h2>See what your form's been throwing away.</h2>
+  <p>15 minutes. I'll run it live on your own site and show you the buyer profiles you've been missing. No slides. No pressure. And the teardown's yours either way.</p>
+  <a class="btn btn-primary" href="[YOUR_CALENDLY_LINK]" style="font-size:16.5px;padding:16px 30px">Grab a 15-minute slot →</a>
+  <div class="microcta" style="color:#64748b;margin-top:16px">Prefer to try it first? <a href="#try" style="color:#5eead4">Build your free teardown →</a></div>
+</div></div>
+
+<div class="footer">© 2026 Dealthreads · Company data pulled live from public sources · person-level details verified, never fabricated</div>
+
+</body>
+</html>

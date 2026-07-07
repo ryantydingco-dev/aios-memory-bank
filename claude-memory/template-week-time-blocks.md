@@ -1,0 +1,41 @@
+---
+name: template-week-time-blocks
+description: "Ryan's designed template week (recurring Google Calendar blocks, created 2026-07-04) — Kingfisher morning job Mon–Thu 5–10am, CA revenue/build blocks, ACE study, Hyrox lift+run 5:10pm"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: bb05dc40-cfc0-4a78-b5ed-f204d03b92f3
+---
+
+Ryan coaches classes at **Kingfisher (a gym)** — his shift schedule VARIES WEEKLY and arrives as a photo of a staff grid (trainers: Ryan/Clark/Stephen; class slots 5:00/6:00/7:10/8:20/9:30 AM and 5:10/6:15 PM). Do NOT assume flat Mon–Thu 5–10 AM: some mornings start at 7:10 or are off entirely, and occasional EVENING shifts (5:10 PM class) collide with his lift — on those days training moves to the morning. When a new schedule photo arrives: create one-off "Kingfisher — Coaching" GCal events per shift, fill freed mornings with productive blocks (he's up at ~4:30 anyway), and update `aios-starter-kit/data/time_blocks.json` overrides. Jul 6–17 2026 are done.
+
+On 2026-07-04 we built his template week as recurring Google Calendar events (primary calendar, America/New_York), inspired by a time-blocking video ("your week is only 6–7 repeating blocks"):
+
+- **Kingfisher — Coaching** — one-off events per actual shift (graphite); recurring version deleted 2026-07-04 as inaccurate
+- **CA — Outbound & Inbound** — Mon–Thu 10:30 AM–1:00 PM (tomato); SmartLead replies contained to this block
+- **CA — Build + Video Prep** — Mon–Thu 2:00–3:30 PM (tangerine); preps Friday recording
+- **ACE Study / Fitness Learning** — Mon–Fri 3:30–5:00 PM (banana); exam ~2 weeks from Jul 4, block persists after as fitness continuing-ed
+- **Hyrox — Lift + Run** — Mon–Fri 5:10–7:00 PM (basil); lift first, run after; race Sep 9
+- **CA — Outbound & Inbound (Fri)** — Fri 8:00–10:30 AM
+- **YouTube Recording Block** — Fri 10:30 AM–1:00 PM; batch-record content prepped during the week
+- **WEEKENDS ARE WORK DAYS (added 2026-07-04, Ryan: "Saturdays and Sundays aren't off days — that's where I get ahead, especially on the business")**: Sat = Hyrox Long Run 7:00–8:30 + CA Get-Ahead Block 9:00–11:30 (afternoons open for family); Sun = CA Week-Ahead Prep 7:00–9:00 + Weekly Review 5:00–5:45 PM (aligned with the 5 PM recap message). All 7 days are scoreable in the W/L game — no rest-day streak pass-through anymore; an unscored weekend day breaks the chain.
+
+The stale pre-Kingfisher recurring blocks (Dec 2025/Jan 2026 era: "Deep Work" 4:30–6:30 AM, "Workout" 7–9 AM, "Drata" ×2, "Break", "Deep Work: Business Growth") were DELETED on 2026-07-04 at Ryan's request, and "Wind down" 7–9 PM was also deleted (workouts sometimes run to 9 PM).
+
+**Daily loop + W/L GAME LAYER is LIVE (2026-07-04):** `scripts/time_blocks.py` in aios-starter-kit, via the existing Telegram bot (.env TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID). Ryan wanted "each day is a W, stack consecutive days, make a game of it":
+- 4:30 AM morning card (blocks + 🔥 streak + week record), 9:15 PM evening scorecard — Ryan replies "W"/"L" (or "W 5/5", "L 3/5 note"); bare "x/y" is W only if x==y
+- Sun 5 PM weekly recap (record, per-day ✅/❌, notes, one-change prompt), 1st-of-month 7:30 AM season report (win %, best streak, grade tiers S-tier/Solid/Building/Reset)
+- Replies collected via Telegram getUpdates before every send (no other script polls this bot — checked); results in `data/time_blocks_log.json`; before-noon replies score YESTERDAY
+- Streak rules: rest days (no blocks) pass through; an L or an UNSCORED block-day breaks the chain; milestones 3/7/14/21 = Heating up/On fire/Unstoppable/LEGEND MODE
+- Schedule source: `data/time_blocks.json` (template week + per-date overrides); launchd: `com.aios.time-blocks-{am,pm,weekly,monthly}`; log `data/time-blocks.log`
+- Sunday card + weekly recap remind Ryan to send the new Kingfisher schedule photo; on receipt update BOTH the JSON overrides and one-off GCal events. Ryan wants assessment week-by-week and month-by-month, not just daily — weekly/monthly replies (one change; keep/kill/experiment) should be discussed when he brings them in.
+
+**GOALS WIRED INTO BLOCKS (2026-07-04, Ryan: "a time block with no substance isn't a plan"):** every template block in time_blocks.json now carries a `goal` (done-when) shown on morning cards + evening scorecards; W = targets hit, not attendance. Full executable playbook: `aios-starter-kit/docs/block-playbook.md`. Grounded in `Creative-Alternatives-AIOS/plans/90-day-revenue-plan.md` — Ryan earns **15% of revenue he originates**; scoreboard = $ originated → positive reply rate (≥2% reply, ≥30% positive, ≥30% meetings) → conversations → closes. Key block done-whens: outbound = inbox zero + 3 mockup magnets (Miller Johnson SOP) + 25 leads; build = 1 script + 1 LinkedIn post; Fri = 1 long-form + 5 shorts; Sat = ship 1 asset; Sun = week loaded. Weekly: 100 leads, 15 magnets, 3+ conversations, 6+ W days. July: first Ryan-originated order + ACE passed + campaigns at benchmark. Two OPEN decisions from the 90-day plan to nudge: attribution rules in writing + HubSpot "Ryan-originated" field.
+
+**CONTENT FACTORY LIVE (2026-07-04, Ryan: "main goal is consistency; social media is my biggest blocker — make it as easy as possible"):** `scripts/ca_content_factory.py` (launchd `com.aios.ca-content-factory`) sends ready-to-post drafts to Telegram: Mon–Sat 1:45 PM (LinkedIn post w/ 3 hook options + video beat sheet Mon–Thu, 15 min before the build block) and Sun 7:05 AM (week content plan + 2 video concepts, during prep block). Uses claude-sonnet-5 via ANTHROPIC_API_KEY in .env (override: CA_CONTENT_MODEL); pulls real context from time_blocks_log notes + day's blocks; HARD anti-fabrication rule (no invented events — [FILL:] skeletons instead) since fabricated specifics kill a build-in-public brand; never auto-posts (human approval house rule). Ryan's job = edit 10%, paste, post. The old `daily_content_delivery.py` was disabled with the 2026-07-04 zombie-job kill.
+
+**CONTENT SYSTEM v2 (2026-07-05):** (1) `Creative-Alternatives-AIOS/data/pain-points-corpus.md` — 80 verbatim voice-of-customer quotes + killer-stats index + ICP vocabulary cheat sheet + saturated-vs-open angle map, mined by 5 parallel agents (Reddit/reviews/industry-press/ICP-communities/social); factory auto-injects 3 rotating quotes daily via pain_fuel(). (2) Factory saves every drop to `outputs/content-drops/YYYY-MM-DD.md`. (3) `scripts/record_kit.py` + launchd `com.aios.ca-record-kit` Fri 10:00 AM — compiles week's drops + W/L log + pain quotes into a record kit (titles, thumbnail, verbatim cold open, 5 beats w/ [SHOW:] cues, 5 shorts hooks, b-roll checklist) → Telegram + `outputs/record-kits/`; Ryan reads cold open and hits record at 10:30. (4) `Creative-Alternatives-AIOS/plans/content-idea-engine.md` — FUEL×PILLAR×FORMAT formula + ~80 seeded ideas + next-8-episode arc + 4-week calendar. (5) `plans/ca-social-brand-playbook.md` (2026-07-05): CA's OWN funny brand accounts (LinkedIn/IG/TikTok, handle @creativealternatives) — comedic thesis "roast bad swag, be the fix, side with the recipient"; Kenny = deadpan franchise; series: Swag Crimes, Kenny Rates, POV: Your Vendor, Mockup Speedruns, 27 Years of Printing, Swag Closet Files; 17 seed pieces ready; skits filmed in 20-min Friday batch after episode; never name competitors in roasts; LinkedIn page's real job = legitimacy when cold-emailed prospects click. Open positioning angles from the mining (proactive communication as product · accountability with teeth · side with the recipient · vendor memory · REVIEW VACUUM: HALO/Swag.com/Sendoso have ~0 public reviews, SwagUp 2.8★, Custom Ink 2.7★/7,272 — 20 real reviews would make CA the most-proven vendor in public; GTM action item).
+
+**Why:** Ryan's non-negotiables are Hyrox training (lift ~5:10 PM + run after), CA outbound/inbound, video recording, and 1–2 hr/day study. Related: [[creative-alternatives-aios]], [[personal-ai-os-ascend]], [[coaching-os]].
+
+**How to apply:** Treat these blocks as the default structure when scheduling anything for Ryan; protect deadline-locked blocks (ACE study, Hyrox) from CA overflow. Note recurring Thu conflict: "Unlock GTME Expert Session" 8–9 AM ET lands inside the Kingfisher work block.

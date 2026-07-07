@@ -1,0 +1,36 @@
+{
+  "Smartlead": [
+    "connected inboxes/domains",
+    "campaign IDs",
+    "reply forwarding/webhook settings",
+    "unsubscribe footer/address",
+    "sender identities for Ryan and Sway"
+  ],
+  "AgentMail": [
+    "API key",
+    "reply inbox address/domain",
+    "forwarding rules from Smartlead",
+    "webhook endpoint or manual export plan"
+  ],
+  "Sendr": [
+    "template ID/URL",
+    "CSV export fields",
+    "page view notification routing",
+    "Ryan/Sway proof page copy approval"
+  ],
+  "Salesfinity": [
+    "Ryan/Sway user seats",
+    "phone enrichment source",
+    "call disposition export",
+    "battle card import or manual setup"
+  ],
+  "Tracker": [
+    "CSV/Google Sheet/HubSpot decision",
+    "owner field required",
+    "daily update workflow"
+  ],
+  "Calendar": [
+    "Ryan booking link",
+    "Sway booking link or shared Oloxa call link"
+  ]
+}

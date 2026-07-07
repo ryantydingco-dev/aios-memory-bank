@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DealThreads — Live Demo</title>
+<style>
+  :root{
+    --brand:#6366f1; --brand2:#8b5cf6; --ink:#0f172a; --muted:#64748b;
+    --line:#e2e8f0; --bg:#f8fafc; --ok:#16a34a; --amber:#d97706; --card:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  /* ---- fake host site so the widget has context ---- */
+  .site-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 40px;border-bottom:1px solid var(--line);background:#fff}
+  .site-nav .logo{font-weight:800;font-size:18px;letter-spacing:-.3px}
+  .site-nav .links{display:flex;gap:26px;color:var(--muted);font-size:14px;font-weight:500}
+  .hero{max-width:760px;margin:90px auto;padding:0 24px;text-align:center}
+  .hero h1{font-size:46px;line-height:1.08;letter-spacing:-1.2px;margin-bottom:18px}
+  .hero p{font-size:19px;color:var(--muted);margin-bottom:28px}
+  .hero .cta{display:inline-block;background:var(--ink);color:#fff;padding:13px 26px;border-radius:10px;font-weight:600;text-decoration:none}
+  .hint{position:fixed;right:104px;bottom:34px;background:var(--ink);color:#fff;font-size:13px;padding:9px 13px;border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,.18);animation:bob 1.6s ease-in-out infinite}
+  .hint:after{content:"";position:absolute;right:-6px;bottom:14px;border:6px solid transparent;border-left-color:var(--ink)}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+  /* ---- launcher ---- */
+  .launcher{position:fixed;right:28px;bottom:28px;width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;cursor:pointer;
+    box-shadow:0 12px 30px rgba(99,102,241,.45);display:flex;align-items:center;justify-content:center;z-index:50;transition:transform .15s}
+  .launcher:hover{transform:scale(1.06)}
+  .launcher svg{width:28px;height:28px;fill:#fff}
+
+  /* ---- chat panel ---- */
+  .panel{position:fixed;right:28px;bottom:28px;width:392px;max-width:calc(100vw - 32px);height:620px;max-height:calc(100vh - 48px);
+    background:var(--card);border-radius:18px;box-shadow:0 24px 64px rgba(15,23,42,.28);display:none;flex-direction:column;overflow:hidden;z-index:60}
+  .panel.open{display:flex}
+  .phead{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:16px 18px;display:flex;align-items:center;gap:11px}
+  .phead .av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-weight:800}
+  .phead .t{font-weight:700;font-size:15px}
+  .phead .s{font-size:12px;opacity:.85;display:flex;align-items:center;gap:6px}
+  .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block}
+  .phead .x{margin-left:auto;cursor:pointer;opacity:.85;font-size:20px;background:none;border:none;color:#fff}
+  .powered{font-size:11px;color:var(--muted);text-align:center;padding:7px;border-top:1px solid var(--line);background:#fff}
+  .powered b{color:var(--brand)}
+
+  .msgs{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px;background:var(--bg)}
+  .bubble{max-width:84%;padding:11px 14px;border-radius:14px;font-size:14.5px;line-height:1.45;white-space:pre-wrap}
+  .bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+  .me{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+  .typing{align-self:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;border-bottom-left-radius:4px;padding:13px 15px}
+  .typing span{width:7px;height:7px;background:#cbd5e1;border-radius:50%;display:inline-block;margin:0 2px;animation:blink 1.2s infinite}
+  .typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+
+  .input{padding:12px;border-top:1px solid var(--line);background:#fff}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{border:1.5px solid var(--brand);color:var(--brand);background:#fff;border-radius:20px;padding:8px 14px;font-size:13.5px;font-weight:600;cursor:pointer;transition:.12s}
+  .chip:hover{background:var(--brand);color:#fff}
+  .txtrow{display:flex;gap:8px}
+  .txtrow input{flex:1;border:1.5px solid var(--line);border-radius:10px;padding:11px 13px;font-size:14px;outline:none}
+  .txtrow input:focus{border-color:var(--brand)}
+  .txtrow button{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;color:#fff;border-radius:10px;padding:0 16px;font-weight:700;cursor:pointer}
+  .consent{font-size:11px;color:var(--muted);text-align:center;margin-top:8px}
+
+  /* ---- profile reveal ---- */
+  .profile{flex:1;overflow-y:auto;padding:18px;background:var(--bg);display:none}
+  .profile.show{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+  .pcard h3{font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+  .score{display:flex;align-items:center;gap:14px}
+  .ring{width:66px;height:66px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;color:#fff;flex:none}
+  .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700}
+  .b-hi{background:#dcfce7;color:var(--ok)} .b-mid{background:#fef3c7;color:var(--amber)}
+  .row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0;border-bottom:1px dashed var(--line)}
+  .row:last-child{border:none}.row .k{color:var(--muted)}.row .v{font-weight:600;text-align:right}
+  .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .tag{background:#eef2ff;color:var(--brand);font-size:12px;font-weight:600;padding:3px 9px;border-radius:6px}
+  .person{display:flex;gap:10px;align-items:center;padding:7px 0}
+  .person .pi{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex:none}
+  .person .pn{font-weight:600;font-size:14px}.person .pt{font-size:12px;color:var(--muted)}
+  .routed{background:linear-gradient(135deg,#eef2ff,#f5f3ff);border:1px solid #e0e7ff;border-radius:12px;padding:13px;font-size:13.5px}
+  .routed b{color:var(--brand)}
+  .toggle{width:100%;margin-top:6px;background:var(--ink);color:#fff;border:none;border-radius:10px;padding:11px;font-weight:600;cursor:pointer;font-size:13.5px}
+  .narr{font-size:11px;color:#94a3b8;text-align:center;margin:10px 0 2px}
+</style>
+</head>
+<body>
+  <!-- fake host site -->
+  <nav class="site-nav">
+    <div class="logo">◆ NorthAxis</div>
+    <div class="links"><span>Product</span><span>Pricing</span><span>Customers</span><span>Contact</span></div>
+  </nav>
+  <section class="hero">
+    <h1>Revenue infrastructure for modern B2B teams.</h1>
+    <p>The platform 1,200+ mid-market teams use to forecast, route, and close. (This is a demo host site — the chat widget bottom-right is DealThreads.)</p>
+    <a class="cta" href="#">Book a demo</a>
+  </section>
+  <div class="hint" id="hint">👉 This is what your visitor sees — try it</div>
+
+  <!-- launcher -->
+  <button class="launcher" id="launcher" aria-label="Open chat">
+    <svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.3 1.1 4.4 2.9 5.9-.1 1.2-.6 2.6-1.6 3.7 1.7-.2 3.4-.8 4.7-1.8 1.2.4 2.6.7 4 .7 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg>
+  </button>
+
+  <!-- chat panel -->
+  <div class="panel" id="panel">
+    <div class="phead">
+      <div class="av">R</div>
+      <div>
+        <div class="t">NorthAxis Assistant</div>
+        <div class="s"><span class="dot"></span> Online · replies instantly</div>
+      </div>
+      <button class="x" id="close">×</button>
+    </div>
+
+    <div class="msgs" id="msgs"></div>
+    <div class="input" id="inputArea"></div>
+    <div class="profile" id="profile"></div>
+    <div class="powered">⚡ Powered by <b>DealThreads</b> · demo (scripted)</div>
+  </div>
+
+<script>
+(function(){
+  var launcher=document.getElementById('launcher'),panel=document.getElementById('panel'),
+      closeBtn=document.getElementById('close'),msgs=document.getElementById('msgs'),
+      inputArea=document.getElementById('inputArea'),profileEl=document.getElementById('profile'),
+      hint=document.getElementById('hint');
+  var answers={};
+
+  launcher.onclick=function(){panel.classList.add('open');launcher.style.display='none';hint.style.display='none';if(!msgs.dataset.started){msgs.dataset.started=1;run(0);}};
+  closeBtn.onclick=function(){panel.classList.remove('open');launcher.style.display='flex';};
+
+  function scroll(){msgs.scrollTop=msgs.scrollHeight;}
+  function addMsg(text,who){var b=document.createElement('div');b.className='bubble '+who;b.textContent=text;msgs.appendChild(b);scroll();}
+  function typing(cb,ms){var t=document.createElement('div');t.className='typing';t.innerHTML='<span></span><span></span><span></span>';msgs.appendChild(t);scroll();setTimeout(function(){t.remove();cb();},ms||900);}
+
+  // conversation script
+  var steps=[
+    {bot:"Hey 👋 I'm NorthAxis's assistant. Mind a couple quick questions so the right rep can follow up? Takes ~30 seconds.",chips:["Sure, go ahead"]},
+    {key:"intent",bot:"Great. What brings you in today?",chips:["Evaluating for my team","Comparing vendors","Just researching"]},
+    {key:"team",bot:"Got it. How big is the team that'd use this?",chips:["1–10","11–50","51–200","200+"]},
+    {key:"budget",bot:"Helpful. What budget range are you working with?",chips:["Under $10k","$10–50k","$50–150k","$150k+"]},
+    {key:"timeline",bot:"And when are you hoping to have something in place?",chips:["This month","This quarter","Just exploring"]},
+    {key:"email",bot:"Last thing — what's your work email so the right rep can reach out?",input:"you@company.com"}
+  ];
+
+  function run(i){
+    if(i>=steps.length){return finish();}
+    var s=steps[i];
+    typing(function(){
+      addMsg(s.bot,'bot');
+      if(s.chips){renderChips(s.chips,function(val){answers[s.key||'consent']=val;addMsg(val,'me');clearInput();run(i+1);});}
+      else if(s.input){renderInput(s.input,function(val){answers[s.key]=val;addMsg(val,'me');clearInput();run(i+1);});}
+    });
+  }
+  function clearInput(){inputArea.innerHTML='';}
+  function renderChips(arr,cb){inputArea.innerHTML='';var wrap=document.createElement('div');wrap.className='chips';arr.forEach(function(c){var b=document.createElement('button');b.className='chip';b.textContent=c;b.onclick=function(){cb(c);};wrap.appendChild(b);});inputArea.appendChild(wrap);}
+  function renderInput(ph,cb){inputArea.innerHTML='';var row=document.createElement('div');row.className='txtrow';var inp=document.createElement('input');inp.placeholder=ph;var btn=document.createElement('button');btn.textContent='Send';function go(){var v=inp.value.trim();if(v.length<3)return;cb(v);}btn.onclick=go;inp.onkeydown=function(e){if(e.key==='Enter')go();};row.appendChild(inp);row.appendChild(btn);inputArea.appendChild(row);var c=document.createElement('div');c.className='consent';c.textContent="🔒 By continuing you agree we may store these details to follow up.";inputArea.appendChild(c);inp.focus();}
+
+  // ---- enrichment + scoring (faked from the email domain so it feels personalized) ----
+  function deriveCompany(email){
+    var dom=(email.split('@')[1]||'company.com').toLowerCase();
+    var name=dom.split('.')[0].replace(/[-_]/g,' ');
+    name=name.charAt(0).toUpperCase()+name.slice(1);
+    return {name:name,domain:dom};
+  }
+  function score(){
+    var s=42;
+    if(answers.intent==='Evaluating for my team')s+=22;else if(answers.intent==='Comparing vendors')s+=14;
+    if(answers.team==='51–200')s+=14;else if(answers.team==='200+')s+=18;else if(answers.team==='11–50')s+=9;
+    if(answers.budget==='$50–150k')s+=16;else if(answers.budget==='$150k+')s+=20;else if(answers.budget==='$10–50k')s+=10;
+    if(answers.timeline==='This month')s+=12;else if(answers.timeline==='This quarter')s+=7;
+    return Math.min(96,s);
+  }
+
+  function finish(){
+    typing(function(){
+      addMsg("Perfect — thanks! I'm building your profile and routing you to the right rep now…",'bot');
+      typing(function(){
+        addMsg("✅ Done. A rep will reach out shortly. (In the live product, your enriched profile lands in their CRM in under 2 minutes.)",'bot');
+        inputArea.style.display='none';
+        renderProfile();
+      },1600);
+    });
+  }
+
+  function renderProfile(){
+    var co=deriveCompany(answers.email||'lead@acme.com');
+    var sc=score();
+    var seg=sc>=75?{t:'Hot / High-Fit',c:'b-hi'}:{t:'Warm / Nurture',c:'b-mid'};
+    var ringColor=sc>=75?'linear-gradient(135deg,#16a34a,#22c55e)':'linear-gradient(135deg,#d97706,#f59e0b)';
+    profileEl.classList.add('show');
+    profileEl.innerHTML=
+      '<div class="narr">— THE BUYER PROFILE YOUR REP OPENS —</div>'+
+      '<div class="pcard"><h3>🎯 ICP Fit</h3><div class="score"><div class="ring" style="background:'+ringColor+'">'+sc+'</div>'+
+        '<div><span class="badge '+seg.c+'">'+seg.t+'</span><div style="font-size:13px;color:var(--muted);margin-top:6px">Scored from stated intent, budget, timeline & firmographic fit.</div></div></div></div>'+
+      '<div class="pcard"><h3>💬 Captured in conversation</h3>'+
+        '<div class="row"><span class="k">Intent</span><span class="v">'+(answers.intent||'—')+'</span></div>'+
+        '<div class="row"><span class="k">Team size</span><span class="v">'+(answers.team||'—')+'</span></div>'+
+        '<div class="row"><span class="k">Budget</span><span class="v">'+(answers.budget||'—')+'</span></div>'+
+        '<div class="row"><span class="k">Timeline</span><span class="v">'+(answers.timeline||'—')+'</span></div>'+
+        '<div class="row"><span class="k">Work email</span><span class="v">'+(answers.email||'—')+'</span></div></div>'+
+      '<div class="pcard"><h3>🏢 '+co.name+' &nbsp;<span style="font-weight:400;color:var(--muted)">'+co.domain+'</span></h3>'+
+        '<div class="row"><span class="k">Employees</span><span class="v">120–250</span></div>'+
+        '<div class="row"><span class="k">Est. revenue</span><span class="v">$18M–$30M</span></div>'+
+        '<div class="row"><span class="k">Recent funding</span><span class="v">Series B · $22M (4 mo ago)</span></div>'+
+        '<div class="row"><span class="k">HQ</span><span class="v">Austin, TX</span></div>'+
+        '<div style="margin-top:8px"><span class="k" style="font-size:13px;color:var(--muted)">Tech stack</span><div class="stack"><span class="tag">Salesforce</span><span class="tag">Marketo</span><span class="tag">Segment</span><span class="tag">Snowflake</span></div></div></div>'+
+      '<div class="pcard"><h3>👤 Decision-makers</h3>'+
+        '<div class="person"><div class="pi">JM</div><div><div class="pn">Jordan Meyer</div><div class="pt">VP Revenue Operations</div></div></div>'+
+        '<div class="person"><div class="pi">Ak</div><div><div class="pn">Aisha Khan</div><div class="pt">Director, Demand Gen</div></div></div></div>'+
+      '<div class="routed">📤 <b>Routed to:</b> Sarah Chen (Mid-Market AE) · Slack alert sent.<br><b>Recommended next step:</b> Call today — high intent, budget confirmed, '+(answers.timeline||'active')+' timeline.</div>'+
+      '<button class="toggle" id="restart">↻ Run the demo again</button>';
+    document.getElementById('restart').onclick=function(){location.reload();};
+    profileEl.scrollTop=0;
+  }
+})();
+</script>
+</body>
+</html>

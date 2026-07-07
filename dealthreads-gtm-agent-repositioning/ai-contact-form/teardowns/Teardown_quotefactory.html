@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quote Factory — Contact Form Teardown</title>
+<style>
+:root{--ink:#0f172a;--slate:#475569;--mut:#94a3b8;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;
+--accent:#0d9488;--accent2:#0f766e;--warn:#b45309;--warnbg:#fffbeb;--cold:#64748b;--coldbg:#f1f5f9;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:40px 22px 80px}
+h1{font-size:25px;font-weight:800;letter-spacing:-.5px}
+.sub{color:var(--slate);font-size:15px;margin:9px 0 22px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;margin:24px 0}
+@media(max-width:640px){.cols{grid-template-columns:1fr}}
+.panel{border-radius:14px;padding:20px 22px;border:1px solid var(--line)}
+.before{background:var(--coldbg)}
+.after{background:var(--card);border-color:#99f6e4;box-shadow:0 6px 20px rgba(13,148,136,.08)}
+.plabel{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;margin-bottom:12px}
+.before .plabel{color:var(--cold)} .after .plabel{color:var(--accent2)}
+.field{font-size:13.5px;margin:8px 0;color:var(--slate)}
+.field b{color:var(--ink);font-weight:650}
+.thin{color:var(--mut);font-style:italic;font-size:13.5px}
+.chip{display:inline-block;background:#0f172a;color:#e2e8f0;border-radius:5px;padding:2px 8px;
+font-size:11.5px;margin:3px 4px 0 0;font-family:ui-monospace,monospace}
+.dms{margin:6px 0 0 18px;font-size:13px;color:var(--slate)}
+.brief{background:#f0fdfa;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+padding:14px 16px;margin:20px 0;font-size:14px;color:#134e4a}
+.brief .plabel{color:var(--accent2)}
+.gaps{background:var(--warnbg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:18px 0}
+.gaps .plabel{color:var(--warn)}
+.gaps ul{margin:6px 0 0 18px;font-size:13px;color:#78350f}
+.gaps li{margin:3px 0}
+.honest{font-size:12.5px;color:var(--slate);font-style:italic;margin-top:8px}
+.footer{margin-top:34px;background:#0f172a;color:#cbd5e1;border-radius:14px;padding:24px}
+.footer h3{color:#fff;font-size:17px;margin-bottom:8px}.footer p{font-size:13.5px;margin-bottom:8px}
+.cta{display:inline-block;margin-top:8px;background:var(--accent);color:#fff;font-weight:700;
+padding:11px 20px;border-radius:9px;text-decoration:none;font-size:14px}
+.byline{font-size:12px;color:var(--mut);margin-top:14px;text-align:center}
+</style></head><body><div class="wrap">
+
+<h1>Quote Factory — what your contact form throws away</h1>
+<div class="sub">I filled out your form as a test. Here's what your rep gets back vs. what they <i>could</i> have known before the callback — built automatically from that one submission.</div>
+
+<div class="cols">
+  <div class="panel before">
+    <div class="plabel">What your form captures</div>
+    <div class="field"><b>Name:</b> <span class="thin">whatever they typed</span></div>
+    <div class="field"><b>Email:</b> <span class="thin">work email</span></div>
+    <div class="field"><b>Message:</b> <span class="thin">one free-text line</span></div>
+    <div class="field thin" style="margin-top:14px">→ then ~20 minutes of your rep Googling before they can call back with any context.</div>
+  </div>
+  <div class="panel after">
+    <div class="plabel">What my system builds (automatically)</div>
+    
+    <div class="field"><b>Quote Factory</b> — Quote Factory builds a Transportation Management System (TMS) purpose-built for freight brokers. The platform covers the full brokerage workflow: LTL/TL rate quoting, carrier sourcing and onboarding, real-time load tracking, automated invoicing, and financial close. It integrates with DAT, Truckstop, Trucker Tools, QuickBooks, MyCarrierPortal, Denim, RMIS, Macropoint, and 100+ LTL carriers. Pricing is shipment-volume-based ($499/mo up to 150 shipments, $999/mo up to 300, custom above 300), with no contracts, no hidden fees, and unlimited users.</div>
+    <div class="field"><b>Size:</b> ~13 employees (Tracxn, Apr 2026); Crunchbase signals 1–10, likely undercounting. Early-stage, small team.</div>
+    <div class="field"><b>Industry:</b> Freight / Logistics SaaS — Transportation Management Systems (TMS) for freight brokers</div>
+    <div class="field"><b>Funding:</b> No confirmed funding rounds found. PitchBook and Crunchbase profiles exist but no round details are visible in the research. The $50M Series B result in search is for a different company (&#x27;Factory,&#x27; not &#x27;Quote Factory&#x27;) — disregarded.</div>
+    <div class="field"><b>Tech stack:</b><br><span class="chip">QuickBooks</span><span class="chip">DAT loadboard</span><span class="chip">DAT RateView</span><span class="chip">Truckstop loadboard</span><span class="chip">Trucker Tools</span><span class="chip">Macropoint</span><span class="chip">MyCarrierPortal</span><span class="chip">RMIS</span><span class="chip">CarrierOK</span><span class="chip">Highway</span></div>
+    <div class="field"><b>Likely decision-makers:</b><ul class="dms"><li>Founder / CEO (small founder-led SaaS — likely the decision maker; name unknown from this lead)</li><li>General Manager or Operations Lead (per customer testimonials, GMs are active users)</li><li>No named internal contacts identifiable — form returned no name or email</li></ul></div>
+    <div class="field"><b>ICP fit:</b> strong — Quote Factory is precisely the ICP archetype: a small, founder-led freight/logistics TMS SaaS product (13 employees, no visible VC scale), serving freight brokers, sales-led go-to-market (demo-request CTA throughout site, no self-serve signup), and pricing that puts even entry-tier customers at $5,988/yr ACV with the Scale tier clearly custom/enterprise — well above the $8k ACV threshold. The inbound was a real demo form hit. Only unknowns are contact identity and specific use case for reaching out, which limits confidence on timing and urgency.</div>
+  </div>
+</div>
+
+<div class="brief"><div class="plabel">The call-prep brief your rep opens</div>This is a strong ICP match: Quote Factory is a small freight broker TMS with ~13 employees, demo-led sales motion, and pricing starting at $6k/yr ACV. The lead came through a real demo form, but zero contact info was captured — the rep&#x27;s first job is identifying who submitted it (check form platform logs, IP, or follow-up email sequence). When reaching out, lead with an acknowledgment that they&#x27;re a fellow SaaS player in freight-tech and tailor the conversation around what they&#x27;d need from your solution in the context of their broker-focused workflow or growth goals.</div>
+
+<div class="gaps">
+  <div class="plabel">⚠ What it still can't tell you (and I won't pretend it can)</div>
+  <ul><li>Lead name — form returned nothing</li><li>Lead email — form returned nothing</li><li>Lead&#x27;s role / seniority — cannot determine decision-maker vs. evaluator</li><li>HQ / office location</li><li>Confirmed funding status (PitchBook/Crunchbase profiles exist but round data not accessible)</li><li>Annual recurring revenue or customer count</li><li>What specifically prompted the inbound (pain point, competitor evaluation, new initiative)</li><li>Current tech stack they use as a buyer (not the integrations they offer)</li></ul>
+  <div class="honest">I'd rather show you the gaps than fake confidence. The company-level picture above is the part that's rock-solid and runs on every single lead.</div>
+</div>
+
+<div class="footer">
+  <h3>This took 30 seconds, automatically.</h3>
+  <p>Every lead that fills out your form could land in your CRM with this profile already attached — before your rep makes the callback. No more 20 minutes of research per lead, no more calling a $50k deal and a tire-kicker the same way.</p>
+  <p>I built this one by hand as a sample. The real thing runs on every submission. Want me to walk you through how it'd work on your site?</p>
+  <a class="cta" href="#">Grab 15 minutes → [your calendar link]</a>
+</div>
+<div class="byline">Built as a free sample for Quote Factory · company data pulled live from public sources · person-level details to be verified · no strings</div>
+</div></body></html>

@@ -1,0 +1,24 @@
+# === Secrets — never commit ===
+**/.env
+*.pem
+*.key
+credentials/
+
+# === Dead local copy of the old starter-kit (canonical repo lives at ~/Documents/AIOS/aios-starter-kit) ===
+aios-starter-kit/
+
+# === Dependencies / build noise ===
+node_modules/
+__pycache__/
+*.pyc
+
+# === Obsidian per-machine churn (plugins/config DO sync) ===
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# === Claude Code runtime ===
+.claude/worktrees/
+
+# === OS noise ===
+.DS_Store

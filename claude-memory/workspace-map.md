@@ -1,0 +1,22 @@
+---
+name: workspace-map
+description: "Canonical map of Ryan's workspaces after the 2026-07-04 full audit — one cockpit (AIOS-Memory-Bank/LIFE-OS.md), three engines (CA, life-automation, ASCEND), everything else archived"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: bb05dc40-cfc0-4a78-b5ed-f204d03b92f3
+---
+
+Full 4-agent workspace audit run 2026-07-04. Canonical structure going forward — **one cockpit, three engines**:
+
+- **Cockpit:** `~/Documents/AIOS-Memory-Bank/LIFE-OS.md` (single front door: goal, engines, rhythm, weekly scoreboard, open loops). Memory Bank also holds Projects/*.md narratives + daily Work Logs. CA's real workspace is NOT here (Ryan sometimes thinks it is) — only its narrative memory file.
+- **Business engine:** `~/Documents/Creative-Alternatives-AIOS/` (2.2 GB, git, healthy, independent — own .env/venv/scripts). Tactically strong (reply-watcher live, mockup SOP proven, eps 2–6 scripted). **Scoreboard turned ON 2026-07-04:** patched collect_smartlead.py `__main__` to persist (was print-only), installed python-dotenv/requests in CA venv; launchd `com.aios.ca-metrics-daily` (16:45 collect→data.db→key-metrics.md) + `com.aios.ca-weekly-report` (Sun 16:50 --telegram, 10 min before recap card). First pull: Law 1.7% reply & climbing, **Financial 0.4% — below 2% benchmark, needs troubleshooting**, camps 10.1%/squash 5.2% completed, 15 drafted campaigns ~19k leads queued. Engine-1 unblock plan at `pillars/2-customer-acquisition/dormant-goldmine-plan.md` (Maclaine QB add-user ask + Kenny pre-QB archive ingest — QB only holds ~1.5 yrs). Attribution: ledger `data/originated-ledger.csv` + QB memo `RT-ORIG`; **HubSpot NOT committed — Ryan deferred CRM choice, don't assume HubSpot for CA**. Two attribution rules still to settle with Kenny (reactivation counts? store recurs?).
+- **Life-automation engine:** `~/Documents/AIOS/aios-starter-kit/` (11 GB, ~75% dead weight; git DIRTY: 8 unpushed commits + modified files). Only ~5-10% serves live systems: time_blocks.py, ca_content_factory.py, coaching-os/, shared infra (.env, venv). 19 retired apps (5.8 GB) + 8 retired script clusters. Also `~/Documents/AIOS/` parent is 58 GB total (incl. oloxa-outbound-engine etc.).
+- **Fitness engine:** `~/Documents/personal-ai-os/` (ASCEND, live Railway product, healthy) + ace-cpt-tutor skill data at `~/.claude/skills/ace-cpt-tutor/data/progress.json` (current daily; exam LOCKED Jul 18 2026 — coaching-os master plan's "Aug 11" is stale). coaching-os/ lives inside aios-starter-kit.
+- **Dead workspaces:** YM (255 MB, still had daily collectors running as of audit), Tik Tok PI, wrapped-in-love (1.1 GB), Codex, automation-delivery; Memory Bank carries 138 MB retired AI-GTM-Engine artifacts.
+
+**Zombie launchd jobs — KILLED 2026-07-04 (Ryan approved "kill everything"):** 24 jobs booted out and plists moved to `~/Library/LaunchAgents/disabled/` (reversible: move back + `launchctl bootstrap gui/501 <plist>`). Includes GTD reminders, Commandos bot, and YM daily brief. Remaining custom jobs: time-blocks ×4, ca-content-factory, ascend.server + ascend.strava-pull (both showed exit code 78 at audit time — local ASCEND server may be erroring; production is on Railway), plus hermes/openclaw gateways. Original zombie list: gig-radar (every 10 min!), reply-monitor (30 min), x-radar, influencer-radar, lead-engine, dealthread-morning-check, linkedin orchestrator, meeting-engine (3x/day), lead-hubspot-sync, runvue-sync (2x/day), origami-airtable-sync, daily-content (broken since May 31), ai-landscape, ai-trends, oloxa trio, outbound-batch, YM daily-brief + data-collect. Judgment items: gtd-daily/gtd-weekly, com.commandos.bot (KeepAlive Telegram bot). KEEP always: time-blocks ×4, ca-content-factory, ascend.server, ascend.strava-pull, ai.hermes.gateway, ai.openclaw.gateway, hermes dashboard.
+
+**Why:** Ryan asked (2026-07-04) to audit all workspaces and consolidate toward one system serving CA + personal brand + health/fitness. Physical merge rejected (breaks launchd paths, git repos, Railway deploys, Claude memory keying to this project dir) — cockpit + engines instead.
+
+**How to apply:** Treat LIFE-OS.md as the front door; keep it current (weekly scoreboard row after each Sunday recap). Never resurrect archived ventures by default. When Ryan says "my workspace," clarify which engine. Related: [[template-week-time-blocks]], [[creative-alternatives-aios]], [[personal-ai-os-ascend]], [[coaching-os]].

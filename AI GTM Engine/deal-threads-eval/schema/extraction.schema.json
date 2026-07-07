@@ -1,0 +1,71 @@
+{
+  "$comment": "MIRROR of leadExtractionSchema in deal-threads-dev/src/llm-extractor.js. Keep in sync. This is the contract every agent shares. If the product changes its schema, bump DATASET_VERSION and reconcile.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["visitor", "company", "qualification", "routing", "meta"],
+  "properties": {
+    "visitor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "email", "phone", "role", "seniority", "authority_signal"],
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "email": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "role": { "type": ["string", "null"] },
+        "seniority": { "type": "string", "enum": ["executive", "vp", "director", "manager", "individual_contributor", "founder", "consultant", "unknown"] },
+        "authority_signal": { "type": "string", "enum": ["decision_owner", "influencer", "researcher", "consultant", "unknown"] }
+      }
+    },
+    "company": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "domain", "website", "industry_hint", "size_hint"],
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "domain": { "type": ["string", "null"] },
+        "website": { "type": ["string", "null"] },
+        "industry_hint": { "type": ["string", "null"] },
+        "size_hint": { "type": ["string", "null"] }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["business_need", "pain_point", "product_interest", "timeline", "budget_status", "budget_range", "buying_stage", "crm", "sales_stack", "integration_need"],
+      "properties": {
+        "business_need": { "type": ["string", "null"] },
+        "pain_point": { "type": ["string", "null"] },
+        "product_interest": { "type": ["string", "null"] },
+        "timeline": { "type": "string", "enum": ["this_week", "this_month", "this_quarter", "later_this_year", "researching", "unknown"] },
+        "budget_status": { "type": "string", "enum": ["approved", "likely", "building_case", "none", "unknown"] },
+        "budget_range": { "type": "string", "enum": ["under_10k", "10k_30k", "30k_60k", "60k_plus", "unknown"] },
+        "buying_stage": { "type": "string", "enum": ["active_project", "vendor_evaluation", "education", "support", "partner", "unknown"] },
+        "crm": { "type": "string", "enum": ["hubspot", "salesforce", "pipedrive", "other", "unknown"] },
+        "sales_stack": { "type": "array", "items": { "type": "string" } },
+        "integration_need": { "type": ["string", "null"] }
+      }
+    },
+    "routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["priority_hint", "route_type", "recommended_next_action"],
+      "properties": {
+        "priority_hint": { "type": "string", "enum": ["high", "medium", "low", "manual_review"] },
+        "route_type": { "type": "string", "enum": ["sales", "support", "customer_success", "partnerships", "nurture", "manual_review"] },
+        "recommended_next_action": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["confidence", "missing_required_fields", "needs_human_review", "reasoning_summary"],
+      "properties": {
+        "confidence": { "type": "number" },
+        "missing_required_fields": { "type": "array", "items": { "type": "string" } },
+        "needs_human_review": { "type": "boolean" },
+        "reasoning_summary": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

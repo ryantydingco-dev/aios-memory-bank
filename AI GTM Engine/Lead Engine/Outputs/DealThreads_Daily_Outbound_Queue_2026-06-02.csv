@@ -1,0 +1,341 @@
+rank,lead_id,company,buyer_name,buyer_role,website,form_url,segment,fit_score,score,channel,linkedin_connect_note,linkedin_dm,email_subject,email_body,follow_up_1,follow_up_2,follow_up_3,call_opener,reason
+1,beehex automation::buyer,BeeHex Automation,,President / Business Development,https://beehexautomation.com/,https://beehexautomation.com/,Robotics and AI integrator,5,180,Email,"Looked at BeeHex Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at BeeHex Automation's quote/contact intake. One thing stood out: Contact intake lists email and phone but does not visibly collect application type, payload, plant constraints, timeline, or budget.
+
+That probably still leaves sales figuring out application type, payload, facility constraints, robot brand, timeline, and budget before the first reply.
+
+Want me to send a quick intake teardown?",BeeHex Automation form teardown,"Hi,
+
+I looked at BeeHex Automation's form here: https://beehexautomation.com/
+
+One thing stood out: Contact intake lists email and phone but does not visibly collect application type, payload, plant constraints, timeline, or budget.
+
+That probably still leaves sales figuring out application type, payload, facility constraints, robot brand, timeline, and budget before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact intake lists email and phone but does not visibly collect application type, payload, plant constraints, timeline, or budget.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at BeeHex Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+2,integro technologies::buyer,Integro Technologies,,Sales Manager / Business Development,https://www.integro-tech.com/,https://www.integro-tech.com/,Machine vision AI integrator,5,180,Email,"Looked at Integro Technologies' quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at Integro Technologies' quote/contact intake. One thing stood out: Quote/service path does not visibly separate deep learning use case, inspection target, line speed, part variability, or validation needs.
+
+That probably still leaves sales figuring out inspection target, line speed, camera/lighting constraints, defect types, validation needs, and timeline before the first reply.
+
+Want me to send a quick intake teardown?",Integro Technologies form teardown,"Hi,
+
+I looked at Integro Technologies's form here: https://www.integro-tech.com/
+
+One thing stood out: Quote/service path does not visibly separate deep learning use case, inspection target, line speed, part variability, or validation needs.
+
+That probably still leaves sales figuring out inspection target, line speed, camera/lighting constraints, defect types, validation needs, and timeline before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Quote/service path does not visibly separate deep learning use case, inspection target, line speed, part variability, or validation needs.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at Integro Technologies' quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+3,even automation::buyer,Even Automation,,Owner / Sales Manager,https://www.evenautomation.com,https://www.evenautomation.com/contact-us,Industrial automation integrator,5,180,Email,"Looked at Even Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at Even Automation's quote/contact intake. One thing stood out: Contact form offers a free onsite consultation but does not visibly capture process, equipment, plant location, constraints, or implementation urgency.
+
+That probably still leaves sales figuring out process type, existing equipment, plant location, downtime constraints, timeline, and budget before the first reply.
+
+Want me to send a quick intake teardown?",Even Automation form teardown,"Hi,
+
+I looked at Even Automation's form here: https://www.evenautomation.com/contact-us
+
+One thing stood out: Contact form offers a free onsite consultation but does not visibly capture process, equipment, plant location, constraints, or implementation urgency.
+
+That probably still leaves sales figuring out process type, existing equipment, plant location, downtime constraints, timeline, and budget before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact form offers a free onsite consultation but does not visibly capture process, equipment, plant location, constraints, or implementation urgency.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at Even Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+4,freedom automation::buyer,Freedom Automation,,Sales Manager / Engineering Manager,https://fainc.us/,https://fainc.us/,Robotic systems integrator,5,180,Email,"Looked at Freedom Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at Freedom Automation's quote/contact intake. One thing stood out: Contact path does not visibly collect application type, robot cell need, part handling requirements, or support urgency.
+
+That probably still leaves sales figuring out application type, material handling need, robot brand, part specs, support urgency, and timeline before the first reply.
+
+Want me to send a quick intake teardown?",Freedom Automation form teardown,"Hi,
+
+I looked at Freedom Automation's form here: https://fainc.us/
+
+One thing stood out: Contact path does not visibly collect application type, robot cell need, part handling requirements, or support urgency.
+
+That probably still leaves sales figuring out application type, material handling need, robot brand, part specs, support urgency, and timeline before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact path does not visibly collect application type, robot cell need, part handling requirements, or support urgency.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at Freedom Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+5,omni automation::buyer,Omni Automation,,President / Sales Manager,https://omniautomation.com/,https://omniautomation.com/,Industrial automation and vision,5,180,Email,"Looked at Omni Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at Omni Automation's quote/contact intake. One thing stood out: Contact form asks for a message but does not visibly qualify robotics, AMR, material handling, Cognex vision, or project urgency.
+
+That probably still leaves sales figuring out automation category, plant location, current equipment, budget, timeline, and technical constraints before the first reply.
+
+Want me to send a quick intake teardown?",Omni Automation form teardown,"Hi,
+
+I looked at Omni Automation's form here: https://omniautomation.com/
+
+One thing stood out: Contact form asks for a message but does not visibly qualify robotics, AMR, material handling, Cognex vision, or project urgency.
+
+That probably still leaves sales figuring out automation category, plant location, current equipment, budget, timeline, and technical constraints before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact form asks for a message but does not visibly qualify robotics, AMR, material handling, Cognex vision, or project urgency.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at Omni Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+6,ez automation::buyer,EZ Automation,,Founder / Business Development,https://ezautomation.ai,https://ezautomation.ai/contact/,Industrial automation consulting,5,180,Email,"Looked at EZ Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at EZ Automation's quote/contact intake. One thing stood out: Contact page invites automation consulting but does not visibly capture production challenge, equipment, ROI goal, timeline, or budget.
+
+That probably still leaves sales figuring out production challenge, equipment, ROI target, project scope, timeline, and budget before the first reply.
+
+Want me to send a quick intake teardown?",EZ Automation form teardown,"Hi,
+
+I looked at EZ Automation's form here: https://ezautomation.ai/contact/
+
+One thing stood out: Contact page invites automation consulting but does not visibly capture production challenge, equipment, ROI goal, timeline, or budget.
+
+That probably still leaves sales figuring out production challenge, equipment, ROI target, project scope, timeline, and budget before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact page invites automation consulting but does not visibly capture production challenge, equipment, ROI goal, timeline, or budget.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at EZ Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+7,industrial tool inc::buyer,Industrial Tool Inc,,Sales Manager / Business Development,https://industrial-tool.com,https://industrial-tool.com/contact/,Robotic automation and custom machines,5,180,Email,"Looked at Industrial Tool Inc's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at Industrial Tool Inc's quote/contact intake. One thing stood out: Contact form asks for basic details and message but does not visibly capture fixtures, CNC needs, robot cell scope, industry, or quote timing.
+
+That probably still leaves sales figuring out workholding need, robot cell scope, industry, part specs, quote timing, and budget before the first reply.
+
+Want me to send a quick intake teardown?",Industrial Tool Inc form teardown,"Hi,
+
+I looked at Industrial Tool Inc's form here: https://industrial-tool.com/contact/
+
+One thing stood out: Contact form asks for basic details and message but does not visibly capture fixtures, CNC needs, robot cell scope, industry, or quote timing.
+
+That probably still leaves sales figuring out workholding need, robot cell scope, industry, part specs, quote timing, and budget before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact form asks for basic details and message but does not visibly capture fixtures, CNC needs, robot cell scope, industry, or quote timing.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at Industrial Tool Inc's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+8,mcenery automation::buyer,McEnery Automation,,Sales Manager / Operations Leader,https://www.mceneryautomation.com,https://www.mceneryautomation.com/contact-us,Process automation integrator,5,180,Email,"Looked at McEnery Automation's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at McEnery Automation's quote/contact intake. One thing stood out: Contact page asks for manufacturing challenge but could collect more structured process, plant, PLC/control, urgency, and budget context before sales review.
+
+That probably still leaves sales figuring out manufacturing challenge, process type, PLC/control stack, plant location, urgency, and stakeholders before the first reply.
+
+Want me to send a quick intake teardown?",McEnery Automation form teardown,"Hi,
+
+I looked at McEnery Automation's form here: https://www.mceneryautomation.com/contact-us
+
+One thing stood out: Contact page asks for manufacturing challenge but could collect more structured process, plant, PLC/control, urgency, and budget context before sales review.
+
+That probably still leaves sales figuring out manufacturing challenge, process type, PLC/control stack, plant location, urgency, and stakeholders before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact page asks for manufacturing challenge but could collect more structured process, plant, PLC/control, urgency, and budget context before sales review.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at McEnery Automation's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+9,accubilt::buyer,AccuBilt,,Sales Manager / Business Development,https://accubilt.com/,https://accubilt.com/,Turnkey automation systems,5,180,Email,"Looked at AccuBilt's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at AccuBilt's quote/contact intake. One thing stood out: Request-a-quote motion does not visibly collect welding/material handling process, robot requirement, part specs, volumes, or timeline.
+
+That probably still leaves sales figuring out process type, part specs, production volume, robot requirement, budget, and timeline before the first reply.
+
+Want me to send a quick intake teardown?",AccuBilt form teardown,"Hi,
+
+I looked at AccuBilt's form here: https://accubilt.com/
+
+One thing stood out: Request-a-quote motion does not visibly collect welding/material handling process, robot requirement, part specs, volumes, or timeline.
+
+That probably still leaves sales figuring out process type, part specs, production volume, robot requirement, budget, and timeline before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Request-a-quote motion does not visibly collect welding/material handling process, robot requirement, part specs, volumes, or timeline.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at AccuBilt's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale
+10,eamvision::buyer,EAMVision,,Owner / Sales Manager,https://eamvision.com/,https://eamvision.com/,Machine vision AI integrator,5,180,Email,"Looked at EAMVision's quote/contact intake while researching high-ticket project handoffs. It captures the lead, but sales may still need to build the project profile manually. Worth connecting.","Appreciate the connect.
+
+I looked at EAMVision's quote/contact intake. One thing stood out: Contact prompt offers quotes and consultation but does not visibly structure defect type, camera setup, line speed, industry, or demo-software need.
+
+That probably still leaves sales figuring out defect type, camera setup, line speed, industry, validation needs, and budget before the first reply.
+
+Want me to send a quick intake teardown?",EAMVision form teardown,"Hi,
+
+I looked at EAMVision's form here: https://eamvision.com/
+
+One thing stood out: Contact prompt offers quotes and consultation but does not visibly structure defect type, camera setup, line speed, industry, or demo-software need.
+
+That probably still leaves sales figuring out defect type, camera setup, line speed, industry, validation needs, and budget before the first reply.
+
+That is the gap Deal Threads is built around: turning a form fill into a project-ready buyer profile before callback.
+
+Want me to send over the quick intake teardown?
+
+Ryan","One specific thing I noticed:
+
+Contact prompt offers quotes and consultation but does not visibly structure defect type, camera setup, line speed, industry, or demo-software need.
+
+That is usually the gap between ""we got a lead"" and ""sales or engineering knows what is worth a callback.""
+
+Still worth sending the teardown?","The project profile I would want sales to see after this form:
+
+- process or problem
+- timeline
+- equipment or site context
+- technical constraints
+- unknowns to confirm
+- recommended opener
+
+That is the before/after I can map in the intake teardown. Want me to send it?","Should I close the loop here, or would it still be useful if I sent the form teardown later?","Hey, this is Ryan. I was looking at EAMVision's quote/contact intake and had one specific thought: it captures the lead, but it may still leave sales doing the project-profile research manually. I was calling to see if it would be useful if I sent the quick intake teardown.",fit 5/5; visible form; specific weak-form observation; manual research gap identified; reason now; teardown first; high-value sale

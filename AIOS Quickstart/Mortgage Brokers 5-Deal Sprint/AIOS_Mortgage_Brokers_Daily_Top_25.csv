@@ -1,0 +1,888 @@
+rank,fit_score,signal_labels,recommended_next_action,First Name,Last Name,Full Name,Title,Seniority,Company Name,Org,Email Business,Business Status,LinkedIn,City,State,Company Website,Company LinkedIn,Company Employee Count,Company Size,Company Annual Revenue,Company Product and Services,Company Description,personalization_anchor,recommended_routines,linkedin_message,email_subject,email_body,followup_1
+1,135,"owner_or_founder | branch_manager | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,commercial,investor,heloc | speed_service_language:fast,streamlined,customer service | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Mario,Hart,Mario Hart,Branch Manager /  Vice President /  Loan Originator,manager,American Home Lending USA,American Home Lending USA,mario@ahlusa1.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/mariohart,Clearwater,Florida,americanhomelendingusa.com,https://www.linkedin.com/company/ahlusa,11-50,22,1000000-4999999,"mortgage lending, reverse mortgage, 100% cashout mortgage, va, usda/rural, 203k rehab mortgage, $100 down payment homes, $0 down payment homes, fha financing, jumbo mortgage, no appraisal mortgage, first-time homebuyer program, national down payment assistance","American Home Lending USA is a top-rated mortgage lender with dozens of specialized home loan options. The key to our success has been a combination of consistently offering the lowest mortgage rates and providing outstanding customer service and treat each client as an individual, not a number.  Our goal is to create satisfied clients one at a time.  Since our company was founded in 2008, we have helped thousands of homebuyer and homeowners with their home loan needs and proudly maintain an A+ rating with the Better Business Bureau.
+
+Nearly 100% of our business is by referral from satisfied clients, highly successful realtors and the most respected homebuilders in the industry.  These relationships are a direct result of over a decade of doing what we do best – providing our clients with unparalleled service while offering them the best mortgage options available.
+
+Our team of mortgage experts will ensure our client's are paired with a home loan program which best suits their needs with the goals of maximizing their cash, minimizing their costs (if any), and close fast.  There are many home loan options to choose from and together we’ll help find the loan that’s the best for you and your family.
+
+We offer a variety of mortgage solutions and are able to offer competitive wholesale mortgage rates. Some of our popular mortgage products include: rate buy-downs, down payment assistance, VA, Conventional, FHA, USDA, HELOC, cash out refinance, reverse mortgages (HECM), VA IRRRL Streamline refinance, 203K purchase/refinance (home improvement), Jumbo loans, DCSR, commercial/investor products.
+
+Whether you are shopping for a new home purchase or looking to lower your mortgage rate or cash out equity to pay off debt, our streamlined process makes it a breeze to buy a home, refinance, or tap into your home equity.
+
+NMLS ID: 2239. To verify licensing, visit NMLS Consumer Access (www.nmlsconsumeraccess.org). Equal Housing Lender.","American Home Lending USA mentions complex mortgage products/workflows like: , $100 down payment homes, $0 down payment homes, fha financing, jumbo mortgage, no appraisal mortgage, first-time homebuyer program, national down payment assistanc",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Mario — quick specific idea.
+
+I was looking at American Home Lending USA and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. American Home Lending USA mentions complex mortgage products/workflows like: , $100 down payment homes, $0 down payment homes, fha financing, jumbo mortgage, no appraisal mortgage, first-time homebuyer program, national down payment assistanc
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for American Home Lending USA?",3 AI routines for American Home Lending USA,"Hey Mario,
+
+I was looking at American Home Lending USA and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: American Home Lending USA mentions complex mortgage products/workflows like: , $100 down payment homes, $0 down payment homes, fha financing, jumbo mortgage, no appraisal mortgage, first-time homebuyer program, national down payment assistanc
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For American Home Lending USA, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Mario — I can make this concrete for American Home Lending USA.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+2,133,"senior_decision_maker | branch_manager | producer | scaled_but_not_enterprise | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,construction,commercial,reverse | speed_service_language:fast,easy,customer service | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Clarissa,Chueire,Clarissa Chueire,Registered Mortgage Broker & Branch Manager,founder,Green River Capital Corp,Green River Capital Corp,clarissa@grcmortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/clarissa-chueire-3a518434,Delray Beach,Florida,greenrivermortgage.com,https://www.linkedin.com/company/green-river-capital-corp,51-200,57,1000000-4999999,"mortgage brokerage specializes in the following types of financing:, fha loans, conventional loans, jumbo loans, residential financing, commercial financing, construction financing, business financing, sba loans, reverse mortgages","Green River Capital Corp., a New York corporation, was founded by Adam R. Rogove.
+Adam has been in the space for 20+ years. 
+
+At Green River Capital Corporation, our mission is to set a high standard in the mortgage industry. We are committed to quality customer service - putting the people we serve first. Take advantage of our expertise in the residential & commercial lending industry by applying online today. You will find that the skill, professionalism, and consideration we give to each of our clients make getting your loan a successful endeavor.
+
+The Company places strong emphasis on training and continuing education for all staff and has employed outside counsel to monitor compliance with the recent developments in federal and state laws and regulations.  To maintain effective controls, all loan processing is performed at the main offices in Plainview, New York.
+
+Having individually closed in excess of $5,000,000,000 in loans, the Company is continuously expanding business nationwide. 
+
+Give us a call today at 516-708-4900 for a free, personalized consultation. You can also apply online. It is fast, secure, and easy.
+
+- Registered Mortgage Broker - New York State Department of Financial Services - All loans arranged through 3rd party providers - NMLS #886337 - http://www.nmlsconsumeraccess.org","Green River Capital Corp mentions complex mortgage products/workflows like: he following types of financing:, fha loans, conventional loans, jumbo loans, residential financing, commercial financing, construction financing, business financing",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Clarissa — quick specific idea.
+
+I was looking at Green River Capital Corp and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Green River Capital Corp mentions complex mortgage products/workflows like: he following types of financing:, fha loans, conventional loans, jumbo loans, residential financing, commercial financing, construction financing, business financing
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Green River Capital Corp?",3 AI routines for Green River Capital Corp,"Hey Clarissa,
+
+I was looking at Green River Capital Corp and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Green River Capital Corp mentions complex mortgage products/workflows like: he following types of financing:, fha loans, conventional loans, jumbo loans, residential financing, commercial financing, construction financing, business financing
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Green River Capital Corp, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Clarissa — I can make this concrete for Green River Capital Corp.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+3,127,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,commercial,investment,reverse | speed_service_language:communication,smooth,seamless,customer service | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Christian,Penner,Christian Penner,President | Residential & Commercial Mortgage Broker | NMLS 368289 | Real Estate Financing Expert,senior,America's Mortgage Solutions NMLS#2009420,America's Mortgage Solutions NMLS#2009420,christian@americasmortgagesolutions.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/christianpenner,North Palm Beach,Florida,americasmortgagesolutions.com,https://www.linkedin.com/company/americas-mortgage-solutions,11-50,6,100000-499999,"home loan, mortgages, mortgage loans, fha loan, va loan, refinance, home buying, jumbo loans, no income loans","NMLS# 2009420 We are privileged and fortunate to have a very experienced Mortgage Team of Professionals that share the same vision. Our intention is to impress upon you the importance of making your mortgage a pivotal component of your overall financial planning strategy. Our goal is to custom fit you with the best overall financing package by, integrating the financing you select with your long and short-term financial and investment goals, which are coupled with your payment and equity objectives.
+
+We want more then to just earn your business; we want to make you part of our family. Rest assured that with our “Client For Life” commitment, You will always be our #1 priority. We surely hope that you will refer us to all your friends, family, and co-workers!
+
+AMERICA'S MORTGAGE SOLUTIONS SERVICES:
+•Specializing in All Types of Home Mortgage Loans: VA/FHA/USDA/Fannie & Freddie/Jumbo/Private Loans/Self Employed/Fix & Flip Loans/Reverse Mortgages
+•Consistent Communication
+•Marketing Tools
+•Education Seminars
+•Pre-Approval Mobile App (full transparency throughout the entire loan process)
+•Competitive Fees
+•Exceptional Customer Service
+
+AMERICA'S MORTGAGE SOLUTIONS PROGRAMS:
+•Florida Heroes Network - Mortgage benefits for Military, Police, Firefighters, EMTs, Nurses, Physician Assistants
+•Welcome Home Veterans Program - Mortgage benefits for Veterans, Reservists, National Guard, Surviving Spouses for Eligible Members, Personnel with Honorable Discharge
+•Company Homeownership Benefit Program - Mortgage Discounts and Benefit Program for Real Estate, Mortgage, Title and Homeowner Insurance for all of your Company employee needs.
+•Customer Forever - Fund a loan with us and never pay lender fees again!","America's Mortgage Solutions NMLS#2009420 mentions complex mortgage products/workflows like: ages, mortgage loans, fha loan, va loan, refinance, home buying, jumbo loans, no income loans NMLS# 2009420 We are privileged and fortunate to have a very experience",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Christian — quick specific idea.
+
+I was looking at America's Mortgage Solutions NMLS#2009420 and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. America's Mortgage Solutions NMLS#2009420 mentions complex mortgage products/workflows like: ages, mortgage loans, fha loan, va loan, refinance, home buying, jumbo loans, no income loans NMLS# 2009420 We are privileged and fortunate to have a very experience
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for America's Mortgage Solutions NMLS#2009420?",3 AI routines for America's Mortgage Solutions NMLS#2009420,"Hey Christian,
+
+I was looking at America's Mortgage Solutions NMLS#2009420 and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: America's Mortgage Solutions NMLS#2009420 mentions complex mortgage products/workflows like: ages, mortgage loans, fha loan, va loan, refinance, home buying, jumbo loans, no income loans NMLS# 2009420 We are privileged and fortunate to have a very experience
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For America's Mortgage Solutions NMLS#2009420, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Christian — I can make this concrete for America's Mortgage Solutions NMLS#2009420.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+4,127,"owner_or_founder | branch_manager | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:non-qm,investment,investor,reverse | speed_service_language:communication,streamlined,efficient,technology",READY_FOR_LINKEDIN_AND_EMAIL,Rajin,Ramdeholl,Rajin Ramdeholl,"Senior Vice President, Branch Manager, & Mortgage Loan Originator, NMLS ID 55322",senior,Fluent Mortgage,Fluent Mortgage,rajin@myfmloan.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/rajin-ramdeholl-9a95722a,New York,New York,myfmloan.com,https://www.linkedin.com/company/fluentmortgage,11-50,12,500000-999999,"home financing, refinance, investment lending, non-qm mortgage, reverse mortgage, va loans, mortgage solutions","Fluent Mortgage, DBA of Meadowbrook Financial Mortgage Bankers Corp. Legal ©2025 Meadowbrook Financial Mortgage Bankers Corp. NMLS #177308 (www.nmlsconsumeraccess.org). 1600 Stewart Ave, Suite 701, Westbury, NY 11590. 800.959.8892.
+
+Fluent Mortgage is a seamless mortgage process built on innovation, offering a simplified and efficient home-buying experience. Our goal at Fluent Mortgage is to empower people to make more informed financial decisions through education and exploring all options to attain their dreams of homeownership. Using modern technology and personalized service, Fluent Mortgage aims to help its clients find the most suitable mortgage options. 
+
+Started by Award-Winning & Top Producing Mortgage professional Rajin Ramdeholl, he quickly realized the need for technology & personalized service. Being an Innovator and having a passion for technology Fluent Mortgage decided it would disrupt the industry and revamp the way clients applied for a mortgage, creating a flow of communication & business. 
+
+The services provided by Fluent Mortgage cater to a wide variety of clients, which include first-time home buyers, investors & those looking to refinance. Fluent is approved by government agencies Fannie Mae, Freddie Mac & Ginnie Mae. With over 20+ years of industry experience, Fluent Mortgage seeks to deliver a streamlined mortgage experience and prioritize customer satisfaction, committed to helping Americans realize and peruse their real estate financial goals.","Fluent Mortgage mentions complex mortgage products/workflows like: home financing, refinance, investment lending, non-qm mortgage, reverse mortgage, va loans, mortgage solutions Fluent Mortgage, DBA of Meadowbrook",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Rajin — quick specific idea.
+
+I was looking at Fluent Mortgage and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Fluent Mortgage mentions complex mortgage products/workflows like: home financing, refinance, investment lending, non-qm mortgage, reverse mortgage, va loans, mortgage solutions Fluent Mortgage, DBA of Meadowbrook
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Fluent Mortgage?",3 AI routines for Fluent Mortgage,"Hey Rajin,
+
+I was looking at Fluent Mortgage and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Fluent Mortgage mentions complex mortgage products/workflows like: home financing, refinance, investment lending, non-qm mortgage, reverse mortgage, va loans, mortgage solutions Fluent Mortgage, DBA of Meadowbrook
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Fluent Mortgage, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Rajin — I can make this concrete for Fluent Mortgage.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+5,126,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:investment,hard money,fha,va | speed_service_language:communication,efficient,technology,tech | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Shay,Novak,Shay Novak,Mortgage Broker | President,c_suite,"Lendevity, Inc","Lendevity, Inc",shay@lendevity.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/shay-novak-60962b35,Los Angeles County,California,lendevity.com,https://www.linkedin.com/company/lendevity-llc,2-10,6,100000-499999,"mortgage lending, refinance, debt consolidation , first time buyers, home purchase, hard money loans, fha loans, va loans, harp, investment home financing","Lendevity is your trustworthy and long-term ally in your home buying and refinancing needs. We are committed to help you find the most suitable financing options based on your situation.
+
+Our name-Lendevity- came about from the word Longevity – to express that we will be by your side throughout the process and are here to stay. Lendevity’s future is in your hands as our mission is to build long term relationships based on trust, transparency, and knowledge.
+
+We earn your trust by keeping the entire process simple and easy to understand with transparent communication and fee structures. We will deliver the best results possible by analyzing and strategizing based upon your past, current, and future home buying pursuits. We strive to simplify your experience by using the most state of the art technology and to provide you with the knowledge necessary to smoothly and efficiently purchase your new home.","Lendevity, Inc mentions complex mortgage products/workflows like: ers, home purchase, hard money loans, fha loans, va loans, harp, investment home financing Lendevity is your trustworthy and long-term ally in your home buying and r",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Shay — quick specific idea.
+
+I was looking at Lendevity, Inc and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Lendevity, Inc mentions complex mortgage products/workflows like: ers, home purchase, hard money loans, fha loans, va loans, harp, investment home financing Lendevity is your trustworthy and long-term ally in your home buying and r
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Lendevity, Inc?","3 AI routines for Lendevity, Inc","Hey Shay,
+
+I was looking at Lendevity, Inc and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Lendevity, Inc mentions complex mortgage products/workflows like: ers, home purchase, hard money loans, fha loans, va loans, harp, investment home financing Lendevity is your trustworthy and long-term ally in your home buying and r
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Lendevity, Inc, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Shay — I can make this concrete for Lendevity, Inc.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+6,126,"owner_or_founder | branch_manager | producer | scaled_but_not_enterprise | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:bridge,203k,fha,va | speed_service_language:easy",READY_FOR_LINKEDIN_AND_EMAIL,Brendan,O'Driscoll,Brendan O'Driscoll,Branch Manager/Loan Officer/Founder,founder,Treadstone Funding,Treadstone Funding,brendano@treadstonemortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/brendan-o-driscoll-123b441,Grand Rapids,Michigan,treadstonemortgage.com,https://www.linkedin.com/company/treadstone-funding,51-200,69,1000000-4999999,"fha 203k, va, rd- zero down loans, real estate marketing, mortgage","🏡 We’re the leading premier mortgage company in West Michigan (and pretty proud of it). We won't be the first to say: you're in good hands here.
+
+Treadstone started in 2003 to become reliable and trusted home loan experts in West Michigan, rooted in common sense lending— something we'd call a success! Our pre-approvals carry weight, and we close on time. No exceptions. 
+
+We believe home loans shouldn't end at the closing table. That's why we offer a vast array of tools, resources, and friendly advice to make your homeownership vibrant and easy. As our client, you may track your home's equity with Homebot, coordinate your move with Updater, or text your LO for a reliable plumber when your toilet clogs. It's what we do. 
+
+You name it, we can (probably) do it: Conventional, FHA, 0% down VA or USDA/RD loans, bridge loans, manufactured homes, and more. We might be a Michigan-based mortgage lender, but we're licensed in several surrounding states for long-haul moves. We can't wait to hear from you! 
+
+Treadstone Funding is propelled by Neighborhood Loans | NMLS# 222982 | Equal Housing Lender","Treadstone Funding mentions complex mortgage products/workflows like: probably) do it: Conventional, FHA, 0% down VA or USDA/RD loans, bridge loans, manufactured homes, and more. We might be a Michigan-based mortgage lender, but we're",construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Brendan — quick specific idea.
+
+I was looking at Treadstone Funding and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Treadstone Funding mentions complex mortgage products/workflows like: probably) do it: Conventional, FHA, 0% down VA or USDA/RD loans, bridge loans, manufactured homes, and more. We might be a Michigan-based mortgage lender, but we're
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like construction/renovation loan condition tracker, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Treadstone Funding?",3 AI routines for Treadstone Funding,"Hey Brendan,
+
+I was looking at Treadstone Funding and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Treadstone Funding mentions complex mortgage products/workflows like: probably) do it: Conventional, FHA, 0% down VA or USDA/RD loans, bridge loans, manufactured homes, and more. We might be a Michigan-based mortgage lender, but we're
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Treadstone Funding, I’d probably start with:
+
+1. construction/renovation loan condition tracker
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Brendan — I can make this concrete for Treadstone Funding.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+7,125,"owner_or_founder | branch_manager | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:construction,commercial,investment,va | speed_service_language:technology,tech",READY_FOR_LINKEDIN_AND_EMAIL,Brian,Eachus,Brian Eachus,Branch Manager - Executive Vice President,manager,Clear 2 Close Home Loans,Clear 2 Close Home Loans,brian@clear2closehomeloans.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/brian-eachus-36276825,Columbus,Ohio,clear2closehomeloans.com,https://www.linkedin.com/company/clear-2-close-home-loans,11-50,38,1000000-4999999,"home loans, finance, mortgages, real estate, foreign home buyers, refinance, first time home buyers, low interest rates","Clear 2 Close Home Loans uses the latest in online technology to provide you with the most competitive rates in the industry! We use a virtual platform to help keep our cost low and pass the savings onto the customer
+
+Clear 2 Close Home Loans is a privately held mortgage banking corporation licensed in the State of Florida. We provide home purchases and refinances for residential homes, new construction loans, commercial, investment or foreign national loans.","Clear 2 Close Home Loans mentions complex mortgage products/workflows like: provide home purchases and refinances for residential homes, new construction loans, commercial, investment or foreign national loans.",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Brian — quick specific idea.
+
+I was looking at Clear 2 Close Home Loans and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Clear 2 Close Home Loans mentions complex mortgage products/workflows like: provide home purchases and refinances for residential homes, new construction loans, commercial, investment or foreign national loans.
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Clear 2 Close Home Loans?",3 AI routines for Clear 2 Close Home Loans,"Hey Brian,
+
+I was looking at Clear 2 Close Home Loans and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Clear 2 Close Home Loans mentions complex mortgage products/workflows like: provide home purchases and refinances for residential homes, new construction loans, commercial, investment or foreign national loans.
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Clear 2 Close Home Loans, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Brian — I can make this concrete for Clear 2 Close Home Loans.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+8,124,"owner_or_founder | producer | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,construction,investment,fha | speed_service_language:fast | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Jay,Healy,Jay Healy,Owner - Loan Officer,owner,"Blue Water Mortgage, LLC","Blue Water Mortgage, LLC",jhealy@bluewatermtg.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/jay-healy-2174614,Hampton Falls,New Hampshire,bluewatermtg.com,https://www.linkedin.com/company/bluewatermtg,11-50,73,5000000-9999999,"mortgage, refinance, new construction loans, cash-out refinance, va, fha, usda, jumbo, high balance loans, non-owner occupied, second home, investment properties, home improvement loans, arm's, conventional loans","Blue Water Mortgage is an independent mortgage company serving Massachusetts, New Hampshire, Maine, Vermont, Connecticut, Rhode Island, North Carolina, Colorado, and Florida with headquarters in Hampton, New Hampshire. With over 150 years of collective mortgage experience among the team at Blue Water, we have the knowledge and ability to get your loan closed on time with the best terms and lowest rates for you!
+
+Awarded ""Best Mortgage Company""​ in the Best of the Seacoast Competition in 2017, 2018, 2019, 2020 & 2021!
+
+Company NMLS 1291, NH License #8833-MB, MA Lender & Broker License #MC1291, ME License #1291, VT Lender License #LL-1291, VT Broker License #MB-1291, CT License #MCL-1291, RI Lender License  20224503LL, RI Broker License 20224504LB, NC License #L-189893, CO Lender License #1291, FL License #MLD163. Equal Housing Opportunity.","Blue Water Mortgage, LLC mentions complex mortgage products/workflows like: ance, new construction loans, cash-out refinance, va, fha, usda, jumbo, high balance loans, non-owner occupied, second home, investment properties, home improvement",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Jay — quick specific idea.
+
+I was looking at Blue Water Mortgage, LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Blue Water Mortgage, LLC mentions complex mortgage products/workflows like: ance, new construction loans, cash-out refinance, va, fha, usda, jumbo, high balance loans, non-owner occupied, second home, investment properties, home improvement
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Blue Water Mortgage, LLC?","3 AI routines for Blue Water Mortgage, LLC","Hey Jay,
+
+I was looking at Blue Water Mortgage, LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Blue Water Mortgage, LLC mentions complex mortgage products/workflows like: ance, new construction loans, cash-out refinance, va, fha, usda, jumbo, high balance loans, non-owner occupied, second home, investment properties, home improvement
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Blue Water Mortgage, LLC, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Jay — I can make this concrete for Blue Water Mortgage, LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+9,122,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:non-qm,commercial,fha,va | speed_service_language:communication,seamless | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,James,O.,James O.,Owner & Mortgage Broker,owner,IAI Mortgage LLC,IAI Mortgage LLC,james@iaimortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/james-o-8bb44469,Dallas,Texas,iaimortgage.com,https://www.linkedin.com/company/iai-mortgage-llc,2-10,4,100000-499999,"residential mortgage loan originations, fha loans, freddie mac, va loans, foreign national loans, non-qm loans, commercial loans, land loans","At IAI Mortgage LLC, we are proud of our hard work and dedication to excellent delivery. 
+
+We are known by our clients for our passion, transparency, due diligence, and commitment to due process. We work to make every transaction as seamless as possible by ensuring robust communication with all stakeholders.
+
+We boast a robust knowledge of agency and non-agency loans, including commercial lending. We have been able to successfully work with residential and commercial borrowers to purchase or refinance different forms of real estate.
+
+We hold dear our partnership with some of the country's top lenders. we leverage these partnerships to provide the best of service, pricing, and experiences to our wonderful clients.
+
+We are currently licensed to broker residential mortgage loans In Texas, Florida, and Maryland. we are able to broker commercial loans in all 50 states of the country.
+
+
+ is a NMLS #2560221","IAI Mortgage LLC mentions complex mortgage products/workflows like: tions, fha loans, freddie mac, va loans, foreign national loans, non-qm loans, commercial loans, land loans At IAI Mortgage LLC, we are proud of our hard work and de",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey James — quick specific idea.
+
+I was looking at IAI Mortgage LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. IAI Mortgage LLC mentions complex mortgage products/workflows like: tions, fha loans, freddie mac, va loans, foreign national loans, non-qm loans, commercial loans, land loans At IAI Mortgage LLC, we are proud of our hard work and de
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for IAI Mortgage LLC?",3 AI routines for IAI Mortgage LLC,"Hey James,
+
+I was looking at IAI Mortgage LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: IAI Mortgage LLC mentions complex mortgage products/workflows like: tions, fha loans, freddie mac, va loans, foreign national loans, non-qm loans, commercial loans, land loans At IAI Mortgage LLC, we are proud of our hard work and de
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For IAI Mortgage LLC, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, James — I can make this concrete for IAI Mortgage LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+10,122,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,commercial,fha,va | speed_service_language:fast,smooth | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Mark,Tober,Mark Tober,Mortgage Broker - Founder & CEO,founder,Alliance Mortgage Lending,Alliance Mortgage Lending,mark@alliance4loans.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/markrtober,San Clemente,California,alliance4loans.com,https://www.linkedin.com/company/alliance-mortgage-lending,2-10,3,100000-499999,"mortgage  broker, mortgage lender, home loans, va loans, fha loans, jumbo loans","At Alliance Mortgage Lending, we consider our clients family. As a member of the Alliance family, we believe you deserve the best. In everything we do for you, we pledge to give you our best. The best service. The best rates. The best customer experience. Our mission is to make the process of buying a home, or refinancing, smooth, fast, and enjoyable. We're committed to providing you with excellent one-on-one service and getting you the lowest interest rate combined with a fast, friendly, personalize service experience. From my family to yours, welcome! We look forward to serving you.","Alliance Mortgage Lending mentions complex mortgage products/workflows like: tgage broker, mortgage lender, home loans, va loans, fha loans, jumbo loans At Alliance Mortgage Lending, we consider our clients family. As a member of the Allianc",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Mark — quick specific idea.
+
+I was looking at Alliance Mortgage Lending and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Alliance Mortgage Lending mentions complex mortgage products/workflows like: tgage broker, mortgage lender, home loans, va loans, fha loans, jumbo loans At Alliance Mortgage Lending, we consider our clients family. As a member of the Allianc
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Alliance Mortgage Lending?",3 AI routines for Alliance Mortgage Lending,"Hey Mark,
+
+I was looking at Alliance Mortgage Lending and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Alliance Mortgage Lending mentions complex mortgage products/workflows like: tgage broker, mortgage lender, home loans, va loans, fha loans, jumbo loans At Alliance Mortgage Lending, we consider our clients family. As a member of the Allianc
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Alliance Mortgage Lending, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Mark — I can make this concrete for Alliance Mortgage Lending.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+11,122,"owner_or_founder | multi_branch_influence | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:investor,va | speed_service_language:transparent | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Justin,Hrabovsky,Justin Hrabovsky,Owner / Sr Loan Officer / Team Lead / Area Manager,manager,Rate Advantage,Rate Advantage,justin@rate-advantage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/loanswithjustin,Austin,Texas,https://rate-advantage.com,https://www.linkedin.com/company/rate-advantage,11-50,5,100000-499999,,"At Rate Advantage, we’re more than just a mortgage brokerage — we’re your partner in achieving homeownership with confidence and peace of mind. Founded by Justin Hrabovsky, one of the nation’s top-ranked mortgage professionals, Rate Advantage was built on a simple mission: deliver the lowest rates in the market while making the mortgage process transparent and stress-free. With access to over 280 lenders and every major loan program, we have the tools and expertise to find solutions that truly fit your financial goals.
+
+What sets us apart is our commitment to honesty, clarity, and client-first service. We take the time to understand your needs, explain your options in plain language, and guide you every step of the way. From first-time buyers to seasoned investors, our clients trust us to secure the most competitive rates while providing unmatched personal support. With Rate Advantage, you don’t just get a loan — you get an advantage.","Rate Advantage mentions complex mortgage products/workflows like: de you every step of the way. From first-time buyers to seasoned investors, our clients trust us to secure the most competitive rates while providing unmatched perso",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Justin — quick specific idea.
+
+I was looking at Rate Advantage and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Rate Advantage mentions complex mortgage products/workflows like: de you every step of the way. From first-time buyers to seasoned investors, our clients trust us to secure the most competitive rates while providing unmatched perso
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Rate Advantage?",3 AI routines for Rate Advantage,"Hey Justin,
+
+I was looking at Rate Advantage and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Rate Advantage mentions complex mortgage products/workflows like: de you every step of the way. From first-time buyers to seasoned investors, our clients trust us to secure the most competitive rates while providing unmatched perso
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Rate Advantage, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Justin — I can make this concrete for Rate Advantage.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+12,121,owner_or_founder | branch_manager | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:va | speed_service_language:seamless | broker_local_language,READY_FOR_LINKEDIN_AND_EMAIL,Robert,Benson,Robert Benson,CEO/Branch Manager,manager,Dovetail Mortgage,Dovetail Mortgage,robert@dovetail-mortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/robert-benson-6776b63,Medfield,Massachusetts,dovetail-mortgage.com,https://www.linkedin.com/company/dovetail-mortgage,11-50,20,1000000-4999999,,"Applying for a loan through the closing table should not be daunting. It should be seamless, and simple. In short, it should be harmonious.
+We are here to guide you through the process: if you're ready now, or a year from now, let us help get you there. 
+Equal Housing Opportunity. Licensed in MA, FL, RI, NH, ME, CT, NC & SC
+Mortgage Broker NMLS#2104340 | MA: MB2104340 | FL: MBR4966 | NH: 2104340MBR | RI: 20224422LB | ME NMLS #2104340 | NC NMLS #B-224833 | CT NMLS MB-2104340 | NC NMLS #MB2104340
+For information purposes only. This is not a commitment to lend or extend credit. Information and/or dates are subject to change without notice. All loans are subject to credit approval. Other restrictions may apply. Visit https://www.nmlsconsumeraccess.org/ for more information. | https://dovetail-mortgage.com/",Dovetail Mortgage mentions complex mortgage products/workflows like: t to change without notice. All loans are subject to credit approval. Other restrictions may apply. Visit https://www.nmlsconsumeraccess.org/ for more information. |,borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Robert — quick specific idea.
+
+I was looking at Dovetail Mortgage and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Dovetail Mortgage mentions complex mortgage products/workflows like: t to change without notice. All loans are subject to credit approval. Other restrictions may apply. Visit https://www.nmlsconsumeraccess.org/ for more information. |
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Dovetail Mortgage?",3 AI routines for Dovetail Mortgage,"Hey Robert,
+
+I was looking at Dovetail Mortgage and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Dovetail Mortgage mentions complex mortgage products/workflows like: t to change without notice. All loans are subject to credit approval. Other restrictions may apply. Visit https://www.nmlsconsumeraccess.org/ for more information. |
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Dovetail Mortgage, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Robert — I can make this concrete for Dovetail Mortgage.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+13,121,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,heloc,reverse,fha | speed_service_language:communication | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Alyssa,Soles,Alyssa Soles,President & Mortgage Broker,c_suite,Castle Funding Corp.,Castle Funding Corp.,alyssa@castle-funding.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/alyssa-soles-b539a3235,Ventura,California,castle-funding.com,https://www.linkedin.com/company/castle-funding-corp,2-10,5,100000-499999,"ventura mortgage broker, first-time homebuyer loans, conventional & jumbo financing, fha & va loans, reverse mortgage & hecm loans, calhfa down payment assistance, helocs & home equity strategies, cash-out & rate/term refinances, pre-approvals & purchase financing, independent mortgage brokerage, education-first lending guidance, family-owned & local","Castle Funding Corp. is a family-owned mortgage brokerage founded in 1989 and based in Ventura County, California. For more than 35 years, we’ve helped homebuyers and homeowners navigate financing decisions with clarity, preparation, and long-term perspective.
+
+As an independent mortgage broker, we compare loan options across multiple lenders so clients can see the differences in rates, structure, and strategy rather than being limited to a single bank’s products. Our clients include first-time homebuyers, move-up buyers, and homeowners exploring refinance, home equity, or long-term mortgage planning.
+
+Today the firm is led by Alyssa Soles, who joined the business after more than a decade as an educator. Her background shapes the firm’s approach — emphasizing clear explanations, thoughtful preparation, and steady guidance throughout the loan process.
+
+Many of our clients come through referrals from Ventura County realtors and past clients who value dependable communication and a calm, organized mortgage experience.","Castle Funding Corp. mentions complex mortgage products/workflows like: tura mortgage broker, first-time homebuyer loans, conventional & jumbo financing, fha & va loans, reverse mortgage & hecm loans, calhfa down payment assistance, helo",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Alyssa — quick specific idea.
+
+I was looking at Castle Funding Corp. and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Castle Funding Corp. mentions complex mortgage products/workflows like: tura mortgage broker, first-time homebuyer loans, conventional & jumbo financing, fha & va loans, reverse mortgage & hecm loans, calhfa down payment assistance, helo
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Castle Funding Corp.?",3 AI routines for Castle Funding Corp.,"Hey Alyssa,
+
+I was looking at Castle Funding Corp. and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Castle Funding Corp. mentions complex mortgage products/workflows like: tura mortgage broker, first-time homebuyer loans, conventional & jumbo financing, fha & va loans, reverse mortgage & hecm loans, calhfa down payment assistance, helo
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Castle Funding Corp., I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Alyssa — I can make this concrete for Castle Funding Corp..
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+14,121,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,construction,investor,203k | speed_service_language:fast | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Collin,Atchison,Collin Atchison,Owner / Senior Loan Officer,senior,"First Florida Financial Group, LLC","First Florida Financial Group, LLC",collin@firstflfinancial.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/collin-atchison-b74029b4,Fort Myers,Florida,firstflfinancial.com,https://www.linkedin.com/company/first-florida-financial-group-llc,2-10,15,100000-499999,,"Residential Mortgage Provider
+
+""We say YES when banks say NO""
+
+•	FHA and VA Credit Scores as Low as 530 
+•	Condo's Loans! We Close Loans on 95% of all Condo & Condo-Tel Buildings in FL,	Foreign National’s 70% loan to value
+•	Jumbo Loans up to 90% loan to value
+•	Mobile Homes Single and Double Wide, First & Second Homes
+•	USDA Purchase and Refinance 
+•	Rehab 203k FHA Loans and Repair Escrows allowed on Conventional Loans
+•	HUD REO’S $100 down payment with Repair Escrows up to 5,000
+•	Construction Loans
+•	No 90 Day FHA Flipping Rules, That Limit the Seller's Profit
+•	Upside down/Neg. equity in Buyers Current  Home and want to buy are NO Problem
+•	FHA Short Refinance’s
+•	Fannie Refinance up 125% Loan To Value
+•	Investors with up to 10 Properties currently Financed are ok
+•	No Minimum Credit Report Trade Line Requirements
+•	1 Year Tax Return for Self Employed Borrowers 
+•	Repair Escrows Allowed on Conventional and FHA Loans","First Florida Financial Group, LLC mentions complex mortgage products/workflows like: ondo-Tel Buildings in FL, Foreign National’s 70% loan to value • Jumbo Loans up to 90% loan to value • Mobile Homes Single and Double Wide, First & Second Homes • US",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Collin — quick specific idea.
+
+I was looking at First Florida Financial Group, LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. First Florida Financial Group, LLC mentions complex mortgage products/workflows like: ondo-Tel Buildings in FL, Foreign National’s 70% loan to value • Jumbo Loans up to 90% loan to value • Mobile Homes Single and Double Wide, First & Second Homes • US
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for First Florida Financial Group, LLC?","3 AI routines for First Florida Financial Group, LLC","Hey Collin,
+
+I was looking at First Florida Financial Group, LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: First Florida Financial Group, LLC mentions complex mortgage products/workflows like: ondo-Tel Buildings in FL, Foreign National’s 70% loan to value • Jumbo Loans up to 90% loan to value • Mobile Homes Single and Double Wide, First & Second Homes • US
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For First Florida Financial Group, LLC, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Collin — I can make this concrete for First Florida Financial Group, LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+15,120,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:fha,va | speed_service_language:fast,easy,smooth,seamless | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Aaron,Polk,Aaron Polk,Mortgage Broker/Founder,founder,AsertaLoans,AsertaLoans,aaron@asertaloans.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/aaronpolk1,Miami-fort Lauderdale Area,,asertaloans.com,https://www.linkedin.com/company/asertaloans,2-10,3,100000-499999,"mortgage lending, home loans","AsertaLoans is a leading mortgage lender based in Dallas, offering low-rate home loans and tailored mortgage solutions. Serving Texas and Florida, we are dedicated to delivering a seamless and personalized homebuying experience. Whether you're a first-time buyer or looking to refinance, we provide options, including FHA, VA, and conventional loans to suit your financial needs. Our team ensures fast approvals, transparent processes, and exceptional service to make your path to homeownership smooth and hassle-free. Choose AsertaLoans for your next home loan and experience the difference a trusted local lender can make. Contact us for a no-obligation consultation!
+
+
+For information purposes only. This is not a commitment to lend or extend credit. Information and/or dates are subject to change without notice. All loans are subject to credit approval. Other restrictions may apply.
+AsertaLoans Inc | NMLS #2114425 
+www.nmlsconsumeraccess.org | Equal Housing Opportunity
+
+
+Texas Complaint-Recovery Fund Notice:​
+CONSUMERS WISHING TO FILE A COMPLAINT AGAINST A COMPANY OR A RESIDENTIAL MORTGAGE LOAN ORIGINATOR SHOULD COMPLETE AND SEND A COMPLAINT FORM TO THE TEXAS DEPARTMENT OF SAVINGS AND MORTGAGE LENDING, 2601 NORTH LAMAR, SUITE 201, AUSTIN, TEXAS 78705. COMPLAINT FORMS AND INSTRUCTIONS MAY BE OBTAINED FROM THE DEPARTMENT’S WEBSITE AT WWW.SML.TEXAS.GOV. A TOLL-FREE CONSUMER HOTLINE IS AVAILABLE AT 1-877-276-5550.
+
+THE DEPARTMENT MAINTAINS A RECOVERY FUND TO MAKE PAYMENTS OF CERTAIN ACTUAL OUT OF POCKET DAMAGES SUSTAINED BY BORROWERS CAUSED BY ACTS OF LICENSED RESIDENTIALMORTGAGE LOAN ORIGINATORS. A WRITTEN APPLICATION FOR REIMBURSEMENT FROM THE RECOVERY FUND MUST BE FILED WITH AND INVESTIGATED BY THE DEPARTMENT PRIOR TO THE PAYMENT OF A CLAIM. FOR MORE INFORMATION ABOUT THE RECOVERY FUND, PLEASE CONSULT THE DEPARTMENT’S WEBSITE AT WWW.SML.TEXAS.GOV.","AsertaLoans mentions complex mortgage products/workflows like: ime buyer or looking to refinance, we provide options, including FHA, VA, and conventional loans to suit your financial needs. Our team ensures fast approvals, trans",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Aaron — quick specific idea.
+
+I was looking at AsertaLoans and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. AsertaLoans mentions complex mortgage products/workflows like: ime buyer or looking to refinance, we provide options, including FHA, VA, and conventional loans to suit your financial needs. Our team ensures fast approvals, trans
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for AsertaLoans?",3 AI routines for AsertaLoans,"Hey Aaron,
+
+I was looking at AsertaLoans and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: AsertaLoans mentions complex mortgage products/workflows like: ime buyer or looking to refinance, we provide options, including FHA, VA, and conventional loans to suit your financial needs. Our team ensures fast approvals, trans
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For AsertaLoans, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Aaron — I can make this concrete for AsertaLoans.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+16,120,"owner_or_founder | producer | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:fha,va,usda | speed_service_language:fast | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Lisa,Pogue,Lisa Pogue,"Co Owner, Mortgage Broker",owner,DC Lending,DC Lending,lisa@dc-lending.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/lisa-pogue-a6842580,Vancouver,Washington,dc-lending.com,https://www.linkedin.com/company/dc-lending,11-50,17,1000000-4999999,"residential mortgage, conventional loans, fha loans, va loans, usda loans, local, fast closings, low rates, home loans, top tier service, client centered","DC Lending is a local and family owned mortgage brokerage serving OR and WA since 2017.
+
+We Guide You Home
+
+NMLS #1773532","DC Lending mentions complex mortgage products/workflows like: residential mortgage, conventional loans, fha loans, va loans, usda loans, local, fast closings, low rates, home loans, top tier service, clie",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Lisa — quick specific idea.
+
+I was looking at DC Lending and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. DC Lending mentions complex mortgage products/workflows like: residential mortgage, conventional loans, fha loans, va loans, usda loans, local, fast closings, low rates, home loans, top tier service, clie
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for DC Lending?",3 AI routines for DC Lending,"Hey Lisa,
+
+I was looking at DC Lending and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: DC Lending mentions complex mortgage products/workflows like: residential mortgage, conventional loans, fha loans, va loans, usda loans, local, fast closings, low rates, home loans, top tier service, clie
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For DC Lending, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Lisa — I can make this concrete for DC Lending.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+17,118,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,va | speed_service_language:technology,tech,easy | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Robert,C.,Robert C.,Founder - Super Jumbo Mortgage Broker,founder,Carlyle Financial,Carlyle Financial,rc@carlylefinancial.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/robertcohan,,,carlylefinancial.com,https://www.linkedin.com/company/carlyle-financial,11-50,13,500000-999999,"full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuyers, california homeowners, jumbo loans, super jumbo loans, refinance loans, home loan pre-approval, rsu income","Carlyle Financial is your personal mortgage lender offering an extensive suite of jumbo and super-jumbo home loan options customized to your needs.
+
+Our incredible team of experts navigate your complex financial situations with expertise to find the best possible mortgage for you. We accommodate larger loans amounts of $10M+, interest-only payments, RSU income, and even the most intricate self-employment income.
+
+We use the best of lending technology to make the loan process easy, and your trusted mortgage partner will guide you through the entire process.
+
+With over 30 years of experience and over $2 billion in jumbo home loans, we are here to make sure you get exactly what you want at the best rates in the marketplace.","Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Robert — quick specific idea.
+
+I was looking at Carlyle Financial and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Carlyle Financial?",3 AI routines for Carlyle Financial,"Hey Robert,
+
+I was looking at Carlyle Financial and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Carlyle Financial, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Robert — I can make this concrete for Carlyle Financial.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+18,118,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,va | speed_service_language:technology,tech,easy | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Jesse,Collins,Jesse Collins,Vice President - Senior Mortgage Broker,senior,Carlyle Financial,Carlyle Financial,jesse.collins@carlylefinancial.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/jessecollins2,Beverly Hills,California,carlylefinancial.com,https://www.linkedin.com/company/carlyle-financial,11-50,13,500000-999999,"full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuyers, california homeowners, jumbo loans, super jumbo loans, refinance loans, home loan pre-approval, rsu income","Carlyle Financial is your personal mortgage lender offering an extensive suite of jumbo and super-jumbo home loan options customized to your needs.
+
+Our incredible team of experts navigate your complex financial situations with expertise to find the best possible mortgage for you. We accommodate larger loans amounts of $10M+, interest-only payments, RSU income, and even the most intricate self-employment income.
+
+We use the best of lending technology to make the loan process easy, and your trusted mortgage partner will guide you through the entire process.
+
+With over 30 years of experience and over $2 billion in jumbo home loans, we are here to make sure you get exactly what you want at the best rates in the marketplace.","Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Jesse — quick specific idea.
+
+I was looking at Carlyle Financial and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Carlyle Financial?",3 AI routines for Carlyle Financial,"Hey Jesse,
+
+I was looking at Carlyle Financial and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Carlyle Financial mentions complex mortgage products/workflows like: full-service mortgage banking, jumbo arm, portfolio lending, jumbo mortgages, interest-only, foreign nationals, california homebuye
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Carlyle Financial, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Jesse — I can make this concrete for Carlyle Financial.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+19,118,"owner_or_founder | producer | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,construction,investment,reverse | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Natalya,Hansen,Natalya Hansen,Co-Owner / Mortgage Broker NMLS#2263868,senior,American Mortgage Xpress,American Mortgage Xpress,natalya@amxpress.io,REAL-TIME VERIFIED ON 25 May 26,https://www.linkedin.com/in/natalya-hansen,Fort Myers,Florida,amxpress.io,https://www.linkedin.com/company/amxpress,2-10,16,1000000-4999999,"fha loans, refinance loans, va loans, usda loans, jumbo & super jumbo loans, mortgage, home loans, home improvement & construction loans, investment property loans, second home and vacation home loans, reverse mortgage loans","Your mortgage approval starts here. Buy and Refi with confidence. Get the answers. See what you could be approved for before house hunting. Get started now - no commitment required. 
+Licensed in Florida | Texas | Colorado | California 
+American Mortgage Xpress (AMXpress) NMLS # 2502574
+AMXpress is not an agency of the federal government and is approved by HUD/FHA, Fannie Mae, Freddie Mac, and Ginnie Mae. This is not a government form. This is not a credit decision or a commitment to lend. The New York State Department of Financial Services does not authorize this website. Until this website is authorized, no mortgage loan applications for properties located in New York will be accepted through this site.","American Mortgage Xpress mentions complex mortgage products/workflows like: fha loans, refinance loans, va loans, usda loans, jumbo & super jumbo loans, mortgage, home loans, home improvement & construction loans, investment p",complex-file doc checklist; construction/renovation loan condition tracker; borrower doc follow-up drafts by loan type,"Hey Natalya — quick specific idea.
+
+I was looking at American Mortgage Xpress and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. American Mortgage Xpress mentions complex mortgage products/workflows like: fha loans, refinance loans, va loans, usda loans, jumbo & super jumbo loans, mortgage, home loans, home improvement & construction loans, investment p
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, construction/renovation loan condition tracker, and borrower doc follow-up drafts by loan type.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for American Mortgage Xpress?",3 AI routines for American Mortgage Xpress,"Hey Natalya,
+
+I was looking at American Mortgage Xpress and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: American Mortgage Xpress mentions complex mortgage products/workflows like: fha loans, refinance loans, va loans, usda loans, jumbo & super jumbo loans, mortgage, home loans, home improvement & construction loans, investment p
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For American Mortgage Xpress, I’d probably start with:
+
+1. complex-file doc checklist
+2. construction/renovation loan condition tracker
+3. borrower doc follow-up drafts by loan type
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Natalya — I can make this concrete for American Mortgage Xpress.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+20,117,"owner_or_founder | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:jumbo,heloc,fha,va | speed_service_language:customer service | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Craig,T.,Craig T.,Broker-Owner/Certified Mortgage Consultant®,owner,"AZ Mortgage Broker, LLC","AZ Mortgage Broker, LLC",craig@azmortgagebroker.com,REAL-TIME VERIFIED ON 25 May 26,https://www.linkedin.com/in/craig-t-8881ab13,Scottsdale,Arizona,azmortgagebroker.com,https://www.linkedin.com/company/az-mortgage-broker-llc,11-50,19,1000000-4999999,"fannie mae, freddie mac, wholesale lending, interest rates, debt consolidation, purchase, refinance, fha, va, jumbo, usda, nonqm, 2nd mortgages, customer service, arizona, california, colorado, helocs, low rates","At AZ Mortgage Broker, LLC, we're committed to serving our community with integrity and excellence. As your local mortgage broker in Arizona, we prioritize building genuine connections with our clients and partners. Our goal is to help you secure a mortgage that fits your unique needs and budget, without sacrificing quality or affordability. We offer competitive rates, low fees, and the insider knowledge that comes with being part of the local market. Join us and experience what it's like to work with a mortgage broker that truly cares about your success.
+
+Get the mortgage you deserve with our exceptional service, competitive rates, and lower costs.
+
+NMLS 1561316; AZ MB 0938970; CA 60DB099210","AZ Mortgage Broker, LLC mentions complex mortgage products/workflows like: nterest rates, debt consolidation, purchase, refinance, fha, va, jumbo, usda, nonqm, 2nd mortgages, customer service, arizona, california, colorado, helocs, low rate",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Craig — quick specific idea.
+
+I was looking at AZ Mortgage Broker, LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. AZ Mortgage Broker, LLC mentions complex mortgage products/workflows like: nterest rates, debt consolidation, purchase, refinance, fha, va, jumbo, usda, nonqm, 2nd mortgages, customer service, arizona, california, colorado, helocs, low rate
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for AZ Mortgage Broker, LLC?","3 AI routines for AZ Mortgage Broker, LLC","Hey Craig,
+
+I was looking at AZ Mortgage Broker, LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: AZ Mortgage Broker, LLC mentions complex mortgage products/workflows like: nterest rates, debt consolidation, purchase, refinance, fha, va, jumbo, usda, nonqm, 2nd mortgages, customer service, arizona, california, colorado, helocs, low rate
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For AZ Mortgage Broker, LLC, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Craig — I can make this concrete for AZ Mortgage Broker, LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+21,116,"owner_or_founder | producer | small_team | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:va | speed_service_language:fast,transparent | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Andrew (Andy) W.,Harris,Andrew (Andy) W. Harris,Mortgage Broker / President,c_suite,Vantage Mortgage Brokers - NMLS#35986,Vantage Mortgage Brokers - NMLS#35986,aharris@vantagemortgagegroup.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/oregonmortgagebroker,Lake Oswego,Oregon,vantagemortgagegroup.com,https://www.linkedin.com/company/vantage-mortgage-group-inc-,11-50,19,1000000-4999999,"mortgage services in oregon and washington, home purchase, refinance, mortgage broker","van-tage (n); a position giving a strategic advantage, commanding perspective, or comprehensive view
+
+MISSION – Transform the way consumers get access to mortgages, with transparency and competition
+
+VISION – Educate and be available to serve all mortgage consumers in our service area so lenders authentically compete for their business
+
+ACTION – Deliver lower mortgage costs and a faster origination experience by working for YOU rather than the lenders, using a transparent and systematic approach to making lenders compete for YOUR business.
+
+Established in 2007, Vantage Mortgage Group is one of the only independent mortgage firms in the Pacific Northwest today (serving Oregon and Washington consumers).  Locally owned and operated in Lake Oswego, Oregon, Vantage has become a nationally recognized company from the impact made within the industry and unique consumer-focused platform.  As many can imagine, the regulatory environment has greatly changed in the mortgage and housing industry in recent years.  As a result, awareness and adaption on consumer impact must control the vision of a mortgage company  now and in the future through collecting data and facts over all else.  Vantage Mortgage Group has embraced these changes with their vision and experience and rely on their clients positive feedback and price advantage to produce more referrals.  They align their clients in the best position they see possible which is as a true mortgage broker without steering to one lender or corporate special interests.  Because of this, Vantage persistently educates consumers and colleagues on understanding the indisputable math and data around mortgage operations rather than the hard sales pressure that many consumers and others receive in the primary mortgage marketplace.
+
+Vantage Mortgage Group, Inc. DBA Vantage Mortgage Brokers","Vantage Mortgage Brokers - NMLS#35986 mentions complex mortgage products/workflows like: oregon and washington, home purchase, refinance, mortgage broker van-tage (n); a position giving a strategic advantage, commanding perspective, or comprehensive view",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Andrew (Andy) W. — quick specific idea.
+
+I was looking at Vantage Mortgage Brokers - NMLS#35986 and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Vantage Mortgage Brokers - NMLS#35986 mentions complex mortgage products/workflows like: oregon and washington, home purchase, refinance, mortgage broker van-tage (n); a position giving a strategic advantage, commanding perspective, or comprehensive view
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Vantage Mortgage Brokers - NMLS#35986?",3 AI routines for Vantage Mortgage Brokers - NMLS#35986,"Hey Andrew (Andy) W.,
+
+I was looking at Vantage Mortgage Brokers - NMLS#35986 and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Vantage Mortgage Brokers - NMLS#35986 mentions complex mortgage products/workflows like: oregon and washington, home purchase, refinance, mortgage broker van-tage (n); a position giving a strategic advantage, commanding perspective, or comprehensive view
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Vantage Mortgage Brokers - NMLS#35986, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Andrew (Andy) W. — I can make this concrete for Vantage Mortgage Brokers - NMLS#35986.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+22,116,"owner_or_founder | branch_manager | scaled_but_not_enterprise | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:non-qm,jumbo,investment,reverse | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Patrick D.,Moylan,Patrick D. Moylan,"Vice President, Branch Manager",manager,Bay Capital Mortgage Corporation,Bay Capital Mortgage Corporation,pmoylan@baycapitalmortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/patrick-d-moylan-3a4b9541,Davidsonville,Maryland,baycapitalmortgage.com,https://www.linkedin.com/company/bay-capital-mortgage-corporation,51-200,76,5000000-9999999,"residential lending, conventional loans, fha/usda/va loans, jumbo loans, reverse mortgages, refinances, first time homebuyer, non-qm loans, investment property loans, licensed in md, licensed in va, licensed in fl, licensed in de, licensed in ga, licensed in mi, licensed in dc, licensed in pa, licensed in sc, licensed in nc, licensed in wv, licensed in tn","NMLS ID# 39610
+www.nmlsconsumeraccess.org","Bay Capital Mortgage Corporation mentions complex mortgage products/workflows like: umbo loans, reverse mortgages, refinances, first time homebuyer, non-qm loans, investment property loans, licensed in md, licensed in va, licensed in fl, licensed in",complex-file doc checklist; borrower doc follow-up drafts by loan type; daily pipeline brief,"Hey Patrick D. — quick specific idea.
+
+I was looking at Bay Capital Mortgage Corporation and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Bay Capital Mortgage Corporation mentions complex mortgage products/workflows like: umbo loans, reverse mortgages, refinances, first time homebuyer, non-qm loans, investment property loans, licensed in md, licensed in va, licensed in fl, licensed in
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like complex-file doc checklist, borrower doc follow-up drafts by loan type, and daily pipeline brief.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Bay Capital Mortgage Corporation?",3 AI routines for Bay Capital Mortgage Corporation,"Hey Patrick D.,
+
+I was looking at Bay Capital Mortgage Corporation and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Bay Capital Mortgage Corporation mentions complex mortgage products/workflows like: umbo loans, reverse mortgages, refinances, first time homebuyer, non-qm loans, investment property loans, licensed in md, licensed in va, licensed in fl, licensed in
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Bay Capital Mortgage Corporation, I’d probably start with:
+
+1. complex-file doc checklist
+2. borrower doc follow-up drafts by loan type
+3. daily pipeline brief
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Patrick D. — I can make this concrete for Bay Capital Mortgage Corporation.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+23,116,"owner_or_founder | branch_manager | scaled_but_not_enterprise | revenue_can_pay | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:investor,reverse,fha,va | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Chad,Prior,Chad Prior,Vice President/Branch Manager,manager,"Hancock Mortgage Partners, LLC","Hancock Mortgage Partners, LLC",cprior@hancockmortgage.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/chadprior,Richmond,Texas,hancockmortgage.com,https://www.linkedin.com/company/hancock-mortgage-partners-llc,51-200,96,5000000-9999999,"fha loans, conventional loans, refinance loans, reverse mortgages, fixed rate mortgages, usda loan programs","Hancock Mortgage Partners, LLC was founded in Texas as an independent Mortgage Banker. We originate mortgage loans insured by the FHA, guaranteed by the VA and sold to Fannie Mae, Freddie Mac and other reputable private investors in the secondary market.
+
+We are unwavering in our commitment to the highest levels of integrity and ethics, and in always doing what’s right for our customers. We have a wealth of experience in the mortgage banking industry, and we are committed to a lending process which allows us to focus on meeting the changing needs of our customers in a constantly changing real estate environment.
+
+NMLS#: 229844","Hancock Mortgage Partners, LLC mentions complex mortgage products/workflows like: and sold to Fannie Mae, Freddie Mac and other reputable private investors in the secondary market. We are unwavering in our commitment to the highest levels of int",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Chad — quick specific idea.
+
+I was looking at Hancock Mortgage Partners, LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Hancock Mortgage Partners, LLC mentions complex mortgage products/workflows like: and sold to Fannie Mae, Freddie Mac and other reputable private investors in the secondary market. We are unwavering in our commitment to the highest levels of int
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Hancock Mortgage Partners, LLC?","3 AI routines for Hancock Mortgage Partners, LLC","Hey Chad,
+
+I was looking at Hancock Mortgage Partners, LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Hancock Mortgage Partners, LLC mentions complex mortgage products/workflows like: and sold to Fannie Mae, Freddie Mac and other reputable private investors in the secondary market. We are unwavering in our commitment to the highest levels of int
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Hancock Mortgage Partners, LLC, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Chad — I can make this concrete for Hancock Mortgage Partners, LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+24,116,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:reverse,va | speed_service_language:fast,easy | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Shannon,Gray,Shannon Gray,Mortgage Broker/Owner,owner,LifeSource Mortgage,LifeSource Mortgage,shannon.gray@lifesourcemortgage.com,REAL-TIME VERIFIED ON 25 May 26,https://www.linkedin.com/in/shantgray,San Clemente,California,lifesourcemortgage.com,https://www.linkedin.com/company/lifesourcemortgage,2-10,3,100000-499999,"new purchase, refinance, pre-approval","Honest. Reliable. Passionate about your home.
+Whether you're buying a home or refinancing your current loan, LifeSource Mortgage has the tools you need to make the right decision.","LifeSource Mortgage mentions complex mortgage products/workflows like: ks.Secure Your DreamsThe speedy purchase home loan, refinance, & reverse mortgage specialistsDont get overwhelmedHome Financing Can be Fast and EasyNew PurchaseWe of",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Shannon — quick specific idea.
+
+I was looking at LifeSource Mortgage and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. LifeSource Mortgage mentions complex mortgage products/workflows like: ks.Secure Your DreamsThe speedy purchase home loan, refinance, & reverse mortgage specialistsDont get overwhelmedHome Financing Can be Fast and EasyNew PurchaseWe of
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for LifeSource Mortgage?",3 AI routines for LifeSource Mortgage,"Hey Shannon,
+
+I was looking at LifeSource Mortgage and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: LifeSource Mortgage mentions complex mortgage products/workflows like: ks.Secure Your DreamsThe speedy purchase home loan, refinance, & reverse mortgage specialistsDont get overwhelmedHome Financing Can be Fast and EasyNew PurchaseWe of
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For LifeSource Mortgage, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Shannon — I can make this concrete for LifeSource Mortgage.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
+25,116,"owner_or_founder | producer | small_team | smaller_revenue | verified_email | linkedin_present | strong_mortgage_fit | doc_complex_products:commercial,va | speed_service_language:fast,smooth | broker_local_language",READY_FOR_LINKEDIN_AND_EMAIL,Myrielle,Lemoine,Myrielle Lemoine,Mortgage Broker / Owner,owner,"Fundelva, LLC","Fundelva, LLC",myrielle@fundelva.com,REAL-TIME VERIFIED ON 26 May 26,https://www.linkedin.com/in/myrielle-lemoine-b2357916,Lake Mary,Florida,fundelva.com,https://www.linkedin.com/company/fundelva-llc,2-10,2,100000-499999,residential lending + commercial lending + business funding.,"We elevate the funding experience! 
+
+WE ARE RELIABLE.  We elevate the funding experience by ensuring that every milestone is done right. Our pre-approvals are meticulously done to give assurance to all stakeholders that full funding approval and timely closing are within reach.
+
+WE ARE RESOURCEFUL.  Pursuing fast and smooth loan approval decisions for our clients is not where our commitment stops. Our clients can expect us to provide practical, industry-relevant guidance that goes well beyond funding.
+
+WE ARE RELENTLESS.  Whether the funding need is to buy the dream home, to buyout a business partner, or to obtain capital to fund a multi-unit apartment complex, we do not stop proving to our lending partners that approving our client’s loan request is a good lending decision.
+
+WE ARE AVAILABLE.  Do you need us now? This is when we are available, Early, late, nights and weekends — Count on Your Fundelva Team to be there for you!","Fundelva, LLC mentions complex mortgage products/workflows like: residential lending + commercial lending + business funding. We elevate the funding experience! WE ARE RELIABLE. We ele",borrower doc follow-up drafts by loan type; daily pipeline brief; missing-doc follow-up drafts,"Hey Myrielle — quick specific idea.
+
+I was looking at Fundelva, LLC and noticed the mortgage workflow probably has a lot of borrower/doc follow-up hiding behind the scenes. Fundelva, LLC mentions complex mortgage products/workflows like: residential lending + commercial lending + business funding. We elevate the funding experience! WE ARE RELIABLE. We ele
+
+I’m testing a 7-day AIOS Quickstart for mortgage teams: 3 approval-only AI routines like borrower doc follow-up drafts by loan type, daily pipeline brief, and missing-doc follow-up drafts.
+
+No auto-sending. Just drafts, briefs, and follow-up queues your team approves.
+
+Want me to send the 3 routines I’d set up for Fundelva, LLC?","3 AI routines for Fundelva, LLC","Hey Myrielle,
+
+I was looking at Fundelva, LLC and had a specific thought. Mortgage teams usually don’t need a giant AI strategy. They need the recurring borrower/admin work to stop eating the week.
+
+What stood out: Fundelva, LLC mentions complex mortgage products/workflows like: residential lending + commercial lending + business funding. We elevate the funding experience! WE ARE RELIABLE. We ele
+
+I’m testing a 7-day AIOS Quickstart where I install 3 approval-gated routines for mortgage teams. For Fundelva, LLC, I’d probably start with:
+
+1. borrower doc follow-up drafts by loan type
+2. daily pipeline brief
+3. missing-doc follow-up drafts
+
+Everything stays approval-only — no AI auto-sending weird emails to borrowers. It drafts, summarizes, and queues the work so your team can move faster.
+
+Worth sending over a quick version of what I’d install?
+
+Ryan","Quick bump, Myrielle — I can make this concrete for Fundelva, LLC.
+
+I’d map 3 recurring workflows, install the approval-only drafts/briefs, and hand you a simple weekly operating rhythm. No giant dashboard, no auto-send.
+
+Worth a quick look?"
