@@ -1,5 +1,6 @@
 # Memory Index
 
+- [Two-machine sync](two-machine-sync.md) — MacBook ↔ Mac Studio git architecture (2026-07-07): 4 private repos, claude-memory synced via symlink, 20-min sync job + SessionStart hook LIVE on MacBook; Studio bring-up pending (studio-setup/README.md).
 - [AI use-case research 2026-07](ai-usecase-research-2026-07.md) — dual web+YouTube deep-research for CA (2026-07-07): 16-item prioritized build list, mockup-wedge commoditization warning (skubot/SAGE), Hermes/Fable 5 reality check; full report in aios-starter-kit/outputs/deep-research/.
 - [Promo market landscape](promo-market-landscape.md) — verified facts + strategy from the 2026-07-05 deep-research report (full report in CA plans/market-landscape-2026.md): CA = top-5% distributor, mission = cross $5M, 4imprint teardown, mockup wedge hits #1 buyer pain, two-lane positioning.
 - [Workspace map](workspace-map.md) — post-audit canonical structure (2026-07-04): cockpit = AIOS-Memory-Bank/LIFE-OS.md; engines = Creative-Alternatives-AIOS, aios-starter-kit (time-blocks/content only, 75% dead), personal-ai-os; zombie launchd kill list; ACE exam Jul 18 (not Aug 11).
