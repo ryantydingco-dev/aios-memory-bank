@@ -1,6 +1,7 @@
 # Memory Index
 
 - [Two-machine sync](two-machine-sync.md) — MacBook ↔ Mac Studio git architecture (2026-07-07): 4 private repos, claude-memory synced via symlink, 20-min sync job + SessionStart hook LIVE on MacBook; Studio bring-up pending (studio-setup/README.md).
+- [CA outbound pipeline](ca-outbound-pipeline.md) — /ca-outbound one-command cold-outbound (2026-07-07): AI Ark→crawl→personalize→SmartLead DRAFT→Telegram; all 28 GrowthEngineX skills installed; data engine = AI Ark ONLY (Apollo/LEAD411 removed). Draft-only, validated.
 - [AI use-case research 2026-07](ai-usecase-research-2026-07.md) — dual web+YouTube deep-research for CA (2026-07-07): 16-item prioritized build list, mockup-wedge commoditization warning (skubot/SAGE), Hermes/Fable 5 reality check; full report in aios-starter-kit/outputs/deep-research/.
 - [Promo market landscape](promo-market-landscape.md) — verified facts + strategy from the 2026-07-05 deep-research report (full report in CA plans/market-landscape-2026.md): CA = top-5% distributor, mission = cross $5M, 4imprint teardown, mockup wedge hits #1 buyer pain, two-lane positioning.
 - [Workspace map](workspace-map.md) — post-audit canonical structure (2026-07-04): cockpit = AIOS-Memory-Bank/LIFE-OS.md; engines = Creative-Alternatives-AIOS, aios-starter-kit (time-blocks/content only, 75% dead), personal-ai-os; zombie launchd kill list; ACE exam Jul 18 (not Aug 11).
@@ -12,7 +13,6 @@
 - [Oloxa recency guardrail](oloxa-recency-guardrail.md) — datable signals need a sourced date or they're down-ranked to LOW/NEEDS_RESEARCH; never fabricate dates.
 - [Oloxa Sway handoff schema](oloxa-sway-handoff-schema.md) — the shared UK/US/CA standard (unified 0-100 recency-pure score, GB/US/CA, 4-tier confidence, signal_date) + the standardize_for_sway.py emitter.
 - [Local SC outreach sprint](local-sc-outreach-sprint.md) — Midlands/Lake Murray service-business call/text sprint: postcard-first, GBP-issue door-opener, offer framing, source files, Best-25 workflow.
-- [LEAD411 mobile enrichment](lead411-mobile-enrichment.md) — how to pull owner mobiles from LEAD411 in-browser + the critical window-must-be-foreground gotcha.
 - [AI Contact Form build](ai-contact-form-build.md) — Ryan's primary Dealthreads offer (IdeaBrowser #7856): enricher + person-level lookup + live Railway demo at ai-contact-form-demo-production.up.railway.app. ~90% built, demo-ready.
 - [YouTube Video Factory](youtube-video-factory.md) — daily YouTube sprint: paste an IdeaBrowser idea → record-ready script + screenshare deck so Ryan can press record and talk. Engine at `Content-OS/90-Day-YouTube-Sprint/Video-Factory.md`.
 - [Origami → HubSpot lead sync](origami-hubspot-lead-sync.md) — Salesfinity dialer + Origami lead tables → HubSpot daily sync, LIVE since 2026-06-11 (2,947 contacts in); script `scripts/sync_leads_to_hubspot.py`, launchd 7:10am.
