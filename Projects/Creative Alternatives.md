@@ -4,6 +4,36 @@
 
 Creative Alternatives is Kenny’s long-running promotional-products business (`https://www.creativealternatives.com/`). Ryan is increasingly treating this as the primary applied AIOS venture: use his AI/operator knowledge to help his girlfriend’s dad modernize a real business with existing revenue, customers, suppliers, and workflows.
 
+## 2026-07-07 AI/agent use-case research + buying-signal enrichment
+
+A Claude session in the AIOS Memory Bank launched two parallel Creative Alternatives research sweeps:
+
+- Deep web research on **Hermes agent use cases**, Fable/Claude-style agent use cases, automations, lead generation, and differentiated ways to apply AI inside Creative Alternatives.
+- YouTube/video research on AI agent, automation, and lead-generation use cases that can be converted into practical Creative Alternatives plays.
+
+The scan only confirms the workflows were launched/running; future work should locate the completed reports/transcript directories before treating the findings as final.
+
+Separate subagents also researched a concrete, cheap **buying-signal enrichment** layer for CA outbound, especially for Ryan’s NY law/professional-services lists.
+
+Durable insight:
+
+- The lead list already represents **Fit**: law/finance/accounting/professional firms in the desired size/geography.
+- The missing layer is **Intent**: which firms have a current reason to buy swag now.
+- Best low-cost pattern is a scheduled **snapshot-and-diff**, not a one-time enrichment count:
+  1. Store each firm’s current open-req count from detectable ATS/careers/job-board surfaces.
+  2. Re-poll weekly.
+  3. Rank firms by deltas/new roles plus recent company-news triggers.
+  4. Use those signals to prioritize cold email/calls around onboarding kits, recruiting/event gear, office-expansion merch, client gifts, awards, and rebrands.
+
+Signal-source notes from adversarial checks:
+
+- Google News RSS appears useful as a free/no-key company-signal detector for triggers like office openings, leadership changes, rebrands, awards, and events. Treat it as a candidate-signal generator, not final proof.
+- ATS/job-source claims need per-source verification before implementation. BambooHR/JazzHR should not be assumed to have simple free public postings APIs; subagents were checking whether their practical public surface is embedded careers widgets or other brittle endpoints.
+- National job-board APIs such as Adzuna, USAJobs, and Arbeitnow may help with broad keyword/location research, but are weaker for per-company targeting unless company filters are verified.
+- Apify job actors may be a fallback for firms without detectable ATS feeds, but pricing/free-tier claims need live verification before recurring use.
+
+Practical next artifact: turn this into a small enrichment spec and pilot: schema, source priority, weekly poller, scoring formula, human-review queue, and first 50 target firms.
+
 ## 2026-07-06 personal operating constraints + content capture
 
 Ryan translated a video/life-simplification discussion into immediate operating constraints for the Creative Alternatives build:
@@ -280,7 +310,9 @@ The strongest near-term wedge appears to be **outbound/customer acquisition for 
 - Build the backend automation roadmap around QuickBooks, email, and purchase orders: current workflow map, order/quote/PO status visibility, approval points, first safe automations, and human review checkpoints.
 - Finish the outbound GTM system: ICP priority, list sources, qualification rules, cold email, call scripts, LinkedIn touchpoints, follow-up cadence, KPI dashboard, and owner workflow.
 - Synthesize the 2026-07-05 buyer-pain/competitor research into a reusable CA asset: pain map, source-backed proof, positioning implications, objections, and copy angles.
-- Review the 2026-06-28, 2026-06-29, and 2026-07-05 Claude subagent research outputs, dedupe/source-check the best signal-backed accounts and buyer-pain evidence, and import only campaign-ready leads/claims into the durable CA outbound system.
+- Locate and synthesize the 2026-07-07 AI/agent/Hermes/Fable/automation/lead-gen research sweeps into a Creative Alternatives use-case menu; only use completed/cited outputs, not raw launched-workflow notes.
+- Convert the 2026-07-07 buying-signal enrichment research into a first pilot: 50 target firms, verified sources/endpoints, weekly snapshot-and-diff, scoring rubric, and reviewable hot-list output.
+- Review the 2026-06-28, 2026-06-29, 2026-07-05, and 2026-07-07 Claude subagent research outputs, dedupe/source-check the best signal-backed accounts and buyer-pain evidence, and import only campaign-ready leads/claims into the durable CA outbound system.
 - Finish the 2026-07-02 AI-ARK law-firm lead campaign assembly: confirm both jobs completed, export all pages, dedupe/validate emails, map into Smartlead, and QA before launch.
 - Follow up on reply-watcher hot replies, especially Camp Arcadia and Harbor Haven.
 - Turn the 28-skill cold-outbound mapping into a prioritized CA adaptation plan.

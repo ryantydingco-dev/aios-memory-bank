@@ -3,6 +3,7 @@
 ## Automation context
 
 - Daily AI Market Pulse continues to run from the YM workspace.
+- On 2026-07-07, Codex ran the Daily AI Market Pulse again from `/Users/ryantydingco/Documents/YM`, checked prior automation memory plus workspace research/playbook files, inspected available research tools/credentials, and preserved the dated source-pulse + script-pack convention.
 - On 2026-07-06, Codex ran the Daily AI Market Pulse again from `/Users/ryantydingco/Documents/YM`, checked prior automation memory plus workspace research/playbook files, verified which research tools/credentials were available, and preserved the established dated source-pulse + script-pack convention.
 - On 2026-07-05, Codex again ran the Daily AI Market Pulse flow from the YM workspace, using recent source-pulse/script-pack outputs as the baseline because automation memory was not clearly present, then preserving the existing content conventions.
 - On 2026-07-04, Codex ran the same Daily AI Market Pulse flow: check prior automation memory and workspace research/playbook files, avoid duplicate angles, and write into the established source-pulse + script-pack system.

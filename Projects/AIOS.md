@@ -35,6 +35,21 @@ Recent AIOS monetization work is mapping existing modules/skills into Tier A ass
 
 Highest priority: assets that serve both Dealthread outbound and Mocha Builds content.
 
+## 2026-07-07 two-machine setup decision
+
+The AIOS starter-kit now has a documented MacBook ↔ Mac Studio architecture in `AIOS/aios-starter-kit/studio-setup/README.md`.
+
+Durable decision:
+
+- Git is the sync spine.
+- GitHub private repos are the hub.
+- Four synced repos should exist at identical paths on both machines.
+- The **Mac Studio is the automation server** and single writer for launchd jobs + runtime data.
+- The **MacBook is the mobile client**.
+- Commit history doubles as the cross-machine session log; `git log` should answer “what did the other machine do?”
+
+Future agents should respect this architecture before adding scheduled jobs or runtime-writing automation. Do not create competing launchd/runtime writers on the MacBook unless Ryan explicitly changes the architecture.
+
 ## 2026-06-23 Creative Alternatives pivot
 
 - Ryan wants a fresh AIOS SYSTEM install dedicated to **Creative Alternatives** (`creativealternatives.com`), Kenny’s 25+ year business.
