@@ -4,6 +4,33 @@
 
 Creative Alternatives is Kenny’s long-running promotional-products business (`https://www.creativealternatives.com/`). Ryan is increasingly treating this as the primary applied AIOS venture: use his AI/operator knowledge to help his girlfriend’s dad modernize a real business with existing revenue, customers, suppliers, and workflows.
 
+## 2026-07-08 trade-show/event outbound + AI use-case sweeps
+
+Recent Claude/Codex activity sharpened a major CA outbound segment: **companies exhibiting at trade shows or events**.
+
+Durable rationale:
+
+- Exhibitors have a clear deadline and a known reason to buy branded merchandise.
+- Booth swag, event apparel, giveaways, uniforms, tote bags, badge/name-tag items, and post-show gifts can be bulk orders.
+- Bulk/event orders fit CA’s margin reality better than scattered one-off promo needs; Ryan specifically noted CA often works around **30–40% markup**.
+- The best workflow is not “generic corporate swag outbound”; it is event-timed outreach to companies that are about to exhibit and need booth/event materials handled.
+
+Research sessions/subagents were launched around:
+
+- Cheaply discovering upcoming trade-show exhibitors, including whether public event directories, exhibitor pages, scrapers, Apify actors, Firecrawl, or other low-cost methods can produce useful lead lists.
+- Booth-swag buying reality: when exhibitors order, what they buy, lead times, budget/spend ranges, urgency, and how a distributor should time/pitch outreach.
+- Hermes/Fable/agent/automation/lead-generation use cases and YouTube examples that could become differentiated CA operating plays.
+
+Important sourcing note:
+
+- A name-tag sourcing question surfaced a likely product category: full-color printed matte/frosted plastic badge/name tag with magnetic fastener. Future sourcing help should think like a promo-products distributor: use ASI/SAGE supplier networks and search terms around plastic badges, frosted/matte finish, full-color imprint, custom name tags, magnetic backing, MOQ, lead time, and margin — not retail-first sourcing.
+
+Practical next artifacts:
+
+1. Trade-show exhibitor discovery pilot: choose sources, scrape/API path, schema, event window, dedupe rules, and legality/rate-limit notes.
+2. Trade-show swag sales playbook: order timing, product bundle menus, pricing assumptions, outreach copy, call script, and follow-up cadence.
+3. AI/agent use-case menu: locate completed research outputs and turn them into CA-specific automations/use cases rather than rerunning broad searches.
+
 ## 2026-07-07 AI/agent use-case research + buying-signal enrichment
 
 A Claude session in the AIOS Memory Bank launched two parallel Creative Alternatives research sweeps:
@@ -310,7 +337,9 @@ The strongest near-term wedge appears to be **outbound/customer acquisition for 
 - Build the backend automation roadmap around QuickBooks, email, and purchase orders: current workflow map, order/quote/PO status visibility, approval points, first safe automations, and human review checkpoints.
 - Finish the outbound GTM system: ICP priority, list sources, qualification rules, cold email, call scripts, LinkedIn touchpoints, follow-up cadence, KPI dashboard, and owner workflow.
 - Synthesize the 2026-07-05 buyer-pain/competitor research into a reusable CA asset: pain map, source-backed proof, positioning implications, objections, and copy angles.
-- Locate and synthesize the 2026-07-07 AI/agent/Hermes/Fable/automation/lead-gen research sweeps into a Creative Alternatives use-case menu; only use completed/cited outputs, not raw launched-workflow notes.
+- Locate and synthesize the 2026-07-07/08 AI/agent/Hermes/Fable/automation/lead-gen research sweeps into a Creative Alternatives use-case menu; only use completed/cited outputs, not raw launched-workflow notes.
+- Convert the 2026-07-08 trade-show exhibitor discovery research into a pilot: source directories/scrapers, fields, scrape/API method, event window, dedupe, compliance/rate-limit notes, and outreach-ready lead list.
+- Convert the 2026-07-08 booth-swag buying research into a sales playbook: order windows, product bundles, budget/margin assumptions, deadline-based copy, call script, and follow-up cadence.
 - Convert the 2026-07-07 buying-signal enrichment research into a first pilot: 50 target firms, verified sources/endpoints, weekly snapshot-and-diff, scoring rubric, and reviewable hot-list output.
 - Review the 2026-06-28, 2026-06-29, 2026-07-05, and 2026-07-07 Claude subagent research outputs, dedupe/source-check the best signal-backed accounts and buyer-pain evidence, and import only campaign-ready leads/claims into the durable CA outbound system.
 - Finish the 2026-07-02 AI-ARK law-firm lead campaign assembly: confirm both jobs completed, export all pages, dedupe/validate emails, map into Smartlead, and QA before launch.
