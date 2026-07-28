@@ -1,0 +1,9 @@
+Before I buy another AI tool, I map where money or time is leaking.
+
+What I am showing you on screen is a one-page workflow and leakage audit.
+
+It comes down to three things. First, find repeated manual decisions. Second, mark the revenue and customer-impact steps. And third, choose one workflow with a visible before and after.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Comment with the workflow you would audit first.

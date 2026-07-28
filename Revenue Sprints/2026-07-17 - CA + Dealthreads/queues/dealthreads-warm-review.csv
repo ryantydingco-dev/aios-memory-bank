@@ -1,0 +1,10 @@
+priority,prospect,company,current_evidence,asset_status,delivery_confirmed,required_action,approval_status,next_action_date,current_stage,trial_value,cash_collected,mrr,lost_reason,notes
+1,Angel,Shine Hire,"Held meeting; explicit fit; liquidity blocker",Enriched list and follow-up draft exist,Yes,"Approve fixed exception; attach list; send manually; ask directly",Pending,2026-07-18,Proposal due,2000,0,0,,"Recommended total remains $2000 with split payment and 14-day cap"
+2,Luke,Spyglass Partners,"Human yes and follow-up questions",Sample and deck exist,Unknown,"Confirm delivery; call; ask for trial decision conversation",Pending,2026-07-20,Engaged,2000,0,0,,"Do not resend until thread state confirmed"
+3,Dane,Hire Energy,"Human high-intent reply",Sample and draft exist,Unknown,"Confirm delivery; call CEO; ask for working-session date",Pending,2026-07-20,Package ready,2000,0,0,,"CEO-calibrated direct follow-up"
+4,Mandy,Corporate Resources,"Human quality-bar question",Selective sample and draft exist,Unknown,"Confirm delivery; ask her to correct quality bar; ask for trial",Pending,2026-07-20,Package ready,2000,0,0,,"Lead with selectivity not volume"
+5,Bradley,Eleven Recruiting,Reply intent not verified,Sample exists,No,"Verify actual reply before any action",Hold,2026-07-20,Intent verification,2000,0,0,,
+6,David,Rock Coast Personnel,Reply intent not verified,Sample exists,No,"Verify actual reply before any action",Hold,2026-07-20,Intent verification,2000,0,0,,
+7,Jennifer,The Hiring Source,Unsubscribe,Sample exists,No,"Suppress across every channel; no contact",Suppressed,2026-07-18,Closed lost,0,0,0,Unsubscribe,
+8,Travis,Veriant Solutions,Unsubscribe,None,No,"Suppress across every channel; no contact",Suppressed,2026-07-18,Closed lost,0,0,0,Unsubscribe,
+

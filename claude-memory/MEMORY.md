@@ -1,5 +1,15 @@
 # Memory Index
 
+- [honest-math sprints](honest-math-sprints.md) — /honest-math (2026-07-20): day-zero funnel-math-backwards w/ observed rates + tripwires before any revenue push; Dealthreads sprint doc live (warm board > volume; ~1 positive per 700-1,100 sends observed).
+- [verify-copy + preflight skills](verify-preflight-skills.md) — 2026-07-19: worker/verifier split (fresh-context agents grade CA copy against rubrics; never self-grade) + failure-modes-first explainers before new pipelines; context trim audit in vault Projects/.
+
+- [SmartLead inbox signatures](smartlead-inbox-signatures.md) — HARD rule (2026-07-27): account-level `signature` appends to every send regardless of campaign; caused CA branding on Dealthreads cold emails. Keep blank on all inboxes, sign in body copy, audit after provisioning.
+
+- [Ryan sales background](ryan-sales-background.md) — lifelong cold outreach: Kirby door-to-door → roofing/LinkedIn → tech SDR → senior SDR → growth AM in one year; still prospects daily. Founder story for Dealthreads.
+
+- [Dealthreads Outbound Engine](dealthreads-outbound-engine.md) — dealthreads.io revival (2026-07-16): packaged DFY multi-channel outbound offer (email+LinkedIn+calling+AI Ark); 77 warmed non-CA SmartLead inboxes verified live (100 total, 96 @ 100% rep) = immediate acquisition weapon; client campaigns on new client-branded domains; cap 3 full clients solo.
+- [Income runway 2026-07](income-runway-2026-07.md) — Ryan expects to lose his day job ~mid-Aug 2026; needs bridge income without derailing CA; pivot-temptation pattern under money pressure — first move = get paid BY CA (Kenny retainer+commission), max ONE warm fractional-SDR client, no new builds.
+
 - [Two-machine sync](two-machine-sync.md) — MacBook ↔ Mac Studio git architecture (2026-07-07): 4 private repos, claude-memory synced via symlink, 20-min sync job + SessionStart hook LIVE on MacBook; Studio bring-up pending (studio-setup/README.md).
 - [Self-sourcing leads playbook](self-sourcing-leads-playbook.md) — cut AI Ark credit burn (2026-07-07 verified): emails ~$0.02/contact via owned Apify/ZeroBounce/Firecrawl + free NY-bar/SEC/FINRA registries; mobiles only via providers gated on engagement; TCPA/scraping guardrails. AI Ark = gap-filler only.
 - [CA no discount gimmicks](ca-no-discount-gimmicks.md) — HARD copy rule (2026-07-08): never use "X% off"/coupon/fake-urgency-discount lines in ANY CA copy unless Ryan gives a real approved offer; CA sells premium done-for-you value, not price. Enforced in content factory + cold-copy.
@@ -11,6 +21,9 @@
 - [AI use-case research 2026-07](ai-usecase-research-2026-07.md) — dual web+YouTube deep-research for CA (2026-07-07): 16-item prioritized build list, mockup-wedge commoditization warning (skubot/SAGE), Hermes/Fable 5 reality check; full report in aios-starter-kit/outputs/deep-research/.
 - [Promo market landscape](promo-market-landscape.md) — verified facts + strategy from the 2026-07-05 deep-research report (full report in CA plans/market-landscape-2026.md): CA = top-5% distributor, mission = cross $5M, 4imprint teardown, mockup wedge hits #1 buyer pain, two-lane positioning.
 - [Workspace map](workspace-map.md) — post-audit canonical structure (2026-07-04): cockpit = AIOS-Memory-Bank/LIFE-OS.md; engines = Creative-Alternatives-AIOS, aios-starter-kit (time-blocks/content only, 75% dead), personal-ai-os; zombie launchd kill list; ACE exam Jul 18 (not Aug 11).
+
+- [CA event-planner channel](ca-event-planner-channel.md) — persona campaign (2026-07-10): "your invisible swag department" for event planners (leveraged channel — 1 planner = 5-20 events/yr). AI Ark verified ~50k US planners / 753 SC; offer + 4-email sequence + event_planners ICP in ca_outbound.yaml built, launch = tag inboxes + /ca-outbound event_planners. Killer wedge: free client-logo mockups for planners' own pitches.
+- [CA reactivation engine](ca-reactivation-engine.md) — warm-base reactivation + referral engine (2026-07-09): mine CA's 2,700-customer base (warm converts ~10x cold per CA's own SmartLead data). Built from QB exports: 981 reactivation + 338 active/referral + 502 phone-only. Sends warm from Maclaine's inbox; scripts/ca_reactivation.py + Maclaine-voice sequences. QB only holds 2025-26; 1999-2024 spreadsheets = Phase 2.
 
 - [Runvue client portal](runvue-client-portal.md) — white-label delivery portal for AI lead-gen agencies (Ideabrowser #8026), DEPLOYED on Railway with Ryan's real lead-engine data; base IDs, key locations, offer, launch next-steps.
 

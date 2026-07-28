@@ -1,0 +1,71 @@
+company,email,prior_status,action
+Rg Logistics,rusty@rglships.com,INPROGRESS,pause->200
+Marcus & Associates,normann@marcusrealty.com,STARTED,pause->200
+Synergia Automotive Llc,kpothen@synergauto.com,STARTED,pause->200
+South Shore Roofing,kyle@southshoreroof.com,STARTED,pause->200
+Reynolds Electric And Plumbing,j.reynolds@reynoldsep.com,STARTED,pause->200
+B & L Plumbing Inc,larry.wieker@bnlplumbing.com,STARTED,pause->200
+D. Wilson Construction Co.,gregd@dwilsonconstruction.com,INPROGRESS,pause->200
+Rescue Air And Plumbing,joshc@rescueairtx.com,INPROGRESS,pause->200
+Pacific Landscape Management,bob.grover@pacscape.com,INPROGRESS,pause->200
+"Pat Plumbing, Heating And Air",patg@callpat.com,STARTED,pause->200
+Mighty Dog Roofing®,ssenecal@mightydogroofing.com,INPROGRESS,pause->200
+Horizon Roofing & Restoration,matt@hillandaleadvisors.com,STARTED,pause->200
+Vegas Born Roofing,jodd@vegasbornroofing.com,INPROGRESS,pause->200
+"Darby Construction Services, Llc",pstanton@darbycs.com,INPROGRESS,pause->200
+C&c Roofing And Construction,chance@ccroofingcompany.com,STARTED,pause->200
+Coleman Roofing & Construction,chris@colemanroof.com,STARTED,pause->200
+Motto Mortgage,chris.clemente@mottomortgage.com,INPROGRESS,pause->200
+Upright Roofing And Construction Llc,r.robinson@uprightroofinggc.com,STARTED,pause->200
+Turner Roofing Company Inc,tony@turnerroofingcompany.com,STARTED,pause->200
+Agk Logistics Inc,steve@agklogisticsinc.net,STARTED,pause->200
+Larry Neese Llc,larry@larryneeseroofing.com,INPROGRESS,pause->200
+Refined Roofing Tx,brent@refinedroofingtx.com,STARTED,pause->200
+Varsity Zone Hvac,jbabcock@varsityzone.com,INPROGRESS,pause->200
+Middleman Construction Company Llc,mark.middleman@middlemanconstruction.com,STARTED,pause->200
+Liberty Roofworks,jesse@libertyroofworks.com,INPROGRESS,pause->200
+Haro Roofing,jonathan.haro@haroroofing.com,INPROGRESS,pause->200
+Bali Construction,kevin@bali-construction.com,STARTED,pause->200
+"Loverain Roof Co.  Austin, Texas",j.landry@loverainroof.com,STARTED,pause->200
+"Summit Roofing Solutions, Llc",jason@summitroofingutah.com,INPROGRESS,pause->200
+Williford Roofing & Construction,tony@willifordroofing.com,COMPLETED,already-terminal
+Motto Mortgage,melinda.truitt@mottomortgage.com,INPROGRESS,pause->200
+"Collis Roofing, Inc.",doug@collisroofing.com,INPROGRESS,pause->200
+Iron River Construction,tracy@ironriverco.com,STARTED,pause->200
+Major Roofing,randy@majorroofingok.com,STARTED,pause->200
+Galban Electric,mark@galbanelectric.com,STARTED,pause->200
+Top Tier Roofing,david@toptierroofing.com,STARTED,pause->200
+Klaus Roofing Systems Of Texas Hill Country,josh@grmroof.com,STARTED,pause->200
+"Proficient Roofing, Llc",jtapia@proficientroofing.com,STARTED,pause->200
+Green Ladder Roofing And Waterproofing,david@greenladderroofinginc.com,INPROGRESS,pause->200
+Mighty Dog Roofing®,vmazumder@mightydogroofing.com,INPROGRESS,pause->200
+Executive Roofing Systems,jim@executiveroof.com,STARTED,pause->200
+"Drammer Construction, Inc.",matt@drammerinc.com,STARTED,pause->200
+Bellabay Realty,mike@bellabayrealty.com,STARTED,pause->200
+Mp-mainline Plumbing,john@mainlineplumbing.us,INPROGRESS,pause->200
+Select Renovations Commercial Roofing,todd@selectrenovations.build,INPROGRESS,pause->200
+Atlas Roofing & Restoration,andrew@atlasroofingrestoration.com,STARTED,pause->200
+Elite Manufacturing & Professional Services,sbennett@elite-workforce.com,INPROGRESS,pause->200
+Elite Manufacturing & Professional Services,rbennett@elite-workforce.com,INPROGRESS,pause->200
+Elite Manufacturing & Professional Services,hwhitson@elite-workforce.com,INPROGRESS,pause->200
+Hindsight Construction,ashley@hindsightllc.net,INPROGRESS,pause->200
+Universal Construction,fred@universalconstruction.com,INPROGRESS,pause->200
+Universal Construction,swatson@universalconstruction.net,STARTED,pause->200
+Williams & Company,bill@williamselectriccompany.net,INPROGRESS,pause->200
+"Electrical Automation Services, Inc",eas@eautomatedstaffing.com,STARTED,pause->200
+Placed - Midwest Construction Specialists,tom@placedrecruitment.com,STARTED,pause->200
+Clarity Business Solutions,frank@morinainsurance.com,STARTED,pause->200
+Real Estate Professionals,davids@bhhsrep.com,STARTED,pause->200
+Real Estate Professionals,dlemon@stw-realestatepros.com,STARTED,pause->200
+"Goliath Construction Consulting, Inc.",tyson@goliathcc.com,STARTED,pause->200
+Healthcare Design & Construction Practice,dsonier@sanfordrose.com,STARTED,pause->200
+The Edwards Group,jedwards@edwardsrvinsurance.com,STARTED,pause->200
+Advanced Dynamics,jeffdavis@automotivedynamicscorp.com,PAUSED,already-terminal
+"American Painting & Renovations, Inc.",stheus@amerapaint.com,INPROGRESS,pause->200
+Usi Insurance Services,sean.pechan@usi.com,INPROGRESS,pause->200
+Riley's Roofing,derek@rileysroofing.com,INPROGRESS,pause->200
+Golden Dragon Roofing,chris@goldendragonroofing.com,INPROGRESS,pause->200
+Tejas Roofworks + Restoration,nathan@tejasroofworks.com,INPROGRESS,pause->200
+Birdcreek Roofing,brad@birdcreekroofing.com,INPROGRESS,pause->200
+Cms Construction Management Services,mark@cms-seattle.com,INPROGRESS,pause->200
+Insurance Teamwork Services,justin@insuranceteamwork.com,INPROGRESS,pause->200

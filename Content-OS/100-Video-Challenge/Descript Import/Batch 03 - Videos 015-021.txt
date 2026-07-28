@@ -1,0 +1,102 @@
+VIDEO 015
+HOW A PROMOTIONAL-PRODUCTS COMPANY CAN USE AI FOR REORDERS
+
+The cheapest lead might already be in the customer file.
+
+What I am showing you on screen is a dormant-customer reactivation queue.
+
+It comes down to three things. First, find customers with a historical buying pattern. Second, match timing to likely repeat needs. And third, give a rep context and a useful reason to reach out.
+
+That is the difference between talking about AI and changing a real business.
+
+Comment 'reactivation' for the workflow topic.
+
+------------------------------
+
+VIDEO 016
+THE CUSTOMER DATA WE NEED BEFORE ADDING AI
+
+AI cannot remember customer context that nobody captured.
+
+What I am showing you on screen is a minimum customer-context schema.
+
+It comes down to three things. First, record what was bought and why. Second, capture timing and stakeholder context. And third, keep consent, access, and ownership explicit.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Save the minimum data model.
+
+------------------------------
+
+VIDEO 017
+HOW I WOULD TURN EVERY CAMPAIGN INTO SEO
+
+Every campaign can become a useful search asset if you publish the mechanism and evidence.
+
+What I am showing you on screen is campaign-to-content pipeline.
+
+It comes down to three things. First, publish the customer problem. Second, show the artifact and method. And third, link the lesson to a tool or next step.
+
+AI only helps if it improves who we target, why we contact them, or what happens next.
+
+Read Revenue System Field Notes.
+
+------------------------------
+
+VIDEO 018
+WHY I AM BUILDING A MEDIA BRAND AROUND THE WORK
+
+Content gets easier when the business gives you something real to say.
+
+What I am showing you on screen is the media-proof-revenue flywheel.
+
+It comes down to three things. First, ryan earns discovery. Second, creative Alternatives earns proof. And third, dealthreads gives demand a commercial path.
+
+I am documenting this because the work itself has to become the proof.
+
+Follow the year-long build.
+
+------------------------------
+
+VIDEO 019
+THE AI TOOL TEST THAT SAVES ME FROM SUBSCRIPTIONS
+
+I do not ask if a tool is impressive. I ask what job it owns.
+
+What I am showing you on screen is a tool scorecard.
+
+It comes down to three things. First, name the workflow step. Second, define the output and approval owner. And third, cancel it if the result cannot be measured.
+
+The tool earns its place only if the workflow gets better.
+
+Use this test before buying another tool.
+
+------------------------------
+
+VIDEO 020
+HOW I USE CODEX AND CLAUDE WITHOUT DUPLICATING WORK
+
+Two models are useful only when they disagree productively.
+
+What I am showing you on screen is a builder-reviewer handoff.
+
+It comes down to three things. First, one model builds against the code and data. Second, the second attacks assumptions and risks. And third, the operator resolves the decision.
+
+The tool earns its place only if the workflow gets better.
+
+Follow for the exact operating stack.
+
+------------------------------
+
+VIDEO 021
+THE WEEKLY SCORECARD THAT KEEPS CONTENT HONEST
+
+Views are useful, but they are not the whole business outcome.
+
+What I am showing you on screen is the media-to-revenue scorecard.
+
+It comes down to three things. First, track outputs and owned subscribers. Second, track qualified conversations and Radar requests. And third, connect meetings and revenue to first touch.
+
+I am documenting this because the work itself has to become the proof.
+
+Use the free calculator to model your economics.

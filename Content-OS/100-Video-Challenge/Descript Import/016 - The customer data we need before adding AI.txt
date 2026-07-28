@@ -1,0 +1,9 @@
+AI cannot remember customer context that nobody captured.
+
+What I am showing you on screen is a minimum customer-context schema.
+
+It comes down to three things. First, record what was bought and why. Second, capture timing and stakeholder context. And third, keep consent, access, and ownership explicit.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Save the minimum data model.

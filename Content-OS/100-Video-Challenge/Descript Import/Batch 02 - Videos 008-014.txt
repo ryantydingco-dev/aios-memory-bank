@@ -1,0 +1,102 @@
+VIDEO 008
+MY 32,868-EMAIL REALITY CHECK
+
+I sent 32,868 outbound emails, and the average hid the most important lesson.
+
+What I am showing you on screen is the flagship dataset scorecard.
+
+It comes down to three things. First, 210 replies were recorded. Second, 18 were classified as qualified leads. And third, campaign reply rates ranged from zero to 10.1 percent.
+
+AI only helps if it improves who we target, why we contact them, or what happens next.
+
+Read the full report before quoting the numbers.
+
+------------------------------
+
+VIDEO 009
+THE CAMPAIGN THAT GOT ZERO REPLIES
+
+One campaign sent 1,176 emails and got nothing back.
+
+What I am showing you on screen is the zero-reply campaign row.
+
+It comes down to three things. First, volume did not rescue the market. Second, a failure needs its own denominator. And third, change one variable in the next test.
+
+AI only helps if it improves who we target, why we contact them, or what happens next.
+
+Share the failed test you learned the most from.
+
+------------------------------
+
+VIDEO 010
+THE CAMPAIGN THAT REACHED A 10.1% REPLY RATE
+
+The same system that produced zero also produced a 10.1% reply rate.
+
+What I am showing you on screen is the best-performing campaign row.
+
+It comes down to three things. First, campaign-level variance matters. Second, market and offer must be separated from copy. And third, one win is a lead for the next test, not a universal benchmark.
+
+AI only helps if it improves who we target, why we contact them, or what happens next.
+
+Follow for the next controlled test.
+
+------------------------------
+
+VIDEO 011
+HOW I DECIDE WHICH AI PROJECT GETS BUILT NEXT
+
+I rank AI projects by money, evidence, effort, and time to launch.
+
+What I am showing you on screen is the revenue-opportunity scorecard.
+
+It comes down to three things. First, estimate probable 30-day revenue. Second, grade the evidence strength. And third, prefer a supervised test that can launch this week.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Use this four-part score before your next build.
+
+------------------------------
+
+VIDEO 012
+THE DIFFERENCE BETWEEN AUTOMATION AND INTELLIGENCE
+
+Automation moves work. Intelligence helps decide what work matters.
+
+What I am showing you on screen is a research-to-approval workflow.
+
+It comes down to three things. First, research creates candidates. Second, evidence makes candidates inspectable. And third, a human approves the action.
+
+The tool earns its place only if the workflow gets better.
+
+Follow for more practical AI architecture.
+
+------------------------------
+
+VIDEO 013
+WHY EVERY AI AGENT NEEDS AN APPROVAL GATE
+
+If an AI can contact a customer, it needs a stop sign.
+
+What I am showing you on screen is the Dealthreads approval queue.
+
+It comes down to three things. First, generated copy stays private. Second, the exact destination and message are reviewed. And third, execution is recorded separately from approval.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Send this to someone building an agent.
+
+------------------------------
+
+VIDEO 014
+MY SUNDAY CONTENT-TO-REVENUE WORKFLOW
+
+One week of real work should create a week of useful content.
+
+What I am showing you on screen is the weekly media queue.
+
+It comes down to three things. First, capture artifacts while building. Second, batch seven short scripts. And third, use one long episode and one newsletter as anchors.
+
+I am documenting this because the work itself has to become the proof.
+
+Join Field Notes for the weekly operating brief.

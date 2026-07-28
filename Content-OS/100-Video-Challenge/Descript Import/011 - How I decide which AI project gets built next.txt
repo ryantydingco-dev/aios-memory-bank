@@ -1,0 +1,9 @@
+I rank AI projects by money, evidence, effort, and time to launch.
+
+What I am showing you on screen is the revenue-opportunity scorecard.
+
+It comes down to three things. First, estimate probable 30-day revenue. Second, grade the evidence strength. And third, prefer a supervised test that can launch this week.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Use this four-part score before your next build.

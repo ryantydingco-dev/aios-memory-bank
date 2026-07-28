@@ -1,0 +1,9 @@
+A real AI build leaves an artifact a teammate can inspect.
+
+What I am showing you on screen is a workflow spec with owner, trigger, and exception.
+
+It comes down to three things. First, name the trigger and owner. Second, show inputs, output, and exceptions. And third, record the result after execution.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Show the artifact, not the buzzword.

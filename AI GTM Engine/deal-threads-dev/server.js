@@ -9,6 +9,15 @@ import { createDataStore } from "./src/data-store.js";
 import { checkHubSpotProperties, hubSpotMode, hubSpotSyncPreview, requiredHubSpotProperties, syncLeadToHubSpot } from "./src/hubspot.js";
 import { enrichCompanyInternally, internalEnrichmentMode } from "./src/internal-enrichment.js";
 import { extractLeadFieldsWithLlm, llmExtractionMode, llmExtractionSettings, mergeExtractedProfile } from "./src/llm-extractor.js";
+import { createSdrDesk } from "./src/sdr-desk.js";
+import { buildRevenueWatchdog, resolveRevenueDecision } from "./src/revenue-watchdog.js";
+import { integrationStatus, normalizeIntegrationEvent, verifyIntegrationWebhook } from "./src/integration-events.js";
+import {
+  deliverRevenueNotifications,
+  notificationAdapterStatus,
+  notificationSummary,
+  queueRevenueNotifications
+} from "./src/revenue-notifications.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 4173);
@@ -35,6 +44,14 @@ const ACTIVATION_AUTO_KICKOFF_ON_CONFIRMATION = process.env.ACTIVATION_AUTO_KICK
 const CRM_DELIVERY_MODE = String(process.env.CRM_DELIVERY_MODE || "dry_run").toLowerCase();
 const CRM_DELIVERY_WEBHOOK_URL = process.env.CRM_DELIVERY_WEBHOOK_URL || "";
 const CRM_DELIVERY_WEBHOOK_TOKEN = process.env.CRM_DELIVERY_WEBHOOK_TOKEN || "";
+const SDR_AUTOMATION_ENABLED = process.env.SDR_AUTOMATION_ENABLED === "true";
+const SDR_AUTOMATION_INTERVAL_MS = Math.max(15_000, Math.round(positiveNumber(process.env.SDR_AUTOMATION_INTERVAL_MS, 60_000)));
+const SDR_ACTION_MODE = String(process.env.SDR_ACTION_MODE || "approval").toLowerCase();
+const SDR_ACTION_WEBHOOK_URL = process.env.SDR_ACTION_WEBHOOK_URL || "";
+const SDR_ACTION_WEBHOOK_TOKEN = process.env.SDR_ACTION_WEBHOOK_TOKEN || "";
+const SDR_ACTION_TIMEOUT_MS = Math.max(1_000, Math.round(positiveNumber(process.env.SDR_ACTION_TIMEOUT_MS, 10_000)));
+const HUBSPOT_AUTO_SYNC = process.env.HUBSPOT_AUTO_SYNC === "true";
+const HUBSPOT_AUTO_SETUP_PROPERTIES = process.env.HUBSPOT_AUTO_SETUP_PROPERTIES === "true";
 const PILOT_TARGET_CLIENTS = Math.max(1, Math.round(positiveNumber(process.env.PILOT_TARGET_CLIENTS, 5)));
 const MANUAL_RESEARCH_MINUTES_PER_RAW_FORM = Math.max(1, Math.round(positiveNumber(process.env.MANUAL_RESEARCH_MINUTES_PER_RAW_FORM, 20)));
 const DEFAULT_PROOF_MINIMUM_LEADS = Math.max(1, Math.round(positiveNumber(process.env.DEFAULT_PROOF_MINIMUM_LEADS, 10)));
@@ -260,9 +277,13 @@ const state = {
   reportDeliveries: new Map(),
   repAlerts: new Map(),
   crmDeliveries: new Map(),
+  revenueDecisionResolutions: new Map(),
+  revenueWatchdogRuns: [],
+  revenueNotificationDeliveries: [],
   events: [],
   hubspotReadiness: null
 };
+const sdrDesk = createSdrDesk();
 
 let persistTimer = null;
 
@@ -282,6 +303,10 @@ function snapshotState() {
     reportDeliveries: [...state.reportDeliveries.values()],
     repAlerts: [...state.repAlerts.values()],
     crmDeliveries: [...state.crmDeliveries.values()],
+    revenueDecisionResolutions: [...state.revenueDecisionResolutions.values()],
+    revenueWatchdogRuns: state.revenueWatchdogRuns,
+    revenueNotificationDeliveries: state.revenueNotificationDeliveries,
+    sdrDesk: sdrDesk.snapshot(),
     events: state.events,
     hubspotReadiness: state.hubspotReadiness
   };
@@ -306,6 +331,9 @@ function stateBackupExport() {
       report_deliveries: snapshot.reportDeliveries.length,
       rep_alerts: snapshot.repAlerts.length,
       crm_deliveries: snapshot.crmDeliveries.length,
+      revenue_decisions: snapshot.revenueDecisionResolutions.length,
+      revenue_watchdog_runs: snapshot.revenueWatchdogRuns.length,
+      revenue_notification_deliveries: snapshot.revenueNotificationDeliveries.length,
       events: snapshot.events.length
     },
     snapshot
@@ -349,7 +377,7 @@ function validateStateBackup(body = {}) {
     result.warnings.push(`Backup app is ${parsed.metadata.app}; expected deal-threads-dev.`);
   }
 
-  const arraySections = ["sessions", "conversations", "leads", "betaClients", "companyMemory", "reportDeliveries", "repAlerts", "crmDeliveries", "events"];
+  const arraySections = ["sessions", "conversations", "leads", "betaClients", "companyMemory", "reportDeliveries", "repAlerts", "crmDeliveries", "revenueDecisionResolutions", "revenueWatchdogRuns", "revenueNotificationDeliveries", "events"];
   for (const section of arraySections) {
     if (snapshot[section] === undefined) {
       result.missing_sections.push(section);
@@ -372,6 +400,8 @@ function validateStateBackup(body = {}) {
     report_deliveries: duplicateValues(snapshot.reportDeliveries, "id"),
     rep_alerts: duplicateValues(snapshot.repAlerts, "id"),
     crm_deliveries: duplicateValues(snapshot.crmDeliveries, "id"),
+    revenue_decisions: duplicateValues(snapshot.revenueDecisionResolutions, "id"),
+    revenue_notification_deliveries: duplicateValues(snapshot.revenueNotificationDeliveries, "id"),
     events: duplicateValues(snapshot.events, "id")
   };
 
@@ -708,6 +738,9 @@ function backupCounts(snapshot = {}) {
     report_deliveries: Array.isArray(snapshot.reportDeliveries) ? snapshot.reportDeliveries.length : 0,
     rep_alerts: Array.isArray(snapshot.repAlerts) ? snapshot.repAlerts.length : 0,
     crm_deliveries: Array.isArray(snapshot.crmDeliveries) ? snapshot.crmDeliveries.length : 0,
+    revenue_decisions: Array.isArray(snapshot.revenueDecisionResolutions) ? snapshot.revenueDecisionResolutions.length : 0,
+    revenue_watchdog_runs: Array.isArray(snapshot.revenueWatchdogRuns) ? snapshot.revenueWatchdogRuns.length : 0,
+    revenue_notification_deliveries: Array.isArray(snapshot.revenueNotificationDeliveries) ? snapshot.revenueNotificationDeliveries.length : 0,
     events: Array.isArray(snapshot.events) ? snapshot.events.length : 0
   };
 }
@@ -748,6 +781,10 @@ function hydrateState(snapshot) {
   state.reportDeliveries = new Map((snapshot.reportDeliveries || []).map((item) => normalizeReportDelivery(item)).map((item) => [item.id, item]));
   state.repAlerts = new Map((snapshot.repAlerts || []).map((item) => normalizeRepAlert(item)).map((item) => [item.id, item]));
   state.crmDeliveries = new Map((snapshot.crmDeliveries || []).map((item) => normalizeCrmDelivery(item)).map((item) => [item.id, item]));
+  state.revenueDecisionResolutions = new Map((snapshot.revenueDecisionResolutions || []).map((item) => [item.id, item]));
+  state.revenueWatchdogRuns = Array.isArray(snapshot.revenueWatchdogRuns) ? snapshot.revenueWatchdogRuns.slice(0, 90) : [];
+  state.revenueNotificationDeliveries = Array.isArray(snapshot.revenueNotificationDeliveries) ? snapshot.revenueNotificationDeliveries.slice(-1000) : [];
+  sdrDesk.restore(snapshot.sdrDesk || {});
   state.events = snapshot.events || [];
   state.hubspotReadiness = snapshot.hubspotReadiness || null;
 }
@@ -1165,6 +1202,12 @@ function isProtectedPath(pathname) {
     pathname.startsWith("/api/v1/rep-alerts/") ||
     pathname === "/api/v1/crm-deliveries" ||
     pathname.startsWith("/api/v1/crm-deliveries/") ||
+    pathname === "/api/v1/sdr-desk" ||
+    pathname.startsWith("/api/v1/sdr-desk/") ||
+    pathname === "/sdr-ops" ||
+    pathname.startsWith("/sdr-ops/") ||
+    pathname === "/api/v1/sdr-ops" ||
+    pathname.startsWith("/api/v1/sdr-ops/") ||
     pathname.startsWith("/api/v1/hubspot/")
   );
 }
@@ -40066,6 +40109,31 @@ async function readBody(req) {
   return { raw };
 }
 
+async function readWebhookBody(req) {
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of req) {
+    size += chunk.length;
+    if (size > MAX_REQUEST_BODY_BYTES) {
+      const error = new Error(`Request body exceeds ${MAX_REQUEST_BODY_BYTES} bytes.`);
+      error.status = 413;
+      error.code = "payload_too_large";
+      throw error;
+    }
+    chunks.push(chunk);
+  }
+  const raw = Buffer.concat(chunks).toString("utf8");
+  if (!raw) return { raw, body: {} };
+  try {
+    return { raw, body: JSON.parse(raw) };
+  } catch {
+    const error = new Error("Webhook JSON could not be parsed.");
+    error.status = 400;
+    error.code = "invalid_json";
+    throw error;
+  }
+}
+
 function track(eventType, properties = {}) {
   const event = {
     id: id("evt"),
@@ -41090,6 +41158,25 @@ async function buildLead(conversation) {
   rememberCompanyFromLead(lead);
   markBetaChecklistSystem(conversation.source?.beta_client_id, "test_lead_created", `Lead profile ${lead.id} was created.`);
   track("lead_profile_created", { leadProfileId: lead.id, priority: score.priority });
+  sdrDesk.ingestSignal({
+    event_id: `lead-profile:${lead.id}`,
+    source: "deal_threads_widget",
+    signal_type: "inbound",
+    summary: lead.qualification?.business_need || "Buyer completed the Deal Threads intake",
+    source_lead_id: lead.id,
+    account_name: lead.company?.name,
+    account_domain: lead.company?.domain,
+    employee_count: Number.parseInt(String(lead.company?.employee_range || "").replace(/\D/g, ""), 10) || null,
+    industry: lead.company?.industry,
+    contact_name: lead.contact?.name,
+    contact_email: lead.contact?.email,
+    contact_role: lead.contact?.role,
+    icp_match: Number(lead.score?.icp_fit || 0) >= 60,
+    authority: ["decision_owner", "influencer"].includes(lead.contact?.authority_signal),
+    active_need: Boolean(lead.qualification?.business_need),
+    timeline: lead.qualification?.timeline,
+    facts: lead.score?.rationale || []
+  });
   if (shouldQueueRepAlert(lead)) queueRepAlertForLead(lead, "system");
   track("crm_sync_started", { leadProfileId: lead.id, mode: hubSpotMode() });
   lead.crm = await syncLeadToHubSpot(lead);
@@ -44765,7 +44852,7 @@ function renderCrmList(searchParams = new URLSearchParams()) {
 
   return crmShell(
     `Rep inbox`,
-    `<div class="toolbar"><div><h1>Rep inbox</h1><p>${filteredLeads.length} shown from ${leads.length} lead profiles.</p></div><div><a href="/readiness">Readiness</a> · <a href="/pilot">Pilot center</a> · <a href="/proof">Proof</a> · <a href="/beta-clients">Beta clients</a> · <a href="/enrichment">Enrichment</a> · <a href="/reports/beta">Beta report</a> · <a href="${escapeHtml(exportHref)}">Export CSV</a> · <a href="/">New demo lead</a></div></div>
+    `<div class="toolbar"><div><h1>Rep inbox</h1><p>${filteredLeads.length} shown from ${leads.length} lead profiles.</p></div><div><a href="/sdr-ops">Revenue Watchdog</a> · <a href="/readiness">Readiness</a> · <a href="/pilot">Pilot center</a> · <a href="/proof">Proof</a> · <a href="/beta-clients">Beta clients</a> · <a href="/enrichment">Enrichment</a> · <a href="/reports/beta">Beta report</a> · <a href="${escapeHtml(exportHref)}">Export CSV</a> · <a href="/">New demo lead</a></div></div>
     ${renderCrmMetrics(analytics)}
     ${renderLeadFilters(filters)}
     ${rows || `<div class="empty">No leads match these filters. <a href="/crm">Clear filters</a></div>`}`
@@ -44846,7 +44933,7 @@ function renderPilotCommandPage(baseUrl = "") {
     "Pilot command center",
     `<div class="toolbar">
       <div><h1>Pilot command center</h1><p>Five-client beta health, sales follow-up, report delivery, and next actions.</p></div>
-      <div><a href="/launch">First launch</a> · <a href="/beta-clients">Beta clients</a> · <a href="/proof">Proof</a> · <a href="/crm">Rep inbox</a> · <a href="/reports/deliveries">Deliveries</a> · <a href="${escapeHtml(
+      <div><a href="/sdr-ops">Revenue Watchdog</a> · <a href="/launch">First launch</a> · <a href="/beta-clients">Beta clients</a> · <a href="/proof">Proof</a> · <a href="/crm">Rep inbox</a> · <a href="/reports/deliveries">Deliveries</a> · <a href="${escapeHtml(
         snapshotCsvHref
       )}">Snapshot CSV</a> · <a href="/enrichment">Enrichment</a></div>
     </div>
@@ -54323,6 +54410,398 @@ function appBaseUrl(req) {
   return `${protocol}://${host}`;
 }
 
+let sdrCycleRunning = false;
+
+function integrationWebhookSecret(provider) {
+  return {
+    smartlead: process.env.SMARTLEAD_WEBHOOK_SECRET,
+    salesfinity: process.env.SALESFINITY_WEBHOOK_SECRET,
+    sendr: process.env.SENDR_WEBHOOK_SECRET,
+    calcom: process.env.CALCOM_WEBHOOK_SECRET
+  }[provider] || "";
+}
+
+function matchingSdrProspect(normalized) {
+  const email = normalized.contact?.email?.toLowerCase();
+  const domain = normalized.account?.domain?.toLowerCase();
+  return sdrDesk.listProspects().find((prospect) =>
+    (email && prospect.contact?.email === email)
+    || (domain && prospect.account?.domain === domain)
+  ) || null;
+}
+
+function integrationActionInput(normalized, action, prospectId = null) {
+  return {
+    ...action,
+    ...(prospectId ? { prospect_id: prospectId } : {}),
+    account_name: normalized.account?.name,
+    account_domain: normalized.account?.domain,
+    contact_name: normalized.contact?.name,
+    contact_email: normalized.contact?.email,
+    linkedin_url: normalized.contact?.linkedin_url
+  };
+}
+
+function processIntegrationEvent(provider, payload, context = {}) {
+  const normalized = normalizeIntegrationEvent(provider, payload, context);
+  if (normalized.ignored) return { normalized, results: [] };
+  const results = [];
+  let prospect = matchingSdrProspect(normalized);
+
+  for (const action of normalized.actions) {
+    if (!prospect && action.kind !== "signal") {
+      const bootstrap = sdrDesk.ingestSignal(integrationActionInput(normalized, {
+        kind: "signal",
+        event_id: `${normalized.event_id}:bootstrap`,
+        signal_type: action.kind === "meeting" ? "inbound" : "engagement",
+        source: provider,
+        summary: `${provider} ${normalized.provider_event_type.toLowerCase().replaceAll("_", " ")} received`,
+        strength: action.kind === "meeting" ? 1 : 0.7,
+        occurred_at: action.received_at || action.starts_at
+      }));
+      prospect = bootstrap.prospect;
+      results.push({ kind: "bootstrap", result: bootstrap });
+    }
+
+    const input = integrationActionInput(normalized, action, prospect?.id);
+    let result;
+    if (action.kind === "signal") result = sdrDesk.ingestSignal(input);
+    else if (action.kind === "reply") result = sdrDesk.ingestReply(input);
+    else if (action.kind === "meeting") result = sdrDesk.ingestMeeting(input);
+    else continue;
+    prospect = result.prospect || prospect;
+    results.push({ kind: action.kind, result });
+  }
+
+  track("sdr_integration_event_ingested", {
+    provider,
+    event_id: normalized.event_id,
+    provider_event_type: normalized.provider_event_type,
+    action_types: results.map((item) => item.kind),
+    prospect_id: prospect?.id || null
+  });
+  return { normalized, results };
+}
+
+function sdrAutomationStatus() {
+  return {
+    ...sdrDesk.status(),
+    automation: {
+      enabled: SDR_AUTOMATION_ENABLED,
+      interval_ms: SDR_AUTOMATION_INTERVAL_MS,
+      action_mode: SDR_ACTION_MODE === "webhook" ? "webhook" : "approval",
+      webhook_configured: Boolean(SDR_ACTION_WEBHOOK_URL),
+      external_actions_automatic: SDR_ACTION_MODE === "webhook" && Boolean(SDR_ACTION_WEBHOOK_URL)
+    },
+    integrations: integrationStatus(),
+    notifications: notificationSummary(state.revenueNotificationDeliveries, notificationAdapterStatus()),
+    hubspot: {
+      mode: hubSpotMode(),
+      auto_sync: HUBSPOT_AUTO_SYNC,
+      auto_setup_properties: HUBSPOT_AUTO_SETUP_PROPERTIES,
+      readiness: state.hubspotReadiness?.summary || null
+    }
+  };
+}
+
+function revenueWatchdogReport() {
+  const automationStatus = sdrAutomationStatus();
+  return buildRevenueWatchdog({
+    now: now(),
+    dataStoreMode: DATA_STORE_MODE,
+    automation: {
+      ...automationStatus.automation,
+      last_run_at: automationStatus.last_run_at
+    },
+    prospects: sdrDesk.listProspects(),
+    tasks: sdrDesk.listTasks(),
+    leads: allLeadsSorted(),
+    repAlerts: allRepAlertsSorted(),
+    crmDeliveries: allCrmDeliveriesSorted(),
+    decisionResolutions: [...state.revenueDecisionResolutions.values()]
+  });
+}
+
+function captureDailyRevenueWatchdog() {
+  const report = revenueWatchdogReport();
+  const date = report.generated_at.slice(0, 10);
+  const latest = state.revenueWatchdogRuns[0];
+  if (latest?.generated_at?.slice(0, 10) === date) return latest;
+  const snapshot = {
+    generated_at: report.generated_at,
+    headline: report.headline,
+    metrics: report.metrics,
+    learning: {
+      overall_score: report.learning_review.overall_score,
+      grade: report.learning_review.grade,
+      replies_reviewed: report.learning_review.replies_reviewed,
+      improvement_candidates: report.learning_review.improvement_candidates.length
+    },
+    integrity: {
+      status: report.integrity.status,
+      failing: report.integrity.failing,
+      warnings: report.integrity.warnings
+    }
+  };
+  state.revenueWatchdogRuns.unshift(snapshot);
+  state.revenueWatchdogRuns = state.revenueWatchdogRuns.slice(0, 90);
+  return snapshot;
+}
+
+async function executeSdrTask(task, prospect) {
+  if (!task.external_action) {
+    return {
+      status: "completed",
+      mode: "internal",
+      note: `${task.type} completed inside the Deal Threads control plane.`
+    };
+  }
+
+  if (SDR_ACTION_MODE !== "webhook") {
+    return {
+      status: "awaiting_approval",
+      mode: "approval",
+      note: "Draft is ready. External delivery remains manual until SDR_ACTION_MODE=webhook."
+    };
+  }
+  if (!SDR_ACTION_WEBHOOK_URL) throw new Error("SDR_ACTION_WEBHOOK_URL is required when SDR_ACTION_MODE=webhook");
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), SDR_ACTION_TIMEOUT_MS);
+  try {
+    const response = await fetch(SDR_ACTION_WEBHOOK_URL, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "idempotency-key": task.idempotency_key,
+        ...(SDR_ACTION_WEBHOOK_TOKEN ? { authorization: `Bearer ${SDR_ACTION_WEBHOOK_TOKEN}` } : {})
+      },
+      body: JSON.stringify({
+        type: "deal_threads.sdr_action",
+        version: "deal_threads.sdr_action.v1",
+        task,
+        prospect
+      }),
+      signal: controller.signal
+    });
+    if (!response.ok) throw new Error(`SDR action webhook returned HTTP ${response.status}`);
+    const body = await response.text();
+    return {
+      status: "completed",
+      mode: "webhook",
+      http_status: response.status,
+      response: body.slice(0, 1_000)
+    };
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function runSdrAutomationCycle(options = {}) {
+  if (sdrCycleRunning) {
+    return { skipped: true, reason: "cycle_already_running", status: sdrAutomationStatus() };
+  }
+  sdrCycleRunning = true;
+  try {
+    const run = await sdrDesk.runDueTasks(executeSdrTask, {
+      limit: Math.max(1, Math.min(100, Number(options.limit || 25)))
+    });
+    track("sdr_automation_cycle_completed", {
+      run_id: run.id,
+      considered: run.considered,
+      completed: run.completed,
+      awaiting_approval: run.awaiting_approval,
+      retried: run.retried,
+      failed: run.failed
+    });
+    captureDailyRevenueWatchdog();
+    let hubspot = null;
+    if (hubSpotMode() === "live" && HUBSPOT_AUTO_SETUP_PROPERTIES && !state.hubspotReadiness) {
+      state.hubspotReadiness = await checkHubSpotProperties({ createMissing: true });
+    }
+    if (hubSpotMode() === "live" && HUBSPOT_AUTO_SYNC) {
+      hubspot = await runHubSpotSyncQueue({ dryRun: false, limit: options.hubspotLimit || 25 }, "sdr-automation");
+    }
+    const watchdog = revenueWatchdogReport();
+    state.revenueNotificationDeliveries = queueRevenueNotifications(state.revenueNotificationDeliveries, watchdog);
+    const notifications = await deliverRevenueNotifications(state.revenueNotificationDeliveries, {
+      limit: options.notificationLimit || 25
+    });
+    await persistNow();
+    return { skipped: false, run, hubspot, notifications, status: sdrAutomationStatus() };
+  } finally {
+    sdrCycleRunning = false;
+  }
+}
+
+function renderRevenueWatchdogPage() {
+  const report = revenueWatchdogReport();
+  const sourceStatus = integrationStatus();
+  const notificationStatus = notificationSummary(state.revenueNotificationDeliveries, notificationAdapterStatus());
+  const sourceRows = Object.values(sourceStatus)
+    .map((item) => `<li><b>${escapeHtml(item.provider)}</b><span class="risk ${item.ingest_ready ? "healthy" : "warning"}">${
+      item.ingest_ready ? "ready" : "needs secret"
+    }</span><span>${escapeHtml(item.webhook_path)}</span></li>`)
+    .join("");
+  const channelRows = Object.entries(notificationStatus.adapter.channels)
+    .map(([name, item]) => `<li><b>${escapeHtml(name)}</b><span class="risk ${item.configured ? "healthy" : "warning"}">${
+      item.configured ? "configured" : "not configured"
+    }</span></li>`)
+    .join("");
+  const openDecisions = report.decisions.filter((item) => item.resolution_status === "open");
+  const decisionRows = openDecisions
+    .map((item) => {
+      const severityClass = item.severity === "critical" ? "blocked" : item.severity === "high" ? "warning" : "healthy";
+      const evidence = item.evidence.map((entry) => `<li>${escapeHtml(entry)}</li>`).join("");
+      const isTask = item.entity?.type === "sdr_task";
+      return `<section class="card wide">
+        <div class="workflow-header">
+          <div>
+            <span class="risk ${severityClass}">${escapeHtml(item.severity)}</span>
+            <h2 style="margin-top:8px">${escapeHtml(item.title)}</h2>
+            <p>${escapeHtml(item.why)}</p>
+          </div>
+          <span class="sla ${item.due_at && Date.parse(item.due_at) < Date.now() ? "overdue" : "due_soon"}">${escapeHtml(
+            item.due_at ? formatDateTime(item.due_at) : "No deadline"
+          )}</span>
+        </div>
+        <div class="subpanel">
+          <h3>Agent recommendation</h3>
+          <p>${escapeHtml(item.recommendation)}</p>
+          ${evidence ? `<ul>${evidence}</ul>` : ""}
+          <a href="${escapeHtml(item.source_url)}">Inspect evidence</a>
+        </div>
+        <form method="POST" action="/sdr-ops/decisions/${escapeHtml(item.id)}/resolve">
+          <label>Resolution note</label>
+          <input name="note" placeholder="${isTask ? "Example: sent manually after reviewing the dossier" : "What did you decide?"}">
+          <input type="hidden" name="status" value="resolved">
+          ${isTask ? `<input type="hidden" name="completeTask" value="true">` : ""}
+          <button type="submit">${isTask ? "Mark action handled" : "Resolve decision"}</button>
+        </form>
+      </section>`;
+    })
+    .join("");
+  const rubricRows = report.learning_review.rubric
+    .map(
+      (item) => `<tr>
+        <td>${escapeHtml(item.label)}</td>
+        <td>${item.measured ? `${item.passed}/${item.total}` : "Waiting for data"}</td>
+        <td>${item.score}%</td>
+        <td><span class="risk ${item.status === "pass" ? "healthy" : "blocked"}">${escapeHtml(item.status)}</span></td>
+      </tr>`
+    )
+    .join("");
+  const improvementRows = report.learning_review.improvement_candidates
+    .map(
+      (item) => `<li><b>${escapeHtml(item.title)}</b><span>${escapeHtml(item.finding)}</span><span>${escapeHtml(
+        item.proposed_change
+      )}</span></li>`
+    )
+    .join("");
+  const integrityRows = report.integrity.checks
+    .map(
+      (item) => `<li><b>${escapeHtml(item.label)}</b><span class="risk ${
+        item.status === "pass" ? "healthy" : item.status === "fail" ? "blocked" : "warning"
+      }">${escapeHtml(item.status)}</span><span>${escapeHtml(item.detail)}</span></li>`
+    )
+    .join("");
+  const recentReplies = report.recent_activity.replies
+    .map(
+      (reply) => `<li><b>${escapeHtml(reply.account)}</b><span>${escapeHtml(
+        humanizeEnum(reply.classification?.intent || "unknown")
+      )} · ${escapeHtml(formatDateTime(reply.received_at))}</span><span>${escapeHtml(reply.text)}</span></li>`
+    )
+    .join("");
+  const historyRows = state.revenueWatchdogRuns
+    .slice(0, 14)
+    .map(
+      (run) => `<tr>
+        <td>${escapeHtml(formatDateTime(run.generated_at))}</td>
+        <td>${escapeHtml(run.headline)}</td>
+        <td>${run.metrics?.urgent_decisions || 0}</td>
+        <td>${escapeHtml(run.learning?.grade || "-")}</td>
+        <td><span class="risk ${
+          run.integrity?.status === "pass" ? "healthy" : run.integrity?.status === "fail" ? "blocked" : "warning"
+        }">${escapeHtml(run.integrity?.status || "unknown")}</span></td>
+      </tr>`
+    )
+    .join("");
+
+  return crmShell(
+    "Revenue Watchdog",
+    `<div class="toolbar">
+      <div>
+        <h1>Revenue Watchdog</h1>
+        <p>${escapeHtml(report.headline)}</p>
+      </div>
+      <div><a href="/crm">Rep inbox</a> · <a href="/pilot">Pilot</a> · <a href="/api/v1/sdr-ops/watchdog?format=markdown">Copy brief</a> · <a href="/api/v1/sdr-ops/watchdog">JSON</a></div>
+    </div>
+    <section class="metrics-grid">
+      <div class="metric-card"><span>Signals · 24h</span><b>${report.metrics.buying_signals}</b></div>
+      <div class="metric-card"><span>Replies · 24h</span><b>${report.metrics.replies}</b></div>
+      <div class="metric-card"><span>Positive replies</span><b>${report.metrics.positive_replies}</b></div>
+      <div class="metric-card"><span>Hot prospects</span><b>${report.metrics.hot_prospects}</b></div>
+      <div class="metric-card ${report.metrics.urgent_decisions ? "urgent" : ""}"><span>Urgent decisions</span><b>${report.metrics.urgent_decisions}</b></div>
+      <div class="metric-card ${report.metrics.awaiting_approval ? "soon" : ""}"><span>Awaiting approval</span><b>${report.metrics.awaiting_approval}</b></div>
+      <div class="metric-card ${report.metrics.overdue_leads ? "urgent" : ""}"><span>Overdue leads</span><b>${report.metrics.overdue_leads}</b></div>
+      <div class="metric-card ${report.metrics.failed_tasks ? "urgent" : ""}"><span>Failed tasks</span><b>${report.metrics.failed_tasks}</b></div>
+    </section>
+    <div class="detail-grid">
+      <section class="card">
+        <h2>What the engine learned</h2>
+        <div class="big-score ${report.learning_review.overall_score >= 90 ? "high" : report.learning_review.overall_score >= 75 ? "medium" : "low"}">${
+          report.learning_review.grade
+        }</div>
+        <p>${report.learning_review.replies_reviewed} replies graded against routing, sequence-stop, suppression, and reliability rules.</p>
+      </section>
+      <section class="card">
+        <h2>Revenue-path integrity</h2>
+        <span class="risk ${
+          report.integrity.status === "pass" ? "healthy" : report.integrity.status === "fail" ? "blocked" : "warning"
+        }">${escapeHtml(report.integrity.status)}</span>
+        <p>${report.integrity.failing} failing checks · ${report.integrity.warnings} warnings. Failures create decision-queue items instead of disappearing into logs.</p>
+      </section>
+      <section class="card">
+        <h2>Live event sources</h2>
+        <ul class="signals">${sourceRows}</ul>
+        <p>SmartLead replies, Salesfinity calls, Sendr engagement, and Cal.com bookings feed this same control plane.</p>
+      </section>
+      <section class="card">
+        <h2>Brief delivery</h2>
+        <ul class="signals">${channelRows}</ul>
+        <p>${notificationStatus.queued} queued · ${notificationStatus.failed} failed · morning brief at ${escapeHtml(notificationStatus.adapter.morning_brief_time)} ${escapeHtml(notificationStatus.adapter.timezone)}.</p>
+      </section>
+      <section class="card wide">
+        <h2>Decision queue</h2>
+        <p>Only work requiring judgment belongs here. Routine work stays with the agents.</p>
+      </section>
+      ${decisionRows || `<section class="card wide"><div class="empty">No open decisions. The system has no unresolved revenue-critical exception.</div></section>`}
+      <section class="card wide">
+        <h2>Self-improvement rubric</h2>
+        <table><thead><tr><th>Behavior</th><th>Evidence</th><th>Score</th><th>Status</th></tr></thead><tbody>${rubricRows}</tbody></table>
+      </section>
+      <section class="card">
+        <h2>Proposed improvements</h2>
+        <ul class="signals">${improvementRows || "<li>No failing rubric item has enough evidence to justify a change.</li>"}</ul>
+      </section>
+      <section class="card">
+        <h2>Continuous QA</h2>
+        <ul class="signals">${integrityRows}</ul>
+      </section>
+      <section class="card wide">
+        <h2>Recent replies</h2>
+        <ul class="signals">${recentReplies || "<li>No replies in the current 24-hour window.</li>"}</ul>
+      </section>
+      <section class="card wide">
+        <h2>Daily watchdog history</h2>
+        <table><thead><tr><th>Captured</th><th>Headline</th><th>Urgent</th><th>Learning</th><th>Integrity</th></tr></thead><tbody>${
+          historyRows || `<tr><td colspan="5">The first daily snapshot will be captured by the 24/7 worker.</td></tr>`
+        }</tbody></table>
+      </section>
+    </div>`
+  );
+}
+
 async function router(req, res) {
   if (req.method === "OPTIONS") return sendJson(res, 200, {});
   const url = new URL(req.url, `http://${req.headers.host}`);
@@ -54330,6 +54809,41 @@ async function router(req, res) {
   if (!requireProtectedAccess(req, res, pathname)) return;
 
   try {
+    const integrationWebhookMatch = pathname.match(/^\/webhooks\/v1\/(smartlead|salesfinity|sendr|calcom)$/);
+    if (req.method === "POST" && integrationWebhookMatch) {
+      const provider = integrationWebhookMatch[1];
+      const { raw, body } = await readWebhookBody(req);
+      const verification = verifyIntegrationWebhook(provider, {
+        headers: req.headers,
+        rawBody: raw,
+        secret: integrationWebhookSecret(provider),
+        querySecret: url.searchParams.get("token")
+      });
+      if (!verification.ok) {
+        return sendJson(res, verification.status, {
+          error: verification.error,
+          provider
+        });
+      }
+      const processed = processIntegrationEvent(provider, body, {
+        requestId: req.headers["x-request-id"] || req.headers["x-webhook-id"] || req.headers["x-cal-webhook-id"]
+      });
+      await persistNow();
+      return sendJson(res, 200, {
+        received: true,
+        provider,
+        authentication: verification.method,
+        ignored: processed.normalized.ignored,
+        reason: processed.normalized.reason || null,
+        event_id: processed.normalized.event_id,
+        actions: processed.results.map((item) => ({
+          kind: item.kind,
+          deduplicated: Boolean(item.result?.deduplicated),
+          prospect_id: item.result?.prospect?.id || null
+        }))
+      });
+    }
+
     const assetMatch = pathname.match(/^\/assets\/([a-z0-9._-]+\.png)$/i);
     if (req.method === "GET" && assetMatch) {
       try {
@@ -56892,8 +57406,183 @@ async function router(req, res) {
       return sendJson(res, 200, state.hubspotReadiness);
     }
 
+    if (req.method === "GET" && pathname === "/sdr-ops") {
+      return sendHtml(res, renderRevenueWatchdogPage());
+    }
+
+    if (req.method === "GET" && (pathname === "/api/v1/sdr-ops" || pathname === "/api/v1/sdr-ops/watchdog")) {
+      const report = revenueWatchdogReport();
+      if (url.searchParams.get("format") === "markdown") return sendText(res, report.summary_markdown, "text/markdown; charset=utf-8");
+      return sendJson(res, 200, {
+        ...report,
+        history: state.revenueWatchdogRuns
+      });
+    }
+
+    if (req.method === "GET" && pathname === "/api/v1/sdr-ops/decisions") {
+      const report = revenueWatchdogReport();
+      return sendJson(res, 200, {
+        generated_at: report.generated_at,
+        summary: {
+          total: report.decisions.length,
+          open: report.decisions.filter((item) => item.resolution_status === "open").length,
+          urgent: report.decisions.filter((item) => item.resolution_status === "open" && ["critical", "high"].includes(item.severity)).length
+        },
+        decisions: report.decisions
+      });
+    }
+
+    if (req.method === "GET" && pathname === "/api/v1/sdr-ops/learning") {
+      return sendJson(res, 200, revenueWatchdogReport().learning_review);
+    }
+
+    if (req.method === "GET" && pathname === "/api/v1/sdr-ops/integrity") {
+      return sendJson(res, 200, revenueWatchdogReport().integrity);
+    }
+
+    if (req.method === "GET" && pathname === "/api/v1/sdr-ops/integrations") {
+      return sendJson(res, 200, {
+        generated_at: now(),
+        event_sources: integrationStatus(),
+        hubspot: sdrAutomationStatus().hubspot,
+        notifications: notificationSummary(state.revenueNotificationDeliveries, notificationAdapterStatus())
+      });
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-ops/notifications/run") {
+      const body = await readBody(req);
+      state.revenueNotificationDeliveries = queueRevenueNotifications(
+        state.revenueNotificationDeliveries,
+        revenueWatchdogReport(),
+        { now: body.now || now() }
+      );
+      const result = await deliverRevenueNotifications(state.revenueNotificationDeliveries, {
+        limit: body.limit || 25,
+        now: body.now || now()
+      });
+      await persistNow();
+      return sendJson(res, 200, {
+        ...result,
+        summary: notificationSummary(state.revenueNotificationDeliveries, notificationAdapterStatus())
+      });
+    }
+
+    const revenueDecisionResolveMatch = pathname.match(/^\/(?:api\/v1\/)?sdr-ops\/decisions\/(decision_[a-f0-9]+)\/resolve$/);
+    if (req.method === "POST" && revenueDecisionResolveMatch) {
+      const body = await readBody(req);
+      const report = revenueWatchdogReport();
+      const decision = report.decisions.find((item) => item.id === revenueDecisionResolveMatch[1]);
+      if (!decision) return sendJson(res, 404, { error: "revenue_decision_not_found" });
+      const resolutions = resolveRevenueDecision(
+        [...state.revenueDecisionResolutions.values()],
+        decision.id,
+        {
+          status: stringFromBody(body, "status") || "resolved",
+          actor: ADMIN_USERNAME,
+          note: stringFromBody(body, "note"),
+          snoozed_until: stringFromBody(body, "snoozedUntil", "snoozed_until")
+        },
+        now()
+      );
+      state.revenueDecisionResolutions = new Map(resolutions.map((item) => [item.id, item]));
+      let task = null;
+      if (truthy(body.completeTask || body.complete_task) && decision.entity?.type === "sdr_task") {
+        task = sdrDesk.resolveTask(decision.entity.id, {
+          status: "completed",
+          mode: "manual",
+          note: stringFromBody(body, "note") || "Revenue decision resolved by operator",
+          actor: ADMIN_USERNAME
+        });
+      }
+      track("revenue_decision_resolved", {
+        decision_id: decision.id,
+        category: decision.category,
+        entity_type: decision.entity?.type || null,
+        entity_id: decision.entity?.id || null,
+        task_completed: Boolean(task),
+        actor: ADMIN_USERNAME
+      });
+      await persistNow();
+      if (pathname.startsWith("/api/")) {
+        return sendJson(res, 200, {
+          decision: revenueWatchdogReport().decisions.find((item) => item.id === decision.id) || decision,
+          task,
+          watchdog: revenueWatchdogReport()
+        });
+      }
+      return redirect(res, "/sdr-ops");
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-ops/capture") {
+      const snapshot = captureDailyRevenueWatchdog();
+      await persistNow();
+      return sendJson(res, 200, { snapshot, watchdog: revenueWatchdogReport() });
+    }
+
+    if (req.method === "GET" && pathname === "/api/v1/sdr-desk") {
+      return sendJson(res, 200, {
+        ...sdrAutomationStatus(),
+        prospects: sdrDesk.listProspects(),
+        task_queue: sdrDesk.listTasks()
+      });
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-desk/signals") {
+      const result = sdrDesk.ingestSignal(await readBody(req));
+      track("sdr_signal_ingested", {
+        event_id: result.event.event_id,
+        prospect_id: result.event.prospect_id,
+        deduplicated: result.deduplicated
+      });
+      await persistNow();
+      return sendJson(res, result.deduplicated ? 200 : 201, result);
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-desk/replies") {
+      const result = sdrDesk.ingestReply(await readBody(req));
+      track("sdr_reply_ingested", {
+        event_id: result.event.event_id,
+        prospect_id: result.event.prospect_id,
+        intent: result.classification?.intent || null,
+        deduplicated: result.deduplicated
+      });
+      await persistNow();
+      return sendJson(res, result.deduplicated ? 200 : 201, result);
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-desk/meetings") {
+      const result = sdrDesk.ingestMeeting(await readBody(req));
+      track("sdr_meeting_ingested", {
+        event_id: result.event.event_id,
+        prospect_id: result.event.prospect_id,
+        qualified: result.meeting?.qualified || false,
+        deduplicated: result.deduplicated
+      });
+      await persistNow();
+      return sendJson(res, result.deduplicated ? 200 : 201, result);
+    }
+
+    if (req.method === "POST" && pathname === "/api/v1/sdr-desk/run") {
+      return sendJson(res, 200, await runSdrAutomationCycle(await readBody(req)));
+    }
+
+    const sdrTaskResolveMatch = pathname.match(/^\/api\/v1\/sdr-desk\/tasks\/(task_[a-f0-9-]+)\/resolve$/);
+    if (req.method === "POST" && sdrTaskResolveMatch) {
+      const body = await readBody(req);
+      const task = sdrDesk.resolveTask(sdrTaskResolveMatch[1], {
+        status: body.status,
+        mode: body.mode,
+        note: body.note,
+        actor: ADMIN_USERNAME
+      });
+      track("sdr_task_resolved", { task_id: task.id, status: task.status, actor: ADMIN_USERNAME });
+      await persistNow();
+      return sendJson(res, 200, { task, status: sdrAutomationStatus() });
+    }
+
     if (req.method === "GET" && pathname === "/api/v1/health") {
       const hardening = productionHardeningSummary();
+      const watchdog = revenueWatchdogReport();
       return sendJson(res, 200, {
         status: "ok",
         dataStore: {
@@ -56913,6 +57602,24 @@ async function router(req, res) {
         },
         reportEmailAdapter: reportEmailAdapterStatus(),
         crmDeliveryAdapter: crmDeliveryAdapterStatus(),
+        sdrAutomation: sdrAutomationStatus().automation,
+        sdrIntegrations: integrationStatus(),
+        revenueNotifications: notificationSummary(state.revenueNotificationDeliveries, notificationAdapterStatus()),
+        hubSpotAutomation: sdrAutomationStatus().hubspot,
+        sdrDesk: {
+          prospects: sdrDesk.status().prospects,
+          tasks: sdrDesk.status().tasks,
+          last_run_at: sdrDesk.status().last_run_at,
+          last_error: sdrDesk.status().last_error
+        },
+        revenueWatchdog: {
+          headline: watchdog.headline,
+          open_decisions: watchdog.metrics.open_decisions,
+          urgent_decisions: watchdog.metrics.urgent_decisions,
+          learning_grade: watchdog.learning_review.grade,
+          integrity_status: watchdog.integrity.status,
+          daily_snapshots: state.revenueWatchdogRuns.length
+        },
         pilotTargetClients: PILOT_TARGET_CLIENTS,
         adminAuth: ADMIN_PASSWORD ? "enabled" : "not_configured",
         hubSpotReadiness: state.hubspotReadiness?.summary || null,
@@ -56946,4 +57653,17 @@ createServer(router).listen(PORT, () => {
   console.log(`LLM extraction mode: ${llmExtractionMode()}`);
   console.log(`Enrichment mode: ${internalEnrichmentMode()}`);
   console.log(`Report email mode: ${reportEmailAdapterStatus().mode}`);
+  console.log(`SDR automation: ${SDR_AUTOMATION_ENABLED ? `enabled (${SDR_ACTION_MODE})` : "disabled"}`);
 });
+
+if (SDR_AUTOMATION_ENABLED) {
+  const sdrAutomationTimer = setInterval(() => {
+    runSdrAutomationCycle().catch((error) => {
+      console.error("SDR automation cycle failed", error);
+    });
+  }, SDR_AUTOMATION_INTERVAL_MS);
+  sdrAutomationTimer.unref();
+  runSdrAutomationCycle().catch((error) => {
+    console.error("Initial SDR automation cycle failed", error);
+  });
+}

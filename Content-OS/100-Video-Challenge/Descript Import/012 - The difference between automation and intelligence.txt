@@ -1,0 +1,9 @@
+Automation moves work. Intelligence helps decide what work matters.
+
+What I am showing you on screen is a research-to-approval workflow.
+
+It comes down to three things. First, research creates candidates. Second, evidence makes candidates inspectable. And third, a human approves the action.
+
+The tool earns its place only if the workflow gets better.
+
+Follow for more practical AI architecture.

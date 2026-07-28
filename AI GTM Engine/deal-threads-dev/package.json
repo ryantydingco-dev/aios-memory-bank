@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
+    "start:revenue": "node scripts/start-revenue-loop.mjs",
+    "webhooks:status": "node scripts/provision-revenue-webhooks.mjs status",
+    "webhooks:variables": "node scripts/provision-revenue-webhooks.mjs variables",
+    "webhooks:register": "node scripts/provision-revenue-webhooks.mjs register",
     "test": "node --test --test-concurrency=1",
     "qa:browser": "node scripts/browser-qa.mjs",
     "qa:launch": "node scripts/launch-readiness.mjs"

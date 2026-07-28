@@ -1,0 +1,9 @@
+If an AI can contact a customer, it needs a stop sign.
+
+What I am showing you on screen is the Dealthreads approval queue.
+
+It comes down to three things. First, generated copy stays private. Second, the exact destination and message are reviewed. And third, execution is recorded separately from approval.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Send this to someone building an agent.

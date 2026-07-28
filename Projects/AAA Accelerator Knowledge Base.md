@@ -45,6 +45,10 @@ Future agents should verify and build a structured course archive with:
 - Do not capture or persist credentials, session cookies, or private account details.
 - Preserve source URLs and capture dates so future agents can refresh missing pieces.
 
+## 2026-07-22 — Consultant Path course captured
+
+The separate **"Consultant Path"** course (AI Consultant Launchpad: 6 sections, 25 lessons) was fully scanned. Curated summary + honest read at `Projects/AAA Consultant Path - Course Scan 2026-07-22.md`; all 15 resource PDFs and the extracted copy-paste prompts at `Projects/AAA Consultant Path Resources/`. Core model: productized "AI Tools Audit" sold via warm outreach on a free → $250 → $1,000 → $5K-retainer ladder. This course is done; the original AAA Accelerator KB verification below remains open.
+
 ## Open loops
 
 - Confirm the local destination folder for the AAA Accelerator KB.

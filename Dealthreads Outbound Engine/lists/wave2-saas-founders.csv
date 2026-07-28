@@ -1,0 +1,975 @@
+first_name,last_name,email,company_name,company_domain,title,city,state,lead_score,lead_tier,primary_signal
+Arman,Assadi,arman@steno.ai,Steno.ai,steno.ai,Founder & CEO,San Francisco,California,150,A,events
+Todd,Waldemar,todd@getonpoint.io,OnPoint (formerly ChowCall),getonpoint.io,Founder and CEO,Norfolk,Virginia,135,A,events
+Tiffanie,Stanard,tstanard@getstimulus.ai,"Stimulus, Inc.",getstimulus.ai,Founder and Chief Executive Officer,Philadelphia,Pennsylvania,130,A,events
+Benjamin,McCallister,ben@agis.ai,Artificial Generalized Intelligence Solutions (AGIS),agis.ai,Founder and CEO,,Florida,130,A,events
+Kishore,Tummala,kishore@mindwisehealth.com,MindWise Health,mindwisehealth.com,CEO & Founder,Brentwood,Tennessee,130,A,events
+David,Goldschlag,david@aembit.io,Aembit,aembit.io,CEO & Co-founder,Silver Spring,Maryland,130,A,events
+Kirthiga,Reddy,kirthiga@verix.io,Verix,verix.io,CEO & Co-founder,Alpharetta,Georgia,130,A,events
+Michael,Lyons,mcl@swiftly.com.co,Swiftly Holdings,swiftly.com.co,CEO & Co-Founder,Hamilton,Hamilton,130,A,events
+Carlos,Roldan,carlos@elixir.games,Elixir Games Inc.,elixir.games,CEO & Founder,San Francisco,California,130,A,events
+Yanzhi,Xu,ann.xu@electrotempo.com,ElectroTempo,electrotempo.com,Co-Founder and CEO,Arlington,Virginia,130,A,events
+Sandip,Bordoloi,sandip@trueleap.io,TrueLeap Inc.,trueleap.io,CEO & Co-Founder,Houston,Texas,130,A,events
+John,Morad,john.morad@flye.ai,Flye,flye.ai,Founder & CEO,New York,New York,130,A,events
+Reza,Ghaffari,reza.ghaffari@xira.com,XIRA Connect,xira.com,Founder & CEO,Palo Alto,California,130,A,events
+Noam,Mills,noam@thepanax.com,Panax,thepanax.com,Co-Founder & CEO,New York,New York,130,A,events
+Rafael,Marco,rafael@flow-labs.io,FlowLabs,flow-labs.io,Founder & CEO,New York,New York,130,A,events
+Dwamian,McLeish,dwamian@getjunction.io,Junction,getjunction.io,"CEO, Founder",Austin,Texas,130,A,events
+Andrea,Sorensen,andrea@viiision.com,"Viiision, Inc.",viiision.com,Founder and CEO,Meridian,Idaho,130,A,events
+Vanessa,Heppner,van@altasai.co,ALTA,altasai.com,CEO & Founder,Austin,Texas,130,A,events
+Serena,Keith,serena@meetbackstage.com,Backstage,meetbackstage.com,CEO & Co-Founder,San Francisco,California,130,A,events
+Dan,Projansky,dan@overplay.com,Overplay,overplay.com,Co-Founder and CEO,New York,New York,130,A,events
+Caroline,Strzalka,caroline@overplay.com,Overplay,overplay.com,"Chief Operating Officer, Co-Founder",New York,New York,130,A,events
+Topher,Overstreet,chriso@hstk.com,haystack,hstk.com,Founder & CEO,Indianapolis,Indiana,130,A,events
+Lauren,Goodell,lauren@getzinnia.com,Zinnia,getzinnia.com,Founder and CEO,Atlanta,Georgia,130,A,events
+Ali,Raza,ali@throughput.world,ThroughPut.ai,throughput.world,Founder CEO,Palo Alto,California,130,A,events
+Nathan,Totten,nate@zuplo.com,Zuplo,zuplo.com,Co-founder & VP of Marketing,Seattle,Washington,130,A,events
+Rex,Womble,rex@washmetrix.com,WashMetrix (Acquired by Sonny's Enterprises),washmetrix.com,Co-Founder & CEO,Irving,Texas,127,A,events
+Aaron,Weinstein,aaron@terial.com,Terial,terial.com,Co-Founder & CEO,New York,New York,124,A,events
+Thomas,Leahy,tom@embodiedlabs.com,Embodied Labs®,embodiedlabs.com,"Co-Founder, COO",Los Angeles,California,124,A,events
+Ornis,Mala,ornis@kore.co,Kore.co,kore.co,Chief Executive Officer and Founder,Frisco,Texas,124,A,events
+Derek,Laclair,derek.laclair@empeq.co,EMPEQ,empeq.co,COO / Founder,Ithaca,New York,124,A,events
+Kevin,Christopher,kevin.christopher@zeromission.io,éXō Fleets,zeromission.io,Founder & COO,Cork,County Cork,124,A,events
+Karim,Khinouche,karim_franck.khinouche@novolyze-go.com,Novolyze,novolyze.com,Founder & CEO,Bethesda,Maryland,124,A,events
+Eugene,Malinskiy,eugene@lazurite.co,Lazurite,lazurite.co,CEO/Co-Founder,Cleveland,Ohio,124,A,events
+Kenny,Browne,kenny@partnerfleet.io,Partner Fleet,partnerfleet.io,Founder/CEO,Chicago,Illinois,124,A,events
+Terry,Ferose,terry.ferose@enterprizid.com,EnterprizID,enterprizid.com,Founder & CEO,Austin,Texas,124,A,events
+Robby,Stempler,robby@huml.health,Huml Health,huml.health,Founder / CEO,Owings Mills,Maryland,124,A,events
+Ardie,Sameti,ardie.sameti@scala.ai,Scala,scala.ai,Co-Founder & CEO,Bellevue,Washington,124,A,events
+Amanda,Digaspari,amanda@storagely.io,Storagely,storagely.io,Co-Founder & CEO,Winston-Salem,North Carolina,124,A,events
+Sage,Raterman,sage@triplemeter.com,Triplemeter | AI Infrastructure for Global Container Trade,triplemeter.com,CEO & Founder,Seattle,Washington,124,A,events
+Dheev,Arulmani,dheev@valdera.com,Valdera,valdera.com,Co-founder & COO,San Francisco,California,124,A,events
+Dan,Rittman,drittman@qumulex.com,Qumulex,qumulex.com,Co-Founder and CEO,Fishers,Indiana,124,A,events
+David,Zilberman,djz@graphiterx.com,GraphiteRx,graphiterx.com,Founder & CEO,Nashville,Tennessee,124,A,events
+Aleks,Smechov,aleks@wordcab.com,Wordcab,wordcab.com,CEO & Co-Founder,New York,New York,123,A,hiring
+Thom,Jenkins,thom@petsapp.com,PetsApp,petsapp.com,Co-founder & CEO,London,England,122,A,events
+Adam,Weisman,adam@auxili.us,Auxilius,auxilius.co,Co-founder & CEO,New York,New York,122,A,events
+Alexandre,Labreche,alex@pluvo.io,Pluvo,pluvo.io,Founder & Chief Executive Officer,Ottawa,Ontario,122,A,events
+Abhinav,Kapur,abhinav@bikky.com,Bikky,bikky.com,Co-founder + CEO,New York,New York,122,A,events
+Danish,Iqbal,danish@medusadistribution.com,Medusa,medusajs.com,Founder + CEO,Copenhagen,Capital Region of Denmark,122,A,events
+Brendan,Ciecko,brendan@cuseum.com,Cuseum,cuseum.com,Founder & CEO,Boston,Massachusetts,122,A,events
+Hersh,Tapadia,hersh.tapadia@allstacks.com,Allstacks,allstacks.com,Co-Founder & CEO,Raleigh,North Carolina,122,A,events
+Julian,Offermann,julian.offermann@sulzer-us.com,S44 Energy,s44.team,Founder & CEO,Mahwah,New Jersey,122,A,events
+Robert,Bolen,robertbolen@bunchenterprise.com,Bunch Inc (Acquired By Uniguest),bunchenterprise.com,Founder & CEO,New York,New York,122,A,events
+Gabriel,Glynn,gabe@makusafe.com,MākuSafe,makusafe.com,Co-Founder & CEO,West Des Moines,Iowa,122,A,events
+Jarod,Xu,jarod.xu@trickle.so,Trickle,trickle.so,Co-Founder & CEO,Sydney,New South Wales,122,A,events
+Ron,Nissim,ron@entitle.io,Entitle - a BeyondTrust company,entitle.io,Co-Founder and CEO,New York,New York,122,A,events
+Matthew,Covi,matt@chimney.io,Chimney,chimney.io,CEO & Co-Founder,New York,New York,122,A,events
+Yevgeny,Pats,yp@cloudquery.io,CloudQuery,cloudquery.io,Founder & CEO,New York,New York,122,A,events
+Markus,Bereflod,markus.bereflod@nansen.com,Nansen,nansen.com,Co-CEO and Co-Founder,Chicago,Illinois,122,A,events
+Karim,Rabiey,karim@pearmill.com,Pearmill,pearmill.com,Co-founder & CEO,BOWLING GREEN,New York,122,A,events
+Eric,Moss,eric@wearezoop.com,Zoop,zoop.gg,Co-Founder and COO,Los Angeles,California,122,A,events
+Matt,Dubois,matt.dubois@chargezoom.com,Chargezoom,chargezoom.com,Founder & CEO,Salt Lake City,Utah,122,A,events
+Tom,West,tom@makusafe.com,MākuSafe,makusafe.com,Vice President Marketing,West Des Moines,Iowa,122,A,events
+Jordan,Plosky,jordan@wearezoop.com,Zoop,zoop.gg,Co-Founder & CEO,Los Angeles,California,122,A,events
+Kelsey,Waters,kwaters@theopenlane.io,Openlane,theopenlane.io,CEO and Co-Founder,San Antonio,Texas,122,A,events
+Michel,Benjamin,michel@leasecake.com,Leasecake,leasecake.com,Vice President Marketing,Winter Park,Florida,122,A,events
+Jonathan,Fields,jonathan@joinassembly.com,Assembly (a Quantum Workplace Company),joinassembly.com,Co-Founder and CEO,Santa Monica,California,122,A,events
+Kelsey,Mullaney,kelsey@connectstrata.com,Strata,connectstrata.com,CEO & Cofounder,Boston,Massachusetts,122,A,events
+Jack,Csenge,jack@advisorvitals.com,Vitals AI,advisorvitals.com,Co-Founder & CEO,Miami,Florida,122,A,events
+Stu,Perkins,sperkins@noteablenow.com,Noteable,noteablenow.com,Co-Founder and CEO,Virginia Beach,Virginia,122,A,events
+Neida,Toupal,ntoupal@childpilot.com,ChildPilot,childpilot.com,COO & Co-Founder,Allen,Texas,120,A,events
+Maria,Chmir,maria@rask.ai,Rask AI,rask.ai,CEO & Founder,Dover,Delaware,120,A,events
+Nick,Gallo,nick@loop.co,Loop,loop.co,"Founder, CEO",New York,New York,118,A,hiring
+Janet,Stafford,janet@teamalioth.com,Alioth,alioth.co,CEO and Co-Founder,Austin,Texas,118,A,hiring
+Mario,Tarabbia,mario@partnerpage.io,PartnerPage,partnerpage.io,"CEO, Founder",San Francisco,California,118,A,hiring
+Ovais,Tariq,ot@tigrisdata.com,Tigris Data,tigrisdata.com,Co-Founder & CEO,Sunnyvale,California,118,A,hiring
+Vladimir,Jasovic,vladimir.jasovic@crana.app,Crana-AI,crana.app,Founder and CEO,Chicago,Illinois,118,A,events
+Michael,Malhame,michael@myhealthily.com,MyHealthily,myhealthily.com,Founder & CEO,Savannah,Georgia,118,A,hiring
+Peter,Ginsberg,pginsberg@onaroll.co,Onaroll [Acquired by Array],onaroll.co,Founder & CEO,New York,New York,118,A,hiring
+George,Eleftheriou,george@myfeel.co,Feel Therapeutics,feeltherapeutics.com,Co-founder & CEO,Athens,Attica,118,A,hiring
+Arjun,Chandar,arjun.chandar@industrialml.com,"IndustrialML, Inc.",industrialml.com,Founder and CEO,Cambridge,Massachusetts,118,A,hiring
+April,Beyer,adbeyer@levelconnections.com,LEVEL,levelconnections.com,Founder & CEO,Santa Monica,California,118,A,hiring
+Matt,Wright,matt@gaianet.ai,Gaia 🌱,gaianet.ai,CEO & Co-Founder,Berkeley,California,118,A,hiring
+Tyler,Young,tyler@tonicpos.com,Tonic POS,tonicpos.com,"Founder, CEO",Atlanta,Georgia,118,A,hiring
+David,Gu,david.gu@recall.ai,Recall.ai,recall.ai,Co-founder & CEO,San Francisco,California,118,A,events
+Tommy,McClung,tommy@release.com,Release,release.com,CEO/Co-founder,San Francisco,California,118,A,hiring
+Troy,Batterberry,troy@echomark.com,EchoMark,echomark.com,CEO and Co-founder,Bellevue,Washington,118,A,events
+Taymour,Matin,tmatin@newdata.ai,newData,newdata.ai,CEO & Founder,Franklin,Tennessee,118,A,hiring
+Sanjay,Agrawal,sanjay.agrawal@revefi.com,Revefi,revefi.com,Cofounder & CEO,Redmond,Washington,118,A,events
+Sid,Chaudhary,sid@intempt.com,Intempt,intempt.com,Founder & CEO,Austin,Texas,118,A,hiring
+Bala,Chandran,bala@thinklumo.com,Lumo,thinklumo.com,Co-Founder and CEO,Boston,Massachusetts,118,A,hiring
+Scott,Jones,scott.jones@joinbliv.com,Bliv,joinbliv.com,Co-Founder & CEO,Ogden,Utah,118,A,hiring
+Alex,Cruz,alex@penpath.com,PenPath,penpath.com,"Founder, CEO",St. Louis,Missouri,118,A,events
+Yuyang,Fan,yuyang@tendo.tech,Tendo Technologies,tendo.tech,Co-Founder & COO,Princeton,New Jersey,118,A,hiring
+Ariel,Diaz Ailan,arielda@rebill.com,Rebill.com,rebill.com,Co-founder & COO,Buenos Aires,Autonomous City of Buenos Aires,118,A,hiring
+Will,Salcido,william@bedrockanalytics.com,Bedrock Analytics,bedrockanalytics.com,Co-Founder & CEO,Oakland,California,118,A,hiring
+Andrew,Luo,andrew@oneschema.co,OneSchema,oneschema.co,Co-Founder & CEO,San Francisco,California,118,A,hiring
+Nahuel,Candia,nahuel@rebill.com,Rebill.com,rebill.com,CEO & Founder,Buenos Aires,Autonomous City of Buenos Aires,118,A,hiring
+Kai,Feng,kai@blink.new,Blink.new,blink.new,Founder and CEO,San Carlos,California,118,A,hiring
+Shiv,Shankar,shiv@engagespot.co,Engagespot (Techstars S24),engagespot.co,Co-Founder & CEO,New York,New York,118,A,hiring
+Jake,Stein,jake@commonpaper.com,Common Paper,commonpaper.com,Co-founder & CEO,Spirit Lake,Idaho,118,A,hiring
+Bret,Larsen,bl@getchief.com,Chief,getchief.com,Founder & CEO,Lehi,Utah,118,A,hiring
+Melissa,Cruz,melissa@chief-collective.com,Chief Collective,chief-collective.com,Co-Founder | COO,Bloomfield Hills,Michigan,118,A,hiring
+Joseph,Martin,jmartin@kinectify.com,Kinectify,kinectify.com,Founder | CEO,Las Vegas,Nevada,116,A,events
+Supra,Appikonda,supra@4crisk.ai,4CRisk.ai,4crisk.ai,Co-Founder and COO,Pittsburg,California,116,A,events
+Eliot,Puplett,ecp@medici.ai,MEDICI,medici.ai,Co-Founder & CEO,New York,New York,116,A,events
+Andrew,Batey,andrew@beatdapp.com,Beatdapp,beatdapp.com,Co-Founder & Co-CEO,Vancouver,British Columbia,116,A,events
+Kaitlyn,Albertoli,kaitlyn@buzzsolutions.com,Buzz Solutions,buzzsolutions.com,CEO & Co-founder,Palo Alto,California,116,A,events
+George,Huo,george@paygarden.com,PayGarden,paygarden.com,Founder & CEO,San Francisco,California,116,A,events
+Jorge,Alvarez,jorge@evolve-iq.com,evolveIQ,evolve-iq.com,Founder & CEO,New York,New York,116,A,events
+Bharath,Rao,bharath@dataneuron.ai,DataNeuron,dataneuron.ai,Founder/ CEO,San Francisco,California,115,A,events
+Clay,Rhoden,clay@targetvisioncam.com,Longshot,longshotcameras.com,"Founder, CEO",Pearland,Texas,115,A,events
+Florian,Forster,florian@zitadel.com,ZITADEL,zitadel.com,CEO & Co-Founder,San Francisco,California,115,A,events
+Gabriel,Puliatti,gabriel@emptor.io,Emptor,emptor.io,Founder / CEO,New York,New York,115,A,events
+Michaela,Wessels,michaela@stylearcade.com,Style Arcade,stylearcade.com,CEO | Co-Founder,Surry Hills,New South Wales,115,A,events
+Doug,Petkanics,doug@livepeer.org,Livepeer,livepeer.org,"Founder, CEO",New York,New York,115,A,events
+Robert,Haydock,robert@zembula.com,Zembula,zembula.com,CEO and Co-Founder,Portland,Oregon,115,A,events
+Chris,Offensend,chris@qwal.ly,Qwally,qwal.ly,Co-Founder & CEO,Denver,Colorado,115,A,events
+George,Cook,george@honeycombcredit.com,Honeycomb Credit,honeycombcredit.com,Co-Founder and CEO,Pittsburgh,Pennsylvania,115,A,events
+Pranay,Prateek,pranay@signoz.io,SigNoz,signoz.io,Co-Founder & CEO,San Francisco,California,115,A,events
+Monica,Sarbu,monica@xata.io,Xata.io,xata.io,Founder and CEO,San Francisco,California,115,A,events
+Pete,Christothoulou,pete@omada.ai,Omada.AI,omada.ai,"Founder, CEO",New York,New York,115,A,events
+Ryan,Barone,ryan@rentredi.com,RentRedi,rentredi.com,CEO & Founder,Latham,New York,115,A,events
+Matthew,Barron,matt@cariina.com,Cariina,cariina.com,Co-Founder and CEO,Boston,Massachusetts,115,A,events
+Keith,Graham,keith@newslever.com,"Newslever, a Similarweb Company",newslever.com,Co-Founder & CEO,North Caldwell,New Jersey,115,A,events
+Brandi,Susewitz,bsusewitz@reseat.com,RESEAT,reseat.com,Founder CEO,San Jose,California,115,A,events
+Ayush,Sharma,ayush@joinwarp.com,Warp,joinwarp.com,Founder and CEO,New York,New York,115,A,events
+Amanda,Goodson,amanda@ed.link,Edlink,ed.link,"Co-founder, COO",Austin,Texas,115,A,events
+Thomas,McKenna,thomasm@ocula.tech,Ocula Technologies,ocula.tech,CEO | Co-Founder,London,England,114,A,events
+Chuck,Densinger,chuck.densinger@elicitinsights.com,"Elicit, LLC",elicitinsights.com,"COO, Co-Founder",Minneapolis,Minnesota,112,A,hiring
+Kemal,Levi,kemal.levi@relimetrics.com,"Relimetrics, Inc.",relimetrics.com,Founder and CEO,Berlin,Berlin,112,A,hiring
+Lee,Beckman,lee@trypursuit.com,Pursuit,trypursuit.com,Founder & Chief Executive Officer,New York,New York,112,A,hiring
+Ofir,Paldi,ofir@shamaym.co.il,Medinsight.ai,medinsight.ai,Founder & CEO,Boston,Massachusetts,112,A,hiring
+Alex,Aravanis,alex.aravanis@moonwalk.bio,Moonwalk Biosciences,moonwalk.bio,Chief Executive Officer and Co-Founder,South San Francisco,California,112,A,hiring
+Stead,Burwell,steadb@outbound.ai,Outbound AI,outbound.ai,Founder & CEO,Seattle,Washington,112,A,hiring
+Dave,Gottfeld,dgottfeld@sparkmotion.com,Spark Motion Inc.,sparkmotion.com,CEO and Founder,Bethesda,Maryland,112,A,events
+Michael,Sieb,michael@usetable.ai,table,usetable.ai,CEO & Founder,San Francisco,California,112,A,hiring
+Jari,Salomaa,jari@valo.ai,Valo,valo.ai,CEO & Co-Founder,San Francisco,California,112,A,hiring
+Taylor,Halliday,taylor@ravenna.ai,Ravenna,ravenna.ai,CoFounder and CEO,Seattle,Washington,112,A,hiring
+Alexis,Roman,alex@patientseye.com,PatientsEye,patientseye.com,CEO & Co-founder,Naples,Florida,112,A,hiring
+Chanakarn,Chinchatchawal,chanakarn.c@robolingo.ai,"Robolingo Co., Ltd.",zwiz.ai,Founder&CEO,Bangkok,Bangkok,112,A,hiring
+Chris,Carver,chris@sessionboard.com,Sessionboard,sessionboard.com,Co-Founder & CEO,Solana Beach,California,112,A,events
+Sam,Herro,sam@horizen.ag,Horizen,horizen.ag,Co-founder & CEO,Des Moines,Iowa,112,A,hiring
+Ryan,Mapes,ryan@tryrelease.com,Release,tryrelease.com,Co-Founder and CEO,Austin,Texas,112,A,hiring
+Jonathan,Wyeth,jon@openrounds.com,OpenRounds,openrounds.com,Founder & CEO,Boston,Massachusetts,112,A,hiring
+Xabi,Uribe-Etxebarria,xabi@sherpa.ai,Sherpa.ai,sherpa.ai,Founder & CEO,Bilbao,Basque Country,110,A,events
+Suzanne,El-Moursi,suzanne.el-moursi@brighthive.io,Brighthive,brighthive.io,Co-Founder & CEO,Chicago,Illinois,110,A,events
+Elsie,Fairchild,elsie.fairchild@benechoice.com,BeneChoice Enrollment Solutions & Technology Inc,benechoice.com,Founder and CEO,Lancaster,Pennsylvania,110,A,events
+Tristan,Zajonc,tristan@continual.ai,Continual,continual.ai,Cofounder & CEO,San Francisco,California,110,A,events
+Yasir,Baqui,yasir@rankmylist.com,Ranx,ranx.com,"President, CEO & Co-founder",Dover,Delaware,110,A,hiring
+Matthew,Fisch,mfisch@fortmesa.com,FortMesa,fortmesa.com,Founder & CEO,Spencertown,New York,110,A,hiring
+Matthew,Paliulis,matt@kainexus.com,KaiNexus,kainexus.com,COO and Co-Founder,Austin,Texas,110,A,events
+Craig,Jones,craig@formative.com,Formative,formative.com,Co-Founder/CEO,Los Angeles,California,110,A,hiring
+Luanna,Vargas,luanna.vargas@heronpay.com.br,HeronPay,heronpay.com.br,CEO & Co-Founder HeronPay,Sao Paulo,State of Sao Paulo,110,A,events
+Josh,Blandi,josh@unicourt.com,UniCourt,unicourt.com,CEO / Co-Founder,Tustin,California,110,A,events
+Mike,Spiessbach,mike@patientprism.com,Patient Prism,patientprism.com,Founder | COO,Tampa,Florida,110,A,events
+Jason,Simmons,jason.simmons@k16solutions.com,K16 Solutions,k16solutions.com,Senior Vice President of Marketing,Scottsdale,Arizona,110,A,hiring
+Max,Verteletskyi,maxverteletskyi@spaceti.com,Spaceti,spaceti.com,Co-founder & CEO,New York,New York,110,A,events
+Jacqueline,Cheong,jacqueline@artie.com,Artie,artie.com,Co-Founder & CEO,San Francisco,California,110,A,events
+Kyle,Tut,kyle@pinata.cloud,Pinata,pinata.cloud,Co-Founder and CEO,Omaha,Nebraska,110,A,events
+Michael,Castanon,mcastanon@carepredictor.com,Care Predictor,carepredictor.com,CEO - Founder,Dana Point,California,110,A,events
+Scott,Nguyen,scott@bodhi.solar,Bodhi®,bodhi.solar,Co-Founder + CEO,Austin,Texas,110,A,events
+Michael,Johnson,mjohnson@clearpathepm.com,Clearpath EPM,clearpathepm.com,Chief Executive Officer,Fort Lauderdale,Florida,110,A,events
+Mike,Dannenfeldt,mike@pimly.co,Pimly Inc.,pimly.co,Founder / CEO,Chicago,Illinois,110,A,hiring
+Sam,Fitzroy,sam@dalia.co,Dalia,dalia.co,Co-Founder and CEO,Boston,Massachusetts,110,A,events
+Vincent,Mar,vincentdelamar@sustaira.com,Sustaira,sustaira.com,Founder & CEO,Rotterdam,South Holland,110,A,events
+Jade,Choy,jade.choy@epochapp.com,Epoch,epochapp.com,"Co-founder, CEO",San Francisco,California,110,A,events
+Kara,Anderson,kara.anderson@plutustech.io,Plutus,plutustech.io,Co-Founder and COO,Chicago,Illinois,110,A,events
+Jason,Whitman,jason@dalia.co,Dalia,dalia.co,Co-founder and COO,Boston,Massachusetts,110,A,events
+Jake,Purdon,jake.purdon@type3solutions.com,Type3,type3solutions.com,COO / Co-founder,Highland,Maryland,110,A,events
+Ashley,Leonard,ashley.leonard@innovint.us,InnoVint,innovint.us,CEO and Founder,Portland,Oregon,110,A,events
+Cristina,Flaschen,cristina@pandium.com,Pandium,pandium.com,CEO and Founder,New York,New York,110,A,hiring
+Jeri,Frank,jeri@stratafolio.com,STRATAFOLIO,stratafolio.com,Co-Founder & CEO,Cedar Rapids,Iowa,110,A,hiring
+Lisa,Schmucki,lisa@edweb.net,edWeb.net,edweb.net,Founder & CEO,Princeton,New Jersey,110,A,events
+Rachna,Dhamija,rachna@ejenta.com,Ejenta,ejenta.com,Founder and CEO,San Francisco,California,110,A,events
+Giordano,Botta,giordano@allelica.com,"Allelica, Inc",allelica.com,CEO & Co-Founder,San Francisco,California,110,A,events
+Nicholas,Hensel,nick@pickle.llc,Pickle,trypickle.co,Founder & CEO,Los Angeles,California,110,A,hiring
+Ricardo,Regalado,ricardo.regalado@getroute.com,Route,getroute.com,CEO / Founder,Chicago,Illinois,110,A,hiring
+Max,Langlois,max@hype10agency.com,HYPE10,hype10agency.com,Founder & CEO,New York,New York,110,A,events
+David,Kircos,david.kircos@quadratic.to,Quadratic,quadratichq.com,CEO & Founder,Boulder,Colorado,110,A,events
+Mark,Campbell,mark@produceiq.com,ProduceIQ,produceiq.com,Cofounder / CEO,North Palm Beach,Florida,110,A,events
+Ryan,Janssen,ryan@zenlytic.com,Zenlytic,zenlytic.com,Co-founder/CEO,New York,New York,110,A,hiring
+Ike,Kehal,bkehal@social27.com,HiveGPT ( a Social27 company),hivegpt.ai,"CoFounder, CEO",Redmond,Washington,110,A,events
+Jorge,Sun,jsun@lendingfront.com,LendingFront,lendingfront.com,CEO and Co-Founder,New York,New York,110,A,events
+Jonathan,Morav,jonathan@cakewalkbenefits.com,Cakewalk,cakewalkbenefits.com,"Co-Founder, Chief Operating Officer",Hoboken,New Jersey,110,A,hiring
+Sara,Beykpour,sara@minalabs.io,Particle,particle.news,Co-Founder & CEO,San Francisco,California,110,A,events
+Ben,Lilienthal,ben@screenmeet.com,ScreenMeet,screenmeet.com,Co-Founder / CEO,San Francisco,California,110,A,events
+Ayan,Barua,ayan@withampersand.com,Ampersand,withampersand.com,"Co-founder, CEO",San Francisco,California,110,A,events
+Francis,Osifo,francis@rayda.co,Rayda,rayda.co,Founder/CEO,Wilmington,Delaware,110,A,hiring
+Sean,Goldfaden,sean@coefficientlabs.com,CoEfficient Labs,coefficientlabs.com,Founder - CEO,Santa Monica,California,110,A,events
+Craig,Meddin,craig@mailandpackages.com,Postal Solutions,mailandpackages.com,Founder & CEO,Raleigh,North Carolina,110,A,events
+Matthew,Hager,matthew@clutch.io,Clutch,clutch.io,Co-Founder & CEO,Houston,Texas,110,A,hiring
+Lola,Han,lola@kamsa.co,Kamsa,kamsa.co,CEO & Founder,Washington,District of Columbia,110,A,events
+Pavani,Peri,pavani@actasolutions.io,Acta Solutions,actasolutions.io,Co-Founder & COO,Chapel Hill,North Carolina,110,A,events
+Yoni,Shohet,yoni@valencesecurity.com,Valence Security,valencesecurity.com,Co-Founder & CEO,New York,New York,110,A,hiring
+Preetha,Pulusani,preetha@deeptarget.com,"DeepTarget, Inc.",deeptarget.com,CEO/Founder,Huntsville,Alabama,110,A,events
+Michael,Lightfoot,michael@domuso.com,Domuso,domuso.com,Co-Founder / Chief Executive Officer,Santa Monica,California,110,A,events
+Alex,Nordlinger,alex@materializelabs.com,Materialize Labs,materializelabs.com,Founder & CEO,Santa Monica,California,110,A,hiring
+Gorkem,Sevinc,gorkem@qualytics.ai,Qualytics,qualytics.ai,Co-Founder & CEO,Atlanta,Georgia,109,A,events
+Hussein,Cholkamy,hussein@eyrus.com,Eyrus,eyrus.com,Founder & COO,Washington,District of Columbia,109,A,events
+Akhil,Lodha,akhil@stratifi.com,StratiFi Technologies Inc,stratifi.com,Founder & CEO,San Francisco,California,109,A,events
+Germain,Bourgeois,germain.bourgeois@delpha.io,Delpha,delpha.io,CEO and Co-Founder,Paris,Ile-de-France,109,A,events
+Daniel,Stewart,daniel@fronteraclaims.com,Frontera,fronteraclaims.com,Founder & CEO,Philadelphia,Pennsylvania,109,A,events
+Mindaugas,Bruzas,mindaugas@leyaai.com,Leya AI,leyaai.com,CEO & Co-Founder,Vilnius,Vilnius County,109,A,events
+Stella,Ashaolu,stella@wesolv.com,WeSolv,wesolv.com,Founder & CEO,Chicago,Illinois,109,A,events
+Blake,Mitchell,bmitchell@omnilert.com,Omnilert,omnilert.com,Vice President of Marketing,Leesburg,Virginia,109,A,events
+Jeremy,Tyler,jeremy.tyler@raydius.co,Raydius,raydius.co,Founder & CEO,Hudson,Wisconsin,109,A,events
+Coletta,Dorado,colettad@azzly.com,"AZZLY, Inc.",azzly.com,Founder & CEO,Orlando,Florida,109,A,events
+George,Roadman,george@accelant.com,accelant,accelant.com,Founder & CEO,North Reading,Massachusetts,109,A,events
+Chuck,Demonte,chuck.demonte@raydius.co,Raydius,raydius.co,CMO & Co-Founder,Hudson,Wisconsin,109,A,events
+Pierre,Hebrard,pierre.hebrard@pricemoov.com,Pricemoov,pricemoov.com,CEO & Co-founder,Paris,Ile-de-France,109,A,events
+Mylene,Pedone,mylene@movethechain.com,Orbix (formally Move the Chain),orbixos.com,CEO & Co-founder,Stamford,Connecticut,108,A,hiring
+Andre,Pedone,andre@movethechain.com,Orbix (formally Move the Chain),orbixos.com,Co-Founder & CEO,Stamford,Connecticut,108,A,hiring
+Victoria,Holl,victoria@findanomaly.com,Anomaly,findanomaly.com,Vice President Marketing,New York,New York,107,A,hiring
+Kendall,Lockhart,kendall@meucare.com,Me+U CARE,meucare.com,Founder/CEO,Laguna Beach,California,107,A,hiring
+Nima,Banai,nima@assemblelabs.co,Assemble Labs,assemblelabs.co,Co-Founder & CEO,Menlo Park,California,107,A,hiring
+Taylor,Shead,taylor@stemuli.ai,Stemuli,stemuli.ai,Founder & CEO,Dallas,Texas,107,A,events
+Chris,Alto,chris@joinzipper.com,Zipper,joinzipper.com,CEO / Co-Founder,Boulder,Colorado,107,A,hiring
+Mohak,Sharma,mohak@honeyhive.ai,HoneyHive,honeyhive.ai,Co-Founder and CEO,New York,New York,106,A,hiring
+Tal,Wagstaff,tal@getredlist.com,Redlist,getredlist.com,Co-Founder CEO,Pleasant Grove,Utah,106,A,hiring
+Dilip,Karki,dilip.karki@autosmic.com,Autosmic,autosmic.com,"Founder, CEO",Hayward,California,106,A,hiring
+Rohit,Seth,rohit@cloudnatix.com,CloudNatix Inc.,cloudnatix.com,Founder and CEO,Saratoga,California,105,A,events
+Judah,Fontz,judah@datamize.ai,Datamize,datamize.ai,Founder | CEO,West Palm Beach,Florida,105,A,events
+Anurag,Singhal,anurag@quattr.com,Quattr,quattr.com,Founder & CEO,Palo Alto,California,105,A,events
+Sreenadh,Narayanan,sreenadh@getecho.chat,Alchemic (previously Echo),thealchemic.com,Co-founder and CEO,Mumbai,Maharashtra,105,A,hiring
+Derek,Blidy,derek@talas.co,TALAS,talas.co,Cofounder / CEO,Chicago,Illinois,105,A,events
+David,Valencia,david@valenai.com,Obsidian AI (Formerly Valen AI),valenai.com,Founder and CEO,New York,New York,105,A,hiring
+Trapper,Markelz,trapper@beamable.com,Beamable,beamable.com,Co-Founder / Chief Operating Officer,Boston,Massachusetts,105,A,events
+Fabio,Rosa,fabioer@tago.io,TagoIO,tago.io,CEO & Founder,Raleigh,North Carolina,104,A,events
+Tom,Gregg,tom@buywithvan.com,Vehicle Acquisition Network,buywithvan.com,Founder and CEO,Chicago,Illinois,104,A,hiring
+Babar,Yasin,babar@complytex.com,ComplyTex,complytex.com,Founder and CEO,Brussels,Brussels,104,A,events
+Everett,Lebherz,everett@pointcare.com,PointCare,pointcare.com,Co-Founder and CEO,Walnut Creek,California,104,A,events
+Timothy,Kelley,timothy@aretelabs.com,AreteLabs,aretelabs.com,Founder and CEO,Chicago,Illinois,104,A,events
+Sean,Flaherty,sflaherty@playeasy.com,Playeasy,playeasy.com,Co-Founder & CEO,Boston,Massachusetts,104,A,hiring
+Feilong,Liu,feilong.liu@hongjingdrive.com,Hyperview,hyperviewhq.com,Founder and CEO,Vancouver,British Columbia,104,A,events
+Jason,Delevan,jason.delevan@styku.com,Styku,styku.com,"COO, Co-Founder",Commerce,California,104,A,events
+Whitney,Shindelar,whitney@thehive.travel,The Hive,thehive.travel,Founder and CEO,Des Moines,Iowa,104,A,events
+Brandon,Gelfen,bgelfen@levohealth.com,Levo Health,levohealth.com,Vice President of Marketing,Tampa,Florida,104,A,events
+Derek,Pacque,derek@chexology.com,Chexology,chexology.com,Founder & CEO,New York,New York,104,A,events
+Holly,Small,holly@lotustms.com,Lotus TMS,lotustms.com,Chief Executive Officer and Co-Founder,Overland Park,Kansas,104,A,events
+Mikel,Chertudi,mikel@moat.app,Moat | Smart Facility Management,moat.app,Co-Founder & CEO,Lehi,Utah,104,A,hiring
+Sean,Klamm,sean@playgroundiep.com,Playground IEP,playgroundiep.com,Founder | CEO,Chicago,Illinois,104,A,events
+Mollie,Burnham,mburnham@verticaliq.com,Vertical IQ,verticaliq.com,Marketing and Operations Manager for CEO/Co-Founder,Raleigh,North Carolina,104,A,events
+Peter,Jewett,peter.jewett@accessibleweb.com,Accessible Web,accessibleweb.com,"Founder, CEO",Burlington,Vermont,104,A,events
+Darren,Williams,darren.williams@riotinsight.com,RIOT,riotinsight.com,Founder & CEO,Seattle,Washington,104,A,events
+William,Guillouard,william@seafair.io,Seafair,seafair.io,Vice President Marketing,New York,New York,104,A,hiring
+Mark,Chaffey,mark@hackajob.co,The AI Collective (AIC),hackajob.co,Co-Founder & CEO,London,England,104,A,events
+Laurie,Palanza,laurie.palanza@oneviewcommerce.com,OneView Commerce,oneviewcommerce.com,Vice President Marketing,Boston,Massachusetts,104,A,events
+Bill,Karamouzis,bill@shockwave.com,Shockwave,shockwave.com,CEO / Co-Founder,Los Angeles,California,104,A,events
+Gary,Chang,hohsiangchang@jenjan.com.tw,JENJAN | Satellite Warehouse Technology,jenjan.com.tw,Co-Founder & CEO,,Taipei City,104,A,events
+Ed,Hughes,ehughes@bluegolf.com,BlueGolf,bluegolf.com,"CEO, Founder",Wayne,Pennsylvania,104,A,events
+Tony,Holdstock-Brown,tony@inngest.com,Inngest,inngest.com,Founder / CEO,San Francisco,California,103,A,hiring
+Henry,Juszkiewicz,henry@caremoat.com,CareMoat Inc.,caremoat.com,CEO and Founder,Nashville,Tennessee,103,A,hiring
+George,Klein,george@peoplocity.com,Peoplocity,peoplocity.com,Founder and CEO,Indianapolis,Indiana,103,A,events
+Matt,Ranauro,matt@benefix.us,Benefix,benefix.us,Founder/CEO,Lancaster,Pennsylvania,103,A,hiring
+Tiago,Prado,tiago.prado@altoia.com,Altoia,altoia.com,CEO & Founder,Boston,Massachusetts,103,A,hiring
+Kamal,Shah,kamal@sitecapture.com,SiteCapture,sitecapture.com,"CEO, Founder",Oakland,California,103,A,hiring
+Eugene,Borukhovich,eugene@yourcoach.health,YourCoach.Health,yourcoach.health,Co-Founder & COO,New York,New York,103,A,hiring
+Mo,Faisal,mo@movellus.com,Movellus Inc.,movellus.com,Chief Executive Officer and Founder,San Jose,California,103,A,events
+Samuel,Weaver,sam@plural.sh,Plural,plural.sh,CEO & Co-founder,New York,New York,103,A,hiring
+Ian,Madom,ian.madom@mocingbird.com,Mocingbird,mocingbird.com,Chief Executive Officer & Co-Founder,South Kingstown,Rhode Island,103,A,hiring
+Michael,Carter,mjcarter@ustrive.com,UStrive,ustrive.com,Founder & CEO,Milpitas,California,103,A,hiring
+McGee,Young,mcgee@wattcarbon.com,WattCarbon,wattcarbon.com,Founder and CEO,Lafayette,California,103,A,hiring
+Veera,Anantha,veera@constanttherapyhealth.com,Constant Therapy,constanttherapyhealth.com,Co-Founder & CEO,Boston,Massachusetts,103,A,hiring
+Julien,Nakache,julien@grantedhealth.com,Granted,grantedhealth.com,Founder & CEO,New York,New York,103,A,hiring
+Srinivasan,Narayan,srinivasan@goodmeetings.ai,Goodmeetings,goodmeetings.ai,Co-Founder and CEO,Los Angeles,California,103,A,hiring
+Willem,Sundblad,willem.sundblad@oden.io,Oden Technologies,oden.io,Cofounder and Chief Executive Officer,New York,New York,103,A,hiring
+Aaron,Gubin,aaron@wattcarbon.com,WattCarbon,wattcarbon.com,Co-Founder & COO,Lafayette,California,103,A,hiring
+Reed,McGinley-Stempel,reed@stytch.com,Stytch,stytch.com,Co-Founder and CEO,San Francisco,California,103,A,hiring
+Graham,McNicoll,graham@growthbook.io,GrowthBook,growthbook.io,Co-Founder & CEO,Palo Alto,California,103,A,hiring
+Lee,Lance,lee@ecobot.com,Ecobot,ecobot.com,CEO / Cofounder,Asheville,North Carolina,103,A,hiring
+Craig,Limoli,craig.limoli@wellsheet.com,Wellsheet,wellsheet.com,Co-Founder and CEO,New York,New York,103,A,hiring
+Joel,Steel,joel.steel@komo.tech,Komo Technologies,komo.tech,CEO & Co-Founder,Sydney,New South Wales,103,A,hiring
+Jack,Copeland,jack@staffingfuture.com,Staffing Future,staffingfuture.com,CEO and Co-Founder,Costa Mesa,California,103,A,hiring
+Faheem,Ahmed,faheem.ahmed@federationinc.com,Federation AI,federationinc.com,Co-Founder & COO,San Francisco,California,103,A,hiring
+David,Stifter,dstifter@predictap.com,"PredictAP, Inc.",predictap.com,Founder & CEO,Boston,Massachusetts,103,A,hiring
+Raymond,Lau,ray@leapfin.com,Leapfin,leapfin.com,Founder & CEO,San Mateo,California,103,A,hiring
+Yami,Payano,yami@sign-speak.com,Sign-Speak,sign-speak.com,CEO & Co-Founder,Rochester,New York,103,A,hiring
+Justin,Couto,justin.couto@socreate.it,SoCreate,socreate.it,Founder & CEO,San Luis Obispo,California,103,A,hiring
+Brooks,Busch,brooks@goelate.com,Elate,goelate.com,"Co-Founder, CEO",Indianapolis,Indiana,103,A,hiring
+Vishal,Shah,vishal@elementams.com,Element AMS,elementams.com,CEO & Co-founder,Chantilly,Virginia,103,A,hiring
+Abby,Parker,abby@goelate.com,Elate,goelate.com,"Co-founder, COO",Indianapolis,Indiana,103,A,hiring
+Gina,Camacho,gina.c@bluerecruit.us,BlueRecruit,bluerecruit.us,Co-Founder & COO,Raleigh,North Carolina,103,A,hiring
+Gil,Arditi,gil@morph.ai,Morph.ai,morph.ai,Founder and CEO,Gurugram,Haryana,103,A,events
+Colin,Macnaught,colin@bondlink.com,BondLink,bondlink.com,CEO & Co-Founder,Boston,Massachusetts,103,A,hiring
+Ryan,Hitchler,ryan@centro.rocks,Centro,centro.rocks,CEO & Co-founder,Boulder,Colorado,103,A,hiring
+Curtis,Fonger,curtis@whalesync.com,Whalesync,whalesync.com,Co-Founder and CEO,Miami,Florida,103,A,hiring
+Matt,Rubinstein,matt@liveschoolinc.com,LiveSchool,whyliveschool.com,CEO and Founder,Brentwood,Tennessee,103,A,hiring
+Regina,Ocwieja,regina@centro.rocks,Centro,centro.rocks,COO and Co-Founder,Boulder,Colorado,103,A,hiring
+Chris,John,chris@syndic8.io,Syndic8,syndic8.io,Cofounder & CEO,Boston,Massachusetts,102,A,fundraising
+Ankit,Saxena,ankit@thena.ai,Thena,thena.ai,Co-Founder & CEO,Mountain View,California,101,A,hiring
+Doug,Suttles,doug@orb.net,Orb,orb.net,Cofounder & CEO,San Diego,California,101,A,hiring
+Rahul,Jain,rahul@thatsnoble.com,Noble,thatsnoble.com,CEO & Cofounder,San Francisco,California,101,A,hiring
+Andrea,Mazzocchi,andrea@playhealth.com,Play Health,playhealth.com,CEO & Co-Founder,Boulder,Colorado,101,A,hiring
+Nuno,Freitas,nuno@dotlas.com,Dotlas,dotlas.com,CEO & Co-Founder,New York,New York,101,A,hiring
+Phil,Krinner,phil@getarch.com,Arch,getarch.com,Co-Founder & CEO,San Francisco,California,100,A,hiring
+Jon,Garrity,jon@tagup.ai,Tagup,tagup.ai,Founder & CEO,New York,New York,100,A,hiring
+Sharthok,Chakraborty,sc@klaarhq.com,Klaar,klaarhq.com,Co-Founder & CEO,San Francisco,California,100,A,hiring
+Reza,Barissi,reza@trytn.com,TRYTN,trytn.com,Co-Founder and CEO,Nashville,Tennessee,100,A,hiring
+Chandan,Maruti,chandan@twig.so,Twig,twig.so,Founder and CEO,San Mateo,California,100,A,hiring
+Olivia,Joslin,olivia@tollbit.com,TollBit,tollbit.com,Co-founder & COO,New York,New York,100,A,hiring
+Lee,Rodgers,lee@syftai.com,Syft AI,syftai.com,Co-Founder & CEO,Austin,Texas,100,A,hiring
+Katie,Fenton,kfenton@activatelearning.com,Activate Learning,activatelearning.com,Vice President Marketing,Greenwich,Connecticut,100,A,events
+Arthur,Jacobs,arthur@unitbase.co,"Unitbase, Inc.",unitbase.co,"Co-Founder, CEO",New York,New York,100,A,hiring
+Quinn,Litherland,quinn@revin.ai,Revin Inc.,revin.ai,Founder & CEO,New York,New York,100,A,hiring
+Matthias,Kurwig,matthias@enervee.com,Enervee,enervee.com,Cofounder & CEO,Los Angeles,California,100,A,events
+Judd,Schoenholtz,judd@deferred.com,Deferred,deferred.com,Co-Founder & CEO,Jefferson City,Missouri,100,A,hiring
+Bob,Summers,bob@goodcall.ai,Goodcall,goodcall.com,CEO & Founder,Cupertino,California,100,A,hiring
+Kevin,Gregson,kevin@aniline.ai,SalesAssistIQ,aniline.ai,CEO & Co-Founder,Chappaqua,New York,100,A,hiring
+Eric,Jen,eric@ren.inc,Ren Energy,ren.inc,Founder/CEO,Portland,Oregon,100,A,hiring
+Romain,Levy,romain@sparkwise.co,Sparkwise,sparkwise.co,Co-Founder & COO,New York,New York,100,A,hiring
+Toshit,Panigrahi,tpanigrahi@tollbit.com,TollBit,tollbit.com,CEO & Co-Founder,New York,New York,100,A,hiring
+Chris,Frantz,chris@loops.so,Loops,loops.so,Co-Founder + CEO,Los Angeles,California,100,A,hiring
+Sami,Senapathy,sami@endeavor.ai,Endeavor,endeavor.ai,Founder and CEO,San Francisco,California,100,A,hiring
+Alex,Cummings,alex@getflowpath.com,FlowPath CMMS - Intelligent Maintenance Software,getflowpath.com,"Co-Founder, CEO",Atlanta,Georgia,100,A,events
+Justin,Meretab,justin@layerfi.com,Layer,layerfi.com,Co-founder & CEO,San Francisco,California,100,A,hiring
+Mark,Oronzio,mark@uplvl.net,"upLVL, Inc.",uplvl.net,CEO & Co-Founder,Portland,Oregon,100,A,hiring
+Henk,Biljon,henk@fountai.co,Fount,fountai.co,Co-Founder & CEO,Cambridge,Massachusetts,100,A,hiring
+Cliff,Crosland,ctc@scanner.dev,Scanner,scanner.dev,"CEO, Co-founder",San Francisco,California,100,A,hiring
+Joshua,Cohen,josh@getpinpoint.io,Pinpoint,getpinpoint.io,Co-Founder & CEO,New York,New York,100,A,hiring
+Omri,Weinberg,omri@docontrol.io,DoControl,docontrol.io,Co-Founder & CEO,New York,New York,100,A,events
+Jaana,Heikkila,jaana@loop.ai,Loop.AI - The AI Agents Platform,loop.ai,Vice President Marketing,San Francisco,California,100,A,hiring
+Satchel,Hirsh,satchel@forml.ai,forml,forml.ai,Co-Founder & CEO,San Mateo,California,100,A,hiring
+Salifyanji,Namwila,salifyanji.j.namwila@devdraft.ai,Devdraft,devdraft.ai,Founder & CEO,Sunnyvale,California,100,A,hiring
+Shuntaro,Kogame,shuntaro.kogame@capex.ai,"Capex, Inc",capex.ai,Founder/CEO,Minato,Tokyo,100,A,hiring
+Brian,Gannon,brian@joinloop.com,"Loop (California Labs, Inc.)",joinloop.com,"Founder, CEO",San Francisco,California,100,A,hiring
+Douglas,Shank,douglas.shank@getbonko.com,Bonko Labs,getbonko.com,Founder and CEO,Columbus,Ohio,100,A,hiring
+Andy,Kalmon,andy@heybenny.com,Benny,heybenny.com,Founder & CEO,Madison,Wisconsin,100,A,hiring
+Andrew,Borovsky,andrew@rent.app,Split Pay,rent.app,Co-founder and CEO,Miami,Florida,100,A,hiring
+Tanveer,Gill,tanveer@traycer.ai,Traycer,traycer.ai,Founder & CEO,San Francisco,California,100,A,hiring
+Melissa,Munnerlyn,melissa@daash.co,Daash Intelligence,daash.co,Co-Founder & CMO,San Francisco,California,100,A,hiring
+Nick,Allen,nick.allen@ksanahealth.com,Ksana Health,ksanahealth.com,"Co-Founder, CEO",Eugene,Oregon,100,A,hiring
+Robin,Sahai,robin@bluecodeinc.com,"BlueCode, Inc.",bluecodeinc.com,Founder & CEO,San Francisco,California,100,A,hiring
+Yannick,Cohen,yannick@brightwayhealth.org,Brightway Health,moveshealth.com,"Co-founder, CEO",Pittsburgh,Pennsylvania,100,A,hiring
+Danielle,Hill,danielle@upwardli.com,Upward Financial,upwardli.com,Co-Founder & COO,Seattle,Washington,100,A,hiring
+Chris,Stallings,chris@findabundance.com,Abundance,findabundance.com,CEO and Founder,Monroe,Georgia,100,A,hiring
+Evan,Demchick,edemchick@rebootmotion.com,Reboot Motion,rebootmotion.com,"Co-Founder, COO",Los Angeles,California,100,A,hiring
+Kelsey,Hunter,kelsey@getpaloma.com,Paloma,getpaloma.com,Founder & CEO,New York,New York,100,A,hiring
+Logan,Nye,logan@galenhealth.org,Galen Health,galenhealth.org,"Co-founder, CEO",San Francisco,California,100,A,hiring
+Jay,Baumgardner,jay@muso.ai,Muso.AI,muso.ai,Co-Founder & CEO,Houston,Texas,100,A,hiring
+Maleka,Momand,maleka@esper.com,Esper,esper.com,Co-Founder & CEO,Austin,Texas,100,A,hiring
+Volodymyr,Panchenko,v@portal.ai,Portal AI,portal.ai,CEO and Co-Founder,Redwood City,California,100,A,hiring
+Gabe,Haim,gabe@cognition.io,Cognition.io,cognition.io,Chief Executive Officer/Co-Founder,Mill Neck,New York,100,A,hiring
+Gagan,Bhasin,gagan@vao.world,VAO,vao.world,Founder & CEO,San Francisco,California,100,A,hiring
+Taylor,Pemberton,tpemberton@supersetapp.com,Superset,supersetapp.com,CEO & Co-founder,New York,New York,100,A,hiring
+Gerard,Knight,jerry@visible.xyz,Split Pay,rent.app,Co-Founder & COO,Miami,Florida,100,A,hiring
+Zack,Isaacs,zack@movemint.cc,Movemint,movemint.cc,Founder & CEO,San Francisco,California,100,A,hiring
+Jeff,Feldgoise,jeff@getintro.com,Revealed,getintro.com,Co-Founder and CEO,Boston,Massachusetts,100,A,hiring
+Nathan,Hill,nathan@avidai.com,Avid,avidai.com,Vice President Marketing,Dallas,Texas,100,A,hiring
+Mariano,Sorgente,mariano@issen.com,ISSEN (YC F24),issen.com,Founder and CEO,New York,New York,100,A,hiring
+Saurabh,Dabral,saurabh@getagentworks.com,Agentworks,agentworks.in,Founder & CEO,San Francisco,California,100,A,hiring
+Vandit,Sharma,vandit@agentworks.in,Agentworks,agentworks.in,Co-Founder & CMO,San Francisco,California,100,A,hiring
+Dom,D'Alexander,dom@somble.com,Somble,somble.com,Co-founder & CEO,New York,New York,100,A,hiring
+Alex,Britton,alex@rentroom.com,Rentroom,rentroom.com,Co-Founder and CEO,New York,New York,100,A,hiring
+Dorron,Mottes,dorron@nfrnds.com,&frnds,andfrnds.com,Founder and CEO,Singapore,,100,A,hiring
+Sriram,Subramanian,ram@thenile.dev,Nile,thenile.dev,Co-Founder and CEO,San Francisco,California,100,A,hiring
+Sanhik,Roy,sanhik@playto.so,Playto,playto.so,Founder & CEO,Bengaluru,Karnataka,100,A,hiring
+Jakub,Kulisa,jakub@parcelai.co,parcel ai,parcelai.co,CEO & Co-Founder,Miami,Florida,100,A,hiring
+Sara,Wyman,sara.wyman@stackpack.ai,Stackpack,stackpack.ai,Founder & CEO,San Francisco,California,100,A,hiring
+Boris,Manda,boris@devdraft.ai,Devdraft,devdraft.ai,Co-Founder & COO,Sunnyvale,California,100,A,hiring
+James,Kawas,james@joinflyp.com,Flyp,joinflyp.com,Co-Founder & CEO,San Francisco,California,100,A,hiring
+Kareem,Malek,kareem@revealed.xyz,Revealed,getintro.com,Co-Founder & COO,Boston,Massachusetts,100,A,hiring
+Paris,Mielke,paris@tangram.co,Tangram,tangram.co,"Founder, CEO",New Haven,Connecticut,100,A,hiring
+Jawad,Rachami,jawad@cylitix.com,CYLITIX,cylitix.com,Founder & CEO,Arlington,Virginia,100,A,hiring
+Robert,Henley,rob@ally.security,Ally Security Inc,ally.security,Co-Founder & CEO,Boston,Massachusetts,99,A,hiring
+Aditya,Kaddu,aditya@edstruments.com,Edstruments,edstruments.com,Founder & CEO,Redwood City,California,99,A,events
+Bardhyl,Bytyqi,bardhyl@modulify.ai,Modulify,modulify.ai,"CEO, Founder",,,99,A,events
+Muirgheal,Montecalvo,muirgheal.montecalvo@tripfusion.com,TripFusion,tripfusion.com,CEO & Founder,Tampa,Florida,98,A,hiring
+Dan,Leahy,dan@makersights.com,MakerSights,makersights.com,"Co-founder, CEO",San Francisco,California,98,A,hiring
+Brian,Lapann,brian@molestreet.com,Mole Street,molestreet.com,Co-Founder & CEO,Philadelphia,Pennsylvania,98,A,hiring
+Chris,Harrington,chris@usherpa.com,Usherpa,usherpa.com,CEO & CoFounder,Denver,Colorado,98,A,hiring
+Michael,Ambrose,michael@docnetwork.org,DocNetwork,docnetwork.org,Founder/CEO,Ann Arbor,Michigan,98,A,hiring
+Brock,Wagner,brock@getsous.com,"GetSous.com, Inc.",getsous.com,Co-Founder | CEO,Atlanta,Georgia,98,A,hiring
+Traci,Mockbee,tracimh@camincorp.com,CAM Inc.,camincorp.com,Vice President Marketing,Uniontown,Ohio,98,A,events
+Richard,Piotrowski,rp@logzilla.net,LogZilla Corporation,logzilla.ai,Co-Founder : COO,Austin,Texas,98,A,hiring
+Kuldip,Hillyer,kuldip@kugamon.com,Kugamon,kugamon.com,"Founder, CEO",San Francisco,California,98,A,hiring
+David,Hickson,dhickson@dataoceans.com,DataOceans,dataoceans.com,Founder/COO,Alpharetta,Georgia,98,A,hiring
+Alok,Deshpande,alok@joinsmartpath.com,SmartPath,joinsmartpath.com,CEO and Co-Founder,Atlanta,Georgia,98,A,hiring
+Zac,Carr,zac@blockclinical.com,Block Clinical Inc.,blockclinical.com,Co-founder & CEO,San Diego,California,98,A,hiring
+Angelica,Iglesias,angelica.iglesias@autoscheduler.ai,AutoScheduler.AI,autoscheduler.ai,Vice President Marketing,Austin,Texas,98,A,hiring
+Mustafa,Savas,mustafa.savas@kimola.com,Kimola,kimola.com,"Founder, CEO",Ankara,Ankara,98,A,hiring
+Jeremy,McCool,j.mccool@hevo.com,HEVO,hevo.com,Founder and CEO,New York,New York,98,A,hiring
+Stefano,Gridelli,stefano@netbeez.net,"NetBeez, Inc.",netbeez.net,Cofounder/CEO,Pittsburgh,Pennsylvania,98,A,hiring
+Ronnie,Parsons,rparsons@modelab.is,Mode Lab,modelab.design,"Founder, CEO",Portland,Oregon,98,A,hiring
+Nikan,Shahidi,nshahidi@getwebstacks.com,Webstacks,webstacks.com,"Founder, Chief Executive Officer",San Diego,California,98,A,hiring
+Asif,Rehmani,asif@visualsp.com,VisualSP,visualsp.com,Founder and CEO,Plainfield,Illinois,98,A,hiring
+Diane,Smith,dsmith@gr8people.com,GR8 People,gr8people.com,CEO and Co-founder,Yardley,Pennsylvania,98,A,hiring
+Piyush,Saggi,ps@parmonic.com,Parmonic,parmonic.com,Cofounder & CEO,Atlanta,Georgia,98,A,hiring
+Jake,Fagan,jake@margengroup.com,Margen,margengroup.com,Co-Founder & CEO,Nashville,Tennessee,98,A,hiring
+Steven,Wang,steven@measuresquare.com,Measure Square Corp,measuresquare.com,Founder/CEO,Pasadena,California,98,A,events
+Lisa,Pooley,lisa.pooley@autoscheduler.ai,AutoScheduler.AI,autoscheduler.ai,Vice President Marketing,Austin,Texas,98,A,hiring
+Romaric,Philogene,rphilogene@qovery.com,Qovery,qovery.com,CEO & Co-founder,New York,New York,98,A,hiring
+Ramiro,Berrelleza,ramiro@okteto.com,Okteto,okteto.com,Founder and CEO,San Francisco,California,98,A,hiring
+Nick,Black,nick@goodunited.io,⚡ GoodUnited ⚡,goodunited.io,Founder & CEO,Charleston,South Carolina,98,A,hiring
+Lori,Sylvia,lori@rallyrm.com,Rally® Recruitment Marketing,rallyrecruitmentmarketing.com,Founder & CEO,Boston,Massachusetts,98,A,hiring
+Veronika,Brackova,veronika@mozaiq.com,Mozaiq,mozaiq.com,Founder & COO,San Francisco,California,98,A,hiring
+Matt,Bivons,matt@canopyservicing.com,Canopy,canopyservicing.com,Founder & CEO,Claymont,Delaware,98,A,hiring
+Sean,Hughes,sean.hughes@athliance.com,Athliance,athliance.com,Co-Founder | CEO,Winter Park,Florida,98,A,events
+Korena,Keys,korena@keymediasolutions.com,KeyMedia Solutions,keymediasolutions.com,Founder and CEO,Sioux Falls,South Dakota,98,A,hiring
+Austin,Netzley,austin@2x.co,2X,2x.co,Founder & CEO,Austin,Texas,98,A,hiring
+James,Mikrut,james@payloadcms.com,Payload,payloadcms.com,Founder & CEO,Grand Rapids,Michigan,98,A,hiring
+Jeffrey,Chesky,jchesky@insuritas.com,INSURITAS,insuritas.com,Founder & CEO,East Windsor,Connecticut,98,A,hiring
+Canming,Jiang,cjiang@datawiza.com,Datawiza Technologies Inc.,datawiza.com,CEO and Co-Founder,Campbell,California,98,A,hiring
+Jay,Kinker,jayk@simplitrain.com,SimpliTrain - Going Beyond the LMS,simplitrain.com,Founder & CEO,Tampa,Florida,98,A,hiring
+Tarry,Shebesta,tarry@flexpathdxp.com,FlexPath DXP,flexpathdxp.com,Co-Founder & CEO,Cincinnati,Ohio,98,A,events
+Jarlath,O'Carroll,jocarroll@jobspeaker.com,Jobspeaker.ai,jobspeaker.com,Founder & CEO,San Francisco,California,98,A,hiring
+Ross,Vangalis,rvangalis@in-queue.com,Queue Brand Communications,in-queue.com,C.E.O & Founder,Chicago,Illinois,98,A,events
+Rish,Bhandari,rishabh@contentbeta.com,Content Beta,contentbeta.com,Founder and CEO,Sunnyvale,California,98,A,hiring
+Dan,Collins,dcollins@wastebits.com,Wastebits - Waste Software & Sustainability Services,wastebits.com,Founder & CEO,Akron,Ohio,98,A,hiring
+Christine,Wendell,christine@prontohousing.com,Pronto Housing,prontohousing.com,Co-Founder & CEO,New York,New York,98,A,hiring
+Erin,Benkert,erin@tryallspring.com,Allspring,tryallspring.com,Founder & CEO,San Francisco,California,98,A,events
+Abhi,Jain,abhi.jain@livereachmedia.com,LiveReach AI,livereach.ai,"Co-Founder, CEO",Sunnyvale,California,98,A,events
+Vineet,Rajan,vineet@getforte.com,Forte,getforte.com,Co-Founder & CEO,Baltimore,Maryland,98,A,hiring
+Joshua,Sharkey,joshua@getmeez.com,meez,getmeez.com,Founder & CEO,New York,New York,98,A,hiring
+Marlon,Misra,marlon@assembly.com,Assembly,assembly.com,Cofounder/CEO,New York,New York,98,A,hiring
+Carl,Prindle,cprindle@blueport.com,Blueport,blueport.com,CEO and Founder,Boston,Massachusetts,98,A,hiring
+San,Pathak,san@afterschoolhq.com,AfterSchool HQ,afterschoolhq.com,Co-Founder & Chief Operating Officer,Fishers,Indiana,98,A,hiring
+Alan,Pledger,alan@makeswift.com,Makeswift,makeswift.com,Co-founder // CEO,Atlanta,Georgia,98,A,hiring
+Sarah,Alessi,sarah@flywirecameras.com,FlyWire Cameras,flywirecameras.com,"Co-Founder, COO",Lexington,Kentucky,98,A,events
+Jake,Brereton,jake@launchnotes.com,LaunchNotes,launchnotes.com,Founder & COO,Walnut,California,98,A,hiring
+Jasmine,Geddis,jasmine@katalystllc.net,Katalyst LLC,katalystllc.net,Co-Founder & CEO,Fairfax,Virginia,98,A,hiring
+Rob,Patten,rob@ruddr.com,Ruddr,ruddr.com,Cofounder and CEO,Atlanta,Georgia,98,A,hiring
+Jakub,Startek,jakub@grafit.agency,GRAFIT,grafit.agency,CEO & Co-founder,Warszawa,woj. mazowieckie,98,A,hiring
+Corey,Scholibo,corey@dayo.co,dayo,dayo.co,Co-Founder & CEO,Portland,Oregon,98,A,hiring
+Eran,Steiner,eran@airdata.com,AirData UAV,airdata.com,Founder & CEO,El Dorado Hills,California,98,A,hiring
+Andrew,Garcia,andrew@goodshuffle.com,Goodshuffle,goodshuffle.com,Co-Founder & CEO,Washington,District of Columbia,98,A,hiring
+Andrew,Barnett,andrew.barnett@abptinc.com,"ABP Technology, LLC",abptinc.com,CEO and Founder,San Francisco,California,98,A,events
+Chris,Geiss,chris@seguno.com,Seguno,seguno.com,Co-Founder and CEO,Durham,North Carolina,98,A,hiring
+Moataz,Rashad,moataz@deepvu.co,DeepVu,deepvu.co,Founder & CEO,San Ramon,California,98,A,hiring
+Darye,Henry,darye@afterschoolhq.com,AfterSchool HQ,afterschoolhq.com,Founder & CEO,Fishers,Indiana,98,A,hiring
+Stephen,Forte,stephen@buildclub.com,BuildClub,buildclub.com,Founder & CEO,Miami,Florida,98,A,hiring
+Mandar,Jamsandekar,mandar.j@caprium.com,Caprium Inc,caprium.com,CEO and Founder,Milpitas,California,98,A,hiring
+Akshay,Dodeja,akshay@terminal49.com,Terminal49,terminal49.com,Co-Founder & CEO,San Francisco,California,98,A,hiring
+Jorge,'-Simergia,jpampin@simergia.com,Simergia Engineering,simergia.com,CEO & Founder,Paterna,Valencian Community,98,A,hiring
+Dror,Katzav,dror@atidot.com,Atidot,atidot.com,Co Founder & CEO,Palo Alto,California,98,A,events
+Daina,Burnes,daina@boldmetrics.com,Bold Metrics Inc.,boldmetrics.com,Co-founder & CEO,San Francisco,California,98,A,hiring
+Gregg,Mojica,gmojica@runalloy.com,Alloy Automation,runalloy.com,Co-Founder & CEO,San Francisco,California,98,A,hiring
+Denise,Davert,denise.davert@pivotpayables.com,Pivot Payables,pivotpayables.com,"Vice President, Marketing",Bellevue,Washington,98,A,hiring
+Manish,Gorawala,mgorawala@rfp360.ai,RFP360.AI,rfp360.ai,Founder and CEO,Lansdale,Pennsylvania,97,A,fundraising
+Christopher,Aumueller,caumueller@fanword.com,FanWord,fanword.com,CEO & Founder,Lincoln,Nebraska,97,A,hiring
+Nick,Whalley,nick@nutiliti.com,Nutiliti,nutiliti.com,Co-Founder & CEO,Austin,Texas,97,A,hiring
+Najaf,Husain,naj.husain@elastio.com,Elastio,elastio.com,Founder & CEO,Reston,Virginia,97,A,hiring
+Pablo,Bermudez-Canete,pablo@paratushealth.com,Paratus Health,paratushealth.com,Co-Founder & CEO,Stanford,California,97,A,hiring
+Volkan,Gurel,volkan@layer.ai,Layer,layer.ai,Co-founder & CEO,San Francisco,California,97,A,hiring
+Rick,Aberle,rick@propago.com,Propago LLC,propago.com,CEO/Founder,Austin,Texas,97,A,hiring
+Oscar,Martin,o.rubio@lodgerin.com,Lodgerin,lodgerin.com,CEO & Founder,Miami,Florida,97,A,events
+Josh,Seeman,josh.seeman@source-marketplace.com,"Source Technologies, Inc.",source-marketplace.com,CEO/Founder,Bristol,England,97,A,hiring
+Joseph,Lee,joseph@supademo.com,Supademo,supademo.com,"Co-Founder, CEO",New York,New York,97,A,fundraising
+Edward,Weinstein,edward.weinstein@panomebio.com,Panome Bio,panomebio.com,Co-Founder and CEO,St. Louis,Missouri,96,A,events
+Gerry,Poirier,gerry.poirier@angelink.com,AngeLink,angelink.com,CEO and Founder,Naples,Florida,96,A,events
+Stepan,Tsaturyan,stepan@humanize.security,"Humanize, Inc.",humanize.security,"CEO, Co-founder",San Francisco,California,95,A,hiring
+Larry,Bowe,larry.bowe@puretechsystems.com,PureTech Systems,puretechsystems.com,Founder & CEO,Phoenix,Arizona,95,A,events
+Tim,Harrington,th@battlefin.com,BattleFin,battlefin.com,Co-Founder & CEO,Norwalk,Connecticut,95,A,events
+Ken,Klein,ken@praisidio.com,Praisidio,praisidio.com,"CEO, Co-Founder",San Francisco,California,95,A,hiring
+Jessie,Lidster,jessie.jameson@provensoftware.com,"Proven Software, Inc.",provensoftware.com,CEO & Co-Founder,Washington,District of Columbia,95,A,hiring
+Luke,Peffers,luke.peffers@nexusweatherandclimate.com,Nexus Weather & Climate,nexusweatherandclimate.com,Chief Executive Officer and Co-Founder,Boulder,Colorado,95,A,events
+Mike,Yoder,mike.yoder@alicereceptionist.com,ALICE Receptionist,alicereceptionist.com,CEO & Founder,Las Vegas,Nevada,95,A,events
+Brian,Haggerty,bhaggerty@medpower.org,MedPower,medpower.com,CEO / Co-founder,Rockville Centre,New York,95,A,events
+Ajay,Chauhan,ajay@salezshark.com,SalezShark,salezshark.com,Co-Founder & CEO,Great Falls,Virginia,95,A,events
+Eli,Wasserman,ewasserman@ironpoint.io,IronPoint,ironpoint.io,Co-Founder & CEO,Sandy Springs,Georgia,95,A,events
+John,Richardson,john.richardson@lli.com,"Learning Labs, Inc.",lli.com,Vice President - Marketing Director,Calhoun,Georgia,95,A,events
+Jeffrey,Ip,jeffreyip@confident-ai.com,Confident AI (YC W25),confident-ai.com,CEO & Co-Founder,San Francisco,California,95,A,hiring
+Vinod,Lobo,vinod@learningupgrade.com,Learning Upgrade,learningupgrade.com,CEO and Founder,San Diego,California,95,A,events
+David,Weiszfeld,david@soundcharts.com,Soundcharts,soundcharts.com,Founder & CEO,Los Angeles,California,95,A,events
+Erin,Marchese,erin.marchese@sviworld.com,SVI,sviworld.com,"COO, Co-Founder",Fayetteville,Arkansas,95,A,hiring
+Murray,Levison,murray@stationhead.com,Stationhead,stationhead.com,Co-Founder & COO,New York,New York,94,A,hiring
+Brittani,Dunlap,brittani@floweq.com,FlowEQ,floweq.com,"CEO, Founder",San Francisco,California,94,A,hiring
+Mike,Nguyen,mike@inflect.com,Inflect,inflect.com,CEO and Founder,San Francisco,California,94,A,hiring
+Chris,Klein,chris@rachio.com,Rachio,rachio.com,Co-founder / CEO,Denver,Colorado,94,A,hiring
+Nathan,Morales,nate@bridgenow.co,Bridge,bridgenow.co,Founder & CEO,San Francisco,California,94,A,hiring
+Mona,Rakibe,mona.rakibe@telm.ai,Telmai,telm.ai,Co-Founder and CEO,San Mateo,California,94,A,hiring
+George,Chu,george@fio.one,FiO,fio.one,Chief Executive Officer and Founder,Houston,Texas,94,A,events
+Nik,Balachandran,nik.balachandran@zabbleinc.com,Zabble,zabbleinc.com,"Founder, CEO",Walnut Creek,California,94,A,hiring
+Deven,Reddy,deven.reddy@impac.io,imPAC Labs,impac.io,Founder & CEO,Atlanta,Georgia,94,A,hiring
+Jesse,Sullivan,sully@alter.global,Alter Global,alter.vc,Founder & CEO,San Francisco,California,94,A,hiring
+Sissi,Wang,sissi@brokrly.com,Brokrly,brokrly.com,"Cofounder and CEO, Investor",Miami,Florida,94,A,hiring
+Abdullah,Al-Zandani,az@coperniq.io,Coperniq,coperniq.io,Cofounder & CEO,San Francisco,California,94,A,hiring
+Artem,Harutyunyan,artem@bardeen.ai,Bardeen,bardeen.ai,Founder & CEO,San Francisco,California,94,A,hiring
+Pamir,Ehsas,pamir@arcline-ai.com,Arcline (YC W26),arcline-ai.com,Founder & CEO,Placitas,New Mexico,94,A,hiring
+Pratyus,Patnaik,pratyus@natomahq.com,Natoma,natoma.ai,Co-Founder & CEO,San Francisco,California,94,A,hiring
+Jay,Haynes,jay@thrv.com,thrv.com,thrv.com,Founder & CEO,San Francisco,California,94,A,hiring
+Paige,Robinson,paige@willreed.com,Will Reed,willreed.com,Founder & CEO,Dallas,Texas,94,A,events
+Jeremy,Vincent,jeremy@globekin.com,"GlobeKin, Inc.",globekin.com,Chief Executive Officer & Founder,Atlanta,Georgia,94,A,hiring
+Abby,Grills,abby@riveterhq.com,Riveter,riveterhq.com,CEO & Co-Founder,San Francisco,California,94,A,hiring
+Yuval,Shuminer,yuvals@piere.com,Piere,piere.com,Founder and CEO,Fort Lauderdale,Florida,94,A,hiring
+Simon,Law,simon@loginid.io,LoginID,loginid.io,Co-Founder and CEO,San Mateo,California,94,A,hiring
+Austin,Wentzlaff,austin@nook-inc.com,Nook,nook-inc.com,Co-Founder & CEO,Wayzata,Minnesota,94,A,hiring
+Sam,Hatoum,sam@on.auto,Auto,on.auto,Founder & CEO,San Francisco,California,94,A,hiring
+Sina,Kashuk,sina@fused.io,Fused,fused.io,Co-founder & CEO,New York,New York,94,A,hiring
+Noel,Mscsi,noel@projectmark.com,ProjectMark Construction CRM,projectmark.com,Co-Founder & COO,San Francisco,California,94,A,hiring
+Grayson,Cooper,grayson@ito.ai,Ito AI,ito.ai,Co-Founder & COO,San Francisco,California,94,A,hiring
+Brandon,Lloyd,brandon@getfwd.com,Forward,getfwd.com,Founder and CEO,Austin,Texas,94,A,hiring
+George,Curtis,george@helix-db.com,HelixDB (YC X25),helix-db.com,CEO & Co-Founder,San Francisco,California,94,A,hiring
+Emma,Primon,emma.primon@koneksahealth.com,Koneksa,koneksahealth.com,"Vice President, Marketing",New York,New York,94,A,hiring
+Mark,Portz,mark@nook-inc.com,Nook,nook-inc.com,Co-Founder & Chief Marketing Officer,Wayzata,Minnesota,94,A,hiring
+Sindhu,Joseph,sindhu@cognicor.com,CogniCor,cognicor.com,"Founder, CEO",Palo Alto,California,94,A,hiring
+Oliver,Jones,oliver@manifoldfreight.com,Manifold,getmanifold.ai,Co-Founder and CEO,Seattle,Washington,94,A,hiring
+Hans,Galland,hans@beyondtrucks.com,BeyondTrucks,beyondtrucks.com,CEO / Founder,San Francisco,California,94,A,hiring
+Steven,Greene,steven@standardpractice.ai,Standard Practice AI,standardpractice.ai,Co-Founder & CEO,New York,New York,94,A,hiring
+Jazmyn,Lee,jaz@withvetted.com,VETTED Inc.,withvetted.com,"Founder, CEO",Detroit,Michigan,94,A,hiring
+Paul,Xie,paul@beyondtrucks.com,BeyondTrucks,beyondtrucks.com,COO & Founder,San Francisco,California,94,A,hiring
+Maggie,Norris,maggie@aidaly.com,Aidaly,aidaly.com,"Founder, CEO and President",San Francisco,California,94,A,hiring
+Devshi,Mehrotra,devshi@justicetext.com,JusticeText,justicetext.com,Co-Founder and CEO,Irvine,California,94,A,hiring
+Lydiah,Bosire,lydiah@8b.finance,8B Education Investments,8b.africa,Founder/CEO,Ithaca,New York,94,A,hiring
+Rob,Gannaway,rob@steppingblocks.com,Steppingblocks,steppingblocks.com,Co-Founder & CEO,Atlanta,Georgia,94,A,events
+Ashish,Srimal,ashish@ratiotech.com,Ratio,ratiotech.com,Founder & CEO,San Mateo,California,94,A,hiring
+Abdul,Basharat,abdul@cartage.ai,Cartage,cartage.ai,Co-Founder & CEO,San Francisco,California,94,A,hiring
+Nick,Bonfiglio,nick@syncari.com,Syncari,syncari.com,CEO and Cofounder,Newark,California,94,A,hiring
+Ankit,Pansari,ankit@oslash.com,OSlash,oslash.com,Founder and CEO,San Francisco,California,94,A,hiring
+Noor,Akbari,noor@rosalyn.ai,Rosalyn.ai,rosalyn.ai,Co-Founder & CEO,Palo Alto,California,94,A,hiring
+Anand,Valavalkar,anand@usetwine.com,Twine (YC S23),usetwine.com,Co-founder/CEO,San Francisco,California,94,A,hiring
+Ahmad,Wani,ahmad@oneconcern.com,One Concern,oneconcern.com,Chief Executive Officer and Co Founder,Menlo Park,California,94,A,hiring
+Anthony,Brown,tony@breakr.app,Breakr,breakr.app,"Co-Founder, CEO",Atlanta,Georgia,94,A,hiring
+Ricardo,Berrios,ricardo@adherahealth.com,Adhera Health,adherahealth.com,Co-Founder & CEO,Santa Cruz,California,94,A,hiring
+Lyman,Starmer,lyman@usedeli.com,Deli,usedeli.com,Chief Executive Officer & Founder,New York,New York,94,A,hiring
+Jessica,Ko,jessica@playbook.com,Playbook,playbook.com,Co-founder and CEO,San Francisco,California,94,A,hiring
+Laura,Holmes,laura@wander.ly,Wanderly,wander.ly,Founder & CEO,Oakland,California,94,A,hiring
+Mike,Tung,mike@diffbot.com,Diffbot,diffbot.com,Founder and CEO,Menlo Park,California,94,A,hiring
+Megan,Carpenter,megan.carpenter@ficommpartners.com,Ficomm Partners,ficommpartners.com,CEO & Co-Founder,Irvine,California,94,A,events
+Gil,Akos,gakos@astra.finance,Astra,astra.finance,"Co-Founder, CEO",West Menlo Park,California,94,A,hiring
+Steve,El-Hage,steve@neonblue.ai,Neon Blue,neonblue.ai,Co-Founder and CEO,San Francisco,California,94,A,hiring
+Arvind,Vermani,arvind@perlstreet.com,Perl Street,perlstreet.com,Chief Operating Officer & Co-Founder,New York,New York,94,A,hiring
+Lawrence,Coburn,lawrence@ambient.us,Ambient,ambient.us,CEO / Co-Founder,San Francisco,California,94,A,hiring
+Andrew,Larson,andrew.larson@giv.care,giv.,giv.care,Founder & CEO,Midvale,Utah,94,A,hiring
+Sherwin,Xia,sherwin.xia@trendsi.com,Trendsi,trendsi.com,Co-founder & CEO,San Francisco,California,94,A,hiring
+Christopher,Golec,chris@channel99.com,Channel99,channel99.com,Founder & CEO,San Francisco,California,94,A,hiring
+Jeffrey,Liu,jeff@jenfi.com,Jenfi,jenfi.com,Founder & CEO,Singapore,Singapore,94,A,hiring
+Nitin,Gupta,nitin@aithon.ai,AITHON,aithon.ai,Co-founder and CEO,New York,New York,94,A,hiring
+Sachin,Latawa,sachin@tirios.ai,Tirios,tirios.ai,Founder and CEO,Austin,Texas,94,A,hiring
+Wesley,Tian,wesley@aragon.ai,Aragon.ai,aragon.ai,CEO & Co-Founder,San Francisco,California,94,A,hiring
+Cyrus,,richard@performars.com,Performars - a RevOps solution company,performars.com,Founder & CEO,Seongnam-si,Gyeonggi-do,93,A,hiring
+Sungwook,Son,sungwook@byl.im,byL(바이엘),byl.im,COO & Co-founder,Cambridge,Seoul,93,A,hiring
+Eli,Chait,eli@paywholesail.com,Wholesail,paywholesail.com,Co-Founder & CEO,San Francisco,California,93,A,events
+Brian,Axline,brian.axline@axlinegroup.com,Lucro,getlucro.com,Founder & CEO,Chicago,Illinois,93,A,fundraising
+Chris,Jessen,cjessen@darwin.aero,"Darwin Travel Technology, Inc.",darwin.aero,CEO & Co-Founder,Orlando,Florida,93,A,events
+Mirella,Klosinska,mirella@wayde.io,Wayde - Google Ads of Influencer Marketing,wayde.io,"Co-founder, CEO",New York,New York,93,A,fundraising
+Jonas,Bordo,jonas@dwellsy.com,Dwellsy,dwellsy.com,Co-Founder & CEO,Los Altos,California,92,A,hiring
+Zachary,Smith,zsmith@datum.net,Datum,datum.net,Co-Founder and CEO,New York,New York,92,A,hiring
+Ben,Pankonin,ben@socialassurance.com,Social Assurance,socialassurance.com,CEO / Co-Founder,Lincoln,Nebraska,92,A,hiring
+Andres,Gutierrez,andres@comake.live,Comake,comake.io,Co-Founder & CEO,Culver City,California,92,A,hiring
+Mike,Preuss,mike@visible.vc,Visible.vc,visible.vc,Founder & CEO,Chicago,Illinois,92,A,hiring
+Philip,Roybal,phil@maialearning.com,MaiaLearning Inc.,maialearning.com,Vice President Marketing,Cupertino,California,92,A,hiring
+Genevieve,Bellaire,genevieve@realworld.co,Realworld,realworld.co,Founder + CEO,Washington,District of Columbia,92,A,hiring
+Robert,Hill,robert.hill@cyturus.com,Cyturus Technologies,cyturus.com,Founder & CEO,Dallas,Texas,92,A,hiring
+Ari,Lew,ari@asymm.com,Asymm,asymm.com,Co-Founder & CEO,Solana Beach,California,92,A,hiring
+Daniel,Martin,daniel.martin@sedarotech.com,Sedaro,sedaro.com,COO & Co-founder,Arlington,Virginia,92,A,hiring
+Ghalib,Suleiman,ghalibs@polytomic.com,Polytomic,polytomic.com,CEO and Co-Founder,San Francisco,California,92,A,hiring
+Jon,Romm,jromm@venuetize.com,"Venuetize, powered by Everi",venuetize.com,Founder/CEO,Las Vegas,Nevada,92,A,hiring
+Nicolas,Nino,nico@daptatech.com,Dapta,dapta.ai,CEO - Founder,Phoenix,Arizona,92,A,hiring
+Hollis,Felkel,chip@rapindex.com,RAP Index,rapindex.com,CEO/Founder,Greenville,South Carolina,92,A,hiring
+Matt,Bahr,matt@fairing.co,Fairing,fairing.co,Founder & CEO,New York,New York,92,A,hiring
+Hannu,Aukia,hannu@tumplate.com,Tumplate,tumplate.com,Co-founder and Former CEO,Helsinki,Uusimaa,92,A,hiring
+Jasper,Juhl,jasper.juhl@greatagentusa.com,Great Agent,greatagentusa.com,Co-founder & CEO,Austin,Texas,92,A,hiring
+Mark,Halberstein,mark@simplenight.com,Simplenight,simplenight.com,Founder & CEO,Miami,Florida,92,A,hiring
+Joshua,Caruso,josh@omnyra.ai,Omnyra,omnyra.ai,Founder & CEO – Omnyra,Jacksonville,North Carolina,92,A,hiring
+Sean,Soderstrom,sean@courted.io,Courted,courted.io,CEO & Co-Founder,New York,New York,92,A,hiring
+Raja,Krish,raja@upskillair.com,UpskillAir,upskillair.com,Co-Founder and CEO,Washington,District of Columbia,92,A,hiring
+Adam,Dornbusch,adam@entribe.com,EnTribe,entribe.com,CEO & Founder,Oakland,California,92,A,hiring
+Kaitlyn,Knopp,kaitlyn@getpequity.com,Pequity,pequity.com,Founder & CEO,San Francisco,California,92,A,hiring
+Andy,Archer,andy.archer@locushealth.com,Locus,locushealth.com,CEO and Co-Founder,Charlottesville,Virginia,92,A,hiring
+Aaron,Smith,aaronsmith@justsift.com,Sift,justsift.com,Vice President Marketing,Detroit,Michigan,92,A,hiring
+Landrum,Randolph,landrum.randolph@raamp.com,RAAMP,raamp.com,Founder and CEO,Greenville,South Carolina,92,A,hiring
+Tony,Ferguson,tony@thepennyinc.com,Penny Inc,thepennyinc.com,Founder and CEO,Las Vegas,Nevada,92,A,hiring
+William,McKenna,william@domidocs.com,"DomiDocs, Inc.",domidocs.com,Founder and CEO,Stuart,Florida,92,A,hiring
+Ankita,Gupta,ankita@akto.io,Akto.io,akto.io,Co-Founder and CEO,San Francisco,California,92,A,hiring
+Patrick,Gdc,patrick@playfull.com,Playfull,playfull.com,Co-Founder & CEO,Culver City,California,92,A,hiring
+Shayne,Skaff,shayneskaff@blooma.ai,Blooma CRE,blooma.ai,Co-Founder/CEO,San Diego,California,92,A,hiring
+Brynn,Gibbs,brynn@consumerfusion.com,Consumer Fusion,consumerfusion.com,Founder CEO,San Diego,California,92,A,hiring
+Ariel,Dangelo,ariel@gohelo.com,Helo,gohelo.com,Founder and CEO,Westwood,Massachusetts,92,A,hiring
+Yidi,Campbell,yidi@myindyx.com,Indyx,myindyx.com,Founder & CEO,San Francisco,California,92,A,hiring
+Sanjay,Goel,sanjay@nachonacho.com,NachoNacho,nachonacho.com,CEO/Founder,San Francisco,California,92,A,hiring
+Justin,Ramers,justin@teamvibe.com,Teamvibe,teamvibe.com,CEO and Co-founder,San Diego,California,92,A,hiring
+Aline,Lerner,aline@interviewing.io,interviewing.io,interviewing.io,Founder/CEO,San Francisco,California,92,A,hiring
+Benjamin,Pleat,ben@doorbell.me,Cobu,livecobu.com,CEO & Co-Founder,Boston,Massachusetts,92,A,hiring
+Daniel,Li,dan@plusdocs.com,Plus AI,plusai.com,"Cofounder, CEO",Seattle,Washington,92,A,hiring
+Julie,Klappas,julie@divorceingoodcompany.com,Forwardly,getforwardly.com,Chief Marketing Officer + Co-Founder,Atlanta,Georgia,92,A,hiring
+Jagath,Narayan,jagath@ordoro.com,Ordoro,ordoro.com,"CEO, Co-Founder",Austin,Texas,92,A,hiring
+Lionel,Benizri,lionel@yood.co,Yood,yood.co,Founder & CEO,Chicago,Illinois,92,A,hiring
+Ed,Cravo,ed@keepers.team,Keepers,keepers.team,Co-Founder & CEO,New York,New York,92,A,hiring
+Dariya,Khojasteh,d@layer3.xyz,Layer3,layer3.xyz,Co-Founder & CEO,Washington,District of Columbia,92,A,hiring
+Joshua,Beron,josh@itus.ai,Itus AI,itus.ai,Co-Founder & CEO,Charlotte,North Carolina,92,A,hiring
+Corey,Johnson,corey@domidocs.com,"DomiDocs, Inc.",domidocs.com,Vice President Marketing,Stuart,Florida,92,A,hiring
+Saikiran,Chandha,saikiran@scispace.com,SciSpace,scispace.com,"Founder, CEO",Bengaluru,Karnataka,92,A,hiring
+Mary,Ellifritz,maryanne.ellifritz@accely.us,Accely US,accely.us,Vice President of Marketing,Plano,Texas,92,A,hiring
+Michael,Lindsey,mlindsey@ibank.com,iBank,ibank.com,Chief Operating Officer / Co-Founder,Costa Mesa,California,91,A,hiring
+Connor,Adams,connor@homecarepro.io,Homecare Pro,homecarepro.io,Founder / CEO,Seattle,Washington,90,A,events
+Danny,Minutillo,danny@ridenav.co,NAV Robotics,ridenav.co,Founder/CEO,Newport Beach,California,90,A,events
+Sergie,Poe,sergie@orch.so,Orchestra,orch.so,Co-Founder & CEO,San Francisco,California,90,A,events
+Samarth,Gupta,samarth.gupta@lexiq.io,LexIQ (Techstars '24),lexiq.io,Co-Founder & CEO,Bonita Springs,Florida,90,A,events
+Francesco,Signorato,f.signorato@nebuly.ai,Nebuly,nebuly.com,CEO & Co-Founder,New York,New York,90,A,fundraising
+Matthew,Regan,matt.regan@quindar.space,Quindar,quindar.space,Co-founder & Head of Operations,Arvada,Colorado,90,A,events
+Jonathan,Brody,jon@ladder.io,Ladder.io,ladder.io,CEO // Co-Founder,New York,New York,90,A,fundraising
+Rejah,Rehim,rejah@beaglesecurity.com,Beagle Security,beaglesecurity.com,CEO & Founder,San Francisco,California,90,A,events
+Gal,Rapoport,galrapo@kahoona.io,Kahoona,kahoona.io,Co-Founder & CEO,New York,New York,90,A,events
+David,Loney,david.loney@emrld.health,EMRLD,emrld.health,CEO and Cofounder,Hanover,New Hampshire,90,A,events
+Bryan,Mahoney,bryan@chord.co,Chord,chordcommerce.com,Co-Founder and CEO,New York,New York,90,A,hiring
+Taisa,Mukha,taisa@plain-service.com,Plain Service | Techstars '24,plain-service.com,"Co-Founder, CEO",San Francisco,Delaware,90,A,events
+Errette,Dunn,errette@reverscore.com,"Rever, Inc",reverscore.com,Co-Founder and CEO,San Francisco,California,90,A,fundraising
+Charles,Monnett,charles@kindredk12.com,Kindred K-12,kindredk12.com,"Founder, CEO",Raleigh,North Carolina,90,A,events
+Gordon,Leipzig,gleipzig@leapthru.com,LeapThru,leapthru.com,"Founder, Chief Executive Officer",Deerfield,Illinois,88,A,hiring
+Ben,Silver,ben@myhalo.ai,Halo,myhalo.ai,Co-Founder & CEO,Houston,Texas,88,A,hiring
+Logan,Havern,logan@datalogz.io,Datalogz,datalogz.io,CEO & Founder,New York,New York,88,A,hiring
+Sidharth,Kakkar,sidharth@subscript.com,Subscript,subscript.com,Co-Founder/CEO,San Francisco,California,88,A,hiring
+Sara,Menke,sara@ajna.com,Ajna,ajna.com,Founder & CEO,Lafayette,California,88,A,hiring
+Taoufik,Jamali,taoufik@journify.io,Journify,journify.io,Co-Founder & CEO,San Francisco,California,88,A,hiring
+Ben,Ehrich,ben@panorama.ai,Panorama AI,panorama.ai,Interim CEO & Co-Founder,Santa Monica,California,88,A,hiring
+Hala,Jalwan,hala@rivio.ai,Rivio,rivio.ai,Co-Founder & CEO,San Francisco,California,88,A,hiring
+Justice,Baird,jbaird@trydownstream.com,Downstream,trydownstream.com,Co-Founder & COO,Dallas,Texas,88,A,hiring
+Pablo,Tejada,pablo@datalogz.io,Datalogz,datalogz.io,Co-Founder & COO,New York,New York,88,A,hiring
+Manas,Kar,manas@curiflow.com,Curiflow,curiflow.com,Founder & CEO,Dover,Delaware,88,A,hiring
+Briana,Neidig,briana@wiiwoo.org,Virtual Research Lab | Join our V-day Research Sprint 💌 | Powered by WiiWoo,virtualresearchlab.com,Founder & CEO,Phoenix,Arizona,88,A,events
+Madhuri,Yechuri,madhuri@elotl.co,Elotl,elotl.co,"Founder, CEO",San Francisco,California,88,A,events
+Phil,Sharp,phil@subscript.com,Subscript,subscript.com,Interim CEO and CMO,San Francisco,California,88,A,hiring
+Irina,Nazarova,inazarova@evilmartians.com,AnyCable (by Evil Martians),anycable.io,Co-founder and CEO,San Francisco,California,88,A,events
+Nick,Larovere,nick@pryzm.io,Pryzm,pryzm.io,"Co-Founder, CEO",Boston,Massachusetts,88,A,hiring
+Joseph,Besdin,jbesdin@gethapn.com,Hapn,gethapn.com,Co-Founder & CEO,Tampa,Florida,88,A,hiring
+Shahram,Anver,shahram@cleric.ai,Cleric,cleric.ai,"Co Founder, CEO",San Francisco,California,88,A,hiring
+Phi,Bui,philong@swayzeapp.com,Swayze,swayzeapp.com,CEO & Co-Founder,New York,New York,88,A,hiring
+Roberto,Guerrieri,roberto@bluetail.aero,Bluetail,bluetail.aero,CEO and Co-Founder,Scottsdale,Arizona,88,A,hiring
+Enda,Cahill,enda@sequencehq.com,Sequence,sequencehq.com,Co-Founder / COO,New York,New York,88,A,hiring
+John,Kim,john@athean.com,Athean,athean.com,Co-Founder & CEO,San Francisco,California,88,A,hiring
+Kathleen,Gibson,kathleen.gibson@aplnexted.com,APL nextED,aplnexted.com,CEO and Founder,Valparaiso,Indiana,88,A,events
+Sean,Miller,sean@pulsemarketing.co,Pulse,pulsemarketing.co,"Co-Founder, CEO",Greenwood,Indiana,88,A,events
+Darin,Lynch,darin.lynch@irishtitan.com,Irish Titan,irishtitan.com,Founder and CEO,Minneapolis,Minnesota,88,A,events
+Larry,Cochran,lc@claimatic.com,Claimatic,claimatic.com,Founder & CEO,San Antonio,Texas,88,A,hiring
+Ana-Maria,Constantin,ana@gocascade.ai,Cascade AI,gocascade.ai,CEO & Co-Founder,Bellevue,Washington,88,A,hiring
+Justin,Jaquette,justin@howtoo.com,HowToo,howtoo.com,Co-Founder & CEO,Seattle,Washington,88,A,hiring
+Steve,Gilman,steve@onerange.co,OneRange,onerange.co,Co-Founder & CEO,New York,New York,88,A,hiring
+Nicolas,Scopesi,ns@usehorizon.ai,Horizon AI,usehorizon.ai,Co-Founder & CEO,San Francisco,California,88,A,hiring
+Emily,Tsitrian,emily@theyeeld.com,Yeeld,theyeeld.com,CEO/Cofounder,Chicago,Illinois,88,A,hiring
+Colin,Lowry,colinjlowry@slabscan.com,SlabScan,slabscan.net,Founder & CEO,Troy,New York,88,A,hiring
+Nagib,Mimassi,ngm@rockspoon.com,RockSpoon,rockspoon.com,Founder & CEO,Palo Alto,California,88,A,hiring
+Sophronia,McKenzie,sophronia@visueats.com,visuEats,visueats.com,Founder & CEO,Deerfield Beach,Florida,88,A,hiring
+Jeffrey,Reed,jeff.reed@chintai.io,Chintai,chintai.io,Co-Founder / COO,Singapore,Singapore,88,A,hiring
+David,Packham,david.packham@chintai.io,Chintai,chintai.io,"Founder, CEO",Singapore,Singapore,88,A,hiring
+Matthew,Vega-Sanz,matthew@meetgail.com,Gail,meetgail.com,"Co-Founder, CEO",Miami,Florida,88,A,hiring
+Drew,Bartkiewicz,drew@leaderlyapp.com,Leaderly AI,leaderlyapp.com,Co-Founder and CEO,New York,New York,88,A,hiring
+Chad,Stanford,cstanford@4avail.com,Avail,4avail.com,Co-Founder and CEO,Clive,Iowa,87,A,hiring
+Thomas,Charlton,charlton@goliathtechnologies.com,Goliath Technologies,goliathtechnologies.com,Founder and CEO,Berwyn,Pennsylvania,87,A,hiring
+Jacob,Waern,jacob@edume.com,eduMe,edume.com,Founder & CEO eduMe,London,England,87,A,hiring
+Rebecca,Clyde,rclyde@botco.ai,Botco.ai,botco.ai,CEO and Co-Founder,Scottsdale,Arizona,87,A,hiring
+Michael,Corr,michael@durolabs.co,Duro,durolabs.co,Founder and CEO,Los Angeles,California,87,A,hiring
+Evgeny,Milyutin,em@happynumbers.com,Happy Numbers,happynumbers.com,Co-founder and CEO,San Francisco,California,87,A,hiring
+Joel,Northrup,joel@deeplawn.com,Deep Lawn,deeplawn.com,Founder and CEO,Austin,Texas,87,A,hiring
+Jeanette,Abrahamsen,jeanette.abrahamsen@sparxiq.com,SPARXiQ,sparxiq.com,Vice President Marketing,Cleveland,Ohio,87,A,hiring
+Jeevan,Mandadapu,jeevan@froogal.ai,Froogal.ai,froogal.ai,Founder and CEO,Plano,Texas,87,A,hiring
+Beth,White,beth.white@mebebot.com,MeBeBot®,mebebot.com,Founder and CEO,Austin,Texas,87,A,hiring
+Quincy,Carroll,quincy@getonda.ai,Onda Sports Inc.,getonda.ai,Co-Founder,Santa Cruz,California,87,A,fundraising
+Obi,Omile,obi@thecut.co,theCut,thecut.co,CEO & Co-Founder,Vienna,Virginia,87,A,hiring
+Evan,Walden,evan.walden@getro.com,Getro 🤝,getro.com,CEO | Cofounder,Boulder,Colorado,87,A,hiring
+Manu,Bansal,manub@lightup.ai,Lightup Data,lightup.ai,Co-Founder/CEO,Mountain View,California,87,A,hiring
+Dean,Palmiter,dean@asseta.ai,Asseta AI,asseta.ai,CEO and Founder,New York,New York,87,A,fundraising
+John,Stone,jcstone@revenuearchitects.com,Revenue Architects,revenuearchitects.com,Founder and CEO,Boston,Massachusetts,87,A,hiring
+Joe,Gleinser,joe@trustgrid.io,Trustgrid,trustgrid.io,"Co-Founder, Chief Executive Officer",Austin,Texas,87,A,hiring
+David,Greschler,davidg@nomad-go.com,"NomadGo, Inc.",nomad-go.com,CEO & Co-Founder,Bellevue,Washington,87,A,hiring
+Jeffrey,Morin,jeff@liteboxer.com,Litesport,litesport.com,Founder & CEO,Boston,Massachusetts,87,A,hiring
+Elay,Cohen,elay@saleshood.com,SalesHood,saleshood.com,CEO & Co-Founder,San Francisco,California,87,A,hiring
+Matthew,Bjonerud,mbjonerud@cerebrocapital.com,Cerebro Capital,cerebrocapital.com,Founder & CEO,Baltimore,Maryland,87,A,hiring
+Ricci,Wolman,ricci@writtenwordmedia.com,Written Word Media,writtenwordmedia.com,Founder & CEO,Durham,North Carolina,87,A,hiring
+Will,Cannon,william@uplead.com,UpLead,uplead.com,Founder & CEO,Covina,California,87,A,hiring
+Ross,Gray,rgray@cloudcampaign.com,Cloud Campaign,cloudcampaign.com,Co-Founder & COO,Boulder,Colorado,87,A,hiring
+Michele,Hsu,mhsu@cerebrocapital.com,Cerebro Capital,cerebrocapital.com,Vice President of Marketing,Baltimore,Maryland,87,A,hiring
+Sash,Dias,sash@incentivio.com,Incentivio,incentivio.com,Co Founder & Chief Operating Officer,Boston,Massachusetts,87,A,hiring
+Tanner,Applegate,tanner@unify.dental,Unify,unify.dental,Founder and CEO,Denver,Colorado,87,A,hiring
+Jamee,Herbert,jamee@getbridgecare.com,BridgeCare,getbridgecare.com,Founder & CEO,Santa Cruz,California,87,A,rebranding
+Ryan,Born,rborn@cloudcampaign.com,Cloud Campaign,cloudcampaign.com,Co-Founder & CEO,Boulder,Colorado,87,A,hiring
+Rajat,Bhakhri,rajat@incentivio.com,Incentivio,incentivio.com,CEO and Co-Founder,Boston,Massachusetts,87,A,hiring
+Samantha,Lee,sam.lee@meilitechnologies.com,Artemis,artemisops.com,CEO and Co-Founder,New York,New York,87,A,fundraising
+Melissa,Hanna,melissa@mahmee.com,Mahmee,mahmee.com,Cofounder and CEO,Los Angeles,California,87,A,hiring
+Benjamin,Davis,benjamin@trynow.com,TryNow.com,trynow.com,Founder + CEO,San Francisco,California,87,A,hiring
+Sunny,Walia,sunny@mahmee.com,Mahmee,mahmee.com,Founder & CEO,Los Angeles,California,87,A,hiring
+Jenae,Cahanes,jenae.cahanes@4sight.com,4SiGHT Supply Chain Group,4sight.com,"Vice President, Marketing",Wayne,New Jersey,86,A,hiring
+David,Dokes,david@polaranalytics.co,Polar Analytics 🐻❄️,polaranalytics.com,Co-founder & CEO,Paris,Ile-de-France,86,A,hiring
+Mike,Canzoneri,mike@multiplied.com,Multiplied Solutions,multiplied.com,Co-Founder/CEO,Austin,Texas,86,A,hiring
+Terry,Banike,tbanike@realogicinc.com,"Realogic Analytics, LLC",realogicinc.com,Vice President of Marketing,Chicago,Illinois,86,A,hiring
+Lee,Letourneau,lee@bryzos.com,Bryzos,bryzos.com,Co-Founder and COO,St. Louis,Missouri,86,A,hiring
+John,Herlihy,john@mynupath.com,NuPath,mynupath.com,Co-Founder & CEO,Sunnyvale,California,86,A,hiring
+Alice,Cheng,alice@culinaryagents.com,Culinary Agents,culinaryagents.com,Founder & CEO,New York,New York,86,A,hiring
+Jacqueline,Maduneme,jmaduneme@compliancecore.com,Compliance Core,compliancecore.com,CEO and Founder,Atlanta,Georgia,86,A,hiring
+Quy,Nguyen,quyn@allyance.net,Allyance Communications,allyance.net,Founder & CEO,Irvine,California,86,A,hiring
+Keao,Caindec,kcaindec@clarra.com,Clarra,clarra.com,CEO & Co-Founder,Emeryville,California,86,A,hiring
+Angelique,Mercurio,am@enerknol.com,EnerKnol,enerknol.com,Founder & CEO,New York,New York,86,A,hiring
+Rohit,Rao,rohit@segmind.com,Segmind,segmind.com,Founder & CEO,Santa Clara,California,86,A,hiring
+Daniel,Kahn,daniel.kahn@sparrowfi.com,Sparrow,sparrowfi.business,COO and Co-founder,New York,New York,86,A,hiring
+Kevin,Loos,kevin@crowdcomfort.com,CrowdComfort,crowdcomfort.com,Co-Founder and COO,Boston,Massachusetts,86,A,hiring
+Jan,Heybroek,jan.heybroek@konsuld.com,Konsuld®,konsuld.com,CEO and Co-Founder,Alpharetta,Georgia,86,A,hiring
+David,Hidalgo-Gato,david@cleo-ai.co,Cleo Health,cleohealth.io,Co-Founder & CEO,London,England,86,A,hiring
+Harrison,Hochman,harrison.hochman@sparrowfi.com,Sparrow,sparrowfi.business,Co-founder & CEO,New York,New York,86,A,hiring
+Arjun,Sundararajan,arjun@zync.ai,Zync,zync.ai,Founder/CEO,Bellevue,Washington,86,A,hiring
+Ethan,Geczi,ethan@lootably.com,Lootably,lootably.com,"Co-Founder and CEO, Co-Founder and COO",Austin,Texas,86,A,hiring
+Patrick,Williamson,patrick@usepara.com,Para AI,usepara.com,Co-Founder & CEO,Dallas,Texas,86,A,hiring
+Steve,Rourke,srourke@cfemedia.com,CFE Media and Technology,cfemedia.com,Ceo/coo,Chicago,Illinois,86,A,hiring
+John,Ryan,john.ryan@orm-tech.com,ORM Technologies,orm-tech.com,Founder & CEO,Dallas,Texas,86,A,hiring
+Eric,Johnson,eric@usepara.com,Para AI,usepara.com,Co-Founder & COO,Dallas,Texas,86,A,hiring
+Joshua,Lusk,josh.lusk@causeinspiredmedia.com,Cause Inspired,causeinspiredmedia.com,Founder - CEO,Saint Augustine,Florida,85,A,events
+Omair,Sarwar,omair@gearboxcap.com,GearBox Capital,gearboxcap.com,"Founder, CEO",Austin,Texas,85,A,events
+Egor,Kirin,e.kirin@agro.club,Agro.Club,agro.club,Founder & CEO,New York,New York,85,A,hiring
+Ashley,Crowder,ashley@vntana.com,VNTANA,vntana.com,co-Founder/CEO,Los Angeles,California,85,A,events
+Joe,Devoy,joe@getkinn.com,Kin,kincommerce.com,Co-Founder & CEO,New York,New York,85,A,hiring
+Kashyap,Deorah,kashyap@hypertrack.com,HyperTrack,hypertrack.com,Founder and CEO,Berkeley,California,85,A,hiring
+Ashley,Ching,ashley@inhaven.com,Inhaven,inhaven.com,Founder & CEO,Yonkers,New York,85,A,hiring
+Roma,Walt,roma@vitelle.co,Vitelle,vitelle.co,Founder & CEO,Los Angeles,California,85,A,events
+Gabriella,Zhang,gabriella@genesisfertility.ai,Genesis,genesisfertility.ai,Founder / CEO,Cambridge,Massachusetts,85,A,hiring
+Ethan,Chang,ethan@forgerewards.com,Forge,joinforge.app,"CEO, Co-Founder",San Francisco,California,85,A,hiring
+Jeff,Marshall,jeffm@ovationvr.com,Ovation,ovationvr.com,Founder/CEO,Somerville,New Jersey,85,A,hiring
+Finnlay,Morcombe,finnlay@usefluency.com,Fluency,usefluency.com,CEO & Co-Founder,San Francisco,California,85,A,hiring
+Eyal,Cohen,eyal@joinchloe.com,Chloe,joinchloe.com,Co-Founder & CEO,Los Angeles,California,85,A,hiring
+Abhilash,Chowdhary,abhilash@crustdata.co,Crustdata (YC F24),crustdata.com,Co-Founder & CEO,San Francisco,California,85,A,hiring
+Mariam,Nusrat,mariam.nusrat@gamingfordev.com,Breshna.io (by GRID),breshna.io,Founder & CEO,Vienna,Virginia,85,A,hiring
+Otto,Zastrow,otto@midpage.ai,Midpage,midpage.ai,CEO and Founder,New York,New York,85,A,hiring
+Eric,Eaton,eric.eaton@ibuild.global,"iBUILD Global, Inc",ibuild.global,CEO | CFO | COO,Dover,Delaware,85,A,hiring
+Eric,Xiao,eric@laxis.com,Laxis,laxis.com,Founder & CEO,San Francisco,California,85,A,hiring
+Alexandra,Griffon,alexandra@bluecargo.io,BlueCargo,bluecargo.io,Co-founder & CEO,Los Angeles,California,85,A,hiring
+Diti,Sood,diti@bolo.ai,Bolo AI,bolo.ai,Founder and CEO,Palo Alto,California,85,A,hiring
+Michael,Davidovich,michael@apination.com,API Nation,apination.com,Founder / CEO,San Diego,California,85,A,events
+Dane,Baker,dane.baker@ecocart.io,EcoCart,ecocart.io,CEO & Co-founder,San Francisco,California,85,A,hiring
+Liam,Gerada,liam@krepling.com,Krepling,krepling.com,Co-Founder/CEO,Chattanooga,Tennessee,85,A,hiring
+Brian,Vigeant,brian@culturehq.com,CultureHQ,culturehq.com,CoFounder and CEO,Boston,Massachusetts,85,A,hiring
+Clint,Vernon,clint@messagedesk.com,MessageDesk,messagedesk.com,CEO & Co-Founder,Reno,Nevada,85,A,hiring
+David,Wood,dwood@eventene.com,Eventene,eventene.com,Founder & CEO,Santa Monica,California,85,A,hiring
+Christina,Seong,tina@versable.ai,Versable,versableai.com,"Founder, CEO",Los Angeles,California,85,A,hiring
+Tim,Lloyd,tim@liblynx.com,"LibLynx - Identity, Access & Analytics for Online Resources",liblynx.com,Founder/CEO,Alexandria,Virginia,85,A,events
+Adrian,Bond,adrianbond@myembra.com,Embra Law,myembra.com,Founder & CEO,Little Rock,Arkansas,85,A,hiring
+Karen,Cuppett,k@directanswer.com,Bungee (formerly Direct Answer),teambungee.com,CEO and Founder,Fort Washington,Maryland,85,A,hiring
+Justin,Vandehey,justin@thread.app,Thread,thread.app,Co-Founder and CEO,San Francisco,California,85,A,hiring
+Rob,Jewell,rob@uptick.com,Uptick,uptick.com,Founder & CEO,San Francisco,California,85,A,hiring
+Chris,Bruzzi,chris@hubbl.com,Hubbl Technologies,hubbl.com,Co-Founder & COO,Vancouver,British Columbia,85,A,hiring
+Ben,Conway,ben@vntana.com,VNTANA,vntana.com,Co-Founder/COO,Los Angeles,California,85,A,events
+Tim,Conder,tim@cxology.co,CXology - Strategic Customer Success,cxology.co,Co-Founder and CEO,Indianapolis,Indiana,85,A,events
+Mike,Desai,mike@truentity.com,Truentity Health,truentity.health,"CEO, Co-Founder",Cary,North Carolina,85,A,hiring
+James,Wall,james@phases.ai,Phases (YC S25),phases.ai,Co-Founder & CEO,San Francisco,California,85,A,hiring
+Shane,Emmons,shane@swept.ai,Swept AI,swept.ai,Founder & CEO,Saginaw,Michigan,85,A,hiring
+Ivan,Crewkov,ivan@mybuddy.ai,Buddy.ai,buddy.ai,Co-founder and CEO,Mountain View,California,85,A,hiring
+Dylan,Etkin,detkin@sleuth.io,Sleuth,sleuth.io,Founder & CEO,San Francisco,California,85,A,hiring
+Cameron,Steele,cameron@prophia.com,Prophia,prophia.com,Co-Founder & CEO,San Francisco,California,85,A,hiring
+Andrei,Serban,andrei@console.com,Console,console.com,Founder & CEO,San Francisco,California,85,A,hiring
+Rushabh,Mehta,rmehta@matchbookai.com,Matchbook AI,matchbookai.com,Founder & CEO,Santa Monica,California,85,A,hiring
+Marcos,Passos,marcos@croct.com,Croct,croct.com,Founder & CEO,Denver,Colorado,85,A,hiring
+Josh,Folds,josh@pivotalhealth.ai,Pivotal Health,pivotalhealth.ai,Co-Founder & COO,Atlanta,Georgia,85,A,hiring
+Matt,Baglia,matt@slicktext.com,SlickText,slicktext.com,Founder & CEO,Jamestown,New York,85,A,hiring
+Kyle,Kuczynski,kyle@messagedesk.com,MessageDesk,messagedesk.com,Co-Founder & CMO,Reno,Nevada,85,A,hiring
+Zameer,Rizvi,z@odesso.com,Odesso,odesso.com,CEO & Founder,Phoenix,Arizona,85,A,events
+James,O'Donnell,james@duetinc.com,Duet,duetinc.com,Co-Founder / COO,San Jose,California,85,A,hiring
+Fadi,Zoghzoghy,fadi@bridgeathletic.com,BridgeAthletic,bridgeathletic.com,"CEO, Co-Founder",San Francisco,California,85,A,hiring
+Jimmy,Hall,jimmy@culturehq.com,CultureHQ,culturehq.com,Co-Founder and COO,Boston,Massachusetts,85,A,hiring
+Alexandria,Sickle,alexandria@insource.ai,Insource Ai,insource.ai,Founder & COO,Wichita,Kansas,85,A,events
+Jason,Sickle,jason@insource.ai,Insource Ai,insource.ai,Founder & CEO,Wichita,Kansas,85,A,events
+James,Harris,james@breezy.com,Breezy,breezy.com,CEO & Co-Founder,San Francisco,California,85,A,hiring
+Colum,Donahue,cdonahue@gogenuity.com,Genuity - gogenuity.com,gogenuity.com,Co-Founder & CEO,Glen Ellyn,Illinois,85,A,hiring
+Austin,Miller,amiller@pagertree.com,PagerTree,pagertree.com,Founder / CEO,Phoenix,Arizona,85,A,events
+Sean,Monteiro,sean.monteiro@queensu.ca,Bounce,bouncelife.com,Founder & CEO,Toronto,Ontario,85,A,hiring
+David,Busch,david.busch@nivo1.com,AP Express by Nivo1,apexpress.ai,CEO & Founder,Pittsburgh,Pennsylvania,85,A,hiring
+Steven,Weiner,steven@confitence.ai,Confitence.ai,confitence.ai,Founder & CEO,San Francisco,California,85,A,hiring
+Pranoy,Chaudhuri,pranoy@newresilience.ai,New Resilience,newresilience.ai,Co-founder and CEO,San Francisco,California,85,A,hiring
+Jason,Smith,jason@heysummercamp.com,Summercamp,heysummercamp.com,Principal + Head of People Operations,Seattle,Washington,85,A,hiring
+Sourya,Majumder,sourya@projectx.cloud,ProjectX (YC X26),projectx.cloud,Co-Founder & COO,San Francisco,California,85,A,hiring
+Jing,Zhu,jzhu@dashboardstory.com,Duet,duetinc.com,"Founder, CEO",San Jose,California,85,A,hiring
+Jered,Martin,jered@onepitch.co,OnePitch,onepitch.co,Co-Founder | Chief Operations Officer,San Diego,California,85,A,hiring
+Maksims,Grebenuks,maxim@agently.com,Agently,agently.com,Co-Founder & CEO,Miami,Florida,85,A,hiring
+Mike,Vien,mike@wallit.app,Wallit,wallit.app,"Founder, CEO",Westbrook,Maine,85,A,hiring
+Nancy,Welsh,nancy.welsh@ibuild.global,"iBUILD Global, Inc",ibuild.global,"Co-Founder, CMO /COO",Dover,Delaware,85,A,hiring
+Nick,Deveau,nick@grotto.ai,Grotto AI,grotto.ai,Co-Founder & CEO,New York,New York,85,A,hiring
+Wyatt,Smith,wyatt@upsmith.com,UpSmith,upsmith.com,Founder & CEO,Dallas,Texas,85,A,hiring
+Aaron,Sherman,aaron@sevenfifty.com,SevenFifty,sevenfifty.com,Co-Founder and CEO,New York,New York,85,A,hiring
+Andrea,Li,andrea@tiendada.com,TiendaDA (PV22-1),tiendada.com,Founder & CEO,Miami,Lima Region,85,A,hiring
+Jessica,Zhang,jessica@pier-finance.com,Pier,pier-finance.com,"CEO & Cofounder, Pier",San Francisco,California,85,A,hiring
+Mehdi,Djabri,mehdi@revo.ai,Iteration X,iterationx.com,Founder & CEO,Paris,Ile-de-France,84,A,fundraising
+Jessica,Willis,jessica@pocketnest.com,pocketnest,pocketnest.com,Founder & CEO,Detroit,Michigan,84,A,events
+Samantha,Pantazopoulos,samantha@joinvizer.com,Vizer,joinvizer.com,Co-Founder + CEO,San Diego,California,84,A,events
+Misha,Herscu,misha@cake.ai,Cake,cake.ai,Co-Founder & CEO,New York,New York,84,A,fundraising
+Austin,Talley,austin@everyware.com,Everyware®,everyware.com,Founder & CEO,Austin,Texas,83,A,hiring
+Michelle,Diago,m.diago@goskript.com,"GoSkript Technologies, LLC",goskript.com,Founder | CEO,San Francisco,California,83,A,hiring
+Michael,Moe,mm@gsv.com,Global Silicon Valley,gsv.com,Founder and CEO,Redwood City,California,82,A,events
+Thomas,Kunjappu,thomas@gocleary.com,Cleary,gocleary.com,Founder & CEO,San Francisco,California,82,A,fundraising
+Brian,Parks,bparks@bigfootcap.com,Bigfoot Capital,bigfootcap.com,Co-Founder & CEO,Denver,Colorado,82,A,events
+Ken,Hartman,ken@wellsite.com,Wellsite™,wellsite.com,Founder & CEO,Houston,Texas,82,A,events
+Dillon,Doherty,dillon@alleo.ai,Alleo.ai,alleo.ai,Founder | CEO,Spring,Texas,82,A,events
+Garrett,Kellner,gkellner@joinshowup.io,ShowUp,joinshowup.io,Founder & CEO,West Palm Beach,Florida,82,A,events
+Himanshu,Yadav,himanshu@getairpilot.com,AirPilot,getairpilot.com,Founder / CEO,Boston,Massachusetts,82,A,events
+Jason,Keck,jason@brokerbuddha.com,Broker Buddha,brokerbuddha.com,CEO & Co-Founder,New York,New York,82,A,events
+James,Chang,jchang@gke.com,Global Knowledge Exchange,gke.com,CEO?Founder,Totowa,New Jersey,81,A,hiring
+Daren,Dyke,daren@zofto.com,ZOFTO Solutions,zoftosolutions.com,Vice President Marketing,Cuijk,Noord-Brabant,81,A,hiring
+Steve,Grubbs,steve@victoryxr.com,VictoryXR,victoryxr.com,CEO & Co-founder,Davenport,Iowa,81,A,events
+Alex,Maffeo,alex@boostinsurance.io,Boost,boostinsurance.com,CEO and Founder,New York,New York,81,A,hiring
+Yiorgos,Nikoletakis,yiorgos@100mentors.com,100mentors,100mentors.com,CoFounder & CEO,Athens,Attica,81,A,hiring
+Rachit,Kataria,rachit@usecentralize.com,Centralize,usecentralize.com,Co-Founder & CEO,San Francisco,California,81,A,fundraising
+David,Reske,dreske@nowspeed.com,Nowspeed Marketing,nowspeed.com,Founder and CEO,Boston,Massachusetts,81,A,hiring
+Adrien,Fraise,adrien@modernguild.com,ModernGuild,modernguild.com,CEO & Founder,New York,New York,81,A,hiring
+Francesco,Cristina,francesco.cristina@cheope.ch,Cheope,cheope.io,CEO & Co-Founder,Chiasso,Ticino,81,A,hiring
+Jessica,Gaffney,jessica@wavework.com,Wavework,wavework.com,Founder and CEO,Wayne,New Jersey,81,A,hiring
+Marcos,Meson,marcos@visualblasters.com,FlipaClip,visualblasters.com,Co-Founder & VP of Marketing,Miami,Florida,81,A,hiring
+Corinne,Muller,cmuller@learningbeyondpaper.com,"Learning Beyond Paper, Inc.",learningbeyondpaper.com,COO & Co-Founder,West Palm Beach,Florida,81,A,hiring
+Vinay,Patankar,vinayp@process.st,Process Street,process.st,Co-Founder and CEO,San Francisco,California,80,A,hiring
+Sharon,Levitch,sharon@acslearning.com,"ACS Learning, Inc.",acslearning.com,CEO & Founder,Wayne,Pennsylvania,80,A,hiring
+Augustino,Porta,aporta@kipany.com,Kipany,kipany.com,"Vice President, Marketing & Growth",Fort Lauderdale,Florida,80,A,hiring
+Todd,Irwin,todd.irwin@blueskycommerce.io,BlueSky Commerce,blueskycommerce.io,Founder/CEO,Noblesville,Indiana,80,A,hiring
+Daryl,Hively,daryl@readyprospect.ai,ReadyProspect.AI,readyprospect.ai,Founder & CEO,Saint Petersburg,Florida,80,A,hiring
+Holly,Cardew,holly@carted.com,Carted,carted.com,Founder & CEO,San Francisco,California,80,A,hiring
+Josh,Britton,jbritton@getmoremath.com,Get More Math!,getmoremath.com,Founder & CEO,Sonora,California,80,A,hiring
+Napolitano,,rj@onghost.com,Ghost,onghost.com,Co-Founder & CEO,Los Angeles,California,80,A,hiring
+Younghee,Park,younghee.park@myib.ai,MyIB Inc.,myib.ai,Founder and CEO,Seoul,Massachusetts,80,A,hiring
+Michael,Reale,michael@pinwheel.us,Pinwheel.us,pinwheel.us,Founder & CEO,Chico,California,80,A,hiring
+Rick,Narpaul,rick.narpaul@mach1services.com,Mach1 Services,mach1services.com,Founder and CEO,San Antonio,Texas,80,A,hiring
+David,Monedero,david.cortinas@espartadigital.com,Esparta Digital,espartadigital.com,CMO & Co-Founder,Valencia,Valencian Community,80,A,hiring
+Sergii,Starostin,sergii@tryoutpostmanagement.com,Outpost,outpost-club.com,Co-Founder and CEO,New York,New York,80,A,hiring
+Kelby,Zorgdrager,kelby@trytami.com,TryTami,trytami.com,Founder & CEO,Boulder,Colorado,80,A,hiring
+Andres,Maceira,andres@guaranabank.com,Guaraná Bank,guaranabank.com,Co-founder & CEO,Sao Paulo,State of Sao Paulo,80,A,hiring
+Elina,Cadouri,elina@dock.io,Dock Labs,dock.io,Co-Founder & COO,Zug,Canton of Zug,80,A,hiring
+John,Schwope,jschwope@simplifiedclinical.com,Simplified Clinical,simplifiedclinical.com,CEO & Founder,Portsmouth,New Hampshire,80,A,hiring
+Allen,Chen,allen@fitbod.me,Fitbod,fitbod.me,Co-founder & CEO,San Francisco,California,80,A,hiring
+Kenneth,Carter,ken@ozeki.ai,Ozeki Technologies,ozeki.ai,CEO and Founder,Mill Valley,California,80,A,hiring
+Joseph,Shua-Haim,joseph@jet.build,Jet.Build,jet.build,CO-Founder & CEO,New York,New York,80,A,hiring
+Alex,Stojanovic,alex@qoolo.com,Qoolo,qoolo.com,Co-Founder + CEO,Princeton,New Jersey,80,A,hiring
+James,Kardatzke,james@quiverquant.com,Quiver Quantitative,quiverquant.com,CEO and Co-Founder,Los Angeles,California,80,A,hiring
+Quynh,Phung,quynh.phung@hiwatermelon.com,WATERMELON,hiwatermelon.com,CEO and Co-founder,Los Angeles,California,80,A,hiring
+Elizabeth,Zaborowska,ezaborowska@bhavacom.com,Bhava Communications,bhavacom.com,Founder and CEO,San Francisco,California,80,A,hiring
+Shannon,McGuire,sm@geniuslink.com,Geniuslink,geniuslink.com,COO and Co-Founder,Seattle,Washington,80,A,hiring
+Iliya,Valchanov,iliya@juma.ai,Juma (ex Team-GPT),juma.ai,Co-founder & CEO,San Francisco,California,80,A,fundraising
+Brett,Derricott,brett.derricott@builtapp.com,Built,builtapp.com,Founder and CEO,Salt Lake City,Utah,80,A,hiring
+Kathryn,Wilson,kathryn.wilson@vue-health.com,VUE Health,vuehealth.com,"Founder, CEO",Boston,Massachusetts,80,A,hiring
+John,Harvey,john-harvey@crashbay.com,CrashBay,crashbay.com,CEO & Founder,Toronto,Ontario,80,A,hiring
+Rishi,Singh,rishi@tiingo.com,Tiingo,tiingo.com,Founder & CEO,Boston,Massachusetts,80,A,hiring
+Saira,Ashraf,saira@tradezella.com,TradeZella,tradezella.com,Co Founder + Head of Marketing,New York,New York,80,A,hiring
+Jason,Marsh,jason@flow.gl,Flow Immersive,flowimmersive.com,CEO/Founder,Mountain View,California,80,A,hiring
+Ryan,Christiansen,ryan@ntooitive.com,Ntooitive Digital,ntooitive.com,Co-Founder and CEO,Las Vegas,Nevada,80,A,hiring
+Gregg,Harris,gharris@lendercity.com,LenderCity,lendercity.com,Founder & CEO,Chesterfield,Missouri,80,A,hiring
+Rahul,Chabukswar,rahul@homesome.com,Homesome,homesome.com,Founder & CEO,San Mateo,California,80,A,hiring
+Dana,Dunford,dana@hemlane.com,Hemlane,hemlane.com,"CEO, Co-founder",San Francisco,California,80,A,hiring
+Matt,Leitz,matt@botbuilders.com,BotBuilders,botbuilders.com,Founder & CEO,Phoenix,Arizona,80,A,hiring
+Noah,Seis,noah@mycallcloud.com,MyCallCloud,mycallcloud.com,CEO and Founder,Henderson,Colorado,80,A,hiring
+Mang-Git,Ng,manggit@useanvil.com,Anvil,useanvil.com,"Founder, CEO",San Francisco,California,80,A,hiring
+Graham,Beck,graham@dropdesk.io,DropDesk Spaces,drop-desk.com,Co-Founder & CEO,Long Beach,New York,80,A,hiring
+Jeff,Boyes,jboyes@evolutionnutrition.com,Evolution Nutrition,evolutionnutrition.com,CEO & Founder,Solana Beach,California,80,A,hiring
+Ariel,Boorstin,ariel@yourcooper.com,Cooper Parenting,yourcooper.com,Co-Founder & CMO,New York,New York,80,A,hiring
+Cedric,Hurst,cedric@spantree.net,"Spantree LLC, a Trifork Company",spantree.net,Founder & CEO,Chicago,Illinois,80,A,hiring
+Heather,Hall,heather@sapphirecfosolutions.com,Sapphire CFO Solutions,sapphirecfosolutions.com,Founder & CEO,San Francisco,California,80,A,hiring
+Marc,Molinsky,marcmolinsky@designeradvantage.com,DesignerAdvantage,designeradvantage.com,Founder & CEO,Newton,Massachusetts,80,A,hiring
+Seth,Lasser,seth@lanterngrowth.com,Lantern,lanterngrowth.com,Founder & CEO,San Francisco,California,80,A,hiring
+Zach,Barney,zach@getmobly.com,Mobly,getmobly.com,Co-Founder | CEO,Lehi,Utah,80,A,hiring
+Brett,Ungashick,brett@outsail.co,OutSail,outsail.co,Founder & CEO,Denver,Colorado,80,A,hiring
+Sanjay,Maurya,sanjay@codewik.com,Codewik Infotech Pvt Ltd,codewik.com,Founder & CEO,Ahmedabad,Gujarat,80,A,hiring
+Chloe,Sladden,chloe@honeycomb-labs.com,Honeycomb,honeycomb-labs.com,"CEO, Co-founder",San Francisco,California,80,A,hiring
+Scott,Burgess,scott@continu.com,Continu,continu.com,Founder & CEO,San Francisco,California,80,A,hiring
+Novin,,jp.novin@plexuss.com,PLEXUSS,plexuss.com,Founder and CEO,Walnut Creek,California,80,A,hiring
+Viktor,Smidl,v.smidl@nextap.eu,nextap solutions,nextap.eu,"Founder, CEO",Pardubice,Pardubice Region,80,A,hiring
+Filip,Boksa,filip@bookingkoala.com,"BookingKoala, LLC",bookingkoala.com,CEO and Co-Founder,Chicago,Illinois,80,A,hiring
+Hiran,Perera,hiran@walkingspree.com,Walkingspree,walkingspree.com,CEO & Co-founder,San Antonio,Texas,80,A,hiring
+Michael,Miramontes,mjm@quickclass.com,"QuickClass, Inc.",quickclass.com,CEO and Founder,Provo,Utah,80,A,hiring
+Ryan,Leslie,r@superphone.io,SuperPhone®,superphone.io,Founder and CEO,New York,New York,80,A,hiring
+Nick,Chopourian,nick@apexacquisition.com,Apex Acquisition,apexacquisition.com,Founder / CEO,Austin,Texas,80,A,hiring
+Gurkan,Karagoz,gurkan@capturefast.com,CaptureFast,capturefast.com,Founder & CEO,Madison,New Jersey,80,A,hiring
+Jakub,Gorajek,jakub@raw.film,RawFilm,raw.film,CEO & Co-Founder,Laguna Beach,California,80,A,hiring
+Gary,Labreck,gary@wasteplace.com,WastePlace,wasteplace.com,Co-Founder & CEO,Austin,Texas,80,A,hiring
+Katie,Patterson,katie@itsahappymedium.com,Happy Medium,itsahappymedium.com,Founder | CEO,Des Moines,Iowa,80,A,hiring
+Thomas,Richard,tom@webcanopystudio.com,Web Canopy Studio,webcanopystudio.com,"CEO, Co-Founder",Traverse City,Michigan,80,A,hiring
+Jordan,Husney,jordan@parabol.co,Parabol,parabol.co,Founder & CEO,Alhambra,California,80,A,hiring
+Alvin,Hung,alvin@brightful.me,Brightful,brightful.me,Founder & CEO,Hong Kong,,80,A,hiring
+Ankarino,Lara,ankarino@thismoment.com,Thismoment,thismoment.com,Founder and CEO,San Francisco,California,80,A,hiring
+Paige,Creo,paige@mavenmachines.com,Maven,mavenmachines.com,Vice President of Marketing,Pittsburgh,Pennsylvania,80,A,hiring
+Justin,Brown,justin@ideometry.com,Ideometry,ideometry.com,CEO & Co-Founder,Boston,Massachusetts,80,A,hiring
+Lucas,Hamon,lhamon@orangepegs.com,Orange Pegs,orangepegs.com,Founder & CEO,Irvine,California,80,A,hiring
+Amanda,McGonigle,amanda@kiwiforgmail.com,"Zive, Inc.",kiwiforgmail.com,Vice President Marketing & Growth,New York,New York,80,A,hiring
+Robin,Long,robinlong@lindywell.com,Lindywell,lindywell.com,Founder/CEO,Santa Barbara,California,80,A,hiring
+Martin,Schneider,martin@remnote.com,RemNote,remnote.com,Co-Founder & CEO,Wilmington,Delaware,80,A,hiring
+Danny,Wajcman,danny@luckyorange.com,Lucky Orange,luckyorange.com,Founder & CEO,Overland Park,Kansas,80,A,hiring
+Jeff,Meyer,jeff@gocollect.com,GoCollect,gocollect.com,Founder & CEO,Charlotte,North Carolina,80,A,hiring
+Joseph,Leiva,joe@kaster.app,Kaster,kaster.app,Co-Founder & CEO,Burtonsville,Maryland,80,A,fundraising
+Roman,Tsarovsky,roman@allynow.com,Ally Inc.,allynow.com,CEO and Founder,Pasadena,California,80,A,hiring
+Naresh,Hingorani,naresh.hingorani@thehroad.com,HRoad,thehroad.com,Founder & CEO,Scottsdale,Arizona,80,A,hiring
+Joshua,Breland,josh@anedot.com,Anedot,anedot.com,Vice President Marketing,Minnetonka,Minnesota,80,A,hiring
+Stacie,Proctor,stacie@gathrd.co,Gathrd,gathrd.co,"Founder, CEO",Lehi,Utah,80,A,hiring
+Andy,Gale,andy@getwatchtower.ai,Watchtower AI,getwatchtower.ai,Co-Founder & CEO,,,80,A,hiring
+Juan,Gutierrez,juan@jelp.io,Jelp Delivery,jelp.delivery,CEO & Founder,Tijuana,Baja California,80,A,hiring
+Carly,Hallman,carly.hallman@braviant.com,Braviant Holdings,braviantholdings.com,Vice President Marketing,Chicago,Illinois,80,A,hiring
+Eric,Nelson,eric@askstylo.com,Stylo,askstylo.com,Co-founder | CEO,Chelsea,Michigan,80,A,hiring
+David,Hecht,david@appfrontier.com,Chargent (by AppFrontier),appfrontier.com,Co-Founder & CEO,San Francisco,California,80,A,hiring
+Eduardo,Gonzalez,egonzalez@xpress.ai,"Xpress AI, Inc.",xpress.ai,Co-Founder ＆ CEO,Palo Alto,California,80,A,hiring
+David,Horowitz,david@retrium.com,Retrium,retrium.com,CEO and Co-Founder,Silver Springs,Florida,80,A,hiring
+Charlie,Geraci,charlie@prismia.so,Prismia,prismia.com,"CEO, CoFounder",Pasadena,California,80,A,hiring
+Philip,Smart,philip@parley.so,Parley,parley.so,"CEO, Co-Founder",San Francisco,California,80,A,hiring
+Zachary,Duncan,zachary@revex.agency,ReveX,revex.agency,Founder & CEO,Atlanta,Georgia,80,A,hiring
+Kaleb,Judkins,kaleb@dialforward.com,DialForward,dialforward.com,CEO/ Founder,Salt Lake City,Utah,80,A,hiring
+John,Diloreto,john@knock2-ai.net,Knock2.ai,knock2.ai,Founder & CEO,New York,New York,80,A,hiring
+Mike,Valera,mike@madebytribe.com,Tribe Interactive | WooCommerce Expert Agency,madebytribe.com,Founder & CEO,Encinitas,California,80,A,hiring
+Keith,Harrington,keith@novelcapital.com,Novel Capital,novelcapital.com,Co-Founder & COO,Overland Park,Kansas,80,A,hiring
+Paul,Vitali,paul@edgems.com,EdGems Math,edgems.com,Co-founder & COO,Boston,New Jersey,79,A,events
+Mishael,Porembski,mishael@widowstrong.com,"180 Your Life, LLC",widowstrong.com,Founder / CEO,Marietta,Georgia,79,A,events
+Kristan,Cole,kristan@kristancole.com,Kristan Cole Network,joinkcn.com,Founder & CEO KCN,Scottsdale,Arizona,79,A,events
+Rian,Bosak,rian@superbam.com,SuperBam,superbam.com,"Founder, CEO",Los Angeles,California,79,A,hiring
+Ravi,Chaitanya,ravi@sentiovr.com,SENTIO VR,sentiovr.com,Co-founder & CEO,Middletown,Delaware,79,A,events
+Jeanne,Kolpek,jeanne.kolpek@amaphoenix.org,AMA Phoenix Chapter,amaphoenix.org,"Vice President, Marketing & Communications",Phoenix,Arizona,79,A,events
+Alison,Daley,alison@recruitinginnovation.com,Recruiting Innovation,recruitinginnovation.com,Founder & CEO,Denver,Colorado,79,A,events
+Patrick,Kim,patrick@sonarverse.com,SonarX,sonarx.com,Founder & CEO,Irvine,California,79,A,hiring
+Dan,Englander,dan@salesschema.com,Sales Schema,salesschema.com,CEO and Founder,New York,New York,79,A,events
+Evren,Ozkaya,evren.ozkaya@scw.ai,SCW.AI by Supply Chain Wizard,scw.ai,Founder and CEO,Marietta,Georgia,79,A,events
+Lauren,Reid,lauren.reid@roofmarketplace.com,RoofMarketplace,roofmarketplace.com,"Vice President, Marketing & Communications",Madison,Wisconsin,79,A,hiring
+Angie,Read,angie@strokesisters.com,"Stroke Sisters, Inc.",strokesisters.com,CEO and Founder,Kansas City,Missouri,79,A,events
+Richard,Aday,richard.aday@thinkreservations.com,ThinkReservations,thinkreservations.com,CEO & Founder,Seattle,Washington,79,A,events
+Enam,Noor,enoor@insightinhealth.com,Insightin Health,insightinhealth.com,Founder and CEO,Baltimore,Maryland,79,A,hiring
+Deborah,Noller,dnoller@switchautomation.com,Switch Automation,switchautomation.com,"CEO, Co-Founder",Denver,Colorado,79,A,hiring
+Barry,Lake,barrylake@devanasolutions.com,Devana Solutions,devanasolutions.com,CEO & Co-Founder,Chapel Hill,North Carolina,79,A,events
+Alexander,Jost,alex@retentionx.com,RetentionX,retentionx.com,Founder & CEO,Miami,Florida,79,A,hiring
+Will,Ruben,will@workmatelabs.com,Workmate,workmate.com,Founder and CEO,New York,New York,79,A,hiring
+Shaun,Springer,shaun@headroom.com,Headroom,headroom.com,Co-Founder & CEO,New York,New York,79,A,hiring
+Azizul,Haque,azizul@wppool.dev,WPPOOL,wppool.dev,Founder & CEO,Sheridan,Wyoming,79,A,events
+Debra,Kadner,debra@eskalera.com,Eskalera Inc.,eskalera.com,CEO & Co-Founder,San Francisco,California,79,A,hiring
+Julie,Karbo,julie@karbocom.com,Karbo Communications,karbocom.com,Founder & CEO,San Francisco,California,79,A,events
+Pine,Sohn,pinesohn@cardmon.com,CardMonster,cardmon.com,CEO/Founder,Seoul,,79,A,hiring
+Lori,Highby,lori.highby@keystoneclick.com,Keystone Click,keystoneclick.com,CEO & Founder,Milwaukee,Wisconsin,79,A,events
+Jessica,Rongen,jessica.rongen@sincusa.com,SINC USA,sincusa.com,Chief Operating Officer/Co-Founder,Austin,Texas,78,A,fundraising
+Julio,Viera,julio@kluster.ai,kluster.ai,kluster.ai,CEO and Founder,Fort Lauderdale,England,78,A,events
+Shireen,Abdullah,shireen@yumlish.com,Yumlish,yumlish.com,CEO/Founder,Dallas,Texas,78,A,fundraising
+Michael,Mounajjed,michael@durate.com,Durate (YC F24),durate.com,"Founder, CEO, Developer",San Francisco,California,78,A,fundraising
+Sangam,Sangameswara,sangam@rightsense.ai,RIGHTSENSE INC,rightsense.ai,Co-Founder & CEO,Cupertino,California,78,A,fundraising
+Sikder,Zakir,zakir.sikder@histofi.com,"Histofi, Inc.",histofi.com,Founder & CEO,Torrance,California,78,A,fundraising
+Neelesh,Soni,neelesh@tectonic.so,Tectonic,tectonic.so,Co-Founder & CEO,Oakland,California,78,A,fundraising
+Courtne,Marland,courtne@lyra.so,Lyra,lyra.so,Co-Founder / CEO,San Francisco,California,78,A,fundraising
+Tony,Chen,tony@manolinaqua.com,Manolin,manolinaqua.com,Co-Founder and CEO,Bergen,Hordaland,78,A,events
+Todd,Carroll,todd@prospxsports.com,ProspX,prospx.com,CEO & Founder,Austin,Texas,78,A,fundraising
+Jatish,Patel,jatish@flowlabs.ai,Flow Labs,flowlabs.ai,CEO & Founder,Oakland,California,78,A,fundraising
+Mathew,Magno,mathewmagno@japa.one,"Japa, Inc.",parkjapa.com,CEO and Co-Founder,West Sacramento,California,78,A,fundraising
+Marisel,Polanco,marisel@gyftgram.com,GyftGram (Techstars ’24),gyftgram.io,Co-Founder & COO,New York,New York,78,A,fundraising
+Aroon,Krishna,akrishna@sorcero.com,Axiom Health,axiomhealth.com,CEO+ Co-Founder,San Diego,California,78,A,fundraising
+Ben,Liu,ben@durate.com,Durate (YC F24),durate.com,Co-Founder & COO,San Francisco,California,78,A,fundraising
+Christian,Ruether,c.ruether@mandano.com,Mandano,mandano.com,CEO & Co-Founder,Dachau,Bavaria,77,A,hiring
+Sarah,Reed,sreed@brainsell.com,"BrainSell, a division of Atlantic",brainsell.com,Vice President of Marketing,Danvers,Massachusetts,77,A,hiring
+Brian,Atton,brian@gosimian.com,Simian,gosimian.com,Co-Founder-COO,Colorado Springs,Colorado,77,A,hiring
+Abby,Chitester,abby@libroreserve.com,Libro,librorez.com,Vice President Marketing,Montreal,Quebec,77,A,hiring
+Cord,Sachs,cord@wildsparq.com,Wildsparq,wildsparq.com,"Founder, CEO",Birmingham,Alabama,77,A,hiring
+Jan,Jamrich,jan.jamrich@entromy.com,Entromy,entromy.com,CEO & Founder,Boston,Massachusetts,76,A,events
+Jennifer,Villamil,jvillamil@reformstudios.co,REFORM STUDIOS,reformstudiospilates.com,"Founder, CEO",Chicago,Illinois,76,A,events
+Lance,Burnett,lburnett@starkrfid.com,STARK RFID,starkrfid.com,Founder and CEO,Greenville,South Carolina,76,A,events
+Andrew,Schuster,andrew@furtherinsights.com,Further Insights,furtherinsights.com,Co-Founder & CEO,Baltimore,Maryland,76,A,events
+Jeff,Freund,jeff@akoonu.com,Akoonu,akoonu.com,CEO and Founder,Livingston,Montana,76,A,fundraising
+Mark,Trudeau,mtrudeau@openvault.com,OpenVault LLC,openvault.com,Founder & CEO,Jersey City,New Jersey,76,A,events
+Brian,Harris,brian@smilevirtualconsult.com,Smile Virtual,smilevirtual.com,Founder/CEO,Phoenix,Arizona,76,A,events
+Michael,Hershfield,michael@byaccrue.com,Accrue,byaccrue.com,Founder and CEO,New York,New York,75,A,fundraising
+Ian,Gover,ian@rypple.ai,Rypple.ai,rypple.ai,CEO & Co-Founder,Palo Alto,California,75,A,fundraising
+Nicolas,Serrano,nicolas@datascope.io,DataScope.io,datascope.io,Co-Founder & CEO,Las Condes,Region Metropolitana,75,A,hiring
+Vibha,Puri,vibha@swayhealth.co,Sway Health,swayhealth.co,"Chief Executive Officer, Co-Founder",Tulsa,Oklahoma,75,A,fundraising
+Hany,Mekhael,hmekhael@vpsie.com,"VPSie ""𝑪𝒍𝒐𝒖𝒅 𝑬𝒏𝒂𝒃𝒍𝒆𝒓""",vpsie.com,Founder | CEO,New York,New York,75,A,hiring
+Julie,Kierszenbaum,julie@getstreamlane.com,Streamlane,getstreamlane.com,Co-founder & CEO,San Francisco,California,75,A,fundraising
+Aryah,Oztanir,aryah@o11.ai,o11 (YC W26),o11.ai,Co-Founder / CEO,San Francisco,California,75,A,fundraising
+Gabriel,Buck,gabe@clickpointsoftware.com,ClickPoint Software,clickpointsoftware.com,CEO & Founder,Scottsdale,Arizona,75,A,hiring
+Maya,Azouri,maya@catchcorner.com,CatchCorner by Sports Illustrated,catchcorner.com,Co-Founder and Chief Operating Officer,Toronto,Ontario,75,A,events
+Jerry,Li,jerry@gradual.com,Gradual,gradual.com,CEO & Co-founder,San Francisco,California,75,A,hiring
+Alan,Laifer,alan@ibynd.com,iBynd,ibynd.com,COO & Co-Founder,Englewood Cliffs,New Jersey,75,A,hiring
+Akash,Raju,akash@tryglimpse.com,Glimpse,tryglimpse.com,Co-Founder and CEO,New York,New York,75,A,fundraising
+Jill,Grossman,jill@graybirdfoundation.org,Graybird Foundation,graybirdfoundation.org,Founder & CEO,West Menlo Park,California,75,A,fundraising
+Anton,Otaner,anton@clarum.ai,Clarum (YC W24),clarum.ai,Founder & CEO,San Francisco,California,75,A,fundraising
+Seymour,Duncker,seymour.duncker@mindscale.ai,Mindscale AI,mindscale.ai,CEO & Co-Founder,San Francisco,California,75,A,fundraising
+Ted,Mann,ted@collx.app,CollX,collx.app,Co-Founder and CEO,Haddonfield,New Jersey,75,A,fundraising
+Anuj,Mehta,anuj@tryglimpse.com,Glimpse,tryglimpse.com,"Co-Founder, COO",New York,New York,75,A,fundraising
+Rory,Holland,rory@cstmr.com,CSTMR Fintech Marketing,cstmr.com,Founder and CEO,Bee Cave,Texas,75,A,fundraising
+Richard,Swang,richard@metaprisebanking.com,Metaprise,metaprise.ai,Founder and CEO,New York,New York,75,A,events
+Corin,Wagen,corin@rowansci.com,Rowan,rowansci.com,Founder/CEO,Boston,Massachusetts,75,A,hiring
+Victor,Vuleau,victor@zelosarenas.com,Zelos,zelosarenas.com,Founder & CEO,Denver,Colorado,75,A,events
+Mikhail,Naumov,mikhail@paylode.com,Paylode,paylode.com,"Founder, CEO",Miami,Florida,75,A,fundraising
+Raphael,Akinsipe,raphael@getsocialcrowd.com,SocialCrowd,getsocialcrowd.com,CEO and Co-Founder,Irvine,California,75,A,events
+Connor,Lawrence,connor@indify.io,indify,indify.io,Co-founder & COO,New York,New York,75,A,rebranding
+Amrit,Dhangal,amrit@aerogtm.com,Aero,aerogtm.com,CEO and Founder,San Francisco,California,75,A,fundraising
+Danyal,Ozduezenciler,danyal@capsa.ai,Capsa AI,capsa.ai,Co-Founder & CEO,London,England,75,A,fundraising
+Desiree,Dickerson,des@thndr.io,THNDR,thndr.io,CEO & Co-Founder,London,England,75,A,events
+Michelle,Dalzon,michelledalzon@katapulte.io,Nudge,katapulte.io,Founder and CEO,Boston,Massachusetts,75,A,hiring
+Murtaza,Ali,murtaza@getsymphony.co,Symphony (YC F24),getsymphony.co,Co-founder & CEO,New York,New York,75,A,fundraising
+Shav,Garg,shav@indify.io,indify,indify.io,"Co-founder, Chief Executive Officer",New York,New York,75,A,rebranding
+George,Mitri,gmitri@2daloop.com,2DaLoop,2daloop.com,CoFounder & CEO,Detroit,Michigan,75,A,events
+Chinmay,Pingale,chinmay@harloop.com,Harloop,harloop.com,Co-Founder & CEO,San Francisco,California,75,A,fundraising
+Jay,Griffin,jay@goculturecube.com,Culture Cube,goculturecube.com,Ceo/cmo Co-Founder,Claremont,California,75,A,fundraising
+Annie,Sloan,annie@thehost.co,The Host Co.,thehost.co,Co-Founder & CEO,Los Angeles,California,75,A,hiring
+Vojtech,Otevrel,otevrel@herohero.co,Herohero,herohero.co,"Co-Founder, CEO",New York,New York,75,A,hiring
+Guy,Kroupp,guy@getgud.io,Getgud.io,getgud.io,Founder & CEO,Las Vegas,Nevada,75,A,fundraising
+Alexei,Chemenda,alex@poolday.ai,Poolday AI,poolday.ai,Founder & CEO,San Francisco,California,75,A,fundraising
+Kethees,Ketheesan,kethees.ketheesan@puloli.com,Paradigm by Puloli™,puloli.com,CEO & Co-founder,San Francisco,California,75,A,events
+Hami,Babai,hbabai@powerkiosk.com,Power Kiosk,powerkiosk.com,Founder and CEO,Chicago,Illinois,75,A,events

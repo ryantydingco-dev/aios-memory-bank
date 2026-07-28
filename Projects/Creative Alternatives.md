@@ -4,6 +4,115 @@
 
 Creative Alternatives is Kenny’s long-running promotional-products business (`https://www.creativealternatives.com/`). Ryan is increasingly treating this as the primary applied AIOS venture: use his AI/operator knowledge to help his girlfriend’s dad modernize a real business with existing revenue, customers, suppliers, and workflows.
 
+## 2026-07-24 first Pillar-1 automation shipped + fulfillment-visibility gap
+
+- **Sheets auto-close live (commit `d678fbf`).** Apps Script inside each printer sheet (Viking + Diamond): a row in the OPEN tab that gets a tracking number — or is Messenger/Pick Up with a completed marker — is copied to CLOSED and removed from OPEN. Installable onEdit trigger for instant moves + 30-min time sweep as backstop. The failure-modes doc (`docs/failure-modes/sheets-auto-close.md`) is the durable asset: 8 named failure modes with mitigations (installable trigger not simple onEdit, LockService vs double-moves, append→verify→delete ordering, bottom-up sweep, PO#+description row qualification, ≥8-char tracking heuristic, keyword+method AND-rule for messenger, hidden `_auto_log` audit tab, onOpen "Run sweep now" menu). Silent-failure detection: tracking numbers piling up in OPEN + empty `_auto_log`. Free; seconds/day of quota at CA volume. **This is the template for future CA sheet automations — smallest script possible, failure modes documented first, audit log built in.** Post-build notes due after week one.
+- **Shippo: API yes, MCP no.** Full REST API; key lives in the Shippo dashboard → Settings → API (account owner generates it). No MCP connector exists.
+- **Park Slope Day Camp gap surfaced:** three orders in transit and a tracking number alone doesn't reveal contents (hats vs hoodies). The real need is an order↔tracking↔contents mapping so fulfillment risk is visible before the customer asks — likely a sheet-structure fix plus optional Shippo status pull, not a new platform.
+- Ops-discovery continued (`/prime` + Pillar-1 files: ar-collections-plan, hermes-ops-brain, ops-audit-interview-kit, ops-discovery, quickbooks-reconciliation-ai-workflow); cold-copy sequences and key-metrics touched.
+
+## 2026-07-23 Kennerly reply package + Sanmar A/P reality check
+
+- **Kennerly, Montgomery & Finley, P.C. (Knoxville, Retreat Season campaign):** Owen Ragland (Legal Administrator) replied to Maclaine — lukewarm but real: shareholders haven't shown much interest, but "if you have made something up and want to send it, I will be happy to show it to them." He's a forwarder, not the buyer, so the package is built to be passed along: three mockups (welcome-kit flat-lay — 3 takes after the letter-QC gate caught "Altorneys"/"MONNTGOMERY" garbles, fixed by stripping the notebook to the KM monogram only; heather quarter-zip; white tumbler), a 7-page marine-theme Gamma lookbook (PDF page-checked, book-verified facts only), and a reply drafted in Maclaine's voice. Everything queued at `Creative-Alternatives-AIOS/queue/drafts/kennerly-montgomery/` — **nothing sent; awaiting approval**.
+- **Sanmar A/P (live QBO, evening):** CA owes Sanmar **$47,653.94 across 109 open bills** — $18,460.28 truly past due (60 bills due Jun 16–30), ~$29.2K not yet due, nothing >17 days late, 61–90/91+ buckets empty. That's roughly one normal month of volume (~$549K/yr spend). Risk: Sanmar is the shop's most critical supplier; aged balances can trigger a credit hold that freezes blank orders mid-job. Recommendation: Maclaine or Kenny clears the June batch this week. QBO quirk: the report engine stamped aging as of July 24 — past-due math was re-run against the true date.
+
+## 2026-07-17 revenue sprint + anniversary reactivation
+
+A five-agent read-only audit of the CA and Dealthreads workspaces was consolidated into a 7-day revenue sprint package at `AIOS-Memory-Bank/Revenue Sprints/2026-07-17 - CA + Dealthreads/` (window 2026-07-18 → 07-24). Doctrine: **convert existing demand before creating more**; content is a trust asset, not forecast revenue. CA's two sprint actions are the high-intent mockup/quote close sprint (Miller Johnson, Nirenstein, Joseph Hollander, INVST, Skyer — $12.5K–$30K gross pool) and reorder rescue (top-25 list = $198,404 of 2025 revenue). Approval gates: Kenny on pricing/SKU feasibility, Ryan or Maclaine on every customer-facing reply. Approved public language is "27-year, multi-million-dollar family business"; do not cite "25-year-old, $3.2M" or describe the 120-piece law-firm inquiry as a sale.
+
+The **anniversary-reorder motion is now proven and operationalized**: Maclaine's July batch reportedly pulled ~3 reorders, and on 2026-07-17 the August 2025 batch was pulled live from QuickBooks (57 customers, 85 invoices) with a generic check-in/reorder email drafted and a spreadsheet saved to `outputs/reactivation/2026-07-17-august-2025-anniversary/`. Nothing sent — awaiting approval, and the sprint audit corrected eligibility to the 18 accounts with no 2026 orders ($22,755 prior-August revenue), each needing a fresh QBO order/A/R check. Ryan also wants a rolling restaurant-style "haven't ordered in X months" dormant sweep; the warehouse already has the dormant-candidate and invoice-chase queries to size it.
+
+Two blocks: the **partner-list pilot** (3 partner ICPs × ≤15 contacts via AI Ark MCP) failed on a 401 auth error, and the two highest-value **lead-gen moment engines** remain blocked only on acquiring free API keys. Separately, Ryan began a time-limited **Fable 5 implementation sprint** (top five use cases, in order, free rein) — capture outputs before access expires; do not wire Fable 5 into durable scheduled jobs.
+
+## 2026-07-16 income-lane decision + outbound execution
+
+Ryan clarified the near-term commercial split after confirming Kenny will not provide a base retainer before results: **Creative Alternatives remains the long-term equity/commission investment, while fractional SDR / Dealthreads becomes the paying-work bridge** ahead of a likely mid-August job loss. This reduces the pressure to force CA alone to produce $10K/month immediately, but CA still needs measured selling activity and a realistic commission/time-to-cash model.
+
+CA outbound execution continued rather than resetting strategy. The Salesfinity cold-call motion should use the already-built queues and engagement tiers, and law-firm personalization should reference retreats/event gear only when the account context supports it. The next proof remains a measured call block and actual outcomes—pickups, conversations, meetings, quotes, and orders—not another list or strategy document.
+
+## 2026-07-15 Higgsfield content-factory direction
+
+Ryan wants to use the already-available Higgsfield system to produce significantly more Creative Alternatives content. The reference workflow he reviewed combined trend scanning, brand-asset generation, faceless short-form video, and remixing of proven formats.
+
+The durable CA adaptation should not be a generic trend-chasing content farm. CA has stronger proprietary inputs: real supplier access, in-house printing/decoration, physical product samples, actual customer/order problems, and the documented transformation of a long-running promo-products business with AI. Higgsfield is best treated as the downstream visual-production layer for repeatable formats such as product explainers, mockup-to-finished-product stories, event-swag concepts, supplier/product spotlights, and short “building CA with AI” episodes.
+
+No finished factory or published batch was confirmed. Start with a review-gated pilot: choose 3–5 formats, define approved source assets and brand controls, generate a small batch, reject factual/IP/privacy failures, and measure publishable rate and audience response. Never expose private customer artwork/order data or use licensed marks without permission.
+
+## 2026-07-15 AI landscape posture
+
+The July 15 Daily AI Landscape brief was saved at `outputs/ai-landscape/daily/2026-07-15.md`. It found no verified launch that changes CA’s operating posture. The practical recommendation remains to evaluate agents end to end on five redacted historical order packets, with explicit approval gates and a pilot ledger tracking cost, time, corrections, reviewer burden, and stop/go decisions.
+
+## 2026-07-14 Salesfinity cold-call system + evaluated-agent rule
+
+The Salesfinity motion is now designed as part of one cross-channel engine rather than a standalone dialer: **SmartLead creates volume and engagement signals, Sendr adds LinkedIn trust, Salesfinity converts the hottest non-repliers, and HubSpot remains pipeline truth**. Core operating docs are `pillars/2-customer-acquisition/salesfinity-call-motion.md` and `cold-outbound-orchestration.md`.
+
+Current queue state:
+
+- Three active law/financial SmartLead campaigns produced 4,615 callable non-repliers: 362 Tier 1, 1,903 Tier 2, and 2,350 Tier 3. Tier 1 means clicked or opened at least three times without replying; Tier 3 should not be dialed.
+- 147 cold ICP mobiles are packaged for Salesfinity across law, financial, accounting, real estate, agency, and insurance.
+- 620 lapsed/legacy customers with phones are packaged as a separate win-back list; do not mix their warmer script with cold outreach.
+- Seven engaged non-repliers already had mobiles on file.
+- A first 23-contact Tier-1 mobile-reveal batch returned 15 dialable mobiles and eight no-mobile results. The import README still says the reveal is wholly pending and should be corrected; most of the 362-contact pool does remain unrevealed.
+
+Durable rules: work engaged leads first; use three passes at different times; log every disposition; send promised mockups the same day; and suppress replies, unsubscribes, and do-not-call requests across every channel immediately. Paid reveals remain Tier-1-only and cost-gated. QuickBooks suppression must remove existing customers from cold lists.
+
+The build includes scripts, setup/compliance notes, a phone-first script, import files, dispositions, and a weekly operating rhythm, but no first measured call block was confirmed. The next proof is dials, pickups, conversations, meetings, and closed outcomes by segment—not another strategy document. The working tree was heavily uncommitted during the scan, so do not assume these assets are safely synced to the Mac Studio.
+
+The July 14 AI Landscape brief added a related operations rule: test agents against a pre-agreed failure set and log cost/corrections before calling them useful. For CA, the recommended starting artifact is five redacted historical order packets plus a pilot ledger; customer, vendor, accounting, pricing, and source-system actions remain draft-only and human-approved.
+
+## 2026-07-13 unified production brief + live QuickBooks
+
+The daily operations brief now has a unified **Orders & production** view across three shared Google Sheets:
+
+- Viking open orders (existing collector).
+- Diamond apparel/embroidery production (new collector).
+- Random Vendors / promo purchase orders (new collector).
+
+The section groups work as **today → tomorrow → later this week → past due**, preserves source/vendor context, and flags hard dates, rush notes, unreadable dates, and source-pull failures. `collect.py` auto-discovers the new `collect_*.py` scripts, so no separate schedule is required. The work was committed and pushed as `ce3f51e`.
+
+The first integrated pull reported **59 board entries**: Viking 17, Diamond 15, and vendor POs 27. Eight vendor POs appeared past their in-hand date without being marked shipped. Treat these as an exception queue requiring human verification; a stale sheet or missing tracking number is not proof that an order is actually late.
+
+The missing 7:00 AM Slack brief was traced to deployment, not generation logic. A local dry run completed successfully, but the scheduled job had never fired on its intended MacBook Air host. Full Disk Access and/or laptop sleep were the likely blockers. Ryan said the Mac Studio is now always on, so the brief should be handed off to the Studio in line with the single-writer architecture, then verified through a real scheduled Slack delivery, archive, and log.
+
+The live QuickBooks connector was also confirmed against the real Creative Alternatives company. A Viva Padel & Pickle lookup demonstrated the path: one invoice was found and its linked payment was verified in QBO as a full check payment six days after invoicing. Prefer live QBO for future lookup questions when healthy, but keep all financial writes human-approved.
+
+Durable ecommerce-positioning note: Ryan sees CA's moat versus generic dropshipping as real supplier access (for example SanMar) plus owned/in-house printing and fulfillment capability. If an ecommerce offer is explored, position it around controlled sourcing, decoration, quality, and fulfillment—not commodity arbitrage.
+
+## 2026-07-13 first AI landscape brief applied to CA
+
+The first Daily AI Landscape Intelligence brief was saved at `outputs/ai-landscape/daily/2026-07-13.md`. Its durable operating conclusion matches CA policy: use AI for bounded, reviewable internal workflow assistance, not autonomous customer/vendor communication, pricing/production decisions, or QuickBooks changes.
+
+Three candidate pilots were drafted: a five-order packet completeness checker, a draft-only open-order brief, and a reconciliation-exception explainer. These are proposals only. Before building one, define the approved data, reviewer, test set, correction threshold, spend cap, and stop condition.
+
+## 2026-07-11 Sales Infinity cold-call motion
+
+Ryan explicitly decided to start using **Sales Infinity** for a Creative Alternatives cold-call motion after having the subscription but not actively working it. The build session loaded CA’s master GTM strategy, audience, offer, and customer-acquisition materials rather than designing a disconnected call campaign.
+
+Important operational discovery: segmented call lists were reportedly generated on **2026-07-09**. The immediate next step is therefore to locate and QA those assets—source, segment, list size, phone quality, duplicates, ICP fit, and intended offer—before creating more broad lead lists.
+
+The call motion should preserve existing CA strategy:
+
+- Keep the core promo-products offer separate from the branded-store/growth offer.
+- Prioritize camps, events, openings, hiring/onboarding, seasonal programs, rebrands, and other visible buying moments over generic corporate-swag calls.
+- Define a real multichannel handoff: each Sales Infinity disposition should trigger the correct Smartlead, LinkedIn, quote, callback, or human-follow-up action.
+- Start with a small calling block, capture objections/connect rates, and revise scripts from actual calls before scaling.
+
+No confirmed final script, KPI dashboard, or completed call block was visible in the scan. Treat the motion as actively being operationalized, not fully launched.
+
+## 2026-07-10 campaign review + camp inbound experiment
+
+A fresh campaign-summary session reconfirmed that the most reliable completed-test analysis currently on disk covers **13 campaigns and 6,582 leads** (data pulled 2026-06-26). The Smartlead live-stats tool again failed enum validation, so this is local-file ground truth rather than a successful live refresh. Preserve that provenance in future reporting.
+
+The durable segment conclusion did not change: **summer camps are the clearest validated winner**. This moved beyond outbound analysis into an inbound test. A complete experiment brief was created at:
+
+`/Users/ryantydingco/Documents/Creative-Alternatives-AIOS/plans/camp-inbound-experiment-brief-2026-07-10.md`
+
+Strategic timing: July provides runway for SEO to mature, search campaigns to collect query data, and association placements to be secured before camps begin planning 2027 purchases. The next step is execution and measurement, not another strategy pass.
+
+Lead-generation work also continued around finding more deadline-driven buying moments. Keep prioritizing event dates, openings, hiring/onboarding, seasonal programs, rebrands, and similar visible triggers over generic corporate-swag lists.
+
+Product-sourcing note: a current badge request appears to be a full-color printed plastic name tag around 3 × 1.5 inches with a matte/frosted appearance and magnetic backing. Source through ASI/SAGE suppliers and verify substrate/finish, MOQ, net cost, production time, and samples before quoting.
+
 ## 2026-07-08 trade-show/event outbound + AI use-case sweeps
 
 Recent Claude/Codex activity sharpened a major CA outbound segment: **companies exhibiting at trade shows or events**.

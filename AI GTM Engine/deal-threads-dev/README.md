@@ -111,6 +111,8 @@ This is the first local development slice for Deal Threads. It mirrors the curre
 - JSON-backed local persistence in `.data/deal-threads-dev.json`.
 - Optional SQLite-backed persistence for beta deployments with `DEAL_THREADS_DATA_STORE=sqlite`.
 - HubSpot sync adapter with safe stub mode when `HUBSPOT_TOKEN` is not set.
+- Persisted 24/7 SDR control plane for idempotent buying-signal ingestion, ICP ranking, account dossiers, voice-aware sequences, reply classification, opt-out suppression, meeting qualification, exponential retries, approval mode, and controlled webhook delivery.
+- Protected Revenue Watchdog at `/sdr-ops` with a mobile decision queue, 24-hour revenue pulse, deterministic decision IDs, persistent resolutions, reply/sequence/suppression/reliability grading, evidence-backed improvement proposals, continuous revenue-path integrity checks, Markdown/JSON briefs, and 90-day daily history.
 
 ## Run Locally
 
@@ -147,6 +149,10 @@ The browser QA script starts an isolated local server, launches headless Chrome 
 `test/operator-forms.test.js` submits the protected URL-encoded forms used by the server-rendered UI, then verifies redirects and resulting state for admin config, scoring, routing, HubSpot readiness and queue dry-run, rep feedback capture, rep alert sending, CRM delivery sending, state backup validation, guarded restore dry-run, beta-client create/update/checklist, CRM workflow and sales outcome updates, enrichment review updates, research evidence capture, company-memory correction, experiment notes, outcome snapshots, target-account import, report delivery queueing, manual sent state, due-report queueing, and dry-run queued sending.
 
 `test/widget-install.test.js` executes the real `public/widget.js` script in a lightweight DOM harness against the real local API. It verifies that a beta-client script tag applies client-specific launcher copy, quick replies, color, consent handling, UTM attribution, routing overrides, completion UI, lead profile creation, beta-client attribution, and onboarding checklist automation.
+
+`test/sdr-desk.test.js` verifies signal idempotency, fit scoring, dossier/sequence creation, reply-driven sequence cancellation, opt-out suppression, retry behavior, persisted restore, and reply classification. See `../../Dealthreads Outbound Engine/SDR-DESK-24-7.md` for deployment modes and webhook examples.
+
+`test/revenue-watchdog.test.js` verifies revenue-decision generation, deterministic decision resolution, SLA and adapter-failure detection, opt-out leak detection, self-improvement rubric behavior, runtime integrity gates, and the client-ready Markdown brief. See `../../Dealthreads Outbound Engine/REVENUE-WATCHDOG-PRODUCT.md` for the product and sales model.
 
 `test/sqlite-store.test.js` verifies the SQLite data-store adapter directly and starts the server in SQLite mode, creates beta state, restarts the server against the same `.sqlite` file, and confirms clients and leads hydrate back into the app.
 
@@ -1500,10 +1506,59 @@ curl -u admin:deal-threads-local \
 
 The same guarded restore form is available in `/admin`. Restore is dry-run unless `applyRestore=true`, `dryRun=false`, and the confirmation phrase matches exactly.
 
+## Six-Channel Revenue Loop
+
+The 24/7 worker now consolidates the six production systems into one persisted control plane:
+
+1. SmartLead email replies, opens, clicks, categories, and unsubscribes.
+2. Salesfinity call dispositions, callbacks, do-not-contact outcomes, and meetings set.
+3. Sendr proof-page engagement and high-intent completion/click events.
+4. Cal.com bookings, reschedules, and cancellations.
+5. HubSpot property readiness and automatic eligible-lead synchronization.
+6. Telegram, Slack, and email delivery for the morning brief and urgent decisions.
+
+Public ingestion endpoints:
+
+```text
+POST /webhooks/v1/smartlead
+POST /webhooks/v1/salesfinity
+POST /webhooks/v1/sendr
+POST /webhooks/v1/calcom
+```
+
+SmartLead requests use its `X-Smartlead-Signature` HMAC SHA-256 signature, and Cal.com uses `X-Cal-Signature-256`. Salesfinity and Sendr require a provider-specific shared secret as `Authorization: Bearer ...`, `X-Webhook-Secret`, `X-{provider}-Webhook-Secret`, or a `?token=...` receiver URL when the vendor cannot send custom headers. An endpoint returns `503` until its secret is configured, so an accidentally deployed receiver is not open.
+
+Protected operating endpoints:
+
+```text
+GET  /api/v1/sdr-ops/integrations
+POST /api/v1/sdr-ops/notifications/run
+GET  /api/v1/sdr-ops/watchdog
+GET  /sdr-ops
+```
+
+To run unattended, set `SDR_AUTOMATION_ENABLED=true`. `HUBSPOT_AUTO_SYNC=true` processes eligible pending HubSpot leads on every worker cycle. `HUBSPOT_AUTO_SETUP_PROPERTIES=true` is deliberately separate because it changes the connected HubSpot portal schema.
+
+For the current internal installation, the revenue-loop launcher safely loads the existing AIOS credential files, maps legacy HubSpot/Sendr/Cal variable names, enables the worker, enables HubSpot auto-sync when a token is present, keeps outbound actions in approval mode, and enables Telegram when its existing token/chat are present:
+
+```bash
+npm run start:revenue
+```
+
+It never prints secret values. In another environment, set `DEAL_THREADS_ENV_FILES` to a comma-separated list of environment files or inject variables through the deployment platform.
+
+`REVENUE_NOTIFICATIONS_ENABLED=true` queues a timezone-aware brief once per local day and deduplicated urgent alerts for each open high/critical decision. Deliveries persist with exponential retries. Configure one or more of:
+
+- `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID`
+- `SLACK_WEBHOOK_URL`
+- `REPORT_EMAIL_WEBHOOK_URL` + `REVENUE_WATCHDOG_EMAIL_TO`
+
+The source adapter, CRM automation, and notification readiness are visible in `/sdr-ops`, `/api/v1/sdr-ops/integrations`, and `/api/v1/health`.
+
 ## Next Development Targets
 
-1. Test HubSpot sandbox sync and property setup against a real portal.
-2. Run the OpenAI extraction probe with a real `OPENAI_API_KEY` and compare LLM output against heuristic fallback.
-3. Move from SQLite snapshot persistence to Postgres when beta usage requires multi-instance writes or SQL reporting.
-4. Replace the generic report webhook with a chosen ESP adapter only after pilot sending volume is known.
+1. Register the four production webhook URLs after a stable public deployment URL is selected.
+2. Test HubSpot sandbox sync and property setup against a real portal.
+3. Run the OpenAI extraction probe with a real `OPENAI_API_KEY` and compare LLM output against heuristic fallback.
+4. Move from SQLite snapshot persistence to Postgres when beta usage requires multi-instance writes or SQL reporting.
 5. Add an optional paid enrichment adapter only after internal enrichment quality and API costs are measured.

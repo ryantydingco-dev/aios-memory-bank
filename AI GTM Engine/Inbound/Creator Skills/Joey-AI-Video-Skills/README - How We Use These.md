@@ -1,7 +1,16 @@
 # Joey AI Video Skills — How We Use These
 
 ## Source Files
-Imported from the two ZIPs Ryan uploaded:
+
+**v3 drop (added 2026-07-18)** — from Joey's video "these 3 claude skills save me hundreds of credits" (https://www.youtube.com/watch?v=x5nP-3t6R9o), downloaded via the Dropbox link on his Notion page (tinyurl.com/new-claude-skills):
+
+- `banana-pro-director-30/SKILL.md` — supersedes 2.0. Biggest change: **3-panel character sheets are now the default** (headless full-body front / full-body rear / tight chest-up face lock) — 6-panel is legacy because it starves the face of pixels and causes character drift. Adds ghost-mannequin vs clean-neck-cut head removal, GPT-2 detail mode, and outfit replacement.
+- `cinema-worldbuilder-pro-30/SKILL.md` — supersedes 2.0. Adds Frame Map (lock screen position before identity), **FOV in degrees not millimeters** (Seedance snaps to degrees, drifts on mm), write-the-visible discipline (km/h, % haze, observable action — never abstractions), and element tags (@sol_ref) instead of image numbers. Core lesson: prompt density is a bell curve — when 14 iterations deep and getting worse, reset the prompt and add back only what's necessary.
+- `story-bible-builder/` — **new**. Interview-driven: walks you through premise, timeline, factions, locations, character voice/movement locks, and production rules, then outputs a canon SKILL.md you install so every future prompt already knows your world. Stacks with the other two: bible = who and why, Banana Pro = what it looks like, Worldbuilder = how it's shot.
+
+All three are also installed at `~/.claude/skills/` so they load in every workspace.
+
+**v2 originals** (kept for reference) — imported from the two ZIPs Ryan uploaded:
 
 - `banana-pro-director-2.0/SKILL.md`
 - `cinema-worldbuilder-pro-2.0/SKILL.md`

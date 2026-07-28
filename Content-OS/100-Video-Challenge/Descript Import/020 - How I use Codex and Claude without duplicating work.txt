@@ -1,0 +1,9 @@
+Two models are useful only when they disagree productively.
+
+What I am showing you on screen is a builder-reviewer handoff.
+
+It comes down to three things. First, one model builds against the code and data. Second, the second attacks assumptions and risks. And third, the operator resolves the decision.
+
+The tool earns its place only if the workflow gets better.
+
+Follow for the exact operating stack.

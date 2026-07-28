@@ -1,0 +1,9 @@
+The best first AI workflow is usually not a chatbot.
+
+What I am showing you on screen is a quote-to-follow-up workflow.
+
+It comes down to three things. First, start where work repeats. Second, keep human approval at the customer-facing step. And third, measure cycle time and recovered opportunities.
+
+The goal is not more software. It is a workflow the team can actually run.
+
+Save this before your next AI planning meeting.

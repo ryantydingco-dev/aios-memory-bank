@@ -1,0 +1,9 @@
+The fastest way to ruin an AI project is to surprise the customer.
+
+What I am showing you on screen is a human-review and privacy checklist.
+
+It comes down to three things. First, use the minimum necessary data. Second, keep customer-facing work supervised. And third, make ownership and opt-out paths obvious.
+
+That is the difference between talking about AI and changing a real business.
+
+Share this with an operator rolling out AI.

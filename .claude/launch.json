@@ -8,6 +8,12 @@
       "port": 8099
     },
     {
+      "name": "dealthreads-new-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/ryantydingco/Documents/AIOS/dealthread-landing-live"],
+      "port": 5174
+    },
+    {
       "name": "greenlight",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4180", "--directory", "/Users/ryantydingco/Documents/AIOS/aios-starter-kit/apps/greenlight-demo"],
