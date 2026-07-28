@@ -3,6 +3,8 @@
 Last updated: 2026-06-02  
 Purpose: one place to run the outbound machine every day.
 
+> **Legacy command center:** this operates the older multi-vertical dead-form outbound machine. The active revenue-conversion source of truth is [`dealthreads-gtm-agent-repositioning/00 - REVENUE EXECUTION.md`](../dealthreads-gtm-agent-repositioning/00%20-%20REVENUE%20EXECUTION.md), scoped only to specialized staffing/recruiting firms and current interested replies. Do not use this older queue to expand verticals while warm staffing replies are open.
+
 ## What This Is
 
 This is the execution layer for Deal Threads outbound.

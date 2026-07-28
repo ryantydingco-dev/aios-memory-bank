@@ -3,6 +3,8 @@
 Last updated: 2026-06-02  
 Purpose: know exactly what to say when outbound prospects reply.
 
+> **Legacy router:** this file is for the older dead-form/teardown motion. For the active specialized staffing/recruiting motion, use [`dealthreads-gtm-agent-repositioning/00 - REVENUE EXECUTION.md`](../../dealthreads-gtm-agent-repositioning/00%20-%20REVENUE%20EXECUTION.md) and its linked reply-to-install playbook. Do not route current staffing replies into a dead-form teardown.
+
 ## Reply Categories
 
 | Category | Signal | Next Action |

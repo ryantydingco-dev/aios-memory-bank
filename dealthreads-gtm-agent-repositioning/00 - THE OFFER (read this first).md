@@ -2,6 +2,8 @@
 
 > The antidote to the 13 other files. If you're ever confused about what you're doing, read this one. Everything else is *how*; this is *what*.
 
+> **ACTIVE EXECUTION OVERRIDE — 2026-07-28:** Deal Threads is currently converting existing interested replies from specialized staffing/recruiting firms into **Pipeline Math calls and paid Revenue AIOS installs**. Run that motion from [`00 - REVENUE EXECUTION.md`](00%20-%20REVENUE%20EXECUTION.md). The free-radar/subscription ladder below is historical offer context; do not use it as the default next step for current interested responders, and do not add another vertical.
+
 ---
 
 ## In one sentence

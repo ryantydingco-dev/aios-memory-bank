@@ -2,6 +2,8 @@
 
 > The offer + cold messaging that makes a retained-search Managing Partner *want* the meeting, on a cold start with no case studies. Built on Hormozi's Grand Slam / value-equation framework (Ryan said "Alex or Moses style" — built on Hormozi's Grand Slam Offer; if "Moses" meant a specific person's framework, say so and I'll adjust). ICP from `01c`: US boutique retained executive search / specialized recruiting firms, buyer = MP/Owner. Pricing from `02`. Channels: LinkedIn, cold email, content.
 
+> **Historical cold-start offer context:** current interested replies should follow [`00 - REVENUE EXECUTION.md`](00%20-%20REVENUE%20EXECUTION.md) into a tailored answer, two meeting times, a Pipeline Math call, and a paid Revenue AIOS install. Do not re-route warm responders into the old subscription ladder below.
+
 ---
 
 ## The one move everything hangs on: GIVE pipeline, don't ask for a meeting

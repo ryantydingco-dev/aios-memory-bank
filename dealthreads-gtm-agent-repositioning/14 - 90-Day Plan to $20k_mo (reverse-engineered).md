@@ -2,6 +2,8 @@
 
 > Goal: $20k/mo in 90 days. Reverse-engineered from the offer (`00`) + conversion estimates (`06`). All rates are ESTIMATES, flagged — the first 2 weeks of real sends replace them with truth. This is a planning model, not a promise.
 
+> **Historical planning model:** the current operating cadence and scoreboard live in [`00 - REVENUE EXECUTION.md`](00%20-%20REVENUE%20EXECUTION.md). The active motion is specialized staffing/recruiting interested reply -> Pipeline Math call -> paid Revenue AIOS install; do not use the old tier-volume targets below as today’s queue.
+
 ---
 
 ## ⚠️ First: define "$20k/mo" — it changes everything
