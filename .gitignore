@@ -24,3 +24,19 @@ __pycache__/
 
 # === OS noise ===
 .DS_Store
+
+# === Machine-local / runtime — never in source control (2026-08-11 cleanup) ===
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.DS_Store
+.cache/
+reports/
+# Machine-specific state
+*.local.json
+.claude/settings.local.json
