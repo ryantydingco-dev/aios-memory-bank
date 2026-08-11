@@ -1,0 +1,374 @@
+# Review-only CRM routing and nurture plan for accepted inbound inquiries.
+# Nothing here sends email or changes a customer record by itself.
+
+schema_version: "1.0.0"
+updated: "2026-07-10"
+
+guardrails:
+  review_only: true
+  explicit_marketing_consent_required: true
+  subscribed_email_status_required: true
+  transactional_response_is_not_marketing_consent: true
+  human_qualification_required_before_deal: true
+  suppress_active_sales_conversations: true
+  skip_past_fixed_dates: true
+  unsubscribe_link_required: true
+  auto_quote: false
+  auto_promise_timeline: false
+  auto_accept_order: false
+
+enrollment_contract:
+  - ca_inquiry_status equals nurture
+  - ca_marketing_consent equals true
+  - HubSpot email subscription is subscribed
+  - email is valid and not hard bounced
+  - no global suppression condition is true
+
+global_suppressions:
+  - id: marketing_consent_missing
+    condition: ca_marketing_consent is not true
+    action: Do not enroll or send marketing email
+  - id: email_unsubscribed_or_ineligible
+    condition: HubSpot email subscription is unsubscribed or legally ineligible
+    action: Remove from nurture and do not re-enroll automatically
+  - id: active_sales_conversation
+    condition: Owner marks ca_nurture_status paused for an active one-to-one sales conversation
+    action: Remove from nurture until a human clears the pause
+  - id: open_deal
+    condition: Contact is associated with an open inbound deal
+    action: Remove from nurture while the deal is open
+  - id: nonbuyer_or_no_fit
+    condition: ca_inquiry_status is existing_customer, vendor_partner, job_seeker, spam, no_fit or duplicate
+    action: Do not enroll in prospect nurture
+  - id: hard_bounce
+    condition: Email has hard bounced or is otherwise undeliverable
+    action: Remove from nurture and flag for data review
+  - id: manual_pause
+    condition: ca_nurture_status equals paused
+    action: Do not send until the assigned owner resumes the contact
+
+workflows:
+  - id: accepted_inquiry_confirmation
+    type: transactional
+    status: draft
+    owner: ryan
+    approval_gate: shared_form_and_spam_controls_tested
+    trigger: HubSpot reports a persisted submission from the approved CA inbound form
+    required_conditions:
+      - ca_inquiry_response_consent equals true
+    actions:
+      - Send one plain confirmation about the specific inquiry
+      - Set ca_last_inquiry_date to the persisted submission time
+      - Set ca_inquiry_status to new_inquiry
+      - Do not change marketing subscription or ca_marketing_consent
+    customer_message: Thanks - we have your project details. A person from Creative Alternatives will review the request and follow up with the most useful next step. If your deadline is urgent, call Kenny at 718-496-5268.
+
+  - id: new_inquiry_internal_route
+    type: internal
+    status: draft
+    owner: ryan
+    approval_gate: response_owner_and_sla_approved
+    trigger: ca_inquiry_status becomes new_inquiry
+    required_conditions:
+      - Accepted submission is not identified as spam
+    actions:
+      - Assign camps, racquet clubs, private clubs and schools to Maclaine
+      - Assign law firms, corporate programs and events to Ryan
+      - Route rush feasibility to Kenny for approval
+      - Create an internal review task
+      - Set ca_response_due only after the response SLA is approved
+      - Notify the assigned owner without including uploaded files in the notification
+
+  - id: human_disposition_branch
+    type: internal
+    status: draft
+    owner: ryan
+    approval_gate: hubspot_properties_and_routing_tested
+    trigger: A human changes ca_inquiry_status from new_inquiry or in_review
+    required_conditions:
+      - ca_inquiry_status was set by an authorized owner
+    actions:
+      - Create a deal only when status is qualified and a credible commercial next step exists
+      - Enroll nurture only when status is nurture and the enrollment contract passes
+      - Route existing_customer to the relationship owner without counting a new logo
+      - Require ca_no_fit_reason when status is no_fit
+      - Suppress vendor_partner, job_seeker, spam, no_fit and duplicate from prospect nurture
+
+  - id: active_sales_nurture_suppression
+    type: internal
+    status: draft
+    owner: ryan
+    approval_gate: hubspot_properties_and_routing_tested
+    trigger: ca_inquiry_status becomes qualified or an associated inbound deal becomes open
+    required_conditions:
+      - Contact is enrolled in a CA nurture program
+    actions:
+      - Set ca_nurture_status to paused
+      - Remove the contact from all CA nurture workflows
+      - Preserve original nurture and attribution history
+
+  - id: nurture_completion_review
+    type: internal
+    status: draft
+    owner: ryan
+    approval_gate: weekly_review_owner_and_time_set
+    trigger: Contact reaches the final step of a CA nurture program
+    required_conditions:
+      - No suppression condition is true
+    actions:
+      - Set ca_nurture_status to completed
+      - Create a human review task only when a future planning date or engagement signal exists
+      - Do not re-enroll automatically
+
+programs:
+  camp:
+    label: 2027 camp planning nurture
+    status: draft
+    owner: maclaine
+    timing_mode: fixed_dates
+    campaign: nurture-camp-2027
+    steps:
+      - id: post_season_debrief
+        send_on: "2026-08-18"
+        intent: Capture lessons while the current season is still fresh
+        subject: Before camp season disappears from memory
+        body: A quick post-season note can save a lot of scrambling next year. Record what sold, what ran out, what staff actually wore and where distribution became difficult. The planning calendar below turns those notes into a practical 2027 sequence.
+        resource_key: camp_merchandise_planning_calendar
+        cta_label: Open the camp planning calendar
+      - id: choose_order_model
+        send_on: "2026-09-15"
+        intent: Help the camp choose store, bulk or mixed ordering
+        subject: Camp store or bulk order for 2027?
+        body: The right ordering model depends on who buys, who carries inventory and who handles distribution. This guide compares store, bulk and mixed approaches before product selection starts.
+        resource_key: camp_store_vs_bulk_order
+        cta_label: Compare the ordering models
+      - id: collection_job
+        send_on: "2026-11-10"
+        intent: Define the audience and job of the 2027 collection
+        subject: What should your 2027 camp collection actually do?
+        body: Staff gear, camper merchandise, parent ordering and alumni items solve different jobs. Reply with the audiences you need to serve and the rough opening date, and we can help shape the smallest useful collection.
+        cta_path: /summer-camp-merchandise
+        cta_label: Review camp merchandise options
+      - id: winter_checkpoint
+        send_on: "2027-01-12"
+        intent: Prompt a useful planning conversation before deadlines compress
+        subject: A useful checkpoint for 2027 camp merchandise
+        body: By this point, the useful questions are the in-hand dates, approval owners, ordering model and core assortment. If those are still open, reply with what you know and we can help organize the next decision.
+        cta_path: /summer-camp-merchandise
+        cta_label: Plan the 2027 program
+
+  racquet_club:
+    label: Racquet club planning nurture
+    status: draft
+    owner: maclaine
+    timing_mode: relative_days
+    campaign: nurture-racquet-club
+    steps:
+      - id: tournament_checklist
+        delay_days: 0
+        intent: Give the buyer an immediate planning tool
+        subject: A practical tournament merchandise checklist
+        body: Player gifts, staff apparel, sponsor items, awards, packing and venue delivery all run on different decisions. This checklist puts them in one sequence so the event date stays in control.
+        resource_key: club_tournament_merch_checklist
+        cta_label: Open the tournament checklist
+      - id: member_collection
+        delay_days: 21
+        intent: Separate member, team and event needs
+        subject: One club logo, several different merchandise jobs
+        body: A member collection should not automatically be the same as team gear or tournament merchandise. Start with audience, use and ordering behavior, then keep the assortment focused.
+        cta_path: /squash-racquet-club-merchandise
+        cta_label: Review club merchandise options
+      - id: delivery_plan
+        delay_days: 60
+        intent: Surface fulfillment and event-date risk
+        subject: The delivery question to answer before choosing products
+        body: Decide whether merchandise goes to one club, a tournament venue or individual recipients before narrowing products. That choice changes packing, support and the useful approval timeline.
+        cta_path: /squash-racquet-club-merchandise
+        cta_label: Map the club program
+      - id: next_calendar_moment
+        delay_days: 120
+        intent: Invite a planning conversation tied to a real club moment
+        subject: What is the next club date worth planning around?
+        body: If a tournament, league season, member event or pro-shop refresh is on the calendar, reply with the date and audience. We can help work backward to a practical next step.
+        cta_path: /squash-racquet-club-merchandise
+        cta_label: Start with the next club date
+
+  law_firm:
+    label: Law firm planning nurture
+    status: draft
+    owner: ryan
+    timing_mode: relative_days
+    campaign: nurture-law-firm
+    steps:
+      - id: annual_calendar
+        delay_days: 0
+        intent: Organize recurring firm moments before requests become urgent
+        subject: A law firm merchandise calendar you can actually use
+        body: Recruiting, retreats, client gifts, conferences, onboarding and employee programs often arrive through different owners. This calendar puts the moments and decision dates in one view.
+        resource_key: law_firm_merch_calendar
+        cta_label: Open the firm merchandise calendar
+      - id: segment_by_moment
+        delay_days: 21
+        intent: Help the buyer avoid one generic assortment
+        subject: Recruiting merchandise should not do every job
+        body: Recruiting, client gifting and internal events have different audiences and approval standards. Separating them early usually makes the product and budget conversation much clearer.
+        cta_path: /law-firm-branded-merchandise
+        cta_label: Review firm merchandise paths
+      - id: approval_map
+        delay_days: 60
+        intent: Surface brand and stakeholder approvals
+        subject: The approval map matters as much as the product list
+        body: Before curation, identify who approves brand use, budget, recipient data and the final order. Reply with the next firm moment and the approval owners, and we can help structure the path.
+        cta_path: /law-firm-branded-merchandise
+        cta_label: Map the next firm project
+      - id: next_firm_moment
+        delay_days: 120
+        intent: Reopen around a concrete calendar need
+        subject: What is the next firm moment on the calendar?
+        body: If recruiting, a retreat, a conference or client program is approaching, send the date, audience and rough quantity. We can help identify the decisions that need to happen first.
+        cta_path: /law-firm-branded-merchandise
+        cta_label: Start the next firm plan
+
+  private_club:
+    label: Private club planning nurture
+    status: draft
+    owner: maclaine
+    timing_mode: relative_days
+    campaign: nurture-private-club
+    steps:
+      - id: annual_calendar
+        delay_days: 0
+        intent: Map merchandise to the club calendar
+        subject: Put the club calendar before the product catalog
+        body: Member collections, staff apparel, tournaments, recognition and gifting each need different decisions. The calendar below helps place those moments before products are chosen.
+        resource_key: private_club_merch_calendar
+        cta_label: Open the private club calendar
+      - id: assortment_roles
+        delay_days: 21
+        intent: Clarify assortment by audience and use
+        subject: A tighter club assortment starts with the audience
+        body: Member retail, staff uniforms and event merchandise should not be forced into one collection. Define the audience and use first, then curate the smallest assortment that supports it.
+        cta_path: /private-club-merchandise
+        cta_label: Review private club options
+      - id: ownership_workflow
+        delay_days: 60
+        intent: Identify the internal operating owner
+        subject: Who owns the club merchandise after launch?
+        body: Approval, member questions, inventory, fulfillment and reorders all need an owner. A clear operating model matters whether the club uses bulk orders, a store or both.
+        cta_path: /private-club-merchandise
+        cta_label: Map the operating model
+      - id: next_club_moment
+        delay_days: 120
+        intent: Invite a conversation around a real club date
+        subject: The next club moment is the best place to start
+        body: Reply with the next tournament, member event, staff need or seasonal refresh date. We can help work backward from that moment without turning it into a giant program.
+        cta_path: /private-club-merchandise
+        cta_label: Start with one club moment
+
+  school:
+    label: School store planning nurture
+    status: draft
+    owner: maclaine
+    timing_mode: relative_days
+    campaign: nurture-school-store
+    steps:
+      - id: store_model_guide
+        delay_days: 0
+        intent: Help the school choose an operating model
+        subject: Human-managed or self-serve school store?
+        body: The useful question is not just which platform to use. It is who owns products, production, questions, fulfillment and support. This guide compares the two operating models.
+        resource_key: school_store_comparison_guide
+        cta_label: Compare school store models
+      - id: workload_owner
+        delay_days: 21
+        intent: Surface the hidden work behind a store
+        subject: The school store needs an owner, even when it is online
+        body: Product approvals, parent questions, campaign timing and issue resolution still need a named owner. Clarifying that role early keeps the store from becoming extra volunteer work.
+        cta_path: /school-spirit-wear-stores
+        cta_label: Review school store options
+      - id: calendar_moments
+        delay_days: 60
+        intent: Tie the assortment to school-year demand
+        subject: Build the school store around calendar moments
+        body: Back-to-school, teams, clubs, performances, alumni and fundraising do not all need to be live at once. A smaller calendar-based assortment is easier to approve and support.
+        cta_path: /school-spirit-wear-stores
+        cta_label: Map the school-year plan
+      - id: next_opening_window
+        delay_days: 120
+        intent: Reopen around a concrete school deadline
+        subject: When should the next school store window open?
+        body: Send the audience, desired opening date and who will approve products. We can help work backward to the simplest useful store or bulk-order plan.
+        cta_path: /school-spirit-wear-stores
+        cta_label: Plan the next store window
+
+  corporate:
+    label: Corporate merchandise program nurture
+    status: draft
+    owner: ryan
+    timing_mode: relative_days
+    campaign: nurture-corporate-merch
+    steps:
+      - id: buyers_guide
+        delay_days: 0
+        intent: Frame a right-sized company program
+        subject: Start with the smallest company store that solves a real problem
+        body: Audience, demand, fulfillment, support, data and ownership should be clear before platform selection. This buyer's guide organizes those decisions.
+        resource_key: company_store_buyers_guide
+        cta_label: Open the company store guide
+      - id: one_problem_first
+        delay_days: 21
+        intent: Prevent an oversized first implementation
+        subject: One audience is enough for the first merchandise program
+        body: Onboarding, employee recognition, field teams, client gifts and events are different use cases. Starting with one audience makes assortment, approvals and measurement much cleaner.
+        cta_path: /corporate-merch-programs
+        cta_label: Review corporate program options
+      - id: operating_owner
+        delay_days: 60
+        intent: Clarify procurement, brand and support ownership
+        subject: Who owns the program after the launch email?
+        body: Brand approval, purchasing, recipient data, support and replenishment need named owners. Reply with the use case and internal stakeholders, and we can help map the operating path.
+        cta_path: /corporate-merch-programs
+        cta_label: Map the operating path
+      - id: program_checkpoint
+        delay_days: 120
+        intent: Invite a scoped planning conversation
+        subject: Is there one merchandise program worth fixing first?
+        body: If one onboarding, event, gifting or employee program is creating repetitive work, send the audience, volume and timing. We can help define a contained first version.
+        cta_path: /corporate-merch-programs
+        cta_label: Scope the first program
+
+  event:
+    label: Event merchandise planning nurture
+    status: draft
+    owner: ryan
+    timing_mode: relative_days
+    campaign: nurture-event-merch
+    steps:
+      - id: event_timeline
+        delay_days: 0
+        intent: Give the planner a backward-planning tool
+        subject: Plan event merchandise backward from the in-hand date
+        body: Product selection is only one part of the schedule. Artwork, approvals, packing, venue receiving and delivery each need a decision date. This timeline keeps them visible.
+        resource_key: event_merchandise_timeline
+        cta_label: Open the event merchandise timeline
+      - id: delivery_definition
+        delay_days: 14
+        intent: Surface venue, packing and recipient requirements
+        subject: Where does the merchandise need to be on event day?
+        body: One venue shipment, room drops, speaker kits and individual shipping create very different workflows. Define the final handoff before the assortment is locked.
+        cta_path: /event-merchandise
+        cta_label: Review event merchandise options
+      - id: approval_deadline
+        delay_days: 45
+        intent: Turn the event date into internal decision dates
+        subject: The event date is not the approval date
+        body: Work backward to the date when budget, artwork, quantities and shipping must be final. Reply with the event date and delivery model, and we can help organize the decision sequence.
+        cta_path: /event-merchandise
+        cta_label: Map the event timeline
+      - id: next_event
+        delay_days: 90
+        intent: Reopen around the next real event
+        subject: What is the next event worth planning now?
+        body: If a conference, retreat, launch or recognition moment is coming up, send the in-hand date, audience and rough quantity. We can help identify the practical next step.
+        cta_path: /event-merchandise
+        cta_label: Start with the next event

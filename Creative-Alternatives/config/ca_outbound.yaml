@@ -1,0 +1,153 @@
+# CA Outbound — ICP definitions + campaign settings for the /ca-outbound pipeline.
+# The data engine is AI Ark ONLY (no Apollo, no LEAD411). Ryan edits this to point the
+# pipeline at a vertical. AI Ark filters below match the proven batch-1 query
+# (returned 2,918 real decision-makers, 2026-06-26).
+
+schedule:
+  timezone: America/New_York
+  start_hour: "09:00"   # send window start (local)
+  end_hour: "17:00"     # send window end
+  min_time_btw_emails: 12   # minutes between sends per inbox
+  max_leads_per_day: 25     # per-inbox new-lead throttle
+
+# Global guardrails the skill must honor.
+guardrails:
+  draft_only: true            # NEVER auto-activate; Ryan clicks Start in SmartLead
+  max_leads_per_run: 100      # hard cap on AI Ark export per run (credit control)
+  human_review_gate: true     # weeks 1-2 of the game plan: humans approve every send
+  never_include_existing_customers: true   # exclude QuickBooks customers + other distributors
+
+icps:
+  financial:
+    campaign_name: "Swag Handled — Financial (AI-personalized) [DRAFT]"
+    inbox_tag: financial          # SmartLead inbox tag to send from (cold inboxes only)
+    inbox_count: 20               # how many tagged healthy inboxes to attach (LRU)
+    ai_ark:
+      # Resolve exact enum values with industry_search / location_search before the export.
+      industry_keywords: ["financial services", "accounting", "investment", "wealth", "insurance"]
+      title_keywords: ["office manager", "marketing", "operations", "human resources", "executive assistant", "partner"]
+      seniority: ["manager", "director", "head", "partner", "owner"]
+      locations: ["New York", "New Jersey", "Connecticut"]
+      min_employees: 25
+      max_employees: 500
+
+  law:
+    campaign_name: "Swag Handled — Law (AI-personalized) [DRAFT]"
+    inbox_tag: law
+    inbox_count: 20
+    ai_ark:
+      industry_keywords: ["law practice", "legal services", "legal"]
+      title_keywords: ["office manager", "marketing", "operations", "human resources", "executive assistant", "partner", "firm administrator"]
+      seniority: ["manager", "director", "head", "partner"]
+      locations: ["New York", "New Jersey", "Connecticut"]
+      min_employees: 25
+      max_employees: 500
+
+  # Law Campaign #3 (2026-07-14): FALL RECRUITING SEASON — hard ~6wk deadline (OCI/offer packages/
+  # summer-associate branding). NEW buyer persona (legal recruiting, untouched by Law US/National =
+  # low suppression overlap) + NEW geos (Law US owns NY/NJ/CT). 500 leads in 5x100 batches, every
+  # batch through ca_touch_ledger.py check BEFORE anything else (~6k law contacts already touched).
+  # Copy: sequences/law-recruiting-cold-copy.md (escalating follow-ups — the step-data fix).
+  law_recruiting:
+    campaign_name: "Swag — Law Recruiting Season [DRAFT]"
+    smartlead_campaign_id: 3582356   # reuse the empty DRAFTED shell "Law Firm Custom Apparel & Gifting" — rename in UI
+    inbox_tag: law3                  # 20 of the vantage 29 (attach by ID from config/planners_fleet.json)
+    inbox_count: 20
+    ai_ark:
+      industry_keywords: ["law practice", "legal services"]
+      title_keywords: ["legal recruiting", "attorney recruiting", "recruiting manager", "recruiting coordinator", "director of recruiting", "legal talent", "talent acquisition"]
+      seniority: ["senior", "manager", "director", "head"]
+      locations: ["Texas", "Florida", "Illinois", "Georgia", "Pennsylvania", "District of Columbia"]
+      min_employees: 25
+      max_employees: 500
+
+  # PERSONA play, not an industry play — planners exist in every industry, so NO industry filter.
+  # One planner = 5-20 events/yr, each needing swag → a channel relationship, not a one-off sale.
+  # Verified AI Ark population 2026-07-10: "event planner" US=26,370, "director of events" US=20,337,
+  # "meeting planner" US=3,950; all-titles SC=753. Copy/offer: sequences/event-planners-cold-copy.md.
+  event_planners:
+    campaign_name: "Event Kit Partner — Planners (AI-personalized) [DRAFT]"
+    inbox_tag: planners           # tag inboxes in SmartLead before first run
+    inbox_count: 10               # pilot-sized; scale after first replies
+    ai_ark:
+      industry_keywords: []       # intentionally empty — persona play (see note above)
+      title_keywords: ["event planner", "event coordinator", "meeting planner", "director of events", "event manager", "event producer", "conference planner"]
+      exclude_title_keywords: ["wedding", "bridal", "party"]   # consumer/social planners buy favors, not branded merch
+      seniority: ["senior", "manager", "director", "head", "owner", "founder"]
+      locations: ["South Carolina", "North Carolina", "Georgia", "New York"]   # pilot: home turf + historic NY base
+      min_employees: 2            # event agencies are tiny — don't floor them out
+      max_employees: 1000         # above this = agency-locked procurement (Alarm.com lesson)
+    # Two sub-segments, same offer, different opener emphasis:
+    #   in-house  (corporate/assoc/nonprofit planner) → "your events' swag, handled" (direct buyer)
+    #   agency    (event agency / independent producer) → "your invisible swag department" (channel partner,
+    #              free client-logo mockups for THEIR pitches, white-label, margin on every event)
+
+  # PARTNER PILOT 2026-07-17 — one partner can create multiple end-buyer opportunities.
+  # These campaigns recruit channel partners, NOT promotional-product buyers. Keep them separate from
+  # customer campaigns and measure live opportunities + paid gross profit, not replies alone.
+  partner_agencies:
+    campaign_name: "CA Partners — Creative Agencies [DRAFT]"
+    inbox_tag: partners
+    inbox_count: 6
+    ai_ark:
+      industry_keywords: ["marketing services", "advertising services", "design services", "public relations", "branding", "digital marketing"]
+      title_keywords: ["founder", "owner", "president", "managing director", "agency principal", "client services director", "account director"]
+      exclude_title_keywords: ["freelance designer", "intern", "student"]
+      seniority: ["owner", "founder", "partner", "c_suite", "director"]
+      locations: ["New York", "New Jersey", "Connecticut", "South Carolina", "North Carolina", "Georgia"]
+      min_employees: 2
+      max_employees: 100
+    partner_offer: "White-Label Merch Desk"
+    success_event: "permissioned live client opportunity"
+
+  partner_event_agencies:
+    campaign_name: "CA Partners — Event Planners & Producers [DRAFT]"
+    inbox_tag: partners
+    inbox_count: 6
+    ai_ark:
+      industry_keywords: ["events services", "event management", "experiential marketing", "conference production", "meetings and events"]
+      title_keywords: ["founder", "owner", "president", "event producer", "executive producer", "director of events", "managing director"]
+      exclude_title_keywords: ["wedding", "bridal", "party", "social events"]
+      seniority: ["owner", "founder", "partner", "c_suite", "director"]
+      locations: ["New York", "New Jersey", "Connecticut", "South Carolina", "North Carolina", "Georgia"]
+      min_employees: 2
+      max_employees: 100
+    partner_offer: "Planner Merch Concierge"
+    success_event: "permissioned live event opportunity"
+
+  partner_people_advisors:
+    campaign_name: "CA Partners — HR & People Advisors [DRAFT]"
+    inbox_tag: partners
+    inbox_count: 6
+    ai_ark:
+      industry_keywords: ["human resources services", "staffing and recruiting", "business consulting", "employee benefits", "professional employer organization"]
+      title_keywords: ["founder", "owner", "principal", "partner", "human resources consultant", "people consultant", "benefits consultant", "managing director"]
+      exclude_title_keywords: ["internal recruiter", "talent acquisition specialist", "intern"]
+      seniority: ["owner", "founder", "partner", "c_suite", "director"]
+      locations: ["New York", "New Jersey", "Connecticut", "South Carolina", "North Carolina", "Georgia"]
+      min_employees: 2
+      max_employees: 200
+    partner_offer: "Employee Moment Merch Partner"
+    success_event: "permissioned live client opportunity"
+
+# Signal-based SmartLead auto-segmentation (used by scripts/ca_smartlead_segment.py).
+# Hot bands (priority/act-48h from /ca-signals) route into the "hot" campaign with the signal in the
+# opener; lower bands sit in "base" until a signal fires. IDs are from your real SmartLead account.
+# NOTE: the hot campaigns below are ACTIVE (sending) — routing a lead in with --apply means it WILL
+# be emailed on schedule. Keep hot_campaign paused if you want a human review gate first.
+segmentation:
+  hot_bands: ["act-48h", "priority"]     # everything else = base
+  law:
+    hot_campaign_id: 3562940             # "Swag — Law (US)" [ACTIVE]
+    base_campaign_id: 3580723            # "Swag — Law National (Retreat Season)" [DRAFTED]
+  financial:
+    hot_campaign_id: 3562938             # "Swag — Financial (US)" [ACTIVE]
+    base_campaign_id: 3562938            # (no separate base yet — reuse; set a draft id to split)
+
+# A/B design (governed by the experiment-design skill):
+#   arm A = situation_line personalized per-lead (Problem Sniffing)
+#   arm B = generic industry opener (AI Generic control)
+# Split ONE randomized list 50/50 across arms; judge on positive replies at day 21.
+ab:
+  arms: ["personalized", "generic"]
+  min_per_arm: 300   # do not declare a winner below this (noise floor at CA volume)

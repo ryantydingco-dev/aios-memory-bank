@@ -4,6 +4,29 @@
 
 Creative Alternatives is Kenny’s long-running promotional-products business (`https://www.creativealternatives.com/`). Ryan is increasingly treating this as the primary applied AIOS venture: use his AI/operator knowledge to help his girlfriend’s dad modernize a real business with existing revenue, customers, suppliers, and workflows.
 
+## 2026-08-04 layoff day — CA's role in the 8-week window
+
+- **Ryan was laid off today (8 weeks severance → ~2026-09-29) and is now effectively full-time on Dealthreads + CA.** The severance plan (`Dealthreads Outbound Engine/severance-plan.md`) puts CA on Track 3: **ask Kenny for a retainer + commission on Wednesday** — framed as a role, not a favor (Ryan built and runs the client-acquisition system; the CA warm-call sheet alone carries ~$35.5K of pipeline he built; even $2K/mo + commission changes the 8-week math). This supersedes the 07-24 "Dealthreads-only" override for the severance window.
+- **daily-wf-brief fired 19:18; `history.json` STILL only holds the 07-24 + 07-30 entries** — the append step has failed across at least five runs. Briefs generate; the history write is broken. Balance-delta reporting is unreliable until fixed.
+- **Landscape intelligence cadence healthy:** 08-03 brief (Anthropic Slack "Claude Tag" — org-identity agents need permission/spend controls) and 08-04 brief (OpenAI GPT-Live realtime-voice engineering disclosure — borrow the shadow-mode/telemetry/isolation rollout discipline only; no inbox connector, no voice, no customer/vendor agent) both saved to `Creative-Alternatives-AIOS/outputs/ai-landscape/daily/`.
+
+## 2026-08-10 event-swag wave built — four lanes → SmartLead campaigns
+
+The 2026-07-08 trade-show exhibitor thesis was executed at scale in one evening session (subagent fleet draining AI Ark email_finder result pages, then one merger agent per lane):
+
+- **Winter shows** — 33/33 chunks drained; 5,223 email rows joined to 8,251 enriched person_ids across CES (2,512), SHOT (1,746), NRF (1,188), WOC (1,081), IBS (904), KBIS (597), WWETT (223); 391 multi-show duplicates resolved by show priority; 0 join misses.
+- **Q4 gifting** — 54/54 chunks; merged + campaign built.
+- **Gala/nonprofit** — two jobs verified drained; merged + campaign built.
+- **Law-firm administrators** — 50/50 chunks; merged + campaign built; flagged in-session as CA's highest-value ICP.
+
+All lanes cross-referenced against `_exclusion_set.json`; 233 sending inboxes on the SmartLead account. **Campaigns are BUILT, not verified live** — confirm posted status + QA sequences before any measured send. Same evening: a second trade-shows-expo reply was fulfilled end-to-end per `daily-swag-engine.md` (SmartLead thread → mockups → Gamma deck → ready-to-send response).
+
+## 2026-07-28 → 07-30 revenue operating system + repo publish + finance snapshot
+
+- **Revenue operating system built (07-28, Codex).** Direction set: QuickBooks as the eventual source of truth for customer/revenue data. Delivered inside `Creative-Alternatives-AIOS`: one integrated workbook (import/cleaning + tracker + operating views), canonical Markdown playbooks, and local validation/report scripts — consolidated into existing source-of-truth files rather than a competing playbook. Built on the existing acquisition/QuickBooks foundations as constraints.
+- **CA-AIOS repo published to GitHub (07-28, Codex)** on `master` — alongside `ryantydingco-dev/aios-memory-bank` — explicitly so the Mac Studio can clone both. Studio bring-up (identical paths, then launchd per single-writer rule) is now unblocked.
+- **Finance snapshot (07-30, daily brief):** WF Checking $462,378.07 (+$18,230.35 vs 07-24) · Chase −$6,000.00 · CA 6026 −$75,839.13 · AR $536,816.97 · AP $161,016.27. Note: the scheduled brief fired 3x that morning (duplicate task definitions suspected; third run deduped cleanly).
+
 ## 2026-07-24 first Pillar-1 automation shipped + fulfillment-visibility gap
 
 - **Sheets auto-close live (commit `d678fbf`).** Apps Script inside each printer sheet (Viking + Diamond): a row in the OPEN tab that gets a tracking number — or is Messenger/Pick Up with a completed marker — is copied to CLOSED and removed from OPEN. Installable onEdit trigger for instant moves + 30-min time sweep as backstop. The failure-modes doc (`docs/failure-modes/sheets-auto-close.md`) is the durable asset: 8 named failure modes with mitigations (installable trigger not simple onEdit, LockService vs double-moves, append→verify→delete ordering, bottom-up sweep, PO#+description row qualification, ≥8-char tracking heuristic, keyword+method AND-rule for messenger, hidden `_auto_log` audit tab, onOpen "Run sweep now" menu). Silent-failure detection: tracking numbers piling up in OPEN + empty `_auto_log`. Free; seconds/day of quota at CA volume. **This is the template for future CA sheet automations — smallest script possible, failure modes documented first, audit log built in.** Post-build notes due after week one.

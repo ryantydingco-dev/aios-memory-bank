@@ -1,0 +1,42 @@
+# Geo targeting for /ca-new-gyms. Per-city Google News queries (the city name is required, which is the
+# only reliable way to geo-scope News RSS). Start with SC (Ryan's home state), then SE + NE.
+# Add cities to widen coverage. `default_state` is used when --state/--region isn't passed.
+
+default_state: SC
+
+regions:
+  southeast: [SC, NC, GA, FL, TN, VA]
+  northeast: [NY, NJ, CT, MA, PA, MD, RI, NH]
+
+states:
+  SC:   # start here — full metro coverage
+    cities: ["Charleston", "Mount Pleasant", "North Charleston", "Summerville", "Columbia",
+             "Lexington SC", "Greenville SC", "Spartanburg", "Greer", "Rock Hill", "Fort Mill",
+             "Myrtle Beach", "Hilton Head", "Bluffton", "Aiken", "Florence SC"]
+  NC:
+    cities: ["Charlotte", "Raleigh", "Durham", "Cary", "Chapel Hill", "Greensboro", "Asheville",
+             "Wilmington NC", "Winston-Salem"]
+  GA:
+    cities: ["Atlanta", "Savannah", "Augusta GA", "Alpharetta", "Marietta", "Athens GA"]
+  FL:
+    cities: ["Miami", "Tampa", "Orlando", "Jacksonville", "Fort Lauderdale", "Naples FL", "Sarasota"]
+  TN:
+    cities: ["Nashville", "Knoxville", "Chattanooga", "Franklin TN"]
+  VA:
+    cities: ["Richmond VA", "Virginia Beach", "Arlington VA", "Alexandria VA", "Charlottesville"]
+  NY:
+    cities: ["New York", "Brooklyn", "Long Island", "Westchester", "Buffalo", "Rochester NY"]
+  NJ:
+    cities: ["Jersey City", "Hoboken", "Newark NJ", "Montclair", "Princeton NJ"]
+  CT:
+    cities: ["Stamford", "Greenwich CT", "New Haven", "Hartford"]
+  MA:
+    cities: ["Boston", "Cambridge MA", "Newton MA", "Worcester"]
+  PA:
+    cities: ["Philadelphia", "Pittsburgh", "King of Prussia"]
+  MD:
+    cities: ["Baltimore", "Bethesda", "Annapolis"]
+  RI:
+    cities: ["Providence"]
+  NH:
+    cities: ["Manchester NH", "Portsmouth NH"]

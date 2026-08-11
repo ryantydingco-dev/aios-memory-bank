@@ -1,0 +1,50 @@
+schema_version: "1.0"
+loop_id: quote-throughput
+status: design_ready_sources_incomplete
+objective: Reduce time from qualified request to complete margin-safe quote draft.
+primary_metric: median_hours_qualified_request_to_complete_draft
+secondary_metrics:
+  - quote_completion_rate
+  - human_approval_time
+  - win_rate
+  - gross_margin_pct
+states:
+  - READY
+  - NEEDS_PRICE
+  - NEEDS_CUSTOMER_INPUT
+  - STALE
+inputs:
+  available:
+    - data.db quote history
+    - customer and request context
+    - margin-floor policy
+  blocked:
+    - decorator rate cards from Kenny
+    - supplier API credentials
+builder:
+  allowed:
+    - classify_quote_state
+    - identify_missing_fields
+    - draft_product_cost_and_margin_workbook
+    - draft_follow_up_question
+  prohibited:
+    - send_quote
+    - invent_cost
+    - price_below_margin_floor
+    - contact_customer_or_vendor
+verifier:
+  checks:
+    - source_for_every_cost
+    - margin_recalculation
+    - quantity_and_decoration
+    - deadline_and_shipping
+    - customer_identity
+memory:
+  overrides: outputs/loops/quote-throughput/kenny-overrides.jsonl
+  runs_dir: outputs/loops/quote-throughput/runs
+completion_contract:
+  outcome: Every qualified request is classified and has either a complete verified draft or an explicit evidence-backed blocker.
+  verification: Independent recalculation confirms cost and margin; unknowns are marked instead of inferred.
+  constraints: Human approval for all prices and customer-facing output; preserve Kenny's judgment.
+  boundaries: CA quote artifacts and approved source systems only.
+  stop_when: Required pricing evidence or customer information is unavailable.

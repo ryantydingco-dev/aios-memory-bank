@@ -82,20 +82,33 @@ Treat this as promising early evidence, not validated economics. Track meetings,
 - **Fractional-SDR strategy session.** Ryan restated the driver: expects to lose the day job "rather soon over the next month," oscillating between quick money and CA. Framing holds: fractional SDR pays, CA compounds. Context saved to `claude-memory/income-runway-2026-07.md`.
 - **Sprint window closed.** The 07-18→07-24 revenue sprint ended today. Due-today items (Angel recap, Dane 10am CT call, first dial block) have no outcomes visible in scanned sessions — reconcile the Control Tower workbook.
 
+## 2026-07-29 warm call block built — conversion week becomes dials
+
+- **The Lucero play, Dealthreads side:** six confirmed positive replies, zero booked meetings, all dialable — assembled at `Dealthreads Outbound Engine/warm-call-block.md` with per-contact scripts and pre-written asks: Dane Reese / Hire Energy Staffing (CALL FIRST — said "show me what you've got" Jul 16, gave his cell, nobody called for 13 days), Joe Centrella / Autumn Group, Joel Berger / Meridian, Luke Gendron / Spyglass (lead with the $497 List Sprint down-sell), Mandy Moore / Corporate Resources of IL (office line — ask for her by name), Chris Heinz / Westport One (call only AFTER his senior-living package lands; Bridge the Gap podcast ambassador). Rules: parallel dialing OFF on warm lists, conversations not pitches, one ask then silence, disposition every call (`DIALS 6`). Angel Williams = HOLD — email close at paperwork stage, no mobile exists in any database (AI Ark 404), needs the proposal + payment link. Deliberately NOT a Salesfinity import: six warm contacts = phone and a piece of paper.
+- **Status corrections surfaced by the build:** the Meridian package (18-row niche-proof + 40-row enriched) WAS delivered — Joel replied 07-24 "Will take the weekend to evaluate & respond next week," silent since; the Autumn Group package was delivered 07-22; the planned 07-24 Dane call apparently never happened.
+
+## 2026-08-04 — laid off; The 8-Week Plan + first deliverable of the runway
+
+- **Ryan was laid off today. 8 weeks severance → runway ~2026-09-29.** The response plan is vaulted at `Dealthreads Outbound Engine/severance-plan.md`. Diagnosis: 5,668 sends last week → 18 replies → 7 confirmed hand-raisers → **zero asked for money**. The machine works; the asks were never made.
+- **Four tracks:** (1) close the seven warm THIS WEEK in order — Angel (proposal + link), Dane ($1,500 audit), Joe ($2,500 audit), Joel ($2,000 trial), Chris (send package then call), Luke + Mandy ($497 List Sprint); (2) **$497 List Sprint becomes the LEAD offer** (~1 hr / ~$15 credits to fulfill; 4 sales = $2K at 95% margin); (3) **ask Kenny for a CA retainer + commission Wednesday** — supersedes the 07-24 "Dealthreads-only" override for this window; (4) admin money: SC unemployment filing + COBRA-vs-marketplace pricing.
+- **Honest math:** realistic 8-week outcome $4,000–9,000 + ~1 more close from the machine — proof, not salary replacement. Off the table for 8 weeks: new tools, verticals, builds, offers. **Only metric: asks made per week.**
+- **Hard blocker, first task:** the $497/$1,500 Stripe payment links still don't exist — a yes cannot become money. Open since 07-20.
+- **First deliverable of the runway (evening):** subagent built a verified prospect list CSV from `dealthreads-engine/queues/sublime_candidates.json` — 45 ranked HR/Talent-Acquisition decision-makers at Houston-area healthcare employers (signal-scored, hiring-badge), AI Ark email verification per record. Framed as "a client deliverable." **Unconfirmed whether "Sublime" is a signed client or a sample build — classify before counting it.** If it's prospecting into a new vertical, it collides with the 8-week freeze; if it's paid client work, it's the first revenue-adjacent delivery of the window.
+- Same evening: the content-production system + Episode 1 beat sheet were built (see `Personal Brand/`); hard rule — content never displaces an ask.
+
 ## Income role
 
-Ryan expects to lose his day job around mid-August 2026 and needs roughly $10,000/month. On 2026-07-16 he explicitly chose Dealthreads/fractional SDR as the near-term paying-work lane while Creative Alternatives remains the long-term equity/commission investment.
+~~Ryan expects to lose his day job around mid-August 2026~~ **The day job ended 2026-08-04; severance runway to ~2026-09-29.** Dealthreads/fractional SDR is the near-term paying-work lane while Creative Alternatives remains the long-term equity/commission investment — with the severance plan's Track 3 Kenny retainer ask now scheduled (Wednesday of layoff week). Target remains roughly $10,000/month; the 8-week plan's realistic window outcome is $4,000–9,000 plus proof.
 
 Key guardrail: this is permission to **sell and deliver the existing stack**, not permission to begin another product build. Reuse the infrastructure already present from earlier outbound systems.
 
 ## Open loops
 
-- **Package + deliver the Meridian lists to Joel Berger** — 18-row niche-proof + 40-row enriched, with selection logic, guarantee v2, mechanism-block copy. Never contact the rows themselves.
-- **Drop the Angel meeting recording** where agents can see it → proposal recap was due 07-24 with a specific ask and start date.
-- **Authorize the Gmail connector + app password** — blocks the follow-up system's email visibility.
-- **Dane call 07-24 10am CT** with pre-committed ask; **Joe call Friday 07-25** + record the tour; first HOT-list dial block (69 firms) after Dane.
-- **Create the two payment links** ($1,500 pilot, $2,000 trial) and paste them into the SOWs — this blocks every close.
-- Deliver the Autumn Group sample list to Joe Centrella with selection logic + hiring signals; book the follow-up call.
+- **CREATE THE STRIPE PAYMENT LINKS ($497 + $1,500) — first task of the severance plan, open since 07-20.** Blocks every close, including Angel's email close and any warm-call yes.
+- **Classify the Sublime deliverable (2026-08-04)** — signed client or sample? Confirm payment path if client; check against the 8-week no-new-verticals freeze if prospecting.
+- **Run the severance-plan week** — Mon: Stripe links + Angel proposal/link + Dane call + Becki reply; Tue: Joe + Joel calls, Chris package then call; Wed: Kenny retainer ask + Luke/Mandy List Sprint offers; Thu: 6 Looms + unemployment filing; Fri: cold-bench dial block + asks-made review.
+- **Drop the Angel meeting recording** where agents can see it → proposal recap was due 07-24 with a specific ask and start date; still not visible as of 07-30.
+- **Authorize the Gmail connector + app password** — blocks the follow-up system's email visibility; flagged repeatedly since 07-23.
 - Scrub wave 3/4 lists against active campaigns and global suppression before any SmartLead upload.
 - Complete and verify the fresh 5,000+ staffing-lead pull and live SmartLead uploads.
 - Dedupe against all active campaigns and global suppression lists.

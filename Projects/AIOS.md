@@ -50,6 +50,12 @@ Durable decision:
 
 Future agents should respect this architecture before adding scheduled jobs or runtime-writing automation. Do not create competing launchd/runtime writers on the MacBook unless Ryan explicitly changes the architecture.
 
+## 2026-07-28 GitHub publishes — Studio clone unblocked
+
+- Codex ran the yeet/publish workflow on both synced projects: AIOS-Memory-Bank → `ryantydingco-dev/aios-memory-bank` (private, commit `3a5c735`) and Creative-Alternatives-AIOS → GitHub on `master`. Explicit purpose: clone onto the Mac Studio.
+- Next steps for Studio bring-up: clone both repos at identical paths, then install launchd/scheduled jobs per the single-writer rule (Studio = automation server).
+- Watch: the memory bank accumulated new uncommitted work within a day of publishing (Personal Brand/, AI GTM Engine/Ad Creative Engine/, Dealthreads warm-call-block.md, outputs/) — publish cadence matters if `git log` is the cross-machine session log.
+
 ## 2026-06-23 Creative Alternatives pivot
 
 - Ryan wants a fresh AIOS SYSTEM install dedicated to **Creative Alternatives** (`creativealternatives.com`), Kenny’s 25+ year business.

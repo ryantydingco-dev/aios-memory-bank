@@ -1,5 +1,9 @@
 # Memory Index
 
+- [Fulfillment: keep it simple](fulfillment-keep-it-simple.md) — Ryan's rules (2026-08-10): short replies, strategy in vault not prospect assets, and classic logo treatments over gag concepts ("logo on some socks, call it a day"); v4-style deck format is fine.
+
+- [Personal brand plan](personal-brand-plan.md) — Caleb Ralston-derived brand strategy (2026-07-29): document CA transformation, LinkedIn primary + monthly YouTube pillar, trust>virality; full plan in AIOS-Memory-Bank/Personal Brand/.
+
 - [honest-math sprints](honest-math-sprints.md) — /honest-math (2026-07-20): day-zero funnel-math-backwards w/ observed rates + tripwires before any revenue push; Dealthreads sprint doc live (warm board > volume; ~1 positive per 700-1,100 sends observed).
 - [verify-copy + preflight skills](verify-preflight-skills.md) — 2026-07-19: worker/verifier split (fresh-context agents grade CA copy against rubrics; never self-grade) + failure-modes-first explainers before new pipelines; context trim audit in vault Projects/.
 
@@ -8,7 +12,7 @@
 - [Ryan sales background](ryan-sales-background.md) — lifelong cold outreach: Kirby door-to-door → roofing/LinkedIn → tech SDR → senior SDR → growth AM in one year; still prospects daily. Founder story for Dealthreads.
 
 - [Dealthreads Outbound Engine](dealthreads-outbound-engine.md) — dealthreads.io revival (2026-07-16): packaged DFY multi-channel outbound offer (email+LinkedIn+calling+AI Ark); 77 warmed non-CA SmartLead inboxes verified live (100 total, 96 @ 100% rep) = immediate acquisition weapon; client campaigns on new client-branded domains; cap 3 full clients solo.
-- [Income runway 2026-07](income-runway-2026-07.md) — Ryan expects to lose his day job ~mid-Aug 2026; needs bridge income without derailing CA; pivot-temptation pattern under money pressure — first move = get paid BY CA (Kenny retainer+commission), max ONE warm fractional-SDR client, no new builds.
+- [Income runway 2026-07](income-runway-2026-07.md) — **LAID OFF 2026-08-04; 8 weeks severance → ~Sept 29.** Plan: `Dealthreads Outbound Engine/severance-plan.md` — close the 7 warm this week, $497 List Sprint = lead offer, Kenny retainer ask Wednesday, unemployment + COBRA admin. Hard blocker: no Stripe payment links. Off the table 8 weeks: new tools/verticals/builds/offers. Only metric: asks made per week.
 
 - [Two-machine sync](two-machine-sync.md) — MacBook ↔ Mac Studio git architecture (2026-07-07): 4 private repos, claude-memory synced via symlink, 20-min sync job + SessionStart hook LIVE on MacBook; Studio bring-up pending (studio-setup/README.md).
 - [Self-sourcing leads playbook](self-sourcing-leads-playbook.md) — cut AI Ark credit burn (2026-07-07 verified): emails ~$0.02/contact via owned Apify/ZeroBounce/Firecrawl + free NY-bar/SEC/FINRA registries; mobiles only via providers gated on engagement; TCPA/scraping guardrails. AI Ark = gap-filler only.

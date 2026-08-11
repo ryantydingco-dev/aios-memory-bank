@@ -1,0 +1,36 @@
+schema_version: "1.0"
+loop_id: deliverability-safety
+status: enabled
+objective: Keep assigned Smartlead sending accounts healthy and detect regressions before campaigns send.
+primary_metric: healthy_connected_percentage
+guardrails:
+  blocked_accounts_max: 0
+  assigned_connection_failures_max: 0
+  campaign_bounce_rate_pause_pct: 2.0
+inputs:
+  - smartlead_email_accounts_api
+  - smartlead_campaigns_api
+cadence: "0 8 * * 1-5"
+collector:
+  script: scripts/ca_deliverability_loop.py
+  deterministic: true
+outputs:
+  state: outputs/loops/deliverability-safety/state.json
+  latest_report: outputs/loops/deliverability-safety/latest-report.json
+  runs_dir: outputs/loops/deliverability-safety/runs
+safe_actions:
+  - report_new_failures
+  - report_recoveries
+  - identify_affected_draft_or_active_campaigns
+prohibited_actions:
+  - activate_campaign
+  - resume_campaign
+  - reconnect_account
+  - change_dns
+  - send_message
+completion_contract:
+  outcome: Daily Smartlead health state is captured and meaningful regressions are reported.
+  verification: Report reconciles to the live email-account API and lists affected campaigns by account ID.
+  constraints: Never reveal account addresses or credentials in delivered output; never change campaign status.
+  boundaries: Smartlead read-only APIs and outputs/loops/deliverability-safety.
+  stop_when: API authentication fails or account/campaign response shape is unknown.

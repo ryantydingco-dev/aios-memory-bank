@@ -1,0 +1,204 @@
+schema_version: "1.0.0"
+
+guardrails:
+  review_only: true
+  create_deal_after_human_qualification: true
+  overwrite_first_touch: false
+
+groups:
+  contacts: {name: ca_inbound, label: CA Inbound}
+  companies: {name: ca_inbound, label: CA Inbound}
+  deals: {name: ca_inbound, label: CA Inbound}
+
+option_sets:
+  niche:
+    camp: Summer camps and youth programs
+    racquet_club: Squash, racquet and padel clubs
+    law_firm: Law firms
+    private_club: Private and member clubs
+    school: Schools, academies and PTAs
+    corporate: Corporate teams and People Operations
+    event: Events, conferences and retreats
+    financial_services: Financial services
+    youth_sports: Youth sports and academies
+    fitness: Boutique fitness and studios
+    construction: Construction and trades
+    manufacturing_automotive: Manufacturing and automotive
+    professional_services: Professional services
+    healthcare: Healthcare organizations
+    other: Other
+  service_interest:
+    bulk_order: Bulk order
+    online_store: Managed online store
+    gifting: Client or employee gifting
+    event_program: Event merchandise
+    rush_request: Rush feasibility request
+    unsure: Unsure
+  quantity_range:
+    under_50: Under 50
+    "50_149": 50-149
+    "150_499": 150-499
+    "500_1999": 500-1,999
+    2000_plus: 2,000+
+    unknown: Unknown
+  shipping_model:
+    one_location: One location
+    multiple_locations: Multiple locations
+    individual_recipients: Individual recipients
+    venue: Venue
+    unknown: Unknown
+  qualification_status:
+    qualified: Qualified
+    nurture: Nurture
+    existing_customer: Existing customer
+    vendor_partner: Vendor or partner
+    job_seeker: Job seeker
+    spam: Spam
+    no_fit: No fit
+  inquiry_status:
+    new_inquiry: New inquiry
+    in_review: In review
+    qualified: Qualified
+    nurture: Nurture
+    existing_customer: Existing customer
+    vendor_partner: Vendor or partner
+    job_seeker: Job seeker
+    spam: Spam
+    no_fit: No fit
+    duplicate: Duplicate
+  nurture_status:
+    ineligible: Ineligible
+    eligible: Eligible
+    enrolled: Enrolled
+    paused: Paused
+    completed: Completed
+  no_fit_reason:
+    single_item_consumer: Single item or consumer
+    unsupported_product: Unsupported product
+    unsupported_fulfillment: Unsupported fulfillment
+    timing_impossible: Timing impossible
+    geography_shipping_unsupported: Geography or shipping unsupported
+    budget_mismatch: Budget mismatch
+    not_buyer: Not a buyer or decision process
+    duplicate: Duplicate
+    other: Other
+  customer_status:
+    prospect: Prospect
+    active_customer: Active customer
+    reorder_due: Reorder due
+    former_legacy: Former or legacy customer
+    no_fit: No fit
+  self_reported_source:
+    google_search: Google search
+    google_maps: Google Maps or Business Profile
+    referral_customer: Referral or customer
+    association_directory: Association or directory
+    linkedin: LinkedIn
+    instagram_facebook: Instagram or Facebook
+    youtube_content: YouTube or content
+    outbound: Cold email or LinkedIn outreach
+    event_conference: Event or conference
+    existing_relationship: Existing relationship
+    other: Other
+  planning_horizon:
+    current_project: Current project
+    under_30_days: Under 30 days
+    30_90_days: 30-90 days
+    3_6_months: 3-6 months
+    6_12_months: 6-12 months
+    next_season: Next season
+    unknown: Unknown
+  order_model:
+    bulk: Bulk
+    store: Store
+    gifting: Gifting
+    event: Event
+    mixed: Mixed
+  delivery_burden:
+    low: Low
+    medium: Medium
+    high: High
+
+properties:
+  # Contacts: durable identity, first/latest touch, and buyer context.
+  - {object_type: contacts, name: ca_first_touch_source, label: CA First Touch Source, type: string, field_type: text, form_field: true, description: Set once and never overwrite.}
+  - {object_type: contacts, name: ca_first_touch_medium, label: CA First Touch Medium, type: string, field_type: text, form_field: true, description: Set once and never overwrite.}
+  - {object_type: contacts, name: ca_first_touch_campaign, label: CA First Touch Campaign, type: string, field_type: text, form_field: true, description: Set once and never overwrite.}
+  - {object_type: contacts, name: ca_first_touch_term, label: CA First Touch Term, type: string, field_type: text, form_field: true, description: Set once when available.}
+  - {object_type: contacts, name: ca_first_touch_content, label: CA First Touch Content, type: string, field_type: text, form_field: true, description: Set once when available.}
+  - {object_type: contacts, name: ca_latest_touch_source, label: CA Latest Touch Source, type: string, field_type: text, form_field: true, description: Update on a new attributable inquiry.}
+  - {object_type: contacts, name: ca_latest_touch_medium, label: CA Latest Touch Medium, type: string, field_type: text, form_field: true, description: Update on a new attributable inquiry.}
+  - {object_type: contacts, name: ca_latest_touch_campaign, label: CA Latest Touch Campaign, type: string, field_type: text, form_field: true, description: Update on a new attributable inquiry.}
+  - {object_type: contacts, name: ca_latest_touch_term, label: CA Latest Touch Term, type: string, field_type: text, form_field: true, description: Update when available.}
+  - {object_type: contacts, name: ca_latest_touch_content, label: CA Latest Touch Content, type: string, field_type: text, form_field: true, description: Update when available.}
+  - {object_type: contacts, name: ca_primary_niche, label: CA Primary Niche, type: enumeration, field_type: select, option_set: niche, form_field: true, description: Human-correctable primary niche.}
+  - {object_type: contacts, name: ca_buyer_role, label: CA Buyer Role, type: string, field_type: text, form_field: true, description: Buyer role or responsibility.}
+  - {object_type: contacts, name: ca_marketing_consent, label: CA Marketing Consent, type: bool, field_type: booleancheckbox, form_field: true, description: Separate from permission to answer an inquiry.}
+  - {object_type: contacts, name: ca_service_interest, label: CA Service Interest, type: enumeration, field_type: checkbox, option_set: service_interest, form_field: true, description: One or more services requested on the latest inquiry.}
+  - {object_type: contacts, name: ca_need_date_or_horizon, label: CA Need Date or Horizon, type: string, field_type: text, form_field: true, description: Buyer-entered need date or planning horizon from the latest inquiry.}
+  - {object_type: contacts, name: ca_quantity_range, label: CA Quantity or Audience Range, type: enumeration, field_type: select, option_set: quantity_range, form_field: true, description: Approximate units, recipients, members or audience from the latest inquiry.}
+  - {object_type: contacts, name: ca_shipping_model, label: CA Shipping Model, type: enumeration, field_type: select, option_set: shipping_model, form_field: true, description: Expected delivery model from the latest inquiry.}
+  - {object_type: contacts, name: ca_project_description, label: CA Project Description, type: string, field_type: textarea, form_field: true, description: Buyer-entered project context from the latest inquiry.}
+  - {object_type: contacts, name: ca_logo_upload, label: CA Logo Upload, type: string, field_type: file, form_field: true, description: Logo file submitted with the latest inquiry when upload handling is approved.}
+  - {object_type: contacts, name: ca_brand_guidelines_upload, label: CA Brand Guidelines Upload, type: string, field_type: file, form_field: true, description: Brand-guideline file submitted with the latest inquiry when upload handling is approved.}
+  - {object_type: contacts, name: ca_inquiry_response_consent, label: CA Inquiry Response Consent, type: bool, field_type: booleancheckbox, form_field: true, description: Permission to respond to the specific inquiry; not marketing consent.}
+  - {object_type: contacts, name: ca_landing_page, label: CA Landing Page, type: string, field_type: text, form_field: true, description: Latest commercial page where an inquiry was submitted.}
+  - {object_type: contacts, name: ca_referrer, label: CA Referrer, type: string, field_type: text, form_field: true, description: Browser referrer captured with the latest inquiry.}
+  - {object_type: contacts, name: ca_offer, label: CA Entry Offer, type: string, field_type: text, form_field: true, description: Offer that generated the latest inquiry.}
+  - {object_type: contacts, name: ca_gclid, label: CA GCLID, type: string, field_type: text, form_field: true, description: Google click identifier from the latest inquiry when available.}
+  - {object_type: contacts, name: ca_gbraid, label: CA GBRAID, type: string, field_type: text, form_field: true, description: Google GBRAID from the latest inquiry when available.}
+  - {object_type: contacts, name: ca_wbraid, label: CA WBRAID, type: string, field_type: text, form_field: true, description: Google WBRAID from the latest inquiry when available.}
+  - {object_type: contacts, name: ca_msclkid, label: CA MSCLKID, type: string, field_type: text, form_field: true, description: Microsoft click identifier from the latest inquiry when available.}
+  - {object_type: contacts, name: ca_fbclid, label: CA FBCLID, type: string, field_type: text, form_field: true, description: Meta click identifier from the latest inquiry when available.}
+  - {object_type: contacts, name: ca_inquiry_status, label: CA Inquiry Status, type: enumeration, field_type: select, option_set: inquiry_status, form_field: false, description: Human-controlled status for the latest inquiry before any deal is created.}
+  - {object_type: contacts, name: ca_no_fit_reason, label: CA No-Fit Reason, type: enumeration, field_type: select, option_set: no_fit_reason, form_field: false, description: Required human reason when the latest inquiry is no fit.}
+  - {object_type: contacts, name: ca_last_inquiry_date, label: CA Last Inquiry Date, type: datetime, field_type: date, form_field: false, description: Persisted timestamp of the latest accepted inbound inquiry.}
+  - {object_type: contacts, name: ca_response_due, label: CA Response Due, type: datetime, field_type: date, form_field: false, description: Internal response target set only after the response SLA is approved.}
+  - {object_type: contacts, name: ca_nurture_status, label: CA Nurture Status, type: enumeration, field_type: select, option_set: nurture_status, form_field: false, description: Consent-aware nurture eligibility and suppression state.}
+  - {object_type: contacts, name: ca_next_planning_date, label: CA Next Planning Date, type: date, field_type: date, form_field: false, description: Human-reviewed date for the next useful seasonal planning touch.}
+  - {object_type: contacts, name: ca_quickbooks_customer_id, label: CA QuickBooks Customer ID, type: string, field_type: text, form_field: false, description: Stable reconciliation key when matched.}
+  - {object_type: contacts, name: ca_self_reported_source, label: CA Self-Reported Source, type: enumeration, field_type: select, option_set: self_reported_source, form_field: false, description: Human-recorded answer to how the buyer first heard about CA.}
+
+  # Companies: niche, customer status, and QuickBooks evidence.
+  - {object_type: companies, name: ca_niche, label: CA Niche, type: enumeration, field_type: select, option_set: niche, form_field: false, description: Human-correctable company niche.}
+  - {object_type: companies, name: ca_customer_status, label: CA Customer Status, type: enumeration, field_type: select, option_set: customer_status, form_field: false, description: Prospect and customer lifecycle independent of contact lifecycle.}
+  - {object_type: companies, name: ca_quickbooks_customer_id, label: CA QuickBooks Customer ID, type: string, field_type: text, form_field: false, description: Stable QuickBooks customer key.}
+  - {object_type: companies, name: ca_service_area, label: CA Service Area, type: string, field_type: text, form_field: false, description: Geography for analysis, not automatic targeting permission.}
+  - {object_type: companies, name: ca_first_customer_date, label: CA First Customer Date, type: date, field_type: date, form_field: false, description: First known customer date from QuickBooks.}
+  - {object_type: companies, name: ca_last_order_date, label: CA Last Order Date, type: date, field_type: date, form_field: false, description: Most recent order date from QuickBooks.}
+  - {object_type: companies, name: ca_lifetime_revenue, label: CA Lifetime Revenue, type: number, field_type: number, form_field: false, description: QuickBooks revenue with a documented reporting window.}
+
+  # Deals: created only after human qualification; also stores originating inquiry facts.
+  - {object_type: deals, name: ca_inquiry_id, label: CA Inquiry ID, type: string, field_type: text, form_field: false, description: Stable ID from the accepted inbound submission.}
+  - {object_type: deals, name: ca_inquiry_date, label: CA Inquiry Date, type: datetime, field_type: date, form_field: false, description: Accepted inquiry timestamp.}
+  - {object_type: deals, name: ca_niche, label: CA Niche, type: enumeration, field_type: select, option_set: niche, form_field: false, description: Niche for this opportunity.}
+  - {object_type: deals, name: ca_service_interest, label: CA Service Interest, type: enumeration, field_type: checkbox, option_set: service_interest, form_field: false, description: One or more requested service paths.}
+  - {object_type: deals, name: ca_offer, label: CA Entry Offer, type: string, field_type: text, form_field: false, description: Offer that generated the inquiry.}
+  - {object_type: deals, name: ca_need_date, label: CA Need Date, type: date, field_type: date, form_field: false, description: Requested in-hand or event date when known.}
+  - {object_type: deals, name: ca_planning_horizon, label: CA Planning Horizon, type: enumeration, field_type: select, option_set: planning_horizon, form_field: false, description: Timing bucket when an exact date is unavailable.}
+  - {object_type: deals, name: ca_quantity_range, label: CA Quantity or Audience Range, type: enumeration, field_type: select, option_set: quantity_range, form_field: false, description: Approximate units, recipients, members or audience.}
+  - {object_type: deals, name: ca_shipping_model, label: CA Shipping Model, type: enumeration, field_type: select, option_set: shipping_model, form_field: false, description: Expected delivery model.}
+  - {object_type: deals, name: ca_landing_page, label: CA Landing Page, type: string, field_type: text, form_field: false, description: Commercial page where the inquiry was submitted.}
+  - {object_type: deals, name: ca_referrer, label: CA Referrer, type: string, field_type: text, form_field: false, description: Browser referrer captured at inquiry time.}
+  - {object_type: deals, name: ca_gclid, label: CA GCLID, type: string, field_type: text, form_field: false, description: Google click identifier when available.}
+  - {object_type: deals, name: ca_gbraid, label: CA GBRAID, type: string, field_type: text, form_field: false, description: Google GBRAID when available.}
+  - {object_type: deals, name: ca_wbraid, label: CA WBRAID, type: string, field_type: text, form_field: false, description: Google WBRAID when available.}
+  - {object_type: deals, name: ca_msclkid, label: CA MSCLKID, type: string, field_type: text, form_field: false, description: Microsoft click identifier when available.}
+  - {object_type: deals, name: ca_fbclid, label: CA FBCLID, type: string, field_type: text, form_field: false, description: Meta click identifier when available.}
+  - {object_type: deals, name: ca_utm_source, label: CA UTM Source, type: string, field_type: text, form_field: false, description: Latest attributable UTM source.}
+  - {object_type: deals, name: ca_utm_medium, label: CA UTM Medium, type: string, field_type: text, form_field: false, description: Latest attributable UTM medium.}
+  - {object_type: deals, name: ca_utm_campaign, label: CA UTM Campaign, type: string, field_type: text, form_field: false, description: Latest attributable UTM campaign.}
+  - {object_type: deals, name: ca_utm_term, label: CA UTM Term, type: string, field_type: text, form_field: false, description: Latest attributable UTM term.}
+  - {object_type: deals, name: ca_utm_content, label: CA UTM Content, type: string, field_type: text, form_field: false, description: Latest attributable UTM content.}
+  - {object_type: deals, name: ca_qualification_status, label: CA Qualification Status, type: enumeration, field_type: select, option_set: qualification_status, form_field: false, description: Required human disposition.}
+  - {object_type: deals, name: ca_no_fit_reason, label: CA No-Fit Reason, type: enumeration, field_type: select, option_set: no_fit_reason, form_field: false, description: Required when status is No fit.}
+  - {object_type: deals, name: ca_priority_score, label: CA Priority Score, type: number, field_type: number, form_field: false, description: Review priority only; never auto-reject or auto-quote.}
+  - {object_type: deals, name: ca_response_due, label: CA Response Due, type: datetime, field_type: date, form_field: false, description: Internal response target after human review.}
+  - {object_type: deals, name: ca_original_source_detail, label: CA Original Source Detail, type: string, field_type: text, form_field: false, description: Human-readable origin context preserved on the opportunity.}
+  - {object_type: deals, name: ca_order_model, label: CA Order Model, type: enumeration, field_type: select, option_set: order_model, form_field: false, description: Expected commercial order model.}
+  - {object_type: deals, name: ca_quote_value, label: CA Quote Value, type: number, field_type: number, form_field: false, description: Credible quote value after a quote exists.}
+  - {object_type: deals, name: ca_quickbooks_customer_id, label: CA QuickBooks Customer ID, type: string, field_type: text, form_field: false, description: Matched QuickBooks customer key.}
+  - {object_type: deals, name: ca_quickbooks_order_invoice_id, label: CA QuickBooks Order or Invoice ID, type: string, field_type: text, form_field: false, description: Matched order or invoice key.}
+  - {object_type: deals, name: ca_closed_revenue, label: CA Closed Revenue, type: number, field_type: number, form_field: false, description: Revenue reconciled from QuickBooks.}
+  - {object_type: deals, name: ca_delivery_burden, label: CA Delivery Burden, type: enumeration, field_type: select, option_set: delivery_burden, form_field: false, description: Human assessment of operational complexity.}
+  - {object_type: deals, name: ca_lost_reason_detail, label: CA Lost Reason Detail, type: string, field_type: textarea, form_field: false, description: Specific loss reason used to improve acquisition and operations.}

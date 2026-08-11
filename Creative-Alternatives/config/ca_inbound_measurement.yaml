@@ -1,0 +1,174 @@
+# Review-only GA4, GTM, and downstream conversion contract.
+# Event names and parameters must match the browser runtime and CRM exports.
+
+schema_version: "1.0.0"
+updated: "2026-07-10"
+
+guardrails:
+  review_only: true
+  no_contact_pii_in_analytics: true
+  form_submit_attempt_is_not_conversion: true
+  raw_inquiry_is_not_primary_ad_conversion: true
+  human_qualification_required_for_primary_lead_conversion: true
+  revenue_requires_quickbooks_reconciliation: true
+  consent_behavior_must_be_tested: true
+
+activation_gates:
+  - {id: gtm_access_verified, complete: false, owner: ryan, evidence: ""}
+  - {id: ga4_access_verified, complete: false, owner: ryan, evidence: ""}
+  - {id: measurement_id_confirmed, complete: false, owner: ryan, evidence: ""}
+  - {id: consent_mode_verified, complete: false, owner: ryan, evidence: ""}
+  - {id: event_parameter_qa_passed, complete: false, owner: ryan, evidence: ""}
+  - {id: duplicate_event_qa_passed, complete: false, owner: ryan, evidence: ""}
+  - {id: pii_debugview_qa_passed, complete: false, owner: ryan, evidence: ""}
+  - {id: hubspot_conversion_export_tested, complete: false, owner: ryan, evidence: ""}
+  - {id: google_ads_import_tested, complete: false, owner: ryan, evidence: ""}
+  - {id: quickbooks_revenue_reconciliation_tested, complete: false, owner: ryan, evidence: ""}
+
+data_layer_variables:
+  - {name: DLV - CA Niche, key: ca_niche, type: string}
+  - {name: DLV - CA Offer, key: ca_offer, type: string}
+  - {name: DLV - CA Page Path, key: ca_page_path, type: string}
+  - {name: DLV - CA Resource Name, key: ca_resource_name, type: string}
+  - {name: DLV - CA Placement, key: ca_placement, type: string}
+  - {name: DLV - CA CTA Name, key: ca_cta_name, type: string}
+  - {name: DLV - CA Service, key: ca_service, type: string}
+  - {name: DLV - CA Form ID, key: ca_form_id, type: string}
+  - {name: DLV - CA Submission Method, key: ca_submission_method, type: string}
+
+client_events:
+  view_niche_page:
+    status: draft
+    owner: ryan
+    trigger: Dedicated niche page initializes
+    parameters: [ca_niche, ca_page_path]
+    key_event: false
+    conversion_level: diagnostic
+  view_resource:
+    status: draft
+    owner: ryan
+    trigger: Configured resource page initializes
+    parameters: [ca_niche, ca_resource_name, ca_page_path]
+    key_event: false
+    conversion_level: diagnostic
+  select_service_path:
+    status: draft
+    owner: ryan
+    trigger: Visitor selects a tagged service route or service-interest form field
+    parameters: [ca_niche, ca_service, ca_page_path, ca_placement]
+    key_event: false
+    conversion_level: diagnostic
+  cta_click:
+    status: draft
+    owner: ryan
+    trigger: Visitor clicks an element tagged with data-ca-cta
+    parameters: [ca_niche, ca_offer, ca_cta_name, ca_page_path, ca_placement]
+    key_event: false
+    conversion_level: diagnostic
+  form_start:
+    status: draft
+    owner: ryan
+    trigger: First meaningful focus inside an inbound form
+    parameters: [ca_niche, ca_offer, ca_form_id, ca_page_path]
+    key_event: false
+    conversion_level: diagnostic
+  logo_upload_start:
+    status: draft
+    owner: ryan
+    trigger: Visitor changes the logo-upload field for the first time
+    parameters: [ca_niche, ca_offer, ca_form_id, ca_page_path]
+    key_event: false
+    conversion_level: diagnostic
+  phone_click:
+    status: draft
+    owner: ryan
+    trigger: Visitor clicks a telephone link
+    parameters: [ca_niche, ca_page_path, ca_placement]
+    key_event: false
+    conversion_level: diagnostic
+  email_click:
+    status: draft
+    owner: ryan
+    trigger: Visitor clicks an email link
+    parameters: [ca_niche, ca_page_path, ca_placement]
+    key_event: false
+    conversion_level: diagnostic
+  resource_download:
+    status: draft
+    owner: ryan
+    trigger: Visitor clicks an explicitly tagged resource download or printable asset
+    parameters: [ca_niche, ca_resource_name, ca_page_path, ca_placement]
+    key_event: false
+    conversion_level: diagnostic
+  form_submit_attempt:
+    status: draft
+    owner: ryan
+    trigger: Browser submit event occurs before persistence is confirmed
+    parameters: [ca_niche, ca_offer, ca_form_id, ca_page_path]
+    key_event: false
+    conversion_level: diagnostic_only
+  inquiry_submit:
+    status: draft
+    owner: ryan
+    trigger: HubSpot or the approved form integration confirms the submission persisted
+    parameters: [ca_niche, ca_offer, ca_form_id, ca_page_path, ca_submission_method]
+    key_event: true
+    conversion_level: secondary
+
+server_events:
+  qualified_inbound_lead:
+    status: draft
+    owner: ryan
+    source_system: hubspot
+    trigger: Human sets ca_inquiry_status to qualified and a credible next step exists
+    parameters: [ca_inquiry_id, ca_niche, ca_source, ca_campaign, ca_qualified_at]
+    key_event: true
+    conversion_level: primary
+  quote_created:
+    status: draft
+    owner: ryan
+    source_system: hubspot
+    trigger: A credible quote is created for a qualified inbound deal
+    parameters: [ca_deal_id, ca_niche, ca_source, ca_campaign, value, currency]
+    key_event: true
+    conversion_level: value_stage
+  inbound_customer:
+    status: draft
+    owner: ryan
+    source_system: hubspot
+    trigger: Qualified inbound deal closes won and is identified as new or existing customer
+    parameters: [ca_deal_id, ca_niche, ca_customer_type, ca_source, ca_campaign, value, currency]
+    key_event: true
+    conversion_level: customer
+  inbound_revenue:
+    status: draft
+    owner: ryan
+    source_system: quickbooks_reconciled
+    trigger: Closed revenue is matched to the inbound deal and QuickBooks order or invoice
+    parameters: [transaction_id, ca_deal_id, ca_niche, ca_customer_type, ca_source, ca_campaign, value, currency]
+    key_event: true
+    conversion_level: revenue
+
+forbidden_analytics_parameters:
+  - email
+  - phone
+  - first_name
+  - last_name
+  - full_name
+  - organization
+  - project_description
+  - logo_upload
+  - brand_guidelines_upload
+  - street_address
+  - postal_code
+
+google_ads_conversion_policy:
+  bidding_primary: qualified_inbound_lead
+  observation_only: [inquiry_submit, quote_created, inbound_customer, inbound_revenue]
+  never_import: [form_submit_attempt, form_start, cta_click, phone_click, email_click]
+  enable_only_after:
+    - Human qualification mapping is tested
+    - Click identifiers persist into the qualified record where available
+    - Duplicate imports are prevented by stable event and record identifiers
+    - Consent and customer-data terms are reviewed
+    - One controlled qualified-lead import is visible in both systems

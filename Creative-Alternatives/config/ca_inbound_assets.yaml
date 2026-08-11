@@ -1,0 +1,516 @@
+# Visual, proof, and Squarespace production control for the CA inbound system.
+# Existing public material is a candidate source, not proof of reuse permission.
+
+schema_version: "1.0.0"
+updated: "2026-07-10"
+
+guardrails:
+  review_only: true
+  public_actions_require_approval: true
+  currently_public_does_not_equal_reuse_approved: true
+  written_permission_required_for_customer_identity: true
+  written_permission_required_for_people_and_minors: true
+  stock_or_generated_media_cannot_be_customer_proof: true
+  generated_customer_logos_are_prohibited: true
+  accessible_html_cannot_be_replaced_by_text_in_images: true
+  descriptive_alt_text_required: true
+
+asset_library:
+  - id: current_camp_alvernia_pool
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/1f83c0d5-aa82-40bc-9501-f50857315ed6/Camp+Alvernia.jpg
+    current_filename: Camp Alvernia.jpg
+    current_alt: Camp Alvernia.jpg
+    content_summary: Camp staff member in branded apparel supervising children in a pool
+    candidate_niches: [camp]
+    contains_people: true
+    contains_minors: true
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_crestwood_lifeguards
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/909bb359-cb7f-4ce5-8eb8-ef755ed15d0c/Crestwood+lifeguards.jpg
+    current_filename: Crestwood lifeguards.jpg
+    current_alt: Crestwood lifeguards.jpg
+    content_summary: Camp lifeguards and staff in coordinated custom apparel beside a pool
+    candidate_niches: [camp]
+    contains_people: true
+    contains_minors: true
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_us_squash_team
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/5d62ab33-f313-4625-aa83-f8c7f9b810f2/Squash.jpg
+    current_filename: Squash.jpg
+    current_alt: Squash.jpg
+    content_summary: Youth squash athletes wearing coordinated team jackets
+    candidate_niches: [racquet_club]
+    contains_people: true
+    contains_minors: true
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_streetsquash_cup
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/b0c97812-c26b-4878-aff4-ccc769241cce/Streetsquash_Cup_2024_3238.jpeg
+    current_filename: Streetsquash Cup 2024 3238.jpeg
+    current_alt: Streetsquash_Cup_2024_3238.jpeg
+    content_summary: StreetSquash Cup participants in coordinated event shirts at a branded backdrop
+    candidate_niches: [racquet_club, event]
+    contains_people: true
+    contains_minors: false
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_open_squash_event
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/f5181896-9f2d-41b8-964b-9f9ac3cc5e76/Open+Squash.jpg
+    current_filename: Open Squash.jpg
+    current_alt: Open Squash.jpg
+    content_summary: Open Squash event team in branded shirts behind a community table
+    candidate_niches: [racquet_club, event]
+    contains_people: true
+    contains_minors: false
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_walt_whitman_school
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/ed411da4-8b85-4d75-8aa7-a701d0f21e80/Walt+Whitman+High+Shool.jpg
+    current_filename: Walt Whitman High School.jpg
+    current_alt: Walt Whitman High Shool.jpg
+    content_summary: Students wearing coordinated custom school event shirts
+    candidate_niches: [school]
+    contains_people: true
+    contains_minors: true
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+  - id: current_bronx_science_school
+    kind: photo
+    source_page: https://www.creativealternatives.com/gallery-1
+    source_url: https://images.squarespace-cdn.com/content/v1/698cb9e75ed42f56ebf8cbcc/201aca63-cfb4-4637-87bf-bbea484a78c7/Bronx+Science.jpg
+    current_filename: Bronx Science.jpg
+    current_alt: Bronx Science.jpg
+    content_summary: School community wearing coordinated custom apparel
+    candidate_niches: [school]
+    contains_people: true
+    contains_minors: true
+    contains_customer_brand: true
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+proof_records:
+  - id: proof_tertius_raubenheimer
+    niche: racquet_club
+    person: Tertius Raubenheimer
+    role: General Manager and Head Squash Professional
+    organization: Monmouth Squash and Swim
+    source_url: https://www.creativealternatives.com/reviews
+    permission_status: confirm_reuse
+    approval_evidence: ""
+  - id: proof_bryan_patterson
+    niche: racquet_club
+    person: Bryan Patterson
+    role: Director of Inner City Squash Program
+    organization: CitySquash
+    source_url: https://www.creativealternatives.com/reviews
+    permission_status: confirm_reuse
+    approval_evidence: ""
+  - id: proof_rich_wade
+    niche: racquet_club
+    person: Rich Wade
+    role: Director of Squash and Padel
+    organization: The Philadelphia Cricket Club
+    source_url: https://www.creativealternatives.com/reviews
+    permission_status: confirm_reuse
+    approval_evidence: ""
+  - id: proof_sahel_anwar
+    niche: racquet_club
+    person: Sahel Anwar
+    role: Customer
+    organization: "[CONFIRM]"
+    source_url: https://www.creativealternatives.com/reviews
+    permission_status: confirm_reuse
+    approval_evidence: ""
+  - id: proof_michele_mirman
+    niche: law_firm
+    person: Michele Mirman
+    role: Senior Partner
+    organization: Mirman, Markovits and Landau, P.C.
+    source_url: https://www.creativealternatives.com/reviews
+    permission_status: confirm_reuse
+    approval_evidence: ""
+
+commercial_pages:
+  services:
+    niche: shared
+    owner: ryan
+    path: /services
+    source_file: pillars/3-online-presence/inbound/page-copy/services-hub.md
+    status: draft
+    slots:
+      - id: hero
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Photograph a clear spread of real CA merchandise across apparel, bags, drinkware and one unusual item; no generic catalog collage
+        alt_text_draft: A selection of branded apparel, bags, drinkware and custom merchandise produced by Creative Alternatives
+        approval_gate: Products, logos and photography rights approved
+      - id: product_or_process
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Four or five consistent 4:3 images
+        brief: Capture one real example for bulk merchandise, managed stores, gifting, events and a recurring program
+        alt_text_draft: Examples of Creative Alternatives merchandise services across several buyer needs
+        approval_gate: Every customer identity and product claim approved
+      - id: proof
+        status: candidate
+        candidate_assets: []
+        proof_ids: [proof_tertius_raubenheimer, proof_michele_mirman]
+        format: Text proof cards with optional approved portraits
+        brief: Pair two cross-niche testimonials with one linked project image each after permission
+        alt_text_draft: Customer proof from a club leader and law firm partner
+        approval_gate: Exact excerpt, role, organization and reuse permission approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a branded social image from the approved hero photograph with the services title in accessible contrast
+        alt_text_draft: Creative Alternatives branded merchandise services
+        approval_gate: Hero asset and brand treatment approved
+
+  camp:
+    niche: camp
+    owner: maclaine
+    path: /summer-camp-merchandise
+    source_file: pillars/3-online-presence/inbound/page-copy/summer-camp-merchandise.md
+    status: draft
+    slots:
+      - id: hero
+        status: candidate
+        candidate_assets: [current_camp_alvernia_pool]
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Use a real camp moment that clearly shows the merchandise in context without obscuring the product
+        alt_text_draft: Camp staff member in a branded blue shirt supervising swimmers in a pool
+        approval_gate: Camp, photographer, staff and parent or guardian permissions confirmed
+      - id: product_or_process
+        status: candidate
+        candidate_assets: [current_crestwood_lifeguards]
+        proof_ids: []
+        format: Three 4:3 images plus one store screenshot
+        brief: Show staff apparel, camper merchandise, one unusual item and an approved camp-store ordering screen
+        alt_text_draft: Camp staff and lifeguards wearing coordinated custom apparel beside a pool
+        approval_gate: People, minor, customer-logo and store-screen permissions confirmed
+      - id: proof
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Three compact case-study cards
+        brief: Capture one bulk order, one parent or alumni store and one seasonal rescue or recurring program with dates and outcomes
+        alt_text_draft: Three approved examples of Creative Alternatives camp merchandise programs
+        approval_gate: Customer identity, quote, images and outcome language approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a 2027 camp planning image from the approved hero without adding unapproved logos or claims
+        alt_text_draft: Summer camp merchandise planning for 2027
+        approval_gate: Hero asset and 2027 offer approved
+
+  racquet_club:
+    niche: racquet_club
+    owner: maclaine
+    path: /squash-racquet-club-merchandise
+    source_file: pillars/3-online-presence/inbound/page-copy/racquet-club-merchandise.md
+    status: draft
+    slots:
+      - id: hero
+        status: candidate
+        candidate_assets: [current_open_squash_event]
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Lead with a real club or event team wearing merchandise in a recognizable racquet setting
+        alt_text_draft: Open Squash event team wearing branded shirts behind a community table
+        approval_gate: Organization, people, logo and photographer permissions confirmed
+      - id: product_or_process
+        status: candidate
+        candidate_assets: [current_us_squash_team, current_streetsquash_cup]
+        proof_ids: []
+        format: Three 4:3 images
+        brief: Show team apparel, tournament merchandise and one pro-shop or unusual club item
+        alt_text_draft: Racquet athletes and event staff wearing coordinated custom merchandise
+        approval_gate: Organization, people, minor, logo and photographer permissions confirmed
+      - id: proof
+        status: candidate
+        candidate_assets: []
+        proof_ids: [proof_tertius_raubenheimer, proof_bryan_patterson, proof_rich_wade, proof_sahel_anwar]
+        format: Two visible proof cards with a link to all approved reviews
+        brief: Select two complementary excerpts covering product range, reliability and category understanding
+        alt_text_draft: Approved testimonials from squash and racquet-club leaders
+        approval_gate: Exact excerpt, role, organization and reuse permission approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a racquet-club merchandise social image from the approved hero
+        alt_text_draft: Racquet club apparel, tournament merchandise and managed stores
+        approval_gate: Hero asset and page offer approved
+
+  law_firm:
+    niche: law_firm
+    owner: ryan
+    path: /law-firm-branded-merchandise
+    source_file: pillars/3-online-presence/inbound/page-copy/law-firm-branded-merchandise.md
+    status: draft
+    slots:
+      - id: hero
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Photograph a premium, restrained flat lay spanning recruiting, retreat and client-gift use cases; use CA or permission-cleared branding only
+        alt_text_draft: Premium recruiting, retreat and client-gift merchandise arranged for a law firm program
+        approval_gate: Product availability, logo rights and visual direction approved
+      - id: product_or_process
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Three 4:3 detail images
+        brief: Capture one recruiting kit, one event or retreat item and one client gift with packaging and approval detail
+        alt_text_draft: Examples of curated law firm merchandise for recruiting, events and client relationships
+        approval_gate: Customer identity and product claims approved
+      - id: proof
+        status: candidate
+        candidate_assets: []
+        proof_ids: [proof_michele_mirman]
+        format: One prominent testimonial card with one approved project image
+        brief: Use the current law-firm relationship proof only after confirming the exact public excerpt and supporting image
+        alt_text_draft: Approved client testimonial from a senior law firm partner
+        approval_gate: Exact excerpt, role, organization and reuse permission approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a restrained law-firm merchandise social image from the approved hero
+        alt_text_draft: Law firm merchandise for recruiting, retreats, clients and events
+        approval_gate: Hero asset and page offer approved
+
+  private_club:
+    niche: private_club
+    owner: maclaine
+    path: /private-club-merchandise
+    source_file: pillars/3-online-presence/inbound/page-copy/private-club-merchandise.md
+    status: draft
+    slots:
+      - id: hero
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Capture a refined member or staff collection in a real club context without relying on generic luxury stock
+        alt_text_draft: A curated private club merchandise collection displayed in a club setting
+        approval_gate: Club, people, product and photographer permissions confirmed
+      - id: product_or_process
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Three 4:3 images
+        brief: Show member retail, staff apparel and tournament or recognition merchandise as distinct jobs
+        alt_text_draft: Private club merchandise for members, staff and events
+        approval_gate: Customer identity and product claims approved
+      - id: proof
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Two compact case-study cards
+        brief: Capture one member collection and one event, staff or gifting program with a named approver and outcome
+        alt_text_draft: Approved private club merchandise examples
+        approval_gate: Customer identity, quote, images and outcome language approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a private-club merchandise social image from the approved hero
+        alt_text_draft: Private club merchandise for members, staff and events
+        approval_gate: Hero asset and page offer approved
+
+  school:
+    niche: school
+    owner: maclaine
+    path: /school-spirit-wear-stores
+    source_file: pillars/3-online-presence/inbound/page-copy/school-spirit-wear-stores.md
+    status: draft
+    slots:
+      - id: hero
+        status: candidate
+        candidate_assets: [current_walt_whitman_school]
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Use a real school community wearing approved spirit apparel, with a clear product read and inclusive crop
+        alt_text_draft: Students wearing coordinated custom school event shirts
+        approval_gate: School, photographer, student and parent or guardian permissions confirmed
+      - id: product_or_process
+        status: candidate
+        candidate_assets: [current_bronx_science_school]
+        proof_ids: []
+        format: Three 4:3 images plus one approved store screenshot
+        brief: Show spirit wear, staff or team apparel, and the ordering experience without exposing student or order data
+        alt_text_draft: School community wearing coordinated custom apparel
+        approval_gate: School, minor, logo, image and store-screen permissions confirmed
+      - id: proof
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Two compact case-study cards
+        brief: Capture one school store and one bulk spirit-wear or event program with workload and ordering context
+        alt_text_draft: Approved examples of school spirit-wear and store programs
+        approval_gate: School identity, quote, images, minors and outcome language approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a school-store comparison social image without unapproved school logos
+        alt_text_draft: School spirit-wear stores and bulk-order planning
+        approval_gate: Hero asset and school-store offer approved
+
+  corporate:
+    niche: corporate
+    owner: ryan
+    path: /corporate-merch-programs
+    source_file: pillars/3-online-presence/inbound/page-copy/corporate-merch-programs.md
+    status: draft
+    slots:
+      - id: hero
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Photograph a focused onboarding, recognition or field-team kit using CA or permission-cleared branding
+        alt_text_draft: A focused corporate merchandise kit for employees and company programs
+        approval_gate: Product availability, logo rights and visual direction approved
+      - id: product_or_process
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Three 4:3 images plus one approved store or workflow screen
+        brief: Show one employee kit, one event or gifting use case and one operating workflow without exposing recipient data
+        alt_text_draft: Corporate merchandise examples for onboarding, recognition and events
+        approval_gate: Customer identity, data handling and product claims approved
+      - id: proof
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Two compact case-study cards
+        brief: Capture one recurring employee program and one event, gifting or store program with ownership and workload context
+        alt_text_draft: Approved corporate merchandise program examples
+        approval_gate: Customer identity, quote, images and outcome language approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create a company merchandise program social image from the approved hero
+        alt_text_draft: Corporate merchandise programs, stores and employee kits
+        approval_gate: Hero asset and page offer approved
+
+  event:
+    niche: event
+    owner: ryan
+    path: /event-merchandise
+    source_file: pillars/3-online-presence/inbound/page-copy/event-merchandise.md
+    status: draft
+    slots:
+      - id: hero
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 3:2 landscape, minimum 1800x1200
+        brief: Capture event merchandise being packed, staged or used at a real venue; the products and delivery context must both be visible
+        alt_text_draft: Branded event merchandise prepared for attendees at a venue
+        approval_gate: Event, venue, people, logos and photographer permissions confirmed
+      - id: product_or_process
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Three 4:3 images
+        brief: Show attendee merchandise, staff or sponsor apparel, packing labels and a venue-ready handoff without exposing personal data
+        alt_text_draft: Event merchandise, staff apparel and venue-ready packing details
+        approval_gate: Customer identity, data handling and product claims approved
+      - id: proof
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: Two compact case-study cards
+        brief: Capture one fixed-date event and one multi-destination or complex delivery program with the decision timeline
+        alt_text_draft: Approved event merchandise and delivery examples
+        approval_gate: Customer identity, quote, images and outcome language approved
+      - id: social_share
+        status: brief_ready
+        candidate_assets: []
+        proof_ids: []
+        format: 1200x630
+        brief: Create an event merchandise timeline social image from the approved hero
+        alt_text_draft: Event merchandise planned backward from the in-hand date
+        approval_gate: Hero asset and page offer approved
+
+resource_template:
+  status: draft
+  slots:
+    - id: hero
+      status: brief_ready
+      candidate_assets: []
+      proof_ids: []
+      format: 16:9, minimum 1600x900
+      brief: Create a clean editorial visual based on the resource headline and central planning concept; no customer logo, fake product proof or text-heavy poster
+      alt_text_draft: Editorial planning visual for {headline}
+      approval_gate: Brand treatment and resource accuracy approved
+    - id: inline_tool
+      status: brief_ready
+      candidate_assets: []
+      proof_ids: []
+      format: Responsive diagram or worksheet preview, minimum 1400px wide
+      brief: Turn the most useful table, calendar, checklist or decision framework into a supporting visual while preserving the full information as accessible HTML
+      alt_text_draft: Visual summary of the main planning framework in {headline}
+      approval_gate: Visual matches the accessible resource content exactly
+    - id: social_share
+      status: brief_ready
+      candidate_assets: []
+      proof_ids: []
+      format: 1200x630
+      brief: Create a branded social-share variant using the resource title and one clear planning motif
+      alt_text_draft: Creative Alternatives resource, {headline}
+      approval_gate: Brand treatment, title and canonical URL approved
+
+resource_overrides:
+  camp_merchandise_planning_calendar: {status: draft, approval_evidence: "", slots: {}}
+  camp_store_vs_bulk_order: {status: draft, approval_evidence: "", slots: {}}
+  club_tournament_merch_checklist: {status: draft, approval_evidence: "", slots: {}}
+  law_firm_merch_calendar: {status: draft, approval_evidence: "", slots: {}}
+  private_club_merch_calendar: {status: draft, approval_evidence: "", slots: {}}
+  school_store_comparison_guide: {status: draft, approval_evidence: "", slots: {}}
+  company_store_buyers_guide: {status: draft, approval_evidence: "", slots: {}}
+  event_merchandise_timeline: {status: draft, approval_evidence: "", slots: {}}

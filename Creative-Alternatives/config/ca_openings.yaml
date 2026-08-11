@@ -1,0 +1,55 @@
+# Generalized "new opening" trigger scout — any industry opening a location needs branded gear.
+# One engine (scripts/ca_openings.py), many verticals via config. Geo comes from ca_gym_regions.yaml.
+# Each vertical: terms (news query OR-clause), allow (must-match to keep), block (drop these),
+# mockup_theme (the opener pitch), target_title (who the buyer is → AI Ark people_search).
+
+default_vertical: gyms
+
+verticals:
+  gyms:
+    label: "boutique gym / sports center"
+    terms: 'pilates OR reformer OR barre OR "yoga studio" OR "boutique fitness" OR "cycling studio" OR "spin studio" OR "boxing gym" OR crossfit OR "fitness studio" OR "sports center" OR "athletic club" OR "martial arts" OR gymnastics OR "climbing gym" OR "dance studio" OR pickleball OR F45 OR "Club Pilates" OR CycleBar'
+    allow: 'pilates|reformer|barre|yoga studio|boutique|cycling studio|spin studio|boxing gym|crossfit|fitness studio|sports center|athletic club|martial arts|jiu.?jitsu|karate|gymnastics|climbing gym|dance studio|pickleball|f45|club pilates|cyclebar|stretchlab|pure barre|orangetheory'
+    block: 'planet fitness|la fitness|crunch fitness|gold.?s gym|24 hour|ymca|equinox|blink fitness|world gym'
+    mockup_theme: "grand-opening gym swag (staff tees, member shaker bottles, towels, launch giveaways)"
+    target_title: "owner OR studio manager OR general manager"
+
+  restaurants:
+    label: "restaurant / bar / cafe"
+    terms: '"new restaurant" OR restaurant OR eatery OR bistro OR "new bar" OR taproom OR "coffee shop" OR cafe OR "food hall" OR pizzeria OR "cocktail bar" OR gastropub'
+    allow: 'restaurant|eatery|bistro|\bbar\b|taproom|cafe|coffee|pizzeria|gastropub|grill|kitchen|food hall|cocktail'
+    block: 'mcdonald|chick-fil-a|chipotle|starbucks|taco bell|wendy|burger king|subway|domino|panera|dunkin'
+    mockup_theme: "restaurant-opening merch (staff tees & aprons, branded hats, to-go/retail merch, grand-opening giveaways)"
+    target_title: "owner OR general manager OR founder"
+
+  breweries:
+    label: "brewery / distillery / winery"
+    terms: 'brewery OR "craft brewery" OR taproom OR distillery OR winery OR "brewing company" OR meadery OR cidery'
+    allow: 'brewery|brewing|taproom|distillery|winery|meadery|cidery|brewpub'
+    block: 'anheuser|budweiser|coors|miller lite|constellation brands'
+    mockup_theme: "brewery-opening merch (branded tees & hats, pint glasses, koozies, staff gear, tap-takeover swag)"
+    target_title: "owner OR founder OR taproom manager OR marketing"
+
+  medical:
+    label: "medical / dental / vet practice"
+    terms: '"dental practice" OR dentist OR orthodontist OR "medical practice" OR "urgent care" OR "med spa" OR "medspa" OR veterinary OR "vet clinic" OR chiropractic OR "physical therapy" OR dermatology OR pediatric'
+    allow: 'dental|dentist|orthodont|medical practice|urgent care|med.?spa|veterinar|vet clinic|chiropractic|physical therapy|dermatolog|pediatric|clinic|practice'
+    block: 'hospital system|health system|kaiser|hca healthcare'
+    mockup_theme: "practice-opening swag (branded scrubs/polos, patient welcome kits, water bottles, grand-opening giveaways)"
+    target_title: "owner OR practice manager OR office manager"
+
+  retail:
+    label: "retail store / boutique"
+    terms: '"new store" OR boutique OR "retail store" OR "clothing store" OR "new shop" OR "flagship store" OR "concept store" OR "specialty store"'
+    allow: 'boutique|retail|store|shop|flagship|concept store|apparel|clothing'
+    block: 'walmart|target|best buy|home depot|lowe.?s|costco|kohl.?s|macy'
+    mockup_theme: "store-opening merch (staff tees, branded totes/bags, opening-day giveaways, loyalty swag)"
+    target_title: "owner OR store manager OR founder"
+
+  salon_spa:
+    label: "salon / spa / wellness"
+    terms: '"hair salon" OR "beauty salon" OR "nail salon" OR "day spa" OR "med spa" OR "wellness center" OR "blowout bar" OR barbershop OR "lash studio" OR "med-spa"'
+    allow: 'salon|spa|barbershop|blowout|lash|wellness center|aesthetics|beauty'
+    block: 'great clips|supercuts|sport clips|european wax'
+    mockup_theme: "salon/spa-opening swag (staff tees & robes, branded totes, client gift kits, grand-opening giveaways)"
+    target_title: "owner OR salon manager OR general manager"

@@ -1,0 +1,512 @@
+# Machine-readable launch control for the Creative Alternatives inbound engine.
+# Every external action stays draft/paused until the required gates have evidence.
+
+schema_version: "1.0.0"
+updated: "2026-07-10"
+
+guardrails:
+  draft_only: true
+  public_actions_require_approval: true
+  paid_campaigns_default_status: Paused
+  create_deal_before_human_qualification: false
+  send_quote_automatically: false
+  promise_timeline_automatically: false
+  accept_order_automatically: false
+
+shared_gates:
+  service_area_confirmed:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid, local]
+    evidence: ""
+  offer_and_fulfillment_terms_approved:
+    complete: false
+    owner: kenny
+    required_for: [site, organic, paid]
+    evidence: ""
+  free_concept_policy_approved:
+    complete: false
+    owner: kenny
+    required_for: [site, organic, paid]
+    evidence: ""
+  response_owner_and_sla_approved:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: ""
+  privacy_and_upload_policy_live:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: ""
+  squarespace_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: "2026-07-11: Chrome navigation to the Squarespace account surface reached the Squarespace login screen; no authenticated editor session is available. The camp and resource pages remain local noindex staging artifacts."
+  hubspot_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: "2026-07-11: read-only audit confirms 37/37 planned contact properties remain live with 0 missing and 0 updates; company and deal endpoints still return 403 for missing scopes."
+  ga4_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: "2026-07-11: authenticated Chrome reaches the Google Analytics welcome/provisioning screen; this login has no Analytics account or CA property."
+  search_console_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [organic]
+    evidence: "2026-07-11: authenticated Chrome has one Search Console property for dealthreads.io; no Creative Alternatives property is present."
+  google_ads_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [paid]
+    evidence: "2026-07-11: Google Ads account selection reports that the connected login has no Ads accounts. CA account creation, ownership, billing, budget and geography remain unapproved; proposals remain local and paused."
+  business_profile_access_verified:
+    complete: false
+    owner: ryan
+    required_for: [local]
+    evidence: "2026-07-11: Business Profile Manager contains one unrelated duplicate restaurant listing and no visible Creative Alternatives profile. Correct CA profile ownership/login remains unknown."
+  hubspot_properties_and_routing_tested:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: "2026-07-10: CA Inbound contact group and 37 contact properties created and schema-verified; company/deal properties, form, workflows, and routing remain incomplete."
+  attribution_persistence_tested:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: ""
+  ga4_events_tested:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: ""
+  shared_form_and_spam_controls_tested:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid]
+    evidence: ""
+  qualified_lead_conversion_tested:
+    complete: false
+    owner: ryan
+    required_for: [paid]
+    evidence: ""
+  weekly_review_owner_and_time_set:
+    complete: false
+    owner: ryan
+    required_for: [site, organic, paid, local]
+    evidence: ""
+
+niches:
+  camp:
+    label: Summer camps and youth programs
+    status: build
+    priority: 1
+    owner: maclaine
+    page_path: /summer-camp-merchandise
+    page_copy: pillars/3-online-presence/inbound/page-copy/summer-camp-merchandise.md
+    title: Summer Camp Merchandise & Stores | Creative Alternatives
+    meta_description: Custom camp apparel, staff gear, camper merchandise and managed camp stores planned around your audience, season and ordering model.
+    offer_id: camp_merch_concept
+    offer_label: Plan My 2027 Camp Merch
+    offer_approved: false
+    primary_channel: Search + associations + referrals
+    gates:
+      public_proof_approved: {complete: false, owner: kenny, required_for: [site, organic, paid], evidence: ""}
+      page_built: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      mobile_and_accessibility_qa: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      form_routing_qa: {complete: false, owner: maclaine, required_for: [site, organic, paid], evidence: ""}
+      original_resource_live: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      indexing_verified: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      search_terms_reviewed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      budget_approved: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      ads_editor_check_passed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+    ads:
+      campaign: CA | Search | Camps | Northeast | Qualified Lead
+      geo: Northeast [CONFIRM]
+      landing_page: https://www.creativealternatives.com/summer-camp-merchandise
+      ad_groups:
+        Camp Merchandise Supplier:
+          keywords:
+            - summer camp merchandise supplier
+            - custom summer camp apparel
+            - custom camp shirts
+            - camp staff apparel
+            - camp promotional products
+        Camp Store:
+          keywords:
+            - camp store merchandise
+            - online camp store
+            - summer camp online store
+            - camp merchandise fulfillment
+      headlines:
+        - Summer Camp Merchandise
+        - Camp Apparel Without Chaos
+        - Plan Your 2027 Camp Merch
+        - Camp Stores And Bulk Orders
+        - Send Your Logo To Start
+        - Family-Operated Since 1999
+        - Staff, Camper And Alumni Gear
+        - Curated By Real People
+        - Built Around Camp Deadlines
+        - Start Your Camp Collection
+      descriptions:
+        - Custom tees, hoodies, staff gear and camp stores, curated around seasonal deadlines.
+        - Send your logo and project details. A real person will review the most useful next step.
+        - Plan bulk orders, staff apparel and parent-direct stores through one experienced team.
+        - Start early for more product choices, better planning and a calmer merchandise season.
+
+  racquet_club:
+    label: Squash, racquet and padel clubs
+    status: build
+    priority: 2
+    owner: maclaine
+    page_path: /squash-racquet-club-merchandise
+    page_copy: pillars/3-online-presence/inbound/page-copy/racquet-club-merchandise.md
+    title: Racquet Club Merchandise & Apparel | Creative Alternatives
+    meta_description: Curated squash, tennis, padel and racquet-club merchandise for members, teams, tournaments, pro shops and managed stores.
+    offer_id: racquet_collection
+    offer_label: See My Club Collection
+    offer_approved: false
+    primary_channel: Search + network referrals + associations
+    gates:
+      public_proof_approved: {complete: false, owner: kenny, required_for: [site, organic, paid], evidence: ""}
+      page_built: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      mobile_and_accessibility_qa: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      form_routing_qa: {complete: false, owner: maclaine, required_for: [site, organic, paid], evidence: ""}
+      original_resource_live: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      indexing_verified: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      search_terms_reviewed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      budget_approved: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      ads_editor_check_passed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+    ads:
+      campaign: CA | Search | Racquet Clubs | US | Qualified Lead
+      geo: United States [CONFIRM]
+      landing_page: https://www.creativealternatives.com/squash-racquet-club-merchandise
+      ad_groups:
+        Club Merchandise:
+          keywords:
+            - custom squash club apparel
+            - racquet club merchandise
+            - custom racquet club apparel
+            - club pro shop merchandise
+            - padel club custom apparel
+        Tournament And Store:
+          keywords:
+            - squash tournament apparel
+            - squash tournament merchandise
+            - racquet club online store
+      headlines:
+        - Racquet Club Merchandise
+        - Squash, Tennis And Padel
+        - A Better Club Collection
+        - Club Stores And Bulk Orders
+        - Plan Tournament Merchandise
+        - Send Your Club Logo
+        - Member, Team And Event Gear
+        - Curated By Real People
+        - Build Your Club Collection
+      descriptions:
+        - Club apparel, tournament merchandise and member gear curated for racquet communities.
+        - Send your logo and details. A real person will recommend the most useful next step.
+        - Plan member collections, event gear, pro-shop items and online stores through one team.
+        - Merchandise for squash, tennis, padel and multi-racquet clubs, curated by real people.
+
+  law_firm:
+    label: Law firms
+    status: build
+    priority: 3
+    owner: ryan
+    page_path: /law-firm-branded-merchandise
+    page_copy: pillars/3-online-presence/inbound/page-copy/law-firm-branded-merchandise.md
+    title: Law Firm Merchandise & Client Gifts | Creative Alternatives
+    meta_description: Curated law-firm merchandise for recruiting, retreats, client gifts, conferences, employee programs and branded events.
+    offer_id: law_firm_concept
+    offer_label: Build My Firm Concept
+    offer_approved: false
+    primary_channel: Search + LinkedIn + referrals
+    gates:
+      public_proof_approved: {complete: false, owner: kenny, required_for: [site, organic, paid], evidence: ""}
+      page_built: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      mobile_and_accessibility_qa: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      form_routing_qa: {complete: false, owner: ryan, required_for: [site, organic, paid], evidence: ""}
+      original_resource_live: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      indexing_verified: {complete: false, owner: ryan, required_for: [organic], evidence: ""}
+      search_terms_reviewed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      budget_approved: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+      ads_editor_check_passed: {complete: false, owner: ryan, required_for: [paid], evidence: ""}
+    ads:
+      campaign: CA | Search | Law Firms | US | Qualified Lead
+      geo: United States [CONFIRM]
+      landing_page: https://www.creativealternatives.com/law-firm-branded-merchandise
+      ad_groups:
+        Law Firm Merchandise:
+          keywords:
+            - law firm branded merchandise
+            - law firm promotional products
+            - law firm recruiting swag
+            - legal conference promotional products
+        Law Firm Gifts:
+          keywords:
+            - law firm client gifts
+            - law firm retreat gifts
+            - law firm employee gifts
+      headlines:
+        - Law Firm Branded Merchandise
+        - Recruiting, Retreats And Gifts
+        - Build Your Firm Merch Plan
+        - Client And Employee Gifts
+        - Merchandise For Firm Events
+        - Send Your Brand Guidelines
+        - Curated By Real People
+        - Start Your Firm Concept
+      descriptions:
+        - Firm merchandise for recruiting, retreats, client gifts, events and employee programs.
+        - Share your audience, date and brand needs. A real person will review the best next step.
+        - Curated product direction for firms that need brand-aware, approval-ready merchandise.
+        - Plan branded gifts and event merchandise around your recipients, standards and timeline.
+
+  private_club:
+    label: Private, member and athletic clubs
+    status: validate
+    priority: 4
+    owner: maclaine
+    page_path: /private-club-merchandise
+    page_copy: pillars/3-online-presence/inbound/page-copy/private-club-merchandise.md
+    title: Private Club Merchandise & Apparel | Creative Alternatives
+    meta_description: Curated merchandise for private clubs, member programs, staff, events, tournaments, pro shops and online ordering.
+    offer_id: private_club_concept
+    offer_label: Plan My Club Merch
+    offer_approved: false
+    primary_channel: Referrals + controlled search test
+    gates: {}
+
+  school:
+    label: Schools, academies and PTAs
+    status: validate
+    priority: 5
+    owner: maclaine
+    page_path: /school-spirit-wear-stores
+    page_copy: pillars/3-online-presence/inbound/page-copy/school-spirit-wear-stores.md
+    title: School Spirit Wear & Online Stores | Creative Alternatives
+    meta_description: Human-managed school spirit wear, staff apparel and ordering programs for PTAs, athletics, academies and school communities.
+    offer_id: school_store_plan
+    offer_label: Plan My School Store
+    offer_approved: false
+    primary_channel: Search + local + associations
+    gates: {}
+
+  corporate:
+    label: Corporate teams and People Operations
+    status: validate
+    priority: 6
+    owner: ryan
+    page_path: /corporate-merch-programs
+    page_copy: pillars/3-online-presence/inbound/page-copy/corporate-merch-programs.md
+    title: Corporate Merch Programs & Stores | Creative Alternatives
+    meta_description: Right-sized branded merchandise programs for employee apparel, onboarding, company stores, recognition, events and gifting.
+    offer_id: corporate_merch_plan
+    offer_label: Plan My Merch Program
+    offer_approved: false
+    primary_channel: Search + LinkedIn
+    gates: {}
+
+  event:
+    label: Event planners, conferences and retreats
+    status: validate
+    priority: 7
+    owner: ryan
+    page_path: /event-merchandise
+    page_copy: pillars/3-online-presence/inbound/page-copy/event-merchandise.md
+    title: Event Merchandise & Conference Swag | Creative Alternatives
+    meta_description: Date-aware merchandise planning for conferences, retreats, tournaments, trade shows, staff and event attendees.
+    offer_id: event_merch_plan
+    offer_label: Plan My Event Merch
+    offer_approved: false
+    primary_channel: Search + partner referrals
+    gates: {}
+
+  financial_services:
+    label: Financial services
+    status: shared_only
+    priority: 8
+    owner: ryan
+    page_path: ""
+    primary_channel: LinkedIn + referrals
+  youth_sports:
+    label: Youth sports and academies
+    status: shared_only
+    priority: 9
+    owner: maclaine
+    page_path: ""
+    primary_channel: Referrals + local
+  fitness:
+    label: Boutique fitness, CrossFit, BJJ, yoga and dance
+    status: shared_only
+    priority: 10
+    owner: maclaine
+    page_path: ""
+    primary_channel: Social proof + referrals
+  construction:
+    label: Construction and trades
+    status: shared_only
+    priority: 11
+    owner: ryan
+    page_path: ""
+    primary_channel: Shared bulk page + later search test
+  manufacturing_automotive:
+    label: Manufacturing and automotive
+    status: shared_only
+    priority: 12
+    owner: ryan
+    page_path: ""
+    primary_channel: Local + referrals
+  professional_services:
+    label: Real estate, insurance, accounting, consulting and agencies
+    status: shared_only
+    priority: 13
+    owner: ryan
+    page_path: ""
+    primary_channel: Shared gifting/event pages + LinkedIn
+  healthcare:
+    label: Healthcare organizations
+    status: shared_only
+    priority: 14
+    owner: ryan
+    page_path: ""
+    primary_channel: Local + referrals
+
+resources:
+  camp_merchandise_planning_calendar:
+    niche: camp
+    status: draft
+    owner: ryan
+    path: /resources/camp-merchandise-planning-calendar
+    page_copy: pillars/3-online-presence/inbound/resource-copy/camp-merchandise-planning-calendar.md
+    title: Camp Merchandise Planning Calendar | Creative Alternatives
+    headline: A camp merchandise calendar built backward from opening day.
+    meta_description: A practical planning calendar for camp staff apparel, camper gear, parent stores, reorders, artwork, approvals and delivery.
+    parent_path: /summer-camp-merchandise
+    cta: Plan My 2027 Camp Merch
+    related_paths: [/resources/camp-store-vs-bulk-order, /online-stores]
+  camp_store_vs_bulk_order:
+    niche: camp
+    status: draft
+    owner: ryan
+    path: /resources/camp-store-vs-bulk-order
+    page_copy: pillars/3-online-presence/inbound/resource-copy/camp-store-vs-bulk-order.md
+    title: "Camp Store vs Bulk Order: A Decision Guide"
+    headline: Camp store or bulk order? Start with who is ordering.
+    meta_description: Compare camp merchandise stores and bulk orders by audience, demand, timing, distribution, support and operational workload.
+    parent_path: /summer-camp-merchandise
+    cta: Choose My Camp Ordering Model
+    related_paths: [/resources/camp-merchandise-planning-calendar, /online-stores]
+  club_tournament_merch_checklist:
+    niche: racquet_club
+    status: draft
+    owner: ryan
+    path: /resources/club-tournament-merch-checklist
+    page_copy: pillars/3-online-presence/inbound/resource-copy/club-tournament-merch-checklist.md
+    title: Club Tournament Merchandise Checklist
+    headline: A tournament merchandise checklist built around players and the date.
+    meta_description: Plan player gifts, staff apparel, awards, sponsor merchandise, packing, approvals and delivery for a club tournament.
+    parent_path: /squash-racquet-club-merchandise
+    cta: Plan My Tournament Merch
+    related_paths: [/resources/event-merchandise-timeline, /event-merchandise]
+  law_firm_merch_calendar:
+    niche: law_firm
+    status: draft
+    owner: ryan
+    path: /resources/law-firm-merch-calendar
+    page_copy: pillars/3-online-presence/inbound/resource-copy/law-firm-merch-calendar.md
+    title: Law Firm Merchandise Calendar | Creative Alternatives
+    headline: Map the firm's merchandise before every request becomes urgent.
+    meta_description: Map recruiting, retreats, client gifts, conferences, onboarding and employee merchandise across the law-firm calendar.
+    parent_path: /law-firm-branded-merchandise
+    cta: Build My Firm Merch Plan
+    related_paths: [/resources/event-merchandise-timeline, /client-gifting]
+  private_club_merch_calendar:
+    niche: private_club
+    status: draft
+    owner: ryan
+    path: /resources/private-club-merch-calendar
+    page_copy: pillars/3-online-presence/inbound/resource-copy/private-club-merch-calendar.md
+    title: Private Club Merchandise Calendar
+    headline: Put the club calendar before the product catalog.
+    meta_description: Plan member collections, staff apparel, tournaments, recognition, gifting and club-store moments across the year.
+    parent_path: /private-club-merchandise
+    cta: Plan My Club Merch
+    related_paths: [/resources/club-tournament-merch-checklist, /online-stores]
+  school_store_comparison_guide:
+    niche: school
+    status: draft
+    owner: ryan
+    path: /resources/human-managed-vs-self-serve-school-store
+    page_copy: pillars/3-online-presence/inbound/resource-copy/school-store-comparison-guide.md
+    title: Human-Managed vs Self-Serve School Stores
+    headline: Human-managed or self-serve? Choose the school-store workload first.
+    meta_description: Compare human-managed and self-serve school spirit-wear stores by workload, products, production, support and ordering model.
+    parent_path: /school-spirit-wear-stores
+    cta: Plan My School Store
+    related_paths: [/online-stores, /resources/company-store-buyers-guide]
+  company_store_buyers_guide:
+    niche: corporate
+    status: draft
+    owner: ryan
+    path: /resources/company-store-buyers-guide
+    page_copy: pillars/3-online-presence/inbound/resource-copy/company-store-buyers-guide.md
+    title: Company Store Buyer's Guide | Creative Alternatives
+    headline: Build the smallest company store that solves a real problem.
+    meta_description: Plan a right-sized company merchandise store by audience, assortment, demand, fulfillment, support, data and ownership.
+    parent_path: /corporate-merch-programs
+    cta: Plan My Merch Program
+    related_paths: [/online-stores, /resources/human-managed-vs-self-serve-school-store]
+  event_merchandise_timeline:
+    niche: event
+    status: draft
+    owner: ryan
+    path: /resources/event-merchandise-timeline
+    page_copy: pillars/3-online-presence/inbound/resource-copy/event-merchandise-timeline.md
+    title: Event Merchandise Timeline | Creative Alternatives
+    headline: Plan event merchandise backward from the in-hand date.
+    meta_description: Plan event merchandise backward from the in-hand date across products, artwork, approvals, packing, venue receiving and delivery.
+    parent_path: /event-merchandise
+    cta: Plan My Event Merch
+    related_paths: [/resources/club-tournament-merch-checklist, /client-gifting]
+
+shared_negative_keywords:
+  - free printable
+  - template
+  - Canva template
+  - Cricut
+  - DIY
+  - logo maker
+  - clip art
+  - personal use
+  - single shirt
+  - one shirt
+  - custom shirt for myself
+  - Etsy
+  - Amazon
+  - jobs
+  - careers
+  - salary
+  - internship
+  - course
+  - class
+  - tutorial
+  - wholesale blanks
+  - blank shirts
+  - used equipment
+  - printing machine
+  - screen printing equipment
+  - heat press
+  - franchise for sale
+  - definition
+  - history
+  - meaning
+  - Wikipedia
+  - examples free

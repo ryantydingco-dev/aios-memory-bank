@@ -1,0 +1,10 @@
+# Creative Alternatives AIOS — Python dependencies
+# Rebuild on a new machine:
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# (matches docs/new-machine-setup.md)
+openpyxl==3.1.5
+pillow==12.3.0
+python-dotenv==1.2.2
+PyYAML==6.0.3
+requests==2.34.2
+jsonschema==4.26.0

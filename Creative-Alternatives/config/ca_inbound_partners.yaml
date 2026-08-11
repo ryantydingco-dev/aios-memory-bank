@@ -1,0 +1,389 @@
+schema_version: "1.0.0"
+updated: "2026-07-10"
+
+guardrails:
+  draft_only: true
+  human_approval_required: true
+  no_paid_placement_without_attribution_plan: true
+  no_customer_or_member_data_purchase: true
+
+targets:
+  - id: aca_business_membership
+    niche: camp
+    organization: American Camp Association
+    program: Business Membership and Business Member Directory
+    motion: membership_directory
+    official_url: https://www.acacamps.org/membership/business
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: "$645 listed; verify current rate before approval"
+    resource_key: camp_merchandise_planning_calendar
+    pitch_angle: Camp merchandise planning education plus a complete Apparel and Camper Accessories listing
+    decision_gate: Confirm category availability, directory traffic, referral reporting, term, and no exclusivity conflict
+    next_action: Request the current benefits/rates sheet and directory category requirements
+    owner: ryan
+    status: research
+    utm_source: aca-business-directory
+
+  - id: aca_product_spotlight
+    niche: camp
+    organization: American Camp Association
+    program: Product Spotlight and educational contribution
+    motion: educational_distribution
+    official_url: https://www.acacamps.org/resources/marketplace/product-spotlight
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: Active business membership required; verify placement terms
+    resource_key: camp_merchandise_planning_calendar
+    pitch_angle: Publish the camp planning calendar as useful seasonal education rather than a product announcement
+    decision_gate: Confirm editorial eligibility, link policy, distribution, and whether educational material can be non-promotional
+    next_action: Ask ACA business development whether the planning calendar fits Product Spotlight or another editorial channel
+    owner: ryan
+    status: research
+    utm_source: aca-product-spotlight
+
+  - id: aca_national_conference
+    niche: camp
+    organization: American Camp Association
+    program: National Conference exhibitor or commerce session
+    motion: conference_exhibitor
+    official_url: https://www.acacamps.org/conference/exhibithall/become-exhibitor
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P2
+    fit_score: 4
+    cost_evidence: Published inline booth rates start at $2,000 for members and $2,800 for non-members; verify event year and full cost
+    resource_key: camp_merchandise_planning_calendar
+    pitch_angle: Planning-calendar session and live merchandise-program review for camp operators
+    decision_gate: Require total cost, attendee buyer mix, lead capture rules, competitor count, and follow-up attribution plan
+    next_action: Request the current exhibitor prospectus and commerce-session criteria
+    owner: ryan
+    status: research
+    utm_source: aca-national-conference
+
+  - id: tri_state_camp_conference
+    niche: camp
+    organization: Tri-State CAMP Conference
+    program: Camp Shopping Network exhibitor
+    motion: conference_exhibitor
+    official_url: https://tristatecampconference.com/about-tri-state/camp-shopping-network/
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P1
+    fit_score: 5
+    cost_evidence: Request current 2027 exhibitor terms
+    resource_key: camp_merchandise_planning_calendar
+    pitch_angle: Northeast camp planning calendar and live 2027 merchandise-plan review
+    decision_gate: Confirm 2027 application, total cost, direct merchandise competitors, buyer attendance, and lead ownership
+    next_action: Request the 2027 exhibitor application when released and map existing apparel/promo competitors
+    owner: ryan
+    status: research
+    utm_source: tri-state-camp
+
+  - id: us_squash_supplier_program
+    niche: racquet_club
+    organization: US Squash
+    program: Official Supplier Program
+    motion: supplier_partnership
+    official_url: https://ussquash.org/2026/05/us-squash-launches-official-supplier-program-with-harrow-sports-as-inaugural-partner/
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P1
+    fit_score: 5
+    cost_evidence: Request program terms
+    resource_key: club_tournament_merch_checklist
+    pitch_angle: Non-exclusive club and tournament merchandise planning support beyond racquet equipment
+    decision_gate: Confirm category openness, exclusivity, member value requirement, sponsor obligations, and referral attribution
+    next_action: Ask partnership staff whether apparel, tournament merchandise, and club-store services are eligible categories
+    owner: ryan
+    status: research
+    utm_source: us-squash-supplier
+
+  - id: rspa_corporate_membership
+    niche: racquet_club
+    organization: Racquet Sports Professionals Association
+    program: Corporate Membership and Trade Show
+    motion: membership_directory
+    official_url: https://members.rspa.net/USPTA/Membership/Membership_Types/Corporate_Member.aspx
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: "$325 annual corporate membership listed; verify current rate and trade-show costs"
+    resource_key: club_tournament_merch_checklist
+    pitch_angle: Tournament checklist and club-collection education for tennis, squash, padel, pickleball, and platform professionals
+    decision_gate: Confirm directory visibility, member communications, trade-show buyer mix, and sponsorship options
+    next_action: Request the current corporate-member and trade-show prospectus
+    owner: ryan
+    status: research
+    utm_source: rspa-corporate-directory
+
+  - id: usa_padel_federation
+    niche: racquet_club
+    organization: USA Padel
+    program: Federation relationship and event inquiry
+    motion: relationship_validation
+    official_url: https://www.padelfip.com/federation/usa/
+    source_checked: "2026-07-10"
+    source_status: contact_only
+    priority: P2
+    fit_score: 3
+    cost_evidence: No public supplier program verified
+    resource_key: club_tournament_merch_checklist
+    pitch_angle: Padel-club and tournament merchandise checklist adapted to US organizers
+    decision_gate: Validate whether any vendor, event, directory, or educational channel actually exists before proposing spend
+    next_action: Ask the federation for its event calendar and commercial partnership contact
+    owner: ryan
+    status: research
+    utm_source: usa-padel
+
+  - id: nca_corporate_partner
+    niche: private_club
+    organization: National Club Association
+    program: Corporate Partner Program
+    motion: strategic_partnership
+    official_url: https://nationalclub.org/page/corporate-partner-program
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P2
+    fit_score: 4
+    cost_evidence: Request current partnership levels and commitments
+    resource_key: private_club_merch_calendar
+    pitch_angle: Member, staff, tournament, and recognition calendar for private-club operators
+    decision_gate: Confirm investment, category conflicts, content access, member reach, lead attribution, and contract term
+    next_action: Request the current corporate partner prospectus and audience profile
+    owner: ryan
+    status: research
+    utm_source: nca-corporate-partner
+
+  - id: cmaa_partnership_network
+    niche: private_club
+    organization: Club Management Association of America
+    program: CMAA Partnership Network
+    motion: strategic_partnership
+    official_url: https://www.cmaa.org/about-cmaa/business-opportunities/partnership-network/
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P2
+    fit_score: 4
+    cost_evidence: Multi-year financial commitment indicated; request current levels
+    resource_key: private_club_merch_calendar
+    pitch_angle: Educational club merchandise calendar and member-program operating guidance
+    decision_gate: Require investment, term, content deliverables, member access, exclusivity, and attributable lead path
+    next_action: Request business-development information before considering a national commitment
+    owner: ryan
+    status: research
+    utm_source: cmaa-partnership
+
+  - id: cmaa_chapter_programs
+    niche: private_club
+    organization: CMAA chapters
+    program: Chapter expo, newsletter, or educational partnership
+    motion: regional_partnership
+    official_url: https://www.cmaa.org/membership/chapters/chapter-officers/
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P1
+    fit_score: 4
+    cost_evidence: Request local chapter terms
+    resource_key: private_club_merch_calendar
+    pitch_angle: Practical annual club-merch calendar for a regional education session or newsletter
+    decision_gate: Start with one Northeast chapter and require buyer attendance, distribution, link, and referral tracking
+    next_action: Identify the relevant Northeast chapter corporate-relations liaison and request its current calendar
+    owner: ryan
+    status: research
+    utm_source: cmaa-chapter
+
+  - id: lma_media_sponsorship
+    niche: law_firm
+    organization: Legal Marketing Association
+    program: Media kit and sponsorship
+    motion: educational_distribution
+    official_url: https://www.legalmarketing.org/Events/LMA-Media-Kit-Prospectus
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: Request current media kit and rate card
+    resource_key: law_firm_merch_calendar
+    pitch_angle: Law-firm merchandise calendar for recruiting, retreats, client events, and gifting
+    decision_gate: Prefer educational/newsletter placement; require audience segment, link, impressions, and referral attribution before paid media
+    next_action: Review the current media kit and pitch one educational calendar placement
+    owner: ryan
+    status: research
+    utm_source: lma-media
+
+  - id: ala_business_partner_expo
+    niche: law_firm
+    organization: Association of Legal Administrators
+    program: Business Partner Directory and Annual Conference Expo
+    motion: business_partner
+    official_url: https://annualconference2026.alanet.org/
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: Request current business-partner and 2027 expo terms
+    resource_key: law_firm_merch_calendar
+    pitch_angle: Firm merchandise calendar focused on administrative workload, approvals, offices, and events
+    decision_gate: Separate directory/education value from expo spend; require firm-size mix, attendee roles, and attribution
+    next_action: Request 2027 exhibitor and business-partner information
+    owner: ryan
+    status: research
+    utm_source: ala-business-partner
+
+  - id: nalp_conference_sponsorship
+    niche: law_firm
+    organization: National Association for Law Placement
+    program: Annual Education Conference and recruiting summits
+    motion: conference_exhibitor
+    official_url: https://www.nalp.org/sponsorships
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P2
+    fit_score: 4
+    cost_evidence: Current prospectus required
+    resource_key: law_firm_merch_calendar
+    pitch_angle: Recruiting and summer-associate merchandise calendar for legal career professionals
+    decision_gate: Confirm attendee buying influence, sponsor categories, total cost, lead capture, and follow-up timing
+    next_action: Request the 2027 annual conference or recruiting-summit prospectus
+    owner: ryan
+    status: research
+    utm_source: nalp-conference
+
+  - id: ala_regional_chapter
+    niche: law_firm
+    organization: ALA regional chapters
+    program: Local business partner education and newsletter
+    motion: regional_partnership
+    official_url: https://www.alanet.org/about/awards-and-recognition/2026-ala-awards-recipients
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P1
+    fit_score: 4
+    cost_evidence: Request chapter terms
+    resource_key: law_firm_merch_calendar
+    pitch_angle: Merchandise-planning session for firm administrators rather than a generic vendor pitch
+    decision_gate: Select one NY/NJ chapter; require newsletter/session access, member role mix, and referral tracking
+    next_action: Identify one relevant chapter business-partner lead and request its calendar and rules
+    owner: ryan
+    status: research
+    utm_source: ala-chapter
+
+  - id: national_pta_corporate_alliance
+    niche: school
+    organization: National PTA
+    program: Mission-Driven Partnership or Corporate Alliance
+    motion: strategic_partnership
+    official_url: https://www.pta.org/home/About-National-Parent-Teacher-Association/Sponsors-Partners
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P3
+    fit_score: 3
+    cost_evidence: Selective custom partnership; request scope and investment
+    resource_key: school_store_comparison_guide
+    pitch_angle: Neutral workload guide for human-managed versus self-serve school stores
+    decision_gate: Confirm mission fit, national investment, noncommercial policy, content control, reach, and measurable referrals
+    next_action: Ask whether educational merchandise-store guidance is eligible before discussing sponsorship
+    owner: ryan
+    status: research
+    utm_source: national-pta-partner
+
+  - id: national_pta_convention
+    niche: school
+    organization: National PTA
+    program: Annual Convention sponsorship
+    motion: conference_sponsorship
+    official_url: https://www.pta.org/home/events/National-PTA-Convention
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P3
+    fit_score: 3
+    cost_evidence: Request current prospectus
+    resource_key: school_store_comparison_guide
+    pitch_angle: Store workload comparison and live PTA merchandise-program clinic
+    decision_gate: Do not buy before lower-cost school validation produces qualified leads and school proof
+    next_action: Archive the prospectus for later; prioritize direct school proof first
+    owner: ryan
+    status: research
+    utm_source: national-pta-convention
+
+  - id: shrm_event_sponsorship
+    niche: corporate
+    organization: Society for Human Resource Management
+    program: Event sponsorship and exhibition
+    motion: conference_sponsorship
+    official_url: https://www.shrm.org/business-solutions/sponsorship-events
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P3
+    fit_score: 2
+    cost_evidence: National opportunities are substantial; request only after channel validation
+    resource_key: company_store_buyers_guide
+    pitch_angle: Right-sized company-store buyer guide for People Ops and HR teams
+    decision_gate: Do not pursue national spend until corporate search/content creates qualified pipeline and an approved case study
+    next_action: Keep as a future scale channel; investigate one regional SHRM chapter first
+    owner: ryan
+    status: research
+    utm_source: shrm-events
+
+  - id: mpi_supplier_membership
+    niche: event
+    organization: Meeting Professionals International
+    program: Supplier Membership, directory, marketplace, and chapter access
+    motion: membership_directory
+    official_url: https://www.mpi.org/api/ChooseMembership/SelectMembership
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P1
+    fit_score: 5
+    cost_evidence: Preferred Supplier listed at $495 plus $50 application; verify current rate
+    resource_key: event_merchandise_timeline
+    pitch_angle: Event merchandise timeline for planners, agencies, venues, and suppliers
+    decision_gate: Confirm directory visibility, local chapter access, planner/supplier mix, and referral attribution
+    next_action: Request a sample directory listing and Greater New York chapter calendar
+    owner: ryan
+    status: research
+    utm_source: mpi-supplier
+
+  - id: iaee_industry_partner
+    niche: event
+    organization: International Association of Exhibitions and Events
+    program: Industry partner, media, or Expo Expo
+    motion: industry_partnership
+    official_url: https://www.iaee.com/media-kit/events/
+    source_checked: "2026-07-10"
+    source_status: verified_channel
+    priority: P3
+    fit_score: 3
+    cost_evidence: Published partnership levels require current-year verification and are generally high
+    resource_key: event_merchandise_timeline
+    pitch_angle: Date-safe merchandise and sponsor-fulfillment education for exhibition organizers
+    decision_gate: Validate a low-cost educational path before expo or sponsorship spend; require organizer buyer mix and attribution
+    next_action: Ask about contributor content or member education before requesting a paid package
+    owner: ryan
+    status: research
+    utm_source: iaee-partner
+
+  - id: pcma_partnership_summit
+    niche: event
+    organization: Professional Convention Management Association Foundation
+    program: Partnership Summit sponsorship
+    motion: executive_partnership
+    official_url: https://foundation.pcma.org/partnership-summit/
+    source_checked: "2026-07-10"
+    source_status: verified
+    priority: P3
+    fit_score: 3
+    cost_evidence: Invitation-only event; request sponsorship terms
+    resource_key: event_merchandise_timeline
+    pitch_angle: Merchandise-planning framework for senior business-event leaders and suppliers
+    decision_gate: Require invitation eligibility, investment, attendee role mix, deliverables, and direct attribution plan
+    next_action: Hold until event-planner referrals and MPI validation show repeatable demand
+    owner: ryan
+    status: research
+    utm_source: pcma-partnership-summit

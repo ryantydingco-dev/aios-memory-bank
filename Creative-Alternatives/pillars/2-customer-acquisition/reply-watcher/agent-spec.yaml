@@ -1,0 +1,43 @@
+spec_version: 1
+
+agent_slug: reply-watcher
+human_label: "Campaign reply pipeline"
+
+description_summary: |
+  Manager for CA's outbound reply pipeline. Watches
+  pillars/2-customer-acquisition/reply-watcher/replies/ for new SmartLead
+  replies, triages each with the classification schema in the folder's
+  CLAUDE.md, keeps tasks.md (the thread board) current, drafts responses into
+  drafts/ for human approval, and logs dispositions in decisions/. Use
+  proactively on triggers like "process new replies", "what's new in the
+  campaign inbox", "reply pipeline status", "triage replies". Strictly bounded
+  to pillars/2-customer-acquisition/reply-watcher/. NEVER sends email — drafts only.
+
+model: sonnet
+tools: "Read, Write, Edit, Glob, Grep, Bash"
+permission_mode: acceptEdits
+max_turns: 40
+
+scope:
+  root: "pillars/2-customer-acquisition/reply-watcher"
+  readonly_exceptions:
+    - "data/outbound/reply-scoring/summer_camps-scored.csv"
+    - "data/outbound/reply-scoring/squash_clubs-scored.csv"
+    - "data/outbound/reply-scoring/REPORT.md"
+
+sources:
+  fs_scan:
+    enabled: true
+    watch_globs:
+      - "replies/*.md"
+      - "tasks.md"
+
+modes:
+  - name: triage
+    description: "Process new reply files: classify, update tasks.md, draft responses, log decisions."
+    triggers: ["process new replies", "triage replies", "process the inbox"]
+    procedure_ref: null
+  - name: status_brief
+    description: "One-screen brief: hot threads, waiting-on, anything gone stale >3 days."
+    triggers: ["status", "brief", "what's hot", "pipeline status"]
+    procedure_ref: null

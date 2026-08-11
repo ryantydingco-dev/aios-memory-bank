@@ -1,0 +1,152 @@
+# Creative Alternatives — quoting engine config
+# Drives scripts/ca_quote.py. The tunable numbers Kenny owns live here, not in code.
+# See pillars/1-operations/quoting-automation-spec.md for the full design.
+
+# --- Margin floors by vertical -------------------------------------------------
+# A quote whose blended margin falls below the floor gets flagged, not sent.
+# Camp floor (28%) comes from the revenue plan: camp margin eroded 35%->25% since
+# 2019; the floor stops the leakage. Other floors sit a few points under each
+# vertical's recent historical margin so a normal quote passes but a bad one trips.
+margin_floors:
+  Camp: 0.28
+  Event: 0.32
+  School: 0.29
+  "Health Club": 0.31
+  "Professional Services": 0.27
+  Leagues: 0.33
+  Teams: 0.31
+  "Non-Profit": 0.32
+  default: 0.28   # anything uncategorized
+
+# --- Pricing posture ------------------------------------------------------------
+# CA wins on VALUE: cheaper than premium corporate vendors, same quality. The
+# engine prices cost-first (sell = cost / (1 - target margin)) and targets the
+# FLOOR by default — the aggressive end — because Kenny can quote UP from a
+# floor price but never wants the engine quoting him out of a deal. Raise a
+# vertical's target above its floor only where CA holds pricing power.
+pricing_posture:
+  strategy: "win_on_value"
+  note: "Beat the premium vendor's retail price; don't match it. Floor = default target."
+  target_margin_by_vertical:
+    # default: target == floor (see build_quote fallback). Override only deliberately.
+    Camp: 0.28
+    "Professional Services": 0.27
+
+# --- Product price anchors (fallback selling price, per unit) -------------------
+# Used only when the customer has no history for that product AND the ledger has
+# no close comparable. Sourced from qb_sales_by_product avg_price (2026-07-17).
+# These are BLENDED averages across garment tiers — a real quote should override
+# from the actual blank Kenny picks. Treated as a starting point, never final.
+price_anchors:
+  tee: 8.15
+  tshirt: 8.15
+  "100% tee": 7.01
+  long_sleeve: 11.72
+  sweatshirt: 23.02
+  hoodie: 23.02
+  sweatpants: 19.97
+  flannel: 22.66
+  tank: 7.60
+  golf_shirt: 24.19
+  polo: 24.19
+  jacket: 43.70
+  cap: 15.52
+  hat: 15.52
+  bag: 4.72
+  tote: 4.72
+  water_bottle: 7.43
+  bottle: 7.43
+  tumbler: 7.43
+  towel: 10.46
+  trophy: 20.05
+  sticker: 0.10
+  padfolio: 12.00        # from QBO 'Portfolios' avg (180 qty, $2,160)
+  portfolio: 12.00
+  journal_book: 28.00    # from QBO 'JOURNAL BOOKS' avg (50 qty, $1,400)
+  # NOTE: no yeti_rambler_20oz anchor — premium brand items have no CA history,
+  # so the engine prices them cost-first (scripts/cost_lookup.py) instead of
+  # anchoring off a made-up number. Removed the fabricated $32 anchor 2026-07-17.
+
+# Aliases map free-text request words -> a price_anchors key
+aliases:
+  t-shirt: tee
+  tees: tee
+  tshirt: tee
+  shirt: tee
+  crewneck: sweatshirt
+  crew: sweatshirt
+  hoody: hoodie
+  hoodies: hoodie
+  ls tee: long_sleeve
+  longsleeve: long_sleeve
+  caps: cap
+  hats: hat
+  beanie: hat
+  bottles: bottle
+  "water bottles": water_bottle
+  totes: tote
+  bags: bag
+  drinkware: tumbler
+  polos: polo
+  "golf shirt": golf_shirt
+  jackets: jacket
+  "yeti rambler": yeti_rambler_20oz
+  "yeti rambler 20oz": yeti_rambler_20oz
+  "yeti 20oz": yeti_rambler_20oz
+  rambler: yeti_rambler_20oz
+  padfolio: padfolio
+  "taylor padfolio": padfolio
+  portfolios: portfolio
+  journal: journal_book
+  "journal book": journal_book
+# --- Standard add-on charges (Kenny confirms per job) --------------------------
+# Present so the quote line-items them instead of burying them in unit price.
+addons:
+  setup_charge_per_color: 23.69   # from qb_sales_by_product 'Set Up Charge' avg
+  rush_surcharge_pct: 0.15        # PLACEHOLDER — Kenny confirms real rush policy
+  freight_note: "Freight billed at cost + handling; confirm per shipment."
+
+# --- Decoration cost structure (what CA pays to decorate, per piece) -----------
+# Source: qb_sales_by_product decoration lines — these are what CA CHARGES, so
+# the underlying COST is lower; 'cost_factor' is the assumed pay-side ratio
+# until Kenny hands over the Diamond/Viking rate card. `[CONFIRM with Kenny]`
+# Sheets (Diamond/Viking open orders) supply method + turnaround, not pricing.
+decoration_costs:
+  cost_factor: 0.60        # assume CA pays ~60% of what it charges — [CONFIRM]
+  per_piece:
+    laser_engrave: 5.40    # QBO 'ENGRAVE' avg charge (60 pcs) — drinkware etc.
+    embroidery: 7.78       # QBO 'EMBROIDERY' avg charge (1,976 pcs)
+    screenprint_1c: 1.16   # QBO 'Printing' avg charge (14,763 pcs)
+    dtf: 8.00              # QBO 'DTF' avg charge (3 pcs — thin data)
+    deboss: 5.40           # proxy: same as engrave until rate card [CONFIRM]
+  setup_per_color: 21.59   # QBO 'Set Up' avg (626 orders)
+  default_method_by_product:
+    yeti_rambler_20oz: laser_engrave
+    tumbler: laser_engrave
+    water_bottle: laser_engrave
+    padfolio: deboss
+    portfolio: deboss
+    journal_book: deboss
+    tee: screenprint_1c
+    sweatshirt: screenprint_1c
+    cap: embroidery
+    polo: embroidery
+  bundled_products:        # decoration usually INCLUDED in vendor price — don't double-count
+    - padfolio
+    - portfolio
+    - journal_book
+
+# --- Freight (what CA pays to ship, allocated per piece) -----------------------
+# Source: qb_sales_by_product 'Freight' $40,752 / 1,920 shipments = $21.23 avg.
+freight:
+  avg_per_shipment: 21.23        # QBO 'Freight' avg
+  est_heavy_per_shipment: 37.75  # QBO 'ESTIMATED FREIGHT' avg (bulk/large)
+  heavy_keywords: ["yeti", "rambler", "cooler", "blanket", "tent", "jacket"]
+  handling_note: "CA bills freight at cost + handling; this is the pay-side avg."
+
+# --- Comparable-order lookup tuning -------------------------------------------
+comparables:
+  lookback_years: 4          # how far back to pull the customer's own history
+  min_retail: 50             # ignore adjustment/credit rows below this
+  max_margin_abs: 0.90       # drop rows with |margin| above this (data errors)
+  min_margin_abs: -0.10      # drop obviously-broken negative-margin rows

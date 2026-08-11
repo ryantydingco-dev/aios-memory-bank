@@ -1,0 +1,36 @@
+# Partner registry — the source of truth for WHO is a partner, on WHAT terms,
+# and WHICH customers are attributed to them. scripts/ca_partner_gp_reconcile.py
+# reads this to compute monthly payout statements.
+#
+# Rules (from partner-economics-2026-07-17.md):
+# - Payouts compute on COLLECTED gross profit only; the script flags orders whose
+#   customer has open A/R so nothing is paid on uncollected money.
+# - attributed_customers use LEDGER customer names (add every spelling variant —
+#   the B&H lesson). A customer can be attributed to at most ONE partner.
+# - status: prospect | pilot | active | paused. Only pilot/active get statements.
+# - Every entry stays "terms_approved: false" until Kenny signs the model terms.
+
+partners: []
+
+# ---- Templates (copy above the line, fill in, set status) ----------------------
+# - name: "Example Partner"
+#   status: prospect                # not yet formalized — sweep candidate
+#   contact: "partner@example.invalid"
+#   model: B                        # A|B|C|D|E|G per partner-economics doc
+#   terms:
+#     gp_share: 0.10                # Model B default
+#     window_months: 12
+#     annual_cap_per_account: 2000
+#   terms_approved: false           # [KENNY]
+#   start_date: null
+#   attributed_customers: []        # ledger names, ALL spelling variants
+#   excluded_customers: []          # pre-existing CA accounts (excluded in writing)
+#
+# - name: "Example Wholesale Partner"
+#   status: prospect
+#   model: C                        # wholesale — no payout; reconcile margin instead
+#   terms:
+#     wholesale_discount: 0.12      # only with committed volume >= $50K/yr
+#     committed_annual_volume: 50000
+#   terms_approved: false
+#   attributed_customers: ["Example Customer", "Example Customer LLC"]

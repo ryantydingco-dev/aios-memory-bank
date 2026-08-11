@@ -15,6 +15,14 @@ Use Higgsfield tooling to create and test:
 ## Working principle
 Start by organizing scripts, prompts, generated assets, and posting plans into a dedicated creative workflow so the brand can begin publishing consistently.
 
+## 2026-08-10 fifth IP recurrence — same verdict
+
+Ryan again asked to strip the NBA logo from mockups for Shopify. The mockups are still the photo of Jalen Brunson in his Knicks game jersey — player likeness + uniform IP, so logo removal alone cannot make them commerce-safe. Verdict re-applied: no sanitizing path exists for that imagery; the session pivoted to building product images from the original `destiny-store/design-concepts/` artwork. Standing rule for future agents: run the IP check BEFORE any image-editing work — this is the fifth recurrence (06-24, 07-01, 07-02, 07-24, 08-10).
+
+## 2026-07-27 Higgsfield "AI Ad Agency" pack captured
+
+The Higgsfield "AI Ad Agency" article/pack was captured to `destiny-store/content-engine/higgsfield-ad-agency/` (README, prompts, full article text, and the downloadable `pro-ads-studio` Claude Skill). Durable caveat recorded in the pack README: **the published skill is INCOMPLETE** — `AD-MAKER-SKILL.md` is a router whose body delegates to assets the article does not ship. Treat the 10 verbatim prompts + article playbook as the usable material; the skill file needs completion before it can run as-is.
+
 ## 2026-07-02 Shopify/IP-safe imagery reminder
 
 Ryan again asked about removing NBA logo/IP from product imagery for Shopify. The durable answer is unchanged but important: **logo removal alone is not enough** if the image still includes recognizable player likeness, team uniforms, NBA/team identity, or right-of-publicity risk.

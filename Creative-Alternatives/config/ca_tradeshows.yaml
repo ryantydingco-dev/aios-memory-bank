@@ -1,0 +1,196 @@
+shows:
+  infocomm-2026:
+    name: InfoComm 2026
+    date: '2026-06-13'
+    city: Orlando, FL
+    exhibitor_url: https://infocomm26.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: AV/pro-audio branded item — e.g. a premium tumbler or a branded cable-organizer for the booth
+  blackhat-2026:
+    name: Black Hat USA 2026
+    date: '2026-08-03'
+    city: Las Vegas, NV
+    exhibitor_url: https://www.blackhat.com/us-26/business-hall/sponsor-directory.html
+    platform: generic
+    mockup_theme: cyber-themed swag — RFID-blocking sleeve, USB data blocker, or laser-engraved webcam cover with their logo
+  cedia-2026:
+    name: CEDIA Expo 2026
+    date: '2026-09-01'
+    city: Denver, CO
+    exhibitor_url: https://cedia2026.smallworldlabs.com/exhibitors
+    platform: directory
+    mockup_theme: smart-home/AV integrator swag — a branded multi-tool, cable-tester pouch, or premium tumbler for the booth
+  money2020-2026:
+    name: Money20/20 USA 2026
+    date: '2026-10-25'
+    city: Las Vegas, NV
+    exhibitor_url: https://us.money2020.com/exhibitors
+    platform: generic
+    mockup_theme: fintech booth item — recycled power bank or premium tumbler with their logo (top booth-traffic drivers)
+  finovate-fall-2026:
+    name: FinovateFall 2026
+    date: '2026-09-09'
+    city: New York, NY
+    exhibitor_url: https://informaconnect.com/finovatefall/
+    platform: generic
+    mockup_theme: fintech booth swag — premium notebook + pen set or RFID cardholder with their logo
+  dreamforce-2026:
+    name: Dreamforce 2026
+    date: '2026-09-15'
+    city: San Francisco, CA
+    exhibitor_url: https://www.salesforce.com/dreamforce/register/
+    platform: generic
+    mockup_theme: SaaS booth swag — quality hoodie or campfire-style enamel mug with their logo (Dreamforce crowd expects
+      premium)
+  unbound-2026:
+    name: UNBOUND 2026
+    date: '2026-09-16'
+    city: Boston, MA
+    exhibitor_url: https://unbound.hubspot.com/
+    platform: generic
+    mockup_theme: marketing-tech booth swag — branded desk mat or premium water bottle for the booth
+  shoptalk-fall-2026:
+    name: Shoptalk Fall 2026
+    date: '2026-09-29'
+    city: Nashville, TN
+    exhibitor_url: https://fall.shoptalk.com/home
+    platform: generic
+    mockup_theme: retail-tech booth swag — branded tote or phone-stand card wallet for the aisle crowd
+  hr-tech-2026:
+    name: HR Technology Conference 2026
+    date: '2026-10-20'
+    city: Las Vegas, NV
+    exhibitor_url: https://hrtech2026.smallworldlabs.com/exhibitors
+    platform: generic
+    mockup_theme: HR-tech booth swag — premium tumbler or desk plant kit with their logo
+  aws-reinvent-2026:
+    name: AWS re:Invent 2026
+    date: '2026-11-30'
+    city: Las Vegas, NV
+    exhibitor_url: https://awsreinvent2026.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: cloud booth swag — laser-engraved multi-port hub or premium hoodie with their logo
+  ces-2027:
+    name: CES 2027
+    date: '2027-01-06'
+    city: Las Vegas, NV
+    exhibitor_url: https://exhibit.ces.tech/exhibit2027/
+    platform: generic
+    mockup_theme: tech booth swag — branded power bank or cable-organizer pouch (booth-traffic staples)
+  nrf-2027:
+    name: 'NRF 2027: Retail''s Big Show'
+    date: '2027-01-10'
+    city: New York, NY
+    exhibitor_url: https://bigshow27.mapyourshow.com/
+    platform: mapyourshow
+    mockup_theme: retail booth swag — branded tote + premium tumbler pairing for the Big Show aisles
+  sxsw-2027:
+    name: South by Southwest 2027
+    date: '2027-03-15'
+    city: Austin, TX
+    exhibitor_url: https://sxsw.com/
+    platform: generic
+    mockup_theme: creator-crowd swag — branded bucket hat or sticker-and-enamel-pin pack
+  himss-2027:
+    name: HIMSS 2027
+    date: '2027-04-05'
+    city: Chicago, IL
+    exhibitor_url: https://himss27.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: health-tech booth swag — antimicrobial pen set or premium badge lanyard kit with their logo
+  imts-2026:
+    name: International Manufacturing Technology Show 2026
+    date: '2026-09-14'
+    city: Chicago, IL
+    exhibitor_url: https://directory.imts.com/8_0/explore/exhibitor-alphalist.cfm
+    platform: generic
+    mockup_theme: Machined steel pen set with company logo, tool cabinet organizer
+  gsx-2026:
+    name: Global Security Exchange 2026
+    date: '2026-09-16'
+    city: Atlanta, GA
+    exhibitor_url: https://gsx26.mapyourshow.com/8_0/exhview/index.cfm
+    platform: mapyourshow
+    mockup_theme: Corporate security badge holder with reflective trim, desk access control keypad
+  fabtech-2026:
+    name: FABTECH 2026
+    date: '2026-10-21'
+    city: Las Vegas, NV
+    exhibitor_url: https://fabtech2026.smallworldlabs.com/exhibitors
+    platform: generic
+    mockup_theme: Welding glove-shaped stress ball, fabrication shop floor mat
+  equip-expo-2026:
+    name: Equip Exposition 2026
+    date: '2026-10-20'
+    city: Louisville, KY
+    exhibitor_url: https://equipexpo26.mapyourshow.com/8_0/exhview/index.cfm
+    platform: mapyourshow
+    mockup_theme: Landscape contractor hi-vis vest, branded equipment maintenance checklist clipboard
+  sema-2026:
+    name: SEMA Show 2026
+    date: '2026-11-03'
+    city: Las Vegas, NV
+    exhibitor_url: https://sema25.mapyourshow.com/8_0/exhview/index.cfm
+    platform: mapyourshow
+    mockup_theme: Custom automotive air freshener, chrome tool organizer with logo
+  aapex-2026:
+    name: Automotive Aftermarket Products Expo 2026
+    date: '2026-11-03'
+    city: Las Vegas, NV
+    exhibitor_url: https://aapex2026.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: Magnetic parts tray with grip handle, auto shop work cap
+  world-of-concrete-2027:
+    name: World of Concrete 2027
+    date: '2027-01-19'
+    city: Las Vegas, NV
+    exhibitor_url: https://ge27woc.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: Concrete sample coaster set, branded measuring tape
+  ibs-2027:
+    name: International Builders' Show 2027
+    date: '2027-02-02'
+    city: Las Vegas, NV
+    exhibitor_url: https://www.buildersshow.com/ibs-exhibitor-directory
+    platform: generic
+    mockup_theme: Tool belt organizer apron, hardhat sticker pack
+  natural-products-2027:
+    name: Natural Products Expo West 2027
+    date: '2027-03-02'
+    city: Anaheim, CA
+    exhibitor_url: https://www.expowest.com/en/exhibitor-list/2027-exhibitor-list.html
+    platform: generic
+    mockup_theme: Organic cotton tote bag with health/wellness product sampler
+  global-pet-expo-2027:
+    name: Global Pet Expo 2027
+    date: '2027-03-17'
+    city: Orlando, FL
+    exhibitor_url: https://globalpetexpo26.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: Custom pet treat jar with logo, pet groomer's apron
+  nra-show-2027:
+    name: National Restaurant Association Show 2027
+    date: '2027-05-22'
+    city: Chicago, IL
+    exhibitor_url: https://directory.nationalrestaurantshow.com/8_0/explore/exhibitor-alphalist.cfm
+    platform: generic
+    mockup_theme: Chef's knife sheath with branding, restaurant server's apron
+  fancy-food-show-2027:
+    name: Summer Fancy Food Show 2027
+    date: '2027-06-25'
+    city: New York, NY
+    exhibitor_url: https://sff2027.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm
+    platform: mapyourshow
+    mockup_theme: Gourmet food tasting spoon set, artisan market reusable shopping bag
+apify:
+  actor: skython~exhibitor-list-scraper
+  timeout: 300
+  input:
+    start_url: __URL__
+    output_type: single_row
+    result_limit: 500
+scoring:
+  peak_weeks_lo: 8
+  peak_weeks_hi: 12
+  rush_weeks: 4
+  nurture_weeks: 16

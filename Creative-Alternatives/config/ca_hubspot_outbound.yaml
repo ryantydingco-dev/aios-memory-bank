@@ -1,0 +1,87 @@
+# HubSpot outbound tracking layer — extends ca_hubspot_properties.yaml (inbound, already applied).
+# Same guardrails: deals are created only after human qualification (= meeting booked).
+# HubSpot = new-lead pipeline truth. QuickBooks = customer/order/money truth. SmartLead = working
+# cold pool (cold leads do NOT sync to HubSpot until they show intent — reply, booked meeting,
+# or live call conversation). Keeps the CRM clean and the contact count honest.
+
+schema_version: "1.0.0"
+
+guardrails:
+  review_only: true          # flip after Ryan approves creation
+  contact_sync_trigger: reply_or_meeting_or_live_conversation   # never bulk-sync the cold pool
+  reuse_first: true          # channel/campaign attribution reuses existing ca_first/latest_touch_*
+
+groups:
+  contacts: {name: ca_outbound, label: CA Outbound}
+
+attribution_conventions:   # existing properties, outbound value conventions — nothing new to create
+  ca_first_touch_source: "outbound"
+  ca_first_touch_medium: "cold_email | cold_call | linkedin"
+  ca_first_touch_campaign: "SmartLead campaign name (e.g. 'Swag — Law (US)') or Sendr sequence name"
+  ca_latest_touch_*: "channel that produced the CURRENT conversation (a call that books the meeting
+                      sets latest_touch_medium=cold_call even if first touch was cold_email)"
+  ca_primary_niche: "reuse the existing niche enum for segment (law_firm, financial_services, ...)"
+
+option_sets:
+  engagement_tier:
+    tier1: Tier 1 — clicked or 3+ opens, no reply
+    tier2: Tier 2 — opened 1-2x, no reply
+    tier3: Tier 3 — no opens
+    replied: Replied
+  call_disposition:
+    meeting_booked: Meeting booked
+    send_info: Send info / mockup promised
+    referred: Referred to right person
+    callback_set: Callback set
+    not_interested: Not interested
+    no_answer: No answer / voicemail
+    do_not_call: Do not call
+  sendr_status:
+    not_enrolled: Not enrolled
+    invited: Connection requested
+    connected: Connected
+    dm_sent: Video DM sent
+    replied: Replied
+    exhausted: Sequence exhausted
+
+properties:
+  - {object_type: contacts, name: ca_engagement_tier, label: CA Engagement Tier, type: enumeration,
+     field_type: select, option_set: engagement_tier,
+     description: Email-engagement tier from ca_call_targets.py; refreshed weekly.}
+  - {object_type: contacts, name: ca_smartlead_campaign, label: CA SmartLead Campaign, type: string,
+     field_type: text, description: Source SmartLead campaign (working pool reference).}
+  - {object_type: contacts, name: ca_sendr_status, label: CA Sendr Status, type: enumeration,
+     field_type: select, option_set: sendr_status, description: LinkedIn sequence state.}
+  - {object_type: contacts, name: ca_call_attempts, label: CA Call Attempts, type: number,
+     field_type: number, description: Salesfinity dial passes used (max 3 per cycle).}
+  - {object_type: contacts, name: ca_last_call_disposition, label: CA Last Call Disposition,
+     type: enumeration, field_type: select, option_set: call_disposition,
+     description: Most recent Salesfinity disposition.}
+  - {object_type: contacts, name: ca_last_call_date, label: CA Last Call Date, type: datetime,
+     field_type: date, description: Timestamp of most recent dial.}
+  - {object_type: contacts, name: ca_do_not_contact, label: CA Do Not Contact (all channels),
+     type: bool, field_type: booleancheckbox,
+     description: Cross-channel suppression - an opt-out anywhere suppresses email, LinkedIn, and phone.}
+  - {object_type: contacts, name: ca_mockup_sent_date, label: CA Mockup Sent Date, type: datetime,
+     field_type: date, description: When the personalized mockup went out (the wedge event).}
+
+pipeline:
+  # No new pipeline. Map the outbound journey onto the existing default Sales Pipeline:
+  #   appointmentscheduled   -> Meeting booked (deal created HERE, not before)
+  #   qualifiedtobuy         -> Meeting held, real need confirmed
+  #   presentationscheduled  -> Mockup/store demo walked through
+  #   decisionmakerboughtin  -> Verbal yes / decision maker on board
+  #   contractsent           -> Quote sent
+  #   closedwon / closedlost -> reconcile closedwon revenue to QuickBooks (ca_closed_revenue)
+  deal_creation_rule: >
+    A deal is created when a meeting is booked (any channel), owned by Maclaine, with
+    ca_niche + ca_first/latest touch copied from the contact. Nothing earlier creates deals.
+
+data_flows:
+  smartlead_to_hubspot: "reply-watcher (existing) upserts contact on REPLY with attribution + tier"
+  salesfinity_to_hubspot: "weekly call-log export -> script upserts dispositions on connects;
+                           meeting_booked upserts immediately"
+  sendr_to_hubspot: "Maclaine logs positive DM replies (low volume); weekly status sync otherwise"
+  meetings: "Maclaine's HubSpot Meetings link is THE calendar link in every script and sequence -
+             a booking auto-creates/updates the contact + meeting activity, then the deal"
+  weekly_review: "query_crm_data (MCP) pulls meetings + deals by medium x niche into /weekly-review"

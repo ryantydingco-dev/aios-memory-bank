@@ -1,0 +1,57 @@
+# SmartLead variants template for /ca-outbound — MUST match the restricted YAML parser in
+# smartlead-campaign-upload-public/scripts/upload.ts (no `|` block scalars, no `{}` flow maps).
+# Bodies are double-quoted single-line strings with \n for newlines. Rendered by
+# ca_outbound_prep.py (placeholders __CAMPAIGN_NAME__ __INBOX_TAG__ __INBOX_COUNT__ __TIMEZONE__
+# __START_HOUR__ __END_HOUR__ __MIN_GAP__ __MAX_PER_DAY__).
+#
+# Copy = Maclaine's voice (pillars/2-customer-acquisition/sequences/swag-handled-cold-copy.md).
+# DELIVERABILITY: email teases the mockup, no embedded image/link in email #1. Only the opener
+# ({{situation_line}}) is personalized per-lead; proof + mockup tease stay static.
+# NOTE: upload.ts does NOT set tracking/stop-on-reply — set "stop on reply" ON and open/click
+# tracking OFF in the SmartLead UI during review (also in the review checklist).
+
+name: "__CAMPAIGN_NAME__"
+
+schedule:
+  timezone: __TIMEZONE__
+  days: [1, 2, 3, 4, 5]
+  start_hour: "__START_HOUR__"
+  end_hour: "__END_HOUR__"
+  min_time_btw_emails: __MIN_GAP__
+  max_leads_per_day: __MAX_PER_DAY__
+
+inbox_selection:
+  tag: __INBOX_TAG__
+  count: __INBOX_COUNT__
+
+sequences:
+  - step: 1
+    delay_days: 0
+    variants:
+      - label: "A"
+        subject: "a kit for {{company_name}}'s new hires"
+        body: "Hi {{first_name}},\n\n{{situation_line}}\n\nThat's the part we take off your plate. We've handled branded gear for 27 years, everyone from local firms to teams at Thermo Fisher and Trinity Health: onboarding kits, event gear, client gifts, designed and stored and shipped, with one person you can actually call.\n\n{{cta_line}}\n\nMaclaine Scher\nVice President, Creative Alternatives\ncreativealternatives.com"
+      - label: "B"
+        subject: "{{company_name}}'s onboarding swag"
+        body: "Hi {{first_name}},\n\nMost teams your size end up juggling two or three vendors for branded gear, one for shirts, one for drinkware, someone for the print, and it still lands on whoever has the least time.\n\nThat's the part we take off your plate. We've handled branded gear for 27 years, everyone from local firms to teams at Thermo Fisher and Trinity Health: onboarding kits, event gear, client gifts, designed and stored and shipped, with one person you can actually call.\n\nI could put together a quick mockup of what a {{company_name}} welcome kit might look like. Want me to send it over?\n\nMaclaine Scher\nVice President, Creative Alternatives\ncreativealternatives.com"
+
+  - step: 2
+    delay_days: 4
+    variants:
+      - label: "A"
+        subject: ""
+        body: "Hi {{first_name}},\n\nCircling back in case this got buried. The mockup offer stands, no cost, no commitment: I put your logo on a real welcome-kit setup so you can see it before deciding anything.\n\nWorth a look?\n\nMaclaine"
+
+  - step: 3
+    delay_days: 5
+    variants:
+      - label: "A"
+        subject: "how a medical group stopped chasing swag"
+        body: "Hi {{first_name}},\n\nQuick story instead of a pitch. A medical group we work with used to lose a week every quarter chasing shirts and welcome boxes across three vendors. We took the whole thing over: one contact, proofs in 24-48 hours, everything warehoused and shipped. They stopped thinking about it.\n\nIf that sounds useful for {{company_name}}, I'm happy to show you what it would look like. Even 10 minutes would do it.\n\nMaclaine"
+
+  - step: 4
+    delay_days: 5
+    variants:
+      - label: "A"
+        subject: "closing your file, {{first_name}}"
+        body: "Hi {{first_name}},\n\nI don't want to keep landing in your inbox, so I'll close your file here. If branded gear ever turns into a scramble, whether that's onboarding kits, an event, or client gifts, we're the one-contact version of it.\n\nEither way, wishing {{company_name}} a great rest of the year.\n\nMaclaine"

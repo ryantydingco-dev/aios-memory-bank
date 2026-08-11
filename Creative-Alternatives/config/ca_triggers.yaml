@@ -1,0 +1,46 @@
+# News-detectable company triggers — DISCOVERY (find companies via the trigger, not enrich a known list).
+# Each trigger = Google News query terms + allow filter + mockup theme + buyer title. National by default
+# (these aren't geo-bound); pass --state/--region to scope. Same discover→enrich→AI-Ark→mockup pattern.
+
+triggers:
+  rebrand:
+    label: "rebrand / new logo"
+    terms: '"unveils new logo" OR rebrands OR "new brand identity" OR "rebranding" OR "new name and logo" OR "refreshed brand" OR "new look"'
+    allow: 'rebrand|new logo|brand identity|new name|new look|refreshed brand|unveils'
+    mockup_theme: "rebrand rollout swag (re-logo'd staff apparel, updated welcome kits, launch giveaways) — everything with the old mark reorders"
+    target_title: "marketing OR brand OR chief marketing OR communications"
+
+  anniversary:
+    label: "milestone anniversary"
+    terms: '"celebrates 25 years" OR "celebrates 50 years" OR "20th anniversary" OR "30th anniversary" OR "50th anniversary" OR "100th anniversary" OR "milestone anniversary"'
+    allow: 'anniversary|celebrates \d+ years|\d+ years in business|milestone'
+    mockup_theme: "commemorative anniversary merch (limited-edition apparel, keepsake gifts, employee + client swag)"
+    target_title: "marketing OR events OR owner OR communications"
+
+  funding:
+    label: "funding round"
+    terms: '"raises Series A" OR "raises Series B" OR "seed round" OR "secures funding" OR "closes funding" OR "raised $" OR "announces funding"'
+    allow: 'series [ab]|seed round|raises \$|secures? funding|closes? .*round|funding round'
+    mockup_theme: "post-raise swag (team gear for the growing headcount, investor/launch gifts, conference booth kit)"
+    target_title: "marketing OR founder OR head of people OR operations"
+
+  franchise-expansion:
+    label: "franchise expansion"
+    terms: '"franchise agreement" OR "multi-unit franchise" OR "franchise expansion" OR "opening new locations" OR "signs development agreement" OR "new franchisee"'
+    allow: 'franchise|multi-unit|development agreement|new locations|franchisee'
+    mockup_theme: "franchise-opening merch (brand-compliant staff apparel, grand-opening giveaways, location launch kits)"
+    target_title: "marketing OR franchise development OR owner OR operations"
+
+  company-event:
+    label: "company-hosted event"
+    terms: '"to host" (conference OR summit OR "user conference" OR hackathon OR expo) OR "announces conference" OR "hosting its first" OR "annual conference"'
+    allow: 'conference|summit|user conference|hackathon|expo|host'
+    mockup_theme: "event swag (attendee giveaways, branded lanyards/bags, staff polos, speaker gifts) on the event deadline"
+    target_title: "event marketing OR field marketing OR marketing OR events"
+
+  new-office:
+    label: "new office / relocation"
+    terms: '"opens new office" OR "new headquarters" OR "relocates to" OR "expands to new office" OR "opens headquarters" OR "moving to new office"'
+    allow: 'new office|headquarters|relocat|expands to|new HQ'
+    mockup_theme: "new-space swag (branded signage-adjacent gear, employee welcome kits, open-house giveaways)"
+    target_title: "office manager OR operations OR facilities OR marketing"

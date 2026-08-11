@@ -1,0 +1,120 @@
+schema_version: "1.0.0"
+updated: "2026-07-17"
+
+status: draft
+human_approval_required: true
+
+objective:
+  primary: permissioned_live_client_opportunity
+  secondary: scheduled_co_marketing_action
+  north_star: net_collected_gross_profit_after_partner_incentive
+
+pilot:
+  pull_per_lane: 15
+  max_paid_emails_total: 45
+  launch_per_lane: 10
+  no_mobile_on_initial_pull: true
+  one_contact_per_domain: true
+
+# Approved by Ryan 2026-07-17 after the 45-record QA pilot. This is the
+# campaign-sized audience; the pilot above remains as the audit trail for the
+# targeting/parser proof.
+scale:
+  target_contacts_total: 3000
+  target_contacts_per_lane: 1000
+  discovery_candidates_per_lane: 1500
+  max_paid_attempts_per_lane: 1500
+  one_contact_per_domain: true
+  mobile_reveal: false
+  status: finalized_for_human_review
+  output_dir: outputs/partnerships/scale-3000-2026-07-17
+  first_launch_batch_per_lane: 100
+  expand_only_after_quality_review: true
+
+suppression:
+  existing_customers: true
+  existing_partners: true
+  direct_competitors: true
+  prior_unsubscribes: true
+  prior_bounces: true
+  do_not_call: true
+
+smartlead:
+  status: draft
+  timezone: prospect_local
+  weekdays_only: true
+  start_hour: "09:00"
+  end_hour: "17:00"
+  stop_on_reply: true
+  pilot_new_leads_per_day: 25
+  links_in_emails_1_3: false
+  same_business_day_positive_reply_sla: true
+
+sendr:
+  status: draft
+  stop_on_reply: true
+  weekdays_only: true
+  connection_requests_per_day_per_account: 15
+  one_automation_tool_per_linkedin_account: true
+  steps:
+    - {type: profile_view, delay_days: 0}
+    - {type: wait, delay_days: 1}
+    - {type: connection_request}
+    - {type: accepted_check, retry_every_days: 4, max_days: 16}
+    - {type: wait, delay_days: 2}
+    - {type: message, asset: lane_partner_page}
+    - {type: wait, delay_days: 4}
+    - {type: final_follow_up}
+
+salesfinity:
+  status: hold_until_engaged
+  bulk_unengaged_dialing: false
+  mobile_reveal: tier1_only
+  max_passes: 3
+  voicemail_passes: [1, 3]
+  stop_and_suppress_on_opt_out: true
+  eligibility:
+    - positive_or_ambiguous_email_reply
+    - repeated_email_engagement_under_current_policy
+    - accepted_linkedin_plus_message_or_page_engagement
+    - warm_introduction
+    - existing_relationship
+
+lanes:
+  partner_agencies:
+    label: Creative agencies
+    offer: White-Label Merch Desk
+    smartlead_campaign: CA Partners — Creative Agencies [DRAFT]
+    sendr_campaign: CA Partners · Creative Agencies [DRAFT]
+    sender: ryan
+    partner_page: outputs/partnerships/assets/agency-partner-page.md
+    output_dir: outputs/partnerships/outreach-2026-07-17/partner-agencies
+  partner_event_agencies:
+    label: Event planners and producers
+    offer: Planner Merch Concierge
+    smartlead_campaign: CA Partners — Event Planners & Producers [DRAFT]
+    sendr_campaign: CA Partners · Event Planners [DRAFT]
+    sender: ryan
+    partner_page: outputs/partnerships/assets/event-partner-page.md
+    output_dir: outputs/partnerships/outreach-2026-07-17/partner-event-agencies
+  partner_people_advisors:
+    label: HR and People advisors
+    offer: Employee Moment Merch Partner
+    smartlead_campaign: CA Partners — HR & People Advisors [DRAFT]
+    sendr_campaign: CA Partners · People Advisors [DRAFT]
+    sender: ryan
+    partner_page: outputs/partnerships/assets/people-partner-page.md
+    output_dir: outputs/partnerships/outreach-2026-07-17/partner-people-advisors
+
+launch_gates:
+  - first_10_per_lane_manually_checked
+  - company_and_title_fit_confirmed
+  - competitor_suppression_complete
+  - current_relationship_suppression_complete
+  - personalization_source_verified
+  - no_fabricated_claims
+  - smartlead_campaign_is_draft
+  - sendr_campaign_is_draft
+  - sendr_stop_on_reply_enabled
+  - hubspot_partner_attribution_ready
+  - incentive_terms_marked_subject_to_approval

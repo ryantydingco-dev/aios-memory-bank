@@ -1,0 +1,185 @@
+schema_version: "1.0.0"
+updated: "2026-07-17"
+
+principles:
+  explainable_scores: true
+  evidence_required: true
+  never_infer_recent_activity_without_source: true
+  structural_signals_apply_to_all: true
+  live_web_signals_apply_to_top_tier_candidates: true
+  no_social_activity_claim_without_public_url: true
+
+scoring:
+  partner_fit_max: 50
+  partner_readiness_max: 30
+  contactability_max: 20
+  live_signal_bonus_max: 25
+  tiers:
+    tier_1_min_structural: 70
+    tier_2_min_structural: 50
+    tier_3_min_structural: 0
+  live_priority:
+    tier_1a_min_combined: 90
+    tier_1b_min_combined: 75
+
+structural_signals:
+  authority:
+    weight: 10
+    evidence: contact title
+    values: [founder, owner, president, ceo, managing_director, principal, partner, executive_producer, director]
+  lane_relevance:
+    weight_max: 20
+    evidence: company description and industry
+  client_portfolio:
+    weight: 10
+    evidence: clients, brands, portfolio, case studies, organizations served
+  company_size_fit:
+    weight: 6
+    evidence: AI Ark company employee count
+  partnership_language:
+    weight: 10
+    evidence: partner, collaboration, alliance, ecosystem, vendor network, strategic relationship
+  white_label_or_referral_language:
+    weight: 8
+    evidence: white-label, reseller, referral, overflow, subcontract, behind-the-scenes
+  recurring_client_model:
+    weight: 6
+    evidence: retainer, ongoing, annual, year-round, full-service, long-term relationships
+  direct_merch_trigger:
+    weight: 6
+    evidence: lane-specific trigger language
+  named_business_email:
+    weight: 10
+    evidence: non-role email at company domain
+  linkedin_profile:
+    weight: 5
+    evidence: contact LinkedIn URL
+  email_domain_match:
+    weight: 5
+    evidence: email domain equals company domain
+
+lane_signals:
+  partner_agencies:
+    strongest:
+      - experiential or brand-activation services
+      - launch and campaign execution
+      - client portfolio or case-study library
+      - packaging, events, influencer kits, retail activation, or physical brand experiences
+      - explicit vendor, white-label, or production-partner language
+    subsegments:
+      - creative_marketing_agency
+      - experiential_agency
+      - media_publisher
+      - adjacent_creative_service
+  partner_event_agencies:
+    strongest:
+      - corporate event or conference production
+      - repeated event calendar
+      - destination or venue logistics
+      - attendee, sponsor, exhibitor, speaker, or staff programs
+      - vendor-management responsibility
+      - event portfolio or named client work
+    subsegments:
+      - planner_producer
+      - exhibit_production_vendor
+      - event_technology
+      - venue_logistics_vendor
+      - event_adjacent_service
+  partner_people_advisors:
+    strongest:
+      - employee experience or engagement
+      - onboarding or employer brand
+      - recognition, retention, culture, leadership, or offsites
+      - recurring advisory relationships across multiple employers
+      - recruiting relationship that continues into onboarding
+      - PEO or benefits advisor with a client book
+    subsegments:
+      - people_advisory
+      - recruiting_search
+      - benefits_peo_advisor
+      - adjacent_business_advisor
+
+live_signals:
+  explicit_partner_page:
+    bonus: 20
+    source: company website
+    evidence_patterns: [partners, partnerships, alliances, strategic partners, vendor partners]
+  white_label_referral_page:
+    bonus: 20
+    source: company website
+    evidence_patterns: [white label, reseller, referral partner, overflow partner, subcontractor]
+  recent_client_win_or_campaign:
+    bonus: 15
+    max_age_days: 180
+    source: company news, press release, attributable publication
+  recent_event_calendar:
+    bonus: 15
+    max_age_days: 180
+    source: company portfolio, event page, conference listing
+  active_hiring:
+    bonus: 10
+    max_age_days: 45
+    source: company careers or public ATS
+  expansion_or_new_office:
+    bonus: 10
+    max_age_days: 180
+    source: company announcement or attributable news
+  recent_award:
+    bonus: 6
+    max_age_days: 180
+    source: attributable industry publication
+  association_leadership:
+    bonus: 8
+    max_age_days: 365
+    source: MPI, PCMA, ILEA, SHRM, AMA, PRSA, or comparable chapter page
+  founder_publicly_active:
+    bonus: 5
+    max_age_days: 60
+    source: attributable public post or speaking page
+  co_marketing_activity:
+    bonus: 8
+    max_age_days: 180
+    source: webinar, podcast, workshop, guide, or event with another business
+
+negative_signals:
+  direct_promo_competitor:
+    action: disqualify
+  current_customer_or_recent_touch:
+    action: suppress_from_cold
+  wrong_lane:
+    action: disqualify_or_resegment
+  role_based_email:
+    action: lower_contactability
+  one_off_freelancer_without_client_portfolio:
+    action: tier_3
+  inactive_or_broken_website:
+    action: tier_3
+  no_named_decision_maker:
+    action: hold
+  internal_buyer_not_external_advisor:
+    action: resegment_as_end_buyer
+
+personalization:
+  formula: verified_signal_to_partner_overlap_to_low_friction_test
+  example: "Saw {{company}} runs corporate events and coordinates venue logistics. We can take the merchandise line off the run-of-show while you keep the client relationship. Open to testing it on one live brief?"
+  rules:
+    - use one verifiable fact
+    - never claim social activity without a source URL
+    - no congratulations for generic website claims
+    - no fabricated client, event, volume, or partnership
+    - structural opener for tier_2 and tier_3
+    - fresh-signal opener only when date and source are stored
+
+routing:
+  tier_1:
+    channels: [smartlead_personalized, sendr_one_to_one, salesfinity_after_engagement]
+    research: live_signal_enrichment_required
+  tier_2:
+    channels: [smartlead_segmented, sendr_after_acceptance]
+    research: structural_personalization
+  tier_3:
+    channels: [nurture_or_hold]
+    research: no_paid_mobile_enrichment
+  disqualified:
+    channels: []
+    research: do_not_launch
