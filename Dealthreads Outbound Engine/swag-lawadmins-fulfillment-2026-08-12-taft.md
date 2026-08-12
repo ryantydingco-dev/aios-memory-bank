@@ -13,7 +13,11 @@
 
 Five mockups, catalog-lane only (Higgsfield nano_banana_pro, 1:1, 1k):
 1. Quarter zip — charcoal, embroidered crimson Taft/ left chest (SanMar/alphabroder lane) — promised in E1. https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163343_5e778675-9ca9-4232-afab-720073095be2.png
-2. Tumbler — 20oz matte black stainless, white logo, generic shape NO brand badge (Koozie/PCNA lane, Yeti lesson applied) — promised in E1. https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163343_4bbdd0cb-be4e-45e3-b256-ffb715d71e55.png
+2. Tumbler — REDONE (Ryan rejected the matte black v1). v2 = brushed stainless w/ white lower body, crimson logo, tapered base, clear lid, generic NO brand badge (Koozie/PCNA lane). Three candidates, Ryan picks one:
+   - v2a: https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163811_0e17c90c-9950-446d-8f28-979b40e13445.png
+   - v2b: https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163811_fcfbcae3-aada-4b2e-a357-61d652090529.png
+   - v2c: https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163811_3b98b590-0b95-4312-b29a-bed00420802b.png
+   - Rejected v1 (do not send): hf_20260812_163343_4bbdd0cb…png. ⚠️ The deck's tumbler card still shows v1 — regenerate the deck (Gamma can't edit in place) once the pick is made, or swap the image manually in the Gamma editor.
 3. Welcome kit — black box: crimson linen notebook (debossed), pen, mug, tissue (Hit Promo lane) — promised in E1. https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163343_deddf764-6a42-43ff-a697-b076dcc47002.png
 4. Padfolio — black, debossed corner logo (Hit/Prime Line lane). https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163343_ee432f66-a107-4ca5-b961-322a4f4c6c93.png
 5. Canvas tote — natural w/ crimson handles (Hit/Innovation Line lane). https://d8j0ntlcm91z4.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/hf_20260812_163343_9f151619-20d4-4ba3-9047-06bb0b0fa336.png
