@@ -210,10 +210,10 @@ because its mid-tone has nowhere to go. Don't. On an ivory/natural blank
 (Comfort Colors 1717 Ivory) cream becomes the garment and knocks out → **6
 screens, no white underbase.**
 
-Two variants: `-screenprint.svg` suppresses the concept's distress texture
-(224 KB, solid flats — the recommended print file);
-`-screenprint-textured.svg` keeps it (505 KB, thousands of sub-mm specks that
-won't hold on a screen — use only if the worn look is wanted on DTF).
+The concept's distress texture is suppressed (`--turd 120 --despeckle 5`) —
+kept, it produced thousands of sub-millimetre specks that won't hold on a
+screen. Trade-off: the retro "worn" look is gone. If Kenny wants it back it's a
+separate texture screen, not a property of this file.
 
 ### Raccoon → DTF, not screen print
 
@@ -223,13 +223,65 @@ a 13-screen job; as sim-process it needs a decorator who does those seps.
 transparent**, rendered from the Recraft SVG. The nobg PNG alone was only
 102 dpi at size and would NOT have held up.
 
-### Still open — the type
+### Type re-set — DONE
 
-Separation fixed the color, not the letterforms. The defects logged above
-survive because they're traced shapes, not set type. Re-setting needs display
-faces this machine doesn't have (system supplemental has no retro script or
-heavy rounded display; SignPainter/Futura/DIN Condensed are the near misses).
-Decision pending with Ryan — see below.
+Separation fixed the colour, not the letterforms, so the three caps blocks were
+lifted out of the raster and re-set as real type via `scripts/retype_art.py` +
+`scripts/set_type.py` (spec: `lifeguard-retype.json`). Glyph outlines come
+straight out of the TTF through fontTools, so the SVG carries **outlines, not
+text** — zero `<text>` elements, and `pdffonts` stays at zero.
+
+Each block was measured off the art and re-set onto the same footprint, so the
+rebuilt lockup still matches what Kenny approved:
+
+| block | font | footprint | notes |
+|---|---|---|---|
+| AQUATICS | Anton | x69, baseline y431, cap 73, w323, −3.6° | slant measured off the top edge (the baseline is swash-obscured) |
+| LIFEGUARDS ONLY | Luckiest Guy | x70, baseline y1068, cap 70, w793 | sets at 101.4% natural — Anton needed +52% tracking and read visibly airier |
+| MELVILLE, NEW YORK | Anton | x211, baseline y1108, cap 24, w511 | letterspacing solved to fit; flanking rules redrawn as clean bars |
+
+**"Driftwood" script deliberately left as traced art** — it traced cleanly, it's
+the hero element, and no available face reproduces that bouncy inline script.
+Substituting one would visibly change the approved design.
+
+**Two deliberate changes to flag with Kenny:** the light-blue highlight slivers
+inside AQUATICS and LIFEGUARDS ONLY are gone — they were applied inconsistently
+in the AI art (some letters had them, some didn't), so the re-set type is solid.
+And the flanking rules are now even weight.
+
+Fonts are OFL/Apache-2.0, free for commercial merch, vendored with their
+licences in `reference/fonts/`.
+
+### Final QC on `driftwood-lifeguard-screenprint.pdf`
+
+- `pdffonts` → zero fonts
+- page 792 × 983.04 pt → exactly 11" × 13.653"
+- 0 gradients, 0 `<text>` elements
+- exactly 7 fills, all matching the locked palette
+- transparent corners under `gs -sDEVICE=pngalpha` — no white box
+
+---
+
+## What actually goes out
+
+**To the screen printer (lifeguard tee/tank):**
+- `driftwood-lifeguard-screenprint.pdf` — vector, 11"w, outlined, 7 spot colours
+- `driftwood-lifeguard-palette.json` — the PMS callouts that govern colour
+- spec line: *"Full front, 11"w, 7-colour screen print"* — or 6 on an ivory
+  blank, where cream knocks out to the garment
+
+**To the DTF/DTG decorator (raccoon):**
+- `driftwood-raccoon-dtf-300dpi.png` — 10"×10" at 300 dpi, transparent
+
+**To Trish / for approval:** `driftwood-lifeguard-screenprint-preview.png`
+
+Everything else in this folder is provenance — concepts, nobg sources, the raw
+Recraft vectors, the earlier vtracer pass. Don't send those.
+
+**Still open:** confirm "SINCE 1959" against Driftwood's real founding year.
+The raccoon's own lettering is still traced (its DRIFTWOOD has uneven red
+outline weight); it's headed for DTF rather than a screen, so it wasn't re-set —
+say the word and it can go through the same flow.
 
 ## Angle
 

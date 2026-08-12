@@ -23,17 +23,20 @@ Outputs <prefix>-flat.svg (the deliverable), <prefix>-sep-<n>-<name>.png
                potrace a finer grid, so curves come out smoother (default 3)
   --turd       potrace speckle suppression, in px at the upsampled scale
   --despeckle  mode-filter window that cleans quantization confetti; 0 = off
+
+Also importable — retype_art.py reuses quantize()/build_planes().
 """
 import argparse
 import json
 import re
 import subprocess
-import sys
 import tempfile
 from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageFilter
+
+TRANSPARENT = 255  # sentinel index
 
 
 def srgb_to_lab(rgb):
@@ -58,18 +61,84 @@ def hex_to_rgb(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def trace_plane(mask, turd, workdir, idx):
-    """Boolean mask -> (list of path 'd' strings, svg header bits) via potrace."""
-    pbm = workdir / f"plane{idx}.pbm"
-    out = workdir / f"plane{idx}.svg"
+def quantize(source, colors, scale=3, despeckle=3):
+    """Load art and snap every opaque pixel to its nearest palette entry (Lab).
+
+    Returns (index array, upsampled size). Index TRANSPARENT = no ink.
+    """
+    im = Image.open(source).convert("RGBA")
+    if scale > 1:
+        im = im.resize((im.width * scale, im.height * scale), Image.LANCZOS)
+    arr = np.asarray(im).astype(float)
+    rgb, alpha = arr[..., :3], arr[..., 3]
+    opaque = alpha > 128
+
+    pal_lab = srgb_to_lab(np.array([hex_to_rgb(c["hex"]) for c in colors], dtype=float))
+    lab = srgb_to_lab(rgb)
+    d = ((lab[:, :, None, :] - pal_lab[None, None, :, :]) ** 2).sum(-1)
+    idx = np.argmin(d, axis=-1).astype(np.uint8)
+    idx[~opaque] = TRANSPARENT
+
+    if despeckle:
+        # Mode filter on the index map kills quantization confetti along edges
+        # without rounding off real corners the way a blur would.
+        sm = Image.fromarray(idx, "L").filter(ImageFilter.ModeFilter(despeckle))
+        idx = np.asarray(sm).copy()
+        idx[~opaque] = TRANSPARENT
+    return idx, (im.width, im.height)
+
+
+def _trace(mask, turd, workdir, i):
+    pbm, out = workdir / f"p{i}.pbm", workdir / f"p{i}.svg"
     Image.fromarray(np.where(mask, 0, 255).astype(np.uint8), "L").convert("1").save(pbm)
     subprocess.run(["potrace", "-s", "-t", str(turd), "-o", str(out), str(pbm)],
                    check=True, capture_output=True, timeout=300)
     svg = out.read_text()
-    view = re.search(r'viewBox="([^"]+)"', svg)
-    trans = re.search(r'<g transform="([^"]+)"', svg)
-    paths = re.findall(r'<path d="([^"]+)"', svg)
-    return paths, (view.group(1) if view else None), (trans.group(1) if trans else None)
+    vb = re.search(r'viewBox="([^"]+)"', svg)
+    tr = re.search(r'<g transform="([^"]+)"', svg)
+    return (re.findall(r'<path d="([^"]+)"', svg),
+            vb.group(1) if vb else None, tr.group(1) if tr else None)
+
+
+def build_planes(idx, colors, turd=8, sep_prefix=None, verbose=True):
+    """Trace one plane per palette color. Returns (svg group strings, viewBox)."""
+    inked = int((idx != TRANSPARENT).sum())
+    order = sorted(range(len(colors)),
+                   key=lambda i: colors[i].get("order", -int((idx == i).sum())))
+    if verbose:
+        print(f"inked {inked:,} px\n\n{'#':>2}  {'name':<12} {'hex':<9} {'PMS':<14} {'area':>7}")
+
+    groups, viewbox = [], None
+    with tempfile.TemporaryDirectory() as td:
+        workdir = Path(td)
+        for n, i in enumerate(order):
+            c = colors[i]
+            mask = idx == i
+            area = int(mask.sum())
+            if verbose:
+                print(f"{n + 1:>2}  {c['name']:<12} {c['hex']:<9} "
+                      f"{c.get('pms', '—'):<14} {area * 100.0 / max(inked, 1):6.2f}%")
+            if not area:
+                continue
+            paths, vb, tr = _trace(mask, turd, workdir, i)
+            viewbox = viewbox or vb
+            if sep_prefix:
+                p = Path(sep_prefix)
+                Image.fromarray(np.where(mask, 0, 255).astype(np.uint8), "L").save(
+                    p.with_name(f"{p.name}-sep-{n + 1}-{c['name']}.png"))
+            groups.append(
+                f'<g transform="{tr}" fill="{c["hex"]}" stroke="none" '
+                f'data-color="{c["name"]}" data-pms="{c.get("pms", "")}">\n'
+                + "\n".join(f'<path d="{p}"/>' for p in paths) + "\n</g>")
+    return groups, viewbox
+
+
+def wrap_svg(groups, viewbox, note=""):
+    return (f'<svg version="1.1" xmlns="http://www.w3.org/2000/svg" '
+            f'viewBox="{viewbox}" preserveAspectRatio="xMidYMid meet">\n'
+            f"<!-- flat spot-color art, no gradients. PMS callouts govern "
+            f"color, not these hex values. {note} -->\n"
+            + "\n".join(groups) + "\n</svg>\n")
 
 
 def main():
@@ -80,70 +149,13 @@ def main():
     ap.add_argument("--despeckle", type=int, default=3)
     a = ap.parse_args()
 
-    prefix = Path(a.prefix)
-    pal = json.loads(Path(a.palette).read_text())
-    colors = pal["colors"]
-    pal_rgb = np.array([hex_to_rgb(c["hex"]) for c in colors], dtype=float)
-    pal_lab = srgb_to_lab(pal_rgb)
+    colors = json.loads(Path(a.palette).read_text())["colors"]
+    idx, size = quantize(a.source, colors, a.scale, a.despeckle)
+    print(f"source {size[0]}x{size[1]} (scale {a.scale}x)")
+    groups, viewbox = build_planes(idx, colors, a.turd, sep_prefix=a.prefix)
 
-    im = Image.open(a.source).convert("RGBA")
-    if a.scale > 1:
-        im = im.resize((im.width * a.scale, im.height * a.scale), Image.LANCZOS)
-    arr = np.asarray(im).astype(float)
-    rgb, alpha = arr[..., :3], arr[..., 3]
-    opaque = alpha > 128
-
-    # Snap every opaque pixel to its nearest palette entry in Lab.
-    lab = srgb_to_lab(rgb)
-    d = ((lab[:, :, None, :] - pal_lab[None, None, :, :]) ** 2).sum(-1)
-    idx = np.argmin(d, axis=-1).astype(np.uint8)
-    idx[~opaque] = 255  # sentinel for transparent
-
-    if a.despeckle:
-        # Mode filter on the index map kills quantization confetti along edges
-        # without rounding off real corners the way a blur would.
-        sm = Image.fromarray(idx, "L").filter(ImageFilter.ModeFilter(a.despeckle))
-        idx = np.asarray(sm).copy()
-        idx[~opaque] = 255
-
-    inked = int((idx != 255).sum())
-    order = sorted(range(len(colors)),
-                   key=lambda i: colors[i].get("order", -int((idx == i).sum())))
-
-    print(f"source {im.width}x{im.height} (scale {a.scale}x), inked {inked:,} px\n")
-    print(f"{'#':>2}  {'name':<12} {'hex':<9} {'PMS':<10} {'area':>7}")
-
-    body, viewbox, transform = [], None, None
-    with tempfile.TemporaryDirectory() as td:
-        workdir = Path(td)
-        for n, i in enumerate(order):
-            c = colors[i]
-            mask = idx == i
-            area = mask.sum()
-            pct = area * 100.0 / max(inked, 1)
-            print(f"{n + 1:>2}  {c['name']:<12} {c['hex']:<9} {c.get('pms', '—'):<10} {pct:6.2f}%")
-            if area == 0:
-                continue
-            paths, vb, tr = trace_plane(mask, a.turd, workdir, i)
-            viewbox = viewbox or vb
-            transform = transform or tr
-            sep = prefix.with_name(f"{prefix.name}-sep-{n + 1}-{c['name']}.png")
-            Image.fromarray(np.where(mask, 0, 255).astype(np.uint8), "L").save(sep)
-            body.append(
-                f'<g transform="{tr}" fill="{c["hex"]}" stroke="none" '
-                f'data-color="{c["name"]}" data-pms="{c.get("pms", "")}">\n'
-                + "\n".join(f'<path d="{p}"/>' for p in paths)
-                + "\n</g>"
-            )
-
-    out = prefix.with_name(f"{prefix.name}-flat.svg")
-    out.write_text(
-        f'<svg version="1.1" xmlns="http://www.w3.org/2000/svg" '
-        f'viewBox="{viewbox}" preserveAspectRatio="xMidYMid meet">\n'
-        f"<!-- flat spot-color art, {len(order)} colors, no gradients. "
-        f"PMS callouts govern color, not these hex values. -->\n"
-        + "\n".join(body) + "\n</svg>\n"
-    )
+    out = Path(a.prefix).with_name(f"{Path(a.prefix).name}-flat.svg")
+    out.write_text(wrap_svg(groups, viewbox, f"{len(colors)} colors."))
     print(f"\nwrote {out}  ({out.stat().st_size:,} bytes)")
 
 

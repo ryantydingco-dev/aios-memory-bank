@@ -59,3 +59,30 @@ Artist's remaining lane: complex redraws, original illustration, round-3+ revisi
 | Date | Change |
 |------|--------|
 | 2026-07-19 | Built + proven end-to-end; first live job attached to the Miller Johnson hot reply draft |
+
+## Multicolor spot-color art (added 2026-08-12)
+
+Closes the "multicolor PMS-per-path assignment" gap. A vectorizer reproduces
+every antialiased shade as its own shape — Recraft output on a real job held 17
+flat colors + a gradient. No screen printer can use that.
+
+| Script | Job |
+|--------|-----|
+| `scripts/screen_seps.py <src.png> <palette.json> <prefix>` | Snap art to a locked PMS palette (CIE Lab), then potrace one plane per color → flat spot-color SVG, zero gradients |
+| `scripts/set_type.py` | Glyph outlines from a TTF via fontTools, fitted to an exact footprint (module, used by retype_art) |
+| `scripts/retype_art.py <spec.json>` | Erase traced lettering by color-within-a-region, separate, then drop real outlined type back on the same footprint |
+
+Needs `potrace` (brew) and `fonttools`. Display faces live in
+`reference/fonts/` (OFL/Apache, vendored with licenses) — the macOS
+supplemental set has no retro script or heavy rounded display.
+
+Rules of thumb from the Driftwood run:
+- **Don't undershoot the palette.** Dropping one mid-tone made a shaded object
+  mottle into speckle. Check every plane before trusting the color count.
+- **Suppress distress texture for screens** (`--turd 120 --despeckle 5`); it
+  becomes thousands of sub-mm specks that won't hold.
+- **Pick the face by natural width**, not by eye — `TypeSetter.measure()`
+  against the measured footprint. Closest to 100% wins; a face needing +50%
+  tracking reads visibly airier than the approved art.
+- **>10 colors or heavy gradients → DTF/DTG, not screen.** Render the DTF PNG
+  from the vector at 300dpi at size; a 1024px AI source is only ~100dpi at 10".

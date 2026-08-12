@@ -1,0 +1,108 @@
+{
+  "_comment": "Re-set the three caps blocks as real type. The 'Driftwood' script is deliberately left as traced art \u2014 it traced cleanly and is the hero element Kenny approved; substituting a font would visibly change it. Coordinates are in source-raster px (928x1152), measured off the art.",
+  "source": "driftwood-lifeguard-nobg.png",
+  "palette": "driftwood-lifeguard-palette.json",
+  "out_prefix": "driftwood-lifeguard-screenprint-v2",
+  "scale": 3,
+  "turd": 120,
+  "despeckle": 5,
+  "blocks": [
+    {
+      "text": "AQUATICS",
+      "font": "../../../reference/fonts/Anton-Regular.ttf",
+      "erase": {
+        "rect": [
+          40,
+          328,
+          410,
+          468
+        ],
+        "colors": [
+          "cream",
+          "ltblue"
+        ]
+      },
+      "place": {
+        "x": 69,
+        "baseline_y": 431,
+        "cap_px": 73,
+        "fit_width": 323,
+        "rotate": -3.6
+      },
+      "fill": "cream"
+    },
+    {
+      "text": "LIFEGUARDS ONLY",
+      "_font_note": "Luckiest Guy sets this at 101.4% of the original footprint, so tracking stays near-natural; Anton needed +52% letterspacing and read visibly airier than the approved art.",
+      "font": "../../../reference/fonts/LuckiestGuy-Regular.ttf",
+      "erase": {
+        "rect": [
+          55,
+          985,
+          875,
+          1078
+        ],
+        "colors": [
+          "navy",
+          "ltblue",
+          "midblue",
+          "blue"
+        ]
+      },
+      "place": {
+        "x": 70,
+        "baseline_y": 1068,
+        "cap_px": 70,
+        "fit_width": 793,
+        "rotate": 0
+      },
+      "fill": "navy"
+    },
+    {
+      "text": "MELVILLE, NEW YORK",
+      "font": "../../../reference/fonts/Anton-Regular.ttf",
+      "erase": {
+        "rect": [
+          56,
+          1076,
+          880,
+          1125
+        ],
+        "colors": [
+          "navy",
+          "ltblue",
+          "midblue",
+          "blue"
+        ]
+      },
+      "place": {
+        "x": 211,
+        "baseline_y": 1108,
+        "cap_px": 24,
+        "fit_width": 511,
+        "rotate": 0
+      },
+      "fill": "navy"
+    }
+  ],
+  "rules": [
+    {
+      "rect": [
+        70,
+        1094,
+        193,
+        1100
+      ],
+      "fill": "navy"
+    },
+    {
+      "rect": [
+        740,
+        1094,
+        862,
+        1100
+      ],
+      "fill": "navy"
+    }
+  ]
+}
