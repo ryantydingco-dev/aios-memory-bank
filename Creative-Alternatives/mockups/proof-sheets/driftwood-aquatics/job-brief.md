@@ -107,6 +107,64 @@ QC still open: read every word on the regenerated art; confirm "SINCE 1959";
 mockups are ghost-mannequin studio renders, not catalog blanks (swap in real
 Sanmar/S&S blanks for customer-facing proofs if desired).
 
+## Recraft vector step — BLOCKED 2026-08-12 (second remote session)
+
+Attempted the final Recraft vectorize pass. **Could not run: this session is another
+cloud session, not the MacBook.** Two hard blocks, both org egress policy (403 to
+CONNECT, per `/root/.ccr/README.md`: report, don't route around):
+
+| Host | Needed for | Result |
+|---|---|---|
+| `d2ol7oe51mr4n9.cloudfront.net` | downloading the nobg PNGs, concepts, traced SVGs, zip | 403 — denied |
+| `external.api.recraft.ai` (and `api.recraft.ai`) | the vectorize call itself | 403 — denied |
+
+Also: there is **no `.env` in this container** (gitignored; it lives on the Macs), so
+no `RECRAFT_API_KEY` was read, sent, or exposed here. The rotation still needs doing
+on the Mac — the old key's exposure is unrelated to this session.
+
+Nothing was re-run and no Recraft credits were spent.
+
+### What was added instead
+
+`scripts/recraft_vectorize.py` — the Recraft route from `docs/production-art.md`,
+made runnable (the docs referenced it; only the vtracer route was ever scripted).
+Multipart `file=` POST, key from `.env`, and a **transparent-background guard**: it
+detects the full-canvas opaque rect vectorizers emit even from alpha PNGs, and
+refuses to write the SVG unless you pass `--strip-bg` (remove it) or `--keep-bg`.
+Offline logic is unit-tested; the network path is untested here (host blocked).
+
+### Run on the MacBook to finish
+
+```sh
+cd Creative-Alternatives/mockups/proof-sheets/driftwood-aquatics
+B=https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd
+curl -L -o driftwood-lifeguard-nobg.png "$B/c49b3647-4adf-4af3-b14d-5ab8fc8cc658.png"
+curl -L -o driftwood-raccoon-nobg.png   "$B/43f8015e-c1dc-4991-ae01-dd1a01b08aea.png"
+curl -L -o deliverables.zip "$B/2b1185d4-0728-4bb3-960d-5fe0e1e7421f.zip" && unzip -o deliverables.zip
+
+# rotate RECRAFT_API_KEY in .env first (old one was pasted into a chat)
+cd ../../../..
+python3 scripts/recraft_vectorize.py <job>/driftwood-lifeguard-nobg.png \
+        <job>/driftwood-lifeguard-art.svg --strip-bg
+python3 scripts/recraft_vectorize.py <job>/driftwood-raccoon-nobg.png \
+        <job>/driftwood-raccoon-art.svg --strip-bg
+
+python3 scripts/logo_production.py <job>/driftwood-lifeguard-art.svg 11 <job>/driftwood-lifeguard-11in.pdf
+python3 scripts/logo_production.py <job>/driftwood-raccoon-art.svg   10 <job>/driftwood-raccoon-10in.pdf
+pdffonts <job>/driftwood-lifeguard-11in.pdf   # must list zero fonts
+pdffonts <job>/driftwood-raccoon-10in.pdf
+```
+
+### QC flag — read before shipping to Trish
+
+**Recraft `vectorize` traces; it does not set type.** All the lettering
+("Driftwood", "AQUATICS", "SINCE 1959", "LIFEGUARDS ONLY", "MELVILLE, NEW YORK")
+will come back as traced outlines, exactly like the vtracer SVGs — cleaner curves,
+same category of file. That does not clear the QC gate in `docs/production-art.md`
+("never ship traced AI lettering"). These SVGs are **proof/mockup grade**; the type
+still needs re-setting as real type in `production_art.py` style for production.
+"SINCE 1959" also remains unconfirmed against Driftwood's actual founding year.
+
 ## Angle
 
 Same-day-mockup proof-of-value for an existing top account + the build-in-public
