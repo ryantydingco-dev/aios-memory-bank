@@ -93,6 +93,16 @@ Mockups (Higgsfield jobs, in the generations gallery):
 - Raccoon on white tank: job f1b7549e-9870-4999-8e90-cc9c01ae2e31
 Art job IDs (reusable as Higgsfield media refs): lifeguard b95a0d4e-1623-4dfe-be87-e56acd3362b8, raccoon e46046df-17b0-4e39-8ef6-03b8252a7801.
 
+**Background-removed set (added 2026-08-12, per Kenny's request, for Trish):**
+Edge flood-fill key (removes only the connected background field; clouds/sun/
+lettering preserved) + re-trace with background paths dropped.
+- Lifeguard transparent PNG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/c49b3647-4adf-4af3-b14d-5ab8fc8cc658.png
+- Raccoon transparent PNG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/43f8015e-c1dc-4991-ae01-dd1a01b08aea.png
+- Lifeguard no-bg vector SVG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/655ceaff-3318-417d-b381-e5a6757db89a.svg
+- Raccoon no-bg vector SVG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/e802a955-2f88-4ed2-8433-8dbf3534527e.svg
+(There are also AI background-remover cutouts from jobs e5185056/c3f1aa2c —
+compare both versions; the flood-key set is the pixel-exact one.)
+
 QC still open: read every word on the regenerated art; confirm "SINCE 1959";
 mockups are ghost-mannequin studio renders, not catalog blanks (swap in real
 Sanmar/S&S blanks for customer-facing proofs if desired).
