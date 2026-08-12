@@ -66,6 +66,37 @@ more colors; good candidate for DTF/DTG rather than screen print, or simplify on
 5. **QC gate.** Read every word on every proof ("ACH CLU" rule). Confirm "SINCE 1959"
    against Driftwood's actual founding year before anything leaves the building.
 
+## Deliverables — RUN COMPLETE 2026-08-12 (remote session)
+
+Full pipeline executed remotely (Higgsfield + vtracer + headless Chromium).
+Note: art was **regenerated** from the approved chat concepts (nano banana pro,
+palette-locked prompts) because the originals weren't on disk; SVGs are color
+traces (vtracer, spline mode) — lettering is traced paths, not re-set type, so
+this is proof/mockup grade. For final production, re-set the type per QC rule.
+
+**Download everything (zip, permanent URL):**
+https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/2b1185d4-0728-4bb3-960d-5fe0e1e7421f.zip
+Contains: both concept PNGs, both traced SVGs, both exact-size vector PDFs
+(lifeguard 11"×13.65", raccoon 10"×10", zero embedded fonts).
+Unzip into this folder to complete the file-of-record.
+
+Individual files:
+- Lifeguard SVG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/f610814a-9bd9-483c-ab43-3672d74f0ebc.svg
+- Raccoon SVG: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/006ed973-44c8-4f7f-a352-085b0c5fdbd5.svg
+- Lifeguard production PDF: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/9e387f81-95e6-4eed-babb-ada5744dbd0e.pdf
+- Raccoon production PDF: https://d2ol7oe51mr4n9.cloudfront.net/user_3FAIrUredC1uodQC8sTxKYBU6jd/245781dc-a9bd-406b-b551-37ac830bcd1b.pdf
+
+Mockups (Higgsfield jobs, in the generations gallery):
+- Lifeguard on cream tee: hf_20260812_171600_acffeb66…png (job acffeb66-86ed-41fb-9bad-a4c6050e9672)
+- Lifeguard on light-blue tank: job 74eba87d-d050-468f-b1ed-9b69169123b6
+- Raccoon on cream tee: job 6764c256-46ea-497a-8034-a23a41aee5eb
+- Raccoon on white tank: job f1b7549e-9870-4999-8e90-cc9c01ae2e31
+Art job IDs (reusable as Higgsfield media refs): lifeguard b95a0d4e-1623-4dfe-be87-e56acd3362b8, raccoon e46046df-17b0-4e39-8ef6-03b8252a7801.
+
+QC still open: read every word on the regenerated art; confirm "SINCE 1959";
+mockups are ghost-mannequin studio renders, not catalog blanks (swap in real
+Sanmar/S&S blanks for customer-facing proofs if desired).
+
 ## Angle
 
 Same-day-mockup proof-of-value for an existing top account + the build-in-public
