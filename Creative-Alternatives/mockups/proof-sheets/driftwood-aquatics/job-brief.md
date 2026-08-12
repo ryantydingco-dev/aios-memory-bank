@@ -107,6 +107,71 @@ QC still open: read every word on the regenerated art; confirm "SINCE 1959";
 mockups are ghost-mannequin studio renders, not catalog blanks (swap in real
 Sanmar/S&S blanks for customer-facing proofs if desired).
 
+## Recraft vector step — RUN COMPLETE 2026-08-12 (MacBook session)
+
+The remote session had no network access to Recraft, so this leg ran locally.
+Both background-removed PNGs went through `POST /v1/images/vectorize`
+(10 credits each). All files below are in this folder — the job is now
+file-of-record complete, nothing lives only on CloudFront.
+
+| File | What it is |
+|---|---|
+| `driftwood-lifeguard-art.svg` / `driftwood-raccoon-art.svg` | **Recraft vector art** — the deliverable |
+| `driftwood-lifeguard-production.pdf` (11"w × 13.65"h) | Exact-size outlined production PDF, `pdffonts` = 0 |
+| `driftwood-raccoon-production.pdf` (10"w × 10"h) | Exact-size outlined production PDF, `pdffonts` = 0 |
+| `driftwood-*-art-preview.png` | Render of each SVG for eyeballing |
+| `driftwood-*-nobg.png` | Source transparent PNGs from the remote session |
+| `driftwood-*-vtrace.svg` / `-vtrace-production.pdf` | The earlier vtracer versions, kept for comparison |
+| `concept-1-lifeguard.png` / `concept-2-raccoon.png` | Approved AI concepts |
+
+**Transparency: confirmed.** No `<rect>` and no full-canvas path in either SVG;
+rendered over magenta, the ground shows through everywhere including between
+letters and inside the badge gaps. The PDFs render with fully transparent
+corners under `gs -sDEVICE=pngalpha` (42% / 51% ink coverage) — no white box.
+
+### Type QC (the "ACH CLU" gate)
+
+**Every word reads correctly in both files** — nothing dropped, nothing garbled.
+Checked at high zoom: Driftwood / AQUATICS / SINCE 1959 / LIFEGUARDS ONLY /
+MELVILLE, NEW YORK / DRIFTWOOD / AQUATICS.
+
+But this is **vectorized raster, not set type** — the lettering is outlines
+traced off the AI concept, so the letterforms carry defects. Re-set in
+`production_art.py` before production, worst first:
+
+1. **Lifeguard "AQUATICS"** — worst. The `Q` is malformed (bowl flattened where
+   the swash crosses, tail merged into it). Highlight slivers are inconsistent:
+   `A` and `A` get triangles, `Q` gets a full rounded pill, `U/T/I/C/S` get
+   nothing. Letter bottoms of `AQUA` are eaten where the swash overlaps.
+   Stray nick in the swash stroke, bottom-center.
+2. **Lifeguard "MELVILLE, NEW YORK"** — roughest at size. Baseline wobbles,
+   letter widths and spacing uneven, `O` in YORK has a stray blue blob in the
+   counter, flanking rules vary in thickness. Prints ~1/4" tall; wobble will show.
+3. **Lifeguard "LIFEGUARDS ONLY"** — reads clean, but counters are
+   inconsistently filled: `G/U/A/R/D/O/N/Y` carry light-blue slivers,
+   `L/I/F/E/S` don't. Stroke weights drift letter to letter. Small blue speck
+   under the leading `L`.
+4. **Raccoon "DRIFTWOOD"** — red outline weight varies a lot (heavy on `D/R`,
+   thin on `T/W`); the two `O` counters are different shapes; letter tops
+   uneven along the arch.
+5. **Lifeguard "Driftwood" script** — best of the lifeguard type and reads well,
+   but the navy shadow edge is lumpy around the `D` bowl and the `wood`
+   descenders, highlight slivers are inconsistent, and there's a stray navy
+   fragment above the final `d`.
+6. **Raccoon "AQUATICS"** — cleanest type in either file; only a stubby `Q` tail
+   and a slightly irregular `S`. The wavy top edge on the blue bar and the
+   uneven red trim are container trace artifacts, not type.
+
+Verdict: **proof/mockup grade — good enough to show Trish and the camp, not
+good enough to hand a screen printer as final.** Re-set items 1–4 minimum.
+
+**Still open:** "SINCE 1959" is unverified against Driftwood's actual founding
+year — confirm before anything leaves the building.
+
+**Housekeeping:** the Recraft API key in `.env` was NOT rotated (Ryan's call —
+skipped to keep this run moving). The leaked key is still live and billable;
+rotate at recraft.ai → update `Creative-Alternatives-AIOS/.env` line 279.
+
 ## Angle
 
 Same-day-mockup proof-of-value for an existing top account + the build-in-public
