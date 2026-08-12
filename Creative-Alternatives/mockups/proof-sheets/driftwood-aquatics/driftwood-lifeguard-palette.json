@@ -1,0 +1,41 @@
+{
+  "name": "Driftwood Aquatics \u2014 Lifeguards Only (7 spot colors, keeps whistle mid-tone)",
+  "note": "PMS values are estimates from the concept per job-brief.md \u2014 confirm against a Pantone book before release. Hex is sampled from the approved art and is for on-screen proofing only; the PMS callout governs production.",
+  "colors": [
+    {
+      "name": "cream",
+      "hex": "#F2E8CC",
+      "pms": "7527 C"
+    },
+    {
+      "name": "navy",
+      "hex": "#0D2849",
+      "pms": "289 C"
+    },
+    {
+      "name": "red",
+      "hex": "#C8192C",
+      "pms": "186 C"
+    },
+    {
+      "name": "blue",
+      "hex": "#2074B1",
+      "pms": "285 C"
+    },
+    {
+      "name": "midblue",
+      "hex": "#629BC6",
+      "pms": "292 C (est.)"
+    },
+    {
+      "name": "ltblue",
+      "hex": "#98C2DA",
+      "pms": "543 C"
+    },
+    {
+      "name": "yellow",
+      "hex": "#FDC439",
+      "pms": "123 C"
+    }
+  ]
+}

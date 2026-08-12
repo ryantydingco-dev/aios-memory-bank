@@ -172,6 +172,65 @@ year — confirm before anything leaves the building.
 skipped to keep this run moving). The leaked key is still live and billable;
 rotate at recraft.ai → update `Creative-Alternatives-AIOS/.env` line 279.
 
+## Screen-print prep — 2026-08-12
+
+The Recraft output was proof-grade, not print-grade: a vectorizer reproduces
+every antialiased shade as its own shape, so `driftwood-lifeguard-art.svg` held
+17 flat colors + 1 gradient and the raccoon held 28 + 5. No screen printer can
+use that. Built `scripts/screen_seps.py` to close it — the multicolor
+PMS-per-path gap the skill flagged as unscripted.
+
+**How it works:** snap every pixel to a locked PMS palette in CIE Lab, mode-filter
+the index map to kill quantization confetti, then potrace one plane per color.
+Output is flat spot color, one clean path set per PMS, zero gradients. 3x LANCZOS
+upsample before quantizing gives potrace a finer grid, so curves come out smooth.
+
+```
+python scripts/screen_seps.py <source.png> <palette.json> <out_prefix>
+    [--scale 3] [--turd 120] [--despeckle 5]
+```
+
+### Lifeguard → screen print
+
+`driftwood-lifeguard-screenprint.svg` + `.pdf` (11"w × 13.66"h, `pdffonts` = 0,
+zero gradients). Palette locked in `driftwood-lifeguard-palette.json`:
+
+| | color | hex | PMS | area |
+|---|---|---|---|---|
+| 1 | cream | `#F2E8CC` | 7527 C | 31.6% |
+| 2 | navy | `#0D2849` | 289 C | 30.0% |
+| 3 | red | `#C8192C` | 186 C | 17.7% |
+| 4 | blue | `#2074B1` | 285 C | 6.9% |
+| 5 | midblue | `#629BC6` | 292 C (est.) | 6.0% |
+| 6 | ltblue | `#98C2DA` | 543 C | 4.6% |
+| 7 | yellow | `#FDC439` | 123 C | 3.3% |
+
+**7 screens.** Tried 6 by dropping midblue — the whistle mottles into speckle
+because its mid-tone has nowhere to go. Don't. On an ivory/natural blank
+(Comfort Colors 1717 Ivory) cream becomes the garment and knocks out → **6
+screens, no white underbase.**
+
+Two variants: `-screenprint.svg` suppresses the concept's distress texture
+(224 KB, solid flats — the recommended print file);
+`-screenprint-textured.svg` keeps it (505 KB, thousands of sub-mm specks that
+won't hold on a screen — use only if the worn look is wanted on DTF).
+
+### Raccoon → DTF, not screen print
+
+13 real colors, 5 gradients, three greys doing fur shading. As spot color that's
+a 13-screen job; as sim-process it needs a decorator who does those seps.
+`driftwood-raccoon-dtf-300dpi.png` — 3000×3000 = **10"×10" at 300 dpi,
+transparent**, rendered from the Recraft SVG. The nobg PNG alone was only
+102 dpi at size and would NOT have held up.
+
+### Still open — the type
+
+Separation fixed the color, not the letterforms. The defects logged above
+survive because they're traced shapes, not set type. Re-setting needs display
+faces this machine doesn't have (system supplemental has no retro script or
+heavy rounded display; SignPainter/Futura/DIN Condensed are the near misses).
+Decision pending with Ryan — see below.
+
 ## Angle
 
 Same-day-mockup proof-of-value for an existing top account + the build-in-public
