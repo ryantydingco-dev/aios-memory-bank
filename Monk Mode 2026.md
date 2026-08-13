@@ -11,16 +11,26 @@
 
 ## The one mission
 
-**Make Creative Alternatives pay. Asks made per week is the only scored metric through Sep 29; revenue banked is the metric Oct–Dec.**
+**Creative Alternatives is the ONLY focus.** Stated by Ryan 2026-08-13: not the main goal — the only one. Asks made per week is the scored metric through Sep 29; CA revenue originated/banked is the metric Oct–Dec.
 
-CA is the main goal — stated plainly by Ryan on 2026-08-13 — and the memory bank backs it as the highest-probability money: 27-year, $3.2M family business, relationship already exists, $35.5k warm pipeline already built, reactivation motion already proven, event-swag campaigns already staged. Failing at CA from here would mostly require not asking.
+> ⚠️ **Source-of-truth override:** this supersedes the severance plan's Track 1 (the seven Dealthreads warm closes) as a priority. Dealthreads gets a one-time clean shutdown (below), then zero further hours.
+
+The memory bank backs the bet: 27-year, $3.2M family business, relationship already exists, $35.5k warm pipeline already built, reactivation motion already proven ($22,755 across 18 eligible reorder accounts), event-swag campaigns already staged, and a paycheck structure already defined (15% of revenue Ryan originates). Failing at CA from here would mostly require not asking.
 
 Priority order (all already defined — nothing new gets designed):
-1. **The Kenny ask — retainer + commission.** The single highest-leverage swing available. A role, not a favor: "I built and run your client-acquisition system, I'm now available full time." Even $2k/mo + commission changes the whole runway math.
-2. **CA revenue execution** — warm-call sheet ($35.5k pipeline), reactivation batch (18 eligible accounts / $22,755), hot reply follow-ups (Camp Arcadia, Harbor Haven, Kennerly), verify + launch the staged event-swag SmartLead campaigns. Also: flag the $18.5k past-due Sanmar batch — protecting CA's supply line protects the commission engine.
-3. **Dealthreads Track 1 as the cash bridge** — close the seven warm (Angel → Dane → Joe → Joel → Chris → Luke → Mandy); $497 List Sprint to every stall. Bridge money, not the identity.
-4. **Track 4** — unemployment + COBRA/marketplace admin money.
-5. Content (Sprint Log / Teardown / Post-Mortem) only inside its 1-hour block, never displacing an ask.
+1. **The Kenny ask — retainer + commission, this week.** The single highest-leverage swing available. A role, not a favor: "I built and run your client-acquisition system, I'm now available full time." Even $2k/mo + commission changes the whole runway math.
+2. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), hot reply follow-ups (Camp Arcadia 110th-season order, Harbor Haven store, Kennerly package awaiting approval), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending).
+3. **Staged pipeline second:** verify the event-swag SmartLead campaigns are posted/live, QA sequences, measured send. Law-firm administrators lane is the flagged highest-value ICP.
+4. **Protect the engine:** flag the $18.5k past-due Sanmar batch to Maclaine/Kenny — a supplier credit hold freezes orders and kills commission mid-flight.
+5. **Admin money:** unemployment filing + COBRA/marketplace pricing. Free money, not a distraction.
+6. Content (build-in-public around CA's transformation) only inside its 1-hour block, never displacing an ask.
+
+## Dealthreads clean shutdown (one-time, ≤ one day, then closed)
+
+Seven hand-raisers with written asks don't get abandoned silently — that's drift, not focus. One pass, then the book closes:
+- Send each of the seven (Angel, Dane, Joe, Joel, Chris, Luke, Mandy) their already-written final ask with a real deadline. A yes = deliver from the existing stack (hours, not weeks, per the fulfillment-v2 standard). No response by the deadline = closed-lost, logged, done.
+- No new Dealthreads outreach, lists, sends, tooling, or "just one more wave." The severance-plan machine goes cold.
+- Any money collected is a bonus that funds the CA runway; it does not reopen the lane.
 
 ## The fear, named
 
