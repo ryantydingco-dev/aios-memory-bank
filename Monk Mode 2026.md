@@ -24,6 +24,13 @@ The memory bank backs the bet: 27-year, $3.2M family business, relationship alre
 - Full 18-account reactivation batch (~$22.7k) closed ≈ **$3.4k** commission.
 - Neither alone replaces income — every lane below has to run simultaneously. Revisit the retainer conversation only AFTER results land; results are the only thing that changes Kenny's answer.
 
+**Where the money actually comes from (Ryan asked 08-13 — keep this answer):**
+1. **Days–weeks: inbound buyers already asking.** Camp Arcadia (125–150 sweatshirts, 110th season — a ~$3–5k order sitting unanswered), Harbor Haven (store), Kennerly (package built, unsent). New revenue, zero acquisition cost.
+2. **Weeks: reactivation = new-customer economics at warm close rates.** 18 dormant accounts, $22,755 prior-August revenue (~$1,264/account), motion already proven by Maclaine's July batch.
+3. **Weeks 3–7: the NEW-customer engine — the staged campaigns.** 5,200+ winter-show exhibitors (CES/SHOT/NRF/…), the Q4 corporate-gifting lane, galas/nonprofits, law-firm administrators (highest-value ICP), 233 sending inboxes. Deadline-driven buying windows open NOW: Q4 gifting orders place Sept–Nov, winter-show swag orders Oct–Dec. Summer camps hit 10.1% reply; even 2–3% across these lanes = dozens of new conversations/week once sends start. This is customer acquisition — it's built, it just isn't turned on.
+
+The warm lanes pay the bills while lane 3's sales cycle spins up. It is not either/or; it is sequenced.
+
 Priority order (all already defined — nothing new gets designed):
 1. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), hot reply follow-ups (Camp Arcadia 110th-season order, Harbor Haven store, Kennerly package awaiting approval), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending).
 2. **Staged pipeline second:** verify the event-swag SmartLead campaigns are posted/live, QA sequences, measured send. Law-firm administrators lane is the flagged highest-value ICP. This is the volume engine that makes commission-only math work.
