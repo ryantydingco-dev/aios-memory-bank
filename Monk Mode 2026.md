@@ -70,7 +70,7 @@ New tools. New verticals. New builds. New offers. New courses. Research passes o
 ## The scoreboard
 
 | Week | Asks made | $ originated | Hrs/wk saved for Kenny (shipped) | Gaming violations | W–L |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | Aug 10–16 | | | | | |
 | Aug 17–23 | | | | | |
 | Aug 24–30 | | | | | |
