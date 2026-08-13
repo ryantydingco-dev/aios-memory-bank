@@ -11,14 +11,23 @@
 
 ## The one mission
 
-**Get paid. Asks made per week is the only scored metric through Sep 29; revenue banked is the metric Oct–Dec.**
+**Make Creative Alternatives pay. Asks made per week is the only scored metric through Sep 29; revenue banked is the metric Oct–Dec.**
 
-Concretely, in priority order (all already defined — nothing new gets designed):
-1. **Track 1** — close the seven warm (Angel → Dane → Joe → Joel → Chris → Luke → Mandy). Stripe links first if still not live.
-2. **Track 3** — the Kenny retainer + commission ask. Highest-probability money that exists.
-3. **Track 2** — $497 List Sprint as the lead offer to every stall and every new positive.
+CA is the main goal — stated plainly by Ryan on 2026-08-13 — and the memory bank backs it as the highest-probability money: 27-year, $3.2M family business, relationship already exists, $35.5k warm pipeline already built, reactivation motion already proven, event-swag campaigns already staged. Failing at CA from here would mostly require not asking.
+
+Priority order (all already defined — nothing new gets designed):
+1. **The Kenny ask — retainer + commission.** The single highest-leverage swing available. A role, not a favor: "I built and run your client-acquisition system, I'm now available full time." Even $2k/mo + commission changes the whole runway math.
+2. **CA revenue execution** — warm-call sheet ($35.5k pipeline), reactivation batch (18 eligible accounts / $22,755), hot reply follow-ups (Camp Arcadia, Harbor Haven, Kennerly), verify + launch the staged event-swag SmartLead campaigns. Also: flag the $18.5k past-due Sanmar batch — protecting CA's supply line protects the commission engine.
+3. **Dealthreads Track 1 as the cash bridge** — close the seven warm (Angel → Dane → Joe → Joel → Chris → Luke → Mandy); $497 List Sprint to every stall. Bridge money, not the identity.
 4. **Track 4** — unemployment + COBRA/marketplace admin money.
 5. Content (Sprint Log / Teardown / Post-Mortem) only inside its 1-hour block, never displacing an ask.
+
+## The fear, named
+
+The driver is "I can't go back to a regular job." Keep the energy, drop the frame:
+- **Desperation leaks into asks.** Kenny, Angel, and Dane can smell "I need this." The posture is a professional pricing a role, not a man avoiding an outcome.
+- **A bridge job ≠ failure.** If late September shows real closes but not enough monthly income, part-time income (Kingfisher hours count) that funds 6 more months of CA commission compounding is a move, not a defeat. "At all costs" thinking is what produces panic pivots and needy follow-ups — the exact failure modes the July guardrails were written against.
+- **The only version of failure available right now is not swinging.** The nervousness is unresolved evidence; asks resolve it.
 
 ## The gaming rule (the actual point of this doc)
 
@@ -57,7 +66,7 @@ Oct–Dec: same table, monthly review on the 1st per the existing season-report 
 ## Tripwires
 
 - **Sep 1:** if fewer than 15 total asks have been made since Aug 12, the problem is avoidance, not strategy — book the calls same-day, no more written follow-ups.
-- **Sep 29 (runway end):** honest fork. If ≥ $4,000 collected → the business is real, double down Q4. If < $2,000 collected AND asks WERE made → the offer/market needs a hard look. If < $2,000 and asks weren't made → the job search starts, and that's the data being avoided.
+- **Sep 29 (runway end):** honest fork — and none of the branches are "back to a regular job forever." If ≥ $4,000 collected or the Kenny retainer is live → the business is real, double down Q4 full-time. If < $2,000 collected AND asks WERE made → the offer/market needs a hard look, and a part-time income bridge (Kingfisher hours first) buys the time to fix it without desperation. If < $2,000 and asks weren't made → the income bridge starts immediately, because the avoidance, not the market, was the problem — and CA commission work continues nights/weekends.
 - **Any week with 2+ gaming violations:** switch to Option A permanently, no renegotiation.
 
 ## The trap to name out loud
