@@ -67,6 +67,61 @@ New tools. New verticals. New builds. New offers. New courses. Research passes o
 
 **What stays (maintenance, not mission):** training (hybrid-athlete identity per LIFE-OS — this is the sanctioned dopamine replacement), sleep, the existing daily rhythm (4:30 card → blocks → 9:15 W-L → Sunday recap), the 1-hr content block.
 
+## The seven weeks, day by day (Aug 13 → Sep 29)
+
+### The daily template (Mon–Fri, every week — this IS the day, no daily decisions)
+
+| Time | Block | Rule |
+|---|---|---|
+| 4:30 | Wake, block card + streak | Same as now |
+| 5:00–7:30 | **Prep block:** today's call list pulled, QBO checks done, quotes/mockups queued for approval, ledgers updated | No email rabbit holes; prep only what today's asks need |
+| 8:00–9:00 | Inbox triage: hot replies FIRST (reply-watcher output), everything else batched | A hot reply outranks everything below |
+| 9:00–11:30 | **ASK BLOCK — calls.** Warm sheet, reactivation follow-ups, quote closes. Phone, not email, wherever a number exists | The sacred block. Nothing schedules over it. Ever. Daily target: **5 asks** |
+| 11:30–1:00 | Fulfillment: mockups, quotes, proposals, Gamma lookbooks for whatever the morning produced | Same-day turnaround on anything a call generated |
+| 1:45–2:45 | Content hour (CA build-in-public) | Hard cap. Skipped if an ask would be displaced — never the reverse |
+| 3:00–4:30 | Follow-up block: email asks, campaign reply handling, next-day list build | Every open deal gets a dated next action before this block ends |
+| ~5:10 | Lift + run (hybrid athlete stays) | This is the dopamine replacement. Non-negotiable as the mission |
+| 9:15 | W-L call: asks made? gamed outside the rule? | Targets, not attendance |
+
+**Wednesday exception:** 9:00–11:30 still happens (asks never pause), but the afternoon (11:30–4:30) is the **Axis-2 build block** — the one day the 20% cap lives. Ship one visible time-saver, log it in the Time Saved Ledger, tell Kenny about it in one sentence.
+
+**Saturday:** long training + one hour MAX of week-ahead prep (Monday's call list). No builds. **Sunday:** off + 5 PM weekly recap → ONE change + fill the scoreboard row. Rest is part of the protocol; fried salespeople make weak asks.
+
+### Week 1 — Aug 13–17: Foundations + first swings
+- **Wed 13:** Settle the two attribution one-liners with Kenny (reactivation counts? store revenue recurs?) — before anything closes. Flag the Sanmar $18.5k past-due batch in the same conversation. Lock the gaming option (A or B) in this doc. Console goes wherever it goes.
+- **Thu 14:** Kennerly package — get it approved and SENT (it's been queued since 07-23). Reply to Camp Arcadia (mockneck options + pricing path with Maclaine) and Harbor Haven (store setup). File SC unemployment. Dealthreads courtesy notes (one line each, no pitch) — book closed.
+- **Fri 15:** First warm-call sheet dial block. Price COBRA vs marketplace. Week review: asks counted.
+- **Weekend:** training, Monday list, scoreboard row 1.
+
+### Week 2 — Aug 18–24: Warm blitz
+- Every account on the $35.5k warm-call sheet gets a live ask by Friday. Phone first.
+- Reactivation batch: fresh QBO order/A-R check on all 18 accounts, owner approval per row, first approved sends out by Wed.
+- Wed build block: collect sheets-auto-close week-one numbers → **Time Saved Ledger entry #1** → one-sentence note to Kenny.
+
+### Week 3 — Aug 25–31: The volume engine comes online
+- Verify all staged event-swag SmartLead campaigns posted/live; QA every sequence; measured send starts — **law-firm administrators lane first** (flagged highest-value ICP).
+- Reactivation non-responders get the follow-up touch. Warm-sheet verbal yeses get quotes same-day.
+- Wed build block: backend ops automation #1 from Kenny's named pain (quote→order→PO→email flow) — smallest visible slice, shipped.
+
+### Week 4 — Sep 1–7: Tripwire week
+- **Mon Sep 1: TRIPWIRE.** Fewer than 15 total asks since Aug 13 → every remaining written follow-up converts to a same-day phone call. No more drafting.
+- Campaign replies start landing: triage daily in the 8 AM block, every positive gets a same-week quote or call.
+- Wed build block: Park Slope order↔contents visibility fix (the sheet-column version, not a platform).
+
+### Week 5 — Sep 8–14: Quote-to-close
+- Everything quoted in weeks 2–4 gets its close ask this week. "Where'd you land?" calls, not check-in emails.
+- Campaign send volume scales only if reply handling is keeping up (quality of asks > quantity of sends).
+- Wed build block: whatever Kenny flinched at most in the last month — ask him directly, ship the smallest version.
+
+### Week 6 — Sep 15–21: Harvest + evidence
+- Close pushes on every open deal with a dated next action. Collect POs/deposits — originated isn't real until logged with `RT-ORIG`.
+- Assemble the **evidence packet**: RT-ORIG ledger + Time Saved Ledger, one page. This is the retainer-conversation ammunition, built from receipts.
+- Wed build block: none if closes need the hours. Selling wins.
+
+### Week 7 — Sep 22–29: Collect + the fork
+- Chase every outstanding yes to cash/PO. Reconcile both ledgers against QBO.
+- **Mon Sep 29: the fork** (see Tripwires). If the numbers are there — reopen the retainer conversation with the evidence packet, as a role with a price. If not, execute the branch honestly. Either way, the scoreboard decides, not the mood.
+
 ## The scoreboard
 
 | Week | Asks made | $ originated | Hrs/wk saved for Kenny (shipped) | Gaming violations | W–L |
