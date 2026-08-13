@@ -17,20 +17,22 @@
 
 The memory bank backs the bet: 27-year, $3.2M family business, relationship already exists, $35.5k warm pipeline already built, reactivation motion already proven ($22,755 across 18 eligible reorder accounts), event-swag campaigns already staged, and a paycheck structure already defined (15% of revenue Ryan originates). Failing at CA from here would mostly require not asking.
 
+**The deal, as it actually is (Ryan, 2026-08-13): commission-only. No retainer.** Income = revenue Ryan originates × 15%. There is no base to fall back on inside CA, which means the only income lever is closes, and volume matters:
+- Full $35.5k warm-call pipeline closed ≈ **$5.3k** commission.
+- Full 18-account reactivation batch (~$22.7k) closed ≈ **$3.4k** commission.
+- Neither alone replaces income — every lane below has to run simultaneously. Revisit the retainer conversation only AFTER results land; results are the only thing that changes Kenny's answer.
+
 Priority order (all already defined — nothing new gets designed):
-1. **The Kenny ask — retainer + commission, this week.** The single highest-leverage swing available. A role, not a favor: "I built and run your client-acquisition system, I'm now available full time." Even $2k/mo + commission changes the whole runway math.
-2. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), hot reply follow-ups (Camp Arcadia 110th-season order, Harbor Haven store, Kennerly package awaiting approval), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending).
-3. **Staged pipeline second:** verify the event-swag SmartLead campaigns are posted/live, QA sequences, measured send. Law-firm administrators lane is the flagged highest-value ICP.
+1. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), hot reply follow-ups (Camp Arcadia 110th-season order, Harbor Haven store, Kennerly package awaiting approval), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending).
+2. **Staged pipeline second:** verify the event-swag SmartLead campaigns are posted/live, QA sequences, measured send. Law-firm administrators lane is the flagged highest-value ICP. This is the volume engine that makes commission-only math work.
+3. **Attribution, immediately:** commission-only makes the origination ledger (`originated-ledger.csv`, QB memo tag `RT-ORIG`) and the two unsettled attribution one-liners with Kenny (reactivation counts? store revenue recurs?) EXISTENTIAL, not administrative. Settle them before the first close, or the paycheck is a handshake.
 4. **Protect the engine:** flag the $18.5k past-due Sanmar batch to Maclaine/Kenny — a supplier credit hold freezes orders and kills commission mid-flight.
-5. **Admin money:** unemployment filing + COBRA/marketplace pricing. Free money, not a distraction.
+5. **Admin money:** unemployment filing + COBRA/marketplace pricing. Free money, and load-bearing now that there's no retainer.
 6. Content (build-in-public around CA's transformation) only inside its 1-hour block, never displacing an ask.
 
-## Dealthreads clean shutdown (one-time, ≤ one day, then closed)
+## Dealthreads: SHUT DOWN (Ryan's call, 2026-08-13)
 
-Seven hand-raisers with written asks don't get abandoned silently — that's drift, not focus. One pass, then the book closes:
-- Send each of the seven (Angel, Dane, Joe, Joel, Chris, Luke, Mandy) their already-written final ask with a real deadline. A yes = deliver from the existing stack (hours, not weeks, per the fulfillment-v2 standard). No response by the deadline = closed-lost, logged, done.
-- No new Dealthreads outreach, lists, sends, tooling, or "just one more wave." The severance-plan machine goes cold.
-- Any money collected is a bonus that funds the CA runway; it does not reopen the lane.
+Closed effective immediately. No final-ask pass, no new outreach, no lists, no sends, no tooling, no "one more wave." The severance-plan machine goes cold and its open loops get marked closed at the next memory-bank sweep. Optional only: a one-line courtesy note to anyone mid-conversation so the ghosting isn't rude — no pitch attached. If an old prospect replies with money in hand, take it as found money; it does not reopen the lane.
 
 ## The fear, named
 
@@ -76,7 +78,7 @@ Oct–Dec: same table, monthly review on the 1st per the existing season-report 
 ## Tripwires
 
 - **Sep 1:** if fewer than 15 total asks have been made since Aug 12, the problem is avoidance, not strategy — book the calls same-day, no more written follow-ups.
-- **Sep 29 (runway end):** honest fork — and none of the branches are "back to a regular job forever." If ≥ $4,000 collected or the Kenny retainer is live → the business is real, double down Q4 full-time. If < $2,000 collected AND asks WERE made → the offer/market needs a hard look, and a part-time income bridge (Kingfisher hours first) buys the time to fix it without desperation. If < $2,000 and asks weren't made → the income bridge starts immediately, because the avoidance, not the market, was the problem — and CA commission work continues nights/weekends.
+- **Sep 29 (runway end):** honest fork — and none of the branches are "back to a regular job forever." If ≥ $25k originated (≈$3.75k commission) or a results-backed retainer conversation has reopened → the bet is working, double down Q4 full-time. If well short of that AND asks WERE made → the commission-only math needs a hard look, and a part-time income bridge (Kingfisher hours first) buys the time to fix it without desperation. If short and asks weren't made → the income bridge starts immediately, because the avoidance, not the market, was the problem — and CA commission work continues nights/weekends.
 - **Any week with 2+ gaming violations:** switch to Option A permanently, no renegotiation.
 
 ## The trap to name out loud
