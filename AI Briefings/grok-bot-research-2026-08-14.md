@@ -30,4 +30,18 @@ xAI's multi-agent platform (beta, launched Aug 11 2026): multiple specialized ag
 3. Frame the episode as a Teardown: "$200 agent platform vs the free stack I already run my business on" — stronger content than a setup vlog, and honest.
 4. Revisit a paid plan **after Sep 29** if the trial showed a concrete CA workflow our stack can't do (most likely candidate: computer-use on no-API vendor portals).
 
+## 2026-08-14 update: Kenny covers the cost — where it's ACTUALLY useful for CA
+
+Budget objection gone. The filter stands: Grok Bot only beats the existing stack where a task is **browser-only / no API / repetitive / currently eats human hours**. Ranked by Time-Saved-Ledger value:
+
+1. **Vendor order-status sweeps (Sanmar, Viking, Diamond, random vendors).** The production exception queue flagged 8 POs past in-hand dates partly because status/tracking lives in vendor portals someone must log into and check. A daily Grok Bot sweep → one status sheet feeding the existing exception queue. This is Kenny's named pain category, pure browser work, and the clearest hours/week win. **Pilot #1.**
+2. **SAGE/ASI (ESP) product sourcing + quoting.** The matte-badge sourcing loop is literally this job: search supplier catalogs, compare MOQ/net pricing/production time, pull quote-ready options. Portal-only, no API, hours per quote today. An agent that returns a 3-option comparison per request compresses quote turnaround — which is a REVENUE lever, not just time (faster quotes close more of the inbound/reactivation replies).
+3. **SmartLead campaign QA in the UI.** "Verify posted/live, check sequences, confirm send readiness" is an open loop right now for the event-swag campaigns and recurs with every launch. Browser-only checking work — good agent fit, read-only.
+4. **Shippo/carrier tracking ↔ order contents (Park Slope problem).** Cross-reference tracking numbers against what actually shipped, flag risk before the customer asks. Read-only browser work across two systems.
+5. **Learn-from-demo on Maclaine/Kenny's repetitive flows.** Film one real flow (e.g., order email → QBO PO draft) and let it persist as a routine — this doubles as the content episode and as discovery of what the back office actually repeats.
+
+**Not for Grok Bot (keep on existing stack):** anything sending email to customers/prospects, anything writing to QBO money records, list building/enrichment (AI Ark/Apollo/Clay already do it), the reply-watcher, and the campaign send path. Reasons: shared-cloud-computer credential model + beta reliability + our human-in-the-loop rule.
+
+**Deployment guardrails:** dedicated limited-permission logins per portal where possible (never Ryan's Gmail/QBO master creds); read-only pilots first; every routine's output lands as a sheet/report a human acts on; each shipped routine gets a Time Saved Ledger line with hrs/week. Fits inside the Wednesday build block — the ask block is untouchable.
+
 Sources: eesel review + pricing, MindStudio, TechTimes, kingy.ai, aipricing.guru, ayautomate (all Aug 2026).
