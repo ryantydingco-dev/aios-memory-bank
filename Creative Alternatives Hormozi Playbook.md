@@ -18,6 +18,21 @@
 
 **Lead magnet (Hormozi: give away the thing that reveals the need):** the **free 24h mockup** — their logo on the exact product, unprompted. CA has already proven this converts (Kennerly package, mockup magnets pillar). This is the DM offer, the content CTA, and the cold-email offer. One magnet, every channel.
 
+## 1b. The Grand Slam Offer menu (one per ICP / trigger — same skeleton, different dream outcome)
+
+Every offer below follows: named package + deadline promise + free mockup entry + risk reversal + a bonus that costs CA little but kills a pain. Guarantees need Kenny's sign-off before any go public.
+
+1. **The Booth-Ready Package** (trade-show exhibitors — 5,200+ already in the campaign stack). *"Everything your booth needs — shirts, swag, giveaways — in one box, at your show, guaranteed before setup day, or 20% off the order."* Urgency is built in (the show date IS the deadline). Bonus: free packing manifest per box + spare-units buffer. Upsell: multi-show program (they exhibit at several — CA keeps art + kit specs on file, each next show is one email).
+2. **The Season Kit** (camps/schools/teams — Camp Arcadia proved demand, summer camps hit 10.1% reply). *"Your whole season's gear — staff shirts, camper tees, store items — locked in one order, delivered before opening day, art kept on file for next year."* Bonus: free 110th-anniversary-style commemorative mockup (worked on Arcadia). Continuity hook: auto-renewal ping every spring = the anniversary-reorder engine as a promise, not a campaign.
+3. **The Firm Store Program** (law/professional firms — highest-value ICP). *"A branded online store for your firm — new-hire kits, client gifts, event wear — we run it, you approve once a quarter, zero inventory risk."* This is continuity AS the offer. Entry: free store mockup with their 5 best-fit items. Harbor Haven is literally requesting this — build the first one as the case study.
+4. **The New-Hire Welcome Kit** (HR/office managers at growing firms — the hiring-signal enrichment pilot targets exactly these). *"Every new hire gets a branded kit on their desk day one — we hold stock, you send a name and an address."* Recurring by nature (they keep hiring). Trigger-based outreach: hiring badge = they need this NOW.
+5. **The Client-Gifting Autopilot** (Q4 lane — campaign already built). *"Your top 50 clients get a premium branded gift before Dec 15 — you approve one sample, we handle names, notes, and shipping. Booked by Oct 1 or it can't be guaranteed."* Real scarcity (production windows genuinely close), high margin, annual continuity.
+6. **The Gala Sponsor Pack** (nonprofits/galas — lane verified). *"Step-and-repeat, table gifts, auction swag, volunteer shirts — one order, sponsor logos handled, delivered a week before the event."* Bonus: free sponsor-logo proof page (sponsor approvals are their private hell — the proof-engine solves it).
+7. **The Store Rescue** (Bonfire/SquadLocker refugees — Arcadia AND Harbor Haven both arrived this way). *"Leaving [platform]? We rebuild your store, migrate your designs free, and beat your current per-unit cost — first sample run free."* A switch offer aimed at a proven migration pattern. Content angle writes itself.
+8. **The Grand-Opening Box** (new gyms/openings — the signal engines are built, blocked only on free API keys). *"Opening day covered: staff gear, member giveaways, banner — delivered the week before you open, one call to set up."* Trigger-based, deadline-native, and the buyer has never had a promo vendor before = zero incumbent.
+
+**Prioritization rule:** lead with 1, 2, and 5 — their deadlines are real and near (Q4 gifting + winter shows + fall seasons), which makes every Hormozi urgency/scarcity element TRUE rather than manufactured. 3 and 7 are the continuity builders. 4 and 8 wait until their signal engines are unblocked.
+
 ## 2. $100M LEADS — the Core Four, mapped to what exists
 
 | Core Four | CA status | Owner |
