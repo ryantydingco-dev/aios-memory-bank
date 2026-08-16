@@ -25,14 +25,14 @@ The memory bank backs the bet: 27-year, $3.2M family business, relationship alre
 - Neither alone replaces income — every lane below has to run simultaneously. Revisit the retainer conversation only AFTER results land; results are the only thing that changes Kenny's answer.
 
 **Where the money actually comes from (Ryan asked 08-13 — keep this answer):**
-1. **Days–weeks: inbound buyers already asking.** Camp Arcadia (125–150 sweatshirts, 110th season — a ~$3–5k order sitting unanswered), Harbor Haven (store), Kennerly (package built, unsent). New revenue, zero acquisition cost.
+1. **Days–weeks: inbound buyers already asking.** Harbor Haven (store request) + Kennerly (package built 07-23, unsent — verify still warm before sending). ~~Camp Arcadia~~ — CORRECTED 08-16: old lead already worked in March, not valid; removed from the money map. New revenue, zero acquisition cost where live.
 2. **Weeks: reactivation = new-customer economics at warm close rates.** 18 dormant accounts, $22,755 prior-August revenue (~$1,264/account), motion already proven by Maclaine's July batch.
 3. **Weeks 3–7: the NEW-customer engine — the staged campaigns.** 5,200+ winter-show exhibitors (CES/SHOT/NRF/…), the Q4 corporate-gifting lane, galas/nonprofits, law-firm administrators (highest-value ICP), 233 sending inboxes. Deadline-driven buying windows open NOW: Q4 gifting orders place Sept–Nov, winter-show swag orders Oct–Dec. Summer camps hit 10.1% reply; even 2–3% across these lanes = dozens of new conversations/week once sends start. This is customer acquisition — it's built, it just isn't turned on.
 
 The warm lanes pay the bills while lane 3's sales cycle spins up. It is not either/or; it is sequenced.
 
 Priority order (all already defined — nothing new gets designed):
-1. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), hot reply follow-ups (Camp Arcadia 110th-season order, Harbor Haven store, Kennerly package awaiting approval), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending).
+1. **Warm money first:** the CA warm-call sheet ($35.5k pipeline), live hot replies (Harbor Haven store; Kennerly package pending a freshness check), and the August reactivation batch (18 accounts, fresh QBO check + owner approval per row before sending). Camp Arcadia is DEAD (worked in March) — lesson: verify every "hot reply" against last-contact date before it goes on a money list.
 2. **Staged pipeline second:** verify the event-swag SmartLead campaigns are posted/live, QA sequences, measured send. Law-firm administrators lane is the flagged highest-value ICP. This is the volume engine that makes commission-only math work.
 3. **Attribution, immediately:** commission-only makes the origination ledger (`originated-ledger.csv`, QB memo tag `RT-ORIG`) and the two unsettled attribution one-liners with Kenny (reactivation counts? store revenue recurs?) EXISTENTIAL, not administrative. Settle them before the first close, or the paycheck is a handshake.
 4. **Protect the engine:** flag the $18.5k past-due Sanmar batch to Maclaine/Kenny — a supplier credit hold freezes orders and kills commission mid-flight.
@@ -96,7 +96,7 @@ New tools. New verticals. New builds. New offers. New courses. Research passes o
 
 ### Week 1 — Aug 13–17: Foundations + first swings
 - **Wed 13:** Settle the two attribution one-liners with Kenny (reactivation counts? store revenue recurs?) — before anything closes. Flag the Sanmar $18.5k past-due batch in the same conversation. Lock the gaming option (A or B) in this doc. Console goes wherever it goes.
-- **Thu 14:** Kennerly package — get it approved and SENT (it's been queued since 07-23). Reply to Camp Arcadia (mockneck options + pricing path with Maclaine) and Harbor Haven (store setup). File SC unemployment. Dealthreads courtesy notes (one line each, no pitch) — book closed.
+- **Thu 14:** Kennerly package — 60-second freshness check (last contact was ~07-23), then approve + SEND or mark stale. Harbor Haven store follow-up. File unemployment (TX-wage interstate claim per research). Dealthreads courtesy notes (one line each, no pitch) — book closed. (Camp Arcadia removed — dead lead from March.)
 - **Fri 15:** First warm-call sheet dial block. Price COBRA vs marketplace. Week review: asks counted.
 - **Weekend:** training, Monday list, scoreboard row 1.
 
