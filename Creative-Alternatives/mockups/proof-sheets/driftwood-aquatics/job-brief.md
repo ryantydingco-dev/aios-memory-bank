@@ -283,6 +283,30 @@ The raccoon's own lettering is still traced (its DRIFTWOOD has uneven red
 outline weight); it's headed for DTF rather than a screen, so it wasn't re-set —
 say the word and it can go through the same flow.
 
+## Original concept recovered — 2026-08-17
+
+Ryan surfaced the ORIGINAL approved Concept 1 (the file the 2026-08-12 remote
+session couldn't find on disk and regenerated around). Different rendition:
+keyring-loop whistle, ray-burst sun, one-stripe board. Now the file of record:
+
+- `concept-1-original.png` — the original art, sky-blue background (1149×1369)
+- `driftwood-lifeguard-original-nobg.png` — background removed, transparent.
+  Global color-key + edge flood + pocket detection (scratch `key_bg.py` flow):
+  enclosed sky windows (keyring loop, arm/board gaps, letter counters) are
+  transparent too; thin near-sky art (whistle rim highlight) preserved.
+  QC'd over magenta: no halo, no eaten highlights, lettering intact.
+
+**Garment-blue callout (per "sky becomes the garment" plan):** background
+sampled at **#88B4D0** ≈ **PMS 542 C** (slightly deeper than the 543 C
+estimated off the concept). Order blanks near this — light blue / Carolina
+blue family — and the art prints without its sky, dropping a screen.
+
+**Grade:** proof/mockup only — 1149 px wide is ~104 dpi at 11". For production
+of THIS rendition, run the same seps + retype flow on the nobg PNG (its
+lettering is AI-drawn too). The productionized screen-print files above are
+still built from the 08-12 regenerated rendition — Ryan to call which
+rendition is canon before anything goes to the printer.
+
 ## Angle
 
 Same-day-mockup proof-of-value for an existing top account + the build-in-public
