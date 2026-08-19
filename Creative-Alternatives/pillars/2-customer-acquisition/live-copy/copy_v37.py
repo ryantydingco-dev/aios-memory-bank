@@ -7,9 +7,9 @@ COPY = {
 "3812874": {"name":"AthleticDirectors","sender":"ryan","emails":[
  {"subject":"{{school_name}} store page","sig":"full","paras":[
   "Hi {{first_name}},",
-  "I'd like to build {{school_name}} a spirit-wear store: every team on one link, your logo on the hoodies and tees. Parents order on the page and we print and ship each order to their house. Nobody in your office collects sizes or stores boxes.",
-  "We run stores like this today for HSMSE, the High School of American Studies, and four other schools. Your program gets a flat $10 on every hoodie sold.",
-  "Want me to build the {{school_name}} page?"]},
+  "I'd like to build {{school_name}} a spirit-wear store. Every team, one link, your logo on the hoodies and tees. Parents order on the page and we print and ship each one to their house. Your office never collects sizes or stores boxes.",
+  "We run stores like this for HSMSE, the High School of American Studies, and four other schools. Your program gets a flat $10 on every hoodie sold.",
+  "Want me to build it?"]},
  {"subject":"","sig":"first","paras":[
   "The page runs itself. A parent picks the hoodie, pays on the page, and we handle that single order start to finish. Your staff never takes sizes, chases payments, or stores inventory in the cage. And the $10 per hoodie adds up quietly all year, it's not a one-weekend fundraiser.",
   "Worth a look?"]},
@@ -48,7 +48,7 @@ COPY = {
   "We've printed for teams at Thermo Fisher and Trinity Health.",
   "Want to see them?"]},
  {"subject":"","sig":"first","paras":[
-  "Walking retreat gear into a partner meeting is easier when the pieces already carry {{company_name}}'s logo. Nobody squints at a catalog and imagines the embroidery. They say yes or no to the actual kit.",
+  "Walking retreat gear into a partner meeting is easier when the pieces already carry {{company_name}}'s logo. Nobody has to squint at a catalog and picture the stitching. They say yes or no to the actual kit.",
   "Reply and I'll put both together this week.",
   "Ryan"]},
  {"subject":"","sig":"first","paras":[
@@ -72,7 +72,7 @@ COPY = {
   "Ryan"]},
  {"subject":"","sig":"first","paras":[
   "Hi {{first_name}},",
-  "Picking a gift before October is the difference between a decision and a December fire drill. Art comes back as a proof within two days and pieces ship about two weeks after you approve it, so an early choice means the holidays stay quiet.",
+  "Picking a gift before October is a decision. Picking one in November is a fire drill. An art proof comes back within two days. Pieces ship about two weeks after you approve. Choose early and December stays quiet.",
   "Want the three while there's runway?"]},
  {"subject":"","sig":"full","paras":[
   "Hi {{first_name}},",
@@ -134,7 +134,7 @@ COPY = {
   "Maclaine"]},
  {"subject":"","sig":"first","paras":[
   "Hi {{first_name}},",
-  "If the retreat date is locked, gear is the last thing anyone owns until a partner asks about it in a hallway. A proof comes back inside two days and production is about two weeks, so fall retreats need art moving soon.",
+  "If the retreat date is locked, gear is the last thing anyone owns until a partner asks about it in a hallway. A proof comes back inside two days. Production runs about two weeks. Fall retreats need art moving soon.",
   "Want the three so the hallway question has an answer?"]},
  {"subject":"","sig":"full","paras":[
   "Hi {{first_name}},",
