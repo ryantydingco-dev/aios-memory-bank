@@ -113,3 +113,35 @@ to their house. Nobody in the athletic office counts inventory."* That is not a 
 problem to edit away — it is either true or it isn't, and only Kenny/Maclaine can say.
 Removing it would gut the campaign's entire offer. **Ryan's call: confirm CA can do it,
 or pause the campaign.**
+
+---
+
+# SECOND CLEANUP PASS 2026-08-19 — the Kenny lines
+
+Ryan caught what the pattern scan missed: **"Kenny still runs the shop" (and variants)
+sat in the E4 of ALL SEVEN live campaigns.** Kenny appears nowhere in the vault copy
+and nowhere in E1-E3 of any sequence — a name with zero context, introduced in the
+breakup email, from the same off-repo rewrite generation that added "multi-million."
+
+Fixed (9 edits, all 7 campaigns, verified live):
+- Six lanes: the Kenny sentence was a standalone insert — deleted outright. Every E4
+  still reads as a complete breakup email (last note → if handled, good luck → one
+  reply → CTA), tighter than before.
+- LawNational E4: the clause was load-bearing → "...one person who actually picks up,
+  you have my email now" (Maclaine's voice, keeps the promise, no unexplained names).
+- Bonus catches while in there: "No catalog behind it." fragments in Q4Gifting and
+  LawNational that the first pass's regex ("not a catalog...") did not match.
+
+**Process lesson (logged so it sticks): the first audit was regex-based and reported
+"clean" on E2-E4 — that meant "no pattern matched," not "a human read it." This pass
+was a full line-by-line read of all 29 live steps. Any future live-copy audit must
+include the full read, not just the pattern scan.**
+
+Remaining nits from the full read (Ryan's call, not applied):
+1. TradeShow E3: "No catalog under it. No second list of 40 SKUs." — same negation
+   tic. The 40-SKUs line is concrete and arguably earns its place; "No catalog under
+   it" is the weaker half.
+2. LawNational E1 variants A and B are word-for-word IDENTICAL — a broken A/B test
+   measuring nothing. Harmless to recipients; pointless for data.
+3. AthleticDirectors E1+E2 still promise per-order consumer fulfillment (unchanged —
+   that's the Kenny/Maclaine capability question, not a copy edit).

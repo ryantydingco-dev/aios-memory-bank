@@ -1,6 +1,8 @@
 # Memory Index
 
-- [School store economics](school-store-economics.md) — Proven store terms (2026-08-19): $60 + $10 ship, ~$20–25 cost, $5 flat to the school; ~$12k / ~$8k senior-wear store. Free store is the land; bulk is the expand. Yorkville reply = Maclaine. Name exact QBO school customers only.
+- [Harbor Haven + Camp Arcadia](harbor-haven-camp-arcadia.md) — **Special accounts (Ryan 2026-08-19).** Do not treat as generic inbound/cold examples, do not name in public/cold copy, do not put on cold lists. Arcadia = won customer (suppress). Harbor Haven = live Kenny-touched store/bulk thread.
+
+- [School store economics](school-store-economics.md) — Proven store terms (2026-08-19): $60 + $10 ship, ~$20–25 cost, $5 flat to the school; ~$12k / ~$8k senior-wear store. Free store is the land; bulk is the expand. Yorkville reply = Maclaine. Name exact QBO school customers only. Harbor Haven / Camp Arcadia are **not** generic store-proof examples.
 
 - [Fulfillment: keep it simple](fulfillment-keep-it-simple.md) — Ryan's rules (2026-08-10): short replies, strategy in vault not prospect assets, and classic logo treatments over gag concepts ("logo on some socks, call it a day"); v4-style deck format is fine.
 
