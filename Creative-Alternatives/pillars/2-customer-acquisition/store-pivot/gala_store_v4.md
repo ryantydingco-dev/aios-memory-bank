@@ -5,7 +5,8 @@
 # Angle change: event pieces stay the door-opener, the store extends it past event
 # night (supporter merch page).
 # 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
-# ("every purchase kicks back to the organization"). Kenny/Maclaine must confirm the
+# ("a share of every sale goes back to the organization"). Kenny/Maclaine must
+# confirm the
 # kicker % and that CA can run per-order consumer fulfillment BEFORE load — the first
 # yes-reply is a commitment. The % stays out of cold copy; Maclaine delivers it with
 # the preview.

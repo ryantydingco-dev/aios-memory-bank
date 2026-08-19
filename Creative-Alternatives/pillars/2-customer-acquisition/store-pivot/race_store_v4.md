@@ -6,7 +6,8 @@
 # on their own (hoodies, hats, extra shirts). Race Season list is nearly dry (897
 # left) — this loads with the fresh cohort.
 # 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
-# ("a cut of every purchase"). Kenny/Maclaine must confirm the kicker % and that CA
+# ("a share of every sale goes back to the race"). Kenny/Maclaine must confirm the
+# kicker % and that CA
 # can run per-order consumer fulfillment BEFORE load — the first yes-reply is a
 # commitment. The % stays out of cold copy; Maclaine delivers it with the preview.
 

@@ -1,7 +1,9 @@
 # Legal Administrators — STORE PIVOT v4 — VERIFIED, LOAD-READY
 # Verify 2026-08-19: rules lens PASS; buyer lens LOAD WITH EDITS→applied (E4 proof
 # line added). Ryan approved 2026-08-19.
-# ⚠️ Miller Johnson naming still pending Wil's OK (open loop 2026-08-11) — now in E1
+# ⚠️ ANONYMIZED 2026-08-19 pre-load: Wil has NOT OK'd Miller Johnson naming (open loop
+# 2026-08-11), so E1 says "a Michigan firm" and E4 uses the 2,700+/27yr proof. If Wil
+# says yes, restore: E1 "Miller Johnson's retreat gear is with us this fall"; E4 same.
 # AND E4. Anonymous swap ("a Michigan law firm") in both spots if he objects; E4
 # falls back to the 2,700+/27-year line.
 # Angle change: from retreat-gear mockups to the firm store that ends the separate
@@ -9,7 +11,7 @@
 
 Campaign: legal admins wave (13,989 contacts in email-finding)
 Merge fields: {{first_name}}, {{company_name}} (legal-suffix cleaner runs before load;
-drop leads missing either). Approved facts + the Miller Johnson fact only. Plain text,
+drop leads missing either). Approved facts only (Miller Johnson anonymized). Plain text,
 no dashes. Emails 2-4 thread as replies, no subjects.
 
 ## Email 1 (day 0) — subject: {{company_name}}'s firm store
@@ -21,8 +23,9 @@ class starts. Each one is a separate scramble unless the firm has one place to o
 from.
 
 I'd like to build {{company_name}} a free preview of its own store: your logo on the
-quarter zip, the tumbler, and the welcome kit, on one live page. Miller Johnson's
-retreat gear is with us this fall, so you'd be looking at real pieces, not a concept.
+quarter zip, the tumbler, and the welcome kit, on one live page. We're printing a
+Michigan firm's retreat gear this fall, so you'd be looking at real pieces, not a
+concept.
 
 The preview costs nothing and commits you to nothing. Want the link?
 
@@ -58,7 +61,7 @@ Hi {{first_name}},
 
 This is my last note. If gear and gifting are handled at {{company_name}}, all good.
 If they're on the someday list, one reply and the preview of your firm's page is in
-your inbox. Miller Johnson's retreat gear is with us this fall, and the store is how
+your inbox. We've printed for 2,700+ organizations over 27 years, and the store is how
 a firm stops re-solving this every quarter.
 
 Ryan Tydingco
