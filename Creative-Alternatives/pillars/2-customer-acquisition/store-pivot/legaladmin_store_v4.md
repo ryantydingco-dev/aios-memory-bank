@@ -4,8 +4,6 @@
 # ⚠️ ANONYMIZED 2026-08-19 pre-load: Wil has NOT OK'd Miller Johnson naming (open loop
 # 2026-08-11), so E1 says "a Michigan firm" and E4 uses the 2,700+/27yr proof. If Wil
 # says yes, restore: E1 "Miller Johnson's retreat gear is with us this fall"; E4 same.
-# AND E4. Anonymous swap ("a Michigan law firm") in both spots if he objects; E4
-# falls back to the 2,700+/27-year line.
 # Angle change: from retreat-gear mockups to the firm store that ends the separate
 # scrambles (retreat, holiday gifts, welcome kits).
 
