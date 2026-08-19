@@ -1,6 +1,8 @@
 # AIOS Memory Bank Dashboard
 
-This is Ryan's shared memory bank for Hermes, Claude Code, Codex, and future Obsidian use.
+This is Ryan's shared memory bank for Hermes, grokbot, Claude Code, Codex, and future Obsidian use.
+
+External agents loading business context should start with [[README]] (repo root) — it carries the current business snapshot, reading order, repo map, agent stack, and hard rules.
 
 ## What this is
 A curated, human-readable brain for active projects, decisions, work logs, workflows, and open loops.
