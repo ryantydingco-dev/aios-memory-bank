@@ -59,13 +59,29 @@ their logo on ~5 lane-relevant products on one live page (built with the existin
 mockup + Gamma page pipeline until a real store platform is chosen). Same same-day
 fulfillment, same human-in-the-loop, higher-LTV close.
 
+## Offer update (Ryan, 2026-08-19, second pass): the win-win kicker
+
+Ryan's call: make the store a no-brainer. For the three lanes where third parties buy
+(schools/families, races/runners, galas/supporters), the copy now states the full
+win-win in plain mechanics: **free store, you hold no inventory, you ship nothing,
+and you get a cut of every purchase.** Deliberate choices:
+
+- **Mechanics, not hype.** "Too good to be true" is the feeling that gets cold email
+  deleted; concrete one-sidedness is what earns the reply. No superlatives.
+- **The kicker % is NOT in the cold copy.** Maclaine delivers the number with the
+  preview. Keeps her ownership of money terms and gives the reply a next step.
+- **Corporate lanes (trade show, gifting, legal) don't get the kicker** — the buyer
+  is the org itself, so a revenue share on their own purchases makes no sense. Those
+  lanes state "free, commits you to nothing" instead.
+
 ## Hard gates before ANY v4 loads
 
-1. **Store terms are still `[CONFIRM]`** with Kenny/Maclaine (model, minimums, who
-   fulfills, payments). The v4 copy sells the *preview* (deliverable today) and store
-   *benefits that are true of any store* (one link, no size spreadsheets, reorder
-   without re-quoting). It makes NO operational promises (no "we warehouse/ship each
-   order," no revenue share, no "no minimums") until terms are confirmed.
+1. **The kicker lanes (schools, race, gala) are LOAD-BLOCKED** until Kenny/Maclaine
+   confirm (a) the kicker % and how it's paid, and (b) that CA can run per-order
+   consumer fulfillment (print-and-ship single orders, payments). The copy promises
+   it, so the first yes-reply is a commitment — sign-off comes BEFORE load, not after
+   the first reply. Corporate lanes still sell only the preview and store benefits
+   true of any store (one link, no size spreadsheets, reorder without re-quoting).
 2. **verify-copy SOP applies:** two-lens verification, then Ryan, before load.
 3. **Miller Johnson naming** in the legal lane is still pending Wil's OK (open loop
    since 2026-08-11). Anonymous swap is one API call if he objects.

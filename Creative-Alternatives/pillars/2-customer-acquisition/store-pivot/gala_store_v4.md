@@ -1,8 +1,12 @@
 # Gala / Nonprofit Events — STORE PIVOT v4 — DRAFT, NOT LOADED
 # Pending: verify-copy round, Ryan approval, store-terms confirmation (see COPY-AUDIT).
 # Angle change: event pieces stay the door-opener, the store extends it past event
-# night (supporter merch page). NO revenue-share or fundraising-mechanics claims until
-# Kenny/Maclaine confirm the store model.
+# night (supporter merch page).
+# 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
+# ("every purchase kicks back to the organization"). Kenny/Maclaine must confirm the
+# kicker % and that CA can run per-order consumer fulfillment BEFORE load — the first
+# yes-reply is a commitment. The % stays out of cold copy; Maclaine delivers it with
+# the preview.
 
 Campaign: gala wave (544 contacts in email-finding)
 Merge fields: {{first_name}}, {{company_name}}, {{event_name}}, {{event_month}}.
@@ -15,8 +19,9 @@ Emails 2-4 thread as replies.
 Hi {{first_name}},
 
 Before {{event_name}}, the usual ask is volunteer shirts, table gifts, and sponsor
-thank-yous. I'd like to show you those AND the part most organizations skip: a merch
-page with {{company_name}}'s logo that supporters can order from after the night ends.
+thank-yous. Here's the part most organizations skip: a merch page with
+{{company_name}}'s logo that supporters order from after the night ends. You hold no
+inventory, ship nothing, and every purchase kicks back to the organization.
 
 I'll build a free preview working from the logo on your site, so there's nothing for
 you to dig up. Want the link?
@@ -28,9 +33,9 @@ creativealternatives.com
 ## Email 2 (day 3) — threads
 
 If event merch usually lands with a board member or the volunteer committee, the page
-makes that easy. One link with everything already branded: the event pieces up front,
-the supporter items behind them. Forward it to whoever actually makes the call. Want
-me to build it?
+makes that an easy forward, because the pitch is one sentence: the organization does
+nothing and gets paid. The event pieces sit up front, the supporter items behind them.
+Want me to build it?
 
 Ryan
 

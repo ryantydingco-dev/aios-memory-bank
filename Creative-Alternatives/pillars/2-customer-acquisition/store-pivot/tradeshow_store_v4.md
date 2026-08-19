@@ -17,7 +17,8 @@ build {{company_name}} a preview of its own store: your logo on the booth giveaw
 and the polos your team wears, on one live page you order from before every show, not
 just this one.
 
-The preview is free and I'll work from the logo on your site. Want the link?
+The preview is free, it commits you to nothing, and I'll work from the logo on your
+site. Want the link?
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

@@ -18,7 +18,7 @@ and hearing about the misses in January. The better version is one page with
 {{company_name}}'s logo on a few gift options, where people pick their own.
 
 I'd like to build you a free preview of that page, working from the logo on your site,
-so there's nothing for you to dig up. Want the link?
+so there's nothing for you to dig up and nothing to commit to. Want the link?
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

@@ -22,7 +22,7 @@ I'd like to build {{company_name}} a free preview of its own store: your logo on
 quarter zip, the tumbler, and the welcome kit, on one live page. Miller Johnson's
 retreat gear is with us this fall, so you'd be looking at real pieces, not a concept.
 
-Want the link?
+The preview costs nothing and commits you to nothing. Want the link?
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives
