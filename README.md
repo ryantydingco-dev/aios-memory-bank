@@ -64,7 +64,7 @@ Ryan runs multiple agents off this one shared brain. If you (grokbot or any othe
 | **Hermes** | Telegram + cron on Ryan's Mac | Reads this repo as memory; summarizes daily activity into `Work Logs/`. Map: `Workflows/Hermes Infrastructure Map.md`. |
 | **Claude Code** | Ryan's MacBook / Mac Studio | Session prompts: `Creative-Alternatives/CLAUDE.md`; skills: `Creative-Alternatives/.agents/skills/`; durable memory: `claude-memory/`. |
 | **Codex** | Same machines | Session prompt: `Creative-Alternatives/AGENTS.md` (keep in sync with `CLAUDE.md`). |
-| **grokbot** | External | Load this README + the reading order above as business context before touching anything. |
+| **grokbot** | External | Load this README + the reading order above as business context. For talking-head / TikTok / Shorts / Twitter / YouTube edits, also load `https://github.com/ryantydingco-dev/talking-head-os` (`README.md` → `AGENTS.md` → `GROKBOT.md`). |
 
 **Agent update protocol:**
 1. Load the reading order above before proposing changes — don't work from stale or assumed facts.
