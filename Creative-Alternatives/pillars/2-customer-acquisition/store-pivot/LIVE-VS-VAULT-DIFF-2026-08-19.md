@@ -64,3 +64,52 @@ are both Ryan's calls.
 3. **Reconcile repo vs live.** Either the live copy gets committed to the vault as the
    real v3.5, or the approved v4 store copy replaces it. Right now the vault documents
    copy nobody is sending.
+
+---
+
+# RESOLVED 2026-08-19 — live copy cleaned across all 7 campaigns
+
+Ryan: "strip multi-million from all seven... the main priority is fixing all the
+campaigns so that they don't say anything stupid in them."
+
+## Audited all 28 steps (not just E1)
+
+Pulled every sequence step from all 7 ACTIVE campaigns. **E2, E3, and E4 were clean
+everywhere** — every violation sat in the E1 opener, which is the generation that got
+rewritten outside the repo. Scanned for: approved-facts breaches, negation framing,
+em-dashes, discount/urgency gimmicks, unbacked fulfillment promises, unrendered merge
+fields, placeholder text.
+
+## Fixed (11 replacements, 7 campaigns, 41,822 leads)
+
+| Fix | Count | Old → New |
+|---|---|---|
+| Approved-facts breach | 8 | "We're a 27-year, multi-million-dollar family business." → "We've printed for 2,700+ organizations over 27 years." |
+| Negation framing | 3 | "The page is the whole first step. Not a catalog. Not a pitch deck." → "The page is the whole first step." · "the firm's mark, not a catalog page" → "the firm's mark on real pieces" · "your own brand on the pieces, not a holiday catalog" → "your own brand on the pieces" · "actually take home, not a catalog spread." → "actually take home." |
+
+The replacement is a straight upgrade: "2,700+ organizations over 27 years" is on the
+approved-facts list, is more specific than the brag it replaces, and stops inviting the
+price anchoring the audit warned about.
+
+## Verified post-write
+
+All 7: sequences intact (4 steps each), delays preserved (0/3/4/5; LawNational 0/3/5/6),
+LawNational's 5 A/B variants preserved. Zero violations on re-scan.
+
+## API notes for next time
+
+- `POST /campaigns/{id}/sequences` round-trip has TWO key-name mismatches vs the GET:
+  GET returns `seq_delay_details.delayInDays`, POST requires `seq_delay_details.delay_in_days`.
+  GET returns `sequence_variants`, POST requires **`seq_variants`** (POST rejects
+  `sequence_variants` with a 400).
+- Test on the smallest campaign first; a malformed POST could wipe a sequence.
+  Raw pre-edit backup: `scratchpad/all_sequences_raw.json`.
+
+## STILL OPEN — the one thing not fixed
+
+Campaign 3812874 (Athletic Directors, 7,601 leads, ACTIVE) still promises per-order
+consumer fulfillment: *"A parent orders on a Tuesday, we print the piece, and it ships
+to their house. Nobody in the athletic office counts inventory."* That is not a copy
+problem to edit away — it is either true or it isn't, and only Kenny/Maclaine can say.
+Removing it would gut the campaign's entire offer. **Ryan's call: confirm CA can do it,
+or pause the campaign.**
