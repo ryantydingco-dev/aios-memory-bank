@@ -9,7 +9,8 @@
 # Still pending: lead pull (PTA presidents, athletic directors, booster chairs,
 # private school / academy admins).
 # 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
-# ("gets a cut of every purchase"). Kenny/Maclaine must confirm the kicker % and that
+# ("a share of every sale goes back to the school"). Kenny/Maclaine must confirm the
+# kicker % and that
 # CA can run per-order consumer fulfillment BEFORE this loads — the first yes-reply
 # is a commitment. The % is deliberately absent from the cold copy; it arrives with
 # the preview, from Maclaine. Existing landing-page draft:
