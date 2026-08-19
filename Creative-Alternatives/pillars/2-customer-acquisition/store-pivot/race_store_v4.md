@@ -19,7 +19,9 @@ I'd like to build a free preview of {{race_name}}'s own merch page, your race lo
 all of it, pulled straight from your race page so there's nothing for you to dig up.
 Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -48,7 +50,9 @@ race day. If they're still on the to-do list, it's one reply and the preview wit
 logo is in your inbox within a day. We've printed for 2,700+ organizations over 27
 years, and race gear people keep is the point of all of it.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → store preview per the page-pipeline SOP same day. Every reply is Ryan's

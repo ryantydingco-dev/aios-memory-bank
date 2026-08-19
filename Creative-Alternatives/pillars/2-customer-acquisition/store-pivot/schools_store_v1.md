@@ -22,7 +22,9 @@ caps, on one page families can order from all year.
 I'd like to build you a free preview of that page this week, working from the logo on
 your site, so there's nothing for you to dig up. Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -54,7 +56,9 @@ year. If it's still on someone's list, one reply and the preview with your logo 
 your inbox. We've printed for 2,700+ organizations over 27 years, and schools are
 exactly what the store version is for.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → store preview per the page-pipeline SOP same day. Every reply is Ryan's

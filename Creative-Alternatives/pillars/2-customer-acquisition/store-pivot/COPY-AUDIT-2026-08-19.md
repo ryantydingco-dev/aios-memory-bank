@@ -72,6 +72,18 @@ fulfillment, same human-in-the-loop, higher-LTV close.
 4. **Don't hard-swap mid-flight.** Active v3 threads finish as v3; v4 loads for new
    leads / the next wave so threading and test data stay clean.
 
+## Signature convention (Ryan's call, 2026-08-19)
+
+Full signature block on Email 1 and Email 4; first name only on Emails 2-3 (they
+thread as replies, and a repeated full block on a threaded reply is a mass-mail tell).
+Account-level SmartLead signatures stay BLANK per the hard rule — the signature lives
+in body copy only.
+
+- Ryan sends: `Ryan Tydingco / Head of Sales and Marketing, Creative Alternatives /
+  creativealternatives.com`
+- Maclaine sends: `Maclaine Scher / Vice President, Creative Alternatives /
+  creativealternatives.com`
+
 ## Lanes
 
 | Lane | Store angle | File |

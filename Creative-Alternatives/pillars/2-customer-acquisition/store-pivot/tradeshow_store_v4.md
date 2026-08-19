@@ -19,7 +19,9 @@ just this one.
 
 The preview is free and I'll work from the logo on your site. Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -52,7 +54,9 @@ show. If you'd still like to see {{company_name}}'s page, it takes one reply. We
 built branded gear for 2,700+ organizations over 27 years, and the store is how the
 ones with a show calendar stop reordering from scratch.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → store preview per the page-pipeline SOP (logo scrape → 5 lane products

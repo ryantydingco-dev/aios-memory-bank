@@ -20,7 +20,9 @@ and hearing about the misses in January. The better version is one page with
 I'd like to build you a free preview of that page, working from the logo on your site,
 so there's nothing for you to dig up. Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -52,7 +54,9 @@ December. If they're still on the list, one reply and the preview of your gift p
 in your inbox. We've done this for 2,700+ organizations, and the page is the version
 where nobody has to guess a size.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → gift-page preview per the page-pipeline SOP same day. Per person

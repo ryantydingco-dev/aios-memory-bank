@@ -21,7 +21,9 @@ page with {{company_name}}'s logo that supporters can order from after the night
 I'll build a free preview working from the logo on your site, so there's nothing for
 you to dig up. Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -53,7 +55,9 @@ Last note before {{event_name}}. If the event pieces are covered, have a great n
 If you'd still like to see {{company_name}}'s page, it takes one reply. We've printed
 for 2,700+ organizations over 27 years, and event night is what we build around.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → store preview per the page-pipeline SOP same day. Every reply is Ryan's

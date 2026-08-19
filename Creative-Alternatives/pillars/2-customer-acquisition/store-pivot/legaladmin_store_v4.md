@@ -24,7 +24,9 @@ retreat gear is with us this fall, so you'd be looking at real pieces, not a con
 
 Want the link?
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Email 2 (day 3) — threads
 
@@ -56,7 +58,9 @@ This is my last note. If gear and gifting are handled at {{company_name}}, all g
 If they're on the someday list, one reply and the preview of your firm's page is in
 your inbox.
 
-Ryan
+Ryan Tydingco
+Head of Sales and Marketing, Creative Alternatives
+creativealternatives.com
 
 ## Reply handling
 Any interest → store preview per the page-pipeline SOP same day. Every reply is Ryan's
