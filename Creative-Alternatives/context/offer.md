@@ -13,18 +13,17 @@ What Kenny has sold for 25 years: **branded merchandise and promotional products
 
 ## Offer 2 — Branded online stores (the growth wedge)
 
-The productized offer Ryan + Maclaine run **outbound** for:
+The productized offer Ryan + Maclaine run **outbound** for. Locked 2026-08-19 from a live school store, not a model:
 
-> CA builds your organization a **custom branded web store** — full design, fulfillment, and shipping handled. Your organization earns a **10–12% revenue share** on every order, with **zero inventory risk.**
+> CA builds the org a **free branded store**. They hold no inventory, ship nothing, and earn a kickback on every sale. CA produces and ships each order. Default kickback = **$5 flat per item** (Maclaine can flex). Families on the receipt store paid **$60 + $10 shipping**; CA cost was **~$20–25**. That store did **~$12k revenue / ~$8k profit**.
 
 - **Buyer:** camps, clubs, schools, teams, member-based orgs (see `audience.md`).
-- **Hook:** new revenue stream + branded gear for your people, none of the work or risk.
-- **Proof:** Farm & Forge Club (live), Summer Camps campaign at 10.1% reply.
-- **Motion:** cold outbound (Origami → SmartLead → Sendr.io → Salesfinity) + warm referral.
+- **Hook:** free store + a share of every sale + none of the work. Foot in the door for bulk (senior class, staff, events).
+- **Proof:** the senior-wear school store above; Farm & Forge Club; named QBO school customers (use exact names — Bronx Science Alumni is on the 2025 top-10 list). Summer Camps campaign at 10.1% reply.
+- **Motion:** cold outbound (store-preview wedge) + inbound (Yorkville form fill, 2026-08-19) + warm referral.
 - **This is the offer to scale in Pillar 2.**
-- **→ Fully built out** as the grand-slam version in `pillars/2-customer-acquisition/home-run-offer.md` (value stack, AI store-mockup wedge, guarantee, objection handling). The outbound engine that sells it: `pillars/2-customer-acquisition/outbound-gtm-playbook.md` + `sequences/cold-outreach-copy.md`.
-
-`[CONFIRM]` exact rev-share terms, who bears shipping/returns, typical order volumes, and what a "good" store does in year one.
+- Cold copy states mechanics, **not** the $5. Maclaine delivers the number with the preview.
+- **→** Buyer-facing stack still in `pillars/2-customer-acquisition/home-run-offer.md`. Store-pivot sequences in `pillars/2-customer-acquisition/store-pivot/`. Full economics in `claude-memory/school-store-economics.md`.
 
 ## Why this structure matters
 

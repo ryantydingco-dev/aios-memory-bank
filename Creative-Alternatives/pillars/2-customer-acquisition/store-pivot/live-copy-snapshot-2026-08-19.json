@@ -1,0 +1,51 @@
+[
+ {
+  "cid": 3812874,
+  "name": "Swag \u2014 Athletic Directors (Spirit Stores)",
+  "leads": "7601",
+  "steps": 4,
+  "e1": "SUBJ: {{school_name}} store page\nBODY: Hi {{first_name}}, I mocked up a spirit-wear page for {{school_name}}. Every team on one link. Your mark on the hoodies and tees. A parent orders on a Tuesday, we print the piece, and it ships to their house. Nobody in the athletic office counts inventory or sits on a pile of leftovers. We're a 27-year, multi-million-dollar family business. The page is the whole first step. Not a catalog. Not a pitch deck. Want the {{school_name}} link? Ryan"
+ },
+ {
+  "cid": 3787454,
+  "name": "Swag \u2014 Galas & Fundraising Events",
+  "leads": "194",
+  "steps": 4,
+  "e1": "SUBJ: for {{event_name}}\nBODY: Hi {{first_name}}, Before {{event_name}}, I want to put {{company_name}}'s mark on two pieces you'd actually use that night: a volunteer shirt people can find each other in, and a table gift that doesn't look like it came out of a catalog. I'll pull the logo from your site and send both mockups. We're a 27-year, multi-million-dollar family business. The mockups are the whole first step. You look, you decide if they're even in the conversation. Want to see them? Ryan"
+ },
+ {
+  "cid": 3787452,
+  "name": "Swag \u2014 Law Firm Administrators",
+  "leads": "9109",
+  "steps": 4,
+  "e1": "SUBJ: quarter-zip for {{company_name}}\nBODY: Hi {{first_name}}, I'll put {{company_name}}'s mark on a quarter-zip and a welcome kit for the retreat. The kit is the quarter-zip, a notebook, and a tumbler, shot the way it would actually land in a room. I'll pull the logo from your site and send both mockups. We're a 27-year, multi-million-dollar family business. You'd be looking at the firm's mark, not a catalog page, which is the only way this conversation gets real. Want to see them? Ryan"
+ },
+ {
+  "cid": 3787448,
+  "name": "Swag \u2014 Q4 Employee Gifting",
+  "leads": "10827",
+  "steps": 4,
+  "e1": "SUBJ: {{company_name}} gift mockups\nBODY: Hi {{first_name}}, I'll put {{company_name}}'s mark on three gift pieces and send you the mockups. I'll pull the logo from your site. You'd be looking at your own brand on the pieces, not a holiday catalog, which is the only version of this that answers anything. We're a 27-year, multi-million-dollar family business. The three mockups are the whole first step. Want the three? Ryan"
+ },
+ {
+  "cid": 3786125,
+  "name": "Swag \u2014 Race Season Sept-Dec 2026",
+  "leads": "897",
+  "steps": 4,
+  "e1": "SUBJ: shirts for {{race_name}}\nBODY: Hi {{first_name}}, Before you lock shirts for {{race_name}}, I want to put your race mark on a mockup. Finishers keep that shirt. They run in it the next year. It's the one piece from the weekend that doesn't go in a drawer, so it's worth seeing yours on it before you sign off. I'll pull the logo from your race page. We're a 27-year, multi-million-dollar family business. The mockup is the whole first step. Want me to send it? Maclaine"
+ },
+ {
+  "cid": 3777819,
+  "name": "Swag \u2014 Trade Show Exhibitors Oct 2026",
+  "leads": "9942",
+  "steps": 4,
+  "e1": "SUBJ: tote for {{show_name}}\nBODY: Hi {{first_name}}, For {{show_name}}, I can put {{company_name}}'s mark on the two things people actually leave the floor with: a tote that doesn't get dumped at the hotel, and a badge holder they wear the whole show. I'll mock both from the logo on your site. We're a 27-year, multi-million-dollar family business. The mockups are the whole first step. You look at your mark on those two pieces before anyone talks quantity. Want to see {{company_name}} on those two? Ryan"
+ },
+ {
+  "cid": 3580723,
+  "name": "Swag \u2014 Law National (Retreat Season)",
+  "leads": "3252",
+  "steps": 4,
+  "e1": "SUBJ: {{company_name}} retreat kit\nBODY: Hi {{first_name}}, If {{company_name}} has a retreat this fall, I can mock the branded side of it: a quarter-zip, a room-drop kit, and a closing-dinner piece. I'll pull the mark from your site. You'd be looking at the firm's mark on the three things people actually take home, not a catalog spread. We're a 27-year, multi-million-dollar family business. The three mockups are the whole first step. Want me to send the three? Maclaine"
+ }
+]

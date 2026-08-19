@@ -1,5 +1,7 @@
 # Memory Index
 
+- [School store economics](school-store-economics.md) — Proven store terms (2026-08-19): $60 + $10 ship, ~$20–25 cost, $5 flat to the school; ~$12k / ~$8k senior-wear store. Free store is the land; bulk is the expand. Yorkville reply = Maclaine. Name exact QBO school customers only.
+
 - [Fulfillment: keep it simple](fulfillment-keep-it-simple.md) — Ryan's rules (2026-08-10): short replies, strategy in vault not prospect assets, and classic logo treatments over gag concepts ("logo on some socks, call it a day"); v4-style deck format is fine.
 
 - [Personal brand plan](personal-brand-plan.md) — Caleb Ralston-derived brand strategy (2026-07-29): document CA transformation, LinkedIn primary + monthly YouTube pillar, trust>virality; full plan in AIOS-Memory-Bank/Personal Brand/.

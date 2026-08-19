@@ -36,7 +36,7 @@ Lead with the whole stack — it makes the "you pay nothing" reveal land harder.
 3. **In-house art team** — CA's designers do every mockup and proof. 24–48 hr proof turnaround (their signature speed).
 4. **Done-for-you fulfillment** — production, packing, shipping, returns, customer service. All CA.
 5. **Zero inventory, zero upfront cost, zero risk** — nothing is pre-bought; items are made on demand.
-6. **Revenue share on every order** — the org earns **10–12%** `[CONFIRM exact]` of sales, paid out on a set cadence `[CONFIRM cadence]`.
+6. **Kickback on every order** — default **$5 flat per item** (proven 2026-08-19 on a school senior-wear store). Cold copy says "a share of every sale," never the number. Maclaine can flex. Old 10–12% model is retired.
 7. **A launch kit** — ready-made announcement email + social posts so their first drop actually sells (this is what makes the rev-share real instead of theoretical).
 8. **Seasonal drop planning** — we line up new designs to their calendar (camp opening, season start, anniversary, championship, holiday) so the store keeps earning.
 
@@ -44,16 +44,22 @@ Lead with the whole stack — it makes the "you pay nothing" reveal land harder.
 
 ---
 
-## The economics (model — lock the real numbers with Maclaine)
+## The economics (locked 2026-08-19 from a live store)
 
-CA makes its margin on **production** of everything the store sells. The 10–12% rev-share is the *incentive CA pays the org* to put its name and audience behind the store. So CA wins when store GMV is high; the org's only job is to point its people at the store.
+CA makes its margin on **production**. The kickback is what CA pays the org to put its name and audience behind the store. Parents pay retail; the school is not buying wholesale.
 
-Illustrative only — replace with real figures:
+Receipt (Ryan-stated, senior hoodies / crewnecks / shirts):
+- Family pays **$60 + $10 shipping**
+- Produce for **~$20–25**
+- School gets **$5 flat**
+- Store did **~$12,000 revenue / ~$8,000 profit**
+- At $25 cost: CA keeps ~$30/item after the kickback. Shipping $10 is meant to cover freight.
 
-- A mid-size camp store doing **`[CONFIRM]` $X in year-one GMV** → org earns `$X × 11%`; CA earns its production margin on the full `$X`.
-- The web-store customer also becomes a **long-term core-distribution account** (Offer 1) — uniforms, event gear, one-off bulk orders. The store is the front door; the LTV is the relationship behind it.
+That is roughly **double** Kenny's ~32.7% lifetime bulk margin — because it is retail, not because the school got squeezed. Cheap production is the moat.
 
-**Open `[CONFIRM]` items (Maclaine/Kenny):** exact rev-share %, payout cadence, who eats shipping/returns, CA's average production margin, and a realistic year-one GMV range for a "good" store. These set the CAC ceiling for outbound — we can spend up to a fraction of an account's first-year margin to acquire it.
+The store customer becomes a **bulk account** (Offer 1): senior class, staff, athletics, events. Land the free store. Quote the next calendar drop as a bulk order.
+
+**Still Maclaine's:** exact retail mix per SKU, whether a given org gets $5 or a custom number, payout cadence. Not a reason to block outbound.
 
 ---
 

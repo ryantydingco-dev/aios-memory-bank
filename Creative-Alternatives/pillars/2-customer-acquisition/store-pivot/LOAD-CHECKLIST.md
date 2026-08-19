@@ -14,10 +14,13 @@ API key).
       stamped in each file's header. Buyer ranking as loaded: gifting > legal ≈ race
       > tradeshow > gala > schools pre-edit; schools jumps to top-2 post-edit given
       the live back-to-school window (its urgency framing goes stale ~late Sept).
-- [ ] **KICKER LANES BLOCKED (schools, race, gala):** Kenny/Maclaine sign-off on the
-      kicker % + confirmation CA can run per-order consumer fulfillment. The copy
-      promises it; first yes-reply is a commitment. DO NOT load these three until
-      this box is checked.
+- [x] **Kicker + fulfillment (2026-08-19):** already proven on a live school
+      store. Default = $5 flat/item to the org, families pay ~$60 + $10 ship,
+      CA cost ~$20–25, per-order consumer fulfillment is what we just ran.
+      Cold copy still does NOT state $5 — Maclaine delivers it with the
+      preview. Kenny's cheap-production instinct is the cost side, not a
+      reason to block load. DO confirm with Maclaine that $5 remains the
+      default she will quote before the first new yes.
 - [ ] Miller Johnson naming OK from Wil (legal lane) — anonymous swap ("a Michigan
       law firm") if he objects
 - [ ] Merge branch `claude/grokbot-github-business-context-5tsorg` → main so local

@@ -8,12 +8,11 @@
 # once in neutral words, "a cut"→"a share of every sale"). Ryan approved 2026-08-19.
 # Still pending: lead pull (PTA presidents, athletic directors, booster chairs,
 # private school / academy admins).
-# 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
-# ("a share of every sale goes back to the school"). Kenny/Maclaine must confirm the
-# kicker % and that
-# CA can run per-order consumer fulfillment BEFORE this loads — the first yes-reply
-# is a commitment. The % is deliberately absent from the cold copy; it arrives with
-# the preview, from Maclaine. Existing landing-page draft:
+# Terms (2026-08-19): $5 flat/item is the proven default (senior-wear store:
+# $60 + $10 ship, ~$20-25 cost, ~$12k / ~$8k). Cold copy still does NOT state
+# $5 — Maclaine delivers it with the preview. Per-order fulfillment is proven.
+# Remaining before load: Maclaine confirms she will quote $5 as default +
+# schools lead pull. Existing landing-page draft:
 # pillars/3-online-presence/inbound/page-copy/school-spirit-wear-stores.md.
 
 Campaign: "Schools — Spirit Wear Stores" — new lane
