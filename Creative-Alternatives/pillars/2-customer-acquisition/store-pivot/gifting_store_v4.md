@@ -1,5 +1,8 @@
-# Q4 Corporate Gifting — STORE PIVOT v4 — DRAFT, NOT LOADED
-# Pending: verify-copy round, Ryan approval, store-terms confirmation (see COPY-AUDIT).
+# Q4 Corporate Gifting — STORE PIVOT v4 — VERIFIED, LOAD-READY
+# Verify 2026-08-19: rules lens FAIL→fixed (E4 "done this" fact overreach); buyer
+# lens LOAD WITH EDITS→applied (E1 pick-own size/color). Ryan approved 2026-08-19.
+# ⚠️ E1 promises each person picks size/color — confirm the pick-your-own mechanic
+# is real (part of the Kenny/Maclaine store-terms conversation) before load.
 # Angle change: from "three mockups at three price points" to a gift page where each
 # person picks their own size and color. Keeps v3's honest October framing (no
 # manufactured deadline). No redemption-mechanics promises until Kenny/Maclaine
@@ -15,7 +18,8 @@ Hi {{first_name}},
 
 Holiday gifting usually means someone guessing sizes and colors for the whole company
 and hearing about the misses in January. The better version is one page with
-{{company_name}}'s logo on a few gift options, where people pick their own.
+{{company_name}}'s logo on a few gift options, where each person picks their own size
+and color.
 
 I'd like to build you a free preview of that page, working from the logo on your site,
 so there's nothing for you to dig up and nothing to commit to. Want the link?
@@ -51,8 +55,8 @@ Hi {{first_name}},
 
 This is my last note. If gifts are already sorted at {{company_name}}, enjoy the easy
 December. If they're still on the list, one reply and the preview of your gift page is
-in your inbox. We've done this for 2,700+ organizations, and the page is the version
-where nobody has to guess a size.
+in your inbox. We've built branded gear for 2,700+ organizations, and the page is the
+version where nobody has to guess a size.
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

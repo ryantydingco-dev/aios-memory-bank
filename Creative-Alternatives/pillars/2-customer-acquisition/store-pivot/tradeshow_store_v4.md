@@ -1,5 +1,6 @@
-# Trade Show Exhibitors — STORE PIVOT v4 — DRAFT, NOT LOADED
-# Pending: verify-copy round, Ryan approval, store-terms confirmation (see COPY-AUDIT).
+# Trade Show Exhibitors — STORE PIVOT v4 — VERIFIED, LOAD-READY
+# Verify 2026-08-19: rules lens FAIL→fixed (E4 implied store track record); buyer
+# lens LOAD WITH EDITS→applied (E2 booth-owner line). Ryan approved 2026-08-19.
 # Replaces the mockup offer with the store-preview offer. Active v3 threads finish as
 # v3; this loads for new leads only.
 
@@ -28,8 +29,8 @@ creativealternatives.com
 
 Here's what would be on {{company_name}}'s page: the giveaways that actually leave the
 floor in someone's bag, team apparel, and the extras you always run short of by day
-two. Everything already branded, one link, easy to forward to whoever owns the booth.
-Want me to build it?
+two. Everything already branded, on one link you can hand to procurement or keep for
+yourself. Want me to build it?
 
 Ryan
 
@@ -52,8 +53,8 @@ Hi {{first_name}},
 
 Last note from me before {{show_name}}. If the booth is covered, good luck at the
 show. If you'd still like to see {{company_name}}'s page, it takes one reply. We've
-built branded gear for 2,700+ organizations over 27 years, and the store is how the
-ones with a show calendar stop reordering from scratch.
+built branded gear for 2,700+ organizations over 27 years, and the store is how a
+show calendar stops meaning reordering from scratch.
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

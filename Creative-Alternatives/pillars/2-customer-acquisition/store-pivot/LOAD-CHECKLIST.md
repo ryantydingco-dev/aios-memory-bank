@@ -9,8 +9,11 @@ API key).
 
 - [x] Copy written (six lanes, `*_store_v4.md` / `schools_store_v1.md`)
 - [x] Ryan approval — 2026-08-19
-- [x] Verify-copy pass (rules lens + buyer lens) — results appended to each file's
-      header by the session that ran it; fix FAILs before load
+- [x] Verify-copy pass DONE 2026-08-19 — rules lens (2 PASS, 4 one-line FAILs) and
+      buyer lens (all six LOAD WITH EDITS). ALL fixes applied to the files; verdicts
+      stamped in each file's header. Buyer ranking as loaded: gifting > legal ≈ race
+      > tradeshow > gala > schools pre-edit; schools jumps to top-2 post-edit given
+      the live back-to-school window (its urgency framing goes stale ~late Sept).
 - [ ] **KICKER LANES BLOCKED (schools, race, gala):** Kenny/Maclaine sign-off on the
       kicker % + confirmation CA can run per-order consumer fulfillment. The copy
       promises it; first yes-reply is a commitment. DO NOT load these three until

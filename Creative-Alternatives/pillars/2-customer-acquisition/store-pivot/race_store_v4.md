@@ -1,5 +1,7 @@
-# Race Season — STORE PIVOT v4 — DRAFT, NOT LOADED
-# Pending: verify-copy round, Ryan approval, store-terms confirmation (see COPY-AUDIT).
+# Race Season — STORE PIVOT v4 — VERIFIED, BLOCKED ON STORE TERMS
+# Verify 2026-08-19: rules lens FAIL→fixed (E4 "within a day" turnaround claim);
+# buyer lens LOAD WITH EDITS→applied ("a cut"→"a share of every sale", E2
+# terms-restatement deleted). Ryan approved 2026-08-19.
 # Angle change: finisher shirts stay the hook, the store adds the merch runners buy
 # on their own (hoodies, hats, extra shirts). Race Season list is nearly dry (897
 # left) — this loads with the fresh cohort.
@@ -17,8 +19,8 @@ as replies, no subjects.
 
 The finisher shirt is the order you have to make. Here's the one that pays you back:
 a {{race_name}} merch store with the hoodies, hats, and extra shirts runners buy on
-their own. You hold no inventory, ship nothing, and the race gets a cut of every
-purchase.
+their own. You hold no inventory and ship nothing; a share of every sale goes back to
+the race.
 
 I'd like to build a free preview, your race logo pulled straight from your race page
 so there's nothing for you to dig up. Want the link?
@@ -32,8 +34,7 @@ creativealternatives.com
 Easier to judge race merch when you're looking at your own logo on it instead of a
 blank template. The preview puts {{race_name}}'s artwork on the finisher shirt plus
 the pieces runners buy on their own, all on one page you can share with your race
-committee. Your side of it doesn't change: no inventory, no shipping, a cut of every
-sale. Want me to build it?
+committee. Want me to build it?
 
 Ryan
 
@@ -52,8 +53,8 @@ Ryan
 
 Last note from me before {{race_name}}. If shirts and merch are handled, good luck on
 race day. If they're still on the to-do list, it's one reply and the preview with your
-logo is in your inbox within a day. We've printed for 2,700+ organizations over 27
-years, and race gear people keep is the point of all of it.
+logo is in your inbox. We've printed for 2,700+ organizations over 27 years, and race
+gear people keep is the point of all of it.
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

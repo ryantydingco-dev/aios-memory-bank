@@ -1,9 +1,13 @@
-# Schools / PTAs / Boosters — STORE v1 — NEW LANE — DRAFT, NOT LOADED
+# Schools / PTAs / Boosters — STORE v1 — NEW LANE — VERIFIED, BLOCKED ON STORE TERMS
 # Born from the 2026-08-19 inbound: Yorkville Community School form fill asking for a
 # year-round online store (Service: Online Stores, needed by Sept 9). Back-to-school
-# is the live buying window RIGHT NOW.
-# Pending: lead pull (PTA presidents, athletic directors, booster chairs, private
-# school / academy admins), verify-copy round, Ryan approval.
+# is the live buying window RIGHT NOW — buyer verifier: E3's urgency framing goes
+# stale by ~late September, so the load window is short.
+# Verify 2026-08-19: rules lens FAIL→fixed (E1 "this week" turnaround claim); buyer
+# lens LOAD WITH EDITS→applied (E1 opens with the buyer's problem, money pitch said
+# once in neutral words, "a cut"→"a share of every sale"). Ryan approved 2026-08-19.
+# Still pending: lead pull (PTA presidents, athletic directors, booster chairs,
+# private school / academy admins).
 # 🚫 LOAD BLOCKER: this copy PROMISES no-inventory fulfillment and a revenue kicker
 # ("gets a cut of every purchase"). Kenny/Maclaine must confirm the kicker % and that
 # CA can run per-order consumer fulfillment BEFORE this loads — the first yes-reply
@@ -19,13 +23,14 @@ Approved facts only. Plain text, no dashes. Emails 2-4 thread as replies, no sub
 
 Hi {{first_name}},
 
-Here's the deal, and it costs the school nothing. We build {{school_name}} an online
-spirit wear store: your logo on tees, hoodies, and caps, on one page families order
-from all year. The school holds no inventory, ships nothing, and gets a cut of every
-purchase.
+Spirit wear at most schools still means a volunteer collecting sizes and a closet of
+leftover hoodies. The alternative costs the school nothing: an online store with
+{{school_name}}'s logo on tees, hoodies, and caps, on one page families order from
+all year. The school holds no inventory and ships nothing, and a share of every sale
+goes back to the school.
 
-I'd like to build you a free preview this week, working from the logo on your site,
-so there's nothing for you to dig up. Want the link?
+I'd like to build you a free preview, working from the logo on your site, so there's
+nothing for you to dig up. Want the link?
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives
@@ -34,9 +39,9 @@ creativealternatives.com
 ## Email 2 (day 3) — threads
 
 The preview is easy to pass along to the PTA board or the athletic director, because
-the pitch is one sentence: the school does nothing and gets paid. One link, everything
-already in school colors, spirit wear up front and staff apparel behind it. One reply
-and {{school_name}}'s page is in your inbox. Want me to build it?
+the pitch is one sentence: the school shares a link and the proceeds come back. One
+link, everything already in school colors, spirit wear up front and staff apparel
+behind it. One reply and {{school_name}}'s page is in your inbox. Want me to build it?
 
 Ryan
 
@@ -58,10 +63,9 @@ Ryan
 Hi {{first_name}},
 
 Last note from me. If spirit wear is handled at {{school_name}}, have a great school
-year. If it's still on someone's list, the offer stands: the store costs the school
-nothing, nobody stocks a closet with hoodies, and every purchase pays the school. One
-reply and the preview with your logo is in your inbox. We've printed for 2,700+ organizations over 27 years, and schools are
-exactly what the store version is for.
+year. If it's still on someone's list, one reply and the preview with your logo is in
+your inbox. We've printed for 2,700+ organizations over 27 years, and schools are
+exactly what the store is for.
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives

@@ -1,7 +1,9 @@
-# Legal Administrators — STORE PIVOT v4 — DRAFT, NOT LOADED
-# Pending: verify-copy round, Ryan approval, store-terms confirmation (see COPY-AUDIT).
-# ⚠️ Miller Johnson naming still pending Wil's OK (open loop 2026-08-11). Anonymous
-# swap ("a Michigan law firm") is one line if he objects.
+# Legal Administrators — STORE PIVOT v4 — VERIFIED, LOAD-READY
+# Verify 2026-08-19: rules lens PASS; buyer lens LOAD WITH EDITS→applied (E4 proof
+# line added). Ryan approved 2026-08-19.
+# ⚠️ Miller Johnson naming still pending Wil's OK (open loop 2026-08-11) — now in E1
+# AND E4. Anonymous swap ("a Michigan law firm") in both spots if he objects; E4
+# falls back to the 2,700+/27-year line.
 # Angle change: from retreat-gear mockups to the firm store that ends the separate
 # scrambles (retreat, holiday gifts, welcome kits).
 
@@ -56,7 +58,8 @@ Hi {{first_name}},
 
 This is my last note. If gear and gifting are handled at {{company_name}}, all good.
 If they're on the someday list, one reply and the preview of your firm's page is in
-your inbox.
+your inbox. Miller Johnson's retreat gear is with us this fall, and the store is how
+a firm stops re-solving this every quarter.
 
 Ryan Tydingco
 Head of Sales and Marketing, Creative Alternatives
