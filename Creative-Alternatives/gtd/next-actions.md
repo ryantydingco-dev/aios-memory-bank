@@ -32,6 +32,7 @@ _Items to discuss with specific team members (note who)._
 - [ ] Maclaine + Kenny: choose ten representative orders and three historical quote threads for the baseline (Project: 30-day backend modernization pilot)
 - [ ] Kenny + Maclaine: confirm LinkedIn profile/account reality and public boundaries; capture one real event per person (Project: LinkedIn engine)
 - [ ] Kenny: review claims on the first niche page before Sunday publish; confirm GBP address-vs-service-area and secondary categories (Project: Online presence engine)
+- [ ] Kenny: edit/approve the Wave 1 review email draft and pick the top 20-30 gift accounts (`pillars/3-online-presence/review-engine.md`) (Project: Online presence engine)
 
 ### @errands
 _Physical, in-person tasks._
