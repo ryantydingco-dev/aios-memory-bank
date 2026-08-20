@@ -15,7 +15,7 @@ park operators.
 3 mockups (two-ref composite, real blanks + logo from their site header, spelling QC'd):
 `Creative-Alternatives-AIOS/mockups/proof-sheets/insurance-center/`
 1. `mockup-tote.png` — heavyweight canvas boat tote, trim recolored red→forest green (real catalog variant), full-color logo on pocket
-2. `mockup-powerbank.png` — black slim power bank, white lettering + green bullseye (stacked lockup — correct art call for the narrow face)
+2. `mockup-powerbank.png` — black slim power bank, white lettering + green bullseye (stacked lockup — correct art call for the narrow face). **SOURCED (Ryan asked 8/19): Leeds/PCNA SKU 7122-10, "UL Listed Exo Recycled Aluminum 5000 mAh Power Bank." PCNA + Leeds are active QB vendors. Supplier decorates (CA never prints hard goods in-house). ⚠️ Maclaine to confirm before quoting: account active, minimums/price, and whether multi-color print is offered on this SKU — if it's laser-engrave only, re-render the mockup as engrave (5-min job, the Yeti lesson).**
 3. `mockup-tumbler.png` — white 20oz tumbler, full-color horizontal lockup
 
 **Deck: https://gamma.app/docs/rth7h8k920p9l5f** (Sage theme — matches their green/white brand). v4 format: item cards + honest timeline (early Oct comfortable / mid-Oct still works / after = rushing) + team card + "these are yours" close.
