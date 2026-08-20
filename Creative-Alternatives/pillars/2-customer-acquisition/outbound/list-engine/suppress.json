@@ -1,0 +1,18 @@
+{
+  "domains": [
+    "harborhaven.com",
+    "campharborhaven.com",
+    "camparcadia.com",
+    "4imprint.com",
+    "sanmar.com",
+    "alphabroder.com",
+    "ssactivewear.com"
+  ],
+  "name_contains": [
+    "harbor haven",
+    "camp arcadia",
+    "4imprint",
+    "sanmar",
+    "alphabroder"
+  ]
+}

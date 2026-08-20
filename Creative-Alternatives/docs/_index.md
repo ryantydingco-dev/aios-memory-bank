@@ -19,11 +19,15 @@
 | Executing the current first 30 days | [../plans/first-30-days-unified-operating-plan.md](../plans/first-30-days-unified-operating-plan.md) | One-segment outbound setup, three-person content workflow, and read-only operations pilots |
 | Building or reviewing multichannel outbound | [../pillars/2-customer-acquisition/account-based-outbound-engine.md](../pillars/2-customer-acquisition/account-based-outbound-engine.md) | One account plan across cold email, LinkedIn, and calls |
 | Drafting LinkedIn content for Ryan, Kenny, or Maclaine | [../pillars/3-online-presence/linkedin-content-engine.md](../pillars/3-online-presence/linkedin-content-engine.md) | Differentiated voice cards and event-driven weekly workflow |
+| Working on website tracking, GA4/GSC/GBP, niche pages, social cadence, or the paid-ads gate | [../plans/2026-08-19-online-presence-engine.md](../plans/2026-08-19-online-presence-engine.md) | Phased online-presence plan: weekend tracking foundation → funnel → SEO/social → gated paid ads |
+| Executing the weekend tracking/Google-presence setup | [../pillars/3-online-presence/RUNBOOK.md](../pillars/3-online-presence/RUNBOOK.md) | Click-by-click GA4, Search Console, GBP, chat widget, Meta Pixel setup |
+| Tagging any CA link in outbound, social, GBP, or ads | [../pillars/3-online-presence/utm-conventions.md](../pillars/3-online-presence/utm-conventions.md) | UTM standard and campaign registry — untagged links are invisible leads |
 | Prioritizing backend or AI automation | [../pillars/1-operations/backend-modernization-roadmap.md](../pillars/1-operations/backend-modernization-roadmap.md) | Outcome-weighted roadmap for response time, quality, margin, and capacity |
 | Working on QuickBooks customer segmentation, Mailchimp planning, new-customer offers, revenue pipeline, attribution, or the revenue tracker | [../pillars/2-customer-acquisition/revenue-operations/README.md](../pillars/2-customer-acquisition/revenue-operations/README.md) | Local draft revenue OS: data contract → segments/campaigns → offers/outreach → tracker/dashboard → cadence and approval gates |
 | Working on the daily brief, its schedule, or Slack/email delivery | [slack-daily-brief.md](slack-daily-brief.md) | 7 AM auto-brief: collect → generate → post to Slack + email Kenny |
 | Working on agent loops, /loop-run, loop_metrics.py, or the Monday 08:30 schedule | [loops.md](loops.md) | 7 self-improving loops judged on data.db metrics; drafts-only; memory per loop |
 | Making mockups, proofs, vector/production art, or anything replacing the outside artist | [production-art.md](production-art.md) | Vector-first pipeline: art → real-blank mockup → proof sheet → outlined printer PDF |
+| Building a company list from seed customers (schools/PTAs or any hard-to-filter ICP) | [failure-modes/list-engine.md](failure-modes/list-engine.md) | Fingerprint → fan-out → score → homepage verify. No email reveal. |
 | Setting up the AIOS on a new Mac, or questions about multi-machine sync | [new-machine-setup.md](new-machine-setup.md) | Clone → venv → .env transfer → one-brief-host rule; machine roster |
 
 ## Integrations

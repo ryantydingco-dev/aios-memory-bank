@@ -1,5 +1,11 @@
 # Google Workspace Migration — what to collect before touching anything
 
+> **2026-08-19: Mostly collected.** Bill White answered 2026-08-18 (Gmail thread
+> "switch to gmail") — inventory, sizes, IMAP settings, password resets all in hand.
+> Answers + remaining unknowns live in the plan's Status update:
+> `plans/2026-07-12-aol-to-gmail-migration.md`. Still outstanding: OMG CNAME list
+> (Bill compiling), NS1 DNS account holder, `_spf.emailcampaigns.net` mystery.
+
 Target: move Kenny, Maclaine, and Ryan from the current shared-host webmail to Google
 Workspace on @creativealternatives.com.
 
@@ -7,7 +13,7 @@ Workspace on @creativealternatives.com.
 | Thing | Finding |
 |---|---|
 | Registrar | **GoDaddy** (domain created 1998-01-23 — 28 years old, a real deliverability asset) |
-| DNS / nameservers | **Squarespace** (`connect1/connect2.squarespacedns.com`) — **MX records live here** |
+| DNS / nameservers | ~~Squarespace~~ **WRONG — actually NS1** (`dns1–4.p08.nsone.net`, verified by dig 2026-08-19). MX is edited here. Converge has NO access (per Bill 8/18); account holder unknown — hostname pattern matches **Netlify DNS**. GoDaddy re-delegation = fallback |
 | Current mail host | Shared hosting at **216.37.42.183**, `mail.creativealternatives.com`, MailChannels relay (cPanel-style) |
 | SPF | `+a +mx +ip4:216.37.42.247 +ip4:216.37.42.183 +include:relay.mailchannels.net +include:_spf.emailcampaigns.net` |
 | DMARC | `p=none`, reports to **billwhite@convergesc.com** ← the consultant |

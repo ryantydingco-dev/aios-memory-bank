@@ -1,4 +1,23 @@
-# Campaign Queue — one lane at a time (Ryan's call, 2026-08-11)
+# Campaign Queue
+
+## UPDATE 2026-08-19 night — CA volume, GrokBot handles yeses
+
+Ryan: we need more leads and more CA send volume; GrokBot manages the yeses.
+
+What changed:
+- Non-CA inboxes (Dealthreads / Vantage / Calendar Group) detached from every CA campaign. Accounts still warming. Not deleted.
+- Ryan's 47 CA inboxes split so they stop starving each other. Q4 can send.
+- Caps: Q4 400/day (16 boxes) · Athletic Directors 400/day (12) · Trade Show 400/day (12) · Law Admins 200/day (7).
+- Combined new CA leads ~1,320 per weekday. No new inboxes bought.
+
+Empty lists (the real constraint now):
+- Race Season: **7 leads left**. Maclaine's 24 boxes go idle without a new pull.
+- Galas: 0 new. 194 was the test.
+- Camps Fall: **402 loaded, still paused**. Unpause is instant proven-vertical volume.
+
+---
+
+# Prior rule — one lane at a time (Ryan's call, 2026-08-11)
 
 **The rule:** one sequence runs to completion, we read the result, then the next one
 starts. Not six at once. This is what event-swag-engine.md said from the beginning —

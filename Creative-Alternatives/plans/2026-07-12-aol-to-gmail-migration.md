@@ -1,8 +1,36 @@
 # Plan: Email Migration — AOL + Legacy Host → Google Workspace on creativealternatives.com
 
 **Created:** 2026-07-12
-**Status:** Draft
+**Status:** In Progress — discovery complete 2026-08-18 (see Status update below)
 **Request:** Move Kenny from his ~27-year-old AOL inbox to [REDACTED EMAIL] on Gmail (Google Workspace), preserving all email history, without disrupting [REDACTED EMAIL] or any customer communication.
+
+---
+
+## Status update — 2026-08-19 (discovery complete via Bill White)
+
+Ryan emailed Bill White 2026-08-18; Bill answered same day (thread "switch to gmail" in Ryan's Gmail, cc kenny@ + Maclaine). Key development: **Convergent Design is exiting all CA website/email support**, so this project now includes taking DNS control, not just moving mail.
+
+### Open questions — answered
+
+1. **Mailbox inventory (Q1):** six mailboxes — ikey@ (74KB), kenny@ (35GB), maclaine@ (5GB), orders@ (55MB), renie@ (64MB), ryan@ (1.2GB). One forwarder: orders@ → kenny@ (recreate in Workspace as an alias/group, not a paid seat). **kenny@ already exists on the legacy host with 35GB** — the plan's assumption that Kenny only used AOL was wrong; his import = AOL history + this 35GB mailbox.
+2. **DNS access (Q2):** nameservers are dns1–4.p08.nsone.net (NS1) — verified by live dig 2026-08-19; the Squarespace-DNS claim in WHAT-TO-COLLECT was wrong. Bill/Converge does **not** control NS1 and has no access. Who holds the NS1 account is the remaining unknown (lead: `dns1–4.p0X.nsone.net` is the hostname pattern Netlify DNS uses — check for an old Netlify account, possibly a past web developer). Fallback: registrar is GoDaddy — re-delegate nameservers to a service CA controls, but only after every existing record (Squarespace A records, MX, SPF, OMG CNAMEs) is recreated at the new host.
+3. **Mailbox size (Q3):** kenny@ at 35GB alone exceeds Business Starter's 30GB cap → **Business Standard ($14.40/user/mo, 2TB)** confirmed.
+4. **IMAP settings:** mail.creativealternatives.com, incoming 993, outgoing 465, SSL/TLS.
+5. **Credentials:** Bill reset orders@, renie@, ikey@ to a temp password (in his 8/18 5:03 PM email — not recorded here). kenny@/maclaine@/ryan@ passwords already held by the team.
+6. **NEW gotcha — Order My Gear CNAMEs:** the OMG store custom domains have CNAME records in DNS; Bill is compiling the list. These must survive any DNS change untouched — the school-store pivot runs on OMG.
+
+### Still open
+
+- ~~Who holds the NS1 (likely Netlify) DNS account~~ **ANSWERED 2026-08-19: Mickey — i.e., Maclaine (personal email mickeyscher@gmail.com) — has the logins** ("to DNS or to Squarespace" per Ryan). Caveat: live nameservers are NS1, so when we get in, confirm her panel actually edits the live zone — a Squarespace-only login won't affect records while NS points at NS1 (test: add the Google TXT there and dig for it).
+- `_spf.emailcampaigns.net` — still unexplained (Q5)
+- Workspace billing owner / admin account (Q4 — decide at signup)
+
+### Next actions
+
+1. **Waiting on Bill:** OMG CNAME list (promised 8/18)
+2. Locate NS1/Netlify DNS access, or plan the GoDaddy re-delegation
+3. Sign up Google Workspace **Business Standard**, verify domain via TXT
+4. Start IMAP copies early — kenny@'s 35GB will take days
 
 ---
 
