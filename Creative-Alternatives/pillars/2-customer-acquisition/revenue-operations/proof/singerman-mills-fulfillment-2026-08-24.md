@@ -34,9 +34,11 @@ before quoting the kit.
 - Both mockups PASS: spelling exact on all surfaces, two-line lockup as planned,
   white-on-dark / navy-on-white per surface. Kit QZ is heather (base photo) vs the
   solo smooth charcoal — different shots, acceptable.
-- **No Gamma deck this time**: the Gamma MCP disconnected mid-fulfillment. Per the
-  keep-it-simple rule the mockups carry the pitch — reply ships with attachments
-  only. Deck can be added in a follow-up if wanted.
+- **Deck: https://gamma.app/docs/hkp2rgnvs0hhax1** (Onyx theme, law-lane format).
+  Built via the Gamma REST API v1.0 after the MCP dropped — Ryan supplied an API key,
+  now in aios-starter-kit/.env as GAMMA_API_KEY. Gotchas for reuse: python urllib is
+  Cloudflare-banned (curl + browser UA passes); v0.2 endpoint sunset -> POST
+  /v1.0/generations; use themeId not themeName.
 - Ops note: the media server also dropped mid-generation; jobs completed server-side
   and were recovered by probing the CloudFront URL pattern
   (hf_<submit-timestamp>_<job_id>.png) in parallel. Pattern documented for reuse.
@@ -45,9 +47,11 @@ before quoting the kit.
 
 Brian, appreciate you giving us a look.
 
-Two mockups attached: the quarter-zip with the firm's lockup embroidered, and the
-welcome kit the way it would land on a new associate's desk. Your logo came straight
-from the site, so what you're seeing is the real mark, not a redraw.
+Two mockups attached, full set here: https://gamma.app/docs/hkp2rgnvs0hhax1
+
+The quarter-zip has the firm's lockup embroidered, and the welcome kit is the way it
+would land on a new associate's desk. Your logo came straight from the site, so what
+you're seeing is the real mark, not a redraw.
 
 Out of curiosity, does the firm have a retreat or anything else on the calendar this
 fall, or is gear more of a when-needed thing at Singerman Mills?
