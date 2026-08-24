@@ -1,5 +1,7 @@
 # 60-Day Revenue Sprint — All-In Plan
 
+> **SUPERSEDED 2026-08-23** by [`1m-6-month-game-plan.md`](1m-6-month-game-plan.md), the $1M six-month plan. The comp rules, payment-terms rule, and channel learnings here carry forward; execution now runs off the new plan and `../gtd/daily-power-list.md`.
+
 > Created 2026-08-04. Owner: Ryan. Goal: maximum new revenue through Creative Alternatives in 60 days (through ~2026-10-03), full-time capacity, no channel limits.
 > **Comp (settled):** Ryan earns half the markup (~16% of revenue) on **any NEW customer he brings in**, once the invoice is paid. Existing-customer revenue = Kenny's money / Ryan's proof-of-value, not commission.
 > **Payment-terms rule:** all new customers on deposit-up-front or card-on-file for first orders — protects Kenny AND pulls Ryan's commission inside the sprint window.

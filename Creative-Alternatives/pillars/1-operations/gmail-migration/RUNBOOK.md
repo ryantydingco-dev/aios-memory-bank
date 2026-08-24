@@ -4,9 +4,72 @@ Written 2026-08-19, mid-signup. Plan + discovery answers:
 `plans/2026-07-12-aol-to-gmail-migration.md`. Work through phases in order —
 each phase says what it's blocked on.
 
+> **Last verified repository state: 2026-08-20.** Domain verification succeeded,
+> `kenny@` was created, and the legacy IMAP source connected. The first import
+> was not started because Kenny's legacy mailbox password was missing. MX was
+> not changed. Before resuming, confirm this state in Google Admin and confirm
+> where new mail currently lands.
+
 **Standing rule until Phase 5: do NOT click anything labeled "Activate Gmail,"
 "Set up Gmail," or anything that mentions MX records.** Mail keeps flowing to
-the old host until the imports are done.
+the old host until the planned cutover moment.
+
+---
+
+## ⚡ ACCELERATED SCHEDULE (Ryan's call, 2026-08-20): team on Gmail by Monday 8/24
+
+The original phases assumed imports finish before cutover. That's a nicety,
+not a requirement — **cutover and imports are independent.** At cutover, new
+mail lands in Gmail instantly; history keeps back-filling behind it; nothing
+is ever lost (old mailboxes stay intact + post-cutover sweep).
+
+| When | What |
+|---|---|
+| Thu 8/20 ✅ | TXT added in Squarespace (Maclaine's panel = live NS1 zone, PROVEN by dig); verification submitted to Google |
+| Thu–Fri | Users/aliases confirmed; **start legacy IMAP migration** (kenny@ 35GB first); Kenny generates AOL app password |
+| Sat 8/22 | Check import progress (morning); no unrelated website/analytics work during the migration |
+| **Sat or Sun evening** | **MX CUTOVER** (Phase 5 below) — ~15 min + tests; imports keep running through it |
+| Sun 8/23 | Gmail app on Kenny's devices, signatures, AOL funnel in kenny@'s Gmail settings |
+| Mon 8/24 | Team reads/sends in Gmail. **Copier scan-to-email is broken from cutover until reconfigured Monday AM** — accepted trade-off. kenny@'s 35GB may still be back-filling for a few days: normal, harmless |
+
+Deferred without risk: OMG CNAME list (other domains — not in this zone),
+`_spf.emailcampaigns.net` mystery (its SPF include stays at cutover), old-host
+decommission (60-day rule unchanged), Kenny's AOL import (runs next week after
+the legacy batch).
+
+### ⏸ PAUSED 8/20 ~1pm — waiting on Kenny's mailbox password
+
+State as left (Admin console → Data → Data import & export → Data Import →
+IMAP data import, admin.google.com/u/4/ac/migrate/imap):
+- ✅ Domain VERIFIED (TXT live on NS1; zone snapshot saved)
+- ✅ kenny@ user created (Kenny Scher; sign-in password: generate via Reset
+  password on his user page when handing him the account)
+- ✅ IMAP source connected: mail.creativealternatives.com — status "Connected"
+- ✅ Step 2 row staged: kenny@ → kenny@, ONLY the IMAP password box empty
+- ✅ Step 3: start date set 01/01/1998, deleted/spam excluded — CONFIRM it
+  shows Jan 1 1998 on resume (Save may not have registered)
+- ⬜ NOT clicked: Start import
+
+To resume when Kenny sends the password: open that page, type the password
+into the kenny@ row → Add → confirm Step 3 date → **Start import**. Then add
+rows the same way: ryan@ → ryan@ (Ryan's old password), orders@/renie@/ikey@
+→ kenny@ (temp password from Bill's 8/18 5:03 PM email).
+
+maclaine@: BLOCKED on the conflicting-account question — she has an old
+personal Google account AS maclaine@creativealternatives.com (proved twice:
+signup wizard "user already exists" + only 1 user in directory). Ask her: any
+real Drive/Docs work in that old account? YES → Transfer tool for unmanaged
+users BEFORE creating her user. NO → create user; her old login force-renames.
+Her user must exist before her 5GB import row.
+
+### Resume checklist now
+
+1. Confirm the Google Admin migration page still shows the staged `kenny@ → kenny@` row.
+2. Confirm new mail still lands on the legacy host; do not assume the old August cutover schedule happened.
+3. Get Kenny's legacy `kenny@creativealternatives.com` mailbox password.
+4. Enter it, confirm the start date is January 1, 1998, and start the 35GB import.
+5. Resolve Maclaine's unmanaged Google-account question before creating/importing her managed user.
+6. Schedule MX cutover only after the live state and required senders are rechecked.
 
 ---
 

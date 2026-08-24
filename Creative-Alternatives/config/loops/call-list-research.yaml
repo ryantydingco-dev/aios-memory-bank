@@ -1,0 +1,55 @@
+schema_version: "1.0"
+loop_id: call-list-research
+status: ready_for_first_batch
+objective: Maintain a verified Salesfinity queue of prospects Ryan has a defensible reason to call now.
+primary_metric: qualified_next_steps_per_100_live_conversations
+secondary_metrics:
+  - call_ready_records
+  - live_connect_rate
+  - qualified_next_step_rate_by_research_tier
+  - qualified_next_step_rate_by_trigger_type
+initial_queue:
+  provider_pilot_target: 200
+  reservoir_target: 1000
+  active_calling_minimum: 400
+  estimated_weekly_refill: 500
+  batch_size: 100
+  preferred_mix:
+    tier_a: 25
+    tier_b: 75
+inputs:
+  - qualified_company_list
+  - public_company_and_trigger_sources
+  - authorized_phone_data_source
+  - list_engine_suppress_json
+builder:
+  allowed:
+    - verify_account_fit
+    - identify_relevant_buyer
+    - research_trigger_and_buying_moment
+    - draft_reason_to_call_and_opener
+    - write_csv_candidate
+  prohibited:
+    - upload_to_salesfinity
+    - run_credit_consuming_lookup_without_ryan_approval
+    - dial_or_message_prospect
+    - invent_contact_or_trigger_data
+    - mark_unknown_dnc_status_cleared
+verifier:
+  checks:
+    - source_accessibility_and_date
+    - buyer_title_freshness
+    - phone_provenance
+    - reason_to_call_specificity
+    - opener_matches_evidence
+    - customer_and_suppression_exclusion
+    - duplicate_person_phone_and_domain
+memory:
+  batches_dir: pillars/2-customer-acquisition/outbound/call-list-agent/output
+  outcomes_join_key: prospect_id
+completion_contract:
+  outcome: A human-reviewed CSV contains only Tier A/B prospects with sourced call reasons and usable contact data.
+  verification: Local validator passes; ten random rows and every Tier A row are manually checked.
+  constraints: Research only; no external contact or upload; Maclaine owns pricing.
+  boundaries: One approved lane and offer per batch.
+  stop_when: Source evidence, phone provenance, suppression state, or DNC status cannot be resolved.

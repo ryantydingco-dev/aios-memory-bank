@@ -1,5 +1,7 @@
 # 90-Day Revenue Plan — The Merged Engine (AIOS × AAA × GenHQ)
 
+> **SUPERSEDED 2026-08-23** by [`1m-6-month-game-plan.md`](1m-6-month-game-plan.md), the $1M six-month plan. The AAA/GenHQ playbooks, benchmarks, and the attribution questions in section 1 remain the reference material; execution now runs off the new plan and `../gtd/daily-power-list.md`.
+
 > **The master execution plan.** Builds on — does not replace — `pillars/2-customer-acquisition/90-day-gtm-game-plan.md` (the 3-engine flywheel), `home-run-offer.md` (the Store Engine), `plans/week-1-plan.md` (the Maclaine audit week), and `pillars/1-operations/aios-launch-protocol.md` (the interview/install protocol). What's NEW since those were written, and why this plan exists:
 > 1. **Both knowledge bases are fully captured** — AAA Accelerator (all 10 courses, 69 PDFs, verbatim scripts + benchmarks) and GenHQ (every module, incl. the mockup/content pipeline we PROVED on destiNY).
 > 2. **Ryan's economics are clear:** 15% of revenue he originates, on 30-40% margin business. Origination volume = Ryan's paycheck. This plan is sequenced by *attributable revenue speed*, not general business improvement.

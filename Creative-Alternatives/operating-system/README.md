@@ -1,104 +1,76 @@
 # Creative Alternatives Operating System
 
-This folder is the control plane for the next stage of Creative Alternatives. It coordinates three workstreams without replacing the detailed evidence, scripts, and history already stored under `pillars/`, `plans/`, `outputs/`, and `context/`.
+The operating system exists to execute the $1M six-month revenue plan. It coordinates daily selling, weekly leverage projects, operational improvements, and customer-safe distribution.
 
-## The operating thesis
+## Execution hierarchy
 
-Run one commercial learning loop and one operational improvement loop at a time. Use real business events as the input to content, and use content as proof rather than as a separate production burden.
+1. **Daily revenue power list:** replies, warm touches, follow-ups, fulfillment, and scoreboard.
+2. **Weekly leverage project:** one project that increases conversion, capacity, or measurement.
+3. **Operational work:** only when it removes a named revenue or fulfillment constraint.
+4. **Content:** packages real work after the revenue actions are complete.
 
-The four workstreams are:
+## Revenue engines
 
-1. **Account-based outbound:** one selected segment, one account list, and one cross-channel history across cold email, LinkedIn, and calls.
-2. **Inbound validation:** one selected niche, one offer, one conversion path, and measured distribution across LinkedIn, search, and one concentrated buyer community.
-3. **LinkedIn/content:** Ryan, Kenny, and Maclaine each have a distinct job and voice. Posts start with real work, customer-safe proof, or founder judgment.
-4. **Backend modernization:** prioritize improvements by response time, order quality, margin, and capacity. Keep customer, vendor, money, and production actions human-approved.
+| Engine | Primary operating measure |
+|---|---|
+| Reorder rescue + dormant reactivation | Verified warm touches → quotes → revenue |
+| Q4 gifting | Active-account and cold conversations → gifting orders |
+| Online stores | Pitches → previews → live stores → store revenue |
+| Camp season | Warm/cold camp conversations → bulk and store orders |
+| Cold outbound | Sends → positive replies → same-day fulfillment → quotes → new-logo revenue |
 
-## Active source-of-truth documents
+Cold outbound currently means exactly three channels: SmartLead email, human cold calls, and human LinkedIn DMs. Grokbot may research, organize, and draft; Ryan performs external actions.
 
-| Workstream | Governing document | Working trackers |
-|---|---|---|
-| Account-based outbound | `pillars/2-customer-acquisition/account-based-outbound-engine.md` | `operating-system/trackers/outbound/` |
-| Inbound validation | `pillars/3-online-presence/inbound/30-day-channel-validation-plan.md` | `operating-system/trackers/inbound/` |
-| LinkedIn/content | `pillars/3-online-presence/linkedin-content-engine.md` | `operating-system/trackers/content/` |
-| Backend modernization | `pillars/1-operations/backend-modernization-roadmap.md` | `operating-system/trackers/operations/` |
-| Cross-workstream execution | `plans/first-30-days-unified-operating-plan.md` | `operating-system/trackers/30-day-execution.csv` |
-| Document authority | `operating-system/source-of-truth-map.md` | — |
+## Shared outcomes
 
-The active source of truth is deliberately small. Older plans remain useful evidence and idea libraries; the authority map states how to use them.
+Every active project must improve one of these:
 
-Practical decision and review templates live in `operating-system/templates/`:
-
-- `segment-decision-note.md`
-- `operations-pilot-charter.md`
-- `weekly-operating-review.md`
-
-## Shared outcome model
-
-Every weekly activity should move at least one of these outcomes:
-
-| Outcome | Primary measure | Supporting measures |
-|---|---|---|
-| Response time | Median qualified-request-to-complete-draft hours | first-response time, stalled replies, quote backlog |
-| Order quality | Exception-free orders / total reviewed | missing fields, missed due dates, proof/PO/tracking exceptions |
-| Margin | Gross profit dollars and margin on reviewed orders | missing costs, Kenny price overrides, vendor variance |
-| Capacity | Orders/quotes handled per human hour | hours saved, open work per owner, rework avoided |
-| New revenue | Qualified opportunities and attributed gross profit | positive replies, conversations, quote requests |
-| Trust | Human adoption and correction rate | unsafe suggestions caught, unwanted touches, owner usage |
-
-QuickBooks is the accounting source of truth. Existing production sheets are the live order-status sources until a controlled migration is approved. HubSpot is the intended new-lead pipeline source once its review-only configuration is approved and proven. The local trackers are the planning and reconciliation layer; they are not a replacement CRM.
+- Attributable revenue.
+- Quote and response speed.
+- Order quality and on-time delivery.
+- Gross profit or pricing consistency.
+- Human capacity per order or quote.
+- Trust, measured through adoption and low correction rates.
 
 ## Cadence
 
-### Daily, 15 minutes
+### Daily
 
-- Review urgent customer replies and operational exceptions first.
-- Record business events worth learning from or turning into content.
-- Advance the single next action on each in-flight workstream.
-- Do not send, publish, change production data, or contact a customer/vendor from an automated workflow.
+- Triage every reply by 10 AM.
+- Complete warm first-touches and useful follow-ups.
+- Deliver the promised mockup/store preview the same day.
+- Update the scoreboard before shutdown.
 
-### Monday, 45 minutes
+### Monday
 
-- Confirm the one selected outbound segment and its active account cohort.
-- Review the one inbound niche, offer, funnel constraint, and channel decision.
-- Review order/quote exceptions and choose the operational build for the week.
-- Choose one real event for each LinkedIn voice. A voice may skip if there is no honest event.
-- Assign owners and due dates in `trackers/30-day-execution.csv`.
+- Pull and approve the week's warm cohort.
+- Reconcile campaign state and reply ownership.
+- Choose one leverage project with an owner and definition of done.
 
-### Friday, 45 minutes
+### Friday
 
-- Read one scoreboard across outbound, content, and operations.
-- Record one keep/change/expand/pause decision for each active inbound channel.
-- Capture objections, Kenny overrides, order exceptions, and proof artifacts.
-- Make one keep/change/stop decision per workstream.
-- Log the build-in-public story angle, even if it remains private.
+- Reconcile closed revenue and pipeline to live systems.
+- Fill the weekly row in the $1M plan.
+- Rank channels by cost per quote-stage conversation.
+- Make one keep/change/kill decision from evidence.
 
 ## Decision rights
 
-| Decision | Owner | Required approval |
-|---|---|---|
-| Outbound segment selection and cohort size | Ryan | Ryan |
-| Customer, prospect, or vendor contact | Maclaine/Ryan | Human approval before every send/call during the pilot |
-| Pricing, supplier choice, margin exception | Kenny | Kenny |
-| Operational data or integration write | Ryan + system owner | Explicit approval; read-only first |
-| Public customer story, logo, financial detail, or post | Content owner | Kenny/Maclaine as applicable |
-| Weekly operating change | Ryan | Evidence recorded in the relevant tracker |
+| Decision | Owner |
+|---|---|
+| Revenue priorities and channel allocation | Ryan |
+| Customer/prospect contact | Ryan or Maclaine, human-approved |
+| Pricing, quoting, supplier, margin exceptions | Maclaine within Kenny-approved boundaries; Kenny for exceptions |
+| Operational or accounting write | System owner with explicit approval |
+| Public customer story or financial detail | Relevant human owner and customer approval when needed |
 
 ## Hard gates
 
-- Exactly zero or one outbound segment may be marked `selected`; never run multiple segment tests during the first cycle.
-- Exactly one niche and one primary offer may be active in the inbound validation cycle.
-- QuickBooks customers, prior touches, do-not-contact records, and active service issues must be checked before an account is approved.
-- A reply or opt-out in any channel stops the other channels until a human decides the next step.
-- Mockups are previews and must use deterministic logo placement; never present generated production scenes as real.
-- No customer/vendor/money/public action is automated in this operating cycle.
-- Missing or unverified facts remain `[CONFIRM]`.
+- No customer, vendor, money, or public action is autonomous.
+- No invented prices, claims, dates, products, or results.
+- QuickBooks and live campaign/store systems outrank planning documents.
+- A reply or opt-out suppresses inappropriate cross-channel touches.
+- Content never displaces the power list.
+- Archived projects cannot create active work unless they solve a named CA constraint.
 
-## Validation
-
-Run:
-
-```bash
-python3 scripts/validate_operating_framework.py
-```
-
-The check validates the required documents, tracker schemas, unique identifiers, score ranges, and the one-segment rule. It does not connect to or modify any external system.
+See `source-of-truth-map.md` for document authority.

@@ -1,35 +1,23 @@
 # Active Projects
 
-## AIOS
-Ryan's broader AI operating system workspace for business automation, context, data, intelligence, automation, and build/growth loops.
+There is one business project: **build Creative Alternatives into a $1M six-month revenue engine.**
 
-See: [[Projects/AIOS]]
+## Revenue engines
 
-## Oloxa
-Commercial finance / broker workflow automation focused on messy borrower docs, lender-ready submissions, missing docs, and borrower follow-up.
+- Warm reactivation and reorder rescue.
+- Q4 gifting to active and new accounts.
+- Repeatable online-store acquisition and fulfillment.
+- Camp-season expansion.
+- Signal-led cold outbound with same-day fulfillment.
+- Three-channel cold outreach: SmartLead email, Salesfinity-assisted human cold calls, and human LinkedIn DMs.
 
-Current operating system: [[AI GTM Engine/00 - GTM Dashboard]]
-90-day meeting plan: [[AI GTM Engine/Strategy/Oloxa 90-Day Meeting Game Plan]]
-Initial action batch: [[AI GTM Engine/Lead Engine/Outputs/Oloxa Daily Top 20 - Initial Action Batch]]
+## Enabling work
 
-See: [[Projects/Oloxa]]
+- Quoting handoff and price-book boundaries.
+- Gmail/Google Workspace migration.
+- SuperGrok/Grokbot setup for research, LinkedIn blocks, reply triage, and fulfillment drafts.
+- Reply triage, follow-up, and revenue attribution.
+- Backend workflow modernization where it directly improves speed, quality, margin, or capacity.
+- CA-centered LinkedIn execution and documentation of real work.
 
-## Dealthread
-Brokerage AIOS / managed-agent deployment kit originally centered on real estate brokerages and operations workflows.
-
-See: [[Projects/Dealthread]]
-
-## Mocha Builds
-Content/productization/build-in-public brand for AI builds, lead magnets, systems, templates, and credibility.
-
-See: [[Projects/Mocha Builds]]
-
-## Hermes Infrastructure
-The current infrastructure layer: memory bank, skills, cron, Claude/Codex sync, and Telegram operating workflows.
-
-See: [[Workflows/Hermes Infrastructure Map]]
-
-## TikTok Pricing Intel
-Side-project Chrome extension/backend for TikTok Shop sellers: pricing benchmarks, comp capture, margin/risk recommendations, and $29/$59 SaaS path. Current focus should be validation with real sellers, not more features.
-
-See: [[Projects/TikTok Pricing Intel]]
+All previous consulting businesses, SaaS concepts, courses, experiments, and general AI content systems are retired under `Archive/`. They may contribute patterns, but they are not active projects.

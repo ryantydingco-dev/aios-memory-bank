@@ -2,12 +2,14 @@
 
 **Created:** 2026-08-19
 **Trigger:** Inbound lead via the Squarespace form (Hannah Fox, Yorkville Community School — Online Stores, needs by Sept 9) proved the website can generate demand. We currently can't see, track, or reliably convert that demand.
-**Status:** Active — Phase 0 executes this weekend (Aug 22–23)
+**Status:** PARKED 2026-08-23 — CA is not using HubSpot, and Ryan has not adopted GA4 or Google Search Console. Do not execute this plan unless Ryan explicitly reactivates it.
 **Owner:** Ryan (systems, analytics, publishing) · Maclaine (lead response) · Kenny (public-claims approval)
 
 ---
 
 ## What this plan is
+
+Historical design reference only. It is not part of the current three-channel cold-outreach system.
 
 Four gated phases that take CA from "dark" to a measurable inbound engine:
 

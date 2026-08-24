@@ -4,6 +4,12 @@
 **Status:** In Progress — discovery complete 2026-08-18 (see Status update below)
 **Request:** Move Kenny from his ~27-year-old AOL inbox to [REDACTED EMAIL] on Gmail (Google Workspace), preserving all email history, without disrupting [REDACTED EMAIL] or any customer communication.
 
+> **Latest verified checkpoint — 2026-08-20:** Domain verified; `kenny@`
+> Workspace user created; `mail.creativealternatives.com` IMAP source connected;
+> migration row staged but import not started because Kenny's legacy mailbox
+> password was missing. MX had not been changed. Resume from the runbook's
+> “Resume checklist now,” verifying live state before clicking anything.
+
 ---
 
 ## Status update — 2026-08-19 (discovery complete via Bill White)

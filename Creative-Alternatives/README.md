@@ -25,13 +25,9 @@ Each lives under `pillars/`. The YouTube pillar runs alongside the rest.
 
 ## Current operating framework
 
-Start with [`operating-system/README.md`](operating-system/README.md). It is the control plane for:
+The governing objective is [`plans/1m-6-month-game-plan.md`](plans/1m-6-month-game-plan.md): $1M in attributable revenue by February 28, 2027. Daily work starts with [`gtd/daily-power-list.md`](gtd/daily-power-list.md).
 
-1. One account-based outbound engine across email, LinkedIn, and calls.
-2. A differentiated LinkedIn/content engine for Ryan, Kenny, and Maclaine.
-3. The backend modernization roadmap for response time, order quality, margin, and capacity.
-
-The active 30-day sequence is [`plans/first-30-days-unified-operating-plan.md`](plans/first-30-days-unified-operating-plan.md). Older plans remain in place as evidence and implementation references; [`operating-system/source-of-truth-map.md`](operating-system/source-of-truth-map.md) states which documents govern current execution.
+[`operating-system/README.md`](operating-system/README.md) coordinates the five revenue engines—reactivation, gifting, stores, camps, and cold outbound—with the operational work needed to support them. Older plans remain as evidence; [`operating-system/source-of-truth-map.md`](operating-system/source-of-truth-map.md) defines their authority.
 
 ## What's where
 
@@ -55,11 +51,12 @@ The active 30-day sequence is [`plans/first-30-days-unified-operating-plan.md`](
 
 ## First move
 
-Run `/ops-audit` with Kenny and Maclaine to map CA's real workflows. That output drives the first automations — and becomes Episode 1.
+Open the daily power list. Revenue execution comes before operations projects or content. The first structural project is the Kenny/Maclaine quoting handoff because it unlocks every revenue channel.
 
 ## Revenue strategy
 
-For the current revenue-doubling work, start with:
+For current revenue work, start with:
 
-- `plans/revenue-doubling-strategy-index.md`
-Run the first-Monday agenda in `plans/first-30-days-unified-operating-plan.md`: complete the one-segment decision evidence, confirm the three content voices and permissions, and select the representative orders/quote threads for the operations baseline. Nothing external launches from that meeting.
+- `plans/1m-6-month-game-plan.md`
+- `gtd/daily-power-list.md`
+- `pillars/2-customer-acquisition/revenue-operations/daily-revenue-loop.md`

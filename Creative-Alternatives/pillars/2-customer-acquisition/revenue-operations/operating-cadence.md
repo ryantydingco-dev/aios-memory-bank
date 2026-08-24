@@ -7,9 +7,9 @@ consolidated view for existing-customer campaigns and new-customer pipeline. The
 `Revenue Tracker` sheet is the only manually maintained pipeline table in this draft.
 
 QuickBooks remains the source for won/order history. Mailchimp remains the source for
-campaign execution after approval. Existing HubSpot warm deals are referenced by
-`system_of_record=hubspot` and `external_record_id`; do not rekey them into a second live
-workflow until Ryan approves a sync/export rule.
+permissioned existing-customer campaign execution after approval. SmartLead remains the
+source for cold-email execution. HubSpot is not in use; the local tracker is the only
+manually maintained pipeline view unless Ryan explicitly changes that decision.
 
 ## Tracker fields
 
@@ -46,18 +46,6 @@ workflow until Ryan approves a sync/export rule.
 
 An override is allowed only with a note that explains material evidence. Weighted pipeline
 is directional planning, not forecast certainty.
-
-## Existing HubSpot crosswalk
-
-| Current HubSpot/warm label | Workbook stage |
-|---|---|
-| Replied — Awaiting Them | `engaged` |
-| Re-engaged | `discovery` |
-| Pricing — Ball with CA | `quote_requested` |
-| Verbal Yes / Proofing | `proofing` |
-| Won — Invoiced | `won` |
-| Nurture / Recycle | `nurture` |
-| Lost | `lost` |
 
 ## Controlled lead sources
 

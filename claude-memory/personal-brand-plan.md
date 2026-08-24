@@ -8,7 +8,7 @@ metadata:
   modified: 2026-07-30T11:43:17.540Z
 ---
 
-Full plan: `AIOS-Memory-Bank/Personal Brand/caleb-ralston-personal-brand-plan.md` (synthesized from transcripts of all 24 Caleb Ralston long-form videos incl. the 6h/5h/3.3h courses).
+Operating brief (Grokbot): `Personal Brand/GROKBOT-LINKEDIN.md`. Folder contract: `Personal Brand/README.md`. Old plans (Caleb extract, 6-month draft, playbooks) live in `Personal Brand/archive/`. Cursor plans; Grokbot does; Ryan sends.
 
 Core decisions (2026-07-29, drafts pending Ryan's edits):
 - Brand = "the guy actually transforming a real 25-yr, $3.2M family business ([[creative-alternatives-aios]]) with AI" — document > create; Expert in sales/outbound ([[ryan-sales-background]]), Student in AI transformation (guinea-pig framing, never posture).

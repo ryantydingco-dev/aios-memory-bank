@@ -17,8 +17,7 @@
 
 ## Ryan/Kenny/Maclaine decisions required
 
-- [ ] Confirm which system is the active pipeline entry point: local tracker as a temporary
-  master, or HubSpot with a defined export/sync into the local view.
+- [x] Confirm the active pipeline entry point: the local tracker. HubSpot is not in use.
 - [ ] Approve account owners and sensitive/high-value account handling rules.
 - [ ] Approve the high-value threshold after seeing the spend distribution; or approve a
   human-only key-account list.
@@ -81,8 +80,7 @@
 
 Bring these to a 45-minute approval/data session:
 
-1. **Pipeline decision:** “HubSpot-first” or “local tracker-first for the pilot,” plus who
-   enters/updates each field.
+1. **Pipeline ownership:** confirm who enters and updates each local-tracker field.
 2. **QuickBooks sample schema:** a redacted 10-row customer export and 20-row
    order/invoice-detail export with stable IDs and headers.
 3. **Consent evidence:** current Mailchimp audience/suppression export or a written answer
@@ -102,7 +100,7 @@ Bring these to a 45-minute approval/data session:
 2. Load redacted sample data locally and validate mappings.
 3. Review segments with Maclaine/Kenny.
 4. Review permission and suppressions.
-5. Populate the tracker and reconcile existing HubSpot deals.
+5. Populate the local tracker from current human-verified opportunities and live channel logs.
 6. Build one Mailchimp pilot as a draft and run internal tests.
 7. Approve recipient snapshot and send separately.
 8. Run one week of daily/weekly cadence.

@@ -1,0 +1,9 @@
+domain,affected_mailboxes,issue,reputation_or_recent_bounce_pct,decision_note
+alternatecreativity.com,1,Disconnected mailbox,84,Repair before reuse
+creativealternativessix.com,1,Disconnected mailbox,0,Repair and re-warm before reuse
+calendargrouppro.com,1,Disconnected mailbox,0,Repair and re-warm before pilot
+tryvantageoutbound.com,2,Disconnected mailboxes,0,Exclude from pilot
+govantageoutbound.com,1,Disconnected mailbox,0,Exclude from pilot
+vantageoutboundreachout.com,2,Recent bounce observation,25.0,Small sample; suppress until verified
+dealthreadsinsights.com,1,Recent bounce observation,16.7,Small sample; suppress until verified
+calendargroupsolutions.com,1,Recent bounce observation,14.3,Small sample; suppress until verified

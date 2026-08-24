@@ -14,11 +14,11 @@ Ryan is stepping in to change that. This workspace is where the change gets desi
 
 ---
 
-## The pivot & mission
+## Mission
 
-Ryan is folding his AI-consulting work (Dealthreads, Oloxa, the GTM engine, the lead-gen stack) into **one focus**: take everything he knows about AI and systems and use it to modernize Creative Alternatives — then publish the whole thing on YouTube as a build-in-public series.
+Generate **$1,000,000 in attributable Creative Alternatives revenue from September 1, 2026 through February 28, 2027** while building the systems that make the growth repeatable.
 
-The mission, in one line: **turn a 25-year word-of-mouth business into an AI-run, marketed, modern operation — and document every step.**
+All previous AI-consulting ventures are retired under the repository archive. Their patterns may be reused only when they solve a named CA constraint.
 
 This is not a client engagement. Ryan is operating inside a family business (his girlfriend's father's company). That changes the posture: trust is the currency, Kenny's instincts are an asset not an obstacle, and nothing ships that makes Kenny's life harder.
 
@@ -30,12 +30,12 @@ Each pillar is a workstream under `pillars/`. The YouTube pillar runs in paralle
 
 | # | Pillar | What it means | Status |
 |---|--------|----------------|--------|
-| 1 | **Operations** | Map how CA actually runs, then automate the biggest time-sinks (quoting, orders, vendor coordination, fulfillment, invoicing). | **◀ CURRENT FOCUS** |
-| 2 | **Customer acquisition** | Scale the outbound that already works (Summer Camps hit 10.1% reply) into a repeatable engine for new business. | Seeded (existing campaigns migrated) |
-| 3 | **Online presence** | Build CA's brand, site, and social from near-zero. The business has run dark for 25 years. | Not started |
-| 4 | **YouTube build-in-public** | Film and publish the transformation. Episode 1 = the operations audit. | Runs in parallel from day one |
+| 1 | **Operations** | Remove constraints in quoting, orders, vendor coordination, fulfillment, and invoicing. | Supports revenue priorities |
+| 2 | **Customer acquisition** | Run reactivation, gifting, stores, camps, and signal-led outbound. | **◀ CURRENT FOCUS** |
+| 3 | **Online presence** | Build measurable search, local, site, and inbound conversion paths. | Supporting |
+| 4 | **YouTube build-in-public** | Document real CA results and decisions without displacing revenue work. | Secondary |
 
-**Why operations first:** you can't AI-transform what you haven't mapped, scaling customer volume onto a manual back office breaks it, and the efficiency wins are the most concrete proof for both Kenny and the camera. Trust gets built by removing pain before changing how Kenny sells.
+**Priority rule:** complete the daily revenue power list first. Operations, inbound, and content earn priority when they remove a named conversion or capacity constraint.
 
 ---
 
@@ -53,7 +53,7 @@ Each pillar is a workstream under `pillars/`. The YouTube pillar runs in paralle
 ```
 context/        The venture brain. Read by /prime. business-info, brand, audience,
                 offer, strategy, methodology, operators-code, people. Drop raw docs in import/.
-pillars/        The four workstreams. 1-operations is the current focus.
+pillars/        The four workstreams. Customer acquisition is the current focus.
 loops/          Agent loops — self-improving cycles judged on real metrics
                 (outbound-copy, ar-chase, reactivation, quote-conversion).
                 Run Mondays via launchd; see loops/README.md.
@@ -103,7 +103,7 @@ All of Ryan's user-level skills and plugins (CGE niche/idea/title-thumbnail, you
 1. **Trust Kenny.** 25 years of judgment is data. Map and improve his process; don't bulldoze it.
 2. **Human-in-the-loop for anything that touches a customer, a vendor, or money.** Draft, then let Ryan/Kenny approve.
 3. **Surface source-of-truth conflicts before rippling them** into the site, outbound, or docs. Flag, don't assume.
-4. **Ship leverage, not essays.** Automations, proof artifacts, decisions that move a pillar forward.
+4. **Ship revenue leverage, not essays.** Automations, proof artifacts, and decisions must move the $1M plan or remove a named constraint.
 5. **Systems that compound.** Build the machine underneath the work — every output should make the next one cheaper.
 6. **Honest gaps.** If a fact isn't verified, mark it `[CONFIRM]`. Don't fabricate numbers, dates, or customer details.
 
@@ -111,4 +111,4 @@ All of Ryan's user-level skills and plugins (CGE niche/idea/title-thumbnail, you
 
 ## Build-in-public rule
 
-Every meaningful work session is potential content. When we finish something worth showing — a mapped workflow, a built automation, a campaign result, a hard decision — note the story angle so `/episode-capture` can turn it into an episode. The transformation is the product; the documentation is the distribution.
+Every meaningful CA result is potential content. Capture the story angle only after the daily revenue power list is handled. The build is the source material; content is distribution, not a competing project.

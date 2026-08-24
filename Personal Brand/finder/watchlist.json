@@ -1,0 +1,12 @@
+{
+  "comment_profiles": [
+    {"name": "Maclaine Scher", "url": "https://www.linkedin.com/in/maclainescher", "why": "shop-floor CA audience"},
+    {"name": "Jason Bay", "url": "https://www.linkedin.com/in/jasondbay", "why": "outbound watering hole, your ICP hangs in comments"}
+  ],
+  "buyer_title_words": [
+    "marketing", "event", "experience", "brand", "ops", "operations",
+    "office", "admin", "hr", "people", "coordinator", "planner"
+  ],
+  "skip_show_words": ["GALAS_FILTERED", "GALAS"],
+  "skip_company_words": ["united way", "nonprofit", "non-profit", "church", "3m"]
+}

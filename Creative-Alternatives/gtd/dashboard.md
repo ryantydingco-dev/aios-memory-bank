@@ -1,7 +1,6 @@
 # GTD Dashboard
 
-> **Projects:** 7 active | **Next Actions:** 8 defined | **Waiting For:** 0 items
-> **Last Review:** — | **Next Review:** —
+> **Projects:** 8 active | **Last Review:** 2026-08-23
 
 ---
 
@@ -22,11 +21,12 @@ _(Nothing flagged right now)_
 - [ ] 30-day backend modernization pilot
 
 ### Growth / Lead Gen
-- [ ] One-segment account-based outbound pilot
+- [ ] Three-channel cold outreach
 - [ ] Printer / decorator partnerships
 
 ### AIOS & Systems
 - [ ] Email migration (AOL + legacy host → Google Workspace)
+- [ ] SuperGrok / Grokbot setup
 
 ### Content / YouTube
 - [ ] Ryan / Kenny / Maclaine LinkedIn engine
@@ -46,7 +46,8 @@ _(Nothing completed yet — your first win is coming!)_
 
 
 
-_(Nothing delegated yet)_
+- Kenny's legacy mailbox password for the 35GB Gmail import.
+- Maclaine's answer on whether her unmanaged Google account contains Drive/Docs data.
 
 ---
 

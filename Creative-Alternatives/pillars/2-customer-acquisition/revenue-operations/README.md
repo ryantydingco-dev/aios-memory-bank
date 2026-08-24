@@ -1,9 +1,9 @@
-# Revenue Operations — draft operating system
+# Revenue Operations
 
 > Status: **local draft only**. No QuickBooks or Mailchimp connection, no customer-data
 > import, no audience change, and no message send is authorized by this system.
 
-This folder is the operating layer that joins CA's two revenue motions:
+This folder is the operating layer for the $1M plan. It joins CA's warm-account, store, seasonal, and new-logo motions:
 
 1. **Existing customers:** QuickBooks eventually supplies customer and order truth;
    permissioned contacts can receive timely, useful Mailchimp campaigns.
@@ -22,13 +22,17 @@ It extends the existing offer structure instead of replacing it:
 
 | Component | Canonical file | Job |
 |---|---|---|
+| Daily fulfillment | `daily-revenue-loop.md` | Triage interest, create same-day proof, hand off quotes, and log outcomes |
+| Historical proof | `proof/` | Customer-safe internal evidence from fulfilled CA opportunities |
 | Data contract | `quickbooks-data-contract.md` | Defines customer/order fields, cleaning, permissions, derived dates, and source ownership |
 | Existing-customer motion | `customer-segmentation-and-campaigns.md` | Four segments, prioritization, 90-day Mailchimp calendar, suppression and follow-up rules |
 | Campaign copy | `mailchimp-email-templates.md` | Four Mailchimp-ready drafts; all require consent and human approval |
 | New-customer motion | `new-customer-offer-and-outreach.md` | Outcome packages, buyer map, signals, qualification, cadence, and handoff |
 | Cadence and metrics | `operating-cadence.md` | Single tracker contract, daily/weekly/monthly rhythm, attribution, stage crosswalk |
+| Revenue Acquisition OS | `revenue-acquisition-os.md` | KPI tree, daily selling sequence, channel calibration, guardrails, and recovery rules |
 | Activation gates | `implementation-checklist.md` | What is ready locally and what requires data, consent, account access, or approval |
 | Workbook | `templates/creative-alternatives-revenue-ops.xlsx` | Local operating console: dictionary, import layouts, calendar, tracker, dashboard |
+| Daily scorecard | `templates/daily-revenue-scorecard.csv` | One append-only row per working day for activity, outcomes, time, and SLA health |
 | Validator/views | `../../../scripts/ca_revenue_ops.py` | Read-only workbook validation plus daily and weekly Markdown views |
 
 ## Source-of-truth hierarchy
@@ -40,10 +44,8 @@ It extends the existing offer structure instead of replacing it:
    probability, loss reason, and campaign attribution. It does not change QuickBooks.
 3. **Mailchimp:** campaign membership, send status, clicks, replies, and unsubscribes
    after connection is approved. It is not a customer/order database.
-4. **HubSpot:** the existing warm-pipeline spec names HubSpot as the downstream pipeline
-   system. This local workbook is a consolidation draft, not an authorized migration.
-   Before activation, Ryan must choose one entry point and a sync/export rule so nobody
-   double-enters deals.
+4. **Pipeline tracker:** HubSpot is not in use. Use one simple, human-reviewed local
+   tracker until Ryan explicitly chooses another system. Do not design a HubSpot migration.
 
 ## Non-negotiable operating rules
 

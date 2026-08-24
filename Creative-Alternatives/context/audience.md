@@ -17,6 +17,13 @@ Tested via outbound for the branded-store offer. Reply rates are real results fr
 
 `[CONFIRM]` which segments Kenny's *core* (word-of-mouth) business actually skews to — that may differ from what outbound has tested.
 
+## Current ICP validation boundary — 2026-08-23
+
+- Do not treat staffing owners as a typical CA ICP without evidence of a strong promotional-products need.
+- Restoration-home accounts are explicitly out of scope for the current CA outreach transition.
+- Dealthreads, Vantage, and Calendar Group inboxes are infrastructure candidates, not proof of ICP fit. Review campaign performance, deliverability, list quality, and segment fit before assigning them to CA.
+- The ICP decision should be grounded in live SmartLead results, CA customer history, and actual reply language rather than inherited assumptions from prior ventures.
+
 ## What makes a good-fit org
 
 - Has a **recurring audience** that wants branded gear (members, fans, parents, staff).

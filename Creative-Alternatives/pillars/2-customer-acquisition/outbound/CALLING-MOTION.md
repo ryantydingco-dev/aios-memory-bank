@@ -1,5 +1,9 @@
 # The Calling Motion — built 2026-08-11
 
+> **Current-script note (2026-08-23):** This file preserves the warm-reactivation queue
+> and scripts. For Salesfinity cold calls, use `cold-call-playbook.md`. The 10–15-dial
+> target below is historical and does not override the current Revenue Acquisition OS.
+
 The call sheet (`call_sheet_top20.md`) tells you WHO to call first. This is the machine
 around it: a queue that refills itself, a daily rhythm, and what happens when the top 20
 runs out.

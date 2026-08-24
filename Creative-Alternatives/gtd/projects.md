@@ -23,17 +23,10 @@
 
 ## Growth / Lead Gen
 
-### One-segment account-based outbound pilot
-- **Outcome:** One evidence-selected segment, 20 reviewable account plans, and a safe dry-run cadence across email, LinkedIn, and calls
-- **System:** `pillars/2-customer-acquisition/account-based-outbound-engine.md`
-- **Next action:** @think — complete the missing evidence in the segment decision scorecard and select no more than one segment
-
-### Online presence & traffic engine
-- **Outcome:** CA visible and measurable online — GA4/GSC/GBP live, niche pages converting, every inbound lead attributable to a source; paid ads unlocked only after attribution is proven
-- **Trigger:** Yorkville inbound lead (8/19) proved the site generates demand we can't see or track
-- **Plan:** `plans/2026-08-19-online-presence-engine.md` · weekend steps in `pillars/3-online-presence/RUNBOOK.md`
-- **Milestones:** Phase 0 tracking foundation (weekend 8/22–23) → Phase 1 funnel + reviews (wks 1–2) → Phase 2 SEO cadence + Phase 3 social (wks 2–6) → Phase 4 paid ads (gated, no spend)
-- **Next action:** @me — Saturday: create GA4 + Search Console per the RUNBOOK
+### Three-channel cold outreach
+- **Outcome:** A repeatable daily motion across SmartLead email, human cold calls, and human LinkedIn DMs that creates quote-stage conversations
+- **Channels:** These three only. No paid ads, extra cold channels, or CRM rollout.
+- **Next action:** @me — set the first cold-call list, script, dial target, and disposition log; keep SmartLead and LinkedIn follow-up ownership explicit
 
 ### Printer / decorator partnerships
 - **Outcome:** 2–3 new production partnerships expanding capacity and margins beyond Viking / Diamond / TSF / LISP
@@ -42,11 +35,16 @@
 ## AIOS & Systems
 
 ### Email migration (AOL + legacy host → Google Workspace)
-- **Status 2026-08-19:** Discovery DONE — Bill White answered 8/18 (inventory: 6 mailboxes, kenny@ = 35GB; IMAP settings; password resets done for orders@/renie@/ikey@). Converge is exiting → project now includes taking DNS control (NS1 nameservers, holder unknown). Full detail in the plan's Status update.
-- **Waiting for:** Bill White — Order My Gear CNAME list (promised 8/18)
+- **Status 2026-08-20:** Domain verified; `kenny@` Workspace user created; legacy IMAP source connected; import row staged but not started. MX was not changed in the last verified state.
+- **Waiting for:** Kenny's legacy mailbox password for the 35GB import; Maclaine's unmanaged-account decision.
 - **Outcome:** [REDACTED EMAIL] live with 27 years of history; Maclaine's mail moved safely
 - **Plan:** `plans/2026-07-12-aol-to-gmail-migration.md`
-- **Next action:** @me — sign up Google Workspace Business Standard (Ryan, 8/19); get DNS login from Mickey for the TXT verification
+- **Next action:** @me — verify the Google Admin page still matches the saved state, get Kenny's password, and start the import
+
+### SuperGrok / Grokbot setup
+- **Outcome:** Grokbot reliably prepares LinkedIn blocks, triages replies, and drafts fulfillment work while Ryan remains the human sender
+- **Assets:** root `GROKBOT.md`, `Personal Brand/GROKBOT-LINKEDIN.md`, daily-prep template, conversation log
+- **Next action:** @me — complete one dry run from daily pack through reviewed drafts and log the missing setup pieces
 
 ## Content / YouTube
 
@@ -63,4 +61,4 @@ _(No projects yet)_
 
 ## Archived
 
-_(Completed and deferred projects move here with a date)_
+- **Online presence analytics stack — parked 2026-08-23.** CA is not using HubSpot; GA4 and Google Search Console have not been adopted. Reactivate only on Ryan's explicit instruction.

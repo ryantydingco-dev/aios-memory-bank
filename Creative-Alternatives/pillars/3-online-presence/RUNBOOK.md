@@ -1,5 +1,10 @@
 # Weekend Setup Runbook — Tracking + Google Presence
 
+> **PARKED 2026-08-23.** Ryan confirmed CA is not using HubSpot and has not
+> adopted GA4 or Google Search Console. Do not execute this runbook unless he
+> explicitly reactivates website analytics/inbound work. It remains historical
+> reference only and is not part of the current cold-outreach system.
+
 **For:** Phase 0 of `plans/2026-08-19-online-presence-engine.md`
 **When:** Sat Aug 22 – Sun Aug 23, 2026
 **Who:** Ryan (has Squarespace admin + Google account)

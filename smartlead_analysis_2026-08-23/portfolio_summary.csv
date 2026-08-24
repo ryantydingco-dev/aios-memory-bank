@@ -1,0 +1,17 @@
+metric,value
+campaigns_total,38
+campaigns_active,7
+campaigns_paused,7
+campaigns_draft,17
+campaigns_completed,7
+campaigns_with_sends,12
+campaigns_zero_sends,26
+emails_sent,65822
+replies,277
+positive_replies,14
+mailboxes_total,233
+mailboxes_idle_no_active_campaign,159
+mailboxes_disconnected,6
+mailboxes_warmup_enabled,228
+mailboxes_reputation_99_plus,227
+configured_daily_capacity,5835

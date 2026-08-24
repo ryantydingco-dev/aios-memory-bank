@@ -1,53 +1,61 @@
-# Memory Index
+# Durable Memory — Creative Alternatives
 
-- [Talking Head OS](talking-head-os.md) — Video agent factory for TikTok / Shorts / Twitter / YouTube. Repo: `ryantydingco-dev/talking-head-os`. Grokbot directs; Mac renders.
+This index contains only memory relevant to building Creative Alternatives and operating the agents that support it. Retired venture memory lives under root `Archive/Retired-Ventures/claude-memory/`.
 
-- [Harbor Haven + Camp Arcadia](harbor-haven-camp-arcadia.md) — **Customers (Ryan 2026-08-19).** Suppress from cold. Do not treat as prospects or generic inbound examples. Do not name in public/cold copy unless OK’d.
+## Load order
 
-- [School store economics](school-store-economics.md) — Proven store terms (2026-08-19): $60 + $10 ship, ~$20–25 cost, $5 flat to the school; ~$12k / ~$8k senior-wear store. Free store is the land; bulk is the expand. Yorkville reply = Maclaine. Name exact QBO school customers only. Harbor Haven / Camp Arcadia are **not** generic store-proof examples.
+1. Root `README.md`.
+2. Root `00 - Command Center.md`.
+3. `Creative-Alternatives/plans/1m-6-month-game-plan.md`.
+4. `Creative-Alternatives/gtd/daily-power-list.md`.
+5. The relevant memory files below.
 
-- [Fulfillment: keep it simple](fulfillment-keep-it-simple.md) — Ryan's rules (2026-08-10): short replies, strategy in vault not prospect assets, and classic logo treatments over gag concepts ("logo on some socks, call it a day"); v4-style deck format is fine.
+Live QuickBooks, SmartLead, store, and production systems outrank memory notes.
 
-- [Personal brand plan](personal-brand-plan.md) — Caleb Ralston-derived brand strategy (2026-07-29): document CA transformation, LinkedIn primary + monthly YouTube pillar, trust>virality; full plan in AIOS-Memory-Bank/Personal Brand/.
+## Business and operating context
 
-- [honest-math sprints](honest-math-sprints.md) — /honest-math (2026-07-20): day-zero funnel-math-backwards w/ observed rates + tripwires before any revenue push; Dealthreads sprint doc live (warm board > volume; ~1 positive per 700-1,100 sends observed).
-- [verify-copy + preflight skills](verify-preflight-skills.md) — 2026-07-19: worker/verifier split (fresh-context agents grade CA copy against rubrics; never self-grade) + failure-modes-first explainers before new pipelines; context trim audit in vault Projects/.
+- [`creative-alternatives-aios.md`](creative-alternatives-aios.md) — consolidated CA history and durable decisions.
+- [`workspace-map.md`](workspace-map.md) — machine and workspace locations; verify paths before acting.
+- [`two-machine-sync.md`](two-machine-sync.md) — multi-machine architecture and single-writer considerations.
+- [`ryan-sales-background.md`](ryan-sales-background.md) — relevant sales/operator background.
+- [`template-week-time-blocks.md`](template-week-time-blocks.md) — capacity context; current calendar wins if it conflicts.
 
-- [SmartLead inbox signatures](smartlead-inbox-signatures.md) — HARD rule (2026-07-27): account-level `signature` appends to every send regardless of campaign; caused CA branding on Dealthreads cold emails. Keep blank on all inboxes, sign in body copy, audit after provisioning.
+## Revenue engines
 
-- [Ryan sales background](ryan-sales-background.md) — lifelong cold outreach: Kirby door-to-door → roofing/LinkedIn → tech SDR → senior SDR → growth AM in one year; still prospects daily. Founder story for Dealthreads.
+- [`ca-outbound-pipeline.md`](ca-outbound-pipeline.md) — campaign and handoff model.
+- [`ca-reactivation-engine.md`](ca-reactivation-engine.md) — warm-account recovery system.
+- [`school-store-economics.md`](school-store-economics.md) — observed store economics and assumptions.
+- [`ca-tradeshow-signal.md`](ca-tradeshow-signal.md) — trade-show trigger model.
+- [`ca-event-planner-channel.md`](ca-event-planner-channel.md) — event-planner channel.
+- [`ca-buying-signals.md`](ca-buying-signals.md) — intent signals for prioritization.
+- [`ca-openings-engine.md`](ca-openings-engine.md) and [`ca-new-gyms.md`](ca-new-gyms.md) — trigger systems; use only if the $1M plan allocates capacity.
+- [`self-sourcing-leads-playbook.md`](self-sourcing-leads-playbook.md) — reusable list-building standards.
 
-- [Dealthreads Outbound Engine](dealthreads-outbound-engine.md) — dealthreads.io revival (2026-07-16): packaged DFY multi-channel outbound offer (email+LinkedIn+calling+AI Ark); 77 warmed non-CA SmartLead inboxes verified live (100 total, 96 @ 100% rep) = immediate acquisition weapon; client campaigns on new client-branded domains; cap 3 full clients solo.
-- [Income runway 2026-07](income-runway-2026-07.md) — **LAID OFF 2026-08-04; 8 weeks severance → ~Sept 29.** Plan: `Dealthreads Outbound Engine/severance-plan.md` — close the 7 warm this week, $497 List Sprint = lead offer, Kenny retainer ask Wednesday, unemployment + COBRA admin. Hard blocker: no Stripe payment links. Off the table 8 weeks: new tools/verticals/builds/offers. Only metric: asks made per week.
+## Fulfillment, proof, and safety
 
-- [Two-machine sync](two-machine-sync.md) — MacBook ↔ Mac Studio git architecture (2026-07-07): 4 private repos, claude-memory synced via symlink, 20-min sync job + SessionStart hook LIVE on MacBook; Studio bring-up pending (studio-setup/README.md).
-- [Self-sourcing leads playbook](self-sourcing-leads-playbook.md) — cut AI Ark credit burn (2026-07-07 verified): emails ~$0.02/contact via owned Apify/ZeroBounce/Firecrawl + free NY-bar/SEC/FINRA registries; mobiles only via providers gated on engagement; TCPA/scraping guardrails. AI Ark = gap-filler only.
-- [CA no discount gimmicks](ca-no-discount-gimmicks.md) — HARD copy rule (2026-07-08): never use "X% off"/coupon/fake-urgency-discount lines in ANY CA copy unless Ryan gives a real approved offer; CA sells premium done-for-you value, not price. Enforced in content factory + cold-copy.
-- [CA openings engine](ca-openings-engine.md) — /ca-openings generalized trigger lead-gen (2026-07-08): ONE config-driven engine finds new openings across any industry (restaurants/breweries/medical/retail/salon/gyms) + sponsorship scout; geo-scoped; weekly Telegram trigger digest LIVE. "Sell to moments not industries." Verified live SC.
-- [CA new-gyms](ca-new-gyms.md) — /ca-new-gyms (2026-07-08): find brand-new BOUTIQUE gyms opening (merch buyers day one) via free Google News RSS; boutique-only, commercial filtered; discover→refine→enrich→AI Ark owner contact→grand-opening themed mockup. Verified live (89 candidates).
-- [CA trade-show signal](ca-tradeshow-signal.md) — /ca-tradeshows (2026-07-07): discover trade-show exhibitors (bulk booth-swag buyers on a deadline) via public exhibitor lists (Firecrawl/MapYourShow, verified 85 exh live), score by 8-12wk buy-now window, feed /ca-outbound with a show-themed mockup opener. Ryan's highest-value motion.
-- [CA buying signals](ca-buying-signals.md) — /ca-signals intent layer (2026-07-07): ranks a lead list by buy-now signals (hiring via free ATS APIs, merger/leadership/awards via Google News RSS) hot-first; free/owned only; corrected signal ranking; feeds /ca-outbound opener. Verified live (Cadwalader merger).
-- [CA outbound pipeline](ca-outbound-pipeline.md) — /ca-outbound one-command cold-outbound (2026-07-07): AI Ark→crawl→personalize→SmartLead DRAFT→Telegram; all 28 GrowthEngineX skills installed; data engine = AI Ark ONLY (Apollo/LEAD411 removed). Draft-only, validated.
-- [AI use-case research 2026-07](ai-usecase-research-2026-07.md) — dual web+YouTube deep-research for CA (2026-07-07): 16-item prioritized build list, mockup-wedge commoditization warning (skubot/SAGE), Hermes/Fable 5 reality check; full report in aios-starter-kit/outputs/deep-research/.
-- [Promo market landscape](promo-market-landscape.md) — verified facts + strategy from the 2026-07-05 deep-research report (full report in CA plans/market-landscape-2026.md): CA = top-5% distributor, mission = cross $5M, 4imprint teardown, mockup wedge hits #1 buyer pain, two-lane positioning.
-- [Workspace map](workspace-map.md) — post-audit canonical structure (2026-07-04): cockpit = AIOS-Memory-Bank/LIFE-OS.md; engines = Creative-Alternatives-AIOS, aios-starter-kit (time-blocks/content only, 75% dead), personal-ai-os; zombie launchd kill list; ACE exam Jul 18 (not Aug 11).
+- [`fulfillment-keep-it-simple.md`](fulfillment-keep-it-simple.md) — fulfillment discipline.
+- [`ca-art-local-compositor.md`](ca-art-local-compositor.md) — deterministic local artwork/mockup pipeline.
+- [`smartlead-inbox-signatures.md`](smartlead-inbox-signatures.md) — signature rule.
+- [`ca-no-discount-gimmicks.md`](ca-no-discount-gimmicks.md) — offer boundary.
+- [`harbor-haven-camp-arcadia.md`](harbor-haven-camp-arcadia.md) — customer/suppression fact.
+- [`verify-preflight-skills.md`](verify-preflight-skills.md) — verification before external use.
+- [`promo-market-landscape.md`](promo-market-landscape.md) — market context and claim boundaries.
 
-- [CA event-planner channel](ca-event-planner-channel.md) — persona campaign (2026-07-10): "your invisible swag department" for event planners (leveraged channel — 1 planner = 5-20 events/yr). AI Ark verified ~50k US planners / 753 SC; offer + 4-email sequence + event_planners ICP in ca_outbound.yaml built, launch = tag inboxes + /ca-outbound event_planners. Killer wedge: free client-logo mockups for planners' own pitches.
-- [CA reactivation engine](ca-reactivation-engine.md) — warm-base reactivation + referral engine (2026-07-09): mine CA's 2,700-customer base (warm converts ~10x cold per CA's own SmartLead data). Built from QB exports: 981 reactivation + 338 active/referral + 502 phone-only. Sends warm from Maclaine's inbox; scripts/ca_reactivation.py + Maclaine-voice sequences. QB only holds 2025-26; 1999-2024 spreadsheets = Phase 2.
+## Systems that may support CA
 
-- [Runvue client portal](runvue-client-portal.md) — white-label delivery portal for AI lead-gen agencies (Ideabrowser #8026), DEPLOYED on Railway with Ryan's real lead-engine data; base IDs, key locations, offer, launch next-steps.
+- [`ai-usecase-research-2026-07.md`](ai-usecase-research-2026-07.md) — CA automation ideas; never outranks a named revenue constraint.
 
-- [Oloxa battlecard workflow](oloxa-battlecard-workflow.md) — the dynamic-workflow pattern for mass-producing verified multi-channel Oloxa outbound battlecards; now also covers the LIVE daily Telegram brief + weekly learning loop + the AI GTM Engine service packaging/pricing. Resume doc: `AI GTM Engine/00 - SESSION RESUME 2026-05-31.md`.
-- [Dealthreads GTM Experiment Engine](dealthreads-gtm-experiment-engine.md) — Dealthreads repositioned from real-estate ops agents into a sellable GTM Experiment Engine service (11-file offer/OS in `dealthreads-gtm-experiment-engine/`).
-- [Oloxa recency guardrail](oloxa-recency-guardrail.md) — datable signals need a sourced date or they're down-ranked to LOW/NEEDS_RESEARCH; never fabricate dates.
-- [Oloxa Sway handoff schema](oloxa-sway-handoff-schema.md) — the shared UK/US/CA standard (unified 0-100 recency-pure score, GB/US/CA, 4-tier confidence, signal_date) + the standardize_for_sway.py emitter.
-- [Local SC outreach sprint](local-sc-outreach-sprint.md) — Midlands/Lake Murray service-business call/text sprint: postcard-first, GBP-issue door-opener, offer framing, source files, Best-25 workflow.
-- [AI Contact Form build](ai-contact-form-build.md) — Ryan's primary Dealthreads offer (IdeaBrowser #7856): enricher + person-level lookup + live Railway demo at ai-contact-form-demo-production.up.railway.app. ~90% built, demo-ready.
-- [YouTube Video Factory](youtube-video-factory.md) — daily YouTube sprint: paste an IdeaBrowser idea → record-ready script + screenshare deck so Ryan can press record and talk. Engine at `Content-OS/90-Day-YouTube-Sprint/Video-Factory.md`.
-- [Origami → HubSpot lead sync](origami-hubspot-lead-sync.md) — Salesfinity dialer + Origami lead tables → HubSpot daily sync, LIVE since 2026-06-11 (2,947 contacts in); script `scripts/sync_leads_to_hubspot.py`, launchd 7:10am.
-- [Meeting Engine](meeting-engine.md) — the lead-to-booked-meeting pipeline: SmartLead+Salesfinity engagement → HubSpot stages → Telegram brief 3x/day; playbook in `docs/meeting-engine-playbook.md`; Sendr API wired (api.sendr.io), Cal key invalid.
-- [Coaching OS](coaching-os.md) — Ryan's build-in-public fitness coaching venture: ACE cert (exam ~Aug 11), hybrid-athlete "Mocha" brand, busy-pro niche, $20k/mo goal; SIDE-stream to THE PLAN (monetize after Aug 10). Files in `coaching-os/`.
-- [ASCEND personal AI OS](personal-ai-os-ascend.md) — "life as a video game" AI training OS for Ryan's solo Hyrox (Sep 9 2026). NOW A LIVE MULTI-USER PRODUCT on Railway (https://ascend-production-5f0a.up.railway.app) for his DC Hyrox crew: accounts/login (SQLite+PBKDF2 in stdlib server.py), per-user data+feeds+coach (DeepSeek via OpenRouter, daily cap), program-driven strength log w/ progressive overload (his real Kingfisher block). Folder `/Users/ryantydingco/Documents/personal-ai-os/`. NEXT: per-user Strava OAuth + personalize race/character (currently shared template, only name personalized).
-- **THE PLAN (2026-06-11 → 2026-08-10) — ⏸️ RETIRED 2026-06-23, superseded by Creative Alternatives:** `AI GTM Engine/60-DAY GAME PLAN — 10K MRR — 2026-06-11.md` — ONE offer (Invoice Chase Engine: free AR teardown → $2K install → $1K/mo Managed AR via Runvue portal), everything else frozen; day-30 gate Jul 11, day-60 gate Aug 10. RETIRED 2026-06-23 — Ryan ended all AI-consulting/GTM work to focus solely on Creative Alternatives. Do NOT default advice here; kept for historical context only. The ColdIQ-style ambition is parked with a date in `AI GTM Engine/Outbound OS — ColdIQ-Style Productization Blueprint — 2026-06-11.md` (Phase 1 unlocks at 3 AR logos or day-60 pass; tenant refactor 18-26h built only after an OS contract signs). LIVE sales demo: https://invoice-chase-demo.netlify.app (seeded sample data, script in `aios-starter-kit/apps/invoice-chase-demo/DEMO-SCRIPT.md`).
-- [Template week time blocks](template-week-time-blocks.md) — Ryan's designed week (2026-07-04): Kingfisher gym-coaching shifts VARY WEEKLY (photo grid → one-off GCal events + time_blocks.json overrides; done thru Jul 17), CA blocks, ACE study, Hyrox lift+run 5:10pm (moves to AM on evening-shift days), Fri YouTube recording, weekends = work days (Sat long run + CA get-ahead, Sun week-ahead prep + 5pm review; all 7 days scoreable, no streak pass-through). W/L GAME LOOP LIVE via Telegram (scripts/time_blocks.py, launchd com.aios.time-blocks-{am,pm,weekly,monthly}): 4:30am card w/ streak, 9:15pm scorecard (reply W/L), Sun 5pm weekly recap, monthly season report; results in data/time_blocks_log.json. Block goals (done-whens) wired in — playbook at aios-starter-kit/docs/block-playbook.md. CA Content Factory LIVE (ca_content_factory.py, Mon–Sat 1:45pm LinkedIn draft + video beats, Sun 7:05am week plan; anti-fabrication rules; Ryan edits 10% and posts).
-- **[Creative Alternatives AIOS](creative-alternatives-aios.md) — NEW PRIMARY FOCUS (2026-06-22):** Ryan pivoting all consulting focus into transforming his girlfriend's dad Kenny's 25-yr promo-products business ($3.2M gross) with AI + documenting on YouTube. Fresh standalone workspace `~/Documents/Creative-Alternatives-AIOS/`, 4 pillars. As of 2026-07-03 Ryan's sole job = CA revenue via cold outreach + inbound; 2 SmartLead campaigns (Financial + Law) LIVE since 2026-07-01, first real buyer reply Jul 1 (Wil Antonides, Miller Johnson). CONFIRMED 2026-06-23 as Ryan's SOLE focus — all AI-consulting/GTM tracks (Invoice Chase/THE PLAN, Dealthreads, Oloxa, AI GTM Engine, Meeting Engine, outbound sprints) retired. Personal fitness ventures (Coaching OS, ASCEND) not in scope of this retirement unless Ryan says otherwise.
+## Distribution
+
+- [`personal-brand-plan.md`](personal-brand-plan.md) — CA-centered personal-brand direction.
+- [`talking-head-os.md`](talking-head-os.md) — recording/editing workflow.
+
+Content is subordinate to the revenue power list and must begin with a real, approved CA event.
+
+## Memory hygiene
+
+- Add a memory file only for a durable fact, rule, or reusable CA system.
+- Put dated activity in `Work Logs/`, not memory.
+- Put tasks in `Creative-Alternatives/gtd/`, not memory.
+- Archive superseded ventures and ideas rather than leaving them in this index.
+- Mark uncertain facts `[CONFIRM]` and name their source.
