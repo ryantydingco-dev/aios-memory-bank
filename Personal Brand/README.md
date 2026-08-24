@@ -44,5 +44,6 @@ The assistant may inspect the existing signed-in LinkedIn profile when Ryan asks
 - `reply desk: [paste comments or DMs]`
 - `dm assist: [person + profile/post/context]`
 - `follow-up: [conversation so far]`
+- `warm network: [candidate + how I know them + current signal]`
 - `block time`
 - `weekly review`

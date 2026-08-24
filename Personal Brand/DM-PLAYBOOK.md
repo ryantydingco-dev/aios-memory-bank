@@ -8,6 +8,18 @@ No pitch in the first message. Do not mention services, ask for a call, drop a c
 
 ## Relationship stages
 
+### Current connections workflow
+
+An existing connection is not automatically warm. Before drafting, confirm the current role, check CA customer history, add Ryan's real relationship context, and identify one current signal. Never generate a pitch from a title match.
+
+If Ryan does not remember how they connected, say that honestly instead of inventing familiarity:
+
+> Hey [Name], realized we have been connected for a while but I do not think we have ever actually talked.
+>
+> [Ryan's real observation or question].
+
+Do not add CA to the first message unless it naturally answers something they asked.
+
 ### 0. Context
 
 Know why this person is relevant: their post, comment, shared experience, event, company change, or introduction. If there is no real context, do not invent one.

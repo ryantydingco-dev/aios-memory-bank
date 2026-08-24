@@ -1,0 +1,38 @@
+APPAREL MOCKUP PRE-SEND GATE
+
+1. ASSET AUTHORITY
+   - List every supplied logo/art file before designing.
+   - Mark each as exact-use, editable, or inspiration-only.
+   - Never redraw or reinterpret exact-use artwork.
+
+2. PLACEMENT SPEC
+   - Confirm garment, print locations, imprint width, collar offset, and color count.
+   - Do not show a back view when the back is blank unless specifically requested.
+
+3. MEASURED ALIGNMENT
+   - Determine the collar/body centerline from the garment render.
+   - Center the artwork bounding box on that line.
+   - Verify equal left/right margins and consistent top offsets across colorways.
+
+4. PAGE COMPOSITION
+   - Each garment must have an independent frame.
+   - No garment, label, shadow, or crop may overlap another colorway.
+   - Keep identical garment scale, baseline, margins, and label spacing.
+
+5. ARTWORK INTEGRITY
+   - Compare final text, logos, dates, and sponsor marks against the supplied source.
+   - Inspect edges at 100% for background remnants, clipping, halos, or blur.
+
+6. CUSTOMER PROOF VS. QA PROOF
+   - Customer proof: clean artwork only.
+   - Internal QA proof: centerlines and print bounding boxes.
+   - Never send the QA overlay to the customer.
+
+7. FINAL VISUAL REVIEW
+   - Inspect the entire composed page, not only each shirt.
+   - Confirm no overlap, clipping, uneven spacing, inconsistent scale, or empty views.
+   - Compare mockup scale with a real garment reference.
+
+8. APPROVAL GATE
+   - Show the final proof to Ryan before any prospect reply or attachment is sent.
+   - Do not send until Ryan explicitly approves the exact image.

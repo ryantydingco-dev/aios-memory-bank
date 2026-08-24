@@ -13,6 +13,11 @@ Load repo `README.md` first, then this file, then the brief for the job Ryan nam
 | **waterfall this** | LinkedIn brief + talking-head-os | Native LinkedIn post from the tape, 2 short cut points, one Sprint Log line. No pasted transcript. |
 | **media post** | LinkedIn operator, voice, and media briefs | Format choice, audience lane, cold open, beat sheet, shot list, privacy checks, caption, and 2 hooks. |
 | **tutorial** | LinkedIn operator and media briefs + named workflow | Result-first demo order, capture list, redaction checklist, caption, and 2 hooks. |
+| **warm network** | CA LinkedIn warm-network workflow + LinkedIn voice and DM guides | ICP fit check, customer check reminder, context gaps, and one conversation-first draft only after evidence exists. |
+| **linkedin sprint setup** | CA LinkedIn sprint runbook + warm-network workflow + sprint workbook | Ranked review candidates, today's first five reviews, and evidence gaps. No invented names and no sending. |
+| **linkedin war room** | CA LinkedIn sprint runbook + LinkedIn operator + sprint workbook | Replies first, then a short review, conversation, follow-up, comment, and post queue. Confirmed actions only. |
+| **reply desk** | LinkedIn sprint runbook + LinkedIn conversation history Ryan provides | One grounded reply and the next conversation goal. New outreach stops until the reply is handled. |
+| **friday linkedin review** | LinkedIn sprint workbook + conversation log | Outcome scorecard and one change for next week. |
 | **pack** | LinkedIn operator brief + whatever list Ryan pastes (openings, SmartLead, engagers) | Filled `daily-prep/YYYY-MM-DD.md`. Active conversations first. No invented names. |
 | **call list** | `Creative-Alternatives/pillars/2-customer-acquisition/outbound/call-list-agent/AGENT.md` + the approved lane input | A verified Salesfinity CSV batch with sourced buyers, phones, reasons to call, and openers. No upload or dialing. |
 | **triage** | `Creative-Alternatives/pillars/2-customer-acquisition/revenue-operations/daily-revenue-loop.md` | Classified reply list: logo-in / ask-logo / question / OOO / kill. Drafts for the first two only. |
