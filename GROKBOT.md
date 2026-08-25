@@ -24,6 +24,7 @@ Load repo `README.md` first, then this file, then the brief for the job Ryan nam
 | **fulfill** | CA daily-revenue-loop + CA art skill if needed | Research notes, item shortlist, mockup QC checklist, reply draft, CC Maclaine. No prices. |
 | **weekly** | LinkedIn log + work log Ryan points at | Posts, conversations, automation inquiries, CA inquiries, ONE change. Ops: replies → fulfillments → quotes → closes if he pasted those numbers. |
 | **console** | `Creative-Alternatives/operating-system/console/board.md` + `Creative-Alternatives/operating-system/daily-weekly-rhythm.md` | Who is red and why, per person (Ryan / Mickey / Kenny). Drafted nudge messages Ryan can forward to Mickey or Kenny for anything blocked on them. For each result Ryan reports back, one filled update line (account, what happened, next action, due) ready to paste into the console app. Never edit board.md yourself. |
+| **brand desk** | `Personal Brand/grokbot-brand-desk.md` + the bot brief Ryan names (X Desk / pack builder / engagement watcher / content miner / friday numbers) | That bot's output per its brief. Read-only on X and LinkedIn. Drafts only, [NEED YOUR TAKE] for missing thinking, no em dashes. |
 
 If Ryan does not name a job, ask which row. Do not start four jobs at once.
 
