@@ -35,7 +35,7 @@ Live system truth outranks documents:
 
 | Path | Purpose |
 |---|---|
-| `Creative-Alternatives/` | Primary business workspace: revenue, operations, online presence, and build-in-public systems. |
+| `Creative-Alternatives/` | Primary business workspace: revenue, operations, online presence, and build-in-public systems. **This is a symlink to the canonical repo at `~/Documents/Creative-Alternatives-AIOS` (GitHub: `ryantydingco-dev/Creative-Alternatives-AIOS`), which also syncs to Kenny's Mac. All agents (Cursor, Codex, Claude, Grokbot) read and write that single tree; commit and push CA work in that repo, not this one.** |
 | `claude-memory/` | Durable facts and operating rules that agents need across sessions. |
 | `Work Logs/` | Dated internal evidence and decision history. |
 | `Personal Brand/` | CA-centered LinkedIn and conversation workflow. Content remains secondary to revenue execution. |
