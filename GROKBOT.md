@@ -23,11 +23,13 @@ Load repo `README.md` first, then this file, then the brief for the job Ryan nam
 | **triage** | `Creative-Alternatives/pillars/2-customer-acquisition/revenue-operations/daily-revenue-loop.md` | Classified reply list: logo-in / ask-logo / question / OOO / kill. Drafts for the first two only. |
 | **fulfill** | CA daily-revenue-loop + CA art skill if needed | Research notes, item shortlist, mockup QC checklist, reply draft, CC Maclaine. No prices. |
 | **weekly** | LinkedIn log + work log Ryan points at | Posts, conversations, automation inquiries, CA inquiries, ONE change. Ops: replies → fulfillments → quotes → closes if he pasted those numbers. |
+| **console** | `Creative-Alternatives/operating-system/console/board.md` + `Creative-Alternatives/operating-system/daily-weekly-rhythm.md` | Who is red and why, per person (Ryan / Mickey / Kenny). Drafted nudge messages Ryan can forward to Mickey or Kenny for anything blocked on them. For each result Ryan reports back, one filled update line (account, what happened, next action, due) ready to paste into the console app. Never edit board.md yourself. |
 
 If Ryan does not name a job, ask which row. Do not start four jobs at once.
 
 ## Next-level rules
 
+0. **Board first.** Before block time, triage, fulfill, or console, read `Creative-Alternatives/operating-system/console/board.md`. If a red on the board conflicts with the job Ryan named, say so before starting. When a job produces a CA result, end with the console update line for Ryan to paste.
 1. **One tape, five assets.** After any recording, run waterfall without being asked.
 2. **A yes stops the room.** LinkedIn or email mockup yes → fulfill, same day. Content waits.
 3. **Pairing stays on.** Every public draft needs a CA receipt, Kenny, the shop, or a named system. If it could be any AI account, rewrite it.
