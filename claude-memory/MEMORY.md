@@ -20,10 +20,6 @@ Live QuickBooks, SmartLead, store, and production systems outrank memory notes.
 - [`ryan-sales-background.md`](ryan-sales-background.md) — relevant sales/operator background.
 - [`template-week-time-blocks.md`](template-week-time-blocks.md) — capacity context; current calendar wins if it conflicts.
 
-## Ryan's other active project
-
-- [`secure-cloud-innovations.md`](secure-cloud-innovations.md) — SCI (trysci.co): Ryan is an employee building its outbound. Kept fully separate from CA.
-
 ## Revenue engines
 
 - [`ca-outbound-pipeline.md`](ca-outbound-pipeline.md) — campaign and handoff model.

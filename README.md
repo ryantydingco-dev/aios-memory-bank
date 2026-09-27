@@ -6,8 +6,6 @@ This repository exists for one mission:
 
 Creative Alternatives is Kenny Scher's established promotional-products business. Ryan is building the revenue and operating systems; Maclaine owns pricing and quoting; Kenny owns business judgment and final approval where required.
 
-> **Ryan's other active project (2026-09-27):** Ryan is also an employee at Secure Cloud Innovations (trysci.co), building its outbound motion. SCI context is tracked in [`Active Projects.md`](Active%20Projects.md) and [`claude-memory/secure-cloud-innovations.md`](claude-memory/secure-cloud-innovations.md). SCI data, lists, and copy never go into `Creative-Alternatives/`, and CA data never goes into SCI work.
-
 Everything in the active workspace must do at least one of four jobs:
 
 1. Create or convert revenue.
