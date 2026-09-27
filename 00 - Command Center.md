@@ -6,6 +6,8 @@
 
 **Daily execution:** [`Creative-Alternatives/gtd/daily-power-list.md`](Creative-Alternatives/gtd/daily-power-list.md)
 
+> **Ryan's capacity (2026-09-27):** Ryan is no longer at Drata. He is now an employee at Secure Cloud Innovations building its outbound motion, alongside building CA's outbound. CA is one of two active projects. See [`Active Projects.md`](Active%20Projects.md). Keep SCI and CA work fully separate. Time split between them: `[CONFIRM]`.
+
 ## Revenue model
 
 | Engine | Six-month target |
