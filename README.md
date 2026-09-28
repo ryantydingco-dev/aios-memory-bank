@@ -4,7 +4,7 @@ This repository exists for one mission:
 
 > **Generate $1,000,000 in attributable Creative Alternatives revenue between September 1, 2026 and February 28, 2027.**
 
-Creative Alternatives is Kenny Scher's established promotional-products business. Ryan is building the revenue and operating systems; Maclaine owns pricing and quoting; Kenny owns business judgment and final approval where required.
+Creative Alternatives is Kenny Scher's established promotional-products business. Ryan is building the revenue and operating systems and has final say on growth work (website, inbound, outbound, content, marketing); Maclaine owns pricing and quoting; Kenny's business judgment is an asset, not an approval gate.
 
 Everything in the active workspace must do at least one of four jobs:
 
@@ -55,7 +55,7 @@ Live system truth outranks documents:
 
 ## Decision rights and hard rules
 
-1. Human approval is required for anything customer-facing, vendor-facing, public, or involving money.
+1. Human approval is required for anything customer-facing, vendor-facing, public, or involving money. Ryan can give that approval; Kenny's sign-off is not required (Ryan, 2026-09-27: "this is my business too").
 2. Maclaine owns pricing and quoting. Agents never invent a price or margin.
 3. Kenny's operating judgment is an asset. Improve his process with evidence; do not bulldoze it.
 4. Never fabricate numbers, dates, customers, products, or claims. Unverified facts are marked `[CONFIRM]`.

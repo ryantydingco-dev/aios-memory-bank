@@ -29,3 +29,5 @@ Ryan (2026-08-19): store terms are a **pricing decision**, not a new business mo
 **Strategic use:** free store = foot in the door for the big bulk orders (senior class, staff, events, athletics). Do not sell store *or* bulk. Land store, then quote the next calendar drop as bulk.
 
 **Yorkville:** Maclaine owns the reply (inbound, Hannah Fox, needed by Sept 9).
+
+**Store operations (Ryan, 2026-09-28):** a store can be ready in about 2 days; store orders have about a two-week turnaround (same whether counted from an order or from the store closing). Safe to state publicly.
